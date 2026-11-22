@@ -44,6 +44,9 @@ public class ArcRmlUITest : ModuleRules
 			PrivateDependencyModuleNames.Add("PropertyEditor");
 			PrivateDependencyModuleNames.Add("BlueprintGraph");
 			PrivateDependencyModuleNames.Add("UnrealEd");
+			PrivateDependencyModuleNames.Add("UMGEditor");
+			PrivateDependencyModuleNames.Add("Kismet");
+			PrivateDependencyModuleNames.Add("ImageCore");
 		}
 	}
 }

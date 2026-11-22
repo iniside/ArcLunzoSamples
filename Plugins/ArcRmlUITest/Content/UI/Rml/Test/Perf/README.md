@@ -1,7 +1,7 @@
 # ArcRmlUI performance fixtures
 
-Synthetic heavy pages for measuring ArcRmlUI. Start a game run with `Game.bat` (host root), open the
-console, enter `log LogArcRmlUI Verbose` so the `ArcRmlUI perf:` lines show, then open each page
+Synthetic heavy pages for measuring ArcRmlUI. Start the game (Play in the editor, or
+`UnrealEditor.exe ArcRmlUIHost.uproject -game -log`), open the console, enter `log LogArcRmlUI Verbose` so the `ArcRmlUI perf:` lines show, then open each page
 with `ArcRml.Open <path>`. Close with `ArcRml.Close <path>`.
 
 | Page | Path | Load |

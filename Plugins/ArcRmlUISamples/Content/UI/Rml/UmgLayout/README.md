@@ -26,5 +26,5 @@ ArcRmlSamples.Open UmgLayout
 ## Files
 
 - `UmgLayout.rml`, `UmgLayout.rcss`
-- `WBP_Sample_UmgLayout` (Widget Blueprint, made by `Scripts/arcrmlui/create_samples_blueprints.py`)
+- `WBP_Sample_UmgLayout` (Widget Blueprint)
 - `Source/ArcRmlUISamples/UmgLayout/ArcRmlSamplesUmgLayout.h`, `.cpp` (the open, close and is-open functions)

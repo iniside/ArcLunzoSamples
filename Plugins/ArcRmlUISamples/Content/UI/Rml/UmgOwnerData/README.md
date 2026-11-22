@@ -29,5 +29,5 @@ ArcRmlSamples.Open UmgOwnerData
 ## Files
 
 - `UmgOwnerData.rml`, `UmgOwnerData.rcss`
-- `WBP_Sample_UmgOwnerData` (Widget Blueprint, made by `Scripts/arcrmlui/create_samples_blueprints.py`)
+- `WBP_Sample_UmgOwnerData` (Widget Blueprint)
 - `Source/ArcRmlUISamples/UmgOwnerData/ArcRmlSamplesUmgOwnerData.h`, `.cpp` (the widget class, the view model and the open, close and is-open functions)

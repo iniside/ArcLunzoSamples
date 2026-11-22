@@ -25,5 +25,5 @@ ArcRmlSamples.Open UmgWidget
 ## Files
 
 - `UmgWidget.rml`, `UmgWidget.rcss`
-- `WBP_Sample_UmgWidget` (Widget Blueprint, made by `Scripts/arcrmlui/create_samples_blueprints.py`)
+- `WBP_Sample_UmgWidget` (Widget Blueprint)
 - `Source/ArcRmlUISamples/UmgWidget/ArcRmlSamplesUmgWidget.h`, `.cpp` (the view model and the open, close and is-open functions)

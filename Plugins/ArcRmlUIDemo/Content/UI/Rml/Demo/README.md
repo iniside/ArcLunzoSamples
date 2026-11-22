@@ -161,8 +161,7 @@ Where a screen differs from the prototype, and why.
 ## HUD
 
 `Hud.rml` replaces the earlier demo HUD and the removed `HudPort/` RML. It binds `ui`, `hud` (`BP_ArcRmlDemoHudVM`, `OpenVendor`, `OpenCrafting`, `EndMatch`, `bMultiplayer`) and the four Blueprint view models `hudstate`,
-`hudunits`, `hudworld` and `hudbars` (`BP_HudPort*VM`, whose `S_HudPort*` row structs are in `Content/HudPort/ViewModels/`;
-`Scripts/arcrmlui/create_hudport_assets.py` and `create_hudport_graphs.py` create them). The body is transparent, so the
+`hudunits`, `hudworld` and `hudbars` (`BP_HudPort*VM`, whose `S_HudPort*` row structs are in `Content/HudPort/ViewModels/`). The body is transparent, so the
 game map shows behind the HUD, and the body takes the five theme classes of the dev bar.
 
 - **Layout.** Nine docks (`data-hud-dock`: tl, tc, tr, ml, c, mr, bl, bc, br) in a grid, padded by the safe zone

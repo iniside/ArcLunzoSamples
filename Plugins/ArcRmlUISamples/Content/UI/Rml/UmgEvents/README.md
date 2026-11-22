@@ -28,5 +28,5 @@ ArcRmlSamples.Open UmgEvents
 ## Files
 
 - `UmgEvents.rml`, `Second.rml`, `UmgEvents.rcss`
-- `WBP_Sample_UmgEvents` (Widget Blueprint and its event graph, made by `Scripts/arcrmlui/create_samples_blueprints.py`)
+- `WBP_Sample_UmgEvents` (Widget Blueprint and its event graph)
 - `Source/ArcRmlUISamples/UmgEvents/ArcRmlSamplesUmgEvents.h`, `.cpp` (the open, close and is-open functions)

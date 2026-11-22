@@ -9,9 +9,7 @@ Package Everything off. The action and the cook provider that reads it come from
   "Package RML Documents" action lists `/ArcRmlUIGameFeatureTest/UI/Rml/GameFeatureTest.rml`
   and the folders `/ArcRmlUIGameFeatureTest/UI/Rml/Dependencies` and
   `/ArcRmlUIGameFeatureTest/UI/Rml/Localization`.
-  `Scripts/arcrmlui/create_game_feature_test_assets.py`
-  (`arc-build-test.ps1 -HostProject ArcRmlUIHost -PythonScript <path>`) regenerates it and the
-  plugin's own assets the pages use: the MetaSoundSources
+  The pages use the plugin's own assets: the MetaSoundSources
   `UI/Sound/MS_DependenciesClick` and `MS_DependenciesHover`, the texture
   `UI/Textures/T_DependenciesAsset` and the String Tables `UI/Rml/Dependencies/Loc/ST_Dependencies`
   and `UI/Rml/Localization/Loc/ST_Localization` (written by Sync Strings from the pages' `.rml`).
@@ -27,11 +25,11 @@ Package Everything off. The action and the cook provider that reads it come from
 - Localization target `ArcRmlUIGameFeatureTest` (`LocalizationTargets` in the `.uplugin`,
   `Config/Localization/ArcRmlUIGameFeatureTest.ini`): gathers the plugin's String Tables and
   writes `Content/Localization/ArcRmlUIGameFeatureTest/<culture>/` (`.archive`, `.po`, `.locres`)
-  for `en` (native), `pl`, `fr`, `zh-Hans` and `ar`. The translations live in
-  `Scripts/arcrmlui/translate_game_feature_test.py`. To regenerate after a text change:
-  1. `arc-build-test.ps1 -HostProject ArcRmlUIHost -PythonScript Scripts/arcrmlui/create_game_feature_test_assets.py`;
-  2. `arc-build-test.ps1 -HostProject ArcRmlUIHost -GatherText ArcRmlUIHost/Plugins/GameFeatures/ArcRmlUIGameFeatureTest/Config/Localization/ArcRmlUIGameFeatureTest.ini`;
-  3. `python -I Scripts/arcrmlui/translate_game_feature_test.py` (prints `PASS`);
+  for `en` (native), `pl`, `fr`, `zh-Hans` and `ar`. The translations live in the
+  `.po` files. To regenerate after a text change:
+  1. right-click the page's `.rml` in the Content Browser and choose **Sync Strings**;
+  2. `UnrealEditor-Cmd.exe <full path>/ArcRmlUIHost.uproject -run=GatherText -config=<full path>/Plugins/GameFeatures/ArcRmlUIGameFeatureTest/Config/Localization/ArcRmlUIGameFeatureTest.ini`;
+  3. translate the new texts in each `<culture>/ArcRmlUIGameFeatureTest.po`;
   4. step 2 again, which imports the `.po` files and compiles the `.locres` files.
 
   The packaged game needs these cultures and the full ICU data in
@@ -87,7 +85,11 @@ Package Everything off. The action and the cook provider that reads it come from
    ```
 
    with no `PathsToPackage`, so only the game feature action selects files.
-2. Run `Package.bat`.
+2. Package the project for Windows into `ArcRmlUIHost/Packaged` (from the engine root):
+
+   ```
+   Engine\Build\BatchFiles\RunUAT.bat BuildCookRun -nop4 -project=<full path>\ArcRmlUIHost.uproject -target=ArcRmlUIHost -platform=Win64 -clientconfig=Development -map=/ArcRmlUIDemo/Demo/Maps/L_ArcRmlDemo -build -cook -zenstore -stage -pak -manifests -prereqs -package -archive -archivedirectory=<full path>\Packaged
+   ```
 3. The cook log has
    `ArcRmlUI cook: game feature action of plugin 'ArcRmlUIGameFeatureTest' (/ArcRmlUIGameFeatureTest/ArcRmlUIGameFeatureTest.ArcRmlUIGameFeatureTest): 3 paths, 9 files`
    and no `LogArcRmlUI` error. The cook log also holds one line per dependency of each written
