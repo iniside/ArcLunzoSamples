@@ -1,0 +1,44 @@
+html, body {
+	margin: 0;
+	background-color: #ffffff;
+}
+
+body {
+	font-size: 16px;
+	color: #000000;
+}
+
+.box {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+}
+
+p {
+	margin: 0;
+}
+
+body.edited #u1 {
+	list-style-type: square;
+}
+
+body.edited #o1 {
+	list-style-type: lower-alpha;
+}
+
+body.edited #u9 {
+	list-style-position: outside;
+}
+
+body.edited #k2 {
+	list-style: decimal inside;
+}
+
+#k2 {
+	list-style-type: none;
+}
+
+#u9 {
+	list-style-position: inside;
+}

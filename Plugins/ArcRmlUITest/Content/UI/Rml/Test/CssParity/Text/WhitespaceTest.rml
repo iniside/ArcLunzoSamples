@@ -1,0 +1,69 @@
+<rml>
+<head>
+	<title>Whitespace Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/WhitespaceTest.rcss"/>
+	<viewmodel name="ws" preview="Preview/Whitespace.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="ws">
+	<div id="ws-spans" class="t" style="left: 10px; top: 10px; width: 300px;"><span>The caravan reached the old bridge at</span> <span>dusk,</span> <span>and</span> <span>the guards waved it through without asking.</span></div>
+	<div id="ws-collapse" class="t" style="left: 330px; top: 10px; width: 300px;">aaa <span> bbb</span> <b> </b> ccc<span class="pad"> ddd </span> eee <span>  </span>  fff</div>
+	<div id="ws-blocks" class="t" style="left: 650px; top: 10px; width: 300px;">
+		<div class="blk">one</div>
+		<div class="blk">two</div>
+		<span>inline</span>
+		<div class="blk">three</div>
+		<div class="fl"></div> <div class="blk">four</div>
+	</div>
+	<div id="ws-flex" class="t flex" style="left: 970px; top: 10px; width: 300px;">
+		<span>aaa</span>
+		<span>bbb</span>
+		<span>ccc</span>
+	</div>
+	<div id="ws-grid" class="t grid" style="left: 970px; top: 60px; width: 300px;">
+		<span>aaa</span>
+		<span>bbb</span>
+		<span>ccc</span>
+	</div>
+	<div id="ws-br" class="t c" style="left: 1290px; top: 10px; width: 300px;">line one <br/> line two<br/> <span>three</span> <br/>
+		<span>four</span>
+	</div>
+	<div id="ws-prewrap" class="t prewrap" style="left: 10px; top: 200px; width: 300px;"><span>aaa</span> <span>bbb</span>  <span>ccc</span>   <span>ddd</span></div>
+	<div id="ws-preblocks" class="t pre" style="left: 330px; top: 200px; width: 300px;"><div class="blk">one</div>
+  <div class="blk">two</div></div>
+	<div id="ws-preline" class="t preline" style="left: 650px; top: 200px; width: 300px;"><span>aaa</span>
+  <span>bbb</span>   <span>ccc</span></div>
+	<div id="ws-for" class="t" style="left: 970px; top: 200px; width: 300px;">
+		<span data-for="w : words">{{w.text}}</span>
+	</div>
+	<div id="ws-for-spaced" class="t" style="left: 970px; top: 240px; width: 300px;">
+		<div class="contents" data-for="w : words"><span>{{w.text}}</span> </div>
+	</div>
+	<div id="ws-contents" class="t" style="left: 1290px; top: 200px; width: 300px;"><span>aaa</span><div class="contents"> <span>bbb</span> </div><span>ccc</span></div>
+	<div id="ws-ib" class="t" style="left: 10px; top: 400px; width: 300px;">
+		<span class="ib"></span>
+		<span class="ib"></span>
+		<span class="ib"></span>
+	</div>
+	<div id="ws-center" class="t c" style="left: 330px; top: 400px; width: 300px;"> <span>aaa</span> <span>bbb</span> </div>
+	<div id="ws-oof" class="t" style="left: 650px; top: 400px; width: 300px;"><span>aaa</span> <span class="abs"></span> <span class="hidden">x</span> <span>bbb</span></div>
+	<div id="ws-inline-start" class="t" style="left: 970px; top: 400px; width: 300px;">aaa<span> <b>bbb</b></span></div>
+	<div id="j-words" class="t j" style="left: 1290px; top: 400px; width: 300px;"><span>The</span> <span>caravan</span> <span>reached</span> <span>the</span> <span>old</span> <span>bridge</span> <span>at</span> <span>dusk,</span> <span>and</span> <span>the</span> <span>guards</span> <span>waved</span> <span>it</span> <span>through.</span></div>
+	<div id="ws-empty-space" class="t emp" style="left: 650px; top: 600px;"> </div>
+	<div id="ws-empty-none" class="t emp" style="left: 650px; top: 640px;"></div>
+	<table id="ws-table" class="t" style="left: 10px; top: 600px; width: 300px;">
+		<tr>
+			<td>aaa</td>
+			<td>bbb</td>
+		</tr>
+	</table>
+	<table id="ws-table-tight" class="t" style="left: 330px; top: 600px; width: 300px;"><tr><td>aaa</td><td>bbb</td></tr></table>
+	<div id="ws-prewrapblocks" class="t prewrap" style="left: 970px; top: 600px; width: 300px;"><div class="blk">one</div>
+  <div class="blk">two</div></div>
+	<div id="ws-prelineblocks" class="t preline" style="left: 1290px; top: 600px; width: 300px;"><div class="blk">one</div>
+  <div class="blk">two</div></div>
+	<div id="ws-preblocks-lf" class="t pre" style="left: 10px; top: 800px; width: 300px;"><div class="blk">one</div>
+<div class="blk">two</div></div>
+</body>
+</rml>

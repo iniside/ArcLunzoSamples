@@ -1,0 +1,30 @@
+div { display: block; }
+.box { position: absolute; width: 120px; height: 60px; overflow: auto; }
+.tall { height: 300px; }
+.short { height: 20px; }
+.narrow { width: 100px; height: 300px; }
+
+#c1 { left: 10px; top: 10px; }
+#c2 { left: 150px; top: 10px; overflow-y: scroll; }
+#c3 { left: 290px; top: 10px; }
+#c3::-webkit-scrollbar-thumb { background-color: #f58231; }
+#c4 { left: 430px; top: 10px; }
+#c4::-webkit-scrollbar { width: 6px; }
+#c5 { left: 570px; top: 10px; scrollbar-width: thin; }
+#c5::-webkit-scrollbar { width: 6px; }
+
+#c6 { left: 10px; top: 100px; }
+#c6abs { position: absolute; left: 0px; right: 0px; top: 0px; height: 20px; }
+#c7 { left: 150px; top: 100px; width: auto; }
+#c8wrap { position: absolute; left: 290px; top: 100px; width: 400px; height: 70px; }
+#c8a { display: inline-block; width: auto; height: 60px; overflow: auto; }
+#c8b { left: 710px; top: 100px; width: auto; display: flex; }
+#c8bchild { flex-shrink: 0; }
+
+#c9 { left: 10px; top: 200px; display: flex; flex-direction: column; }
+#c9item { flex-shrink: 0; }
+#c10 { left: 150px; top: 200px; background: linear-gradient(#e6194b, #e6194b) no-repeat local; background-size: 20px 20px; background-position: right 0px top 0px; }
+#c10b { left: 290px; top: 200px; background: linear-gradient(#3cb44b, #3cb44b) no-repeat local; background-size: 20px 20px; background-position: right 0px top 0px; }
+#c10b::-webkit-scrollbar { width: 6px; }
+#c11 { left: 430px; top: 200px; }
+.on #c11::-webkit-scrollbar { width: 6px; }

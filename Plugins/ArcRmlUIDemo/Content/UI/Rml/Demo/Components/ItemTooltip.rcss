@@ -1,0 +1,226 @@
+.dk-itemtooltip {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-3);
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 360px;
+	padding: var(--ui-space-4);
+	background: var(--ui-overlay-bg);
+	border: 1px solid var(--ui-border-strong);
+	border-top: 3px solid var(--ui-rarity-common);
+	border-radius: var(--ui-radius-md);
+	box-shadow: var(--ui-shadow-lg);
+	backdrop-filter: blur(var(--ui-overlay-blur));
+	color: var(--ui-text);
+	opacity: 1;
+	--rc: var(--ui-rarity-common);
+}
+
+.dk-itemtooltip.uncommon {
+	--rc: var(--ui-rarity-uncommon);
+	border-top: 3px solid var(--ui-rarity-uncommon);
+}
+
+.dk-itemtooltip.rare {
+	--rc: var(--ui-rarity-rare);
+	border-top: 3px solid var(--ui-rarity-rare);
+}
+
+.dk-itemtooltip.epic {
+	--rc: var(--ui-rarity-epic);
+	border-top: 3px solid var(--ui-rarity-epic);
+}
+
+.dk-itemtooltip.legendary {
+	--rc: var(--ui-rarity-legendary);
+	border-top: 3px solid var(--ui-rarity-legendary);
+}
+
+.dk-itemtooltip.dim {
+	opacity: 0.92;
+}
+
+.dk-itemtooltip-header {
+	align-self: flex-start;
+	font-family: var(--ui-font-mono);
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--ui-text-muted);
+	padding: 2px var(--ui-space-2);
+	border: 1px solid var(--ui-border);
+	border-radius: var(--ui-radius-sm);
+}
+
+.dk-itemtooltip-title {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-1);
+}
+
+.dk-itemtooltip-name {
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-4);
+	font-weight: 700;
+	line-height: 1.15;
+	color: var(--rc);
+	text-transform: var(--ui-display-case);
+	letter-spacing: var(--ui-display-tracking);
+	text-shadow: none;
+}
+
+.dk-itemtooltip.epic .dk-itemtooltip-name, .dk-itemtooltip.legendary .dk-itemtooltip-name {
+	text-shadow: 0 0 16px color-mix(in srgb, var(--rc) 45%, transparent);
+}
+
+.dk-itemtooltip-meta {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: var(--ui-space-2);
+}
+
+.dk-itemtooltip-type {
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text-muted);
+}
+
+.dk-itemtooltip-primary {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--ui-space-1) var(--ui-space-5);
+	padding: var(--ui-space-2) 0;
+	border-top: 1px solid var(--ui-border);
+	border-bottom: 1px solid var(--ui-border);
+}
+
+.dk-itemtooltip-primary-row {
+	display: flex;
+	align-items: baseline;
+	gap: var(--ui-space-2);
+}
+
+.dk-itemtooltip-primary-value {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-5);
+	font-weight: 600;
+	color: var(--ui-text);
+	line-height: 1.1;
+}
+
+.dk-itemtooltip-primary-label {
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text-muted);
+}
+
+.dk-itemtooltip-delta {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	font-weight: 600;
+	color: var(--ui-danger);
+	white-space: nowrap;
+}
+
+.dk-itemtooltip-delta.good {
+	color: var(--ui-success);
+}
+
+.dk-itemtooltip-stats {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.dk-itemtooltip-stat {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: var(--ui-space-3);
+}
+
+.dk-itemtooltip-stat-text {
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text);
+}
+
+.dk-itemtooltip-stat-value {
+	font-family: var(--ui-font-mono);
+	color: var(--ui-accent);
+}
+
+.dk-itemtooltip-set {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	padding-top: var(--ui-space-2);
+	border-top: 1px solid var(--ui-border);
+}
+
+.dk-itemtooltip-set-name {
+	font-size: var(--ui-fs-2);
+	font-weight: 600;
+	color: var(--ui-rarity-uncommon);
+}
+
+.dk-itemtooltip-set-progress {
+	font-family: var(--ui-font-mono);
+	font-weight: 400;
+}
+
+.dk-itemtooltip-set-line {
+	font-size: var(--ui-fs-2);
+	line-height: 1.4;
+	color: var(--ui-text-disabled);
+}
+
+.dk-itemtooltip-set-line.active {
+	color: var(--ui-rarity-uncommon);
+}
+
+.dk-itemtooltip-flavour {
+	font-size: var(--ui-fs-2);
+	font-style: italic;
+	line-height: 1.45;
+	color: var(--ui-text-muted);
+}
+
+.dk-itemtooltip-foot {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: var(--ui-space-3);
+	padding-top: var(--ui-space-2);
+	border-top: 1px solid var(--ui-border);
+}
+
+.dk-itemtooltip-reqs {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+}
+
+.dk-itemtooltip-req {
+	font-size: var(--ui-fs-1);
+	color: var(--ui-text-muted);
+}
+
+.dk-itemtooltip-req.unmet {
+	color: var(--ui-danger);
+}
+
+.dk-itemtooltip-sell {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 2px;
+	flex: none;
+}
+
+.dk-itemtooltip-sell-label {
+	font-size: var(--ui-fs-1);
+	color: var(--ui-text-muted);
+}

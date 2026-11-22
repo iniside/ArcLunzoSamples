@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Keep Pix Tab</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Tabs/KeepPixFrame.rml"/>
+	<link type="text/rcss" href="KeepPixTab.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="pix-box"></div>
+	<div class="pix-var"></div>
+	<div class="pix-text">Inherited text</div>
+	<div class="pix-border"></div>
+</body>
+</rml>

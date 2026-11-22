@@ -1,0 +1,108 @@
+body {
+	margin: 0;
+	display: flow-root;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000000;
+}
+
+div {
+	display: block;
+	height: 10px;
+	width: 40px;
+}
+
+.a {
+	color: #ff0000;
+	width: 40px;
+	&:hover {
+		color: #0000ff;
+	}
+	&.on {
+		width: 50px;
+	}
+	.b & {
+		color: #008000;
+		width: 60px;
+	}
+}
+
+.b {
+	width: 200px;
+	height: auto;
+}
+
+.list > .item, .list .entry {
+	width: 30px;
+	.wrap & {
+		width: 70px;
+	}
+	&.on {
+		width: 35px;
+	}
+}
+
+.list, .wrap, .grow {
+	width: 200px;
+	height: auto;
+}
+
+.desc {
+	width: 200px;
+	height: auto;
+	.child {
+		width: 80px;
+	}
+	> .direct {
+		width: 90px;
+	}
+	.mid {
+		width: 100px;
+		height: auto;
+		.leaf {
+			width: 25px;
+		}
+	}
+}
+
+.m {
+	width: 40px;
+	@media (min-width: 100px) {
+		width: 55px;
+	}
+	@media (max-width: 100px) {
+		width: 65px;
+	}
+	@supports (display: grid) {
+		&.s {
+			width: 75px;
+		}
+	}
+	@supports (-moz-orient: inline) {
+		width: 85px;
+	}
+	@starting-style {
+		width: 5px;
+	}
+}
+
+.container {
+	width: 100%;
+	@media (width >= 40rem) {
+		max-width: 40rem;
+	}
+}
+
+.hover-blue {
+	width: 45px;
+	&:hover {
+		@media (hover: hover) {
+			color: #0000ff;
+		}
+	}
+}
+
+.after-nest {
+	width: 33px;
+}

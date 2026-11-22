@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title>Binding Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<link type="text/rcss" href="BindingTest.rcss"/>
+	<viewmodel name="bind" preview="Preview/BindingTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="bind">
+	<div id="bar" class="bar"><div id="fill" class="fill" data-style-width="(Normalized * 100) + '%'"></div></div>
+	<div id="crow" class="crow"><div id="c0" class="ctag"></div><div id="cwrap" data-if="Value &gt; 50" style="display: contents"><div id="c1" class="ctag"></div><div id="c2" class="ctag"></div></div><div id="c3" class="ctag"></div></div>
+	<div id="press" class="press" data-event-mousedown="call('', 'SetValue', 25)" data-event-mouseup="call('', 'SetValue', 75)">press</div>
+	<div id="title">{{ BarId }} ({{ Slots.size }} slots)</div>
+	<div class="slot" data-for="slot, i : Slots" data-class-ready="slot.Ability.bHasAbility">{{ i }} {{ slot.QuickSlotId }} {{ slot.Ability.Cooldown | format(2) }}</div>
+</body>
+</rml>

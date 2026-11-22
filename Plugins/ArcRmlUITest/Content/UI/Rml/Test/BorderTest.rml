@@ -1,0 +1,115 @@
+<rml>
+<head>
+	<title>ArcRmlUI Border Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="BorderTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="page">
+		<div class="cell">
+			<span class="label">translucent border over colour</span>
+			<div class="row">
+				<div class="box translucent-color"></div>
+				<div class="box translucent-color round"></div>
+				<div class="box translucent-mixed"></div>
+			</div>
+		</div>
+		<div class="cell">
+			<span class="label">translucent border over gradient</span>
+			<div class="row">
+				<div class="box translucent-gradient"></div>
+				<div class="box translucent-gradient round"></div>
+				<div class="box translucent-gradient pill"></div>
+			</div>
+		</div>
+		<div class="cell wide">
+			<span class="label">dashed 1 / 2 / 3 / 4 / 6px, short and long sides</span>
+			<div class="row">
+				<div class="dash w1 short"></div>
+				<div class="dash w2 short"></div>
+				<div class="dash w3 short"></div>
+				<div class="dash w4 short"></div>
+				<div class="dash w6 short"></div>
+				<div class="dash w1 long"></div>
+				<div class="dash w3 long"></div>
+			</div>
+			<div class="row">
+				<div class="dash w1 short round"></div>
+				<div class="dash w2 short round"></div>
+				<div class="dash w3 short round"></div>
+				<div class="dash w4 short round"></div>
+				<div class="dash w6 short round"></div>
+				<div class="dash w2 long round"></div>
+				<div class="dash w4 long round"></div>
+			</div>
+		</div>
+		<div class="cell wide">
+			<span class="label">dotted 1 / 2 / 3 / 4 / 8px, short and long sides</span>
+			<div class="row">
+				<div class="dot w1 short"></div>
+				<div class="dot w2 short"></div>
+				<div class="dot w3 short"></div>
+				<div class="dot w4 short"></div>
+				<div class="dot w8 short"></div>
+				<div class="dot w2 long"></div>
+				<div class="dot w4 long"></div>
+			</div>
+			<div class="row">
+				<div class="dot w1 short round"></div>
+				<div class="dot w2 short round"></div>
+				<div class="dot w3 short round"></div>
+				<div class="dot w4 short round"></div>
+				<div class="dot w8 short round"></div>
+				<div class="dot w2 long round"></div>
+				<div class="dot w4 long round"></div>
+			</div>
+			<div class="row">
+				<div class="dot w1 even"></div>
+				<div class="dot w2 even"></div>
+				<div class="dot w3 even"></div>
+				<div class="dot w3 odd"></div>
+			</div>
+		</div>
+		<div class="cell">
+			<span class="label">background-clip border / padding / content</span>
+			<div class="row">
+				<div class="box clip clip-border"></div>
+				<div class="box clip clip-padding"></div>
+				<div class="box clip clip-content"></div>
+			</div>
+			<div class="row">
+				<div class="box clip round clip-border"></div>
+				<div class="box clip round clip-padding"></div>
+				<div class="box clip round clip-content"></div>
+			</div>
+		</div>
+		<div class="cell">
+			<span class="label">background-origin border / padding / content</span>
+			<div class="row">
+				<div class="box origin origin-border"></div>
+				<div class="box origin origin-padding"></div>
+				<div class="box origin origin-content"></div>
+			</div>
+			<div class="row">
+				<div class="box layers-one"></div>
+				<div class="box layers-two"></div>
+				<div class="box layers-list"></div>
+			</div>
+		</div>
+		<div class="cell">
+			<span class="label">border colour from text colour</span>
+			<div class="row">
+				<div class="box current">Aa</div>
+				<div class="box current dashed-current">Aa</div>
+				<div class="inherit-parent"><div class="box current-keyword">Aa</div></div>
+			</div>
+			<div class="row">
+				<div class="box current hoverable">hover</div>
+				<div class="box current animated">anim</div>
+				<div class="box current transition-target">Aa</div>
+			</div>
+		</div>
+	</div>
+</body>
+</rml>

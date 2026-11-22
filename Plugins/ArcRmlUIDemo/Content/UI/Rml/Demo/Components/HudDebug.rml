@@ -1,0 +1,39 @@
+<component>
+	<div class="dk-hud-debug">
+		<div class="dk-hud-debug-head">
+			<span class="dk-hud-debug-title">HUD debug · F9</span>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Badge" label="test tool" tone="warning"/>
+		</div>
+		<div class="dk-hud-debug-group" data-model="hud">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Divider" label="Actions"/>
+			<div class="dk-hud-debug-row">
+				<div class="dk-hud-debug-row-options">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" focusable="{{ true }}" size="sm" label="Vendor" variant="secondary" data-hotkey="IA_ArcDemo_OpenVendor" data-event-click="call('', 'OpenVendor')"/>
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" focusable="{{ true }}" size="sm" label="Crafting" variant="secondary" data-hotkey="IA_ArcDemo_OpenCrafting" data-event-click="call('', 'OpenCrafting')"/>
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" data-if="bMultiplayer" focusable="{{ true }}" size="sm" label="End match" variant="secondary" data-hotkey="IA_ArcDemo_EndMatch" data-event-click="call('', 'EndMatch')"/>
+				</div>
+			</div>
+		</div>
+		<div class="dk-hud-debug-group" data-model="ui">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Divider" label="Global"/>
+			<div class="dk-hud-debug-row">
+				<span class="dk-hud-debug-row-label">Theme</span>
+				<div class="dk-hud-debug-row-options">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" focusable="{{ true }}" size="sm" label="Midnight" variant="{{ Theme == 'midnight' ? 'primary' : 'secondary' }}" data-event-click="call('', 'SetTheme', 'midnight')"/>
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" focusable="{{ true }}" size="sm" label="Ember" variant="{{ Theme == 'ember' ? 'primary' : 'secondary' }}" data-event-click="call('', 'SetTheme', 'ember')"/>
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" focusable="{{ true }}" size="sm" label="Daylight" variant="{{ Theme == 'daylight' ? 'primary' : 'secondary' }}" data-event-click="call('', 'SetTheme', 'daylight')"/>
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" focusable="{{ true }}" size="sm" label="Slate" variant="{{ Theme == 'slate' ? 'primary' : 'secondary' }}" data-event-click="call('', 'SetTheme', 'slate')"/>
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" focusable="{{ true }}" size="sm" label="Relic" variant="{{ Theme == 'relic' ? 'primary' : 'secondary' }}" data-event-click="call('', 'SetTheme', 'relic')"/>
+				</div>
+			</div>
+			<div class="dk-hud-debug-row">
+				<span class="dk-hud-debug-row-label">Input</span>
+				<div class="dk-hud-debug-row-options">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" focusable="{{ true }}" size="sm" label="Keyboard" variant="{{ Input == 'keyboard' ? 'primary' : 'secondary' }}" data-event-click="call('', 'SetInputScheme', 'keyboard')"/>
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" focusable="{{ true }}" size="sm" label="Gamepad" variant="{{ Input == 'gamepad' ? 'primary' : 'secondary' }}" data-event-click="call('', 'SetInputScheme', 'gamepad')"/>
+				</div>
+			</div>
+		</div>
+		<slot/>
+	</div>
+</component>

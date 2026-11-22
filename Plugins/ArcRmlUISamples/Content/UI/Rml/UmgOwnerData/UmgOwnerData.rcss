@@ -1,0 +1,36 @@
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.uo-card {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 24px 32px;
+	background-color: rgba(20, 24, 32, 0.9);
+	border-radius: 8px;
+}
+
+.uo-title {
+	display: block;
+	font-size: 36px;
+	margin-bottom: 12px;
+}
+
+.uo-buttons {
+	margin-top: 16px;
+}
+
+.uo-button {
+	margin-right: 12px;
+	padding: 8px 20px;
+	border-radius: 4px;
+	background-color: #3a4456;
+	color: #e8e8e8;
+}
+
+.uo-button:hover {
+	background-color: #4d5a72;
+}

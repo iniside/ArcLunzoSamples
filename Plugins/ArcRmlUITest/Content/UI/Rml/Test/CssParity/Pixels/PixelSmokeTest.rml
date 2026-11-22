@@ -1,0 +1,14 @@
+<rml>
+<head>
+	<title>Pixel Smoke</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Pixels/PixelSmokeTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="box"></div>
+	<div id="gradient"></div>
+	<div id="rounded"></div>
+	<div id="tint"></div>
+</body>
+</rml>

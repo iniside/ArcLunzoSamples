@@ -1,0 +1,32 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 40px;
+	color: #00ff00;
+	--tab-fill: #ff0000;
+}
+
+div {
+	display: block;
+}
+
+#pf-head {
+	height: 40px;
+}
+
+[arc-embed] {
+	width: 400px;
+	height: 240px;
+	margin-left: 30px;
+}
+
+.pix-box, .pix-var {
+	border: 3px solid #ff0000;
+}
+
+.pix-text {
+	font-size: 40px;
+	color: #00ff00;
+}

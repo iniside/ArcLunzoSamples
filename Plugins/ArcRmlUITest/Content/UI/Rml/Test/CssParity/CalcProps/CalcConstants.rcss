@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+}
+
+.box { width: 10px; height: 10px; margin-bottom: 4px; background-color: #cc3366; }
+.pi { width: calc(pi * 10px); }
+.e { width: calc(e * 10px); }
+.min-inf { width: min(100px, calc(infinity * 1px)); }
+.max-neg-inf { width: max(20px, calc(-infinity * 1px)); }
+.upper { width: calc(PI * 20px); }

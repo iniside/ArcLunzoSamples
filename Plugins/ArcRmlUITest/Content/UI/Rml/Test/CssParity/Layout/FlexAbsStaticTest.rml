@@ -1,0 +1,36 @@
+<rml>
+<head>
+	<title>Flex Absolute Child Static Position Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Layout/FlexAbsStatic.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="fa-start" class="fc"><div id="fa-start-c" class="abs"></div></div>
+	<div id="fa-centre" class="fc jc-centre ai-centre"><div id="fa-centre-c" class="abs"></div></div>
+	<div id="fa-end" class="fc jc-end"><div id="fa-end-c" class="abs"></div></div>
+	<div id="fa-between" class="fc jc-between"><div id="fa-between-c" class="abs"></div></div>
+	<div id="fa-around" class="fc jc-around"><div id="fa-around-c" class="abs"></div></div>
+	<div id="fa-evenly" class="fc jc-evenly"><div id="fa-evenly-c" class="abs"></div></div>
+	<div id="fa-rrev" class="fc row-reverse"><div id="fa-rrev-c" class="abs"></div></div>
+	<div id="fa-col" class="fc column jc-centre"><div id="fa-col-c" class="abs"></div></div>
+	<div id="fa-crev" class="fc column-reverse"><div id="fa-crev-c" class="abs"></div></div>
+	<div id="fa-self" class="fc"><div id="fa-self-c" class="abs self-end"></div></div>
+	<div id="fa-wrev" class="fc wrap-reverse"><div id="fa-wrev-c" class="abs"></div></div>
+	<div id="fa-margin" class="fc jc-centre ai-centre"><div id="fa-margin-c" class="abs margin"></div></div>
+	<div class="outer"><div id="fa-static" class="fc static jc-centre ai-centre"><div id="fa-static-c" class="abs"></div></div></div>
+	<div id="fa-inset" class="fc jc-centre ai-centre"><div id="fa-inset-c" class="abs inset"></div></div>
+	<div id="fm-centre" class="fc jc-centre ai-centre"><div class="item"></div><div id="fm-centre-c" class="abs"></div></div>
+	<div id="fm-end" class="fc jc-end"><div class="item"></div><div id="fm-end-c" class="abs"></div></div>
+	<div id="fm-col" class="fc column jc-centre"><div class="item"></div><div id="fm-col-c" class="abs"></div></div>
+	<div id="fm-auto" class="fc auto ai-centre"><div class="item tall"></div><div id="fm-auto-c" class="abs"></div></div>
+	<div id="fm-aiend" class="fc ai-end"><div class="item"></div><div id="fm-aiend-c" class="abs"></div></div>
+	<div id="fm-wrev-base" class="fc wrap-reverse ai-baseline"><div class="item"></div><div id="fm-wrev-base-c" class="abs"></div></div>
+	<div id="fe-auto" class="fc auto ai-centre"><div id="fe-auto-c" class="abs"></div></div>
+	<div id="fe-min" class="fc auto min40 ai-centre"><div id="fe-min-c" class="abs"></div></div>
+	<div id="fe-max" class="fc auto min40 max20 ai-centre"><div id="fe-max-c" class="abs"></div></div>
+	<div id="fe-maxonly" class="fc h60 max20 ai-centre"><div id="fe-maxonly-c" class="abs"></div></div>
+	<div id="fe-col" class="fc column auto min40 jc-centre"><div id="fe-col-c" class="abs"></div></div>
+	<div class="inline-row"><div id="fe-inline" class="fc inline auto minw50 jc-centre"><div id="fe-inline-c" class="abs"></div></div></div>
+</body>
+</rml>

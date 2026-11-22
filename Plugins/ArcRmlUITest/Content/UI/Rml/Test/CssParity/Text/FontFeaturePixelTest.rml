@@ -1,0 +1,14 @@
+<rml>
+<head>
+	<title>Font Feature Pixel Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/FontFeaturePixelTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="dmg-111" class="hud-dmg">111</div>
+	<div id="dmg-808" class="hud-dmg">808</div>
+	<div id="zero-slashed" class="zero">0</div>
+	<div id="zero-plain" class="zero">0</div>
+</body>
+</rml>

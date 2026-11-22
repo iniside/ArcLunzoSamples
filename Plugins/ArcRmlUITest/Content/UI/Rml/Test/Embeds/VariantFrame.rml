@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Variant Frame</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="vframe" preview="Preview/VariantFrame.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="vframe">
+	<div id="vf-title">{{ title }}</div>
+	<div class="embed" arc-embed=""></div>
+</body>
+</rml>

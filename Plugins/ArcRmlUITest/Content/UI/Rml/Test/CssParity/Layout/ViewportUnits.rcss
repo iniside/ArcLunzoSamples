@@ -1,0 +1,20 @@
+body {
+	margin: 0;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+}
+
+.box { width: 10px; height: 10px; margin-bottom: 4px; background-color: #3366cc; }
+.dvw { width: 10dvw; }
+.svw { width: 10svw; }
+.lvw { width: 10lvw; }
+.dvh { width: 10dvh; }
+.svh { width: 10svh; }
+.lvh { width: 10lvh; }
+.vmin { width: 10vmin; }
+.vmax { width: 10vmax; }
+.calc-vmin { width: calc(10vmin + 10px); }
+.calc-dvh { width: calc(20dvh - 4px); }
+.calc-mixed { width: calc(5vmax + 5vmin); }
+.height { height: 5dvh; }
+.upper { width: 10VMIN; }

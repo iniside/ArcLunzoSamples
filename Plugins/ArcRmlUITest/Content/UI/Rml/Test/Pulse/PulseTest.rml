@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Pulse Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Pulse/Pulse.rcss"/>
+	<viewmodel name="pulse" preview="Preview/Pulse.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="pulse">
+	<div id="pt-box" data-pulse-flash="Serial">Box</div>
+</body>
+</rml>

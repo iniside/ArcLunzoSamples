@@ -1,0 +1,8 @@
+body > div {
+	position: absolute;
+	top: 20px;
+}
+
+#split { left: 20px; width: 200px; height: 60px; background: linear-gradient(90deg, #f0a020 0%, #f0a020 50%, #2060d0 50%, #2060d0 100%); }
+#stripes { left: 240px; width: 150px; height: 40px; background: repeating-linear-gradient(90deg, #ffffff 0 2px, #000000 2px 15px); }
+#diagonal { left: 420px; width: 100px; height: 100px; background: repeating-linear-gradient(135deg, rgba(58, 61, 66, 0.38) 0 4px, rgba(58, 61, 66, 0.22) 4px 8px); }

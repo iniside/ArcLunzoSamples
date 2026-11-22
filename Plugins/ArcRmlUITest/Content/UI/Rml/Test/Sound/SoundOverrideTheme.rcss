@@ -1,0 +1,7 @@
+body {
+	--sound-close: "asset:/ArcRmlUITest/UI/Sound/MS_Focus.MS_Focus";
+}
+
+.sn-themed {
+	--sound-click: "asset:/ArcRmlUITest/UI/Sound/MS_Alt.MS_Alt";
+}

@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Shorthands</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Anim/Shorthands.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="s-trans" class="row"></div>
+	<div id="s-anim" class="row"></div>
+	<div id="s-two" class="row"></div>
+</body>
+</rml>

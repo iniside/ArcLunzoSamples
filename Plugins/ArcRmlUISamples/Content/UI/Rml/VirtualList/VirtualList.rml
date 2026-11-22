@@ -1,0 +1,19 @@
+<rml>
+<head>
+	<title>Virtual list</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="VirtualList.rcss"/>
+	<viewmodel name="vl" class="/Script/ArcRmlUISamples.ArcRmlSamplesVirtualListViewModel" create="true"/>
+</head>
+<body data-model="vl">
+	<div class="vl-panel">
+		<h1 class="vl-title">Virtual list</h1>
+		<p id="vl-count" class="vl-result">{{ Rows.size }} rows, only the ones near the visible part exist</p>
+		<div id="vl-list" class="vl-list">
+			<button class="vl-row" data-for="n : Rows" data-virtual>Row {{ n }}</button>
+		</div>
+	</div>
+</body>
+</rml>

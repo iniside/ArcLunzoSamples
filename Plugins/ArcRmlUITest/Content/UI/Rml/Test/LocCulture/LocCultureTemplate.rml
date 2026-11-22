@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title loc="Title">Loc Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="lc" preview="Preview/LocCulture.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="lc">
+	<div id="lc-section" loc="Section">Section source</div>
+	<div id="lc-bound">{{ label }}</div>
+	<div id="lc-key">{{ ArcKeys.back }}</div>
+	<textarea id="lc-area-plain" loc="Section" style="display: block; width: 400px; height: 60px">Section source</textarea>
+	<textarea id="lc-area-edit" loc="Title" style="display: block; width: 400px; height: 60px">Title source</textarea>
+	<textarea id="lc-area-crlf" loc="Multi" style="display: block; width: 400px; height: 90px">Multi source</textarea>
+</body>
+</rml>

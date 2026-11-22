@@ -1,0 +1,24 @@
+<rml>
+<head>
+	<title>SelectPopupPixel</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/SelectPopupPixel.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="row">
+		<select id="spx-dark">
+			<option value="a">Apple</option>
+			<option value="b" selected="">Banana</option>
+			<option value="c">Cherry</option>
+			<option value="r" style="color: rgb(255, 0, 0)">Red</option>
+			<option value="e">Elder</option>
+		</select>
+		<select id="spx-semi">
+			<option value="a">Apple</option>
+			<option value="b" selected="">Banana</option>
+			<option value="c">Cherry</option>
+		</select>
+	</div>
+</body>
+</rml>

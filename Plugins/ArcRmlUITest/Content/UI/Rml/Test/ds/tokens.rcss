@@ -1,0 +1,88 @@
+/* ArcGame UI — generated from tokens.json */
+:root, [data-theme="dark"] {
+  --accent: #c9ccd1;
+  --on-accent: #14110a;
+  --gold-dark: #b08a48;
+  --gold-light: #efdcae;
+  --gold-deep: #8a6a30;
+  --disabled: #3a3d42;
+  --disabled-text: #6b7078;
+  --danger: #a8392c;
+  --danger-text: #d27a63;
+  --success: #8fa35a;
+  --mana: #5b8fb5;
+  --hunger: #b8813a;
+  --fatigue: #7d6aa3;
+  --rarity-uncommon: #7fb069;
+  --rarity-rare: #6a9fd8;
+  --rarity-epic: #a77fd6;
+  --rarity-legendary: #d98a3d;
+  --bar-health: #a32a1f;
+  --bar-stamina: #6f8233;
+  --bar-energy: #4f87ad;
+  --bar-hunger: #a8652a;
+  --bar-thirst: #2f7472;
+  --bar-fatigue: #5f4a7c;
+  --bar-critical: #b3261b;
+  --bar-track: rgba(14,15,17,0.35);
+  --damage-normal: #d6cfc2;
+  --damage-crit: #c99a4b;
+  --damage-small: #a9764a;
+  --damage-heal: #8ea47a;
+  --surface-page: #08090a;
+  --surface-void: #050506;
+  --glass-top: rgba(14,15,17,0.72);
+  --glass-bottom: rgba(4,5,6,0.78);
+  --glass-border: rgba(255,255,255,0.12);
+  --control-bg: rgba(255,255,255,0.07);
+  --control-bg-hover: rgba(255,255,255,0.11);
+  --control-border: rgba(255,255,255,0.12);
+  --slot-bg: rgba(0,0,0,0.18);
+  --well-bg: rgba(0,0,0,0.25);
+  --well-border: rgba(255,255,255,0.1);
+  --key-bg: rgba(0,0,0,0.45);
+  --key-border: rgba(255,255,255,0.15);
+  --text-title: rgba(255,255,255,0.92);
+  --text-body: rgba(255,255,255,0.9);
+  --text-label: rgba(255,255,255,0.7);
+  --text-muted: rgba(255,255,255,0.55);
+  --text-hint: rgba(255,255,255,0.5);
+  --scrollbar-thumb: rgba(255,255,255,0.18);
+  --shadow-panel: 0 18px 50px -8px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.08), inset 0 0 0 3px rgba(0,0,0,0.22), inset 0 0 0 4px rgba(255,255,255,0.03);
+  --shadow-glass-small: inset 0 1px 0 rgba(255,255,255,0.07), inset 0 0 0 2px rgba(0,0,0,0.2);
+  --shadow-slot-inset: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+:root {
+  --space-dock-gap: 16px;
+  --space-header-x: 16px;
+  --space-header-y: 11px;
+  --space-key-x: 5px;
+  --space-key-y: 1px;
+  --radius-panel: 10px;
+  --radius-glass: 9px;
+  --radius-slot: 8px;
+  --radius-control: 6px;
+  --radius-badge: 4px;
+  --radius-bar: 3px;
+  --blur-panel: 30px;
+  --blur-glass-small: 24px;
+  --blur-bar-track: 14px;
+  --bar-fill-opacity: 0.6;
+  --font-sans: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-damage: 'Barlow Condensed', sans-serif;
+}
+.panel-title { font-family: var(--font-sans); font-size: 12px; font-weight: 700; letter-spacing: 1.8px; }
+.ui-name { font-family: var(--font-sans); font-size: 15px; font-weight: 600; }
+.ui-text { font-family: var(--font-sans); font-size: 13.5px; font-weight: 500; }
+.mono-value { font-family: var(--font-mono); font-size: 13px; font-weight: 500; }
+.key-badge { font-family: var(--font-mono); font-size: 9px; font-weight: 600; }
+.damage-hit { font-family: var(--font-damage); font-size: 24px; font-weight: 600; }
+.damage-crit-hit { font-family: var(--font-damage); font-size: 33px; font-weight: 700; }
+html {
+  height: 100%;
+}
+body {
+  --sound-back: "asset:/ArcRmlUITest/UI/Sound/MS_Click.MS_Click";
+  --sound-close: "asset:/ArcRmlUITest/UI/Sound/MS_Click.MS_Click";
+}

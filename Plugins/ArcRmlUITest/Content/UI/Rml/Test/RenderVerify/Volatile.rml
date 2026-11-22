@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title>Retained Volatile Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="Volatile.rcss"/>
+	<viewmodel name="vv" preview="Preview/Volatile.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="vv">
+	<div id="s1" class="stat"></div>
+	<div id="s2" class="stat"></div>
+	<div id="shd" data-class-big="Shadow"></div>
+	<div id="behind"></div>
+	<div id="bd" data-class-big="Backdrop"></div>
+	<div id="rr" data-class-big="Round"><div id="rrk"></div></div>
+</body>
+</rml>

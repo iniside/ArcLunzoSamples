@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>Frame</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+</head>
+<body>
+	<div>Frame named by Tab.rml</div>
+	<div arc-embed=""></div>
+</body>
+</rml>

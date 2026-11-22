@@ -1,0 +1,14 @@
+<rml>
+<head>
+	<title>Font Fallback Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Layout/FontFallbackTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="ib-wrap" class="wrap"><div id="ib" class="ib"></div></div>
+	<div id="ib-wrap16" class="wrap size16"><div id="ib16" class="ib"></div></div>
+	<div id="text-wrap" class="wrap text">Plain text</div>
+	<div id="named-wrap" class="wrap text named">Named text</div>
+</body>
+</rml>

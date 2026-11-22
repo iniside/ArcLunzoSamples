@@ -1,0 +1,35 @@
+<rml>
+<head>
+	<title>ListMarkersTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Lists/ListMarkers.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<ul class="box" id="u1" style="left: 100px; top: 10px"><li id="a1">Disc 16</li></ul>
+	<ul class="box" id="u2" style="left: 100px; top: 40px"><li id="a2" style="padding-left: 20px; border-left: 5px solid transparent">Pad</li></ul>
+	<ul class="box" id="u3" style="left: 100px; top: 70px; list-style-type: circle"><li id="a3">Circle 16</li></ul>
+	<ul class="box" id="u4" style="left: 100px; top: 100px; list-style-type: square"><li id="a4">Square 16</li></ul>
+	<ul class="box" id="u5" style="left: 100px; top: 130px; font-size: 24px"><li id="a5">Disc 24</li></ul>
+	<ul class="box" id="u6" style="left: 100px; top: 170px; font-size: 32px; list-style-type: circle"><li id="a6">Circle 32</li></ul>
+	<ul class="box" id="u7" style="left: 100px; top: 220px; font-size: 12px"><li id="a7">Disc 12</li></ul>
+	<ul class="box" id="u8" style="left: 100px; top: 250px; font-size: 48px; list-style-type: square"><li id="a8">Sq 48</li></ul>
+	<ol class="box" id="o1" style="left: 400px; top: 10px"><li id="b1">One</li><li id="b2">Two</li><li id="b3">Three</li><li id="b4">4</li><li id="b5">5</li><li id="b6">6</li><li id="b7">7</li><li id="b8">8</li><li id="b9">9</li><li id="b10">Ten</li><li id="b11">Eleven</li></ol>
+	<ol class="box" id="o3" style="left: 400px; top: 300px; list-style-position: inside"><li id="d1">a</li><li>b</li><li>c</li><li>d</li><li>e</li><li>f</li><li>g</li><li>h</li><li>i</li><li id="d10">j</li></ol>
+	<ul class="box" id="u9" style="left: 700px; top: 10px"><li id="c1">Inside disc text that wraps onto a second line here ok</li></ul>
+	<ol class="box" id="o2" style="left: 700px; top: 80px; list-style-position: inside"><li id="c2">Inside decimal</li></ol>
+	<ul class="box" id="u10" style="left: 700px; top: 120px; list-style-position: inside; font-size: 32px"><li id="c3">In 32</li></ul>
+	<ul class="box" id="u11" style="left: 700px; top: 170px; line-height: 40px"><li id="c4">LH 40</li></ul>
+	<ul class="box" id="u12" style="left: 700px; top: 230px"><li id="c5"><p id="c5p">Para</p></li></ul>
+	<ul class="box" id="u14" style="left: 700px; top: 260px"><li id="c8"><div style="display: flex"><span id="c8s">Flex</span></div></li></ul>
+	<ul class="box" id="u15" style="left: 700px; top: 290px; list-style-position: inside"><li id="c9">   Lead space</li></ul>
+	<ul class="box" id="n1" style="left: 1000px; top: 10px"><li id="n1a">One<ul id="n2"><li id="n2a">Two<ul id="n3"><li id="n3a">Three</li></ul></li></ul></li></ul>
+	<ul class="box" id="k1" style="left: 1000px; top: 120px"><li id="k1a" style="color: #cc3300">Red</li><li id="k1b" style="font-size: 24px">Big</li></ul>
+	<ul class="box" id="k2" style="left: 1000px; top: 180px"><li id="k2a">None</li></ul>
+	<ol class="box" id="k3" style="left: 1000px; top: 210px" start="3"><li id="k3a">a</li><li id="k3b" value="10">b</li><li id="k3c">c</li></ol>
+	<ol class="box" id="k4" style="left: 1000px; top: 290px" reversed=""><li id="k4a">a</li><li id="k4b">b</li><li id="k4c">c</li></ol>
+	<ol class="box" id="k5" style="left: 1000px; top: 370px; list-style-type: upper-roman"><li id="k5a">a</li><li>b</li><li>c</li><li id="k5d">d</li></ol>
+	<ol class="box" id="k6" style="left: 1000px; top: 470px; list-style-type: decimal-leading-zero"><li id="k6a">a</li></ol>
+	<ol class="box" id="k7" style="left: 1000px; top: 500px" reversed=""><li id="k7r0">r</li><li id="k7r1">r</li><li id="k7r2">r</li><li id="k7r3">r</li><li id="k7r4">r</li><li id="k7r5">r</li><li id="k7r6">r</li><li id="k7r7">r</li><li id="k7r8">r</li><li id="k7r9">r</li></ol>
+</body>
+</rml>

@@ -1,0 +1,17 @@
+body {
+	margin: 0;
+	display: flow-root;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000000;
+}
+
+p { margin: 0 0 10px 0; width: 200px; }
+.clamp-2 { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.clamp-1 { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; }
+.box-only { overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; }
+.blue { color: #2050d0; }
+.green { color: #20a040; }
+.red { color: #d02020; }
+.purple { color: #8020c0; }

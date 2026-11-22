@@ -1,0 +1,8 @@
+.m1 { width: 43px; }
+
+.m1[title='a
+{ width: 99px; }
+.m2 { width: 99px; }
+] .m3 { width: 99px; }
+
+.m4 { width: 44px; }

@@ -1,0 +1,22 @@
+<rml>
+<head>
+	<title>Invalidation Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="Invalidation.rcss"/>
+	<viewmodel name="inv" preview="Preview/Invalidation.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="inv" data-attrif-data-x="HasX">
+	<div id="t1" class="t"></div>
+	<div id="t2" class="t"></div>
+	<div id="u1" class="u"></div>
+	<div id="anc" class="k" data-class-a="HasA"><div id="mid"><div id="b1" class="b"><div id="c1" class="c"></div></div></div></div>
+	<div id="b2" class="b"><div id="c2" class="c"></div></div>
+	<div id="pq" class="q" data-class-p="HasP"></div>
+	<div id="q2" class="q"></div>
+	<div id="sa" data-class-on="HasS"></div>
+	<div id="sb" class="s2"></div>
+	<div id="sc" class="s2"></div>
+	<div id="ic" data-class-icon-x="HasIcon"></div>
+</body>
+</rml>

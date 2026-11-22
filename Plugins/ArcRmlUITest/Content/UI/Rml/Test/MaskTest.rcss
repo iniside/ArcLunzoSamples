@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	font-family: 'Space Grotesk', sans-serif;
+	color: rgba(255,255,255,0.9);
+}
+
+div, p {
+	display: block;
+}
+
+.page {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding: 24px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	gap: 14px;
+	background: #08090a;
+}
+
+.cell {
+	position: relative;
+	width: 300px;
+	height: 190px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background: rgba(255,255,255,0.04);
+	border: 1px solid rgba(255,255,255,0.08);
+	border-radius: 8px;
+}
+
+.label {
+	display: block;
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 11px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: rgba(255,255,255,0.45);
+}
+
+.row {
+	display: flex;
+	gap: 16px;
+}
+
+.sample {
+	width: 120px;
+	height: 120px;
+	background: linear-gradient(135deg, #efdcae 0%, #b08a48 100%);
+}
+
+.composite-add { mask: linear-gradient(#000 0 0) no-repeat 0 0 / 50% 100% add, linear-gradient(#000 0 0) no-repeat 0 0 / 100% 50%; }
+.composite-subtract { mask: linear-gradient(#000 0 0) no-repeat 0 0 / 50% 100% subtract, linear-gradient(#000 0 0) no-repeat 0 0 / 100% 50%; }
+.composite-intersect { mask: linear-gradient(#000 0 0) no-repeat 0 0 / 50% 100% intersect, linear-gradient(#000 0 0) no-repeat 0 0 / 100% 50%; }
+.composite-exclude { mask: linear-gradient(#000 0 0) no-repeat 0 0 / 50% 100% exclude, linear-gradient(#000 0 0) no-repeat 0 0 / 100% 50%; }
+
+.longhands {
+	mask-image: linear-gradient(90deg, #000 50%, transparent 50%), linear-gradient(#000 50%, transparent 50%), linear-gradient(45deg, transparent 30%, #000 30%);
+	mask-composite: intersect, exclude;
+}
+
+.clip-bounded { padding: 30px; mask: linear-gradient(#000 0 0) content-box intersect, linear-gradient(#000 0 0); }
+
+.boxed {
+	padding: 18px;
+	border: 10px solid #6ba3d3;
+	mask-image: linear-gradient(#000 0 0);
+}
+.clip-content { mask-clip: content-box; }
+.clip-padding { mask-clip: padding-box; }
+.origin-content { mask: linear-gradient(#000 0 0) no-repeat 0 0 / 50% 50% content-box border-box; }
+.origin-border { mask: linear-gradient(#000 0 0) no-repeat 0 0 / 50% 50% border-box; }
+
+.ring-exclude { padding: 8px; border-radius: 16px; mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); }
+.ring-webkit { padding: 8px; border-radius: 16px; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; }
+
+.radial { mask-image: radial-gradient(circle, #000f 40%, #0000 70%); }
+
+/* Style Guide panel: gold corner ring ::before and rhombus ::after (verbatim declarations) */
+.panel { position: relative; height: 120px; display: flex; flex-direction: column; background: linear-gradient(180deg,rgba(14,15,17,0.72),rgba(4,5,6,0.78)); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; box-shadow: 0 18px 50px -8px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.08), inset 0 0 0 3px rgba(0,0,0,0.22), inset 0 0 0 4px rgba(255,255,255,0.03); }
+.panel::before { content: ''; position: absolute; inset: -1px; padding: 1px; border-radius: inherit; pointer-events: none; background: linear-gradient(135deg, rgba(176,138,72,0.75) 0%, rgba(232,211,160,0.8) 5%, rgba(176,138,72,0.35) 13%, rgba(255,255,255,0.0) 24%, rgba(255,255,255,0.0) 76%, rgba(176,138,72,0.35) 87%, rgba(232,211,160,0.8) 95%, rgba(176,138,72,0.75) 100%); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); }
+.panel::after { content: ''; position: absolute; top: -3px; left: 50%; width: 5px; height: 5px; transform: translateX(-50%) rotate(45deg); pointer-events: none; background: linear-gradient(135deg, #efdcae 0%, #b08a48 100%); box-shadow: 0 0 0 2px rgba(6,6,7,0.9); z-index: 2; }
+.panel-title { padding: 11px 16px; font-size: 12px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: rgba(255,255,255,0.92); }

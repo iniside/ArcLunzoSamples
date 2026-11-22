@@ -1,0 +1,30 @@
+body {
+	padding: 12px 16px;
+}
+
+.ft-label {
+	display: block;
+	font-size: 28px;
+	margin-bottom: 8px;
+}
+
+.ft-count {
+	display: block;
+	margin-bottom: 12px;
+	color: #9aa6ba;
+}
+
+.ft-add {
+	padding: 8px 20px;
+	border-radius: 4px;
+	background-color: #3a4456;
+	color: #e8e8e8;
+}
+
+.ft-add:hover {
+	background-color: #4d5a72;
+}
+
+.ft-add:focus-visible {
+	background-color: #2f6fb0;
+}

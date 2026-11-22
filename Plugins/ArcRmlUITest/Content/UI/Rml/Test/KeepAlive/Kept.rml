@@ -1,0 +1,33 @@
+<rml>
+<head>
+	<title>Keep Alive Kept</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="keep-alive" content="true"/>
+	<link type="text/rcss" href="KeepAlive.rcss"/>
+	<viewmodel name="kept" class="/Script/ArcRmlUITest.ArcRmlKeptTabViewModel" context="KeepAliveKept" on-close="OnLeftA"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="kept">
+	<div id="kk-count" class="kk-row">{{ Count }}</div>
+	<div id="kk-scroll">
+		<div class="kk-srow">Row 1</div>
+		<div class="kk-srow">Row 2</div>
+		<div class="kk-srow">Row 3</div>
+		<div class="kk-srow">Row 4</div>
+		<div class="kk-srow">Row 5</div>
+		<div class="kk-srow">Row 6</div>
+		<div class="kk-srow">Row 7</div>
+		<div class="kk-srow">Row 8</div>
+		<div class="kk-srow">Row 9</div>
+		<div class="kk-srow">Row 10</div>
+		<div class="kk-srow">Row 11</div>
+		<div class="kk-srow">Row 12</div>
+	</div>
+	<input id="kk-field" type="text" class="kk-field"/>
+	<div id="kk-anim"></div>
+	<div data-focus-area="main" data-focus-primary="">
+		<div id="kk-btn" class="kk-btn">One</div>
+		<div id="kk-btn2" class="kk-btn">Two</div>
+	</div>
+</body>
+</rml>

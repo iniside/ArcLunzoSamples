@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>ButtonBehaviour</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/ButtonBehaviour.rcss"/>
+	<viewmodel name="bb" preview="Preview/ButtonBehaviour.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="bb">
+	<div class="row"><button id="bb-first" data-event-click="call('', 'Pressed', 'bb-first')">First</button></div>
+	<div class="row"><button id="bb-off" disabled="">Off</button></div>
+	<div class="row"><button id="bb-last" class="box" data-attrif-disabled="lastOff">Last</button></div>
+	<div class="row" id="bb-label">{{ label }}</div>
+</body>
+</rml>

@@ -1,0 +1,14 @@
+<rml>
+<head>
+	<title>Line Metrics Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/LineMetricsTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="lh15" class="box lh15">Hxg</div>
+	<div id="lh16" class="box lh16">Hxg</div>
+	<div id="jbm9" class="box jbm9">Hx</div>
+	<div id="longword" class="box longword">AntidisestablishmentarianismAntidisestablishmentarianismAntidisestablishmentarianism</div>
+</body>
+</rml>

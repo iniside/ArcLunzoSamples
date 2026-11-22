@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>Line Clamp Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/LineClamp.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<p id="lc-two" class="clamp-2 blue">Lorem ipsum dolor sit amet consectetur adipisicing elit at velit illum provident ipsa maiores deleniti consectetur nobis et eaque.</p>
+	<p id="lc-one" class="clamp-1 green">Lorem ipsum dolor sit amet consectetur adipisicing elit at velit illum provident.</p>
+	<p id="lc-fits" class="clamp-2 red">Lorem ipsum dolor sit amet.</p>
+	<p id="lc-horizontal" class="box-only purple">Lorem ipsum dolor sit amet consectetur adipisicing elit at velit illum provident.</p>
+	<div id="lc-after">after</div>
+</body>
+</rml>

@@ -1,0 +1,57 @@
+.dk-progressring {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+	flex: none;
+	width: 120px;
+	height: 120px;
+	--ring-c: var(--ui-accent);
+}
+
+.dk-progressring.success {
+	--ring-c: var(--ui-success);
+}
+
+.dk-progressring.warning {
+	--ring-c: var(--ui-warning);
+}
+
+.dk-progressring.danger {
+	--ring-c: var(--ui-danger);
+}
+
+.dk-progressring::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 50%;
+	background: conic-gradient(var(--ring-c) 0%, var(--ring-c) var(--ring-v), var(--ui-surface-2) var(--ring-v), var(--ui-surface-2) 100%);
+	mask-image: radial-gradient(circle, transparent 64%, #000000 65%);
+}
+
+.dk-progressring-value {
+	position: relative;
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-3);
+	font-weight: 600;
+	line-height: 1;
+	color: var(--ui-text);
+}
+
+.dk-progressring-value.big {
+	font-size: var(--ui-fs-5);
+}
+
+.dk-progressring-label {
+	position: relative;
+	font-size: var(--ui-fs-1);
+	color: var(--ui-text-muted);
+	text-align: center;
+	max-width: 72%;
+}

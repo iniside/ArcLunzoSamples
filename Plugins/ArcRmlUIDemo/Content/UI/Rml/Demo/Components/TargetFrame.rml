@@ -1,0 +1,19 @@
+<component>
+	<prop name="label" default="Drowned Chorister"/>
+	<prop name="level" default="39"/>
+	<prop name="rank" default="normal"/>
+	<prop name="hostility" default="enemy"/>
+	<prop name="health"/>
+	<prop name="cast"/>
+	<prop name="debuffs"/>
+	<div class="dk-target-frame">
+		<div class="dk-target-frame-e2">
+			<span class="dk-target-frame-lvl-s">{{ ($rank == 'elite' ? $level : ($rank == 'boss' ? '??' : $level)) }}</span>
+			<span class="dk-target-frame-name-s" data-class-elite="$rank == 'elite'" data-class-boss="$rank == 'boss'" data-class-friendly="$hostility == 'friendly'" data-class-neutral="$hostility == 'neutral'">{{ ($label != '' ? $label : 'Drowned Chorister') }}</span>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Badge" data-if="(($rank == 'elite') || ($rank == 'boss'))" label="{{ ($rank == 'elite' ? 'Elite' : ($rank == 'boss' ? 'Boss' : 'Elite')) }}" tone="{{ ($rank == 'elite' ? 'warning' : ($rank == 'boss' ? 'danger' : 'warning')) }}" solid="{{ true }}"/>
+		</div>
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ResourceBar" kind="{{ ($rank == 'elite' ? ($hostility == 'friendly' ? 'friendly' : ($hostility == 'neutral' ? 'neutral' : 'elite')) : ($rank == 'boss' ? ($hostility == 'friendly' ? 'friendly' : ($hostility == 'neutral' ? 'neutral' : 'boss')) : ($hostility == 'friendly' ? 'friendly' : ($hostility == 'neutral' ? 'neutral' : 'enemy')))) }}" value="{{ $health.Value }}" trail="{{ $health.Trail }}" label="{{ (($health.Value * 100) | round) + '%' }}" height="{{ 14 }}"/>
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/CastBar" data-if="$cast.Active" label="{{ $cast.Label }}" progress="{{ $cast.Progress }}" seconds="{{ $cast.Seconds }}" interruptible="{{ $cast.Interruptible }}" state="{{ $cast.State }}" height="{{ 8 }}"/>
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/BuffRow" buffs="{{ $debuffs }}" size="{{ 22 }}"/>
+	</div>
+</component>

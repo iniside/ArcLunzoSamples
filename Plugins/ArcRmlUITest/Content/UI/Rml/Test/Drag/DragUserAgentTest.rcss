@@ -1,0 +1,9 @@
+#ua-src {
+	position: absolute;
+	left: 40px;
+	top: 40px;
+	width: 400px;
+	color: rgb(10, 230, 90);
+	background-color: rgb(30, 30, 30);
+	drag: clone;
+}

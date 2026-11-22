@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Flex Basis Min Content Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Layout/FlexBasisTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="cb0" id="cb-cap"><div id="fx-cap" class="fx"><div id="it-cap" class="item cap"><div class="w50"></div></div></div></div>
+	<div class="cb0" id="cb-raise"><div id="fx-raise" class="fx"><div id="it-raise" class="item raise"><div class="w50"></div></div></div></div>
+	<div class="cb0" id="cb-grow"><div id="fx-grow" class="fx"><div id="it-grow" class="item grow"><div class="w50"></div></div></div></div>
+	<div class="cb0" id="cb-free"><div id="fx-free" class="fx"><div id="it-free" class="item free"><div class="w50"></div></div></div></div>
+	<div class="cb0" id="cb-sum"><div id="fx-sum" class="fx"><div id="it-sum-a" class="item cap"><div class="w50"></div></div><div id="it-sum-b" class="item raise"><div class="w50"></div></div></div></div>
+	<div class="cb0" id="cb-wrap"><div id="fx-wrap" class="fx wrap"><div id="it-wrap-a" class="item cap"><div class="w50"></div></div><div id="it-wrap-b" class="item raise"><div class="w50"></div></div></div></div>
+	<div class="cb0" id="cb-wrap-cap"><div id="fx-wrap-cap" class="fx wrap"><div id="it-wrap-cap" class="item cap"><div class="w50"></div></div><div id="it-wrap-fixed" class="item fixed30"></div></div></div>
+	<div class="cb0" id="cb-border"><div id="fx-border" class="fx"><div id="it-border" class="item cap border-box"><div class="w50"></div></div></div></div>
+	<div class="cb0" id="cb-column"><div id="fx-column" class="fx column"><div id="it-column" class="item cap"><div class="w50"></div></div></div></div>
+	<div class="cb0" id="cb-cap-mix"><div id="fx-cap-mix" class="fx"><div id="it-cap-mix" class="item cap"><div class="w50"></div></div><div class="item mix"><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div></div></div></div>
+	<div class="cb0" id="cb-raise-mix"><div id="fx-raise-mix" class="fx"><div id="it-raise-mix" class="item raise"><div class="w50"></div></div><div class="item mix"><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div></div></div></div>
+</body>
+</rml>

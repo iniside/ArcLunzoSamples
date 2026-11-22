@@ -1,0 +1,14 @@
+<rml>
+<head>
+	<title>AbsoluteBoxChange</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/LayoutVerify/AbsoluteBoxChange.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+<div class="rel">In-flow relative block text<div class="sp"></div><div class="am"></div><div class="aw"><div class="fill"></div></div><div class="ab"></div></div>
+<div class="rel"><div class="mid">Absolute below an intermediate block<div class="am"></div></div></div>
+<div class="fr"><div class="fi">short</div><div class="fi rel">Relative flex item with text that wraps<div class="sp"></div><div class="am"></div><div class="ab"></div></div></div>
+<div class="host"><div class="outer"><div class="mid">Absolute containing block<div class="am"></div><div class="aw"></div></div></div></div>
+</body>
+</rml>

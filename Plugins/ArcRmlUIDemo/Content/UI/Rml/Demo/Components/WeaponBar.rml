@@ -1,0 +1,22 @@
+<component>
+	<prop name="weapons" default="[]"/>
+	<prop name="active" default="0"/>
+	<prop name="switches" default="0"/>
+	<prop name="reload" default="-1"/>
+	<prop name="input" default="keyboard"/>
+	<div class="dk-weapon-bar">
+		<div data-for="WeaponBarW, WeaponBarW_index : $weapons" class="dk-weapon-bar-w-s" data-style-padding="((WeaponBarW_index == $active) ? 'var(--hud-space-sm) var(--ui-space-2)' : 'var(--ui-space-1)')" data-style-background="((WeaponBarW_index == $active) ? 'var(--hud-plate)' : 'var(--hud-plate-2)')" data-style-border="('1px solid ' + ((WeaponBarW_index == $active) ? 'var(--ui-accent)' : 'var(--hud-stroke)'))" data-style-opacity="((WeaponBarW_index == $active) ? 1 : 0.7)" data-style-animation="((WeaponBarW_index == $active) ? ('' + (((($switches != 0 ? $switches : 0) % 2) != 0) ? 'hud-wpn-a' : 'hud-wpn-b') + ' 0.25s var(--ui-ease)') : 'none')">
+			<span class="dk-weapon-bar-w-icon-s" data-style-color="(((WeaponBarW.Clip == 0) &amp;&amp; (WeaponBarW.Reserve &lt;= 0)) ? 'var(--ui-danger)' : 'var(--hud-icon)')">
+				<i class="dk-weapon-bar-e4"><svg data-attr-src="WeaponBarW.Icon" data-attr-width="(WeaponBarW_index == $active ? 26 : 18)" data-attr-height="(WeaponBarW_index == $active ? 26 : 18)" stroke-width="2"/></i>
+			</span>
+			<div class="dk-weapon-bar-e5" data-if="(WeaponBarW_index == $active)">
+				<span class="dk-weapon-bar-name-s">{{ WeaponBarW.Name }}</span>
+				<span class="dk-weapon-bar-w-ammo-s" data-style-color="((((WeaponBarW.Clip == 0) &amp;&amp; (WeaponBarW.Reserve &lt;= 0)) || (WeaponBarW.Clip == 0)) ? 'var(--ui-danger)' : 'var(--hud-text)')">{{ ((WeaponBarW.Clip &gt;= 0) ? ((WeaponBarW.Clip + ' / ') + WeaponBarW.Reserve) : ((WeaponBarW.Charges &gt;= 0) ? (WeaponBarW.Charges + ' charges') : '∞')) }}</span>
+				<div class="dk-weapon-bar-r-track" data-if="($reload &gt;= 0)">
+					<div class="dk-weapon-bar-r-fill" data-style---dk-weapon-bar-r-fill-transform-1="($reload | arcmax(0))"/>
+				</div>
+			</div>
+			<span class="dk-weapon-bar-key-s">{{ $input == 'gamepad' ? (WeaponBarW_index == $active ? '' : ((WeaponBarW_index == $active + 1 || ($active == $weapons.size - 1 &amp;&amp; WeaponBarW_index == 0)) ? 'RB' : ((WeaponBarW_index == $active - 1 || ($active == 0 &amp;&amp; WeaponBarW_index == $weapons.size - 1)) ? 'LB' : ''))) : ((WeaponBarW_index == $active + 1 || ($active == $weapons.size - 1 &amp;&amp; WeaponBarW_index == 0)) ? 'E' : ((WeaponBarW_index == $active - 1 || ($active == 0 &amp;&amp; WeaponBarW_index == $weapons.size - 1)) ? 'Q' : '')) }}</span>
+		</div>
+	</div>
+</component>

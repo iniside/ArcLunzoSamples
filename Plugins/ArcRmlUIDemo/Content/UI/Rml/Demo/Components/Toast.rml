@@ -1,0 +1,18 @@
+<component>
+	<prop name="tone" default="info"/>
+	<prop name="title" default=""/>
+	<prop name="body" default=""/>
+	<prop name="actionLabel" default=""/>
+	<prop name="progress" default=""/>
+	<prop name="surface" default="menu"/>
+	<div class="dk-toast" data-class-hud="$surface == 'hud'" data-class-success="$tone == 'success'" data-class-warning="$tone == 'warning'" data-class-error="$tone == 'error'">
+		<span class="dk-toast-icon"><i class="dk-toast-glyph" data-if="$tone == 'success'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/circle-check.svg" width="20" height="20" stroke-width="2"/></i><i class="dk-toast-glyph" data-if="$tone == 'warning'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/triangle-alert.svg" width="20" height="20" stroke-width="2"/></i><i class="dk-toast-glyph" data-if="$tone == 'error'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/circle-x.svg" width="20" height="20" stroke-width="2"/></i><i class="dk-toast-glyph" data-if="$tone != 'success' &amp;&amp; $tone != 'warning' &amp;&amp; $tone != 'error'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/info.svg" width="20" height="20" stroke-width="2"/></i></span>
+		<div class="dk-toast-main">
+			<span class="dk-toast-title">{{ $title }}</span>
+			<span class="dk-toast-body" data-if="$body != ''">{{ $body }}</span>
+		</div>
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" data-if="$actionLabel != ''" label="{{ $actionLabel }}" variant="ghost" size="sm"/>
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/IconButton" icon="/ArcRmlUIDemo/UI/Rml/icons/x.svg" size="sm"/>
+		<span class="dk-toast-bar" data-if="$progress != ''" data-style-width="$progress + '%'"></span>
+	</div>
+</component>

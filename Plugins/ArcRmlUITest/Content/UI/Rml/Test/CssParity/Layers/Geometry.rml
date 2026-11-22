@@ -1,0 +1,32 @@
+<rml>
+<head>
+	<title>Layer Geometry</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Layers/Geometry.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="sizeafter" class="box"></div>
+	<div id="cover" class="box"></div>
+	<div id="contain" class="box"></div>
+	<div id="rightbottom" class="box"></div>
+	<div id="pos3bg" class="box"></div>
+	<div id="pos3mask" class="box"></div>
+	<div id="pos3maskpos" class="box"></div>
+	<div id="space" class="box"></div>
+	<div id="spaceone" class="box"></div>
+	<div id="round" class="box"></div>
+	<div id="repeatx" class="box"></div>
+	<div id="twolayers" class="box"></div>
+	<div id="glass" class="box"></div>
+	<div id="urlmask" class="box"></div>
+	<div id="maskshort" class="box"></div>
+	<div id="masklong" class="box"></div>
+	<div id="maskfixed" class="box"></div>
+	<div id="urlflip" class="box"></div>
+	<div id="addc" class="box"></div>
+	<div id="subc" class="box"></div>
+	<div id="interc" class="box"></div>
+	<div id="exclc" class="box"></div>
+</body>
+</rml>

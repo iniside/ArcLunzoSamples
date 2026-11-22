@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Update Cost Input Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="InputNoop.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="plain" class="plain">Plain text</div>
+	<button id="first" class="btn">First</button>
+	<button id="second" class="btn">Second</button>
+</body>
+</rml>

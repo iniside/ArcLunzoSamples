@@ -1,0 +1,47 @@
+<rml>
+<head>
+	<title>Keep Tab A</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Tabs/KeepFrame.rml"/>
+	<link type="text/rcss" href="KeepTab.rcss"/>
+	<link type="text/rcss" href="KeepTabA.rcss"/>
+	<viewmodel name="shared" class="/Script/ArcRmlUITest.ArcRmlKeptTabViewModel" context="KeepShared"/>
+	<viewmodel name="owna" class="/Script/ArcRmlUITest.ArcRmlKeptTabViewModel" context="KeepOwnA"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="owna">
+	<div id="ka-title" class="kt-row">Tab A</div>
+	<div id="ka-own" class="kt-row">{{ Count }}</div>
+	<div data-model="shared">
+		<div id="ka-shared" class="kt-row">{{ Count }}</div>
+		<div id="ka-ping" class="kt-btn" data-event-click="call('', 'Ping')">Ping shared</div>
+	</div>
+	<div id="ka-ownping" class="kt-btn" data-event-click="call('', 'Ping')">Ping own</div>
+	<div id="ka-only-area" data-focus-area="a-only">
+		<div id="ka-only-btn" class="kt-btn">A only</div>
+	</div>
+	<div id="ka-scroll">
+		<div class="ka-srow">Row 1</div>
+		<div class="ka-srow">Row 2</div>
+		<div class="ka-srow">Row 3</div>
+		<div class="ka-srow">Row 4</div>
+		<div class="ka-srow">Row 5</div>
+		<div class="ka-srow">Row 6</div>
+		<div class="ka-srow">Row 7</div>
+		<div class="ka-srow">Row 8</div>
+		<div class="ka-srow">Row 9</div>
+		<div class="ka-srow">Row 10</div>
+		<div class="ka-srow">Row 11</div>
+		<div class="ka-srow">Row 12</div>
+	</div>
+	<input id="ka-field" type="text" class="kt-field"/>
+	<div id="ka-anim"></div>
+	<div id="ka-deco"></div>
+	<div class="ka-list" data-focus-area="list" data-focus-primary="">
+		<div id="ka-btn" class="kt-btn" data-drag-type="item" data-drag-action="IA_UISecondary">A1</div>
+		<div id="ka-btn2" class="kt-btn" data-drop-accept="item">A2</div>
+	</div>
+	<div id="ka-box" class="kt-box">A box</div>
+	<div id="dup">tab dup</div>
+	<div id="nid">tab nid</div>
+	<div id="ka-over"></div>
+</body>
+</rml>

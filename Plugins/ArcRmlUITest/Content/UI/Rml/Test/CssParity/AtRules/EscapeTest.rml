@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title>EscapeTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/EscapePretty.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/EscapeMinified.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="p1" class="row @p1:bg"></div>
+	<div id="after-p" class="row after-p"></div>
+	<div id="m1" class="row @m1:bg"></div>
+	<div id="m2" class="row @m2:bg"></div>
+	<div id="m3" class="row @md/main:bg"></div>
+	<div id="after-m" class="row after-m"></div>
+</body>
+</rml>

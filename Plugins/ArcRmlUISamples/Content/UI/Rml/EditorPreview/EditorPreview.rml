@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Editor preview</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="EditorPreview.rcss"/>
+	<viewmodel name="player" preview="Preview/EditorPreview.json"/>
+</head>
+<body data-model="player">
+	<div class="ep-panel">
+		<h1 class="ep-title">Editor preview</h1>
+		<p data-if="!ArcResolved">No preview data is shown.</p>
+		<p>{{ Name }}, level {{ Level }}</p>
+		<div class="ep-bar"><div class="ep-fill" data-style-width="(Health * 100) + '%'" data-style-background-color="Accent"></div></div>
+		<p class="ep-warning" data-if="bLowHealth">Health is low.</p>
+		<div class="ep-item" data-for="item : Items">{{ item }}</div>
+		<button class="ep-button" data-action="close">Close</button>
+	</div>
+</body>
+</rml>

@@ -1,0 +1,23 @@
+<rml>
+<head>
+	<title>World marker</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="WorldMarker.rcss"/>
+	<viewmodel name="marker" class="/Script/ArcRmlUISamples.ArcRmlSamplesWorldMarkerViewModel" create="true"/>
+</head>
+<body data-model="marker">
+	<div id="wm-marker" class="wm-marker" data-world="Anchor">
+		<div class="wm-label">Target</div>
+	</div>
+	<div class="wm-panel">
+		<h1 class="wm-title">World marker</h1>
+		<p>The label follows the cube.</p>
+		<div class="wm-buttons">
+			<button id="wm-move" class="wm-button" autofocus data-event-click="call('', 'Move')">Move</button>
+			<button class="wm-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

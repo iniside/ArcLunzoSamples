@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title>UMG events: second document</title>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="UmgEvents.rcss"/>
+</head>
+<body>
+	<div class="ue-card">
+		<h1 class="ue-title">Second document</h1>
+		<p>The graph swapped the document with Set Document. The widget and its place on the screen stayed.</p>
+		<div class="ue-buttons">
+			<button id="ue-back" class="ue-button" data-action="open:/ArcRmlUISamples/UI/Rml/UmgEvents/UmgEvents.rml">Back to the first document</button>
+			<button class="ue-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

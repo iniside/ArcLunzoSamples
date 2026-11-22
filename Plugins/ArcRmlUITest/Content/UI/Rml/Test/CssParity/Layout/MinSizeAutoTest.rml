@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Min Size Auto Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Layout/MinSizeAutoTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="auto-row" class="box wordrow"><div id="auto" class="grow zero explicit">Extraordinarily</div><div id="auto-b" class="grow">ab</div></div>
+	<div id="none-row" class="box wordrow"><div id="none" class="grow">Extraordinarily</div><div id="none-b" class="grow">ab</div></div>
+	<div id="blk-wrap" class="box"><div id="blk" class="floor blk"></div></div>
+</body>
+</rml>

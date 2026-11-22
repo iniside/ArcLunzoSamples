@@ -1,0 +1,140 @@
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.row {
+	display: flex;
+	position: relative;
+	width: 400px;
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+.wrap {
+	flex-wrap: wrap;
+	width: 120px;
+	height: auto;
+}
+
+.item {
+	display: block;
+	width: 40px;
+	height: 20px;
+}
+
+#row-a, #wrap-a { width: 10px; }
+#row-b, #wrap-b { width: 20px; }
+#row-c, #wrap-c { width: 30px; }
+#row-d, #wrap-d { width: 40px; }
+#row-e, #wrap-e { width: 50px; }
+#contents-a { width: 15px; }
+#contents-b { width: 25px; }
+#contents-c { width: 35px; }
+
+.abs {
+	display: block;
+	position: absolute;
+	order: -5;
+	left: 300px;
+	top: 0px;
+	width: 10px;
+	height: 10px;
+}
+
+.colrev {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 50px;
+	height: 120px;
+	margin-bottom: 10px;
+}
+
+.citem {
+	display: block;
+	width: 50px;
+}
+
+#colrev-a { height: 10px; }
+#colrev-b { height: 20px; }
+#colrev-c { height: 30px; }
+
+.contents {
+	display: contents;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 40px 40px 40px;
+	grid-auto-rows: 20px;
+	width: 120px;
+	margin-bottom: 10px;
+}
+
+.gitem {
+	display: block;
+}
+
+.placed {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.overlap {
+	display: flex;
+	width: 200px;
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+.oitem {
+	display: block;
+	width: 60px;
+	height: 40px;
+}
+
+.o0 { order: 0; }
+.o1 { order: 1; }
+.o2 { order: 2; }
+.om1 { order: -1; }
+.op3 { order: +3; }
+
+#overlap-a, #overlap-rel-a { margin-left: -30px; }
+#overlap-a { background-color: #ff0000; }
+#overlap-b { background-color: #0000ff; }
+#overlap-rel-a { background-color: #ff8000; }
+#overlap-rel-b { background-color: #8000ff; }
+
+.rel {
+	position: relative;
+}
+
+#overlap-a:hover { background-color: #00ff00; }
+#overlap-b:hover { background-color: #ffff00; }
+#overlap-rel-a:hover { background-color: #00ffff; }
+#overlap-rel-b:hover { background-color: #ff00ff; }
+
+.mix {
+	display: grid;
+	grid-template-columns: 60px;
+	grid-template-rows: 40px;
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+.mixa, .mixb {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#mix-a { display: block; background-color: #c00000; }
+#mix-b { background-color: #0000c0; }
+#mix-a:hover { background-color: #00c000; }
+#mix-b:hover { background-color: #c0c000; }
+
+.flta { float: left; background-color: #c000c0; }
+.fltb { margin-left: -30px; background-color: #804000; }
+#flt-a:hover { background-color: #00c0c0; }
+#flt-b:hover { background-color: #408000; }
+
+body { margin: 0; }

@@ -1,0 +1,41 @@
+<rml>
+<head>
+	<title>Tab bar</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="input-mapping" content="/ArcRmlUISamples/UI/Rml/TabBar/IMC_Sample_TabBar"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="TabBar.rcss"/>
+	<viewmodel name="tabs" class="/Script/ArcRmlUISamples.ArcRmlSamplesTabBarViewModel" create="true"/>
+</head>
+<body data-model="tabs">
+	<div class="tb-panel">
+		<h1 class="tb-title">Tab bar</h1>
+		<div class="tb-row">
+			<span class="tb-prompt">{{ ArcKeys.IA_Sample_PrevTab }}</span>
+			<div class="tb-bar" data-focus-area="bar" data-focus-primary="" data-hotkey-cycle="IA_Sample_PrevTab IA_Sample_NextTab">
+				<button id="tb-tab-items" class="tb-tab" autofocus="" data-attrif-selected="Selected == 0" data-focus-enter="items" data-event-click="call('', 'Select', 0)">Items</button>
+				<button id="tb-tab-skills" class="tb-tab" data-attrif-selected="Selected == 1" data-focus-enter="skills" data-event-click="call('', 'Select', 1)">Skills</button>
+				<button id="tb-tab-map" class="tb-tab" data-attrif-selected="Selected == 2" data-focus-enter="map" data-event-click="call('', 'Select', 2)">Map</button>
+			</div>
+			<span class="tb-prompt">{{ ArcKeys.IA_Sample_NextTab }}</span>
+		</div>
+		<div class="tb-content" data-if="Selected == 0" data-focus-area="items">
+			<p class="tb-label">Items</p>
+			<button id="tb-items-sword" class="tb-item">Sword</button>
+			<button id="tb-items-shield" class="tb-item">Shield</button>
+		</div>
+		<div class="tb-content" data-if="Selected == 1" data-focus-area="skills">
+			<p class="tb-label">Skills</p>
+			<button id="tb-skills-dash" class="tb-item">Dash</button>
+			<button id="tb-skills-block" class="tb-item">Block</button>
+		</div>
+		<div class="tb-content" data-if="Selected == 2" data-focus-area="map">
+			<p class="tb-label">Map</p>
+			<button id="tb-map-north" class="tb-item">North</button>
+			<button id="tb-map-south" class="tb-item">South</button>
+		</div>
+		<p class="tb-hint">{{ ArcKeys.IA_Sample_PrevTab }} and {{ ArcKeys.IA_Sample_NextTab }} switch tabs, {{ ArcKeys.back }} closes the screen.</p>
+	</div>
+</body>
+</rml>

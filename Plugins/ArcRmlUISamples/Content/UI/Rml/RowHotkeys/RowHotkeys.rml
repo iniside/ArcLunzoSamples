@@ -1,0 +1,30 @@
+<rml>
+<head>
+	<title>Row hotkeys</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="input-mapping" content="/ArcRmlUISamples/UI/Rml/RowHotkeys/IMC_Sample_RowHotkeys"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="RowHotkeys.rcss"/>
+	<viewmodel name="rh" class="/Script/ArcRmlUISamples.ArcRmlSamplesRowHotkeysViewModel" create="true"/>
+</head>
+<body data-model="rh">
+	<div class="rh-panel">
+		<h1 class="rh-title">Row hotkeys</h1>
+		<div id="rh-row-0" class="rh-row" data-attrif-favourite="Favourite == 0" data-hotkey-focus="IA_Sample_RowAction" data-event-click="call('', 'SetFavourite', 0)">
+			<span class="rh-name">Potion</span>
+			<button id="rh-use-0" class="rh-use" autofocus="" data-event-click="call('', 'Use', 'Potion'); stopPropagation()">Use</button>
+		</div>
+		<div id="rh-row-1" class="rh-row" data-attrif-favourite="Favourite == 1" data-hotkey-focus="IA_Sample_RowAction" data-event-click="call('', 'SetFavourite', 1)">
+			<span class="rh-name">Scroll</span>
+			<button id="rh-use-1" class="rh-use" data-event-click="call('', 'Use', 'Scroll'); stopPropagation()">Use</button>
+		</div>
+		<div id="rh-row-2" class="rh-row" data-attrif-favourite="Favourite == 2" data-hotkey-focus="IA_Sample_RowAction" data-event-click="call('', 'SetFavourite', 2)">
+			<span class="rh-name">Gem</span>
+			<button id="rh-use-2" class="rh-use" data-event-click="call('', 'Use', 'Gem'); stopPropagation()">Use</button>
+		</div>
+		<p id="rh-readout" class="rh-hint">Favourite: {{ Favourite }}, used: {{ Used }}</p>
+		<p class="rh-hint">{{ ArcKeys.IA_Sample_RowAction }} marks the focused row as the favourite.</p>
+	</div>
+</body>
+</rml>

@@ -1,0 +1,90 @@
+.dk-toggle {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--ui-space-3);
+}
+
+.dk-toggle.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-toggle-track {
+	position: relative;
+	display: inline-block;
+	flex: none;
+	width: 50px;
+	height: 28px;
+	box-sizing: border-box;
+	border-radius: 14px;
+	background: var(--ui-surface-2);
+	border: 1px solid var(--ui-border-strong);
+	box-shadow: none;
+	cursor: pointer;
+	transition: background-color var(--ui-dur-fast) var(--ui-ease), border-color var(--ui-dur-fast) var(--ui-ease), transform var(--ui-dur-fast) var(--ui-ease);
+	--h-bd: var(--ui-accent);
+	--p-tf: scale(0.95);
+}
+
+.dk-toggle.on .dk-toggle-track {
+	background: var(--ui-accent);
+	border: 1px solid var(--ui-accent);
+}
+
+.dk-toggle.disabled .dk-toggle-track {
+	background: var(--ui-surface-2);
+	border: 1px solid var(--ui-border);
+	cursor: default;
+	--h-bd: var(--ui-border);
+	--p-tf: none;
+}
+
+.dk-toggle-track:hover, .dk-toggle:focus-visible .dk-toggle-track {
+	border-color: var(--h-bd);
+}
+
+.dk-toggle-track:active {
+	transform: var(--p-tf);
+}
+
+.dk-toggle:focus-visible .dk-toggle-track {
+	box-shadow: var(--ui-focus-ring);
+}
+
+.dk-toggle-knob {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: var(--ui-text-muted);
+	transform: translateX(0px);
+	transition: transform var(--ui-dur-normal) var(--ui-ease), background-color var(--ui-dur-fast) var(--ui-ease);
+}
+
+.dk-toggle.on .dk-toggle-knob {
+	background: var(--ui-accent-text);
+	transform: translateX(22px);
+}
+
+.dk-toggle.disabled .dk-toggle-knob {
+	background: var(--ui-text-disabled);
+}
+
+.dk-toggle-text {
+	font-size: var(--ui-fs-2);
+	font-family: var(--ui-font-mono);
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: var(--ui-text-muted);
+	min-width: 32px;
+}
+
+.dk-toggle.on .dk-toggle-text {
+	color: var(--ui-text);
+}
+
+.dk-toggle.disabled .dk-toggle-text {
+	color: var(--ui-text-disabled);
+}

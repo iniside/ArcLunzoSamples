@@ -1,0 +1,74 @@
+<rml>
+<head>
+	<title>Replaced Elements In Intrinsic Widths Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/ReplacedIntrinsic.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="cbw" style="left: 20px; top: 10px;"><div class="fx"><div id="fi-px-w" class="p fi"><img id="fi-px-w-r" class="r-px" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbw" style="left: 190px; top: 10px;"><div id="ib-px-w" class="p ib"><img id="ib-px-w-r" class="r-px" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 360px; top: 10px;"><div id="fl-px-w" class="p fl"><img id="fl-px-w-r" class="r-px" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 530px; top: 10px;"><div id="ab-px-w" class="p ab"><img id="ab-px-w-r" class="r-px" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 720px; top: 10px;"><div class="fx"><div id="fi-px-n" class="p fi"><img id="fi-px-n-r" class="r-px" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbn" style="left: 860px; top: 10px;"><div id="ib-px-n" class="p ib"><img id="ib-px-n-r" class="r-px" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 1000px; top: 10px;"><div id="fl-px-n" class="p fl"><img id="fl-px-n-r" class="r-px" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 1140px; top: 10px;"><div id="ab-px-n" class="p ab"><img id="ab-px-n-r" class="r-px" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 20px; top: 95px;"><div class="fx"><div id="fi-calc-w" class="p fi"><img id="fi-calc-w-r" class="r-calc" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbw" style="left: 190px; top: 95px;"><div id="ib-calc-w" class="p ib"><img id="ib-calc-w-r" class="r-calc" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 360px; top: 95px;"><div id="fl-calc-w" class="p fl"><img id="fl-calc-w-r" class="r-calc" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 530px; top: 95px;"><div id="ab-calc-w" class="p ab"><img id="ab-calc-w-r" class="r-calc" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 720px; top: 95px;"><div class="fx"><div id="fi-calc-n" class="p fi"><img id="fi-calc-n-r" class="r-calc" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbn" style="left: 860px; top: 95px;"><div id="ib-calc-n" class="p ib"><img id="ib-calc-n-r" class="r-calc" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 1000px; top: 95px;"><div id="fl-calc-n" class="p fl"><img id="fl-calc-n-r" class="r-calc" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 1140px; top: 95px;"><div id="ab-calc-n" class="p ab"><img id="ab-calc-n-r" class="r-calc" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 20px; top: 180px;"><div class="fx"><div id="fi-pct-w" class="p fi"><img id="fi-pct-w-r" class="r-pct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbw" style="left: 190px; top: 180px;"><div id="ib-pct-w" class="p ib"><img id="ib-pct-w-r" class="r-pct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 360px; top: 180px;"><div id="fl-pct-w" class="p fl"><img id="fl-pct-w-r" class="r-pct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 530px; top: 180px;"><div id="ab-pct-w" class="p ab"><img id="ab-pct-w-r" class="r-pct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 720px; top: 180px;"><div class="fx"><div id="fi-pct-n" class="p fi"><img id="fi-pct-n-r" class="r-pct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbn" style="left: 860px; top: 180px;"><div id="ib-pct-n" class="p ib"><img id="ib-pct-n-r" class="r-pct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 1000px; top: 180px;"><div id="fl-pct-n" class="p fl"><img id="fl-pct-n-r" class="r-pct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 1140px; top: 180px;"><div id="ab-pct-n" class="p ab"><img id="ab-pct-n-r" class="r-pct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 20px; top: 265px;"><div class="fx"><div id="fi-maxpct-w" class="p fi"><img id="fi-maxpct-w-r" class="r-maxpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbw" style="left: 190px; top: 265px;"><div id="ib-maxpct-w" class="p ib"><img id="ib-maxpct-w-r" class="r-maxpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 360px; top: 265px;"><div id="fl-maxpct-w" class="p fl"><img id="fl-maxpct-w-r" class="r-maxpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 530px; top: 265px;"><div id="ab-maxpct-w" class="p ab"><img id="ab-maxpct-w-r" class="r-maxpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 720px; top: 265px;"><div class="fx"><div id="fi-maxpct-n" class="p fi"><img id="fi-maxpct-n-r" class="r-maxpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbn" style="left: 860px; top: 265px;"><div id="ib-maxpct-n" class="p ib"><img id="ib-maxpct-n-r" class="r-maxpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 1000px; top: 265px;"><div id="fl-maxpct-n" class="p fl"><img id="fl-maxpct-n-r" class="r-maxpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 1140px; top: 265px;"><div id="ab-maxpct-n" class="p ab"><img id="ab-maxpct-n-r" class="r-maxpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 20px; top: 350px;"><div class="fx"><div id="fi-svg-w" class="p fi"><svg id="fi-svg-w-r" class="r-svg" viewBox="0 0 28 24" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="24" fill="#ff006e"/></svg></div></div></div>
+	<div class="cbw" style="left: 190px; top: 350px;"><div id="ib-svg-w" class="p ib"><svg id="ib-svg-w-r" class="r-svg" viewBox="0 0 28 24" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="24" fill="#ff006e"/></svg></div></div>
+	<div class="cbw" style="left: 360px; top: 350px;"><div id="fl-svg-w" class="p fl"><svg id="fl-svg-w-r" class="r-svg" viewBox="0 0 28 24" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="24" fill="#ff006e"/></svg></div></div>
+	<div class="cbw" style="left: 530px; top: 350px;"><div id="ab-svg-w" class="p ab"><svg id="ab-svg-w-r" class="r-svg" viewBox="0 0 28 24" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="24" fill="#ff006e"/></svg></div></div>
+	<div class="cbn" style="left: 720px; top: 350px;"><div class="fx"><div id="fi-svg-n" class="p fi"><svg id="fi-svg-n-r" class="r-svg" viewBox="0 0 28 24" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="24" fill="#ff006e"/></svg></div></div></div>
+	<div class="cbn" style="left: 860px; top: 350px;"><div id="ib-svg-n" class="p ib"><svg id="ib-svg-n-r" class="r-svg" viewBox="0 0 28 24" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="24" fill="#ff006e"/></svg></div></div>
+	<div class="cbn" style="left: 1000px; top: 350px;"><div id="fl-svg-n" class="p fl"><svg id="fl-svg-n-r" class="r-svg" viewBox="0 0 28 24" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="24" fill="#ff006e"/></svg></div></div>
+	<div class="cbn" style="left: 1140px; top: 350px;"><div id="ab-svg-n" class="p ab"><svg id="ab-svg-n-r" class="r-svg" viewBox="0 0 28 24" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="24" fill="#ff006e"/></svg></div></div>
+	<div class="cbw" style="left: 20px; top: 435px;"><div class="fx"><div id="fi-min-w" class="p fi"><img id="fi-min-w-r" class="r-min" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbw" style="left: 190px; top: 435px;"><div id="ib-min-w" class="p ib"><img id="ib-min-w-r" class="r-min" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 360px; top: 435px;"><div id="fl-min-w" class="p fl"><img id="fl-min-w-r" class="r-min" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 530px; top: 435px;"><div id="ab-min-w" class="p ab"><img id="ab-min-w-r" class="r-min" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 720px; top: 435px;"><div class="fx"><div id="fi-min-n" class="p fi"><img id="fi-min-n-r" class="r-min" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbn" style="left: 860px; top: 435px;"><div id="ib-min-n" class="p ib"><img id="ib-min-n-r" class="r-min" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 1000px; top: 435px;"><div id="fl-min-n" class="p fl"><img id="fl-min-n-r" class="r-min" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 1140px; top: 435px;"><div id="ab-min-n" class="p ab"><img id="ab-min-n-r" class="r-min" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 20px; top: 520px;"><div class="fx"><div id="fi-pctmin-w" class="p fi"><img id="fi-pctmin-w-r" class="r-pctmin" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbw" style="left: 190px; top: 520px;"><div id="ib-pctmin-w" class="p ib"><img id="ib-pctmin-w-r" class="r-pctmin" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 360px; top: 520px;"><div id="fl-pctmin-w" class="p fl"><img id="fl-pctmin-w-r" class="r-pctmin" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 530px; top: 520px;"><div id="ab-pctmin-w" class="p ab"><img id="ab-pctmin-w-r" class="r-pctmin" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 720px; top: 520px;"><div class="fx"><div id="fi-pctmin-n" class="p fi"><img id="fi-pctmin-n-r" class="r-pctmin" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbn" style="left: 860px; top: 520px;"><div id="ib-pctmin-n" class="p ib"><img id="ib-pctmin-n-r" class="r-pctmin" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 1000px; top: 520px;"><div id="fl-pctmin-n" class="p fl"><img id="fl-pctmin-n-r" class="r-pctmin" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 1140px; top: 520px;"><div id="ab-pctmin-n" class="p ab"><img id="ab-pctmin-n-r" class="r-pctmin" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 20px; top: 605px;"><div class="fx"><div id="fi-calcpct-w" class="p fi"><img id="fi-calcpct-w-r" class="r-calcpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbw" style="left: 190px; top: 605px;"><div id="ib-calcpct-w" class="p ib"><img id="ib-calcpct-w-r" class="r-calcpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 360px; top: 605px;"><div id="fl-calcpct-w" class="p fl"><img id="fl-calcpct-w-r" class="r-calcpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 530px; top: 605px;"><div id="ab-calcpct-w" class="p ab"><img id="ab-calcpct-w-r" class="r-calcpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 720px; top: 605px;"><div class="fx"><div id="fi-calcpct-n" class="p fi"><img id="fi-calcpct-n-r" class="r-calcpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbn" style="left: 860px; top: 605px;"><div id="ib-calcpct-n" class="p ib"><img id="ib-calcpct-n-r" class="r-calcpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 1000px; top: 605px;"><div id="fl-calcpct-n" class="p fl"><img id="fl-calcpct-n-r" class="r-calcpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 1140px; top: 605px;"><div id="ab-calcpct-n" class="p ab"><img id="ab-calcpct-n-r" class="r-calcpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+</body>
+</rml>

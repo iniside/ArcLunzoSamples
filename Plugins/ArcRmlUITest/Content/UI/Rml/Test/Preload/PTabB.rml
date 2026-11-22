@@ -1,0 +1,10 @@
+<rml>
+<head>
+	<title>Preload Tab B</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Preload/PFrame.rml"/>
+	<link type="text/rcss" href="PTab.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="ptb-text" class="pt-row">Tab B</div>
+</body>
+</rml>

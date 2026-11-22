@@ -1,0 +1,57 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 24px;
+}
+
+div {
+	display: block;
+}
+
+.line {
+	position: absolute;
+	left: 20px;
+	white-space: nowrap;
+}
+
+#inv-num {
+	top: 10px;
+	font-variant-numeric: tabular-nums bogus;
+}
+
+#inv-caps {
+	top: 50px;
+	font-family: 'Barlow Condensed';
+	font-variant-caps: sideways;
+}
+
+#inv-lig {
+	top: 90px;
+	color: #203090;
+	font-variant-ligatures: common-ligatures no-common-ligatures;
+}
+
+#inv-set {
+	top: 130px;
+	font-feature-settings: tnum;
+}
+
+#inv-val {
+	top: 170px;
+	font-feature-settings: "tnum" -1;
+}
+
+#ctl-num {
+	top: 210px;
+}
+
+#ctl-caps {
+	top: 250px;
+	font-family: 'Barlow Condensed';
+}
+
+#ctl-lig {
+	top: 290px;
+	color: #203690;
+}

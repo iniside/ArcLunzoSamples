@@ -1,0 +1,23 @@
+<rml>
+<head>
+	<title>Sizing Keywords Edges Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Layout/SizingKeywordsEdges.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="cb flex"><div id="ke-flex-maxw-fit" class="box maxw-fit"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb"><div id="ke-ib-maxw-fit" class="box inline-block maxw-fit"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb flex w50"><div id="ke-flex-w-min" class="box w-min"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb pos h200"><div id="ke-abs-h-fit" class="box inset-0 m-auto h-fit"><div class="tall"></div></div></div>
+	<div class="cb w40"><div id="ke-fit-lower" class="box w-fit"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb"><div id="ke-fit-margin" class="box w-fit mx150"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb"><div id="ke-fit-padding" class="box w-fit px150"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb w80"><div id="ke-ib-parent" class="inline-block"><div id="ke-ib-flex-fit" class="box flex wrap w-fit"><div class="fi a"></div><div class="fi b"></div></div></div></div>
+	<div class="cb w80"><div id="ke-ib-minw-parent" class="inline-block"><div id="ke-ib-flex-minw-fit" class="box flex wrap minw-fit"><div class="fi a"></div><div class="fi b"></div></div></div></div>
+	<div class="cb flex column"><div id="ke-col-maxw-min" class="box maxw-min"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb grid rows100"><div id="ke-grid-h-fit" class="box h-fit"><div class="tall"></div></div></div>
+	<div class="cb"><div id="ke-h-short-minh-min" class="box hbox h100 minh-min"><div class="short"></div></div></div>
+	<div class="cb"><div id="ke-h-tall-maxh-max" class="box hbox h20 maxh-max"><div class="tall"></div></div></div>
+</body>
+</rml>

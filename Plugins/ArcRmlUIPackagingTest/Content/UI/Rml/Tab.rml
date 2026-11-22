@@ -1,0 +1,9 @@
+<rml>
+<head>
+	<title>Tab</title>
+	<meta name="frame" content="/ArcRmlUIPackagingTest/UI/Rml/Frame.rml"/>
+</head>
+<body>
+	<div>Tab of Frame.rml</div>
+</body>
+</rml>

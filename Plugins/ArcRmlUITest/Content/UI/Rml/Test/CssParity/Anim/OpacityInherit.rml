@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>OpacityInherit</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Anim/OpacityInherit.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="p" class="parent"><div id="plain" class="child"></div></div>
+	<div id="p2" class="parent"><div id="half" class="child"></div></div>
+</body>
+</rml>

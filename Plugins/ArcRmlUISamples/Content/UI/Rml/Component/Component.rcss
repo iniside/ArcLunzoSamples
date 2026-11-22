@@ -1,0 +1,52 @@
+.cp-panel {
+	position: absolute;
+	left: 80px;
+	top: 80px;
+	width: 480px;
+	padding: 24px 32px;
+	background-color: rgba(20, 24, 32, 0.9);
+	border-radius: 8px;
+}
+
+.cp-title {
+	display: block;
+	font-size: 36px;
+	margin-bottom: 12px;
+}
+
+.cp-buttons {
+	display: flex;
+	gap: 12px;
+	margin-top: 16px;
+}
+
+.cp-button {
+	padding: 8px 20px;
+	border-radius: 4px;
+	background-color: #3a4456;
+	color: #e8e8e8;
+}
+
+.cp-button:hover {
+	background-color: #4d5a72;
+}
+
+.cp-card {
+	margin: 8px 0;
+	background-color: #303846;
+	border-radius: 4px;
+}
+
+.cp-card-head {
+	padding: 6px 12px;
+	border-radius: 4px;
+	color: #101418;
+}
+
+.cp-card-body {
+	padding: 8px 12px;
+}
+
+.cp-card-foot {
+	padding: 4px 12px 8px;
+}

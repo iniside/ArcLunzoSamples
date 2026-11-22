@@ -1,0 +1,62 @@
+.keybadge-accent {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 15px;
+	font-family: var(--font-mono);
+	font-size: 9px;
+	font-weight: 600;
+	line-height: 1.5;
+	color: var(--on-accent);
+	background: var(--accent);
+	padding: 1px 5px;
+	border-radius: var(--radius-badge);
+}
+
+.keybadge-outline {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 15px;
+	font-family: var(--font-mono);
+	font-size: 9px;
+	font-weight: 600;
+	line-height: 1.5;
+	color: var(--accent);
+	background: color-mix(in srgb, var(--accent) 12%, transparent);
+	border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+	padding: 1px 5px;
+	border-radius: var(--radius-badge);
+}
+
+.keybadge-danger {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 15px;
+	font-family: var(--font-mono);
+	font-size: 9px;
+	font-weight: 600;
+	line-height: 1.5;
+	color: var(--danger-text);
+	background: rgba(168,57,44,0.14);
+	border: 1px solid rgba(168,57,44,0.4);
+	padding: 1px 5px;
+	border-radius: var(--radius-badge);
+}
+
+.keybadge-default {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 15px;
+	font-family: var(--font-mono);
+	font-size: 9px;
+	font-weight: 600;
+	line-height: 1.5;
+	color: rgba(255,255,255,0.68);
+	background: var(--key-bg);
+	border: 1px solid var(--key-border);
+	padding: 1px 5px;
+	border-radius: var(--radius-badge);
+}

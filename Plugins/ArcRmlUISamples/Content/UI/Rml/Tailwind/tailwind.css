@@ -1,0 +1,8 @@
+/* Rebuild Tailwind.rcss: see "Build the sheet" in the Tailwind guide */
+@import "tailwindcss" source(none);
+@source "./Tailwind.rml";
+
+@theme {
+	--font-sans: 'Arc Samples Sans';
+	--font-mono: 'Arc Samples Sans';
+}

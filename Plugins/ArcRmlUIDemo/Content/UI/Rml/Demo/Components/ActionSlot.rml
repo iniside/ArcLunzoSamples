@@ -1,0 +1,24 @@
+<component>
+	<prop name="icon" default="/ArcRmlUIDemo/UI/Rml/icons/flame.svg"/>
+	<prop name="keyLabel" default="3"/>
+	<prop name="glyph" default="X"/>
+	<prop name="input" default="keyboard"/>
+	<prop name="cooldown" default="0"/>
+	<prop name="seconds" default="0"/>
+	<prop name="charges" default="0"/>
+	<prop name="noResource"/>
+	<prop name="outOfRange"/>
+	<prop name="proc"/>
+	<prop name="pressed"/>
+	<prop name="locked"/>
+	<prop name="dim"/>
+	<prop name="big"/>
+	<prop name="size" default="56"/>
+	<div class="dk-action-slot" data-class-dim="$dim" data-class-big="$big" data-style-width="(($size != 0 ? $size : 56) + 'px')" data-style-height="(($size != 0 ? $size : 56) + 'px')">
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ItemSlot" icon="{{ ($icon != '' ? $icon : '') }}" empty-icon="{{ ($icon == '' ? '/ArcRmlUIDemo/UI/Rml/icons/plus.svg' : '') }}" cooldown-label="{{ ($seconds &gt; 0 ? ($seconds &gt;= 10 ? (($seconds * 1) | ceil) : (($seconds * 1) | format(1))) : '') }}" rarity="common" quantity="{{ ($charges != 0 ? $charges : 0) }}" cooldown="{{ ($cooldown != 0 ? $cooldown : 0) }}" locked="{{ ($locked ? true : false) }}" size="{{ ($size != 0 ? $size : 56) }}"/>
+		<span class="dk-action-slot-tint" data-if="($noResource &amp;&amp; ($icon != ''))"/>
+		<span class="dk-action-slot-proc-s" data-if="($proc &amp;&amp; ($icon != ''))"/>
+		<span class="dk-action-slot-flash" data-if="$pressed != '' &amp;&amp; $pressed != 0"/>
+		<span class="dk-action-slot-key-s" data-class-out-of-range="$outOfRange">{{ ($input == 'gamepad' ? $glyph : $keyLabel) }}</span>
+	</div>
+</component>

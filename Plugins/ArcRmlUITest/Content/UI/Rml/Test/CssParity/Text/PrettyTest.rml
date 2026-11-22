@@ -1,0 +1,28 @@
+<rml>
+<head>
+	<title>Pretty Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/PrettyTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="hint-pretty" class="t hint pretty" style="left: 20px; top: 10px;">Click any slot to see compatible gear</div>
+	<div id="hint-greedy" class="t hint" style="left: 120px; top: 10px;">Click any slot to see compatible gear</div>
+	<div id="drag-pretty" class="t hint2 pretty" style="left: 220px; top: 10px;">Drag items here to store them</div>
+	<div id="drag-greedy" class="t hint2" style="left: 370px; top: 10px;">Drag items here to store them</div>
+	<div id="p1-pretty" class="t p1 pretty" style="left: 20px; top: 80px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="p1-greedy" class="t p1" style="left: 420px; top: 80px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="p2-pretty" class="t p2 pretty" style="left: 20px; top: 170px;">Gather enough iron ore and coal to forge a stronger blade before the next storm season arrives at the coast.</div>
+	<div id="p2-greedy" class="t p2" style="left: 230px; top: 170px;">Gather enough iron ore and coal to forge a stronger blade before the next storm season arrives at the coast.</div>
+	<div id="p1-noop" class="t p1n pretty" style="left: 20px; top: 380px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="crafts-pretty" class="t hint3 pretty" style="left: 1000px; top: 10px;">Completed crafts appear here to collect</div>
+	<div id="crafts-greedy" class="t hint3" style="left: 1150px; top: 10px;">Completed crafts appear here to collect</div>
+	<div id="p3-pretty" class="t p1 pretty" style="left: 20px; top: 280px;">The caravan reached the <span class="em">old bridge</span> at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="long-pretty" class="t p3 pretty" style="left: 440px; top: 170px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers, then the merchants unloaded their carts in the square before nightfall came.</div>
+	<div id="long-greedy" class="t p3" style="left: 660px; top: 170px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers, then the merchants unloaded their carts in the square before nightfall came.</div>
+	<div id="pre-nowrap" class="t pre-nowrap" style="left: 880px; top: 280px;">first line
+second line that is long</div>
+	<div id="nowrap" class="t nowrap" style="left: 880px; top: 340px;">a long line that never wraps at all</div>
+	<div id="wrap-only" class="t wrap-only pretty" style="left: 880px; top: 380px;">a long line that does wrap here</div>
+</body>
+</rml>

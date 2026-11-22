@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	font-size: 16px;
+}
+
+div {
+	display: block;
+}
+
+.col {
+	position: absolute;
+	top: 20px;
+	width: 200px;
+}
+
+.col-a {
+	left: 20px;
+}
+
+.col-b {
+	left: 400px;
+}
+
+.btn {
+	height: 30px;
+	margin-bottom: 20px;
+	tab-index: auto;
+	nav: auto;
+}
+
+input {
+	display: block;
+	width: 200px;
+	height: 16px;
+	margin-bottom: 20px;
+}
+
+.nonav {
+	nav: none;
+}

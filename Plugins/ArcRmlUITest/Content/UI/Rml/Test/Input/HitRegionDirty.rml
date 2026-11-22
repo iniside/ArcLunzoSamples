@@ -1,0 +1,91 @@
+<rml>
+<head>
+	<title>Hit Region Dirty Test</title>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<link type="text/rcss" href="HitRegionDirty.rcss"/>
+	<viewmodel name="hr" preview="Preview/HitRegionDirty.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="hr">
+	<div id="hr-action" data-attr-data-action="Action"></div>
+	<div id="hr-event" data-attrif-data-event-ping="Armed"></div>
+	<div id="hr-pe" data-class-pe-none="PeNone" data-event-click="call('', 'Clicked', 'hr-pe')"></div>
+	<div id="hr-vis" data-class-hidden="Hidden" data-event-click="call('', 'Clicked', 'hr-vis')"></div>
+	<div id="hr-disp" data-class-gone="Gone">
+		<div id="hr-disp-child" data-event-click="call('', 'Clicked', 'hr-disp-child')"></div>
+	</div>
+	<div id="hr-dom" data-if="Show" data-event-click="call('', 'Clicked', 'hr-dom')"></div>
+	<div id="hr-xf" data-class-shift="Shift">
+		<div id="hr-xf-child" data-event-click="call('', 'Clicked', 'hr-xf-child')"></div>
+	</div>
+	<div id="hr-scroll">
+		<div class="hr-row" id="hr-row0" data-event-click="call('', 'Clicked', 'hr-row0')"></div>
+		<div class="hr-row" id="hr-row1" data-event-click="call('', 'Clicked', 'hr-row1')"></div>
+		<div class="hr-row" id="hr-row2" data-event-click="call('', 'Clicked', 'hr-row2')"></div>
+		<div class="hr-row" id="hr-row3" data-event-click="call('', 'Clicked', 'hr-row3')"></div>
+		<div class="hr-row" id="hr-row4" data-event-click="call('', 'Clicked', 'hr-row4')"></div>
+		<div class="hr-row" id="hr-row5" data-event-click="call('', 'Clicked', 'hr-row5')"></div>
+	</div>
+	<div id="hr-shrink" data-class-tall="Tall">
+		<div id="hr-shrink-content"></div>
+	</div>
+	<div id="hr-box" data-class-wide="Wide" data-event-click="call('', 'Clicked', 'hr-box')"></div>
+	<div id="hr-flow">
+		<div id="hr-grow" data-class-grow="Grow"></div>
+		<div id="hr-flow-btn" data-event-click="call('', 'Clicked', 'hr-flow-btn')"></div>
+	</div>
+	<div id="hr-clip" data-class-open="Open">
+		<div id="hr-clip-btn" data-event-click="call('', 'Clicked', 'hr-clip-btn')"></div>
+	</div>
+	<div id="hr-pe-wrap" data-class-pe-off="PeOff">
+		<div id="hr-pe-child" data-event-click="call('', 'Clicked', 'hr-pe-child')"></div>
+	</div>
+	<div id="hr-keyed">
+		<div class="hr-keyed-row" data-for="row : Items" data-key="row.Id" data-style-width="row.W + 'px'" data-event-click="call('', 'Clicked', row.Id)"></div>
+	</div>
+	<div id="hr-ovf" data-class-flat="Flat">
+		<div id="hr-ovf-content"></div>
+	</div>
+	<div id="hr-cells">
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+		<div class="hr-cell" data-event-click="call('', 'Clicked', 'hr-cell')"></div>
+	</div>
+</body>
+</rml>

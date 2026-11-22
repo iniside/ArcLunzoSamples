@@ -1,0 +1,43 @@
+.ir-panel {
+	position: absolute;
+	left: 80px;
+	top: 40px;
+	width: 700px;
+	padding: 24px 32px;
+	background-color: rgba(20, 24, 32, 0.9);
+	border-radius: 8px;
+}
+
+.ir-title {
+	display: block;
+	font-size: 36px;
+	margin-bottom: 12px;
+}
+
+.ir-label {
+	font-size: 16px;
+	color: #9aa6ba;
+	margin-top: 14px;
+}
+
+.ir-line {
+	margin-top: 4px;
+	color: #e8e8e8;
+}
+
+.ir-gold {
+	color: #ffd27a;
+	font-size: 26px;
+}
+
+.ir-line b {
+	color: #7ad0ff;
+}
+
+.ir-field {
+	width: 400px;
+}
+
+.ir-field:focus-visible {
+	background-color: #2f6fb0;
+}

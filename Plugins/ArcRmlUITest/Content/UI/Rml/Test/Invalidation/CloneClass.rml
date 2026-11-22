@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Clone Class Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="CloneClass.rcss"/>
+	<viewmodel name="cc" preview="Preview/CloneClass.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="cc">
+	<div id="src" data-drag-type="item" data-class-icon-x="HasIcon"></div>
+</body>
+</rml>

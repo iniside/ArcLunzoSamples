@@ -1,0 +1,25 @@
+<rml>
+<head>
+	<title>ColourSyntaxTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/ColourShadow/ColourSyntax.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="rgb-alpha" class="swatch"></div>
+	<div id="rgb-plain" class="swatch"></div>
+	<div id="rgba-percent-alpha" class="swatch"></div>
+	<div id="rgb-percent" class="swatch"></div>
+	<div id="rgb-none" class="swatch"></div>
+	<div id="rgb-tight-slash" class="swatch"></div>
+	<div id="rgb-fraction" class="swatch"></div>
+	<div id="hsl-plain" class="swatch"></div>
+	<div id="hsl-deg-alpha" class="swatch"></div>
+	<div id="hsla-turn" class="swatch"></div>
+	<div id="hsl-numbers" class="swatch"></div>
+	<div id="hsl-rad" class="swatch"></div>
+	<div id="oklch-alpha" class="swatch"></div>
+	<div id="mix-modern" class="swatch"></div>
+	<div id="rgb-comma" class="swatch"></div>
+</body>
+</rml>

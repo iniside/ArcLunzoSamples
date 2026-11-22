@@ -1,0 +1,18 @@
+<rml>
+<head>
+	<title>Drag Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<link type="text/rcss" href="DragTest.rcss"/>
+	<viewmodel name="dd" preview="Preview/DragTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="dd">
+	<div id="src-a" class="cell" data-if="showSrc" data-drag-type="item" data-slot="A" data-event-dragend="call('', 'DragEnded', 'A')"></div>
+	<div id="src-untyped" class="cell" data-slot="U" data-event-drag="call('', 'Dragged', 'drag:data-slot')" data-event-click="call('', 'Clicked', 'target:data-slot')"></div>
+	<div id="tgt-ok" class="cell" data-drop-accept="spell item" data-slot="T1" data-event-dragdrop="call('', 'Dropped', 'drag:data-slot', 'target:data-slot')"></div>
+	<div id="tgt-no" class="cell" data-drop-accept="spell" data-slot="T2" data-event-dragdrop="call('', 'Dropped', 'drag:data-slot', 'target:data-slot')"></div>
+	<div id="zone" class="cell" data-slot="Z" data-event-dragdrop="call('', 'Dropped', 'drag:data-slot', 'target:data-slot')"><div id="empty"></div></div>
+	<div id="wrap" data-if="showWrap" style="display: contents"><div id="src-b" class="cell" data-drag-type="item" data-slot="B" data-event-dragend="call('', 'DragEnded', 'B')"></div></div>
+</body>
+</rml>

@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>Source Lines Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="sl-multi"
+		class="sl"
+		style="colr: blue;">multi line</div>
+	<div id="sl-tex" data-tex="1">tex</div>
+	<div id="sl-test" data-test="1">test</div>
+</body>
+</rml>

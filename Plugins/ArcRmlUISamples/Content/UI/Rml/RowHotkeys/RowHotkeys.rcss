@@ -1,0 +1,50 @@
+.rh-panel {
+	position: absolute;
+	left: 80px;
+	top: 40px;
+	width: 700px;
+	padding: 24px 32px;
+	background-color: rgba(20, 24, 32, 0.9);
+	border-radius: 8px;
+}
+
+.rh-title {
+	display: block;
+	font-size: 36px;
+	margin-bottom: 12px;
+}
+
+.rh-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 8px 0;
+	padding: 8px 12px;
+	border: 2px #3a4456;
+	border-radius: 4px;
+}
+
+.rh-row[favourite] {
+	background-color: #8a6a2a;
+	border-color: #ffd27a;
+}
+
+.rh-name {
+	color: #e8e8e8;
+}
+
+.rh-use {
+	padding: 6px 16px;
+	border-radius: 4px;
+	background-color: #3a4456;
+	color: #e8e8e8;
+}
+
+.rh-use:focus-visible {
+	background-color: #2f6fb0;
+}
+
+.rh-hint {
+	margin-top: 16px;
+	color: #ffd27a;
+}

@@ -1,0 +1,20 @@
+<rml>
+<head>
+	<title>Enter Confirm Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="AreaBackTest.rcss"/>
+	<viewmodel name="ect" preview="Preview/EnterConfirmTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="ect">
+<div class="abt-root">
+	<div class="abt-top" data-focus-area="bar" data-focus-down="list">
+		<div class="abt-btn" id="ect-bar-1" data-event-click="call('', 'Clicked', 'ect-bar-1')">Bar 1</div>
+	</div>
+	<div class="abt-mid" data-focus-area="list" data-focus-parent="bar">
+		<div class="abt-btn" id="ect-list-1" data-event-click="call('', 'Clicked', 'ect-list-1')">List 1</div>
+		<div class="abt-btn" id="ect-list-2" data-event-click="call('', 'Clicked', 'ect-list-2')">List 2</div>
+	</div>
+</div>
+</body>
+</rml>

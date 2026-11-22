@@ -1,0 +1,17 @@
+body {
+	margin: 0;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 0;
+}
+
+table { border-spacing: 0; }
+td { padding: 0; }
+
+.cb { width: 720px; margin-bottom: 4px; }
+.b150 { display: inline-block; width: 150px; height: 10px; background-color: #3366cc; }
+.b300 { display: inline-block; width: 300px; height: 10px; background-color: #cc3366; }
+
+.t-minfull { min-width: 100%; }
+.t-full { width: 100%; }
+.t-max400 { max-width: 400px; }
+.t-def-max400 { width: 500px; max-width: 400px; }

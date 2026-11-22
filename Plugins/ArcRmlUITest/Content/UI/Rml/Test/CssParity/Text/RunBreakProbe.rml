@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Run Break Probe</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/RunBreakProbe.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="kerned" class="kerned">AVATAR WAVE Tokyo Yacht Taffy LAVA AWAY Typography VAT YAW Wavy Toy AVOW Tyre Vault Yoyo TAV AT AV To Ya</div>
+	<div id="mono" class="mono">a -> b != c => d === e |> f &lt;= g >= h -- i ++ j :: k</div>
+	<div id="long" class="long">The quick brown fox jumps over the lazy dog while the wizard quietly brews a potion of vexing jumbled flasks. Pack my box with five dozen liquor jugs, then sphinx of black quartz, judge my vow. A wavy Tokyo yacht ran away to Taffy Vault at a VAT office, where AVATAR wave typography was tested by careful readers. The quick brown fox jumps over the lazy dog while the wizard quietly brews a potion of vexing jumbled flasks. Pack my box with five dozen liquor jugs, then sphinx of black quartz, judge my vow. A wavy Tokyo yacht ran away to Taffy Vault at a VAT office, where AVATAR wave typography was tested by careful readers. The quick brown fox jumps over the lazy dog while the wizard quietly brews a potion of vexing jumbled flasks. Pack my box with five dozen liquor jugs, then sphinx of black quartz, judge my vow. A wavy Tokyo yacht ran away to Taffy Vault at a VAT office, where AVATAR wave typography was tested by careful readers.</div>
+</body>
+</rml>

@@ -1,0 +1,11 @@
+<component>
+	<prop name="items" default="[]"/>
+	<prop name="nofocus"/>
+	<prop name="field" default=""/>
+	<div class="dk-breadcrumb">
+		<div class="dk-breadcrumb-entry" data-for="BreadcrumbB, BreadcrumbB_index : $items">
+			<i class="dk-breadcrumb-sep" data-if="BreadcrumbB_index &gt; 0"><svg src="/ArcRmlUIDemo/UI/Rml/icons/chevron-right.svg" width="14" height="14" stroke-width="2"/></i>
+			<span class="dk-breadcrumb-item" data-class-last="BreadcrumbB_index == $items.size - 1" data-class-focusable="$field != '' &amp;&amp; !$nofocus &amp;&amp; BreadcrumbB_index &lt; $items.size - 1" data-event-click="callIf(BreadcrumbB_index &lt; $items.size - 1, '', 'Selected', $field, BreadcrumbB_index)">{{ BreadcrumbB }}</span>
+		</div>
+	</div>
+</component>

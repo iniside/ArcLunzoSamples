@@ -1,0 +1,27 @@
+.dk-interaction-prompt {
+	position: absolute;
+	width: 0;
+	height: 0;
+	display: block;
+}
+
+.dk-interaction-prompt.no-visible {
+	display: none;
+}
+
+.dk-interaction-prompt-content {
+	position: absolute;
+	left: 0;
+	top: 0;
+	--dk-interaction-prompt-content-transform-1: 1;
+	transform: translate(-50%, -100%) scale(var(--dk-interaction-prompt-content-transform-1));
+}
+
+.dk-interaction-prompt-ring {
+	display: flex;
+	padding: var(--ui-space-1) var(--ui-space-2);
+	border-radius: var(--hud-radius-pill);
+	background: var(--hud-plate);
+	--cd: 0%;
+	color: var(--hud-text);
+}

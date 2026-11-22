@@ -1,0 +1,6 @@
+#sc-panel { position: absolute; left: 100px; top: 100px; width: 300px; height: 200px; display: flex; flex-direction: column; }
+#sc-panel::before { content: ''; position: absolute; top: -1px; right: -1px; bottom: -1px; left: -1px; pointer-events: none; background: rgba(255,255,255,0.05); }
+#sc-list { flex: 1; min-height: 0; overflow-y: auto; }
+#sc-list::-webkit-scrollbar { width: 12px; }
+#sc-list::-webkit-scrollbar-thumb { background: #888888; }
+.sc-row { height: 60px; }

@@ -1,0 +1,41 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+}
+
+div {
+	display: block;
+}
+
+.wrap {
+	position: absolute;
+	top: 20px;
+	width: 100px;
+	background-color: #141821;
+}
+
+#ib-wrap { left: 20px; }
+#ib-wrap16 { left: 200px; }
+#text-wrap { left: 400px; }
+#named-wrap { left: 600px; }
+
+.size16 {
+	font-size: 16px;
+}
+
+.ib {
+	display: inline-block;
+	width: 60px;
+	height: 20px;
+	background-color: #3a86ff;
+}
+
+.text {
+	color: #e8ecf4;
+}
+
+.named {
+	font-family: 'Barlow Condensed';
+	font-weight: 500;
+}

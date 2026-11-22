@@ -1,0 +1,142 @@
+@keyframes ui-listen { 0% { opacity: 1; } 50% { opacity: 0.45; } 100% { opacity: 1; } }
+
+.dk-keybindfield {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-1);
+	align-items: stretch;
+	min-width: 170px;
+}
+
+.dk-keybindfield-box {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--ui-space-2);
+	min-height: 44px;
+	box-sizing: border-box;
+	padding: 0 var(--ui-space-3);
+	background: var(--ui-surface);
+	border: 1px solid var(--ui-border-strong);
+	border-radius: var(--ui-radius-md);
+	box-shadow: none;
+	cursor: pointer;
+	transition: border-color var(--ui-dur-fast) var(--ui-ease), background-color var(--ui-dur-fast) var(--ui-ease), transform var(--ui-dur-fast) var(--ui-ease);
+	--h-bd: var(--ui-accent);
+	--h-bg: color-mix(in srgb, var(--ui-surface) 85%, var(--ui-accent));
+	--p-tf: scale(0.98);
+}
+
+.dk-keybindfield-box:hover {
+	border-color: var(--h-bd);
+	background: var(--h-bg);
+}
+
+.dk-keybindfield-box:active {
+	transform: var(--p-tf);
+}
+
+.dk-keybindfield-box:focus-within {
+	border: 1px solid var(--ui-focus);
+	box-shadow: var(--ui-focus-ring);
+	--h-bd: var(--ui-focus);
+}
+
+.dk-keybindfield-box.conflict {
+	background: color-mix(in srgb, var(--ui-danger) 12%, var(--ui-surface));
+	border: 1px solid var(--ui-danger);
+	--h-bd: var(--ui-danger);
+	--h-bg: color-mix(in srgb, var(--ui-danger) 12%, var(--ui-surface));
+}
+
+.dk-keybindfield-box.listening {
+	background: var(--ui-accent-soft);
+	border: 1px dashed var(--ui-accent);
+	box-shadow: var(--ui-focus-ring);
+	--h-bd: var(--ui-accent);
+	--h-bg: var(--ui-accent-soft);
+}
+
+.dk-keybindfield-box.disabled {
+	background: var(--ui-surface-2);
+	border: 1px solid var(--ui-border);
+	cursor: default;
+	--h-bd: var(--ui-border);
+	--h-bg: var(--ui-surface-2);
+	--p-tf: none;
+}
+
+.dk-keybindfield-input {
+	appearance: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	background: transparent;
+	opacity: 0;
+	cursor: inherit;
+}
+
+.dk-keybindfield-warn {
+	display: inline-flex;
+	flex: none;
+	color: var(--ui-danger);
+}
+
+.dk-keybindfield-warn svg {
+	display: block;
+}
+
+.dk-keybindfield-cap {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 28px;
+	height: 28px;
+	padding: 0 var(--ui-space-2);
+	box-sizing: border-box;
+	border-radius: var(--ui-radius-sm);
+	border: 1px solid var(--ui-border-strong);
+	border-bottom-width: 3px;
+	background: var(--ui-surface-2);
+	color: var(--ui-text);
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-2);
+	font-weight: 600;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.dk-keybindfield-cap.conflict {
+	border: 1px solid var(--ui-danger);
+	border-bottom-width: 3px;
+}
+
+.dk-keybindfield-cap.disabled {
+	color: var(--ui-text-disabled);
+}
+
+.dk-keybindfield-listening {
+	font-size: var(--ui-fs-2);
+	color: var(--ui-accent);
+	white-space: nowrap;
+	animation: ui-listen 1.2s linear infinite;
+}
+
+.dk-keybindfield-unbound {
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text-muted);
+	white-space: nowrap;
+}
+
+.dk-keybindfield-conflict {
+	font-size: var(--ui-fs-1);
+	color: var(--ui-danger);
+	text-align: center;
+}

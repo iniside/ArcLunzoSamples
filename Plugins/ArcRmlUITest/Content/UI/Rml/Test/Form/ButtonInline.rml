@@ -1,0 +1,16 @@
+<rml>
+<head>
+	<title>ButtonInline</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/ButtonInline.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="bi-r-style" class="row">ab <button id="bi-style" style="display: inline">Save</button> ef</div>
+	<div id="bi-r-class" class="row">ab <button id="bi-class" class="inline">Save</button> ef</div>
+	<div id="bi-r-submit" class="row">ab <input id="bi-submit" class="inline" type="submit" value="Send"/> ef</div>
+	<div id="bi-r-tall" class="row">ab <button id="bi-tall" class="inline tall">Save</button> ef</div>
+	<div id="bi-r-outline" class="row">ab <button id="bi-outline" class="inline ring">Save</button> ef</div>
+	<div id="bi-r-paint" class="row">ab <button id="bi-paint" class="inline paint"><div id="bi-inner" class="inner"></div></button> ef</div>
+</body>
+</rml>

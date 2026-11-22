@@ -1,0 +1,671 @@
+{
+"elements": {
+"0": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+0,
+0,
+1920,
+372
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+1920,
+1080
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+24,
+24,
+24,
+24
+],
+"rect": [
+0,
+0,
+1920,
+372
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+1920,
+372
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.0": {
+"lines": [],
+"text": "\n"
+},
+"0.0.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+16,
+0
+],
+"padding": [
+16,
+16,
+16,
+16
+],
+"rect": [
+24,
+24,
+1872,
+52
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+1872,
+52
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.0": {
+"lines": [],
+"text": "\n  "
+},
+"0.0.1.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "inline",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+40,
+41,
+65.5625,
+18
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+0,
+0
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.0": {
+"lines": [
+{
+"height": 18,
+"text": "Info alert!",
+"top": 41,
+"width": 65.5625,
+"x": 40
+}
+],
+"text": "Info alert!"
+},
+"0.0.1.2": {
+"lines": [
+{
+"height": 18,
+"text": " Change a few things up and try submitting again.\n",
+"top": 41,
+"width": 336.875,
+"x": 105.5625
+}
+],
+"text": " Change a few things up and try submitting again.\n"
+},
+"0.0.10": {
+"lines": [],
+"text": "\n\n\n\n\n"
+},
+"0.0.2": {
+"lines": [],
+"text": "\n"
+},
+"0.0.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+16,
+0
+],
+"padding": [
+16,
+16,
+16,
+16
+],
+"rect": [
+24,
+92,
+1872,
+52
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+1872,
+52
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.3.0": {
+"lines": [],
+"text": "\n  "
+},
+"0.0.3.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "inline",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+40,
+109,
+87.65625,
+18
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+0,
+0
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.3.1.0": {
+"lines": [
+{
+"height": 18,
+"text": "Danger alert!",
+"top": 109,
+"width": 87.65625,
+"x": 40
+}
+],
+"text": "Danger alert!"
+},
+"0.0.3.2": {
+"lines": [
+{
+"height": 18,
+"text": " Change a few things up and try submitting again.\n",
+"top": 109,
+"width": 336.875,
+"x": 127.65625
+}
+],
+"text": " Change a few things up and try submitting again.\n"
+},
+"0.0.4": {
+"lines": [],
+"text": "\n"
+},
+"0.0.5": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+16,
+0
+],
+"padding": [
+16,
+16,
+16,
+16
+],
+"rect": [
+24,
+160,
+1872,
+52
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+1872,
+52
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.5.0": {
+"lines": [],
+"text": "\n  "
+},
+"0.0.5.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "inline",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+40,
+177,
+95.6875,
+18
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+0,
+0
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.5.1.0": {
+"lines": [
+{
+"height": 18,
+"text": "Success alert!",
+"top": 177,
+"width": 95.6875,
+"x": 40
+}
+],
+"text": "Success alert!"
+},
+"0.0.5.2": {
+"lines": [
+{
+"height": 18,
+"text": " Change a few things up and try submitting again.\n",
+"top": 177,
+"width": 336.875,
+"x": 135.6875
+}
+],
+"text": " Change a few things up and try submitting again.\n"
+},
+"0.0.6": {
+"lines": [],
+"text": "\n"
+},
+"0.0.7": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+16,
+0
+],
+"padding": [
+16,
+16,
+16,
+16
+],
+"rect": [
+24,
+228,
+1872,
+52
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+1872,
+52
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.7.0": {
+"lines": [],
+"text": "\n  "
+},
+"0.0.7.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "inline",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+40,
+245,
+94.671875,
+18
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+0,
+0
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.7.1.0": {
+"lines": [
+{
+"height": 18,
+"text": "Warning alert!",
+"top": 245,
+"width": 94.671875,
+"x": 40
+}
+],
+"text": "Warning alert!"
+},
+"0.0.7.2": {
+"lines": [
+{
+"height": 18,
+"text": " Change a few things up and try submitting again.\n",
+"top": 245,
+"width": 336.875,
+"x": 134.671875
+}
+],
+"text": " Change a few things up and try submitting again.\n"
+},
+"0.0.8": {
+"lines": [],
+"text": "\n"
+},
+"0.0.9": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+16,
+16,
+16,
+16
+],
+"rect": [
+24,
+296,
+1872,
+52
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+1872,
+52
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.9.0": {
+"lines": [],
+"text": "\n  "
+},
+"0.0.9.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "inline",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+40,
+313,
+69.625,
+18
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+0,
+0
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.9.1.0": {
+"lines": [
+{
+"height": 18,
+"text": "Dark alert!",
+"top": 313,
+"width": 69.625,
+"x": 40
+}
+],
+"text": "Dark alert!"
+},
+"0.0.9.2": {
+"lines": [
+{
+"height": 18,
+"text": " Change a few things up and try submitting again.\n",
+"top": 313,
+"width": 336.875,
+"x": 109.625
+}
+],
+"text": " Change a few things up and try submitting again.\n"
+}
+},
+"inputs_sha1": {
+"FbAlert.chrome.html": "82d77f97ec6c799699da1edbe15c3f32e5288352",
+"img/ph.png": "7c1ddc8365ec171043d756e950635cb3f913bf71",
+"tw-flowbite.rcss": "1a2f56bcf8423b7a22700823ab1a001908e649a1",
+"tw-hyperui.rcss": "6174e5823107a67d486cadfda96038e576d07204",
+"tw-probe.rcss": "6a9ee68f33dd40210aa8e9b1fab10df54d28b533"
+},
+"viewport": [
+1920,
+1080
+]
+}

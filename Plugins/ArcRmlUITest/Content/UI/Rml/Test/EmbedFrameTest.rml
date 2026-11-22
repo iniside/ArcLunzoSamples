@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>ArcRmlUI Embed Frame Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<viewmodel name="mock" class="/Script/ArcRmlUITestRuntime.ArcRmlMockListViewModel" context="MockList"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="mock">
+	<div data-attr-style="'widht: ' + Rows.size + 'px; display: block; height: 8px;'"></div>
+	<div class="embed" arc-embed=""></div>
+</body>
+</rml>

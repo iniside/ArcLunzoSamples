@@ -1,0 +1,27 @@
+body > div {
+	position: absolute;
+	width: 120px;
+	height: 60px;
+	background-repeat: no-repeat;
+}
+
+@keyframes slidepx {
+	from { background-position: 0px 0px; }
+	to { background-position: 60px 30px; }
+}
+
+@keyframes slidecalc {
+	from { background-position: 0% 0%; }
+	to { background-position: right 20px bottom 0px; }
+}
+
+@keyframes grow {
+	from { background-size: 20px 10px; }
+	to { background-size: 60px 30px; }
+}
+
+#animpx { left: 10px; top: 10px; background-image: linear-gradient(#e6194b, #e6194b); background-size: 30px 20px; animation: slidepx 1s linear both; }
+#animcalc { left: 150px; top: 10px; background-image: linear-gradient(#3cb44b, #3cb44b); background-size: 30px 20px; animation: slidecalc 1s linear both; }
+#animsize { left: 290px; top: 10px; background-image: linear-gradient(#ffe119, #ffe119); animation: grow 1s linear both; }
+#transpos { left: 430px; top: 10px; background-image: linear-gradient(#4363d8, #4363d8); background-size: 30px 20px; background-position: 0px 0px; transition: background-position 1s linear; }
+.go #transpos { background-position: 60px 30px; }

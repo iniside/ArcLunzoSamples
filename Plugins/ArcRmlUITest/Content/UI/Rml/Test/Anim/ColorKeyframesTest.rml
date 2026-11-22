@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Colour Keyframes Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Anim/ColorKeyframesTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="tint">Tint</div>
+	<div id="fill" class="fill"></div>
+</body>
+</rml>

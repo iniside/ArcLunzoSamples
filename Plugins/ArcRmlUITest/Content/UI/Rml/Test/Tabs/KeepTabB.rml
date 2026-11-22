@@ -1,0 +1,28 @@
+<rml>
+<head>
+	<title>Keep Tab B</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Tabs/KeepFrame.rml"/>
+	<link type="text/rcss" href="KeepTab.rcss"/>
+	<link type="text/rcss" href="KeepTabB.rcss"/>
+	<viewmodel name="shared" class="/Script/ArcRmlUITest.ArcRmlKeptTabViewModel" context="KeepShared"/>
+	<viewmodel name="ownb" class="/Script/ArcRmlUITest.ArcRmlKeptTabViewModel" context="KeepOwnB"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="ownb">
+	<div id="kb-title" class="kt-row">Tab B</div>
+	<div id="kb-own" class="kt-row">{{ Count }}</div>
+	<div data-model="shared">
+		<div id="kb-shared" class="kt-row">{{ Count }}</div>
+		<div id="kb-ping" class="kt-btn" data-event-click="call('', 'Ping')">Ping shared</div>
+	</div>
+	<div id="kb-ownping" class="kt-btn" data-event-click="call('', 'Ping')">Ping own</div>
+	<div id="kb-anim"></div>
+	<div id="kb-deco"></div>
+	<div class="kb-list" data-focus-area="list" data-focus-primary="">
+		<div id="kb-btn" class="kt-btn">B1</div>
+		<div id="kb-btn2" class="kt-btn">B2</div>
+	</div>
+	<div id="kb-box" class="kt-box">B box</div>
+	<div id="dup">tab dup</div>
+	<div id="nid">tab nid</div>
+</body>
+</rml>

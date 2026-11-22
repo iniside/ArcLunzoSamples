@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title>Sound Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="SoundTest.rcss"/>
+	<viewmodel name="snd" preview="Preview/SoundTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="snd">
+<div class="sn-root">
+	<div class="sn-focusable sn-themed" id="sn-btn"><div id="sn-icon"></div><div id="sn-label">Label</div></div>
+	<div class="sn-focusable sn-themed" id="sn-gone" data-if="showGone">Gone</div>
+	<div class="sn-focusable sn-themed" id="sn-group"><div id="sn-inner">Inner</div></div>
+	<div class="sn-focusable" id="sn-close" data-action="close">Close</div>
+</div>
+</body>
+</rml>

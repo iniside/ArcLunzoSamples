@@ -1,0 +1,59 @@
+.dk-target-frame {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-1);
+	width: 100%;
+	max-width: 300px;
+	min-width: 0;
+	box-sizing: border-box;
+	padding: var(--hud-space-sm) var(--ui-space-2);
+	border-radius: var(--hud-radius);
+	background: var(--hud-plate);
+	border: 1px solid var(--hud-stroke);
+	box-shadow: var(--hud-plate-shadow);
+}
+
+.dk-target-frame-e2 {
+	display: flex;
+	align-items: baseline;
+	gap: var(--ui-space-2);
+	min-width: 0;
+}
+
+.dk-target-frame-lvl-s {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-2);
+	font-weight: 700;
+	color: var(--ui-warning);
+	text-shadow: var(--hud-text-shadow);
+}
+
+.dk-target-frame-name-s {
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-3);
+	font-weight: 700;
+	text-transform: var(--ui-display-case);
+	letter-spacing: var(--ui-display-tracking);
+	color: var(--hud-enemy);
+	text-shadow: var(--hud-text-shadow);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-width: 0;
+}
+
+.dk-target-frame-name-s.elite {
+	color: var(--hud-elite);
+}
+
+.dk-target-frame-name-s.boss {
+	color: var(--hud-boss);
+}
+
+.dk-target-frame-name-s.friendly {
+	color: var(--hud-friendly);
+}
+
+.dk-target-frame-name-s.neutral {
+	color: var(--hud-neutral);
+}

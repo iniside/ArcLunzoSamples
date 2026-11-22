@@ -1,0 +1,16 @@
+*, ::before, ::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0 solid;
+}
+
+body {
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.before { height: 10px; }
+.mt16 { margin-top: 16px; }
+.float { float: left; width: 50px; height: 40px; background-color: #3366cc; }

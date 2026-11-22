@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>BadCue</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="BadCue.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+<div class="bd-item">Bad</div>
+</body>
+</rml>

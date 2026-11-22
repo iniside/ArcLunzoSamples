@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Keep Alive Plain</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="KeepAlive.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="pl-text" class="kk-row">Plain</div>
+	<div class="kk-btn" id="pl-btn">One</div>
+	<div class="kk-btn">Two</div>
+</body>
+</rml>

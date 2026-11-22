@@ -1,0 +1,29 @@
+<component>
+	<prop name="icon" default=""/>
+	<prop name="label" default=""/>
+	<prop name="description" default=""/>
+	<prop name="value" default=""/>
+	<prop name="delta" default=""/>
+	<prop name="info"/>
+	<prop name="allocate"/>
+	<prop name="canInc"/>
+	<prop name="canDec"/>
+	<prop name="area" default=""/>
+	<prop name="index" default="0"/>
+	<div class="dk-attributerow" data-class-focusable="$area != ''" data-event-keydown="callIf($area != '' &amp;&amp; ev.key == 'ArrowLeft', '', 'AttributeStep', $index, -1); callIf($area != '' &amp;&amp; ev.key == 'ArrowRight', '', 'AttributeStep', $index, 1); stopPropagation($area != '' &amp;&amp; (ev.key == 'ArrowLeft' || ev.key == 'ArrowRight'))">
+		<span class="dk-attributerow-iconbox" data-if="$icon != ''"><i class="dk-attributerow-icon"><svg data-attr-src="$icon" width="18" height="18" stroke-width="2"/></i></span>
+		<div class="dk-attributerow-main">
+			<span class="dk-attributerow-label">{{ $label }}</span>
+			<span class="dk-attributerow-desc" data-if="$description != ''">{{ $description }}</span>
+		</div>
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/IconButton" data-if="$info" icon="/ArcRmlUIDemo/UI/Rml/icons/info.svg" size="sm" data-event-click="call('', 'AttributeInfo', $index)"/>
+		<div class="dk-attributerow-valuebox">
+			<span class="dk-attributerow-value">{{ $value }}</span>
+			<span class="dk-attributerow-delta" data-if="$delta != '' &amp;&amp; $delta != '0'" data-class-neg="$delta * 1 &lt; 0">{{ $delta }}</span>
+		</div>
+		<div class="dk-attributerow-steps" data-if="$allocate">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/IconButton" icon="/ArcRmlUIDemo/UI/Rml/icons/minus.svg" variant="secondary" size="sm" disabled="{{ !$canDec }}" data-event-click="callIf($canDec, '', 'AttributeStep', $index, -1)"/>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/IconButton" icon="/ArcRmlUIDemo/UI/Rml/icons/plus.svg" variant="secondary" size="sm" disabled="{{ !$canInc }}" data-event-click="callIf($canInc, '', 'AttributeStep', $index, 1)"/>
+		</div>
+	</div>
+</component>

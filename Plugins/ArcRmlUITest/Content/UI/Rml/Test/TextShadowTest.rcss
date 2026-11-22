@@ -1,0 +1,98 @@
+body {
+	width: 100%;
+	height: 100%;
+}
+
+div, p, span {
+	display: block;
+}
+
+.panel {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	width: 760px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #b8c0d0;
+	padding: 10px;
+}
+
+.cell {
+	width: 300px;
+	height: 90px;
+	margin: 5px;
+	padding: 8px 12px;
+	background-color: #d8dde8;
+}
+
+.cell.dark {
+	background-color: #10131a;
+}
+
+.tag {
+	font-family: Roboto;
+	font-size: 13px;
+	color: #404858;
+}
+
+.cell.dark .tag {
+	color: #8090a8;
+}
+
+.t {
+	font-family: Roboto;
+	font-size: 36px;
+	color: #202838;
+	margin: 0 0 6px;
+}
+
+.sharp { color: #ffffff; text-shadow: 2px 2px 0 #ff006e; }
+.blurred { text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); }
+.glow { color: #ffffff; text-shadow: 0 0 12px #ffbe0b; }
+.multi { color: #ffffff; text-shadow: 0 0 0 #000000, 4px 4px 0 #3a86ff, 8px 8px 0 #ff006e; }
+.current { color: #c01040; text-shadow: 3px 3px; }
+
+.parent {
+	text-shadow: 2px 3px 3px #00000099;
+}
+
+.none { text-shadow: none; }
+
+.outlined {
+	color: #ffffff;
+	font-effect: outline(2px #202838);
+	text-shadow: 3px 3px 0 #ff006e;
+}
+
+.glowfx {
+	color: #ffffff;
+	font-effect: glow(2dp 6dp 0 0 black);
+	text-shadow: 2dp 2dp 2dp black;
+}
+
+.shadowfx {
+	color: #ffffff;
+	font-effect: shadow(8dp 8dp black);
+	text-shadow: 2dp 2dp 4dp #ff006e;
+}
+
+.filtered { filter: blur(2px); }
+
+.grid40 {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 5px;
+	padding: 8px;
+	background-color: #303642;
+}
+
+.g {
+	width: 90px;
+	margin: 2px;
+	font-family: Roboto;
+	font-size: 16px;
+	color: #ffffff;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}

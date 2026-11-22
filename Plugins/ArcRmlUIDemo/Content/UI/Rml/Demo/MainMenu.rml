@@ -1,0 +1,50 @@
+<rml>
+<head>
+	<title>ArcRmlUI Demo Main Menu</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="hide-lower" content="true"/>
+	<meta name="keep-alive" content="true"/>
+	<meta name="input-mapping" content="/ArcRmlUIDemo/Demo/Input/IMC_ArcDemo_MainMenu"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/tokens.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Fonts/Fonts.rcss"/>
+	<link type="text/rcss" href="GameUI.rcss"/>
+	<link type="text/rcss" href="MainMenu.rcss"/>
+	<viewmodel name="ui" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoUIVM.BP_ArcRmlDemoUIVM_C" context="VM_ArcRmlDemoUI"/>
+	<viewmodel name="main" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoMainMenuVM.BP_ArcRmlDemoMainMenuVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+</head>
+<body data-model="ui" data-class-theme-ember="Theme == 'ember'" data-class-theme-daylight="Theme == 'daylight'" data-class-theme-slate="Theme == 'slate'" data-class-theme-relic="Theme == 'relic'" data-event-back="call('', 'Back'); stopPropagation()" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_DevBar', '', 'ToggleDevBar')">
+	<div class="gu-layer">
+		<div class="gu-screen">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/SceneBackdrop" label="Key art / live 3D scene" dim="soft"/>
+			<div class="mm-grid">
+				<div class="mm-logo">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/GameLogo" eyebrow="Studio Placeholder presents" title="Hollow Meridian" subtitle="Definitive Edition"/>
+				</div>
+				<div class="mm-menu">
+					<div class="mm-items" data-model="main" data-focus-area="menu" data-focus-primary="">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/MenuItem" data-for="mmItem, mmItem_index : Items" label="{{ mmItem.Label }}" description="{{ mmItem.Description }}" badge="{{ mmItem.Badge }}" disabled="{{ mmItem.bDisabled }}" focusable="{{ true }}" autofocus="{{ mmItem_index == Selected }}" data-event-click="callIf(!mmItem.bDisabled, '', 'Activate', mmItem_index)" style="width: 100%"/>
+					</div>
+				</div>
+				<div class="mm-side">
+					<div class="gu-area" data-model="main" data-focus-area="news" data-focus-parent="menu">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Card" thumb="{{ true }}" thumb-label="News art" eyebrow="Patch 1.4" badge="New" title="The Tidewater Update" body="A new coastal region, photo mode and full controller remapping. Read the notes for 40+ fixes." meta="Oct 18" focusable="{{ true }}" data-event-click="call('', 'OpenNews')" style="width: 100%"/>
+					</div>
+					<div class="mm-newsfoot">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="Tab" glyph="RB" label="Next" size="sm"/>
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Pager" count="{{ 3 }}" index="{{ 0 }}"/>
+					</div>
+				</div>
+				<div class="mm-footer">
+					<span class="mm-version">v1.4.2 · build 20261018 · EU-West</span>
+					<div class="gu-prompts gu-all"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Select"/></dc-import></div>
+				</div>
+			</div>
+			<div class="mm-toast" data-if="Toast.bVisible">
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Toast" tone="{{ Toast.Tone }}" title="{{ Toast.Title }}" body="{{ Toast.Body }}" style="width: 100%"/>
+			</div>
+		</div>
+	</div>
+	<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/DevBar" data-if="DevOpen"/>
+</body>
+</rml>

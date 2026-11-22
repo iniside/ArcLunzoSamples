@@ -1,0 +1,26 @@
+body {
+	margin: 0;
+}
+
+.row {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.btn {
+	display: inline-block;
+	tab-index: auto;
+	nav: auto;
+}
+
+.plain {
+	margin-top: 200px;
+}
+
+#sk-long-row {
+	--sound-click: "asset:/ArcRmlUITest/UI/Sound/MS_Click.MS_Click";
+}
+
+.gone {
+	display: none;
+}

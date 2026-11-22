@@ -1,0 +1,103 @@
+:root, [data-theme="dark"] {
+	--accent: #e0b050;
+	--spec: #40c060;
+}
+
+:root {
+	--font-sans: 'Space Grotesk', sans-serif;
+	--font-mono: 'JetBrains Mono', monospace;
+	--font-damage: "Barlow Condensed", sans-serif;
+	--gap-wide: 24px;
+	--radius-control: 8px;
+}
+
+body {
+	--spec: #ff0000;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	font-family: var(--font-sans);
+	color: rgba(255,255,255,0.9);
+}
+
+.never:root {
+	background-color: #ff0000;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+div, p {
+	display: block;
+}
+
+.page {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding: 24px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	gap: 14px;
+	background: #08090a;
+}
+
+.cell {
+	width: 420px;
+	height: 200px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	background: rgba(255,255,255,0.04);
+	border: 1px solid rgba(255,255,255,0.08);
+}
+
+.label {
+	font-size: 13px;
+	color: rgba(255,255,255,0.6);
+}
+
+.local {
+	--accent: #4080e0;
+}
+
+.swatch {
+	width: 60px;
+	height: 40px;
+	border-radius: var(--radius-control);
+	background-color: #303030;
+}
+
+.accent {
+	background-color: var(--accent);
+}
+
+.spec {
+	background-color: var(--spec);
+}
+
+.sans {
+	font-family: var(--font-sans);
+	font-size: 20px;
+}
+
+.mono {
+	font-family: var(--font-mono);
+	font-size: 20px;
+}
+
+.damage {
+	font-family: var(--font-damage);
+	font-size: 24px;
+}
+
+.gaprow {
+	display: flex;
+	flex-direction: row;
+	gap: var(--gap-wide);
+}

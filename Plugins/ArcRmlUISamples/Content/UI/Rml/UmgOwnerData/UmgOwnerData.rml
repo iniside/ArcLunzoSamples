@@ -1,0 +1,18 @@
+<rml>
+<head>
+	<title>UMG owner data</title>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="UmgOwnerData.rcss"/>
+	<viewmodel name="stats" class="/Script/ArcRmlUISamples.ArcRmlSamplesUmgOwnerDataViewModel" path="Stats"/>
+</head>
+<body data-model="stats">
+	<div class="uo-card">
+		<h1 class="uo-title">UMG owner data</h1>
+		<p>Health: {{ Health }}</p>
+		<div class="uo-buttons">
+			<button id="uo-heal" class="uo-button" data-event-click="call('', 'Heal')">Heal</button>
+			<button class="uo-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

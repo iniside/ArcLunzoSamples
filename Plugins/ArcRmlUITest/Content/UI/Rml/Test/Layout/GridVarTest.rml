@@ -1,0 +1,16 @@
+<rml>
+<head>
+	<title>Grid Var Min Width Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Layout/GridVarTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="v-initial" class="grid"><div id="v-initial-a" class="a"><div class="b41"></div><div class="b41"></div><div class="b35"></div></div><div id="v-initial-b" class="b"><div class="b72"></div><div class="b72"></div><div class="b72"></div><div class="b63"></div></div></div>
+	<div id="v-fb-initial" class="grid"><div id="v-fb-initial-a" class="a"><div class="b41"></div><div class="b41"></div><div class="b35"></div></div><div id="v-fb-initial-b" class="b"><div class="b72"></div><div class="b72"></div><div class="b72"></div><div class="b63"></div></div></div>
+	<div id="v-fb-inherit" class="grid"><div id="v-fb-inherit-a" class="a"><div class="b41"></div><div class="b41"></div><div class="b35"></div></div><div id="v-fb-inherit-b" class="b"><div class="b72"></div><div class="b72"></div><div class="b72"></div><div class="b63"></div></div></div>
+	<div id="v-zero" class="grid"><div id="v-zero-a" class="a"><div class="b41"></div><div class="b41"></div><div class="b35"></div></div><div id="v-zero-b" class="b"><div class="b72"></div><div class="b72"></div><div class="b72"></div><div class="b63"></div></div></div>
+	<div id="v-cinherit" class="grid"><div id="v-cinherit-a" class="a"><div class="b41"></div><div class="b41"></div><div class="b35"></div></div><div id="v-cinherit-b" class="b"><div class="b72"></div><div class="b72"></div><div class="b72"></div><div class="b63"></div></div></div>
+	<div id="v-undef" class="grid"><div id="v-undef-a" class="a"><div class="b41"></div><div class="b41"></div><div class="b35"></div></div><div id="v-undef-b" class="b"><div class="b72"></div><div class="b72"></div><div class="b72"></div><div class="b63"></div></div></div>
+</body>
+</rml>

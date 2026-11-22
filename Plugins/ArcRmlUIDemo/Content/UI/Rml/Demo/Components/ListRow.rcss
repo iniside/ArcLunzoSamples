@@ -1,0 +1,125 @@
+.dk-listrow {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-3);
+	min-height: 56px;
+	box-sizing: border-box;
+	width: 100%;
+	padding: var(--ui-space-2) var(--ui-space-3);
+	background: transparent;
+	border: 1px solid transparent;
+	border-radius: var(--ui-radius-md);
+	box-shadow: none;
+	cursor: pointer;
+	transition: background-color var(--ui-dur-fast) var(--ui-ease), border-color var(--ui-dur-fast) var(--ui-ease), transform var(--ui-dur-fast) var(--ui-ease);
+	--h-bg: color-mix(in srgb, var(--ui-surface-2) 70%, transparent);
+	--h-bd: var(--ui-border);
+	--p-tf: scale(0.99);
+	--c-fg: var(--ui-text);
+	--c-sub: var(--ui-text-muted);
+	--c-icon: var(--ui-text-muted);
+}
+
+.dk-listrow.selected {
+	background: var(--ui-accent-soft);
+	border: 1px solid var(--ui-accent);
+	--h-bg: var(--ui-accent-soft);
+	--h-bd: var(--ui-accent);
+	--c-icon: var(--ui-accent);
+}
+
+.dk-listrow.disabled {
+	cursor: default;
+	--h-bg: transparent;
+	--h-bd: transparent;
+	--p-tf: none;
+	--c-fg: var(--ui-text-disabled);
+	--c-sub: var(--ui-text-disabled);
+	--c-icon: var(--ui-text-disabled);
+}
+
+.dk-listrow.disabled.selected {
+	--h-bg: var(--ui-accent-soft);
+	--h-bd: var(--ui-accent);
+}
+
+.dk-listrow:hover, .dk-listrow:focus-visible {
+	background: var(--h-bg);
+	border-color: var(--h-bd);
+}
+
+.dk-listrow:active {
+	transform: var(--p-tf);
+}
+
+.dk-listrow:focus-visible {
+	border: 1px solid var(--ui-focus);
+	box-shadow: var(--ui-focus-ring);
+	--h-bd: var(--ui-focus);
+	--c-icon: var(--ui-accent);
+}
+
+.dk-listrow.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-listrow-iconbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: none;
+	width: 40px;
+	height: 40px;
+	border-radius: var(--ui-radius-md);
+	background: var(--ui-surface-2);
+	color: var(--c-icon);
+}
+
+.dk-listrow-icon {
+	display: inline-flex;
+}
+
+.dk-listrow-icon svg {
+	display: block;
+}
+
+.dk-listrow-main {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+	flex: 1;
+}
+
+.dk-listrow-title {
+	font-size: var(--ui-fs-3);
+	font-weight: 600;
+	color: var(--c-fg);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-listrow-sub {
+	font-size: var(--ui-fs-2);
+	color: var(--c-sub);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-listrow-meta {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	color: var(--c-sub);
+	white-space: nowrap;
+	flex: none;
+}
+
+.dk-listrow-actions {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-2);
+	flex: none;
+}

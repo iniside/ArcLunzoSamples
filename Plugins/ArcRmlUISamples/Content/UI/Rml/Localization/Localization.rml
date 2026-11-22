@@ -1,0 +1,31 @@
+<rml>
+<head>
+	<title>Localization</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="Localization.rcss"/>
+	<viewmodel name="loc" class="/Script/ArcRmlUISamples.ArcRmlSamplesLocalizationViewModel" create="true"/>
+</head>
+<body data-model="loc">
+	<div class="lc-panel">
+		<h1 class="lc-title" loc="Title">Localization</h1>
+		<p class="lc-text" loc="Welcome">Welcome, traveler!</p>
+		<p class="lc-text" loc="Intro">Every text with a loc attribute comes from the String Table ST_Localization.</p>
+		<p class="lc-plain">Plain text without loc stays as written.</p>
+		<div class="lc-row">
+			<span class="lc-label" loc="PurseLabel">Purse:</span>
+			<span id="lc-coins" class="lc-value">{{ Coins | arcplural('Coins') }}</span>
+			<button id="lc-add" class="lc-button" loc="AddCoin" data-event-click="call('', 'AddCoin')">Add a coin</button>
+		</div>
+		<div class="lc-row">
+			<span class="lc-label" loc="CultureLabel">Culture:</span>
+			<span id="lc-culture" class="lc-value">{{ Culture }}</span>
+		</div>
+		<div class="lc-buttons">
+			<button id="lc-en" class="lc-button" autofocus="" data-class-selected="Culture == 'en'" data-event-click="call('', 'SwitchCulture', 'en')">English</button>
+			<button id="lc-pl" class="lc-button" data-class-selected="Culture == 'pl'" data-event-click="call('', 'SwitchCulture', 'pl')">Polski</button>
+		</div>
+	</div>
+</body>
+</rml>

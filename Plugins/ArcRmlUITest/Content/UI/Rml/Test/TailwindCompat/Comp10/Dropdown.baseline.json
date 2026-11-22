@@ -1,0 +1,29 @@
+{
+	"reference_sha1": "5420476A2DB9B7360A9844394BCD6BD7F7CEAF87",
+	"tol": 1,
+	"mismatches":
+	{
+		"0.0.1|scroll_size.h":
+		{
+			"rmlui": 38,
+			"chrome": 194,
+			"diff": 156
+		},
+		"0.0|scroll_size.h":
+		{
+			"rmlui": 86,
+			"chrome": 218,
+			"diff": 132
+		},
+		"0|scroll_size.h":
+		{
+			"rmlui": 86,
+			"chrome": 1080,
+			"diff": 994
+		}
+	},
+	"missing": [],
+	"unmatched":
+	{
+	}
+}

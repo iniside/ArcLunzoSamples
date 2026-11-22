@@ -1,0 +1,1111 @@
+{
+"elements": {
+"0": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+0,
+0,
+1920,
+306
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+1920,
+1080
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+736,
+0,
+736
+],
+"padding": [
+24,
+24,
+24,
+24
+],
+"rect": [
+736,
+0,
+448,
+306
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+448,
+306
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.0": {
+"lines": [],
+"text": "\n    "
+},
+"0.0.1": {
+"border": [
+1,
+1,
+1,
+1
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+24,
+24,
+24,
+24
+],
+"rect": [
+760,
+24,
+400,
+258
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+398,
+256
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.0": {
+"lines": [],
+"text": "\n      "
+},
+"0.0.1.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "flex",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+785,
+49,
+350,
+164
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+350,
+164
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.0": {
+"lines": [],
+"text": "\n        "
+},
+"0.0.1.1.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+1063,
+49,
+72,
+164
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+72,
+164
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.1.0": {
+"lines": [],
+"text": "\n          "
+},
+"0.0.1.1.1.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+1063,
+49,
+72,
+72
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+72,
+72
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.1.2": {
+"lines": [],
+"text": "\n        "
+},
+"0.0.1.1.2": {
+"lines": [],
+"text": "\n\n        "
+},
+"0.0.1.1.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+785,
+49,
+254,
+164
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+254,
+164
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.3.0": {
+"lines": [],
+"text": "\n          "
+},
+"0.0.1.1.3.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+785,
+49,
+254,
+84
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+254,
+84
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.3.1.0": {
+"lines": [
+{
+"height": 23,
+"text": "\n            How I built my first website ",
+"top": 51,
+"width": 235.921875,
+"x": 785
+},
+{
+"height": 23,
+"text": "with Nuxt, Tailwind CSS ",
+"top": 79,
+"width": 201.375,
+"x": 785
+},
+{
+"height": 23,
+"text": "and Vercel\n          ",
+"top": 107,
+"width": 90.828125,
+"x": 785
+}
+],
+"text": "\n            How I built my first website with Nuxt, Tailwind CSS and Vercel\n          "
+},
+"0.0.1.1.3.2": {
+"lines": [],
+"text": "\n\n          "
+},
+"0.0.1.1.3.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+4,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+785,
+137,
+254,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+254,
+20
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.3.3.0": {
+"lines": [
+{
+"height": 18,
+"text": "By John Doe",
+"top": 138,
+"width": 85,
+"x": 785
+}
+],
+"text": "By John Doe"
+},
+"0.0.1.1.3.4": {
+"lines": [],
+"text": "\n\n          "
+},
+"0.0.1.1.3.5": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "flow-root",
+"fragments": null,
+"margin": [
+16,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+785,
+173,
+254,
+40
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+254,
+80
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.3.5.0": {
+"lines": [
+{
+"height": 18,
+"text": "\n            Lorem ipsum dolor sit, amet ",
+"top": 174,
+"width": 186.296875,
+"x": 785
+},
+{
+"height": 18,
+"text": "consectetur adipisicing elit. At velit ",
+"top": 194,
+"width": 239.5,
+"x": 785
+},
+{
+"height": 18,
+"text": "illum provident a,\n            ipsa maiores ",
+"top": 214,
+"width": 202.59375,
+"x": 785
+},
+{
+"height": 18,
+"text": "deleniti consectetur nobis et eaque.\n          ",
+"top": 234,
+"width": 246.109375,
+"x": 785
+}
+],
+"text": "\n            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At velit illum provident a,\n            ipsa maiores deleniti consectetur nobis et eaque.\n          "
+},
+"0.0.1.1.3.6": {
+"lines": [],
+"text": "\n        "
+},
+"0.0.1.1.4": {
+"lines": [],
+"text": "\n      "
+},
+"0.0.1.2": {
+"lines": [],
+"text": "\n\n      "
+},
+"0.0.1.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "flex",
+"fragments": null,
+"margin": [
+24,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+785,
+237,
+350,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+350,
+20
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.0": {
+"lines": [],
+"text": "\n        "
+},
+"0.0.1.3.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "flex",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+785,
+237,
+93.375,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+93,
+20
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.1.0": {
+"lines": [],
+"text": "\n          "
+},
+"0.0.1.3.1.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+785,
+237,
+20,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+20,
+20
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.1.1.0": {
+"lines": [],
+"text": "\n            "
+},
+"0.0.1.3.1.1.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+-1,
+-1,
+-1,
+-1
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+784,
+236,
+1,
+1
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+99,
+24
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.1.1.1.0": {
+"lines": [
+{
+"height": 21,
+"text": " Published on ",
+"top": 237,
+"width": 99.390625,
+"x": 784
+}
+],
+"text": " Published on "
+},
+"0.0.1.3.1.1.2": {
+"lines": [],
+"text": "\n\n            "
+},
+"0.0.1.3.1.1.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+785,
+237,
+20,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+20,
+20
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.1.1.4": {
+"lines": [],
+"text": "\n          "
+},
+"0.0.1.3.1.2": {
+"lines": [],
+"text": "\n\n          "
+},
+"0.0.1.3.1.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+813,
+239,
+65.375,
+16
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+65,
+16
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.1.3.0": {
+"lines": [
+{
+"height": 16,
+"text": "31/06/2025",
+"top": 239,
+"width": 65.375,
+"x": 813
+}
+],
+"text": "31/06/2025"
+},
+"0.0.1.3.1.4": {
+"lines": [],
+"text": "\n        "
+},
+"0.0.1.3.2": {
+"lines": [],
+"text": "\n\n        "
+},
+"0.0.1.3.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "flex",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+902.375,
+237,
+89.9375,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+90,
+20
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.3.0": {
+"lines": [],
+"text": "\n          "
+},
+"0.0.1.3.3.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+902.375,
+237,
+20,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+20,
+20
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.3.1.0": {
+"lines": [],
+"text": "\n            "
+},
+"0.0.1.3.3.1.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+-1,
+-1,
+-1,
+-1
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+901.375,
+236,
+1,
+1
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+101,
+24
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.3.1.1.0": {
+"lines": [
+{
+"height": 21,
+"text": " Reading time ",
+"top": 237,
+"width": 101.484375,
+"x": 901.375
+}
+],
+"text": " Reading time "
+},
+"0.0.1.3.3.1.2": {
+"lines": [],
+"text": "\n\n            "
+},
+"0.0.1.3.3.1.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+902.375,
+237,
+20,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+20,
+20
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.3.1.4": {
+"lines": [],
+"text": "\n          "
+},
+"0.0.1.3.3.2": {
+"lines": [],
+"text": "\n\n          "
+},
+"0.0.1.3.3.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+930.375,
+239,
+61.9375,
+16
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+62,
+16
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.3.3.0": {
+"lines": [
+{
+"height": 16,
+"text": "12 minutes",
+"top": 239,
+"width": 61.9375,
+"x": 930.375
+}
+],
+"text": "12 minutes"
+},
+"0.0.1.3.3.4": {
+"lines": [],
+"text": "\n        "
+},
+"0.0.1.3.4": {
+"lines": [],
+"text": "\n      "
+},
+"0.0.1.4": {
+"lines": [],
+"text": "\n    "
+},
+"0.0.2": {
+"lines": [],
+"text": "\n  \n\n\n\n"
+}
+},
+"inputs_sha1": {
+"Card.chrome.html": "e363339e5aa046ff19de5b53d0ebddfd6e1d99be",
+"img/ph.png": "7c1ddc8365ec171043d756e950635cb3f913bf71",
+"tw-flowbite.rcss": "1a2f56bcf8423b7a22700823ab1a001908e649a1",
+"tw-hyperui.rcss": "6174e5823107a67d486cadfda96038e576d07204",
+"tw-probe.rcss": "6a9ee68f33dd40210aa8e9b1fab10df54d28b533"
+},
+"viewport": [
+1920,
+1080
+]
+}

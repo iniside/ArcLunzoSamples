@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Keep Alive Frame</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="keep-alive" content="true"/>
+	<link type="text/rcss" href="KeepAlive.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="kf-title" class="kk-row">Frame</div>
+	<div id="kf-embed" arc-embed=""></div>
+</body>
+</rml>

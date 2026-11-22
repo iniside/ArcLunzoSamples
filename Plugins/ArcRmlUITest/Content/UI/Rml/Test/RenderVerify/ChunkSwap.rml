@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Render Verify Chunk Swap Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="ChunkSwap.rcss"/>
+	<viewmodel name="cs" preview="Preview/ChunkSwap.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="cs">
+	<div id="line"><span id="slot"><span class="e" data-if="A">E</span><span class="d" data-if="!A">-</span></span></div>
+</body>
+</rml>

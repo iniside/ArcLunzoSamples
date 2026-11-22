@@ -1,0 +1,103 @@
+<rml>
+<head>
+	<title>ArcRmlUI Demo Vendor</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="hide-lower" content="true"/>
+	<meta name="keep-alive" content="true"/>
+	<meta name="input-mapping" content="/ArcRmlUIDemo/Demo/Input/IMC_ArcDemo_Vendor"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/tokens.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Fonts/Fonts.rcss"/>
+	<link type="text/rcss" href="GameUI.rcss"/>
+	<link type="text/rcss" href="Vendor.rcss"/>
+	<viewmodel name="ui" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoUIVM.BP_ArcRmlDemoUIVM_C" context="VM_ArcRmlDemoUI"/>
+	<viewmodel name="vendor" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoVendorVM.BP_ArcRmlDemoVendorVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+</head>
+<body data-model="ui" data-class-theme-ember="Theme == 'ember'" data-class-theme-daylight="Theme == 'daylight'" data-class-theme-slate="Theme == 'slate'" data-class-theme-relic="Theme == 'relic'" data-event-back="call('', 'Back'); stopPropagation()" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_DevBar', '', 'ToggleDevBar')">
+	<div class="gu-layer">
+		<div class="gu-screen" data-model="vendor">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/SceneBackdrop" label="Game scene" dim="strong"/>
+			<div class="vd-frame">
+				<div class="vd-head">
+					<div class="vd-who">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Avatar" initials="MK" size="xl" tone="legendary"/>
+						<div class="vd-titles">
+							<span class="vd-role">Provisioner · Old Port Docks</span>
+							<span class="vd-name">Mother Kittiwake</span>
+						</div>
+					</div>
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/CurrencyDisplay" items="{{ Wallet }}" size="lg"/>
+				</div>
+				<div class="gu-cycle">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/TabBar" tabs="{{ Tabs }}" active="{{ ActiveTab }}" prompts="{{ true }}" area="main" nofocus="{{ true }}" data-hotkey-cycle="IA_ArcDemo_PrevTab IA_ArcDemo_NextTab"/>
+				</div>
+				<div class="vd-body">
+					<div class="vd-col">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="{{ StockTitle }}" subtitle="{{ StockSub }}" icon="/ArcRmlUIDemo/UI/Rml/icons/store.svg" scroll="{{ true }}" fill="{{ true }}" style="width: 100%; height: 100%">
+							<div class="vd-stock" data-focus-area="stock" data-focus-primary="">
+								<div class="vd-cell" data-for="vdStock, vdStock_index : StockRows">
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ItemSlot" fluid="{{ true }}" icon="{{ vdStock.Icon }}" rarity="{{ vdStock.Rarity }}" quantity="{{ vdStock.Quantity }}" selected="{{ vdStock.bSelected }}" disabled="{{ vdStock.bUnusable }}" focusable="{{ true }}" autofocus="{{ vdStock.bSelected }}" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_BuyMax', '', 'BuyMax', 'stock', vdStock_index); callIf(ev.action == 'IA_ArcDemo_Compare', '', 'Compare', 'stock', vdStock_index); stopPropagation(ev.action == 'IA_ArcDemo_BuyMax' || ev.action == 'IA_ArcDemo_Compare')" data-focus-enter="modal" data-event-click="call('', 'Activate', 'stock', vdStock_index)" style="width: 100%"/>
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/CurrencyDisplay" items="{{ vdStock.Price }}" size="sm"/>
+								</div>
+							</div>
+						</dc-import>
+					</div>
+					<div class="vd-col">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="{{ TxTitle }}" has-icon="{{ true }}" scroll="{{ true }}" fill="{{ true }}" has-footer="{{ true }}" data-focus-area="tx" style="width: 100%; height: 100%">
+							<svg slot="icon" data-if="ActiveTab == 0" src="/ArcRmlUIDemo/UI/Rml/icons/shopping-cart.svg" width="22" height="22" stroke-width="2"/>
+							<svg slot="icon" data-if="ActiveTab == 1" src="/ArcRmlUIDemo/UI/Rml/icons/hand-coins.svg" width="22" height="22" stroke-width="2"/>
+							<svg slot="icon" data-if="ActiveTab == 2" src="/ArcRmlUIDemo/UI/Rml/icons/undo-2.svg" width="22" height="22" stroke-width="2"/>
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ItemTooltip" item="{{ Item }}" sell-label="Sell value" width="{{ 520 }}"/>
+							<div class="vd-qty">
+								<span class="vd-label">Quantity</span>
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Stepper" value="{{ QuantityLabel }}" count="{{ 0 }}" field="qty"/>
+							</div>
+							<div class="vd-rows">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/StatRow" label="Price each">
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/CurrencyDisplay" items="{{ UnitPrice }}" size="sm"/>
+								</dc-import>
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/StatRow" label="Gold after">
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/CurrencyDisplay" items="{{ After }}" size="sm"/>
+								</dc-import>
+							</div>
+							<div class="vd-total">
+								<span class="vd-total-label">{{ TotalLabel }}</span>
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/CurrencyDisplay" items="{{ Total }}" size="lg"/>
+							</div>
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Toast" data-if="ShortBody != ''" tone="error" title="Not enough gold" body="{{ ShortBody }}"/>
+							<div slot="footer" class="vd-footer-slot" data-focus-area="deal">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="{{ TxAction }}" has-icon="{{ true }}" size="lg" block="{{ true }}" disabled="{{ bBlocked }}" focusable="{{ true }}" data-focus-enter="modal" data-event-click="callIf(!bBlocked, '', 'Deal')">
+									<svg slot="icon" data-if="ActiveTab == 0" src="/ArcRmlUIDemo/UI/Rml/icons/shopping-cart.svg" width="22" height="22" stroke-width="2"/>
+									<svg slot="icon" data-if="ActiveTab == 1" src="/ArcRmlUIDemo/UI/Rml/icons/hand-coins.svg" width="22" height="22" stroke-width="2"/>
+									<svg slot="icon" data-if="ActiveTab == 2" src="/ArcRmlUIDemo/UI/Rml/icons/undo-2.svg" width="22" height="22" stroke-width="2"/>
+								</dc-import>
+							</div>
+						</dc-import>
+					</div>
+					<div class="vd-col">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="Your backpack" subtitle="{{ BagSub }}" icon="/ArcRmlUIDemo/UI/Rml/icons/backpack.svg" scroll="{{ true }}" fill="{{ true }}" style="width: 100%; height: 100%">
+							<div class="vd-bag" data-focus-area="bag">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ItemSlot" data-for="vdBag, vdBag_index : Bag" fluid="{{ true }}" icon="{{ vdBag.Icon }}" rarity="{{ vdBag.Rarity }}" quantity="{{ vdBag.Quantity }}" selected="{{ vdBag.bSelected }}" is-new="{{ vdBag.bNew }}" focusable="{{ vdBag_index &lt; BagStops }}" autofocus="{{ vdBag.bSelected }}" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_BuyMax', '', 'BuyMax', 'bag', vdBag_index); callIf(ev.action == 'IA_ArcDemo_Compare', '', 'Compare', 'bag', vdBag_index); stopPropagation(ev.action == 'IA_ArcDemo_BuyMax' || ev.action == 'IA_ArcDemo_Compare')" data-focus-enter="modal" data-event-click="callIf(vdBag_index &lt; BagStops, '', 'Activate', 'bag', vdBag_index)"/>
+							</div>
+						</dc-import>
+					</div>
+				</div>
+				<div class="vd-footer">
+					<div class="gu-prompts gu-all" data-if="bConfirm"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Confirm"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Cancel"/></dc-import></div>
+					<div class="gu-prompts gu-default" data-if="!bConfirm"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="{{ TxAction }}" disabled="{{ !bCanDeal }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_BuyMax }}" label="Buy max" disabled="{{ !bCanBuyMax }}" data-hotkey="IA_ArcDemo_BuyMax" data-event-click="callIf(bCanBuyMax, '', 'BuyMax', '', -1)"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Compare }}" label="Compare" disabled="{{ !bComparable }}" data-hotkey="IA_ArcDemo_Compare" data-event-click="callIf(bComparable, '', 'Compare', '', -1)"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Leave"/></dc-import></div>
+					<div class="gu-prompts" data-area="stock" data-if="!bConfirm"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="{{ TxAction }}" disabled="{{ !bCanDeal }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_BuyMax }}" label="Buy max" disabled="{{ ActiveTab != 0 }}" data-hotkey="IA_ArcDemo_BuyMax" data-event-click="callIf(ActiveTab == 0, '', 'BuyMax', '', -1)"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Compare }}" label="Compare" disabled="{{ ActiveTab == 1 &amp;&amp; !bComparable }}" data-hotkey="IA_ArcDemo_Compare" data-event-click="callIf(!(ActiveTab == 1 &amp;&amp; !bComparable), '', 'Compare', '', -1)"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Leave"/></dc-import></div>
+					<div class="gu-prompts" data-area="tx" data-if="!bConfirm"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="← →" glyph="← →" label="Quantity" disabled="{{ !bQuantityOn }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_BuyMax }}" label="Buy max" disabled="{{ !bCanBuyMax }}" data-hotkey="IA_ArcDemo_BuyMax" data-event-click="callIf(bCanBuyMax, '', 'BuyMax', '', -1)"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Compare }}" label="Compare" disabled="{{ !bComparable }}" data-hotkey="IA_ArcDemo_Compare" data-event-click="callIf(bComparable, '', 'Compare', '', -1)"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Leave"/></dc-import></div>
+					<div class="gu-prompts" data-area="deal" data-if="!bConfirm"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="{{ TxAction }}" disabled="{{ !bCanDeal }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_BuyMax }}" label="Buy max" disabled="{{ !bCanBuyMax }}" data-hotkey="IA_ArcDemo_BuyMax" data-event-click="callIf(bCanBuyMax, '', 'BuyMax', '', -1)"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Compare }}" label="Compare" disabled="{{ !bComparable }}" data-hotkey="IA_ArcDemo_Compare" data-event-click="callIf(bComparable, '', 'Compare', '', -1)"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Leave"/></dc-import></div>
+					<div class="gu-prompts" data-area="bag" data-if="!bConfirm"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="{{ TxAction }}" disabled="{{ !bCanDeal }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_BuyMax }}" label="Buy max" disabled="{{ !bCanBuyMax }}" data-hotkey="IA_ArcDemo_BuyMax" data-event-click="callIf(bCanBuyMax, '', 'BuyMax', '', -1)"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Compare }}" label="Compare" disabled="{{ ActiveTab != 1 &amp;&amp; !bComparable }}" data-hotkey="IA_ArcDemo_Compare" data-event-click="callIf(!(ActiveTab != 1 &amp;&amp; !bComparable), '', 'Compare', '', -1)"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Leave"/></dc-import></div>
+				</div>
+			</div>
+			<div class="gu-area" data-if="bConfirm" data-focus-area="modal" data-focus-contain="" data-event-uiaction="stopPropagation(ev.action != 'IA_ArcDemo_DevBar')">
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Modal" backdrop="{{ true }}" title="{{ ModalTitle }}" body="{{ ConfirmBody }}" has-icon="{{ true }}" buttons="{{ ModalButtons }}" focused="{{ 1 }}">
+					<svg slot="icon" src="/ArcRmlUIDemo/UI/Rml/icons/shopping-bag.svg" width="22" height="22" stroke-width="2"/>
+				</dc-import>
+			</div>
+		</div>
+	</div>
+	<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/DevBar" data-if="DevOpen"/>
+</body>
+</rml>

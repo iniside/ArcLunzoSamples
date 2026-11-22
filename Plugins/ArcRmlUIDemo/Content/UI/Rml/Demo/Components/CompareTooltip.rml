@@ -1,0 +1,15 @@
+<component>
+	<prop name="item" default="[]"/>
+	<prop name="equipped" default="[]"/>
+	<prop name="itemLabel" default=""/>
+	<prop name="equippedLabel" default="Equipped"/>
+	<prop name="sellLabel" default=""/>
+	<div class="dk-comparetooltip">
+		<div class="dk-comparetooltip-cell">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ItemTooltip" item="{{ $item }}" header="{{ $itemLabel }}" sell-label="{{ $sellLabel }}" width="{{ 380 }}"/>
+		</div>
+		<div class="dk-comparetooltip-cell dk-comparetooltip-equipped" data-if="$equipped.Name != ''">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ItemTooltip" item="{{ $equipped }}" header="{{ $equippedLabel }}" sell-label="{{ $sellLabel }}" width="{{ 380 }}"/>
+		</div>
+	</div>
+</component>

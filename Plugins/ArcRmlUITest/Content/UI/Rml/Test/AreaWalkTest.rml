@@ -1,0 +1,24 @@
+<rml>
+<head>
+	<title>ArcRmlUI Area Walk Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="AreaWalkTest.rcss"/>
+	<viewmodel name="awt" preview="Preview/AreaWalkTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="awt">
+<div class="awt-root">
+	<div class="awt-top" data-focus-area="top" data-focus-primary="">
+		<div class="awt-btn" id="awt-t1" data-if="showTop">Top</div>
+		<div data-if="showWrap">
+			<div class="awt-wrap" data-focus-area="wrap" data-focus-parent="top">
+				<div class="awt-row" data-if="showWrapRow" data-class-awt-hidden="rowHidden">
+					<div class="awt-btn" id="awt-w1">Wrap 1</div>
+					<div class="awt-btn" id="awt-w2">Wrap 2</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</rml>

@@ -1,0 +1,160 @@
+@keyframes hud-np-dead { from { opacity: 1; } to { opacity: 0; } }
+
+.dk-nameplate {
+	position: absolute;
+	width: 0;
+	height: 0;
+	display: block;
+}
+
+.dk-nameplate.no-visible {
+	display: none;
+}
+
+.dk-nameplate-content {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--hud-space-xs);
+	transform-origin: 50% 100%;
+	--dk-nameplate-content-transform-1: 1;
+	transform: translate(-50%, -100%) scale(var(--dk-nameplate-content-transform-1));
+	animation: none;
+}
+
+.dk-nameplate-content.dead {
+	animation: hud-np-dead var(--hud-dur-pulse) var(--ui-ease) forwards;
+}
+
+.dk-nameplate-name-s {
+	max-width: 120px;
+	font-size: var(--ui-fs-1);
+	font-weight: 600;
+	color: var(--hud-enemy);
+	text-shadow: var(--hud-text-shadow);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-nameplate-name-s.elite {
+	color: var(--hud-elite);
+}
+
+.dk-nameplate-name-s.boss {
+	color: var(--hud-boss);
+}
+
+.dk-nameplate-name-s.friendly {
+	color: var(--hud-friendly);
+}
+
+.dk-nameplate-name-s.neutral {
+	color: var(--hud-neutral);
+}
+
+.dk-nameplate-aggro-s {
+	position: absolute;
+	right: -4px;
+	top: -14px;
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-4);
+	font-weight: 800;
+	color: var(--ui-warning);
+	text-shadow: var(--hud-text-shadow);
+}
+
+.dk-nameplate-mark-s {
+	position: absolute;
+	left: calc(50% - 6px);
+	top: -16px;
+	width: 12px;
+	height: 12px;
+	box-sizing: border-box;
+	border: 2px solid var(--hud-stroke-strong);
+	border-top-color: transparent;
+	border-left-color: transparent;
+	transform: rotate(45deg);
+	box-shadow: var(--hud-plate-shadow);
+}
+
+.dk-nameplate-track {
+	position: relative;
+	width: 100%;
+	height: 7px;
+	box-sizing: border-box;
+	background: var(--hud-plate);
+	border: 1px solid var(--hud-stroke);
+	border-radius: var(--hud-radius-sm);
+	overflow: hidden;
+	box-shadow: none;
+}
+
+.dk-nameplate-track.is-target {
+	box-shadow: 0 0 0 1px var(--hud-stroke-strong);
+}
+
+.dk-nameplate-trail-s {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	transform-origin: left;
+	--dk-nameplate-trail-s-transform-1: 1;
+	transform: scaleX(var(--dk-nameplate-trail-s-transform-1));
+	background: var(--hud-health-trail);
+}
+
+.dk-nameplate-fill-s {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	transform-origin: left;
+	--dk-nameplate-fill-s-transform-1: 1;
+	transform: scaleX(var(--dk-nameplate-fill-s-transform-1));
+	background: var(--hud-enemy);
+}
+
+.dk-nameplate-fill-s.elite {
+	background: var(--hud-elite);
+}
+
+.dk-nameplate-fill-s.boss {
+	background: var(--hud-boss);
+}
+
+.dk-nameplate-fill-s.friendly {
+	background: var(--hud-friendly);
+}
+
+.dk-nameplate-fill-s.neutral {
+	background: var(--hud-neutral);
+}
+
+.dk-nameplate-cast-track {
+	position: relative;
+	width: 80%;
+	height: 4px;
+	background: var(--hud-plate);
+	border-radius: var(--hud-radius-sm);
+	overflow: hidden;
+}
+
+.dk-nameplate-cast-fill {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	transform-origin: left;
+	--dk-nameplate-cast-fill-transform-1: 0;
+	transform: scaleX(var(--dk-nameplate-cast-fill-transform-1));
+	background: var(--ui-warning);
+}

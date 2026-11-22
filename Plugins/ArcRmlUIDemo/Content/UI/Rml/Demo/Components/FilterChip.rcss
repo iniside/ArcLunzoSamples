@@ -1,0 +1,98 @@
+.dk-filterchip {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--ui-space-2);
+	min-height: 36px;
+	padding: 0 var(--ui-space-3);
+	box-sizing: border-box;
+	border-radius: 18px;
+	border: 1px solid var(--ui-border);
+	background: var(--ui-surface);
+	color: var(--ui-text);
+	font-size: var(--ui-fs-2);
+	font-weight: 600;
+	cursor: pointer;
+	flex: none;
+	box-shadow: none;
+	transition: background-color var(--ui-dur-fast) var(--ui-ease), border-color var(--ui-dur-fast) var(--ui-ease), color var(--ui-dur-fast) var(--ui-ease), transform var(--ui-dur-fast) var(--ui-ease);
+	--h-bg: var(--ui-surface-2);
+	--h-bd: var(--ui-accent);
+	--h-fg: var(--ui-text);
+	--p-tf: scale(0.97);
+}
+
+.dk-filterchip.active {
+	border: 1px solid var(--ui-accent);
+	background: var(--ui-accent);
+	color: var(--ui-accent-text);
+	--h-bg: var(--ui-accent);
+	--h-bd: var(--ui-accent);
+	--h-fg: var(--ui-accent-text);
+}
+
+.dk-filterchip.disabled {
+	background: transparent;
+	color: var(--ui-text-disabled);
+	cursor: default;
+	--h-bg: transparent;
+	--h-bd: var(--ui-border);
+	--h-fg: var(--ui-text-disabled);
+	--p-tf: none;
+}
+
+.dk-filterchip.disabled.active {
+	border: 1px solid var(--ui-accent);
+	--h-bd: var(--ui-accent);
+}
+
+.dk-filterchip:hover, .dk-filterchip:focus-visible {
+	background: var(--h-bg);
+	border-color: var(--h-bd);
+	color: var(--h-fg);
+}
+
+.dk-filterchip:active {
+	transform: var(--p-tf);
+}
+
+.dk-filterchip:focus-visible {
+	border: 1px solid var(--ui-focus);
+	box-shadow: var(--ui-focus-ring);
+	--h-bd: var(--ui-focus);
+}
+
+.dk-filterchip.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-filterchip-icon {
+	display: inline-flex;
+	flex: none;
+}
+
+.dk-filterchip-icon svg {
+	display: block;
+}
+
+.dk-filterchip-label {
+	white-space: nowrap;
+}
+
+.dk-filterchip-count {
+	font-family: var(--ui-font-mono);
+	font-size: 11px;
+	padding: 1px 6px;
+	border-radius: 9px;
+	background: var(--ui-surface-2);
+	color: var(--ui-text-muted);
+}
+
+.dk-filterchip-count.active {
+	background: color-mix(in srgb, var(--ui-accent-text) 18%, transparent);
+	color: var(--ui-accent-text);
+}
+
+.dk-filterchip-count.disabled {
+	color: var(--ui-text-disabled);
+}

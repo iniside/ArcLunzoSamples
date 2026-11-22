@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>Loc Unbound Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="ComponentTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="col left">
+		<div id="loc-unbound">{{ '&#xFDD0;/ArcRmlUITest/UI/Rml/Test/LocTest.rml&#xFDD1;Section&#xFDD2;' }}</div>
+		<div id="const-unbound">{{ 'Constant' + ' text' }}</div>
+		<div id="variable-unbound">{{ count }} left</div>
+	</div>
+</body>
+</rml>

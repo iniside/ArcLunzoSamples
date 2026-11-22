@@ -1,0 +1,105 @@
+body {
+	display: block;
+}
+
+.holder {
+	display: block;
+}
+
+.swatch {
+	display: block;
+	width: 40px;
+	height: 10px;
+	background-color: #ff00ff;
+}
+
+#initial-fallback {
+	--c: initial;
+	background-color: var(--c, #00ff00);
+}
+
+#initial-empty-fallback {
+	--c: initial;
+	background-color: var(--c,) #0000ff;
+}
+
+#initial-parent {
+	--c: initial;
+}
+
+#initial-inherited {
+	background-color: var(--c, #ff8000);
+}
+
+#initial-over-parent {
+	--c: #ff0000;
+}
+
+#initial-overrides {
+	--c: initial;
+	background-color: var(--c, #008080);
+}
+
+#unset-parent {
+	--c: #123456;
+}
+
+#unset-inherits {
+	--c: unset;
+	background-color: var(--c, #000000);
+}
+
+#inherit-parent {
+	--c: #654321;
+}
+
+#inherit-inherits {
+	--c: inherit;
+	background-color: var(--c, #000000);
+}
+
+#initial-no-fallback {
+	--c: initial;
+	background-color: var(--c);
+}
+
+#chain-fallback {
+	--a: var(--missing);
+	background-color: var(--a, #00ff80);
+}
+
+#chain-parent {
+	--a: var(--missing);
+}
+
+#chain-inherited {
+	background-color: var(--a, #80ff00);
+}
+
+#chain-no-fallback {
+	--a: var(--missing);
+	background-color: var(--a);
+}
+
+#cycle-fallback {
+	--a: var(--b);
+	--b: var(--a);
+	background-color: var(--a, #8000ff);
+}
+
+#cycle-other-fallback {
+	--a: var(--b);
+	--b: var(--a);
+	background-color: var(--b, #ff0080);
+}
+
+#cycle-nested-fallback {
+	--a: var(--b);
+	--b: var(--a);
+	background-color: var(--a, var(--b, #00ffff));
+}
+
+#cycle-self {
+	--a: var(--a, #ff0000);
+	background-color: var(--a, #804000);
+}

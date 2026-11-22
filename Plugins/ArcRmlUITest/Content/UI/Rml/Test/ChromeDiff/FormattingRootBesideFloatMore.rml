@@ -1,0 +1,38 @@
+<rml>
+<head>
+	<title>FormattingRootBesideFloatMore</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ChromeDiff/FormattingRootBesideFloatMore.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="t"><div class="f"></div><div class="c" id="M1" style="overflow:hidden;width:250px;margin-left:70px"></div></div>
+	<div class="t"><div class="f"></div><div class="c" id="M2" style="overflow:hidden;width:250px;margin-left:10px;margin-right:10px"></div></div>
+	<div class="t"><div class="f"></div><div class="c" id="M3" style="overflow:hidden;width:251px"></div></div>
+	<div class="t"><div class="f" style="float:right"></div><div class="c" id="M4" style="overflow:hidden;width:250px;margin-left:30px"></div></div>
+	<div class="t"><div class="f"></div><div class="c" id="M5" style="overflow:hidden;width:100px;margin-left:auto"></div></div>
+	<div class="t"><div class="f" style="float:right"></div><div class="c" id="M15" style="overflow:hidden;width:200px;margin-left:60px"></div></div>
+	<div class="t"><div class="f" style="float:right"></div><div class="c" id="M16" style="overflow:hidden;width:240px;margin-right:20px"></div></div>
+	<div class="t"><div class="f"></div><div class="f" style="float:right"></div><div class="c" id="M18" style="overflow:hidden;width:190px;margin-left:70px"></div></div>
+	<div class="t"><div class="f"></div><div class="c" id="M19" style="overflow:hidden;margin-left:70px;margin-right:10px"></div></div>
+	<div class="t"><div class="f"></div><div class="c" id="M20" style="overflow:hidden;width:251px;margin-left:-10px"></div></div>
+	<div class="t"><div class="f" style="float:right"></div><div class="c" id="M23" style="overflow:hidden;width:100px;margin-left:auto;margin-right:30px"></div></div>
+	<div class="t"><div class="f"></div><div class="c" id="M24" style="overflow:hidden;width:100px;margin-left:80px;margin-right:auto"></div></div>
+	<div class="t"><div class="f" style="width:20px"></div><div class="c" id="M25" style="overflow:hidden;width:260px;margin-left:auto;margin-right:auto"></div></div>
+	<div class="t"><div class="f" style="width:20px;margin-left:-30px"></div><div class="c" id="M26" style="overflow:hidden;margin-left:-10px"></div></div>
+	<div class="t"><div class="f" style="width:150px"></div><div class="c" id="N1" style="overflow:hidden;height:auto;aspect-ratio:5;margin-right:10px"></div></div>
+	<div class="t"><div class="f" style="float:right;width:10px"></div><div class="c" id="N2" style="overflow:hidden;height:auto;aspect-ratio:10"></div></div>
+	<div class="t"><div class="f"></div><div class="c" id="O1" style="overflow:auto;min-width:260px"><div id="O1i" style="width:280px;height:5px"></div></div></div>
+	<div class="t"><div class="f"></div><div class="c" id="O2" style="overflow:auto;height:20px"><div id="O2i" style="height:100px"></div></div></div>
+	<div class="t"><div class="f"></div><div class="c" id="O3" style="overflow:auto;height:auto"><div id="O3i" style="width:280px;height:10px"></div></div></div>
+	<div class="t"><div class="f"></div><div class="c" id="W1" style="overflow:hidden;width:fit-content;margin-left:10px"><div style="display:inline-block;width:280px;height:10px"></div></div></div>
+	<div class="t"><div class="f"></div><div class="c" id="W2" style="overflow:hidden;width:fit-content"><div style="display:inline-block;width:100px;height:10px"></div></div></div>
+	<div class="t"><div class="f"></div><div class="c" id="W3" style="overflow:hidden;width:max-content"><div style="display:inline-block;width:280px;height:10px"></div></div></div>
+	<div class="t"><div class="f"></div><div class="c" id="W4" style="overflow:hidden;width:min-content"><div style="display:inline-block;width:20px;height:10px"></div><div style="display:inline-block;width:20px;height:10px"></div></div></div>
+	<div class="t"><div class="f"></div><div class="c" id="W5" style="overflow:hidden;max-width:fit-content"><div style="display:inline-block;width:100px;height:10px"></div></div></div>
+	<div class="t"><div class="f" id="R1a" style="height:20px"></div><div class="f" id="R1b" style="clear:left;width:100px;height:50px"></div><div id="R1" style="overflow:hidden"><div style="display:inline-block;width:60px;height:20px"></div><div style="display:inline-block;width:60px;height:20px"></div><div style="display:inline-block;width:60px;height:20px"></div><div style="display:inline-block;width:60px;height:20px"></div><div style="display:inline-block;width:60px;height:20px"></div></div></div>
+	<div class="t"><div class="f" id="R2a" style="float:right;height:20px"></div><div class="f" id="R2b" style="float:right;clear:right;width:100px;height:50px"></div><div id="R2" style="overflow:hidden"><div style="display:inline-block;width:60px;height:20px"></div><div style="display:inline-block;width:60px;height:20px"></div><div style="display:inline-block;width:60px;height:20px"></div><div style="display:inline-block;width:60px;height:20px"></div><div style="display:inline-block;width:60px;height:20px"></div></div></div>
+	<div class="t"><div class="f" id="R3a" style="width:150px;height:20px"></div><div class="f" id="R3b" style="clear:left;width:10px;height:30px"></div><div class="f" id="R3c" style="float:right;clear:both;width:100px;height:50px"></div><div id="R3" style="overflow:hidden;min-width:160px"><div style="display:inline-block;width:60px;height:20px"></div><div style="display:inline-block;width:60px;height:20px"></div><div style="display:inline-block;width:60px;height:20px"></div><div style="display:inline-block;width:60px;height:20px"></div></div></div>
+	<div class="t"><div class="f" id="R4a" style="float:right;width:150px;height:20px"></div><div class="f" id="R4b" style="float:right;clear:right;width:10px;height:30px"></div><div class="f" id="R4c" style="float:left;clear:both;width:100px;height:50px"></div><div id="R4" style="overflow:hidden;min-width:160px"><div style="display:inline-block;width:60px;height:20px"></div><div style="display:inline-block;width:60px;height:20px"></div><div style="display:inline-block;width:60px;height:20px"></div><div style="display:inline-block;width:60px;height:20px"></div></div></div>
+</body>
+</rml>

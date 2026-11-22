@@ -1,0 +1,68 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 14px;
+	color: #e8ecf4;
+	background-color: #0b0e14;
+}
+
+div {
+	display: block;
+}
+
+.title {
+	position: absolute;
+	left: 12px;
+	top: 8px;
+	font-size: 16px;
+}
+
+.cols {
+	position: absolute;
+	left: 8px;
+	top: 32px;
+	right: 8px;
+	bottom: 8px;
+	overflow: hidden;
+}
+
+.col {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	overflow: hidden;
+}
+
+.static { left: 0px; width: 900px; }
+.animated { left: 940px; width: 900px; animation: colWidth 2s ease-in-out infinite alternate; }
+
+.p {
+	display: block;
+	margin-bottom: 6px;
+	text-align: justify;
+}
+
+.f-grotesk { font-family: 'Space Grotesk', sans-serif; }
+.f-barlow { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; }
+.f-mono { font-family: 'JetBrains Mono', monospace; }
+
+.s10 { font-size: 10px; }
+.s12 { font-size: 12px; }
+.s13 { font-size: 13px; }
+.s14 { font-size: 14px; }
+.s16 { font-size: 16px; }
+.s18 { font-size: 18px; }
+.s22 { font-size: 22px; }
+.s28 { font-size: 28px; }
+
+.v0 { font-variant-numeric: tabular-nums slashed-zero; }
+.v1 { font-variant-ligatures: no-common-ligatures; }
+.v2 { font-variant-caps: small-caps; }
+.v3 { font-feature-settings: "liga" on, "kern" on, "tnum" 1; }
+.v4 { letter-spacing: 1px; text-wrap: pretty; }
+
+@keyframes colWidth {
+	from { width: 900px; }
+	to { width: 420px; }
+}

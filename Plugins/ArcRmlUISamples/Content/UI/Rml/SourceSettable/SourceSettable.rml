@@ -1,0 +1,24 @@
+<rml>
+<head>
+	<title>Source: settable</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="SourceSettable.rcss"/>
+	<viewmodel name="item" class="/Script/ArcRmlUISamples.ArcRmlSamplesSourceSettableViewModel" context="VM_SampleSettable" settable="true"/>
+</head>
+<body data-model="item">
+	<div class="ss-panel">
+		<h1 class="ss-title">Source: settable</h1>
+		<div data-if="ArcResolved">
+			<span class="ss-row">{{ Label }}</span>
+			<span class="ss-row">Generation: {{ Generation }}</span>
+		</div>
+		<span class="ss-row" data-if="!ArcResolved">Waiting for the view model</span>
+		<div class="ss-buttons">
+			<button id="ss-replace" class="ss-button" data-event-click="call('', 'Replace')">Replace the instance</button>
+			<button class="ss-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

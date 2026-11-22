@@ -1,0 +1,26 @@
+<rml>
+<head>
+	<title>Auto Margin Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Layout/AutoMarginTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="cb-abs-both" class="cb0"><div id="abs-both" class="abs both"></div></div>
+	<div id="cb-abs-left" class="cb0"><div id="abs-left" class="abs left-auto"></div></div>
+	<div id="cb-abs-right" class="cb0"><div id="abs-right" class="abs right-auto"></div></div>
+	<div id="cb-abs-vert" class="cb0"><div id="abs-vert" class="abs vert"></div></div>
+	<div id="cb-flow-both" class="narrow"><div id="flow-both" class="flow both"></div></div>
+	<div id="cb-flow-left" class="narrow"><div id="flow-left" class="flow left-auto"></div></div>
+	<div id="cb-flow-right" class="narrow"><div id="flow-right" class="flow right-auto"></div></div>
+	<div id="cb-flow-fit" class="wide"><div id="flow-fit" class="flow both"></div></div>
+	<div id="cb-flow-min" class="narrow"><div id="flow-min" class="flow-min both"></div></div>
+	<div id="stf-max" class="stf"><div id="stf-max-child" class="flow both"></div></div>
+	<div id="cb-stf-min" class="cb0"><div id="stf-min" class="stf"><div id="stf-min-child" class="flow both"></div></div></div>
+	<div id="cb-float" class="wide"><div id="float-both" class="flow both float"></div></div>
+	<div id="cb-ib" class="wide"><div id="ib-both" class="flow both ib"></div></div>
+	<div id="cb-abs-l" class="cb200"><div id="abs-left-inset-auto" class="abs-auto la"></div></div>
+	<div id="cb-abs-r" class="cb200"><div id="abs-right-inset-auto" class="abs-auto ra"></div></div>
+	<div id="cb-abs-s" class="cb200"><div id="abs-static" class="abs-auto"></div></div>
+</body>
+</rml>

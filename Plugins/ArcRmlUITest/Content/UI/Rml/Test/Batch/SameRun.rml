@@ -1,0 +1,18 @@
+<rml>
+<head>
+	<title>Batch Same Run</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="Batch.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="r" style="left: 20px; top: 20px;"></div>
+	<div class="r a" style="left: 70px; top: 20px;"></div>
+	<div class="r" style="left: 120px; top: 20px;"></div>
+	<div class="r a" style="left: 170px; top: 20px;"></div>
+	<div class="r" style="left: 220px; top: 20px;"></div>
+	<div class="r a" style="left: 270px; top: 20px;"></div>
+	<div class="r" style="left: 320px; top: 20px;"></div>
+	<div class="r a" style="left: 370px; top: 20px;"></div>
+</body>
+</rml>

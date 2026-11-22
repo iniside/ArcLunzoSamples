@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Display None Open Hidden Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Anim/DisplayNoneDriverTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body class="hide">
+	<div id="driver"></div>
+	<div id="grow"></div>
+</body>
+</rml>

@@ -1,0 +1,29 @@
+@keyframes ui-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+.dk-spinner {
+	display: inline-block;
+	flex: none;
+	width: 22px;
+	height: 22px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	border: 2px solid color-mix(in srgb, var(--ui-text) 18%, transparent);
+	border-top-color: currentColor;
+	animation: ui-spin 0.8s linear infinite;
+}
+
+.dk-spinner.sm {
+	width: 14px;
+	height: 14px;
+}
+
+.dk-spinner.lg {
+	width: 40px;
+	height: 40px;
+	border: 3px solid color-mix(in srgb, var(--ui-text) 18%, transparent);
+	border-top-color: currentColor;
+}
+
+.dk-spinner.accent {
+	border-top-color: var(--ui-accent);
+}

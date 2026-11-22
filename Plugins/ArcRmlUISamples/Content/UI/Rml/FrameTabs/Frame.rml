@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Frame and tabs</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="Frame.rcss"/>
+	<viewmodel name="frame" class="/Script/ArcRmlUISamples.ArcRmlSamplesFrameTabsFrameViewModel" create="true"/>
+</head>
+<body data-model="frame">
+	<div class="ft-panel">
+		<h1 class="ft-title">Frame and tabs</h1>
+		<div class="ft-bar">
+			<button id="ft-show-a" class="ft-tab" autofocus="" data-attrif-selected="Shown == 0" data-event-click="call('', 'ShowTab', 0)">Tab A</button>
+			<button id="ft-show-b" class="ft-tab" data-attrif-selected="Shown == 1" data-event-click="call('', 'ShowTab', 1)">Tab B</button>
+		</div>
+		<div class="ft-embed" arc-embed=""></div>
+		<p class="ft-hint">The frame stays; the tab below it switches. A visited tab keeps its count until the frame closes.</p>
+	</div>
+</body>
+</rml>

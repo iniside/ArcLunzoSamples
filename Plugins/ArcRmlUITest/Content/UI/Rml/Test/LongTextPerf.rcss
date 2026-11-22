@@ -1,0 +1,34 @@
+body {
+	width: 100%;
+	height: 100%;
+}
+
+div, p {
+	display: block;
+}
+
+.row {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	width: 1800px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #10131a;
+}
+
+.item {
+	flex: 0 1 auto;
+	width: auto;
+	max-width: 440px;
+	padding: 6px;
+}
+
+.t {
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	letter-spacing: 0.3px;
+	color: #e8ecf4;
+}

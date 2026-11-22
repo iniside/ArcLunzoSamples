@@ -1,0 +1,16 @@
+<component>
+	<prop name="eyebrow" default=""/>
+	<prop name="title" default=""/>
+	<prop name="subtitle" default=""/>
+	<prop name="align" default=""/>
+	<prop name="size" default=""/>
+	<div class="dk-gamelogo" data-class-center="$align == 'center'">
+		<span class="dk-gamelogo-eyebrow" data-if="$eyebrow != ''">{{ $eyebrow }}</span>
+		<span class="dk-gamelogo-title" data-class-md="$size == 'md'">{{ $title }}</span>
+		<div class="dk-gamelogo-sub" data-if="$subtitle != ''" data-class-center="$align == 'center'">
+			<span class="dk-gamelogo-rule"></span>
+			<span class="dk-gamelogo-subtitle">{{ $subtitle }}</span>
+			<span class="dk-gamelogo-rule"></span>
+		</div>
+	</div>
+</component>

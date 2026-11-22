@@ -1,0 +1,177 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+div {
+	display: block;
+}
+
+.line {
+	position: absolute;
+	white-space: nowrap;
+}
+
+#sg-p1 {
+	left: 20px;
+	top: 10px;
+	color: #203090;
+}
+
+#sg-p0 {
+	left: 20px;
+	top: 60px;
+	color: #203690;
+}
+
+#sg-t1 {
+	left: 20px;
+	top: 110px;
+	color: #203c90;
+	font-variant-numeric: tabular-nums;
+}
+
+.tab #sg-p1 {
+	font-variant-numeric: tabular-nums;
+}
+
+#sg-t0 {
+	left: 20px;
+	top: 160px;
+	color: #204290;
+	font-variant-numeric: tabular-nums;
+}
+
+#sg-f1 {
+	left: 20px;
+	top: 210px;
+	color: #204890;
+	font-feature-settings: "tnum" 1;
+}
+
+#sg-tn-off {
+	left: 20px;
+	top: 260px;
+	color: #204e90;
+	font-variant-numeric: tabular-nums;
+	font-feature-settings: "tnum" 0;
+}
+
+#sg-z {
+	left: 20px;
+	top: 310px;
+	color: #205490;
+}
+
+#sg-zs {
+	left: 20px;
+	top: 360px;
+	color: #205a90;
+	font-variant-numeric: slashed-zero;
+}
+
+#sg-zf {
+	left: 20px;
+	top: 410px;
+	color: #206090;
+	font-feature-settings: "zero" 1;
+}
+
+#sg-fr-n {
+	left: 20px;
+	top: 460px;
+	color: #206690;
+}
+
+#sg-fr {
+	left: 20px;
+	top: 510px;
+	color: #206c90;
+	font-variant-numeric: diagonal-fractions;
+}
+
+#sg-o-n {
+	left: 20px;
+	top: 560px;
+	color: #207290;
+}
+
+#sg-o {
+	left: 420px;
+	top: 10px;
+	color: #207890;
+	font-variant-numeric: ordinal;
+}
+
+#sg-l-n {
+	left: 420px;
+	top: 60px;
+	color: #207e90;
+	font-variant-ligatures: normal;
+}
+
+#sg-l-0 {
+	left: 420px;
+	top: 110px;
+	color: #208490;
+	font-variant-ligatures: none;
+}
+
+#bc-n {
+	left: 420px;
+	top: 160px;
+	color: #208a90;
+	font-family: 'Barlow Condensed';
+}
+
+#bc-sc {
+	left: 420px;
+	top: 210px;
+	color: #209090;
+	font-family: 'Barlow Condensed';
+	font-variant-caps: small-caps;
+}
+
+#bc-asc {
+	left: 420px;
+	top: 260px;
+	color: #209690;
+	font-family: 'Barlow Condensed';
+	font-variant-caps: all-small-caps;
+}
+
+#jb-n {
+	left: 420px;
+	top: 310px;
+	color: #209c90;
+	font-family: 'JetBrains Mono';
+}
+
+#jb-t {
+	left: 420px;
+	top: 360px;
+	color: #20a290;
+	font-family: 'JetBrains Mono';
+	font-variant-numeric: tabular-nums;
+}
+
+#sg-sep {
+	left: 420px;
+	top: 410px;
+	color: #20a890;
+}
+
+#sg-sp {
+	left: 420px;
+	top: 460px;
+	color: #20ae90;
+}
+
+#sg-nosep {
+	left: 420px;
+	top: 510px;
+	color: #20b490;
+}

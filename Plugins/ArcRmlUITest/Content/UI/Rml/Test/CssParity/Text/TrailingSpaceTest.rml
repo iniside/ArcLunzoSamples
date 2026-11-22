@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Trailing Space In Inline Boxes Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/TrailingSpace.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="row"><div id="ts-a" class="stf"><a id="ts-a-in"> x </a>
+	</div></div>
+	<div class="row"><div id="ts-b" class="stf"><span id="ts-b-in">x </span>
+	</div></div>
+	<div class="row"><div id="ts-c" class="stf"><b id="ts-c-in">x </b><i></i></div></div>
+	<div class="row"><div id="ts-d" class="centre"><span id="ts-d-in"> x </span>
+	</div></div>
+	<div class="row"><div id="ts-e" class="narrow"><span id="ts-e-in">x </span>
+	<span id="ts-e-ib" class="ib"></span></div></div>
+	<div class="row"><div id="ts-f" class="stf pre-wrap"><span id="ts-f-in">x </span></div></div>
+	<div class="row"><div id="ts-g" class="stf">x</div></div>
+</body>
+</rml>

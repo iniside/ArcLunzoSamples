@@ -1,0 +1,40 @@
+<component>
+	<prop name="thumb"/>
+	<prop name="thumbLabel" default=""/>
+	<prop name="icon" default=""/>
+	<prop name="eyebrow" default=""/>
+	<prop name="badge" default=""/>
+	<prop name="badgeTone" default="accent"/>
+	<prop name="meta" default=""/>
+	<prop name="title" default=""/>
+	<prop name="body" default=""/>
+	<prop name="selected"/>
+	<prop name="disabled"/>
+	<prop name="focusable"/>
+	<div class="dk-card" data-class-selected="$selected" data-class-disabled="$disabled" data-class-focusable="$focusable" data-attrif-selected="$selected">
+		<span class="dk-card-orn-frame"></span>
+		<span class="dk-card-orn-corner tl"></span>
+		<span class="dk-card-orn-gem tl"></span>
+		<span class="dk-card-orn-corner tr"></span>
+		<span class="dk-card-orn-gem tr"></span>
+		<span class="dk-card-orn-corner bl"></span>
+		<span class="dk-card-orn-gem bl"></span>
+		<span class="dk-card-orn-corner br"></span>
+		<span class="dk-card-orn-gem br"></span>
+		<div class="dk-card-thumb" data-if="$thumb">
+			<span class="dk-card-thumb-label">{{ $thumbLabel }}</span>
+		</div>
+		<div class="dk-card-body">
+			<div class="dk-card-head">
+				<i class="dk-card-icon" data-if="$icon != ''"><svg data-attr-src="$icon" width="16" height="16" stroke-width="2"/></i>
+				<span class="dk-card-eyebrow" data-if="$eyebrow != ''">{{ $eyebrow }}</span>
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Badge" data-if="$badge != ''" label="{{ $badge }}" tone="{{ $badgeTone }}"/>
+				<span class="dk-card-spacer"></span>
+				<span class="dk-card-meta" data-if="$meta != ''">{{ $meta }}</span>
+			</div>
+			<span class="dk-card-title">{{ $title }}</span>
+			<p class="dk-card-text" data-if="$body != ''">{{ $body }}</p>
+			<slot/>
+		</div>
+	</div>
+</component>

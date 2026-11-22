@@ -1,0 +1,23 @@
+div {
+	display: block;
+}
+
+body {
+	margin: 0;
+}
+
+#a {
+	width: 120px;
+	height: 40px;
+	background-color: #335577;
+}
+
+#b {
+	width: 80px;
+	height: 30px;
+	background-color: #aa4422;
+}
+
+body.wide #a {
+	width: 200px;
+}

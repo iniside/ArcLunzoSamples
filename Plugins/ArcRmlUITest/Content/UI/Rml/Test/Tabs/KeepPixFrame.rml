@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Keep Pix Frame</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="KeepPixFrame.rcss"/>
+	<viewmodel name="keepframe" preview="Preview/KeepFrame.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="keepframe">
+	<div id="pf-head">{{ title }}</div>
+	<div id="pf-embed" arc-embed=""></div>
+</body>
+</rml>

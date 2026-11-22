@@ -1,0 +1,36 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	color: #e8ecf4;
+	--sound-back: "asset:/ArcRmlUITest/UI/Sound/MS_Back.MS_Back";
+}
+
+div {
+	display: block;
+}
+
+.sa-root {
+	position: absolute;
+	left: 60px;
+	top: 100px;
+	width: 400px;
+	padding: 20px;
+	background-color: #141821e8;
+}
+
+.sa-leaf {
+	margin-top: 16px;
+	padding-left: 16px;
+}
+
+.sa-btn {
+	tab-index: auto;
+	nav: auto;
+	width: 160px;
+	height: 40px;
+	margin-bottom: 8px;
+	background-color: #1e2330;
+	--sound-focus: "asset:/ArcRmlUITest/UI/Sound/MS_Focus.MS_Focus";
+}

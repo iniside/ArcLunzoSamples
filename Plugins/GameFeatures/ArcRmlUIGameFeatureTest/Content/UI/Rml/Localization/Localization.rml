@@ -1,0 +1,32 @@
+<rml>
+<head>
+	<title>ArcRmlUI Game Feature Localization</title>
+	<meta name="layer" content="UI.Layer.Modal"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="Localization.rcss"/>
+	<viewmodel name="loc" class="/Script/ArcRmlUIGameFeatureTest.ArcRmlLocTestViewModel" context="LocTest"/>
+</head>
+<body data-model="loc">
+	<div class="loc-panel">
+		<span class="loc-title" loc="LocTitle">Localization test</span>
+		<p class="loc-text" loc="LocWelcome">Welcome, traveler!</p>
+		<p class="loc-text" loc="LocStory">Your journey begins in the old town. Find the blacksmith and ask him about the lost sword.</p>
+		<div class="loc-items">
+			<span class="loc-item" loc="LocNewGame">New game</span>
+			<span class="loc-item" loc="LocOptions">Options</span>
+			<span class="loc-item" loc="LocQuit">Quit</span>
+		</div>
+		<p class="loc-plain">Plain text without loc, never translated.</p>
+		<span class="loc-culture">Culture: {{ Culture }}</span>
+		<div class="loc-menu">
+			<div class="loc-button" data-class-selected="Culture == 'en'" data-event-click="call('', 'SwitchCulture', 'en')">en</div>
+			<div class="loc-button" data-class-selected="Culture == 'pl'" data-event-click="call('', 'SwitchCulture', 'pl')">pl</div>
+			<div class="loc-button" data-class-selected="Culture == 'fr'" data-event-click="call('', 'SwitchCulture', 'fr')">fr</div>
+			<div class="loc-button" data-class-selected="Culture == 'zh-Hans'" data-event-click="call('', 'SwitchCulture', 'zh-Hans')">zh-Hans</div>
+			<div class="loc-button" data-class-selected="Culture == 'ar'" data-event-click="call('', 'SwitchCulture', 'ar')">ar</div>
+			<div class="loc-button" data-class-selected="Culture == 'LEET'" data-event-click="call('', 'SwitchCulture', 'LEET')">LEET</div>
+			<div class="loc-button" data-class-selected="Culture == 'keys'" data-event-click="call('', 'SwitchCulture', 'keys')">keys</div>
+		</div>
+	</div>
+</body>
+</rml>

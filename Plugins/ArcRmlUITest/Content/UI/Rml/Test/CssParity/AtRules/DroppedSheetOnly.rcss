@@ -1,0 +1,11 @@
+@starting-style {
+	.ds-box {
+		width: 5px;
+	}
+}
+
+@supports (-moz-orient: inline) {
+	.ds-box {
+		width: 15px;
+	}
+}

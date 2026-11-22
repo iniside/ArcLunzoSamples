@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+}
+
+.row {
+	display: block;
+	margin-bottom: 4px;
+}
+
+/* Tailwind preflight's control reset: the author rule must win over the page's :where() control families. */
+.preflight {
+	font-family: monospace;
+}
+
+.pf-font {
+	font: inherit;
+}
+
+.pf-family {
+	font-family: inherit;
+}

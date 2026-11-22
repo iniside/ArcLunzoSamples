@@ -1,0 +1,45 @@
+<rml>
+<!-- The footer of ArcRPGUI TabMenu.rml with literal key labels: confirm and back are empty, as the input bindings gave them when Chrome was measured. The empty siblings keep the footer at 0.0.1.9. -->
+<head>
+	<title>Equipment Footer</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ds/tokens.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/EquipmentFooter.rcss"/>
+	<viewmodel name="footer" preview="Preview/EquipmentFooter.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="footer">
+<div class="tm-root">
+
+	<div class="tm-embed"></div>
+
+	<div class="tm-currencies"></div>
+	<div class="tm-topbar"></div>
+	<div class="tm-rail"></div>
+	<div class="tm-footer">
+		<dc-import name="/ArcRmlUITest/UI/Rml/Components/KeyHint" key-label="↑↓←→" label="Navigate"/>
+		<div class="tm-footer-default">
+			<dc-import name="/ArcRmlUITest/UI/Rml/Components/KeyHint" key-label="" label="Select"/>
+			<dc-import name="/ArcRmlUITest/UI/Rml/Components/KeyHint" key-label="" label="Back"/>
+		</div>
+		<div class="tm-footer-gear">
+			<dc-import name="/ArcRmlUITest/UI/Rml/Components/KeyHint" key-label="" label="Equip"/>
+			<dc-import name="/ArcRmlUITest/UI/Rml/Components/KeyHint" key-label="R" label="Unequip"/>
+			<dc-import name="/ArcRmlUITest/UI/Rml/Components/KeyHint" key-label="" label="Back"/>
+		</div>
+		<div class="tm-footer-reqs">
+			<dc-import name="/ArcRmlUITest/UI/Rml/Components/KeyHint" key-label="" label="Select"/>
+			<dc-import name="/ArcRmlUITest/UI/Rml/Components/KeyHint" key-label="R" label="Craft"/>
+			<dc-import name="/ArcRmlUITest/UI/Rml/Components/KeyHint" key-label="" label="Back"/>
+		</div>
+		<div class="tm-footer-abilities">
+			<dc-import name="/ArcRmlUITest/UI/Rml/Components/KeyHint" key-label="" label="Assign"/>
+			<dc-import name="/ArcRmlUITest/UI/Rml/Components/KeyHint" key-label="F" label="Clear"/>
+			<dc-import name="/ArcRmlUITest/UI/Rml/Components/KeyHint" key-label="" label="Back"/>
+		</div>
+		<dc-import name="/ArcRmlUITest/UI/Rml/Components/KeyHint" key-label="Q" key-label2="E" label="Switch tab"/>
+	</div>
+
+</div>
+</body>
+</rml>

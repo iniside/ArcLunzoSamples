@@ -1,0 +1,55 @@
+body {
+	margin: 0;
+	display: flow-root;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000000;
+}
+
+div {
+	display: block;
+	height: 10px;
+	width: 40px;
+}
+
+.q1 {
+	font-family: '{', sans-serif;
+	width: 50px;
+}
+
+.q2 {
+	font-family: '}', sans-serif;
+	width: 55px;
+}
+
+.q3 {
+	font-family: 'a\'{', sans-serif;
+	width: 60px;
+}
+
+.q4 {
+	--q: '}';
+	width: 65px;
+}
+
+.q5[data-x='{'] {
+	width: 70px;
+}
+
+.q6 {
+	width: 30px;
+	&[data-x='}'] {
+		width: 75px;
+	}
+}
+
+@supports selector([data-x='{']) {
+	.q7 {
+		width: 80px;
+	}
+}
+
+.after {
+	width: 33px;
+}

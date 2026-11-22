@@ -1,0 +1,23 @@
+<component>
+	<prop name="label" default=""/>
+	<prop name="variant" default="primary"/>
+	<prop name="size" default="md"/>
+	<prop name="icon" default=""/>
+	<prop name="iconLeft" default=""/>
+	<prop name="iconRight" default=""/>
+	<prop name="hasIcon"/>
+	<prop name="block"/>
+	<prop name="selected"/>
+	<prop name="disabled"/>
+	<prop name="loading"/>
+	<prop name="autofocus"/>
+	<prop name="focusable"/>
+	<div class="dk-button" data-class-secondary="$variant == 'secondary'" data-class-ghost="$variant == 'ghost'" data-class-danger="$variant == 'danger'" data-class-sm="$size == 'sm'" data-class-lg="$size == 'lg'" data-class-block="$block" data-class-icon-only="$icon != '' &amp;&amp; $label == ''" data-class-selected="$selected &amp;&amp; ($variant == 'secondary' || $variant == 'ghost')" data-class-inset="$selected &amp;&amp; $variant == 'primary'" data-class-disabled="$disabled" data-class-loading="$loading &amp;&amp; !$disabled" data-class-focusable="$focusable" data-attrif-selected="$selected" data-attrif-autofocus="$autofocus">
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Spinner" data-if="$loading" size="sm"/>
+		<i class="dk-button-icon" data-if="!$loading &amp;&amp; $icon != ''"><svg data-attr-src="$icon" data-attr-width="$size == 'sm' ? 16 : ($size == 'lg' ? 22 : 18)" data-attr-height="$size == 'sm' ? 16 : ($size == 'lg' ? 22 : 18)" stroke-width="2"/></i>
+		<i class="dk-button-icon" data-if="!$loading &amp;&amp; $icon == '' &amp;&amp; $iconLeft != ''"><svg data-attr-src="$iconLeft" data-attr-width="$size == 'sm' ? 16 : ($size == 'lg' ? 22 : 18)" data-attr-height="$size == 'sm' ? 16 : ($size == 'lg' ? 22 : 18)" stroke-width="2"/></i>
+		<i class="dk-button-icon" data-if="!$loading &amp;&amp; $icon == '' &amp;&amp; $iconLeft == '' &amp;&amp; $hasIcon"><slot name="icon"/></i>
+		<span data-if="$label != ''">{{ $label }}</span>
+		<i class="dk-button-icon" data-if="$iconRight != ''"><svg data-attr-src="$iconRight" data-attr-width="$size == 'sm' ? 16 : ($size == 'lg' ? 22 : 18)" data-attr-height="$size == 'sm' ? 16 : ($size == 'lg' ? 22 : 18)" stroke-width="2"/></i>
+	</div>
+</component>

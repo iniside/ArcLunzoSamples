@@ -1,0 +1,11 @@
+<component>
+	<prop name="value" default="0"/>
+	<prop name="size" default="120"/>
+	<prop name="tone" default="accent"/>
+	<prop name="label" default=""/>
+	<prop name="valueLabel" default=""/>
+	<div class="dk-progressring" data-class-success="$tone == 'success'" data-class-warning="$tone == 'warning'" data-class-danger="$tone == 'danger'" data-style-width="$size + 'px'" data-style-height="$size + 'px'" data-style---ring-v="($value | arcclamp(0, 100)) + '%'">
+		<span class="dk-progressring-value" data-class-big="$size * 1 &gt;= 110">{{ $valueLabel != '' ? $valueLabel : (($value | arcclamp(0, 100)) | round) + '%' }}</span>
+		<span class="dk-progressring-label" data-if="$label != ''">{{ $label }}</span>
+	</div>
+</component>

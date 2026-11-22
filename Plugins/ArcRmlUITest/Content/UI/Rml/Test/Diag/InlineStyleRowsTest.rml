@@ -1,0 +1,16 @@
+<rml>
+<head>
+	<title>Inline Style Rows Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="rows" preview="Preview/Rows.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="rows">
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Diag/DiagSpacer.rml"/>
+	<div data-for="row : Rows">
+		<div style="tint: blue; display: block;">row {{ row.Name }}</div>
+		<div data-attr-style="'colr: red; display: block; height: 4px; width: ' + row.Value + 'px'"></div>
+	</div>
+</body>
+</rml>

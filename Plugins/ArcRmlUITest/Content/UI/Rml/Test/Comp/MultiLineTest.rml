@@ -1,0 +1,18 @@
+<rml>
+<head>
+	<title>Multi Line Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="mlt" preview="Preview/CallTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="mlt">
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MultiRootBox"><div id="mlt-child"
+		style="colr: teal;">child</div></dc-import>
+	<p id="mlt-run"><b>x</b>{{ 'a' }}
+		folded
+		{{ 'b' }}<span id="mlt-span"
+		style="colr: navy;">run</span></p>
+	<div id="mlt-after" style="colr: maroon;">after</div>
+</body>
+</rml>

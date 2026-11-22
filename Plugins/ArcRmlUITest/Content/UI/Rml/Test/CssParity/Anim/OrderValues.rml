@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>OrderValues</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Anim/OrderValues.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="o-1-0" class="row"></div>
+	<div id="o-1-5" class="row"></div>
+	<div id="o-px" class="row"></div>
+	<div id="o-neg" class="row"></div>
+	<div id="o-pos" class="row"></div>
+</body>
+</rml>

@@ -1,0 +1,29 @@
+div, p {
+	display: block;
+}
+
+body {
+	margin: 0;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	color: #e8ecf4;
+}
+
+.kt-row {
+	height: 20px;
+}
+
+.kt-btn {
+	tab-index: auto;
+	nav: auto;
+	width: 140px;
+	height: 26px;
+	margin-bottom: 4px;
+	background-color: #1e2330;
+}
+
+.kt-field {
+	display: block;
+	width: 200px;
+	height: 26px;
+}

@@ -1,0 +1,94 @@
+@keyframes ui-indet { 0% { transform: translateX(-100%); } 100% { transform: translateX(340%); } }
+
+.dk-progressbar {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-2);
+	width: 100%;
+}
+
+.dk-progressbar-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: var(--ui-space-3);
+}
+
+.dk-progressbar-label {
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-progressbar-value {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text);
+	white-space: nowrap;
+}
+
+.dk-progressbar-track {
+	position: relative;
+	height: 6px;
+	width: 100%;
+	border-radius: 3px;
+	background: var(--ui-surface-2);
+	overflow: hidden;
+	box-shadow: inset 0 0 0 1px var(--ui-border);
+}
+
+.dk-progressbar-track.sm {
+	height: 4px;
+	border-radius: 2px;
+}
+
+.dk-progressbar-track.lg {
+	height: 10px;
+	border-radius: 5px;
+}
+
+.dk-progressbar-fill {
+	height: 100%;
+	border-radius: inherit;
+	background: linear-gradient(90deg, color-mix(in srgb, var(--ui-accent) 60%, transparent), var(--ui-accent));
+	box-shadow: var(--ui-glow);
+	transition: width var(--ui-dur-normal) var(--ui-ease);
+}
+
+.dk-progressbar-fill.success {
+	background: linear-gradient(90deg, color-mix(in srgb, var(--ui-success) 60%, transparent), var(--ui-success));
+}
+
+.dk-progressbar-fill.warning {
+	background: linear-gradient(90deg, color-mix(in srgb, var(--ui-warning) 60%, transparent), var(--ui-warning));
+}
+
+.dk-progressbar-fill.danger {
+	background: linear-gradient(90deg, color-mix(in srgb, var(--ui-danger) 60%, transparent), var(--ui-danger));
+}
+
+.dk-progressbar-fill.indet {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	height: auto;
+	box-shadow: none;
+	transition: none;
+	background: linear-gradient(90deg, transparent, var(--ui-accent), transparent);
+	animation: ui-indet 1.4s cubic-bezier(0.4,0,0.2,1) infinite;
+}
+
+.dk-progressbar-fill.indet.success {
+	background: linear-gradient(90deg, transparent, var(--ui-success), transparent);
+}
+
+.dk-progressbar-fill.indet.warning {
+	background: linear-gradient(90deg, transparent, var(--ui-warning), transparent);
+}
+
+.dk-progressbar-fill.indet.danger {
+	background: linear-gradient(90deg, transparent, var(--ui-danger), transparent);
+}

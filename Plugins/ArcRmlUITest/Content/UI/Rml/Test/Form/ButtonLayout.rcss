@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+}
+
+.row {
+	display: block;
+	margin-bottom: 4px;
+}
+
+.box {
+	width: 160px;
+	height: 60px;
+}
+
+.icon {
+	width: 16px;
+	height: 16px;
+}
+
+.short {
+	height: 30px;
+}
+
+.blockbtn {
+	display: block;
+}
+
+.minh {
+	min-height: 50px;
+}

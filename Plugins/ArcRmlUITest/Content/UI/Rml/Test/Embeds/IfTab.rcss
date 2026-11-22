@@ -1,0 +1,11 @@
+div {
+	display: block;
+}
+
+#if-marker {
+	width: 200px;
+}
+
+#if-tab {
+	width: 180px;
+}

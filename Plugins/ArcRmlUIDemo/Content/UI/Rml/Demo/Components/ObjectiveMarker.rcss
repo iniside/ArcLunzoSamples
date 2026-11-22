@@ -1,0 +1,68 @@
+.dk-objective-marker {
+	position: absolute;
+	width: 0;
+	height: 0;
+	display: block;
+}
+
+.dk-objective-marker.no-visible {
+	display: none;
+}
+
+.dk-objective-marker-content {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1px;
+}
+
+.dk-objective-marker-icon-s {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 2px solid var(--ui-rarity-legendary);
+	background: var(--hud-plate);
+	color: var(--ui-rarity-legendary);
+}
+
+.dk-objective-marker-icon-s.poi {
+	border: 2px solid var(--ui-accent);
+	color: var(--ui-accent);
+}
+
+.dk-objective-marker-e4 {
+	display: inline-flex;
+}
+
+.dk-objective-marker-dist-s {
+	font-family: var(--ui-font-mono);
+	font-size: var(--hud-fs-sm);
+	font-weight: 700;
+	color: var(--hud-text);
+	text-shadow: var(--hud-text-shadow);
+}
+
+.dk-objective-marker-arrow-s {
+	position: absolute;
+	left: calc(50% - 9px);
+	top: calc(50% - 9px);
+	width: 18px;
+	height: 18px;
+	color: var(--ui-rarity-legendary);
+	--dk-objective-marker-arrow-s-transform-1: 0deg;
+	transform: rotate(var(--dk-objective-marker-arrow-s-transform-1)) translateY(-30px);
+}
+
+.dk-objective-marker-arrow-s.poi {
+	color: var(--ui-accent);
+}
+
+.dk-objective-marker-e7 {
+	display: inline-flex;
+}

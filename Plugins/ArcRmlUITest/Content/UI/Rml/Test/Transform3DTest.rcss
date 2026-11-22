@@ -1,0 +1,17 @@
+body { margin: 0; width: 100%; height: 100%; font-family: "Space Grotesk"; color: #e8e8ea; background: #0d0f12; }
+.t3-root { position: absolute; left: 60px; top: 60px; right: 60px; display: flex; flex-direction: column; gap: 40px; }
+.t3-help { font-size: 14px; color: #a0a4ab; }
+.t3-row { display: flex; gap: 40px; }
+.t3-cell { width: 280px; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.t3-label { font-size: 12px; color: #a0a4ab; text-align: center; }
+.t3-panel { width: 240px; height: 150px; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 600; background: linear-gradient(135deg, #2060d0, #43aa8b); border: 2px solid #f0c060; border-radius: 10px; }
+.t3-rotate-y { transform: perspective(900px) rotateY(38deg); }
+.t3-rotate-x { transform: perspective(600px) rotateX(45deg); }
+.t3-rotate-neg { transform: perspective(900px) rotateY(-38deg); }
+.t3-stage { perspective: 700px; }
+.t3-stage-child { transform: rotateY(50deg); }
+.t3-clip { overflow: hidden; border-radius: 28px; transform: perspective(900px) rotateY(30deg); align-items: flex-start; justify-content: flex-start; }
+.t3-clip-inner { width: 400px; padding: 16px; font-size: 16px; }
+.t3-shadow { box-shadow: 0 12px 30px rgba(0,0,0,0.8); filter: brightness(1.3); transform: perspective(800px) rotateX(-30deg); }
+.t3-spin { animation: 4s linear infinite t3spin; }
+@keyframes t3spin { from { transform: perspective(900px) rotateY(0deg); } to { transform: perspective(900px) rotateY(360deg); } }

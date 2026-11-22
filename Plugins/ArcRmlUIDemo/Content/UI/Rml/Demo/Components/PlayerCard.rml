@@ -1,0 +1,27 @@
+<component>
+	<prop name="status" default="ready"/>
+	<prop name="label" default=""/>
+	<prop name="initials" default=""/>
+	<prop name="host"/>
+	<prop name="level" default=""/>
+	<prop name="levelLabel" default=""/>
+	<prop name="role" default=""/>
+	<prop name="emptyLabel" default="Invite player"/>
+	<prop name="readyLabel" default="Ready"/>
+	<prop name="notReadyLabel" default="Not ready"/>
+	<prop name="selected"/>
+	<prop name="focusable"/>
+	<div class="dk-playercard" data-class-empty="$status == 'empty'" data-class-ready="$status == 'ready'" data-class-selected="$selected" data-class-focusable="$focusable" data-attrif-selected="$selected">
+		<span class="dk-playercard-addbox" data-if="$status == 'empty'"><i class="dk-playercard-addicon"><svg src="/ArcRmlUIDemo/UI/Rml/icons/user-plus.svg" width="20" height="20" stroke-width="2"/></i></span>
+		<span class="dk-playercard-emptylabel" data-if="$status == 'empty'">{{ $emptyLabel }}</span>
+		<span class="dk-playercard-avatar" data-if="$status != 'empty'">{{ $initials != '' ? $initials : '?' }}</span>
+		<div class="dk-playercard-main" data-if="$status != 'empty'">
+			<div class="dk-playercard-head">
+				<span class="dk-playercard-name">{{ $label }}</span>
+				<i class="dk-playercard-host" data-if="$host"><svg src="/ArcRmlUIDemo/UI/Rml/icons/crown.svg" width="14" height="14" stroke-width="2"/></i>
+			</div>
+			<span class="dk-playercard-sub"><span data-if="$levelLabel != ''">{{ $levelLabel + ' ' + $level }}</span><span data-if="$levelLabel == '' &amp;&amp; $level != ''">{{ 'Lv ' + $level }}</span><span data-if="($levelLabel != '' || $level != '') &amp;&amp; $role != ''">&nbsp;·&nbsp;</span><span data-if="$role != ''">{{ $role }}</span></span>
+		</div>
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Badge" data-if="$status != 'empty'" label="{{ $status == 'ready' ? $readyLabel : $notReadyLabel }}" tone="{{ $status == 'ready' ? 'success' : 'neutral' }}"/>
+	</div>
+</component>

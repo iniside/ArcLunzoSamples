@@ -1,0 +1,54 @@
+<rml>
+<head>
+	<title>LogicalTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Logical/Logical.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="px" class="b"><div id="px-in" class="in"></div></div>
+	<div id="py" class="b"><div id="py-in" class="in"></div></div>
+	<div id="ps" class="b"><div id="ps-in" class="in"></div></div>
+	<div id="mx" class="b"></div>
+	<div id="ms" class="b"></div>
+	<div id="me" class="b"></div>
+	<div id="my" class="b"></div>
+	<div id="bx" class="b"></div>
+	<div id="by" class="b"></div>
+	<div id="bs" class="b"></div>
+	<div id="size" class="b"></div>
+	<div id="minmax" class="b"></div>
+	<div id="inset" class="b"><div id="inset-in" class="b"></div></div>
+	<div id="ta-parent" class="b"><div id="ta-start" class="b"><span id="ta-start-ib" class="ib"></span></div></div>
+	<div id="ta-end" class="b"><span id="ta-end-ib" class="ib"></span></div>
+	<div id="o1" class="b"><div id="o1-in" class="in"></div></div>
+	<div id="o2" class="b"><div id="o2-in" class="in"></div></div>
+	<div id="o3" class="b o3a o3b"><div id="o3-in" class="in"></div></div>
+	<div id="o4" class="b o4a o4b"><div id="o4-in" class="in"></div></div>
+	<div id="o5" class="b"></div>
+	<div id="o6" class="b"></div>
+	<div id="rs" class="b"></div>
+	<div id="rs2" class="b"></div>
+	<div id="more" class="b">
+		<div id="v1" class="b p4 px2"><div id="v1-in" class="in"></div></div>
+		<div id="v2" class="b px2b p4b"><div id="v2-in" class="in"></div></div>
+		<div id="v3" class="b"><div id="v3-in" class="in"></div></div>
+		<div id="v4" class="b"><div id="v4-in" class="in"></div></div>
+		<div id="v5" class="b mxi m2"></div>
+		<div id="c1" class="b"></div>
+		<div id="c2" class="b"><div id="c2-in" class="in"></div></div>
+		<div id="c3" class="b"><div id="c3-a" class="b"></div><div id="c3-b" class="b"></div></div>
+		<div id="c4" class="b"></div>
+		<div id="c4b" class="b"></div>
+		<div id="c5" class="b"></div>
+		<div id="c5b" class="b"></div>
+		<div id="c6" class="b"></div>
+		<div id="c7" class="b"></div>
+		<div id="c8" class="b"></div>
+		<div id="c9" class="b"></div>
+		<div id="fl" class="b"><div id="fl-s" class="fbox"></div><div id="fl-e" class="fbox"></div><div id="fl-n" class="in"></div></div>
+		<div id="cl" class="b"><div id="cl-l" class="fbox"></div><div id="cl-r" class="fbox"></div><div id="cl-s" class="in"></div></div>
+		<div id="ce" class="b"><div id="ce-l" class="fbox"></div><div id="ce-r" class="fbox"></div><div id="ce-e" class="in"></div></div>
+	</div>
+</body>
+</rml>

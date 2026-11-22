@@ -1,0 +1,7 @@
+body { display: block; width: 400px; height: 400px; --gap: 1px; --bg: rgb(0, 0, 255); }
+div { display: block; }
+.c { height: 10px; margin: var(--gap); background-color: var(--bg); }
+.k { height: 4px; padding-left: var(--gap); }
+.theme { --gap: 20px; --bg: rgb(255, 0, 0); }
+#host { --gap: 5px; }
+.warm { --gap: 12px; --bg: rgb(0, 128, 0); }

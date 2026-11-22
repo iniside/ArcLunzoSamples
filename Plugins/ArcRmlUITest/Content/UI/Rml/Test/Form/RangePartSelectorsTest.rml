@@ -1,0 +1,37 @@
+<rml>
+<head>
+	<title>RangePartSelectorsTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/RangePartSelectors.rcss"/>
+	<viewmodel name="rp" preview="Preview/RangePartSelectorsTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="rp">
+	<input id="rp-plain" type="range" min="0" max="100" step="1" value="50"/>
+	<input id="rp-none" class="styled none" type="range" min="0" max="100" step="1" value="50"/>
+	<input id="rp-auto" class="styled" type="range" min="0" max="100" step="1" value="50"/>
+	<input id="rp-wk" class="styled wk-none" type="range" min="0" max="100" step="1" value="50"/>
+	<input id="rp-later-auto" class="styled later-auto" type="range" min="0" max="100" step="1" value="50"/>
+	<input id="rp-later-none" class="styled later-none" type="range" min="0" max="100" step="1" value="50"/>
+	<input id="rp-id" class="styled none" type="range" min="0" max="100" step="1" value="50"/>
+	<input id="rp-bound" class="styled" type="range" min="0" max="100" step="1" value="50" data-style-appearance="look"/>
+	<div id="acc-parent" class="acc">
+		<input id="acc-child" type="range" min="0" max="100" step="1" value="50"/>
+	</div>
+	<div id="app-parent" class="app-auto">
+		<div id="app-child">
+			<input id="app-probe" class="styled app-inherit" type="range" min="0" max="100" step="1" value="50"/>
+		</div>
+	</div>
+	<div id="app-direct" class="app-auto">
+		<input id="app-direct-probe" class="styled app-inherit" type="range" min="0" max="100" step="1" value="50"/>
+	</div>
+	<div id="sup-accent-auto" class="sup"></div>
+	<div id="sup-accent-color" class="sup"></div>
+	<div id="sup-appearance" class="sup"></div>
+	<div id="sup-wk-appearance" class="sup"></div>
+	<div id="sup-thumb" class="sup"></div>
+	<div id="sup-track" class="sup"></div>
+	<div id="sup-thumb-hover" class="sup"></div>
+</body>
+</rml>

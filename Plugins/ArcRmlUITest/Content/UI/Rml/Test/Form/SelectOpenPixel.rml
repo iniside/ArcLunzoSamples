@@ -1,0 +1,18 @@
+<rml>
+<head>
+	<title>SelectOpenPixel</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/SelectOpenPixel.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="row">
+		<select id="so-sel">
+			<option value="a" selected="">Apple</option>
+			<option value="b">Banana split</option>
+			<option value="c">Cherry</option>
+			<option value="d">Date</option>
+		</select>
+	</div>
+</body>
+</rml>

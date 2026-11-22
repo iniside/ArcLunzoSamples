@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>If Frame</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="ifframe" preview="Preview/IfFrame.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="ifframe">
+	<div id="if-marker">marker</div>
+	<div data-if="showEmbed">
+		<div class="embed" arc-embed=""></div>
+	</div>
+</body>
+</rml>

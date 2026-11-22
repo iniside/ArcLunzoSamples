@@ -1,0 +1,20 @@
+<rml>
+<head>
+	<title>ProbeWrapper</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/LayoutVerify/ProbeReuse.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+<input type="radio" name="w" value="a" id="r-a" class="rb rb-a" checked=""/>
+<input type="radio" name="w" value="b" id="r-b" class="rb rb-b"/>
+<input type="radio" name="w" value="c" id="r-c" class="rb rb-c"/>
+<input type="radio" name="w" value="anim" id="r-anim" class="rb rb-anim"/>
+<div class="host">
+<div class="g1"><div class="w1"><div class="f1"><div class="fi">Item 0 alpha beta gamma</div><div class="fi">Item 1 alpha beta gamma</div><div class="fi">Item 2 alpha beta gamma</div><div class="fi">Item 3 alpha beta gamma</div><div class="fi">Item 4 alpha beta gamma</div><div class="fi">Item 5 alpha beta gamma</div></div><div class="tail">tail below the flex box</div></div></div>
+<div class="g1 g1b"><div class="w1"><div class="f1"><div class="fi">Item 0 alpha beta gamma</div><div class="fi">Item 1 alpha beta gamma</div><div class="fi">Item 2 alpha beta gamma</div><div class="fi">Item 3 alpha beta gamma</div><div class="fi">Item 4 alpha beta gamma</div><div class="fi">Item 5 alpha beta gamma</div></div></div><div class="w1"><div class="g2"><div class="fi">Grid probe box alpha beta gamma delta</div><div class="fi">second track alpha beta</div></div></div></div>
+<div class="fx"><div class="w2"><div class="f1"><div class="fi">Item 0 alpha beta gamma</div><div class="fi">Item 1 alpha beta gamma</div><div class="fi">Item 2 alpha beta gamma</div><div class="fi">Item 3 alpha beta gamma</div><div class="fi">Item 4 alpha beta gamma</div><div class="fi">Item 5 alpha beta gamma</div></div><div class="tail">tail</div></div><div class="w2"><div class="f1"><div class="fi">Item 0 alpha beta gamma</div><div class="fi">Item 1 alpha beta gamma</div><div class="fi">Item 2 alpha beta gamma</div><div class="fi">Item 3 alpha beta gamma</div><div class="fi">Item 4 alpha beta gamma</div><div class="fi">Item 5 alpha beta gamma</div></div></div></div>
+</div>
+<div class="chg">changing sibling text</div>
+</body>
+</rml>

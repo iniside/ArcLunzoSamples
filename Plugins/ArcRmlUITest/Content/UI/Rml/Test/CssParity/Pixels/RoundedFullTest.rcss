@@ -1,0 +1,6 @@
+body {
+	margin: 0;
+}
+
+.pill { margin: 10px; width: 100px; height: 24px; border-radius: calc(infinity * 1px); background-color: #3366cc; }
+.circle { margin: 10px; width: 40px; height: 40px; border-radius: calc(infinity * 1px); background-color: #cc3366; }

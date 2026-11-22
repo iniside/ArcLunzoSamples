@@ -1,0 +1,20 @@
+<component>
+	<prop name="eyebrow" default=""/>
+	<prop name="title" default=""/>
+	<prop name="count" default=""/>
+	<prop name="meta" default=""/>
+	<div class="dk-sectionheader">
+		<div class="dk-sectionheader-main">
+			<span class="dk-sectionheader-eyebrow" data-if="$eyebrow != ''">{{ $eyebrow }}</span>
+			<div class="dk-sectionheader-row">
+				<span class="dk-sectionheader-title">{{ $title }}</span>
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Badge" data-if="$count != ''" label="{{ $count }}" tone="neutral"/>
+			</div>
+			<span class="dk-sectionheader-rule"><span class="dk-sectionheader-rule-bar"></span><span class="dk-sectionheader-rule-gem"></span><span class="dk-sectionheader-rule-line"></span></span>
+		</div>
+		<div class="dk-sectionheader-side">
+			<span class="dk-sectionheader-meta" data-if="$meta != ''">{{ $meta }}</span>
+			<slot/>
+		</div>
+	</div>
+</component>

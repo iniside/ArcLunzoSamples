@@ -1,0 +1,50 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1",
+	"FriendlyName": "ArcRmlUI Samples",
+	"Description": "Small ArcRmlUI code samples, one feature per sample folder",
+	"Category": "ArcX",
+	"CreatedBy": "Lukasz Baran",
+	"CreatedByURL": "https://arcx.dev/",
+	"DocsURL": "https://arcx.dev/docs/arcrmlui/",
+	"SupportURL": "https://arcx.dev/#support",
+	"FabURL": "",
+	"EngineVersion": "5.8.0",
+	"CanContainContent": true,
+	"IsExperimentalVersion": true,
+	"Installed": false,
+	"LocalizationTargets": [
+		{
+			"Name": "ArcRmlUISamples",
+			"LoadingPolicy": "Always"
+		}
+	],
+	"Modules": [
+		{
+			"Name": "ArcRmlUISamples",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"TargetDenyList": ["Server"],
+			"PlatformAllowList": ["Win64"]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ArcRmlUI",
+			"Enabled": true
+		},
+		{
+			"Name": "ModelViewViewModel",
+			"Enabled": true
+		},
+		{
+			"Name": "CommonUI",
+			"Enabled": true
+		},
+		{
+			"Name": "EnhancedInput",
+			"Enabled": true
+		}
+	]
+}

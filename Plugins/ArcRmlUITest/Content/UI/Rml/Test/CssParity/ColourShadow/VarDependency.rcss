@@ -1,0 +1,28 @@
+body {
+	display: block;
+}
+
+.holder {
+	display: block;
+}
+
+.swatch {
+	display: block;
+	width: 40px;
+	height: 10px;
+	background-color: #ff00ff;
+}
+
+#chain-parent {
+	--a: var(--missing);
+}
+
+body.defined #chain-parent {
+	--missing: #4080c0;
+}
+
+#chain-inherited {
+	background-color: var(--a, #80ff00);
+}
+
+body { margin: 0; }

@@ -1,0 +1,95 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+@keyframes pa {
+	from { width: 10px; }
+	to { width: 20px; }
+}
+
+#all {
+	transition-property: none;
+	transition-property: all;
+	transition-property: color, background-color;
+	transition-duration: 1s;
+	transition-duration: 200ms, 1.5s;
+	transition-timing-function: ease;
+	transition-timing-function: linear, ease-in, ease-out, ease-in-out, step-start, step-end;
+	transition-timing-function: cubic-bezier(0.1, 0.2, 0.3, 0.4), steps(4, jump-end), quadratic-in-out;
+	transition-delay: 0.5s;
+	transition-delay: 100ms, -1s;
+	transition-behavior: normal;
+	transition-behavior: allow-discrete, normal;
+	transition: color 1s ease-in 0.5s allow-discrete, width 2s;
+	animation-name: none;
+	animation-name: pa;
+	animation-name: pa, "pa";
+	animation-duration: 2s;
+	animation-duration: 500ms, 1s;
+	animation-timing-function: linear, ease;
+	animation-delay: 0.5s, -1s;
+	animation-iteration-count: 3;
+	animation-iteration-count: infinite, 1;
+	animation-direction: normal;
+	animation-direction: reverse, alternate, alternate-reverse;
+	animation-fill-mode: none;
+	animation-fill-mode: forwards, backwards, both;
+	animation-play-state: running;
+	animation-play-state: paused, running;
+	animation: pa 2s linear 0.5s infinite alternate both paused;
+	order: 2;
+	order: -1;
+	background-position-x: 10px;
+	background-position-x: right 10px;
+	background-position-y: 20%;
+	background-position-y: bottom 5px;
+	background-position: center;
+	background-position: 10px 20%;
+	background-position: right 10px bottom 5px;
+	background-size: auto;
+	background-size: cover;
+	background-size: contain;
+	background-size: 50% auto;
+	background-size: 10px 20px, cover;
+	background-repeat: repeat;
+	background-repeat: repeat-x;
+	background-repeat: no-repeat;
+	background-repeat: space round;
+	mask-position: 0% 0%;
+	mask-position: center, 10px 20px;
+	mask-size: contain;
+	mask-size: 50% 100%;
+	mask-repeat: no-repeat;
+	mask-repeat: repeat-y, space;
+	outline-width: thin;
+	outline-width: medium;
+	outline-width: thick;
+	outline-width: 3px;
+	outline-style: none;
+	outline-style: solid;
+	outline-style: dashed;
+	outline-style: dotted;
+	outline-color: currentcolor;
+	outline-color: #ff0000;
+	outline-offset: 2px;
+	outline-offset: -2px;
+	outline: none;
+	outline: 0;
+	outline: 2px solid #ff0000;
+	outline: dashed #00ff00 thick;
+	paint-order: normal;
+	paint-order: stroke fill markers;
+	paint-order: stroke fill;
+	paint-order: markers;
+	mix-blend-mode: normal;
+	mix-blend-mode: multiply;
+	mix-blend-mode: plus-lighter;
+	transform-style: flat;
+	transform-style: preserve-3d;
+	backface-visibility: visible;
+	backface-visibility: hidden;
+}

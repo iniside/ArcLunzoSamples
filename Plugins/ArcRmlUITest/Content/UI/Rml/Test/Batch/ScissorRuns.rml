@@ -1,0 +1,34 @@
+<rml>
+<head>
+	<title>Batch Scissor Runs</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="Batch.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="box" style="left: 20px;">
+		<div class="s"></div>
+		<div class="s a"></div>
+	</div>
+	<div class="box" style="left: 140px;">
+		<div class="s"></div>
+		<div class="s a"></div>
+	</div>
+	<div class="box" style="left: 260px;">
+		<div class="s"></div>
+		<div class="s a"></div>
+	</div>
+	<div class="box" style="left: 380px;">
+		<div class="s"></div>
+		<div class="s a"></div>
+	</div>
+	<div class="box" style="left: 500px;">
+		<div class="s"></div>
+		<div class="s a"></div>
+	</div>
+	<div class="box" style="left: 620px;">
+		<div class="s"></div>
+		<div class="s a"></div>
+	</div>
+</body>
+</rml>

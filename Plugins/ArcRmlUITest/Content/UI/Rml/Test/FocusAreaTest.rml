@@ -1,0 +1,36 @@
+<rml>
+<head>
+	<title>ArcRmlUI Focus Area Test</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/FocusAreaFrame.rml"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ds/tokens.rcss"/>
+	<link type="text/rcss" href="FocusAreaTest.rcss"/>
+	<viewmodel name="fat" preview="Preview/FocusAreaTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="fat">
+<div class="fat-tab-root">
+	<div class="fat-scroll">
+		<div class="fat-grid" data-focus-area="grid" data-focus-primary="" data-focus-parent="tabs" data-event-uiaction="callIf(ev.action == 'IA_UISecondary', '', 'GridAction', ev.action); stopPropagation(ev.action == 'IA_UISecondary')">
+			<div class="fat-cell" data-for="cell : cells" data-class-picked="cell.picked" data-attr-id="'cell-' + cell.name" data-attr-data-action="'select:' + cell.name" data-focus-enter="details">{{ cell.name }}</div>
+		</div>
+		<div class="fat-side">
+			<div id="side-1" class="fat-button" data-action="side:1">Side 1 (no area)</div>
+			<div id="side-2" class="fat-button" data-action="side:2">Side 2 (no area)</div>
+		</div>
+	</div>
+	<div class="fat-details" data-focus-area="details" data-focus-parent="grid" data-focus-exit=".fat-cell.picked" data-nav-left="#qty-minus" data-nav-right="#qty-plus">
+		<div class="fat-title">Details: {{ detailsShown ? 'shown' : 'waiting for data' }}</div>
+		<div class="fat-qty">
+			<div id="qty-minus" class="fat-step" data-action="qty:minus">-</div>
+			<div class="fat-qty-value">{{ qty }}</div>
+			<div id="qty-plus" class="fat-step" data-action="qty:plus">+</div>
+		</div>
+		<div class="fat-actions" data-if="detailsShown">
+			<dc-import name="/ArcRmlUITest/UI/Rml/Components/Button" label="Use" action="use" data-hotkey="IA_UIAlt"/>
+			<dc-import name="/ArcRmlUITest/UI/Rml/Components/Button" label="Drop" action="drop" data-hotkey="IA_UIAlt"/>
+			<dc-import name="/ArcRmlUITest/UI/Rml/Components/Button" label="Info" action="info"/>
+			<dc-import name="/ArcRmlUITest/UI/Rml/Test/FatHotkeyButton" label="Bound" action="bound" data-hotkey="{{ boundHotkey }}"/>
+		</div>
+	</div>
+</div>
+</body>
+</rml>

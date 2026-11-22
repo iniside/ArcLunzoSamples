@@ -1,0 +1,5 @@
+<component>
+	<prop name="label"/>
+	<prop name="action" default=""/>
+	<div class="cb-button" data-attr-data-action="$action">{{ $label }}</div>
+</component>

@@ -1,0 +1,145 @@
+body {
+	margin: 0;
+	display: flow-root;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000000;
+}
+
+div {
+	display: block;
+}
+
+.box {
+	height: 10px;
+	width: 40px;
+	background-color: #808080;
+}
+
+@property --tw-border-style {
+	syntax: "*";
+	inherits: false;
+	initial-value: solid;
+}
+
+@property --w-reg {
+	syntax: "<length>";
+	inherits: false;
+	initial-value: 70px;
+}
+
+.border {
+	border-style: var(--tw-border-style);
+	border-width: 4px;
+	border-color: #2050d0;
+}
+
+.border-dashed {
+	--tw-border-style: dashed;
+	border-style: dashed;
+}
+
+.border-none-var {
+	--tw-border-style: none;
+	border-style: none;
+}
+
+.outer {
+	width: 300px;
+	margin-bottom: 10px;
+	background-color: #ffffff;
+}
+
+.inner {
+	width: 200px;
+	height: 20px;
+	background-color: #ffffff;
+}
+
+.reg-set {
+	--w-reg: 90px;
+}
+
+.reg-read {
+	height: 10px;
+	width: var(--w-reg, 10px);
+	background-color: #808080;
+}
+
+.reg-initial {
+	--w-reg: initial;
+}
+
+.reg-inherit {
+	--w-reg: inherit;
+}
+
+.unreg-initial {
+	--w-unreg: initial;
+	height: 10px;
+	width: var(--w-unreg, 30px);
+	background-color: #808080;
+}
+
+.other-sheet {
+	height: 10px;
+	width: var(--w-other, 10px);
+	background-color: #808080;
+}
+
+@supports (display: grid) {
+	.sup-grid {
+		color: #ff0000;
+		width: 50px;
+	}
+}
+
+@supports (-moz-orient: inline) {
+	.sup-moz {
+		color: #ff0000;
+		width: 50px;
+	}
+}
+
+@supports not (foo: bar) {
+	.sup-not {
+		width: 50px;
+	}
+}
+
+@supports (display: grid) and (-moz-orient: inline) {
+	.sup-and {
+		width: 50px;
+	}
+}
+
+@supports (display: grid) or (-moz-orient: inline) {
+	.sup-or {
+		width: 50px;
+	}
+}
+
+@supports selector(.a > .b) {
+	.sup-selector {
+		width: 50px;
+	}
+}
+
+@supports selector(:foo-bar) {
+	.sup-unknown-selector {
+		width: 50px;
+	}
+}
+
+.start {
+	opacity: 1;
+	width: 40px;
+}
+
+@starting-style {
+	.start {
+		opacity: 0;
+		width: 50px;
+	}
+}

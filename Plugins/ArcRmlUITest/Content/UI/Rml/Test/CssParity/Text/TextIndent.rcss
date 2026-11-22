@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.box { width: 200px; margin-bottom: 4px; background-color: #dde3ee; }
+.px { text-indent: 30px; }
+.neg { text-indent: -10px; margin-left: 20px; }
+.pct { text-indent: 10%; }
+.center { text-indent: 40px; text-align: center; }
+.right { text-indent: 40px; text-align: right; }
+.wrap { text-indent: 60px; }
+.parent { text-indent: 30px; }
+.ib { display: inline-block; background-color: #cc3366; }
+table { border-collapse: collapse; }
+td { padding: 0; }
+.btn { padding: 0; border-width: 0; text-align: left; font-family: 'Space Grotesk', sans-serif; font-size: 16px; line-height: 20px; }

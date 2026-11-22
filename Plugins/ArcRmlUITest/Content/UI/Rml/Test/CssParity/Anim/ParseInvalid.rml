@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Parse Invalid</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Anim/ParseInvalid.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="inv-prop" class="row"></div>
+	<div id="inv-short" class="row"></div>
+	<div id="inv-ctrl" class="row"></div>
+</body>
+</rml>

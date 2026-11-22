@@ -1,0 +1,10 @@
+<rml>
+<head>
+	<title>Repeated Key Test</title>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="keyrepeat" preview="Preview/KeyRepeatTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="keyrepeat">
+	<div data-for="r : Rows" data-key="r.Id"><div class="kr-row">{{ r.Label }}</div></div>
+</body>
+</rml>

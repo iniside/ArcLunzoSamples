@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"><head><style>
+    .sc-placeholder{background:color-mix(in srgb,currentColor 8%,transparent);border-radius:2px;overflow:hidden}
+    @keyframes sc-shine{0%{background-position:100% 50%}100%{background-position:0% 50%}}
+    @media print {
+      @page { margin: 0.5cm; }
+      #dc-root { height: auto; }
+    }
+  </style><style>
+    @keyframes hud-pulse{0%{opacity:1}50%{opacity:.4}100%{opacity:1}}
+    body{margin:0;height:100%;color:#f1f3f6;font-family:'Inter',sans-serif}
+    .hud{position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}
+    .hud-frame{position:absolute;left:24px;bottom:24px;display:flex;gap:12px;align-items:flex-end}
+    .hud-portrait{width:72px;height:72px;border-radius:50%;border:2px solid #e3a33b;background:url(assets/portrait.png) center/cover}
+    .hud-bars{display:flex;flex-direction:column;gap:6px;width:260px}
+    .hud-bar{position:relative;height:14px;border-radius:7px;background:#1b1f27;overflow:hidden}
+    .hud-bar>i{position:absolute;left:0;top:0;bottom:0;border-radius:7px}
+    .hud-hp>i{background:linear-gradient(90deg,#b3261e,#e5534b)}
+    .hud-mp>i{background:linear-gradient(90deg,#1e5bb3,#4b8be5)}
+    .hud-quick{position:absolute;right:24px;bottom:24px;display:flex;gap:6px}
+    .hud-slot{position:relative;width:48px;height:48px;border:1px solid #39404d;border-radius:6px;background:#11141a}
+    .hud-slot svg{position:absolute;top:12px;left:12px;width:24px;height:24px}
+    .hud-slot b{position:absolute;right:3px;bottom:1px;font-size:10px;color:#aab1bd}
+    .hud-low{animation:hud-pulse 1.2s ease-in-out infinite}
+    .hud-log{position:absolute;top:24px;right:24px;width:280px;font-size:12px;line-height:1.5;text-shadow:0 1px 2px #000}
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HUD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="support.js"></script>
+</head><body><div id="dc-root"><div class="sc-host hud" data-sc-name="GameHUD" data-dc-tpl="0">
+<div class="hud-frame" data-dc-tpl="1">
+  <div class="hud-portrait" data-dc-tpl="2"></div>
+  <div class="hud-bars" data-dc-tpl="3">
+    <div class="hud-bar hud-hp" data-dc-tpl="4"><i style="width: 64%;"></i></div>
+    <div class="hud-bar hud-mp" data-dc-tpl="4"><i style="width: 38%; animation: hud-pulse 1.2s ease-in-out 0s infinite normal none running;" class="hud-low"></i></div>
+  </div>
+</div>
+<div class="hud-quick" data-dc-tpl="5">
+  <div class="hud-slot" data-sc-name="QuickSlot" data-dc-tpl="6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-lucide="sword" data-rendered="true"><line x1="4" y1="20" x2="18" y2="6"></line><polyline points="14 4 20 4 20 10"></polyline></svg><b>1</b></div>
+  <div class="hud-slot" data-sc-name="QuickSlot" data-dc-tpl="6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-lucide="shield" data-rendered="true"><path d="M12 3 L20 6 L20 12 C20 17 16 20 12 21 C8 20 4 17 4 12 L4 6 Z"></path></svg><b>2</b></div>
+  <div class="hud-slot" data-sc-name="QuickSlot" data-dc-tpl="6"><img src="assets/potion.svg" alt="" width="24" height="24" style="margin: 12px;"><b>3</b></div>
+  <div class="hud-slot" data-sc-name="QuickSlot" data-dc-tpl="6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-lucide="gradient-orb"><defs><linearGradient id="orb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4b8be5"></stop><stop offset="1" stop-color="#b3261e"></stop></linearGradient></defs><circle cx="12" cy="12" r="9" fill="url(#orb)"></circle></svg><b>4</b></div>
+</div>
+<div class="hud-log" data-dc-tpl="7">
+  <p>You picked up <strong>Iron Ore</strong> &times;3.</p>
+  <p>Quest updated: <em>The Old Mine</em> &rarr; 2/5</p>
+</div>
+</div></div>
+<script data-dc-script="">window.dc && dc.mount(document.getElementById('dc-root'));</script>
+</body></html>

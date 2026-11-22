@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000000;
+}
+
+.row { display: block; height: 30px; margin: 0; padding-left: 10px; }
+.big { height: 60px; font-size: 32px; line-height: 40px; }
+.pos { position: relative; }
+.underline { text-decoration-line: underline; }
+.no-underline { text-decoration-line: none; }
+.line-through { text-decoration-line: line-through; }
+.overline { text-decoration-line: overline; }
+.offset-4 { text-underline-offset: 4px; }
+.thick-2 { text-decoration-thickness: 2px; }
+.decoration-orange { text-decoration-color: #e08010; }
+.shorthand { text-decoration: underline 3px #10a0a0; }
+.blue { color: #2050d0; }
+.gray { color: #303030; }
+.red { color: #d02020; }
+.green { color: #20a040; }
+.teal { color: #108080; }
+.purple { color: #8020c0; }
+.brown { color: #805020; }
+.navy { color: #102080; }
+.olive { color: #707010; }
+.maroon { color: #801030; }
+.ib { display: inline-block; color: #000000; }
+.abs { position: absolute; left: 100px; top: 0; color: #000000; }

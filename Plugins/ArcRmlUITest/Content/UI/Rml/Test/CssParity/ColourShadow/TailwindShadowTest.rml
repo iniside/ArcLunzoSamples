@@ -1,0 +1,18 @@
+<rml>
+<head>
+	<title>TailwindShadowTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/ColourShadow/TailwindShadow.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="sm" class="box shadow-sm"></div>
+	<div id="lg" class="box shadow-lg"></div>
+	<div id="ring" class="box ring-2"></div>
+	<div id="ring-blue" class="box ring-2 ring-blue-500"></div>
+	<div id="ring-half" class="box ring-2 ring-half-red"></div>
+	<div id="offset-wrap">
+		<div id="ring-offset" class="box ring-2 ring-blue-500 ring-offset-2 ring-offset-white"></div>
+	</div>
+</body>
+</rml>

@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>NewlineTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/Newline.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="nl-outer"><div id="nl-inner" class="nl-inner"></div></div>
+	<div id="nl-border" class="nl-border"></div>
+	<div class="nl-ctx"><div id="nl-parent" class="nl-parent"></div></div>
+	<div id="nl-line" class="nl-line"></div>
+	<div id="nl-plain" class="nl-parent"></div>
+</body>
+</rml>

@@ -1,0 +1,13 @@
+body {
+	margin: 0;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.row { height: 24px; }
+.stf { display: inline-block; background-color: #dde3ee; }
+.centre { width: 100px; text-align: center; background-color: #dde3ee; }
+.narrow { width: 40px; text-align: right; background-color: #dde3ee; }
+.ib { display: inline-block; width: 40px; height: 10px; background-color: #3366cc; }
+.pre-wrap { white-space: pre-wrap; }

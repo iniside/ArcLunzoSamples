@@ -1,0 +1,50 @@
+.sm-column {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 280px;
+	background-color: rgba(20, 24, 32, 0.92);
+}
+
+.sm-title {
+	position: absolute;
+	left: 20px;
+	top: 16px;
+	font-size: 28px;
+}
+
+.sm-list {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 64px;
+	bottom: 0;
+	padding: 0 12px 12px 12px;
+	overflow-y: auto;
+}
+
+.sm-group {
+	display: block;
+	font-size: 16px;
+	color: #9aa4b6;
+	margin: 16px 8px 6px 8px;
+}
+
+.sm-entry {
+	display: block;
+	margin: 3px 0;
+	padding: 6px 12px;
+	font-size: 18px;
+	border-radius: 4px;
+	background-color: #303846;
+	color: #e8e8e8;
+}
+
+.sm-entry:hover {
+	background-color: #4d5a72;
+}
+
+.sm-entry:focus {
+	background-color: #5a6a88;
+}

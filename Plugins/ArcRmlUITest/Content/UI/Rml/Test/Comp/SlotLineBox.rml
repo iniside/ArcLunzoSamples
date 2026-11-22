@@ -1,0 +1,6 @@
+<component>
+	<prop name="label" default=""/>
+	<div class="slb-label">{{ $label }}</div>
+	<div class="slb-after" style="colr: green;">after</div>
+	<div class="slb" style="colr: purple;"><slot/></div>
+</component>

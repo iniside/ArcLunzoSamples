@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'Barlow Condensed';
+	font-weight: 500;
+	src: Fonts/BarlowCondensed-Medium.ttf;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(8, 12, 20, 0.85);
+	font-family: 'Barlow Condensed';
+	color: #e8ecf4;
+}
+
+.gft-panel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 32px 48px;
+	border: 2px solid #3d7bd9;
+	border-radius: 12px;
+	background-color: #141c2b;
+}
+
+.gft-image {
+	width: 128px;
+	height: 128px;
+	margin-bottom: 20px;
+}
+
+.gft-title {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.gft-text {
+	font-size: 18px;
+	color: #a9b4c6;
+}

@@ -1,0 +1,78 @@
+@keyframes kSame {
+	from { width: 100px; }
+	to { width: 300px; }
+}
+
+@decorator kdSame : horizontal-gradient {
+	start-color: #ff0000;
+	stop-color: #ff0000;
+}
+
+#ka-anim {
+	height: 16px;
+	background-color: #335577;
+	animation: kSame 4s linear forwards;
+}
+
+#ka-deco {
+	width: 60px;
+	height: 16px;
+	decorator: kdSame;
+}
+
+#ka-scroll {
+	width: 200px;
+	height: 90px;
+	overflow-y: auto;
+}
+
+.ka-srow {
+	height: 30px;
+}
+
+#dup {
+	width: 222px;
+	height: 20px;
+	background-color: #aa5500;
+}
+
+#nid {
+	width: 92px;
+	height: 20px;
+	tab-index: auto;
+	nav: auto;
+	background-color: #55aa00;
+}
+
+#ka-btn {
+	nav-right: #nid;
+	drag: clone;
+}
+
+#ka-btn:drag {
+	background-color: #14b4dc;
+}
+
+.kt-box {
+	width: 80px;
+	height: 24px;
+	background-color: #0000aa;
+}
+
+#kb-box {
+	width: 11px;
+	background-color: #ff00ff;
+}
+
+#kf-title {
+	height: 99px;
+	background-color: #ff00ff;
+}
+
+#ka-over {
+	width: 150px;
+	height: 200px;
+	tab-index: auto;
+	nav: auto;
+	background-color: #aa0077;
+}

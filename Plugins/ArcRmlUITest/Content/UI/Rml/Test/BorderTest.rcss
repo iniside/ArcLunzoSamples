@@ -1,0 +1,222 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: 'Space Grotesk', sans-serif;
+	color: rgba(255,255,255,0.9);
+}
+
+div, p {
+	display: block;
+}
+
+.page {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding: 24px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	gap: 14px;
+	background: linear-gradient(45deg, #101214 25%, #1c1f23 25%, #1c1f23 50%, #101214 50%, #101214 75%, #1c1f23 75%) 0 0 / 24px 24px;
+}
+
+.cell {
+	width: 420px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background: rgba(255,255,255,0.04);
+	border: 1px solid rgba(255,255,255,0.08);
+	border-radius: 8px;
+}
+
+.cell.wide {
+	width: 640px;
+}
+
+.label {
+	font-size: 13px;
+	color: rgba(255,255,255,0.6);
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.box {
+	width: 110px;
+	height: 70px;
+}
+
+.round {
+	border-radius: 16px;
+}
+
+.pill {
+	border-radius: 35px;
+}
+
+.translucent-color {
+	background: #2a6fdb;
+	border: 10px solid rgba(255,255,255,0.35);
+}
+
+.translucent-mixed {
+	background: #2a6fdb;
+	border-width: 10px;
+	border-style: solid;
+	border-color: rgba(255,80,80,0.5) rgba(80,255,80,0.5) rgba(255,255,80,0.5) rgba(80,80,255,0.5);
+}
+
+.translucent-gradient {
+	background: linear-gradient(180deg, #e0412b, #2a6fdb);
+	border: 10px solid rgba(0,0,0,0.45);
+}
+
+.dash, .dot {
+	background: #c8842b;
+	color: #ffffff;
+}
+
+.short {
+	width: 46px;
+	height: 34px;
+}
+
+.long {
+	width: 120px;
+	height: 60px;
+}
+
+.even {
+	width: 100px;
+	height: 30px;
+}
+
+.odd {
+	width: 101px;
+	height: 31px;
+}
+
+.dash.w1 { border: 1px dashed; }
+.dash.w2 { border: 2px dashed; }
+.dash.w3 { border: 3px dashed; }
+.dash.w4 { border: 4px dashed; }
+.dash.w6 { border: 6px dashed; }
+
+.dot.w1 { border: 1px dotted; }
+.dot.w2 { border: 2px dotted; }
+.dot.w3 { border: 3px dotted; }
+.dot.w4 { border: 4px dotted; }
+.dot.w8 { border: 8px dotted; }
+
+.dash.round, .dot.round {
+	border-radius: 12px;
+}
+
+.clip {
+	padding: 10px;
+	background: #c8842b;
+	border: 8px dashed rgba(255,255,255,0.6);
+}
+
+.clip-border { background-clip: border-box; }
+.clip-padding { background-clip: padding-box; }
+.clip-content { background-clip: content-box; }
+
+.origin {
+	padding: 10px;
+	background: linear-gradient(90deg, #f0a020 0%, #f0a020 50%, #2060d0 50%, #2060d0 100%) no-repeat;
+	border: 8px dashed rgba(255,255,255,0.6);
+}
+
+.origin-border { background-origin: border-box; }
+.origin-padding { background-origin: padding-box; }
+.origin-content { background-origin: content-box; }
+
+.layers-one {
+	padding: 10px;
+	border: 8px solid rgba(255,255,255,0.3);
+	background: linear-gradient(180deg, #f0a020, #2060d0) content-box, #3a3d42;
+}
+
+.layers-two {
+	padding: 10px;
+	border: 8px solid rgba(255,255,255,0.3);
+	background: linear-gradient(180deg, #f0a020, #2060d0) no-repeat border-box padding-box, #3a3d42 content-box;
+}
+
+.layers-list {
+	padding: 10px;
+	border: 8px solid rgba(255,255,255,0.3);
+	background-image: linear-gradient(90deg, rgba(255,255,255,0.5), rgba(255,255,255,0) 30%), linear-gradient(180deg, #f0a020, #2060d0);
+	background-color: #3a3d42;
+	background-clip: padding-box, border-box;
+	background-origin: border-box;
+}
+
+.current {
+	color: #66ccff;
+	background: #20242a;
+	border: 4px solid;
+	font-size: 18px;
+	text-align: center;
+	line-height: 62px;
+}
+
+.dashed-current {
+	border-style: dashed;
+	color: #9cff66;
+}
+
+.inherit-parent {
+	color: #ff9c66;
+}
+
+.current-keyword {
+	background: #20242a;
+	border: 4px solid red;
+	border-color: currentcolor;
+	font-size: 18px;
+	text-align: center;
+	line-height: 62px;
+}
+
+.hoverable {
+	color: #ffcc66;
+	transition: color 0.3s;
+}
+
+.hoverable:hover {
+	color: #ff3366;
+}
+
+@keyframes pulse {
+	from { color: #ffffff; }
+	to { color: #ff3366; }
+}
+
+.animated {
+	animation: 1.5s ease-in-out infinite alternate pulse;
+}
+
+.transition-target {
+	color: #c8a2ff;
+	transition: border-color 0.5s;
+}
+
+.transition-target:hover {
+	border-color: #33ff99;
+}

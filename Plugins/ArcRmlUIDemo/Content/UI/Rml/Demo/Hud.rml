@@ -1,0 +1,142 @@
+<rml>
+<head>
+	<title>ArcRmlUI Demo HUD</title>
+	<meta name="layer" content="UI.Layer.Game"/>
+	<meta name="input-mode" content="all"/>
+	<meta name="mouse-capture" content="true"/>
+	<meta name="hide-lower" content="false"/>
+	<meta name="keep-alive" content="true"/>
+	<meta name="input-mapping" content="/ArcRmlUIDemo/Demo/Input/IMC_ArcDemo_Hud"/>
+	<meta name="input-mapping-priority" content="0"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/tokens.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Fonts/Fonts.rcss"/>
+	<link type="text/rcss" href="Hud.rcss"/>
+	<viewmodel name="ui" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoUIVM.BP_ArcRmlDemoUIVM_C" context="VM_ArcRmlDemoUI"/>
+	<viewmodel name="hud" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoHudVM.BP_ArcRmlDemoHudVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+	<viewmodel name="hudstate" class="/ArcRmlUIDemo/HudPort/ViewModels/BP_HudPortStateVM.BP_HudPortStateVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+	<viewmodel name="hudunits" class="/ArcRmlUIDemo/HudPort/ViewModels/BP_HudPortUnitsVM.BP_HudPortUnitsVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+	<viewmodel name="hudworld" class="/ArcRmlUIDemo/HudPort/ViewModels/BP_HudPortWorldVM.BP_HudPortWorldVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+	<viewmodel name="hudbars" class="/ArcRmlUIDemo/HudPort/ViewModels/BP_HudPortBarsVM.BP_HudPortBarsVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+</head>
+<body data-model="ui" data-class-theme-ember="Theme == 'ember'" data-class-theme-daylight="Theme == 'daylight'" data-class-theme-slate="Theme == 'slate'" data-class-theme-relic="Theme == 'relic'" data-event-back="callIf(Input != 'gamepad', '', 'OpenPause'); stopPropagation()" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_DevBar', '', 'ToggleDevBar'); callIf(ev.action == 'IA_ArcDemo_Pause', '', 'OpenPause'); callIf(ev.action == 'IA_ArcDemo_GameMenu', '', 'ToggleGameMenu')">
+	<div class="dk-hud" data-model="hudstate" data-class-safe-0="SafeZone == 0" data-class-safe-64="SafeZone == 64" data-attr-data-hud-anchors="Anchors ? 'on' : 'off'">
+		<div class="dk-hud-e3" data-model="hudstate">
+			<div data-if="Regions.Nameplates">
+				<div data-model="hudunits">
+					<div data-for="HudN, HudN_index : Nameplates" data-style-display="(HudN_index &lt; NameplateCount ? 'block' : 'none')">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Nameplate" x="{{ HudN.X }}" y="{{ HudN.Y }}" visible="{{ HudN.Visible }}" scale="{{ HudN.Scale }}" label="{{ HudN.Name }}" level="{{ HudN.Level }}" rank="{{ HudN.Rank }}" health="{{ HudN.Hp }}" trail="{{ HudN.Trail }}" cast="{{ HudN.Cast }}" is-target="{{ HudN.IsTarget }}" aggro="{{ HudN.Aggro }}" dead="{{ HudN.Dead }}"/>
+					</div>
+				</div>
+			</div>
+			<div data-if="Regions.Marker">
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ObjectiveMarker" data-model="hudworld" data-if="Marker.Active" x="{{ Marker.X }}" y="{{ Marker.Y }}" visible="{{ Marker.Visible }}" scale="{{ Marker.Scale }}" distance="{{ Marker.Distance }}" offscreen="{{ Marker.Offscreen }}" angle="{{ Marker.Angle }}" icon="/ArcRmlUIDemo/UI/Rml/icons/map-pin.svg"/>
+			</div>
+			<div data-if="Regions.Interact">
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InteractionPrompt" data-model="hudworld" data-if="Interact.Active" x="{{ Interact.X }}" y="{{ Interact.Y }}" visible="{{ Interact.Visible }}" scale="{{ Interact.Scale }}" label="{{ Interact.Label }}" key-label="F" glyph="A" hold="{{ Interact.Hold }}"/>
+			</div>
+			<div data-if="Regions.Damage">
+				<div data-model="hudworld">
+					<dc-import data-for="HudD, HudD_index : Numbers" name="/ArcRmlUIDemo/UI/Rml/Demo/Components/DamageNumber" x="{{ HudD.X }}" y="{{ HudD.Y }}" value="{{ HudD.Value }}" kind="{{ HudD.Kind }}" drift="{{ HudD.Drift }}" duration="{{ HudD.Duration }}"/>
+				</div>
+			</div>
+		</div>
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ScreenEffects" data-model="hudstate" low-health="{{ Regions.Vignette &amp;&amp; Effects.Low }}" hits="{{ Effects.Hits }}" show-hits="{{ Regions.Direction }}" dead="{{ Regions.Death &amp;&amp; Effects.Dead }}" respawn-in="{{ Effects.RespawnIn }}"/>
+		<div class="dk-hud-regions" data-model="hudstate">
+			<div class="dk-hud-dim" data-hud-dock="tl" data-style-opacity="(WheelOpen ? 0.3 : 1)">
+				<div data-hud-row="frames">
+					<div data-hud-cell="player" data-if="Regions.Player">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PlayerFrame" data-model="hudunits" label="{{ Player.Name }}" level="{{ Player.Level }}" icon="{{ Player.Icon }}" health="{{ Player.Health }}" resource="{{ Player.Resource }}" xp="{{ Player.Xp }}" combat="{{ Player.Combat }}"/>
+					</div>
+					<div data-hud-cell="target" data-if="Regions.Target">
+						<div class="dk-hud-m" data-model="hudunits">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/TargetFrame" data-if="Target.Active" label="{{ Target.Name }}" level="{{ Target.Level }}" rank="{{ Target.Rank }}" hostility="{{ Target.Hostility }}" health="{{ Target.Health }}" cast="{{ Target.Cast }}" debuffs="{{ Target.Debuffs }}"/>
+						</div>
+					</div>
+				</div>
+				<div class="dk-hud-e14" data-hud-cell="buffs" data-if="Regions.Buffs">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/BuffRow" data-model="hudunits" buffs="{{ Buffs }}" size="{{ 28 }}"/>
+				</div>
+				<div class="dk-hud-e16" data-hud-cell="party" data-if="Regions.Party">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PartyFrames" data-model="hudunits" members="{{ Party }}"/>
+				</div>
+			</div>
+			<div class="dk-hud-dim" data-hud-dock="tc" data-style-opacity="(WheelOpen ? 0.3 : 1)">
+				<div class="dk-hud-e19" data-hud-cell="compass" data-if="Regions.Compass">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Compass" data-model="hudworld" yaw="{{ Yaw }}" markers="{{ CompassMarkers }}"/>
+				</div>
+				<div class="dk-hud-e21" data-hud-cell="boss" data-if="Regions.Boss">
+					<div class="dk-hud-m" data-model="hudunits">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/BossBar" data-if="Boss.Active" label="{{ Boss.Name }}" value="{{ Boss.Hp }}" trail="{{ Boss.Trail }}" phases="{{ Boss.Phases }}" enrage="{{ Boss.Enrage }}" buffs="{{ Boss.Buffs }}"/>
+					</div>
+				</div>
+			</div>
+			<div class="dk-hud-dim" data-hud-dock="tr" data-style-opacity="(WheelOpen ? 0.3 : 1)">
+				<div class="dk-hud-e24" data-hud-cell="info" data-if="Regions.Info">
+					<span class="dk-hud-zone-s">{{ Zone }}</span>
+					<span class="dk-hud-time-s">{{ Time }}</span>
+				</div>
+				<div class="dk-hud-e27" data-hud-cell="quests" data-if="Regions.Quests">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/QuestTracker" data-model="hudworld" quests="{{ Quests }}" collapsed="{{ QuestsCollapsed }}"/>
+				</div>
+			</div>
+			<div data-hud-dock="ml"/>
+			<div data-hud-dock="c">
+				<div class="dk-hud-banners-s" data-hud-cell="banners" data-if="Regions.Banners" data-style-opacity="(WheelOpen ? 0.3 : 1)">
+					<div class="dk-hud-m" data-model="hudworld">
+						<dc-import data-for="HudB, HudB_index : Banners" name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Banner" kind="{{ HudB.Kind }}" title="{{ HudB.Title }}" sub="{{ HudB.Sub }}" life="{{ HudB.Life }}"/>
+					</div>
+				</div>
+				<div class="dk-hud-e32" data-hud-cell="wheel" data-if="WheelOpen">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/WeaponWheel" data-model="hudbars" weapons="{{ Weapons }}" highlight="{{ WheelHighlight }}"/>
+				</div>
+			</div>
+			<div data-hud-dock="mr"/>
+			<div data-hud-dock="bl"/>
+			<div class="dk-hud-dim" data-hud-dock="bc" data-style-opacity="(WheelOpen ? 0.3 : 1)">
+				<div class="dk-hud-e37" data-hud-cell="cast" data-if="Regions.Cast">
+					<div class="dk-hud-m" data-model="hudbars">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/CastBar" data-if="Cast.Active" label="{{ Cast.Label }}" progress="{{ Cast.Progress }}" seconds="{{ Cast.Seconds }}" channel="{{ Cast.Channel }}" state="{{ Cast.State }}"/>
+					</div>
+				</div>
+				<div data-hud-row="bars">
+					<div data-hud-cell="quick" data-if="Regions.Quick">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/QuickSlots" data-model="hudbars" slots="{{ Quick }}" input="{{ ui.Input }}"/>
+					</div>
+					<div data-hud-cell="actions" data-if="Regions.ActionBar">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ActionBar" data-model="hudbars" slots="{{ Slots }}" second="{{ SecondSlots }}" pad-set="{{ PadSet }}" input="{{ ui.Input }}"/>
+					</div>
+					<div data-hud-cell="weapons" data-if="Regions.Weapons">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/WeaponBar" data-model="hudbars" weapons="{{ Weapons }}" active="{{ WeaponActive }}" switches="{{ WeaponSwitches }}" reload="{{ WeaponReload }}" input="{{ ui.Input }}"/>
+					</div>
+				</div>
+			</div>
+			<div class="dk-hud-dim" data-hud-dock="br" data-style-opacity="(WheelOpen ? 0.3 : 1)">
+				<div class="dk-hud-e47" data-model="ui" data-if="Toast.bVisible" data-hud-cell="toast">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Toast" surface="hud" tone="{{ Toast.Tone }}" title="{{ Toast.Title }}" body="{{ Toast.Body }}"/>
+				</div>
+				<div data-hud-row="feed">
+					<div class="dk-hud-e50" data-hud-cell="loot" data-if="Regions.Loot">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/LootFeed" data-model="hudbars" lines="{{ Loot }}" life="{{ LootLife }}"/>
+					</div>
+					<div class="dk-hud-prompt-s" data-hud-cell="prompts">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" data-if="Regions.Prompts" key-label="{{ ArcKeys.scheme == 'gamepad' ? '' : ArcKeys.back }}" pad-label="{{ ArcKeys.IA_ArcDemo_Pause }}" label="Menu"/>
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" data-if="Regions.Prompts" key-label="{{ ArcKeys.IA_ArcDemo_GameMenu }}" label="Game Menu"/>
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_HudDebug }}" label="HUD debug" data-hotkey="IA_ArcDemo_HudDebug" data-event-click="call('', 'ToggleDebug')"/>
+						</dc-import>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-model="hudstate">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/HudDebug" data-if="DebugOpen">
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/HudDebugItems" items="{{ Debug }}"/>
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/HudDebugItems" data-model="hudunits" items="{{ Debug }}"/>
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/HudDebugItems" data-model="hudbars" items="{{ Debug }}"/>
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/HudDebugItems" data-model="hudworld" items="{{ Debug }}"/>
+			</dc-import>
+		</div>
+	</div>
+	<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/DevBar" data-if="DevOpen"/>
+</body>
+</rml>

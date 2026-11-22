@@ -1,0 +1,3 @@
+﻿#bom-first { width: 11px; }
+@media (min-width: 1px) { #media-rule { width: 7px; } }
+#tail { width: 5px;

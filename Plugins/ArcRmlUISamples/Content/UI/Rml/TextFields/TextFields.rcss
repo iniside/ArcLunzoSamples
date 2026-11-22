@@ -1,0 +1,47 @@
+.tf-panel {
+	position: absolute;
+	left: 80px;
+	top: 40px;
+	width: 700px;
+	padding: 24px 32px;
+	background-color: rgba(20, 24, 32, 0.9);
+	border-radius: 8px;
+}
+
+.tf-title {
+	display: block;
+	font-size: 36px;
+	margin-bottom: 12px;
+}
+
+.tf-label {
+	font-size: 16px;
+	color: #9aa6ba;
+	margin-top: 8px;
+}
+
+.tf-field {
+	display: block;
+	width: 100%;
+	padding: 8px 12px;
+	border-radius: 4px;
+	background-color: #3a4456;
+	color: #e8e8e8;
+}
+
+.tf-field:focus {
+	background-color: #2f6fb0;
+}
+
+.tf-field::placeholder {
+	color: #9aa6ba;
+}
+
+.tf-notes {
+	height: 80px;
+}
+
+.tf-result {
+	color: #ffd27a;
+	margin-top: 4px;
+}

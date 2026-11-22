@@ -1,0 +1,15 @@
+<component>
+	<prop name="eyebrow" default="Tip"/>
+	<prop name="body" default=""/>
+	<prop name="count" default="0"/>
+	<prop name="index" default="0"/>
+	<prop name="arrows"/>
+	<prop name="field" default=""/>
+	<div class="dk-loadingtip">
+		<div class="dk-loadingtip-head">
+			<span class="dk-loadingtip-eyebrow"><i class="dk-loadingtip-icon"><svg src="/ArcRmlUIDemo/UI/Rml/icons/lightbulb.svg" width="14" height="14" stroke-width="2"/></i>{{ $eyebrow }}</span>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Pager" data-if="$count &gt; 1" count="{{ $count }}" index="{{ $index }}" arrows="{{ $arrows }}" field="{{ $field }}"/>
+		</div>
+		<p class="dk-loadingtip-body">{{ $body }}</p>
+	</div>
+</component>

@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Woff Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/WoffTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="woff" class="line woff">iiii</div>
+	<div id="control" class="line control">iiii</div>
+	<div id="mono" class="line mono">a -&gt; b != c</div>
+</body>
+</rml>

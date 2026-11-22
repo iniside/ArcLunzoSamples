@@ -1,0 +1,80 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 14px;
+	color: #e8ecf4;
+	background-color: #0b0e14;
+}
+
+div {
+	display: block;
+}
+
+.title {
+	position: absolute;
+	left: 12px;
+	top: 8px;
+	font-size: 16px;
+}
+
+.agrid, .tgrid {
+	position: absolute;
+	top: 40px;
+	width: 900px;
+	height: 900px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	align-content: flex-start;
+}
+
+.agrid { left: 8px; }
+.tgrid { left: 960px; }
+
+.a, .t {
+	width: 56px;
+	height: 56px;
+	border: 2px solid #2c3448;
+	border-radius: 6px;
+	text-align: center;
+	line-height: 56px;
+	background-color: #1a2030;
+}
+
+.t {
+	transition: transform 0.8s ease-in-out, opacity 0.8s linear, color 0.8s linear, background-color 0.8s linear;
+}
+
+.tgrid:hover .t {
+	transform: rotate(90deg) scale(0.7);
+	opacity: 0.4;
+	color: #ca8a3c;
+	background-color: #9a3cca;
+}
+
+.a0 { animation: spin0 0.60s 0.00s infinite alternate ease-in-out; }
+.a1 { animation: spin1 0.77s 0.05s infinite alternate ease-in-out; }
+.a2 { animation: spin2 0.94s 0.10s infinite alternate ease-in-out; }
+.a3 { animation: spin0 1.11s 0.15s infinite alternate ease-in-out; }
+.a4 { animation: spin1 1.28s 0.20s infinite alternate ease-in-out; }
+.a5 { animation: spin2 1.45s 0.25s infinite alternate ease-in-out; }
+.a6 { animation: spin0 1.62s 0.30s infinite alternate ease-in-out; }
+.a7 { animation: spin1 1.79s 0.35s infinite alternate ease-in-out; }
+.a8 { animation: spin2 1.96s 0.40s infinite alternate ease-in-out; }
+.a9 { animation: spin0 2.13s 0.45s infinite alternate ease-in-out; }
+
+@keyframes spin0 {
+	from { transform: rotate(0deg) scale(1); opacity: 1; color: #e8ecf4; background-color: #3c6aca; }
+	to { transform: rotate(180deg) scale(0.6); opacity: 0.3; color: #ca8a3c; background-color: #9a3cca; }
+}
+
+@keyframes spin1 {
+	from { transform: translate(0px, 0px); opacity: 0.4; background-color: #3c9a4c; }
+	to { transform: translate(20px, 10px); opacity: 1; background-color: #ca3c3c; }
+}
+
+@keyframes spin2 {
+	from { transform: skew(0deg, 0deg) scale(0.8); color: #ffffff; border-color: #ffffff; }
+	to { transform: skew(20deg, 5deg) scale(1.2); color: #000000; border-color: #ca8a3c; }
+}

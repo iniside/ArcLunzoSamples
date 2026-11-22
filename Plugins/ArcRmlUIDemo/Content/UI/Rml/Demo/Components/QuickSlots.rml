@@ -1,0 +1,10 @@
+<component>
+	<prop name="slots" default="[]"/>
+	<prop name="input" default="keyboard"/>
+	<div class="dk-quick-slots">
+		<div data-for="QuickSlotsQ, QuickSlotsQ_index : $slots" class="dk-quick-slots-e2">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ItemSlot" icon="{{ QuickSlotsQ.Icon }}" rarity="{{ QuickSlotsQ.Rarity }}" quantity="{{ QuickSlotsQ.Count }}" cooldown="{{ QuickSlotsQ.Cooldown }}" cooldown-label="{{ (QuickSlotsQ.Seconds &gt; 0 ? (QuickSlotsQ.Seconds | ceil) : '') }}" disabled="{{ QuickSlotsQ.Count &lt;= 0 }}" size="{{ 44 }}"/>
+			<span class="dk-quick-slots-key-s">{{ $input == 'gamepad' ? QuickSlotsQ.Glyph : QuickSlotsQ.KeyLabel }}</span>
+		</div>
+	</div>
+</component>

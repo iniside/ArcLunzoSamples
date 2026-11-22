@@ -1,0 +1,74 @@
+<rml>
+<head>
+	<title>ArcRmlUI Perf Decoration</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="PerfDecoration.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="backdrop"></div>
+	<div class="title">60 cards: box-shadows, backdrop blur, gradients, radius + overflow, filters</div>
+	<div class="cards">
+		<div class="card c0"><div class="inner">Card 0<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c1"><div class="inner">Card 1<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c2"><div class="inner">Card 2<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c3"><div class="inner">Card 3<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c4"><div class="inner">Card 4<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c5"><div class="inner">Card 5<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c0"><div class="inner">Card 6<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c1"><div class="inner">Card 7<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c2"><div class="inner">Card 8<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c3"><div class="inner">Card 9<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c4"><div class="inner">Card 10<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c5"><div class="inner">Card 11<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c0"><div class="inner">Card 12<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c1"><div class="inner">Card 13<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c2"><div class="inner">Card 14<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c3"><div class="inner">Card 15<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c4"><div class="inner">Card 16<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c5"><div class="inner">Card 17<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c0"><div class="inner">Card 18<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c1"><div class="inner">Card 19<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c2"><div class="inner">Card 20<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c3"><div class="inner">Card 21<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c4"><div class="inner">Card 22<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c5"><div class="inner">Card 23<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c0"><div class="inner">Card 24<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c1"><div class="inner">Card 25<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c2"><div class="inner">Card 26<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c3"><div class="inner">Card 27<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c4"><div class="inner">Card 28<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c5"><div class="inner">Card 29<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c0"><div class="inner">Card 30<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c1"><div class="inner">Card 31<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c2"><div class="inner">Card 32<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c3"><div class="inner">Card 33<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c4"><div class="inner">Card 34<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c5"><div class="inner">Card 35<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c0"><div class="inner">Card 36<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c1"><div class="inner">Card 37<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c2"><div class="inner">Card 38<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c3"><div class="inner">Card 39<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c4"><div class="inner">Card 40<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c5"><div class="inner">Card 41<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c0"><div class="inner">Card 42<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c1"><div class="inner">Card 43<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c2"><div class="inner">Card 44<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c3"><div class="inner">Card 45<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c4"><div class="inner">Card 46<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c5"><div class="inner">Card 47<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c0"><div class="inner">Card 48<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c1"><div class="inner">Card 49<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c2"><div class="inner">Card 50<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c3"><div class="inner">Card 51<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c4"><div class="inner">Card 52<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c5"><div class="inner">Card 53<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c0"><div class="inner">Card 54<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c1"><div class="inner">Card 55<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c2"><div class="inner">Card 56<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c3"><div class="inner">Card 57<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c4"><div class="inner">Card 58<div class="clip"><div class="bigimg"></div></div></div></div>
+		<div class="card c5"><div class="inner">Card 59<div class="clip"><div class="bigimg"></div></div></div></div>
+	</div>
+</body>
+</rml>

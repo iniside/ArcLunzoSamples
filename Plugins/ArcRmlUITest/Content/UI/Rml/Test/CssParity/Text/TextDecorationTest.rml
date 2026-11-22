@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Text Decoration Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/TextDecoration.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="row"><a id="td-link" class="underline blue"><span id="td-link-span" class="gray">xxxx</span></a></div>
+	<p class="row underline red"><span id="td-none" class="no-underline">xxxx</span></p>
+	<div class="row"><span id="td-offset" class="underline green offset-4 thick-2">xxxx</span></div>
+	<div class="row big"><span id="td-big" class="underline teal">xxxx</span></div>
+	<div class="row"><span id="td-color" class="underline decoration-orange">xxxx</span></div>
+	<div class="row underline purple"><span id="td-before">xx</span> <span id="td-atomic" class="ib">xxxx</span></div>
+	<div class="row underline brown pos"><span id="td-flow">xx</span><span id="td-abs" class="abs">xxxx</span></div>
+	<div class="row"><span id="td-through" class="line-through navy">xxxx</span></div>
+	<div class="row"><span id="td-over" class="overline olive">xxxx</span></div>
+	<div class="row"><span id="td-shorthand" class="shorthand">xxxx</span></div>
+	<div class="row underline maroon"><div id="td-block" class="inner-block">xxxx</div></div>
+</body>
+</rml>

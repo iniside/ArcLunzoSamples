@@ -1,0 +1,38 @@
+<component>
+	<prop name="state" default="locked"/>
+	<prop name="tier" default="common"/>
+	<prop name="icon" default=""/>
+	<prop name="lockedIcon" default=""/>
+	<prop name="title" default=""/>
+	<prop name="hiddenTitle" default=""/>
+	<prop name="description" default=""/>
+	<prop name="points" default=""/>
+	<prop name="value" default="0"/>
+	<prop name="max" default="1"/>
+	<prop name="progressCaption" default=""/>
+	<prop name="progressMeta" default=""/>
+	<prop name="unlockedLabel" default=""/>
+	<prop name="hiddenLabel" default=""/>
+	<prop name="lockedLabel" default=""/>
+	<prop name="rarityLabel" default=""/>
+	<prop name="focusable"/>
+	<div class="dk-achievementcard" data-class-unlocked="$state == 'unlocked'" data-class-uncommon="$tier == 'uncommon'" data-class-rare="$tier == 'rare'" data-class-epic="$tier == 'epic'" data-class-legendary="$tier == 'legendary'" data-class-focusable="$focusable">
+		<span class="dk-achievementcard-frame"><i class="dk-achievementcard-icon" data-if="$state == 'hidden'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/circle-help.svg" width="26" height="26" stroke-width="2"/></i><i class="dk-achievementcard-icon" data-if="$state == 'locked' &amp;&amp; $lockedIcon != ''"><svg data-attr-src="$lockedIcon" width="26" height="26" stroke-width="2"/></i><i class="dk-achievementcard-icon" data-if="$state == 'locked' &amp;&amp; $lockedIcon == ''"><svg src="/ArcRmlUIDemo/UI/Rml/icons/lock.svg" width="26" height="26" stroke-width="2"/></i><i class="dk-achievementcard-icon" data-if="$state != 'hidden' &amp;&amp; $state != 'locked' &amp;&amp; $icon != ''"><svg data-attr-src="$icon" width="26" height="26" stroke-width="2"/></i><i class="dk-achievementcard-icon" data-if="$state != 'hidden' &amp;&amp; $state != 'locked' &amp;&amp; $icon == ''"><svg src="/ArcRmlUIDemo/UI/Rml/icons/trophy.svg" width="26" height="26" stroke-width="2"/></i></span>
+		<div class="dk-achievementcard-main">
+			<div class="dk-achievementcard-head">
+				<span class="dk-achievementcard-title" data-class-hidden="$state == 'hidden'">{{ $state == 'hidden' ? ($hiddenTitle != '' ? $hiddenTitle : '???') : $title }}</span>
+				<span class="dk-achievementcard-points" data-if="$points != ''">{{ $points }}</span>
+			</div>
+			<div class="dk-achievementcard-redacted" data-if="$state == 'hidden'">
+				<span class="dk-achievementcard-bar dk-achievementcard-bar-long"></span>
+				<span class="dk-achievementcard-bar dk-achievementcard-bar-short"></span>
+			</div>
+			<span class="dk-achievementcard-desc" data-if="$state != 'hidden'">{{ $description }}</span>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ProgressBar" data-if="$state == 'progress'" value="{{ ($value * 1 / ($max * 1) * 100) | round }}" value-label="{{ (($value * 1) | arcnum) + ' / ' + (($max * 1) | arcnum) }}" label="{{ $progressCaption }}" size="sm"/>
+			<div class="dk-achievementcard-foot">
+				<span class="dk-achievementcard-meta" data-class-done="$state == 'unlocked'">{{ $state == 'unlocked' ? $unlockedLabel : ($state == 'hidden' ? $hiddenLabel : ($state == 'progress' ? ($progressCaption != '' ? '' : $progressMeta) : $lockedLabel)) }}</span>
+				<span class="dk-achievementcard-rarity" data-if="$rarityLabel != ''">{{ $rarityLabel }}</span>
+			</div>
+		</div>
+	</div>
+</component>

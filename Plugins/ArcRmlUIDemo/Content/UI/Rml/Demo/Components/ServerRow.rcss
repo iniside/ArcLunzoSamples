@@ -1,0 +1,202 @@
+.dk-serverrow-header {
+	display: grid;
+	grid-template-columns: minmax(0, 2.4fr) minmax(0, 1fr) minmax(0, 1.2fr) minmax(72px, 0.5fr) minmax(96px, 0.6fr);
+	align-items: center;
+	gap: var(--ui-space-4);
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 var(--ui-space-4);
+	min-height: 32px;
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--ui-text-muted);
+	border-bottom: 1px solid var(--ui-border);
+}
+
+.dk-serverrow-headcell {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-serverrow {
+	display: grid;
+	grid-template-columns: minmax(0, 2.4fr) minmax(0, 1fr) minmax(0, 1.2fr) minmax(72px, 0.5fr) minmax(96px, 0.6fr);
+	align-items: center;
+	gap: var(--ui-space-4);
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 var(--ui-space-4);
+	min-height: 48px;
+	font-size: var(--ui-fs-2);
+	background: transparent;
+	border: 1px solid transparent;
+	border-radius: var(--ui-radius-md);
+	box-shadow: none;
+	cursor: pointer;
+	transition: background-color var(--ui-dur-fast) var(--ui-ease), border-color var(--ui-dur-fast) var(--ui-ease), transform var(--ui-dur-fast) var(--ui-ease);
+	--h-bg: color-mix(in srgb, var(--ui-surface-2) 70%, transparent);
+	--h-bd: var(--ui-border);
+	--p-tf: scale(0.995);
+	--c-fg: var(--ui-text);
+	--c-sub: var(--ui-text-muted);
+	--pc: var(--ui-danger);
+}
+
+.dk-serverrow.warn {
+	--pc: var(--ui-warning);
+}
+
+.dk-serverrow.good {
+	--pc: var(--ui-success);
+}
+
+.dk-serverrow.selected {
+	background: var(--ui-accent-soft);
+	border: 1px solid var(--ui-accent);
+	--h-bg: var(--ui-accent-soft);
+	--h-bd: var(--ui-accent);
+}
+
+.dk-serverrow.disabled {
+	cursor: default;
+	--h-bg: transparent;
+	--h-bd: transparent;
+	--p-tf: none;
+	--c-fg: var(--ui-text-disabled);
+	--c-sub: var(--ui-text-disabled);
+	--pc: var(--ui-text-disabled);
+}
+
+.dk-serverrow.disabled.selected {
+	--h-bg: var(--ui-accent-soft);
+	--h-bd: var(--ui-accent);
+}
+
+.dk-serverrow:hover {
+	background: var(--h-bg);
+	border-color: var(--h-bd);
+}
+
+.dk-serverrow:active {
+	transform: var(--p-tf);
+}
+
+.dk-serverrow:focus-visible {
+	border: 1px solid var(--ui-focus);
+	box-shadow: var(--ui-focus-ring);
+	--h-bd: var(--ui-focus);
+}
+
+.dk-serverrow.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-serverrow-name {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-2);
+	min-width: 0;
+}
+
+.dk-serverrow-star {
+	display: inline-flex;
+	flex: none;
+	color: var(--ui-warning);
+}
+
+.dk-serverrow-lock {
+	display: inline-flex;
+	flex: none;
+	color: var(--ui-text-muted);
+}
+
+.dk-serverrow-star svg, .dk-serverrow-lock svg {
+	display: block;
+}
+
+.dk-serverrow-label {
+	font-weight: 600;
+	color: var(--c-fg);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-serverrow-sub {
+	color: var(--c-sub);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-serverrow-players {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text);
+	white-space: nowrap;
+}
+
+.dk-serverrow.full .dk-serverrow-players {
+	color: var(--ui-danger);
+}
+
+.dk-serverrow.disabled .dk-serverrow-players {
+	color: var(--ui-text-disabled);
+}
+
+.dk-serverrow-pingbox {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: var(--ui-space-2);
+}
+
+.dk-serverrow-bars {
+	display: flex;
+	align-items: flex-end;
+	gap: 2px;
+	height: 16px;
+}
+
+.dk-serverrow-bar {
+	width: 4px;
+	border-radius: 1px;
+	background: var(--ui-border);
+}
+
+.dk-serverrow-bar-1 {
+	height: 6px;
+}
+
+.dk-serverrow-bar-2 {
+	height: 9px;
+}
+
+.dk-serverrow-bar-3 {
+	height: 12px;
+}
+
+.dk-serverrow-bar-4 {
+	height: 16px;
+}
+
+.dk-serverrow-bar.on {
+	background: var(--pc);
+}
+
+.dk-serverrow-ping {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	color: var(--ui-text-muted);
+	min-width: 44px;
+	text-align: right;
+	white-space: nowrap;
+}
+
+.dk-serverrow.disabled .dk-serverrow-ping {
+	color: var(--ui-text-disabled);
+}

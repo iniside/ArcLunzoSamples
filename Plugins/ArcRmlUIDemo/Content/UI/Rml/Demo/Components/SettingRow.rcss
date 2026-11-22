@@ -1,0 +1,108 @@
+.dk-settingrow {
+	position: relative;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(260px, 42%);
+	align-items: center;
+	gap: var(--ui-space-5);
+	min-height: 64px;
+	box-sizing: border-box;
+	padding: var(--ui-space-2) var(--ui-space-3) var(--ui-space-2) var(--ui-space-5);
+	background: transparent;
+	border: 1px solid transparent;
+	border-radius: var(--ui-radius-md);
+	box-shadow: none;
+	transition: background-color var(--ui-dur-fast) var(--ui-ease), border-color var(--ui-dur-fast) var(--ui-ease);
+	--h-bg: color-mix(in srgb, var(--ui-surface-2) 60%, transparent);
+	--h-bd: var(--ui-border);
+	--c-changed: 0;
+	--c-fg: var(--ui-text);
+	--c-desc: var(--ui-text-muted);
+}
+
+.dk-settingrow.changed {
+	--c-changed: 1;
+}
+
+.dk-settingrow.disabled {
+	--h-bg: transparent;
+	--h-bd: transparent;
+	--c-fg: var(--ui-text-disabled);
+	--c-desc: var(--ui-text-disabled);
+}
+
+.dk-settingrow:hover {
+	background: var(--h-bg);
+	border-color: var(--h-bd);
+}
+
+.dk-settingrow:focus-within {
+	background: var(--ui-accent-soft);
+	border: 1px solid var(--ui-focus);
+	box-shadow: var(--ui-focus-ring);
+	--h-bg: var(--ui-accent-soft);
+	--h-bd: var(--ui-focus);
+}
+
+.dk-settingrow.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-settingrow-dot {
+	position: absolute;
+	left: 8px;
+	top: calc(50% - 4px);
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--ui-accent);
+	opacity: var(--c-changed);
+}
+
+.dk-settingrow-main {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+}
+
+.dk-settingrow-head {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-2);
+	min-width: 0;
+}
+
+.dk-settingrow-label {
+	font-size: var(--ui-fs-3);
+	font-weight: 500;
+	color: var(--c-fg);
+}
+
+.dk-settingrow-desc {
+	font-size: var(--ui-fs-2);
+	line-height: 1.4;
+	color: var(--c-desc);
+}
+
+.dk-settingrow-control {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: var(--ui-space-2);
+	min-width: 0;
+}
+
+.dk-settingrow-slot {
+	flex: 1;
+	min-width: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.dk-settingrow-reset {
+	width: 32px;
+	flex: none;
+	display: flex;
+	justify-content: center;
+}

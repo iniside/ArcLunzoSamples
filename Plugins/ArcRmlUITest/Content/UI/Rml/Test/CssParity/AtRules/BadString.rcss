@@ -1,0 +1,124 @@
+body {
+	margin: 0;
+	display: flow-root;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000000;
+}
+
+div {
+	display: block;
+	height: 10px;
+	width: 40px;
+}
+
+a {
+	display: block;
+	height: 0px;
+}
+
+.v1 {
+	width: 30px;
+	content: 'x; width: 99px;
+	height: 15px; width: 45px;
+}
+
+.v2 {
+	width: 30px;
+	content: "x; width: 99px;
+	height: 15px; width: 47px;
+}
+
+.s1 a'b
+{ width: 99px; height: 9px; }
+
+.s1 {
+	width: 52px;
+}
+
+.s2 a"b
+{ width: 99px; }
+
+.s2 {
+	width: 54px;
+}
+
+.n1 {
+	width: 30px;
+	.x'y
+	{ width: 99px; }
+	height: 12px;
+}
+
+.n2 {
+	width: 30px;
+	@supports (display: block) and 'x
+	{ width: 99px; }
+	height: 14px;
+}
+
+@media screen and 'x
+{ .a1 { width: 99px; } }
+
+.a1 {
+	width: 56px;
+}
+
+.r1 {
+	width: 50px;
+	content: "a
+b";
+	width: 90px;
+	height: 20px;
+}
+
+.e1 {
+	width: 30px;
+	content: "a\
+b; width: 99px;"; width: 61px;
+}
+
+.ow { content: 'x; color: red; }
+.ow-b { width: 10px; }
+.ow-c { width: 12px; }
+}
+
+.s3, x'z
+{ width: 99px; }
+
+.s3 {
+	height: 13px;
+}
+
+.s4p {
+	.s4, x'z
+	{ width: 99px; }
+	.s4 { height: 13px; }
+}
+
+.p {
+	.c { height: 11px; content: 'x;
+} }
+.q { width: 61px; }
+
+.p2 {
+	.c2 { content: "a\
+b; width: 99px;"; width: 63px; }
+}
+
+.pe {
+	.pf { [title="a\
+b"] { width: 65px; } }
+}
+
+@keyframes kb {
+	from, x'y
+	{ a { } }
+	to { width: 64px; }
+}
+
+.kt {
+	display: block;
+	height: 13px;
+}

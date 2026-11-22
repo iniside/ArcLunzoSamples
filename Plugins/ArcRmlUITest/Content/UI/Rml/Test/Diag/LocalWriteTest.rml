@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Local Write Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="diag" preview="Preview/Diag.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="diag">
+	<div id="lw-button" data-event-click="flag = false" style="display: block; width: 100px; height: 30px;">hide</div>
+	<div id="lw-shown" data-if="flag">shown</div>
+</body>
+</rml>

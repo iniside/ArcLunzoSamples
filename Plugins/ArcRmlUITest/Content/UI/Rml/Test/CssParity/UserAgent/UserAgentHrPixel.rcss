@@ -1,0 +1,14 @@
+html, body {
+	margin: 0;
+	background-color: #ffffff;
+}
+
+div {
+	position: absolute;
+	left: 10px;
+	width: 100px;
+}
+
+hr {
+	margin: 0;
+}

@@ -1,0 +1,29 @@
+<rml>
+<head>
+	<title>ArcRmlUI Item Store List Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="ItemStoreList.rcss"/>
+	<viewmodel name="store" class="/Script/ArcUIModels.ArcItemStoreViewModel" context="VM_ItemStore"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="store">
+	<div class="panel">
+		<div id="title" class="title">Store: {{ Items.size }} rows, level {{ Filter.MinLevel }}..{{ Filter.MaxLevel }}</div>
+		<div class="buttons">
+			<div id="lvl2" class="button" data-event-click="call('', 'SetFilterLevelRange', 2, 999)">Level &gt;= 2</div>
+			<div id="lvl1" class="button" data-event-click="call('', 'SetFilterLevelRange', 0, 1)">Level &lt;= 1</div>
+			<div id="clear" class="button" data-event-click="call('', 'ClearFilter')">Clear filter</div>
+		</div>
+		<div id="list" class="scroller">
+			<div class="row" data-for="row, i : Items" data-virtual>
+				<span class="idx">{{ i }}</span>
+				<span class="name">{{ row.DisplayName }}</span>
+				<span class="stacks">x{{ row.Stacks }}</span>
+				<span class="level">L{{ row.Level }}</span>
+				<span class="slot">{{ row.CurrentItemStoreSlot }}</span>
+				<span class="eq">{{ row.bIsEquipped ? 'EQ' : '' }}</span>
+			</div>
+		</div>
+	</div>
+</body>
+</rml>

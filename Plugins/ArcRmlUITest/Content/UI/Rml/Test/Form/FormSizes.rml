@@ -1,0 +1,44 @@
+<rml>
+<head>
+	<title>FormSizes</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/FormSizes.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="row"><input id="fs-text" type="text"/></div>
+	<div class="row"><input id="fs-text-size" type="text" size="10"/></div>
+	<div class="row"><input id="fs-text-size3" type="text" size="3"/></div>
+	<div class="row"><input id="fs-email" type="email"/></div>
+	<div class="row"><input id="fs-password" type="password"/></div>
+	<div class="row"><input id="fs-text-big" class="big" type="text"/></div>
+	<div class="row"><textarea id="fs-ta"></textarea></div>
+	<div class="row"><textarea id="fs-ta-rc" rows="4" cols="30"></textarea></div>
+	<div class="row"><select id="fs-select-short"><option value="x">cd</option></select></div>
+	<div class="row"><select id="fs-select-long"><option value="a">Apple</option><option value="b">Banana split</option></select></div>
+	<div class="row"><select id="fs-select-i"><option value="i">iiii</option></select></div>
+	<div class="row"><select id="fs-select-w"><option value="w">WWWWWWWW</option></select></div>
+	<div class="row"><select id="fs-select-longer"><option value="l">A much longer option label here</option><option value="s">x</option></select></div>
+	<div class="row"><select id="fs-select-label"><option value="l" label="Labelled">Text that is not shown</option></select></div>
+	<div class="row"><select id="fs-select-big" class="big"><option value="a">Apple</option><option value="b">Banana split</option></select></div>
+	<div class="row"><select id="fs-select-none" class="plain"><option value="a">Apple</option><option value="b">Banana split</option></select></div>
+	<div class="row"><input id="fs-checkbox" type="checkbox"/></div>
+	<div class="row"><input id="fs-radio" type="radio" name="fsg"/></div>
+	<div class="row"><input id="fs-text-16" class="f16" type="text"/></div>
+	<div class="row"><input id="fs-text-16-size10" class="f16" type="text" size="10"/></div>
+	<div class="row"><input id="fs-text-18" class="f18" type="text"/></div>
+	<div class="row"><input id="fs-text-24" class="f24" type="text"/></div>
+	<div class="row"><textarea id="fs-ta-16" class="f16"></textarea></div>
+	<div class="row"><textarea id="fs-ta-18" class="f18"></textarea></div>
+	<div class="row"><textarea id="fs-ta-big" class="big"></textarea></div>
+	<div class="row"><textarea id="fs-ta-24" class="f24"></textarea></div>
+	<div class="row"><select id="fs-select-pretty">
+		<option value="a">
+			Apple
+		</option>
+		<option value="b">
+			Banana split
+		</option>
+	</select></div>
+</body>
+</rml>

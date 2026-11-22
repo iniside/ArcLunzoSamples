@@ -1,0 +1,16 @@
+<rml>
+<head>
+	<title>Layout Dump Image Natural Size Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/DumpImage.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<img id="file-w" class="w72" style="left: 10px;" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/>
+	<img id="file-h" class="h32" style="left: 100px;" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/>
+	<img id="file-n" style="left: 200px;" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/>
+	<img id="sprite-w" class="w72" style="left: 400px;" sprite="dump-part"/>
+	<img id="sprite-n" style="left: 500px;" sprite="dump-part"/>
+	<img id="file-svg" style="left: 600px;" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/DumpImage.svg"/>
+</body>
+</rml>

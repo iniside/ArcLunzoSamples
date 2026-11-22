@@ -1,0 +1,16 @@
+<rml>
+<head>
+	<title>Pointer Local Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<link type="text/rcss" href="PointerLocalTest.rcss"/>
+	<viewmodel name="pl" preview="Preview/PointerLocalTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="pl">
+	<div id="trk" data-event-mousedown="call('', 'P', 'trk-down', ev.current_x, ev.current_width, ev.offset_x, ev.current_y, ev.current_height, ev.offset_y)" data-event-drag="call('', 'P', 'trk-drag', ev.current_x, ev.current_width, ev.offset_x, ev.current_y, ev.current_height, ev.offset_y)"><div id="thumb"></div></div>
+	<div id="bar" data-event-mousedown="call('', 'P', 'bar-down', ev.current_x, ev.current_width, ev.offset_x, ev.current_y, ev.current_height, ev.offset_y)"><div id="bartrack" data-event-mousedown="call('', 'P', 'bt-down', ev.current_x, ev.current_width, ev.offset_x, ev.current_y, ev.current_height, ev.offset_y)"></div></div>
+	<div id="sanc"><div id="strk" data-event-mousedown="call('', 'P', 'sc-down', ev.current_x, ev.current_width, ev.offset_x, ev.current_y, ev.current_height, ev.offset_y)"></div></div>
+	<div id="keyel" data-event-keydown="call('', 'P', 'key', ev.current_x, ev.current_width, ev.offset_x, ev.current_y, ev.current_height, ev.offset_y)"></div>
+</body>
+</rml>

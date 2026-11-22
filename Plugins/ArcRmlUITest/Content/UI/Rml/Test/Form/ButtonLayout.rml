@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>ButtonLayout</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/ButtonLayout.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="row"><button id="bl-bare">Save</button></div>
+	<div class="row"><button id="bl-box" class="box">Save</button></div>
+	<div class="row"><input id="bl-ibutton" class="box" type="button" value="Save"/></div>
+	<div class="row"><input id="bl-submit" class="box" type="submit" value="Send"/></div>
+	<div class="row"><input id="bl-reset" class="box" type="reset" value="Clear"/></div>
+	<div class="row"><input id="bl-reset-bare" type="reset" value="Clear"/></div>
+	<div class="row"><button id="bl-svg" class="box"><svg class="icon" viewBox="0 0 24 24"><rect width="24" height="24" fill="#3a86ff"/></svg> Go</button></div>
+	<div class="row"><button id="bl-overflow" class="short">One<br/>Two<br/>Three</button></div>
+	<div class="row"><button id="bl-block" class="box blockbtn">Block</button></div>
+	<div class="row"><button id="bl-min" class="minh">Min</button></div>
+	<div class="row"><button id="bl-disabled" class="box" disabled="">Off</button></div>
+</body>
+</rml>

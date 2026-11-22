@@ -1,0 +1,4 @@
+html { background-color: #a03020; }
+body { display: block; margin: 0; height: 100px; background-color: #2050a0; }
+div { display: block; }
+#hc-box { width: 40px; height: 40px; background-color: #e0c040; }

@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Svg Slot Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/><viewmodel name="cmp" preview="Preview/CallTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="cmp">
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/SvgBox"><rect x="0" y="0" width="40"
+		height="40" fill="red"/></dc-import>
+	<div id="sst-after" style="colr: lime;">after</div>
+</body>
+</rml>

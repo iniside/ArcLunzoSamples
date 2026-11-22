@@ -1,0 +1,4 @@
+<component>
+	<prop name="label"/>
+	<div class="kr-row">{{ $label }}</div>
+</component>

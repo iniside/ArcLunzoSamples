@@ -1,0 +1,35 @@
+<rml>
+<head>
+	<title>ArcRmlUI Demo Splash</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="hide-lower" content="true"/>
+	<meta name="keep-alive" content="true"/>
+	<meta name="any-input" content="true"/>
+	<meta name="input-mapping" content="/ArcRmlUIDemo/Demo/Input/IMC_ArcDemo_Splash"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/tokens.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Fonts/Fonts.rcss"/>
+	<link type="text/rcss" href="GameUI.rcss"/>
+	<link type="text/rcss" href="Splash.rcss"/>
+	<viewmodel name="ui" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoUIVM.BP_ArcRmlDemoUIVM_C" context="VM_ArcRmlDemoUI"/>
+	<viewmodel name="splash" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoSplashVM.BP_ArcRmlDemoSplashVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+</head>
+<body data-model="ui" data-class-theme-ember="Theme == 'ember'" data-class-theme-daylight="Theme == 'daylight'" data-class-theme-slate="Theme == 'slate'" data-class-theme-relic="Theme == 'relic'" data-event-back="stopPropagation()" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_DevBar', '', 'ToggleDevBar'); stopPropagation(ev.action == 'IA_ArcDemo_DevBar')">
+	<div class="gu-layer">
+		<div class="gu-screen sp-root" data-model="splash" autofocus="" data-event-mouseup="callIf(ev.button == 0, '', 'Continue')" data-event-anyinput="callIf(ev.action != 'IA_ArcDemo_DevBar', '', 'Continue')">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/SceneBackdrop" label="" dim="soft"/>
+			<div class="sp-center">
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/GameLogo" eyebrow="Studio Placeholder presents" title="Hollow Meridian" subtitle="Definitive Edition" align="center"/>
+				<div class="sp-status">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Spinner" data-if="!bReady" size="md" tone="accent"/>
+					<div class="sp-pulse" data-if="bReady">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="Any key" glyph="A" label="{{ ArcKeys.scheme == 'gamepad' ? 'Press any button' : 'Press any key' }}"/>
+					</div>
+				</div>
+			</div>
+			<span class="sp-version">v1.4.2 · build 20261018</span>
+		</div>
+	</div>
+	<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/DevBar" data-if="DevOpen"/>
+</body>
+</rml>

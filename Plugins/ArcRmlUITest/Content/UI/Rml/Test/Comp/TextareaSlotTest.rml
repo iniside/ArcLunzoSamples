@@ -1,0 +1,14 @@
+<rml>
+<head>
+	<title>Textarea Slot Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/><viewmodel name="cmp" preview="Preview/CallTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="cmp">
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/TextareaBox"><b>bold</b></dc-import>
+	<textarea id="tst-area">
+		<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/SlotLineBox"/>
+	</textarea>
+</body>
+</rml>

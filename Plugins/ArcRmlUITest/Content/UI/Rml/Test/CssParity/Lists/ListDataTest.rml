@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>ListDataTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Lists/ListData.rcss"/>
+	<viewmodel name="lst" preview="Preview/ListData.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="lst">
+	<div class="box" id="wrap" style="left: 100px; top: 10px">
+		<ul id="du" style="display: flow-root; margin: 0; padding: 0"><li id="du0">Kept</li><li id="du1">Kept too</li></ul>
+		<ol id="dl" style="margin: 0; padding: 0" data-class-alpha="Alpha"><li data-for="r : Rows" data-key="r.Name" data-attr-id="'row-' + r.Name">{{ r.Name }}</li></ol>
+	</div>
+</body>
+</rml>

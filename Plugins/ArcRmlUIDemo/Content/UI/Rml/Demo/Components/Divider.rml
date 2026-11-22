@@ -1,0 +1,11 @@
+<component>
+	<prop name="orientation" default="horizontal"/>
+	<prop name="label" default=""/>
+	<div class="dk-divider-v" data-if="$orientation == 'vertical'"></div>
+	<div class="dk-divider-h" data-if="$orientation != 'vertical'">
+		<span class="dk-divider-line-start"></span>
+		<span class="dk-divider-label" data-if="$label != ''">{{ $label }}</span>
+		<span class="dk-divider-diamond" data-if="$label == ''"></span>
+		<span class="dk-divider-line-end"></span>
+	</div>
+</component>

@@ -1,0 +1,117 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	font-family: 'Space Grotesk', sans-serif;
+	color: rgba(255,255,255,0.9);
+}
+
+div, p {
+	display: block;
+}
+
+.page {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding: 24px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	gap: 14px;
+	background: #08090a;
+}
+
+.cell {
+	position: relative;
+	width: 340px;
+	height: 230px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	background: rgba(255,255,255,0.04);
+	border: 1px solid rgba(255,255,255,0.08);
+	border-radius: 8px;
+}
+
+.label {
+	display: block;
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 11px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: rgba(255,255,255,0.45);
+}
+
+/* Strings, escapes, legacy single colon */
+.quote::before { content: '\00AB  '; color: #cf9b52; }
+.quote::after { content: " \00BB" ' end'; color: #6ba3d3; font-weight: 700; }
+.legacy:before { content: '[legacy] '; color: #9b8bd8; }
+.legacy:after { content: ' [/legacy]'; color: #9b8bd8; }
+
+/* attr() */
+.stat { font-size: 14px; }
+.stat::before { content: attr(data-label) ': '; color: rgba(255,255,255,0.5); }
+.stat::after { content: ' (' attr(data-max) ')'; color: #6ba3d3; }
+.missing::after { content: '<' attr(data-nope) '>'; color: #c6564a; }
+
+/* Style Guide panel: gold corner ring ::before and rhombus ::after (verbatim declarations) */
+.panel { position: relative; height: 120px; display: flex; flex-direction: column; background: linear-gradient(180deg,rgba(14,15,17,0.72),rgba(4,5,6,0.78)); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; box-shadow: 0 18px 50px -8px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.08), inset 0 0 0 3px rgba(0,0,0,0.22), inset 0 0 0 4px rgba(255,255,255,0.03); }
+.panel::before { content: ''; position: absolute; inset: -1px; padding: 1px; border-radius: inherit; pointer-events: none; background: linear-gradient(135deg, rgba(176,138,72,0.75) 0%, rgba(232,211,160,0.8) 5%, rgba(176,138,72,0.35) 13%, rgba(255,255,255,0.0) 24%, rgba(255,255,255,0.0) 76%, rgba(176,138,72,0.35) 87%, rgba(232,211,160,0.8) 95%, rgba(176,138,72,0.75) 100%); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); }
+.panel::after { content: ''; position: absolute; top: -3px; left: 50%; width: 5px; height: 5px; transform: translateX(-50%) rotate(45deg); pointer-events: none; background: linear-gradient(135deg, #efdcae 0%, #b08a48 100%); box-shadow: 0 0 0 2px rgba(6,6,7,0.9); z-index: 2; }
+.panel-title { padding: 11px 16px; font-size: 12px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: rgba(255,255,255,0.92); }
+
+/* Flex row: ::before first, ::after last */
+.flexrow { display: flex; gap: 6px; align-items: center; }
+.flexrow > div, .flexrow::before, .flexrow::after { width: 40px; height: 32px; line-height: 32px; text-align: center; border-radius: 4px; }
+.flexrow > div { background: #3a3d42; }
+.flexrow::before { content: 'B'; background: #cf9b52; color: #14110a; }
+.flexrow::after { content: 'A'; background: #6ba3d3; color: #14110a; }
+
+/* Grid: ::before takes the first cell */
+.gridrow { display: grid; grid-template-columns: repeat(4, 40px); gap: 6px; }
+.gridrow > div, .gridrow::before, .gridrow::after { height: 24px; line-height: 24px; text-align: center; border-radius: 4px; }
+.gridrow > div { background: #3a3d42; }
+.gridrow::before { content: 'B'; background: #cf9b52; color: #14110a; }
+.gridrow::after { content: 'A'; background: #6ba3d3; color: #14110a; }
+
+/* :empty ignores generated boxes; nth-child counts DOM children only */
+.box { height: 28px; padding: 4px 8px; border: 2px solid #c6564a; font-size: 13px; }
+.only-before::before { content: 'only ::before'; }
+.only-before:empty { border-color: #7fbf6a; }
+.list::before { content: 'generated'; color: rgba(255,255,255,0.4); }
+.list > div { font-size: 13px; }
+.list > div:first-child { color: #7fbf6a; }
+.list > div:nth-child(2) { color: #6ba3d3; }
+.list > div:last-child { color: #cf9b52; }
+
+/* Hover on the originating element, with a transition on the pseudo-element */
+.hover { padding: 6px 10px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 6px; font-size: 13px; }
+.hover::before { content: 'o '; color: rgba(255,255,255,0.4); transition: color 0.3s ease; }
+.hover:hover::before { content: '> '; color: #cf9b52; }
+
+/* Content toggled by class, display none, inheritance */
+.toggle { font-size: 13px; }
+.toggle::before { content: none; }
+.toggle.on::before { content: 'ON '; color: #7fbf6a; }
+.toggle::after { content: normal; }
+.hidden::before { content: 'should not show'; display: none; }
+.inherit { font-size: 18px; color: #e08a7f; font-weight: 700; }
+.inherit::before { content: 'inherits '; }
+
+/* Universal selectors with a pseudo-element, a class and a pseudo-class */
+.universal > div { font-size: 13px; }
+.universal *::before { content: '* '; color: #cf9b52; }
+.universal *.x { color: #6ba3d3; }
+.universal *:hover { color: #7fbf6a; }
+
+/* attr() of an attribute other than class: class changes do not re-resolve the content */
+.static-attr { font-size: 13px; }
+.static-attr::before { content: attr(data-label) ': '; color: rgba(255,255,255,0.5); }

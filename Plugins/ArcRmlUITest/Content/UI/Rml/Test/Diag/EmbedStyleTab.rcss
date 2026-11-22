@@ -1,0 +1,5 @@
+#style-tab {
+	display: block;
+	height: 8px;
+	unknown-probe: none;
+}

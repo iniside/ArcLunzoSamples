@@ -1,0 +1,27 @@
+<rml>
+<head>
+	<title>Contain Pointer Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="AreaBackTest.rcss"/>
+	<viewmodel name="cpt" preview="Preview/ContainPointerTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="cpt">
+<div class="abt-root">
+	<div id="cpt-panel" style="height: 60px; margin-bottom: 16px;">{{ label }}</div>
+	<div id="cpt-owner" data-focus-owner="">
+		<div class="abt-btn" id="cpt-trigger">Trigger</div>
+		<div data-focus-area="pop" data-focus-contain="" data-event-blur="call('', 'PopBlur', ev.related_in_owner ? 'in' : 'out')">
+			<div class="abt-btn" id="cpt-opt-0" autofocus="" data-event-click="call('', 'Picked', '0')">A</div>
+			<div class="abt-btn" id="cpt-opt-1" data-event-click="call('', 'Picked', '1')">B</div>
+		</div>
+	</div>
+	<div id="cpt-bare">
+		<div class="abt-btn" id="cpt-bare-trigger">Bare trigger</div>
+		<div data-focus-area="bare" data-focus-contain="" data-event-blur="call('', 'BareBlur', ev.related_in_owner ? 'in' : 'out')">
+			<div class="abt-btn" id="cpt-bare-opt">C</div>
+		</div>
+	</div>
+</div>
+</body>
+</rml>

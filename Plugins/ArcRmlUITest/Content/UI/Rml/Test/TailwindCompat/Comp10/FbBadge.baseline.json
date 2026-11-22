@@ -1,0 +1,89 @@
+{
+	"reference_sha1": "0C1FEB07F7460BF6921E67931D276410BB7D7425",
+	"tol": 1,
+	"mismatches":
+	{
+		"0.0.11|scroll_size.h":
+		{
+			"rmlui": 20,
+			"chrome": 0,
+			"diff": 20
+		},
+		"0.0.11|scroll_size.w":
+		{
+			"rmlui": 59.627929700000003,
+			"chrome": 0,
+			"diff": 59.627929700000003
+		},
+		"0.0.1|scroll_size.h":
+		{
+			"rmlui": 20,
+			"chrome": 0,
+			"diff": 20
+		},
+		"0.0.1|scroll_size.w":
+		{
+			"rmlui": 46.427978500000002,
+			"chrome": 0,
+			"diff": 46.427978500000002
+		},
+		"0.0.3|scroll_size.h":
+		{
+			"rmlui": 20,
+			"chrome": 0,
+			"diff": 20
+		},
+		"0.0.3|scroll_size.w":
+		{
+			"rmlui": 75.384277299999994,
+			"chrome": 0,
+			"diff": 75.384277299999994
+		},
+		"0.0.5|scroll_size.h":
+		{
+			"rmlui": 20,
+			"chrome": 0,
+			"diff": 20
+		},
+		"0.0.5|scroll_size.w":
+		{
+			"rmlui": 38.543945299999997,
+			"chrome": 0,
+			"diff": 38.543945299999997
+		},
+		"0.0.7|scroll_size.h":
+		{
+			"rmlui": 20,
+			"chrome": 0,
+			"diff": 20
+		},
+		"0.0.7|scroll_size.w":
+		{
+			"rmlui": 53.615966800000002,
+			"chrome": 0,
+			"diff": 53.615966800000002
+		},
+		"0.0.9|scroll_size.h":
+		{
+			"rmlui": 20,
+			"chrome": 0,
+			"diff": 20
+		},
+		"0.0.9|scroll_size.w":
+		{
+			"rmlui": 60.4921875,
+			"chrome": 0,
+			"diff": 60.4921875
+		},
+		"0|scroll_size.h":
+		{
+			"rmlui": 72,
+			"chrome": 1080,
+			"diff": 1008
+		}
+	},
+	"missing": [],
+	"unmatched":
+	{
+	}
+}

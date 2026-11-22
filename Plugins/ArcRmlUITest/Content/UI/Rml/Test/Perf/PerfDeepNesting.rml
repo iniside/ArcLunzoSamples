@@ -1,0 +1,343 @@
+<rml>
+<head>
+	<title>ArcRmlUI Perf Deep Nesting</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="PerfDeepNesting.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="title">4 trees, 40 nested flex levels, animated leaf width</div>
+	<div class="tree t0">
+		<div class="lvl row"><span class="tag">L0</span><span class="side">side 0</span>
+			<div class="lvl col"><span class="tag">L1</span><span class="side">side 1</span>
+				<div class="lvl row"><span class="tag">L2</span><span class="side">side 2</span>
+					<div class="lvl col"><span class="tag">L3</span><span class="side">side 3</span>
+						<div class="lvl row"><span class="tag">L4</span><span class="side">side 4</span>
+							<div class="lvl col"><span class="tag">L5</span><span class="side">side 5</span>
+								<div class="lvl row"><span class="tag">L6</span><span class="side">side 6</span>
+									<div class="lvl col"><span class="tag">L7</span><span class="side">side 7</span>
+										<div class="lvl row"><span class="tag">L8</span><span class="side">side 8</span>
+											<div class="lvl col"><span class="tag">L9</span><span class="side">side 9</span>
+												<div class="lvl row"><span class="tag">L10</span><span class="side">side 10</span>
+													<div class="lvl col"><span class="tag">L11</span><span class="side">side 11</span>
+														<div class="lvl row"><span class="tag">L12</span><span class="side">side 12</span>
+															<div class="lvl col"><span class="tag">L13</span><span class="side">side 13</span>
+																<div class="lvl row"><span class="tag">L14</span><span class="side">side 14</span>
+																	<div class="lvl col"><span class="tag">L15</span><span class="side">side 15</span>
+																		<div class="lvl row"><span class="tag">L16</span><span class="side">side 16</span>
+																			<div class="lvl col"><span class="tag">L17</span><span class="side">side 17</span>
+																				<div class="lvl row"><span class="tag">L18</span><span class="side">side 18</span>
+																					<div class="lvl col"><span class="tag">L19</span><span class="side">side 19</span>
+																						<div class="lvl row"><span class="tag">L20</span><span class="side">side 20</span>
+																							<div class="lvl col"><span class="tag">L21</span><span class="side">side 21</span>
+																								<div class="lvl row"><span class="tag">L22</span><span class="side">side 22</span>
+																									<div class="lvl col"><span class="tag">L23</span><span class="side">side 23</span>
+																										<div class="lvl row"><span class="tag">L24</span><span class="side">side 24</span>
+																											<div class="lvl col"><span class="tag">L25</span><span class="side">side 25</span>
+																												<div class="lvl row"><span class="tag">L26</span><span class="side">side 26</span>
+																													<div class="lvl col"><span class="tag">L27</span><span class="side">side 27</span>
+																														<div class="lvl row"><span class="tag">L28</span><span class="side">side 28</span>
+																															<div class="lvl col"><span class="tag">L29</span><span class="side">side 29</span>
+																																<div class="lvl row"><span class="tag">L30</span><span class="side">side 30</span>
+																																	<div class="lvl col"><span class="tag">L31</span><span class="side">side 31</span>
+																																		<div class="lvl row"><span class="tag">L32</span><span class="side">side 32</span>
+																																			<div class="lvl col"><span class="tag">L33</span><span class="side">side 33</span>
+																																				<div class="lvl row"><span class="tag">L34</span><span class="side">side 34</span>
+																																					<div class="lvl col"><span class="tag">L35</span><span class="side">side 35</span>
+																																						<div class="lvl row"><span class="tag">L36</span><span class="side">side 36</span>
+																																							<div class="lvl col"><span class="tag">L37</span><span class="side">side 37</span>
+																																								<div class="lvl row"><span class="tag">L38</span><span class="side">side 38</span>
+																																									<div class="lvl col"><span class="tag">L39</span><span class="side">side 39</span>
+																																										<div class="leaf">leaf</div>
+																																									</div>
+																																								</div>
+																																							</div>
+																																						</div>
+																																					</div>
+																																				</div>
+																																			</div>
+																																		</div>
+																																	</div>
+																																</div>
+																															</div>
+																														</div>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tree t1">
+		<div class="lvl row"><span class="tag">L0</span><span class="side">side 0</span>
+			<div class="lvl col"><span class="tag">L1</span><span class="side">side 1</span>
+				<div class="lvl row"><span class="tag">L2</span><span class="side">side 2</span>
+					<div class="lvl col"><span class="tag">L3</span><span class="side">side 3</span>
+						<div class="lvl row"><span class="tag">L4</span><span class="side">side 4</span>
+							<div class="lvl col"><span class="tag">L5</span><span class="side">side 5</span>
+								<div class="lvl row"><span class="tag">L6</span><span class="side">side 6</span>
+									<div class="lvl col"><span class="tag">L7</span><span class="side">side 7</span>
+										<div class="lvl row"><span class="tag">L8</span><span class="side">side 8</span>
+											<div class="lvl col"><span class="tag">L9</span><span class="side">side 9</span>
+												<div class="lvl row"><span class="tag">L10</span><span class="side">side 10</span>
+													<div class="lvl col"><span class="tag">L11</span><span class="side">side 11</span>
+														<div class="lvl row"><span class="tag">L12</span><span class="side">side 12</span>
+															<div class="lvl col"><span class="tag">L13</span><span class="side">side 13</span>
+																<div class="lvl row"><span class="tag">L14</span><span class="side">side 14</span>
+																	<div class="lvl col"><span class="tag">L15</span><span class="side">side 15</span>
+																		<div class="lvl row"><span class="tag">L16</span><span class="side">side 16</span>
+																			<div class="lvl col"><span class="tag">L17</span><span class="side">side 17</span>
+																				<div class="lvl row"><span class="tag">L18</span><span class="side">side 18</span>
+																					<div class="lvl col"><span class="tag">L19</span><span class="side">side 19</span>
+																						<div class="lvl row"><span class="tag">L20</span><span class="side">side 20</span>
+																							<div class="lvl col"><span class="tag">L21</span><span class="side">side 21</span>
+																								<div class="lvl row"><span class="tag">L22</span><span class="side">side 22</span>
+																									<div class="lvl col"><span class="tag">L23</span><span class="side">side 23</span>
+																										<div class="lvl row"><span class="tag">L24</span><span class="side">side 24</span>
+																											<div class="lvl col"><span class="tag">L25</span><span class="side">side 25</span>
+																												<div class="lvl row"><span class="tag">L26</span><span class="side">side 26</span>
+																													<div class="lvl col"><span class="tag">L27</span><span class="side">side 27</span>
+																														<div class="lvl row"><span class="tag">L28</span><span class="side">side 28</span>
+																															<div class="lvl col"><span class="tag">L29</span><span class="side">side 29</span>
+																																<div class="lvl row"><span class="tag">L30</span><span class="side">side 30</span>
+																																	<div class="lvl col"><span class="tag">L31</span><span class="side">side 31</span>
+																																		<div class="lvl row"><span class="tag">L32</span><span class="side">side 32</span>
+																																			<div class="lvl col"><span class="tag">L33</span><span class="side">side 33</span>
+																																				<div class="lvl row"><span class="tag">L34</span><span class="side">side 34</span>
+																																					<div class="lvl col"><span class="tag">L35</span><span class="side">side 35</span>
+																																						<div class="lvl row"><span class="tag">L36</span><span class="side">side 36</span>
+																																							<div class="lvl col"><span class="tag">L37</span><span class="side">side 37</span>
+																																								<div class="lvl row"><span class="tag">L38</span><span class="side">side 38</span>
+																																									<div class="lvl col"><span class="tag">L39</span><span class="side">side 39</span>
+																																										<div class="leaf">leaf</div>
+																																									</div>
+																																								</div>
+																																							</div>
+																																						</div>
+																																					</div>
+																																				</div>
+																																			</div>
+																																		</div>
+																																	</div>
+																																</div>
+																															</div>
+																														</div>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tree t2">
+		<div class="lvl row"><span class="tag">L0</span><span class="side">side 0</span>
+			<div class="lvl col"><span class="tag">L1</span><span class="side">side 1</span>
+				<div class="lvl row"><span class="tag">L2</span><span class="side">side 2</span>
+					<div class="lvl col"><span class="tag">L3</span><span class="side">side 3</span>
+						<div class="lvl row"><span class="tag">L4</span><span class="side">side 4</span>
+							<div class="lvl col"><span class="tag">L5</span><span class="side">side 5</span>
+								<div class="lvl row"><span class="tag">L6</span><span class="side">side 6</span>
+									<div class="lvl col"><span class="tag">L7</span><span class="side">side 7</span>
+										<div class="lvl row"><span class="tag">L8</span><span class="side">side 8</span>
+											<div class="lvl col"><span class="tag">L9</span><span class="side">side 9</span>
+												<div class="lvl row"><span class="tag">L10</span><span class="side">side 10</span>
+													<div class="lvl col"><span class="tag">L11</span><span class="side">side 11</span>
+														<div class="lvl row"><span class="tag">L12</span><span class="side">side 12</span>
+															<div class="lvl col"><span class="tag">L13</span><span class="side">side 13</span>
+																<div class="lvl row"><span class="tag">L14</span><span class="side">side 14</span>
+																	<div class="lvl col"><span class="tag">L15</span><span class="side">side 15</span>
+																		<div class="lvl row"><span class="tag">L16</span><span class="side">side 16</span>
+																			<div class="lvl col"><span class="tag">L17</span><span class="side">side 17</span>
+																				<div class="lvl row"><span class="tag">L18</span><span class="side">side 18</span>
+																					<div class="lvl col"><span class="tag">L19</span><span class="side">side 19</span>
+																						<div class="lvl row"><span class="tag">L20</span><span class="side">side 20</span>
+																							<div class="lvl col"><span class="tag">L21</span><span class="side">side 21</span>
+																								<div class="lvl row"><span class="tag">L22</span><span class="side">side 22</span>
+																									<div class="lvl col"><span class="tag">L23</span><span class="side">side 23</span>
+																										<div class="lvl row"><span class="tag">L24</span><span class="side">side 24</span>
+																											<div class="lvl col"><span class="tag">L25</span><span class="side">side 25</span>
+																												<div class="lvl row"><span class="tag">L26</span><span class="side">side 26</span>
+																													<div class="lvl col"><span class="tag">L27</span><span class="side">side 27</span>
+																														<div class="lvl row"><span class="tag">L28</span><span class="side">side 28</span>
+																															<div class="lvl col"><span class="tag">L29</span><span class="side">side 29</span>
+																																<div class="lvl row"><span class="tag">L30</span><span class="side">side 30</span>
+																																	<div class="lvl col"><span class="tag">L31</span><span class="side">side 31</span>
+																																		<div class="lvl row"><span class="tag">L32</span><span class="side">side 32</span>
+																																			<div class="lvl col"><span class="tag">L33</span><span class="side">side 33</span>
+																																				<div class="lvl row"><span class="tag">L34</span><span class="side">side 34</span>
+																																					<div class="lvl col"><span class="tag">L35</span><span class="side">side 35</span>
+																																						<div class="lvl row"><span class="tag">L36</span><span class="side">side 36</span>
+																																							<div class="lvl col"><span class="tag">L37</span><span class="side">side 37</span>
+																																								<div class="lvl row"><span class="tag">L38</span><span class="side">side 38</span>
+																																									<div class="lvl col"><span class="tag">L39</span><span class="side">side 39</span>
+																																										<div class="leaf">leaf</div>
+																																									</div>
+																																								</div>
+																																							</div>
+																																						</div>
+																																					</div>
+																																				</div>
+																																			</div>
+																																		</div>
+																																	</div>
+																																</div>
+																															</div>
+																														</div>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tree t3">
+		<div class="lvl row"><span class="tag">L0</span><span class="side">side 0</span>
+			<div class="lvl col"><span class="tag">L1</span><span class="side">side 1</span>
+				<div class="lvl row"><span class="tag">L2</span><span class="side">side 2</span>
+					<div class="lvl col"><span class="tag">L3</span><span class="side">side 3</span>
+						<div class="lvl row"><span class="tag">L4</span><span class="side">side 4</span>
+							<div class="lvl col"><span class="tag">L5</span><span class="side">side 5</span>
+								<div class="lvl row"><span class="tag">L6</span><span class="side">side 6</span>
+									<div class="lvl col"><span class="tag">L7</span><span class="side">side 7</span>
+										<div class="lvl row"><span class="tag">L8</span><span class="side">side 8</span>
+											<div class="lvl col"><span class="tag">L9</span><span class="side">side 9</span>
+												<div class="lvl row"><span class="tag">L10</span><span class="side">side 10</span>
+													<div class="lvl col"><span class="tag">L11</span><span class="side">side 11</span>
+														<div class="lvl row"><span class="tag">L12</span><span class="side">side 12</span>
+															<div class="lvl col"><span class="tag">L13</span><span class="side">side 13</span>
+																<div class="lvl row"><span class="tag">L14</span><span class="side">side 14</span>
+																	<div class="lvl col"><span class="tag">L15</span><span class="side">side 15</span>
+																		<div class="lvl row"><span class="tag">L16</span><span class="side">side 16</span>
+																			<div class="lvl col"><span class="tag">L17</span><span class="side">side 17</span>
+																				<div class="lvl row"><span class="tag">L18</span><span class="side">side 18</span>
+																					<div class="lvl col"><span class="tag">L19</span><span class="side">side 19</span>
+																						<div class="lvl row"><span class="tag">L20</span><span class="side">side 20</span>
+																							<div class="lvl col"><span class="tag">L21</span><span class="side">side 21</span>
+																								<div class="lvl row"><span class="tag">L22</span><span class="side">side 22</span>
+																									<div class="lvl col"><span class="tag">L23</span><span class="side">side 23</span>
+																										<div class="lvl row"><span class="tag">L24</span><span class="side">side 24</span>
+																											<div class="lvl col"><span class="tag">L25</span><span class="side">side 25</span>
+																												<div class="lvl row"><span class="tag">L26</span><span class="side">side 26</span>
+																													<div class="lvl col"><span class="tag">L27</span><span class="side">side 27</span>
+																														<div class="lvl row"><span class="tag">L28</span><span class="side">side 28</span>
+																															<div class="lvl col"><span class="tag">L29</span><span class="side">side 29</span>
+																																<div class="lvl row"><span class="tag">L30</span><span class="side">side 30</span>
+																																	<div class="lvl col"><span class="tag">L31</span><span class="side">side 31</span>
+																																		<div class="lvl row"><span class="tag">L32</span><span class="side">side 32</span>
+																																			<div class="lvl col"><span class="tag">L33</span><span class="side">side 33</span>
+																																				<div class="lvl row"><span class="tag">L34</span><span class="side">side 34</span>
+																																					<div class="lvl col"><span class="tag">L35</span><span class="side">side 35</span>
+																																						<div class="lvl row"><span class="tag">L36</span><span class="side">side 36</span>
+																																							<div class="lvl col"><span class="tag">L37</span><span class="side">side 37</span>
+																																								<div class="lvl row"><span class="tag">L38</span><span class="side">side 38</span>
+																																									<div class="lvl col"><span class="tag">L39</span><span class="side">side 39</span>
+																																										<div class="leaf">leaf</div>
+																																									</div>
+																																								</div>
+																																							</div>
+																																						</div>
+																																					</div>
+																																				</div>
+																																			</div>
+																																		</div>
+																																	</div>
+																																</div>
+																															</div>
+																														</div>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</rml>

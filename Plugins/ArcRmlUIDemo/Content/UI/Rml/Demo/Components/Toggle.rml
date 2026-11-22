@@ -1,0 +1,11 @@
+<component>
+	<prop name="on"/>
+	<prop name="onLabel" default=""/>
+	<prop name="offLabel" default=""/>
+	<prop name="disabled"/>
+	<prop name="focusable"/>
+	<div class="dk-toggle" data-class-on="$on" data-class-disabled="$disabled" data-class-focusable="$focusable">
+		<span class="dk-toggle-track"><span class="dk-toggle-knob"></span></span>
+		<span class="dk-toggle-text" data-if="($on ? $onLabel : $offLabel) != ''">{{ $on ? $onLabel : $offLabel }}</span>
+	</div>
+</component>

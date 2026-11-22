@@ -1,0 +1,14 @@
+<component>
+	<prop name="icon" default="settings"/>
+	<prop name="variant" default="ghost"/>
+	<prop name="size" default="md"/>
+	<prop name="selected"/>
+	<prop name="disabled"/>
+	<prop name="round"/>
+	<prop name="badge" default=""/>
+	<prop name="focusable"/>
+	<div class="dk-iconbutton" data-class-secondary="$variant == 'secondary'" data-class-primary="$variant == 'primary'" data-class-sm="$size == 'sm'" data-class-lg="$size == 'lg'" data-class-round="$round" data-class-selected="$selected" data-class-disabled="$disabled" data-class-focusable="$focusable" data-attrif-selected="$selected">
+		<i class="dk-iconbutton-icon"><svg data-attr-src="$icon" data-attr-width="$size == 'sm' ? 16 : ($size == 'lg' ? 24 : 20)" data-attr-height="$size == 'sm' ? 16 : ($size == 'lg' ? 24 : 20)" stroke-width="2"/></i>
+		<span class="dk-iconbutton-badge" data-if="$badge != ''">{{ $badge }}</span>
+	</div>
+</component>

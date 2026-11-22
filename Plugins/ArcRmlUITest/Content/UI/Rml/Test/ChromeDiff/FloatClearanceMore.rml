@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title>FloatClearanceMore</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ChromeDiff/FloatClearance.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="wf-case" id="d1"><div id="d1-p" style="margin-top:30px"><div id="d1-f" class="wf-f"></div><div id="d1-c" style="clear:left;margin-top:100px;height:10px"></div></div></div>
+	<div class="wf-case" id="d2"><div id="d2-p" style="margin-top:0px"><div id="d2-f" class="wf-f"></div><div id="d2-c" style="clear:left;margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="d3"><div id="d3-p" style="margin-top:30px"><div id="d3-f" class="wf-f" style="height:50px"></div><div id="d3-c" style="clear:left;margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="d4"><div id="d4-p" style="margin-top:30px"><div id="d4-f" class="wf-f"></div><div id="d4-c" style="clear:left;margin-top:-20px;height:10px"></div></div></div>
+	<div class="wf-case" id="d5"><div id="d5-p" style="margin-top:30px"><div id="d5-f" class="wf-f"></div><div id="d5-c" style="overflow:hidden;width:300px;margin-top:100px;height:10px"></div></div></div>
+	<div class="wf-case" id="d6"><div id="d6-p" style="margin-top:30px"><div id="d6-f" class="wf-f"></div><span></span><div id="d6-c" style="margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="d7"><div id="d7-p" style="margin-top:30px"><div id="d7-f" class="wf-f"></div>   <div id="d7-c" style="margin-top:40px;height:10px"></div></div></div>
+</body>
+</rml>

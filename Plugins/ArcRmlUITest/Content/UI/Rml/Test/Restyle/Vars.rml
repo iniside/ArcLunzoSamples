@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>Restyle Vars Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="Vars.rcss"/>
+	<viewmodel name="rv" preview="Preview/Vars.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="rv" data-class-same="Same" data-class-diff="Diff" data-class-has="Has" data-class-noop="Noop">
+	<div id="a" data-class-alt="Alt"></div>
+	<div id="wrap"><div id="mid"><div id="deep"></div></div></div>
+	<div id="b"></div>
+	<div id="sh"></div>
+</body>
+</rml>

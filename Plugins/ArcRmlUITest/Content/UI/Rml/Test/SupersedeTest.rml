@@ -1,0 +1,14 @@
+<rml>
+<head>
+	<title>ArcRmlUI Superseded Frame Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="SupersedeTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="stripes"></div>
+	<div class="pulse"></div>
+	<div class="pulse second"></div>
+	<div class="glass"><p>backdrop over animated box-shadows</p></div>
+</body>
+</rml>

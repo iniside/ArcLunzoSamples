@@ -1,0 +1,49 @@
+.dk-devbar {
+	position: absolute;
+	top: var(--ui-space-4);
+	right: var(--ui-space-4);
+	z-index: 90;
+	width: min(360px, calc(100% - 32px));
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-3);
+	padding: var(--ui-space-4);
+	box-sizing: border-box;
+	border-radius: var(--ui-radius-md);
+	background: var(--ui-panel-bg);
+	border: 1px dashed var(--ui-warning);
+	box-shadow: var(--ui-shadow-lg);
+	backdrop-filter: blur(var(--ui-blur));
+	max-height: calc(100% - 32px);
+	overflow-y: auto;
+}
+
+.dk-devbar .dk-button {
+	nav: none;
+}
+
+.dk-devbar-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.dk-devbar-title {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--ui-warning);
+}
+
+.dk-devbar-caption {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	color: var(--ui-text-muted);
+}
+
+.dk-devbar-group {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--ui-space-2);
+}

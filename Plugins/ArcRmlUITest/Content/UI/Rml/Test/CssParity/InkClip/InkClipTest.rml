@@ -1,0 +1,19 @@
+<rml>
+<head>
+	<title>InkClip</title>
+	<link type="text/rcss" href="InkClipTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="p1" class="abs clip"><div id="k1" class="child"/></div>
+	<div id="p2" class="abs clip"><div id="k2" class="child"/></div>
+	<div id="p3" class="abs clip"><div id="p3in" class="clip"><div id="k3" class="child"/></div></div>
+	<div id="p4" class="abs"><div id="k4" class="child"/></div>
+	<div id="p5" class="abs clip"><div id="k5" class="child"/></div>
+	<div id="p6" class="abs clip"><div id="k6">Shadow</div></div>
+	<div id="p7" class="abs clip"><div id="k7" class="child"/></div>
+	<div id="p8" class="abs clip"><div id="k8">Effect</div></div>
+	<div id="p9" class="abs clip"><div id="k9">Hgjy</div></div>
+	<div id="p10" class="abs clip"><div id="k10" class="child"/></div>
+	<div id="p11" class="abs clip"><div id="k11">Hgjy</div></div>
+</body>
+</rml>

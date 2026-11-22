@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Render Verify Chunk Transform Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="ChunkTransform.rcss"/>
+	<viewmodel name="ct" preview="Preview/ChunkTransform.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="ct">
+	<div id="panel" data-class-shown="Shown"><div class="kid"></div></div>
+</body>
+</rml>

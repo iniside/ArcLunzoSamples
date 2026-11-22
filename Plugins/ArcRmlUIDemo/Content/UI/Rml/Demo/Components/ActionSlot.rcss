@@ -1,0 +1,67 @@
+@keyframes hud-proc { 0% { opacity: 1; transform: scale(1); } 50% { opacity: 0.45; transform: scale(1.04); } 100% { opacity: 1; transform: scale(1); } }
+
+@keyframes hud-press { from { opacity: 1; } to { opacity: 0; } }
+
+.dk-action-slot {
+	position: relative;
+	flex: none;
+	opacity: 1;
+	transform: scale(1);
+	transition: transform var(--ui-dur-fast) var(--ui-ease), opacity var(--ui-dur-fast) var(--ui-ease);
+}
+
+.dk-action-slot.dim {
+	opacity: 0.45;
+}
+
+.dk-action-slot.big {
+	transform: scale(1.1);
+}
+
+.dk-action-slot-tint {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: var(--hud-radius);
+	background: color-mix(in srgb, var(--hud-mana) 50%, transparent);
+}
+
+.dk-action-slot-proc-s {
+	position: absolute;
+	top: -4px;
+	right: -4px;
+	bottom: -4px;
+	left: -4px;
+	border-radius: var(--hud-radius);
+	border: 2px solid var(--ui-rarity-legendary);
+	box-shadow: 0 0 12px var(--ui-rarity-legendary);
+	animation: hud-proc var(--hud-dur-pulse) var(--ui-ease) infinite;
+}
+
+.dk-action-slot-flash {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: var(--hud-radius);
+	background: color-mix(in srgb, var(--hud-highlight) 75%, transparent);
+	animation: hud-press var(--hud-dur-flash) var(--ui-ease) forwards;
+}
+
+.dk-action-slot-key-s {
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	font-family: var(--ui-font-mono);
+	font-size: var(--hud-fs-sm);
+	font-weight: 700;
+	color: var(--hud-text);
+	text-shadow: var(--hud-text-shadow);
+}
+
+.dk-action-slot-key-s.out-of-range {
+	color: var(--ui-danger);
+}

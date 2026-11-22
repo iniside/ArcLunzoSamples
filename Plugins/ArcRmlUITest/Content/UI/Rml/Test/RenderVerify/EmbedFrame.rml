@@ -1,0 +1,14 @@
+<rml>
+<head>
+	<title>Render Verify Embed Frame</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="EmbedFrame.rcss"/>
+	<viewmodel name="ef" preview="Preview/EmbedFrame.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="ef">
+	<div class="ef-root">
+		<div class="ef-embed" arc-embed=""></div>
+	</div>
+</body>
+</rml>

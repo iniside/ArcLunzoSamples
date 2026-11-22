@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+	background-color: rgb(180, 200, 220);
+}
+
+.row {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 200px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+#spx-dark {
+	color: rgb(255, 255, 255);
+	background-color: rgb(34, 34, 34);
+}
+
+#spx-semi {
+	background-color: rgba(255, 0, 0, 0.5);
+}

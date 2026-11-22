@@ -1,0 +1,66 @@
+<rml>
+<head>
+	<title>Images</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="Images.rcss"/>
+	<viewmodel name="images" class="/ArcRmlUISamples/UI/Rml/Images/BP_ImagesVM.BP_ImagesVM_C" create="true"/>
+</head>
+<body data-model="images">
+	<div class="im-panel">
+		<h1 class="im-title">Images</h1>
+		<div class="im-grid">
+			<div class="im-cell">
+				<img class="im-box" src="Images/Picture.png" width="64" height="64"/>
+				<p class="im-caption">img with a PNG file</p>
+			</div>
+			<div class="im-cell">
+				<img class="im-box" src="Images/Sprites.png" rect="32 0 32 32" width="64" height="64"/>
+				<p class="im-caption">rect: one part of the file</p>
+			</div>
+			<div class="im-cell">
+				<div class="im-sprites">
+					<img class="im-sprite" sprite="im-circle"/>
+					<img class="im-sprite" sprite="im-square"/>
+					<img class="im-sprite" sprite="im-diamond"/>
+					<img class="im-sprite" sprite="im-cross"/>
+				</div>
+				<p class="im-caption">@spritesheet and sprite (RmlUi only)</p>
+			</div>
+			<div class="im-cell">
+				<div class="im-row">
+					<svg class="im-box" src="Images/Star.svg" width="64" height="64"/>
+					<svg class="im-box" src="Images/Heart.svg" width="64" height="64"/>
+				</div>
+				<p class="im-caption">svg with an SVG file</p>
+			</div>
+			<div class="im-cell">
+				<div class="im-row">
+					<svg class="im-inline im-inline-blue" viewBox="0 0 24 24" width="64" height="64"><path d="M12 2 L22 21 L2 21 Z" fill="currentColor"/></svg>
+					<svg class="im-inline im-inline-green" viewBox="0 0 24 24" width="64" height="64"><path d="M12 2 L22 21 L2 21 Z" fill="currentColor"/></svg>
+				</div>
+				<p class="im-caption">inline svg drawn in the text colour</p>
+			</div>
+			<div class="im-cell">
+				<img class="im-box" src="asset:/ArcRmlUISamples/UI/Rml/Images/T_Sample_Picture.T_Sample_Picture" width="64" height="64"/>
+				<p class="im-caption">asset: texture</p>
+			</div>
+			<div class="im-cell">
+				<svg id="im-bound-icon" class="im-box" data-attr-src="Icon" width="64" height="64"/>
+				<p class="im-caption">bound FArcRmlImageRef</p>
+				<p class="im-caption im-value">{{ Icon }}</p>
+			</div>
+			<div class="im-cell">
+				<img id="im-bound-picture" class="im-box" data-attr-src="Picture" width="64" height="64"/>
+				<p class="im-caption">bound texture</p>
+				<p class="im-caption im-value">{{ Picture }}</p>
+			</div>
+		</div>
+		<div class="im-buttons">
+			<button id="im-swap" class="im-button" data-event-click="call('', 'Swap')">Swap the bound images</button>
+			<button class="im-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

@@ -1,0 +1,48 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 14px;
+	color: #e8ecf4;
+	background-color: #0b0e14;
+}
+
+div {
+	display: block;
+}
+
+.title {
+	position: absolute;
+	left: 12px;
+	top: 8px;
+	font-size: 16px;
+}
+
+.list {
+	position: absolute;
+	top: 32px;
+	bottom: 8px;
+	width: 600px;
+	overflow: hidden;
+}
+
+.keyed { left: 8px; }
+.unkeyed { left: 660px; }
+
+.row {
+	display: flex;
+	height: 14px;
+	font-size: 10px;
+	gap: 6px;
+}
+
+.idx { width: 40px; color: #8890a0; }
+.name { width: 200px; }
+.val { width: 60px; font-family: 'JetBrains Mono', monospace; }
+.val.odd { color: #ca8a3c; }
+
+.bar {
+	display: block;
+	height: 8px;
+	background-color: #3c6aca;
+}

@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+.t {
+	margin-bottom: 10px;
+	background: #ddd;
+}
+
+.bt {
+	display: inline-block;
+	box-sizing: content-box;
+	margin: 0;
+	padding: 0;
+	border: 0 solid black;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: top;
+	width: 200px;
+	background: #aaa;
+	text-align: left;
+}
+
+.c {
+	width: 30px;
+	background: green;
+}

@@ -1,0 +1,26 @@
+<rml>
+<head>
+	<title>Focus request</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="FocusRequest.rcss"/>
+	<viewmodel name="fr" class="/Script/ArcRmlUISamples.ArcRmlSamplesFocusRequestViewModel" create="true"/>
+</head>
+<body data-model="fr">
+	<div class="fr-panel">
+		<h1 class="fr-title">Focus request</h1>
+		<div class="fr-row">
+			<button id="fr-go-name" class="fr-button" autofocus="" data-event-click="call('', 'FocusName')">Go to name</button>
+			<button id="fr-go-email" class="fr-button" data-event-click="call('', 'FocusEmail')">Go to email</button>
+			<button id="fr-go-code" class="fr-button" data-event-click="call('', 'FocusCode')">Go to code</button>
+		</div>
+		<p class="fr-label">Name</p>
+		<input id="fr-name" class="fr-field" type="text" data-focus-request="NameFocusSerial"/>
+		<p class="fr-label">Email</p>
+		<input id="fr-email" class="fr-field" type="text" data-focus-request="EmailFocusSerial"/>
+		<p class="fr-label">Code</p>
+		<input id="fr-code" class="fr-field" type="text" data-focus-request="CodeFocusSerial"/>
+	</div>
+</body>
+</rml>

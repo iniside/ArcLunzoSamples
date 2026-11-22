@@ -1,0 +1,4 @@
+<component>
+	<prop name="label"/>
+	<div class="stale-component">{{ $label }}</div>
+</component>

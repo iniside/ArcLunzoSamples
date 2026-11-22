@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Priority Collision Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="input-mapping" content="/ArcRmlUITest/Input/IMC_TabMenu"/>
+	<meta name="input-mapping-priority" content="0"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="pc-label">priority collision</div>
+</body>
+</rml>

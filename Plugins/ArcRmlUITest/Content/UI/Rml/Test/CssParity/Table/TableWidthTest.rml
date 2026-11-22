@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title>Table Used Width Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Table/TableWidth.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="cb"><table id="t-minfull" class="t-minfull"><tr><td id="t-minfull-a"><span class="b150"></span> <span class="b150"></span></td><td id="t-minfull-b"><span class="b150"></span> <span class="b150"></span></td></tr></table></div>
+	<div class="cb"><table id="t-auto"><tr><td id="t-auto-a"><span class="b150"></span> <span class="b150"></span></td><td id="t-auto-b"><span class="b150"></span> <span class="b150"></span></td></tr></table></div>
+	<div class="cb"><table id="t-full" class="t-full"><tr><td id="t-full-a"><span class="b150"></span> <span class="b150"></span></td><td id="t-full-b"><span class="b150"></span> <span class="b150"></span></td></tr></table></div>
+	<div class="cb"><table id="t-max400" class="t-max400"><tr><td id="t-max400-a"><span class="b150"></span> <span class="b150"></span></td><td id="t-max400-b"><span class="b150"></span> <span class="b150"></span></td></tr></table></div>
+	<div class="cb"><table id="t-max400-wide" class="t-max400"><tr><td id="t-max400-wide-a"><span class="b300"></span></td><td id="t-max400-wide-b"><span class="b150"></span> <span class="b150"></span></td></tr></table></div>
+	<div class="cb"><table id="t-def-max400" class="t-def-max400"><tr><td id="t-def-max400-a"><span class="b150"></span> <span class="b150"></span></td><td id="t-def-max400-b"><span class="b150"></span> <span class="b150"></span></td></tr></table></div>
+	<div class="cb"><table id="t-def-max400-wide" class="t-def-max400"><tr><td id="t-def-max400-wide-a"><span class="b300"></span></td><td id="t-def-max400-wide-b"><span class="b150"></span> <span class="b150"></span></td></tr></table></div>
+</body>
+</rml>

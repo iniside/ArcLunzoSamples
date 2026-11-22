@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Unresolved Area Tab</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Areas/AreaFrame.rml"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Focus/AreaBackTest.rcss"/>
+	<viewmodel name="unresolvedarea" preview="Preview/AreaTab.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="unresolvedarea">
+	<div class="abt-mid" data-focus-area="list" data-focus-primary="">
+		<div class="abt-btn" id="ua-row-1" data-if="ArcResolved">{{ label }}</div>
+	</div>
+</body>
+</rml>

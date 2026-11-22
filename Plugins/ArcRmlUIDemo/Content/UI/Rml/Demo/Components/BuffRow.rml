@@ -1,0 +1,15 @@
+<component>
+	<prop name="buffs" default="[]"/>
+	<prop name="size" default="30"/>
+	<prop name="align" default="start"/>
+	<div class="dk-buff-row" data-class-end="$align == 'end'" data-style-max-width="(((($size != 0 ? $size : 30) + 4) * 12) + 'px')">
+		<div data-for="BuffRowB, BuffRowB_index : $buffs" class="dk-buff-row-cell" data-style-display="((BuffRowB_index &lt; 12) ? 'flex' : 'none')" data-class-expiring="BuffRowB.Expiring">
+			<span class="dk-buff-row-frame" data-class-debuff="BuffRowB.Debuff != ''" data-style---dc="(BuffRowB.Debuff == 'magic' ? 'var(--ui-rarity-rare)' : (BuffRowB.Debuff == 'poison' ? 'var(--ui-rarity-uncommon)' : (BuffRowB.Debuff == 'curse' ? 'var(--ui-rarity-epic)' : 'var(--ui-danger)')))" data-style-width="(($size != 0 ? $size : 30) + 'px')" data-style-height="(($size != 0 ? $size : 30) + 'px')">
+				<i class="dk-buff-row-icon"><svg data-attr-src="BuffRowB.Icon" data-attr-width="((($size != 0 ? $size : 30) * 0.55) | round)" data-attr-height="((($size != 0 ? $size : 30) * 0.55) | round)" stroke-width="2"/></i>
+				<span class="dk-buff-row-sweep" data-style---cd="(BuffRowB.Cd + '%')"/>
+				<span class="dk-buff-row-stack" data-if="BuffRowB.Stacks &gt; 1">{{ BuffRowB.Stacks }}</span>
+			</span>
+			<span class="dk-buff-row-time">{{ BuffRowB.Seconds &gt;= 60 ? ((BuffRowB.Seconds / 60) | ceil) + 'm' : (BuffRowB.Seconds | ceil) + 's' }}</span>
+		</div>
+	</div>
+</component>

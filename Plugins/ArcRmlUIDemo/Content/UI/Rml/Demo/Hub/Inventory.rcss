@@ -1,0 +1,96 @@
+.iv-body {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(360px, 38%);
+	gap: var(--ui-space-5);
+	min-height: 0;
+}
+
+.iv-top {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-3);
+	padding: var(--ui-space-4) var(--ui-space-5) 0;
+}
+
+.iv-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--ui-space-2);
+}
+
+.iv-tools {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--ui-space-3);
+}
+
+.iv-search {
+	flex: 2 1 240px;
+	min-width: 0;
+}
+
+.iv-sort {
+	flex: 1 1 200px;
+	min-width: 0;
+}
+
+.iv-scroll {
+	flex: 1;
+	min-height: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: var(--ui-space-4) var(--ui-space-5);
+}
+
+.iv-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+	gap: var(--ui-space-2);
+}
+
+.iv-grid.moving .dk-itemslot:focus-visible {
+	--bg: linear-gradient(var(--ui-accent-soft), var(--ui-accent-soft));
+	--bd: var(--ui-accent);
+	--h-bd: var(--ui-accent);
+	border-width: 2px;
+	border-style: dashed;
+}
+
+.iv-emptybox {
+	flex: 1;
+	min-height: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: var(--ui-space-5);
+}
+
+.iv-footer {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-5);
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.iv-weight {
+	flex: 1 1 260px;
+	min-width: 0;
+}
+
+.iv-bagsub {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text-muted);
+}
+
+.iv-side {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-3);
+	min-height: 0;
+	min-width: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: var(--ui-space-1);
+}

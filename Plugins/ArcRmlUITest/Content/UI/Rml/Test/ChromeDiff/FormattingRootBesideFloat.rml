@@ -1,0 +1,32 @@
+<rml>
+<head>
+	<title>FormattingRootBesideFloat</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ChromeDiff/FormattingRootBesideFloat.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="t" id="K1"><div class="f" id="K1f"></div><div class="c" id="K1c" style="overflow:hidden;margin-left:10px"></div></div>
+	<div class="t" id="K2"><div class="f" id="K2f"></div><div class="c" id="K2c" style="overflow:hidden;margin-left:70px"></div></div>
+	<div class="t" id="K3"><div class="f" id="K3f"></div><div class="c" id="K3c" style="overflow:hidden;width:250px;margin-left:10px"></div></div>
+	<div class="t" id="K4"><div class="f" id="K4f" style="float:right"></div><div class="c" id="K4c" style="overflow:hidden;margin-right:10px"></div></div>
+	<div class="t" id="K5"><div class="f" id="K5f"></div><div class="c" id="K5c" style="overflow:hidden;margin-right:10px"></div></div>
+	<div class="t" id="K6"><div class="f" id="K6f"></div><div class="c" id="K6c" style="overflow:hidden;width:245px;margin-right:10px"></div></div>
+	<div class="t" id="A"><div class="f" id="Af" style="height:100px"></div><div id="Ap" style="margin-top:30px"><div class="c" id="Ac" style="overflow:hidden;width:300px;margin-top:40px"></div></div></div>
+	<div class="t" id="A2"><div class="f" id="A2f" style="height:100px"></div><div id="A2p" style="margin-top:30px"><div class="c" id="A2c" style="overflow:hidden;margin-top:40px"><span style="display:inline-block;width:280px;height:10px"></span></div></div></div>
+	<div class="t" id="A3"><div class="f" id="A3f" style="height:100px"></div><div id="A3p" style="margin-top:30px"><div class="c" id="A3c" style="overflow:hidden;width:200px;margin-top:40px"></div></div></div>
+	<div class="t" id="B"><div class="f" id="Bf"></div><img id="Bc" style="display:block;width:100px;height:10px" src="asset:/Engine/EngineResources/AICON-Green.AICON-Green"/></div>
+	<div class="t" id="B2"><div class="f" id="B2f"></div><div id="B2c" class="c" style="display:flex"></div></div>
+	<div class="t" id="B3"><div class="f" id="B3f"></div><div id="B3c" class="c" style="display:grid"></div></div>
+	<div class="t" id="B4"><div class="f" id="B4f"></div><div id="B4c" style="display:table;height:10px"><div style="display:table-cell;width:20px"></div></div></div>
+	<div class="t" id="C"><div class="f" id="Cf"></div><div id="Cc" class="c" style="overflow:hidden;width:280px;margin-left:-30px"></div></div>
+	<div class="t" id="C2"><div class="f" id="C2f"></div><div id="C2c" class="c" style="overflow:hidden;margin-left:-30px"></div></div>
+	<div class="t" id="D"><div id="Dq" style="margin-top:20px"><div id="Dp" style="margin-top:30px"><div class="f" id="Df"></div><div class="c" id="Dc" style="overflow:hidden;margin-top:40px"></div></div></div></div>
+	<div class="t" id="D2"><div id="D2q" style="margin-top:20px"><div class="f" id="D2f"></div><div id="D2p" style="margin-top:30px"><div class="c" id="D2c" style="overflow:hidden;width:260px;margin-top:40px"></div></div></div></div>
+	<div class="t" id="E"><div class="f" id="Ef" style="height:20px"></div><div class="f" id="Ef2" style="float:right;height:50px"></div><div class="c" id="Ec" style="overflow:hidden"><span style="display:inline-block;width:230px;height:10px"></span></div></div>
+	<div class="t" id="G"><div class="f" id="Gf"></div><div class="c" id="Gc" style="overflow:hidden;width:400px"></div></div>
+	<div class="t" id="H"><div id="Hp" style="margin-top:30px"><div class="f" id="Hf"></div><div class="c" id="Hc" style="overflow:hidden;margin-left:auto;margin-right:auto;width:100px;margin-top:40px"></div></div></div>
+	<div class="t" id="I"><div class="f" id="If" style="height:100px"></div><div id="Ip" style="margin-top:30px"><div class="f" id="If2" style="width:60px"></div><div class="c" id="Ic" style="overflow:hidden;width:200px;margin-top:40px"></div></div></div>
+	<div class="t" id="J"><div id="Jp" style="margin-top:30px"><div class="f" id="Jf"></div><div class="c" id="Jc" style="overflow:hidden;width:250px;margin-top:40px;margin-left:10px"></div></div></div>
+</body>
+</rml>

@@ -1,0 +1,50 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1",
+	"FriendlyName": "ArcRmlUI Game Feature Test",
+	"Description": "Game Feature plugin that checks the ArcRmlUI packaging action without Package Everything",
+	"Category": "ArcX",
+	"CreatedBy": "Lukasz Baran",
+	"CreatedByURL": "https://arcx.dev/",
+	"DocsURL": "https://arcx.dev/docs/arcrmlui/",
+	"SupportURL": "https://arcx.dev/#support",
+	"FabURL": "",
+	"EngineVersion": "5.8.0",
+	"CanContainContent": true,
+	"IsExperimentalVersion": true,
+	"Installed": false,
+	"ExplicitlyLoaded": true,
+	"BuiltInInitialFeatureState": "Active",
+	"LocalizationTargets": [
+		{
+			"Name": "ArcRmlUIGameFeatureTest",
+			"LoadingPolicy": "Always"
+		}
+	],
+	"Modules": [
+		{
+			"Name": "ArcRmlUIGameFeatureTest",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "GameFeatures",
+			"Enabled": true
+		},
+		{
+			"Name": "ArcRmlUI",
+			"Enabled": true
+		},
+		{
+			"Name": "ArcRmlUIGameFeatures",
+			"Enabled": true
+		},
+		{
+			"Name": "ModelViewViewModel",
+			"Enabled": true
+		}
+	]
+}

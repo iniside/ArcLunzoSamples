@@ -1,0 +1,21 @@
+<component>
+	<prop name="label" default=""/>
+	<prop name="optionalLabel" default=""/>
+	<prop name="state" default="active"/>
+	<prop name="total" default="0"/>
+	<prop name="current" default="0"/>
+	<div class="dk-objectiverow" data-class-completed="$state == 'completed'" data-class-failed="$state == 'failed'">
+		<span class="dk-objectiverow-box">
+			<i class="dk-objectiverow-mark" data-if="$state == 'completed'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/check.svg" width="14" height="14" stroke-width="3"/></i>
+			<i class="dk-objectiverow-mark" data-if="$state == 'failed'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/x.svg" width="14" height="14" stroke-width="3"/></i>
+		</span>
+		<div class="dk-objectiverow-main">
+			<div class="dk-objectiverow-head">
+				<span class="dk-objectiverow-label">{{ $label }}</span>
+				<span class="dk-objectiverow-optional" data-if="$optionalLabel != ''">{{ $optionalLabel }}</span>
+			</div>
+			<span class="dk-objectiverow-bar" data-if="$total * 1 &gt; 1 &amp;&amp; $state != 'completed' &amp;&amp; $state != 'failed'"><span class="dk-objectiverow-fill" data-style-width="(($current / $total * 100) | round) + '%'"></span></span>
+		</div>
+		<span class="dk-objectiverow-count" data-if="$total * 1 &gt; 1">{{ $current + '/' + $total }}</span>
+	</div>
+</component>

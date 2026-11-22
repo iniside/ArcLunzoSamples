@@ -1,0 +1,77 @@
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #202020;
+	color: #ffffff;
+	font-family: 'Space Grotesk';
+	font-size: 16px;
+}
+
+div {
+	display: block;
+}
+
+.t {
+	position: absolute;
+}
+
+.pretty {
+	text-wrap: pretty;
+}
+
+.hint {
+	width: 82px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.hint2 {
+	width: 150px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.p1 {
+	width: 380px;
+}
+
+.p1n {
+	width: 312px;
+}
+
+.hint3 {
+	width: 125px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.p2 {
+	width: 188px;
+	font-size: 14px;
+}
+
+.p3 {
+	width: 190px;
+	font-size: 14px;
+}
+
+.em {
+	color: #d0a020;
+}
+
+.pre-nowrap {
+	width: 80px;
+	white-space: pre-wrap;
+	text-wrap: nowrap;
+}
+
+.nowrap {
+	width: 100px;
+	text-wrap: nowrap;
+}
+
+.wrap-only {
+	width: 100px;
+	white-space: nowrap;
+	text-wrap-mode: wrap;
+}

@@ -1,0 +1,23 @@
+<component>
+	<prop name="count" default="5"/>
+	<prop name="index" default="0"/>
+	<prop name="mode" default=""/>
+	<prop name="arrows"/>
+	<prop name="nofocus"/>
+	<prop name="field" default=""/>
+	<div class="dk-pager">
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/IconButton" data-if="$arrows" icon="/ArcRmlUIDemo/UI/Rml/icons/chevron-left.svg" size="sm" disabled="{{ $index == 0 }}" focusable="{{ !$nofocus &amp;&amp; $field != '' }}" data-event-click="callIf($index &gt; 0, '', 'Selected', $field, $index - 1)"/>
+		<div class="dk-pager-dots" data-if="$mode != 'numeric'">
+			<span class="dk-pager-dot" data-if="$count &gt; 0" data-class-on="$index == 0"></span>
+			<span class="dk-pager-dot" data-if="$count &gt; 1" data-class-on="$index == 1"></span>
+			<span class="dk-pager-dot" data-if="$count &gt; 2" data-class-on="$index == 2"></span>
+			<span class="dk-pager-dot" data-if="$count &gt; 3" data-class-on="$index == 3"></span>
+			<span class="dk-pager-dot" data-if="$count &gt; 4" data-class-on="$index == 4"></span>
+			<span class="dk-pager-dot" data-if="$count &gt; 5" data-class-on="$index == 5"></span>
+			<span class="dk-pager-dot" data-if="$count &gt; 6" data-class-on="$index == 6"></span>
+			<span class="dk-pager-dot" data-if="$count &gt; 7" data-class-on="$index == 7"></span>
+		</div>
+		<span class="dk-pager-numeric" data-if="$mode == 'numeric'"><span class="dk-pager-current">{{ $index * 1 + 1 }}</span> / {{ $count }}</span>
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/IconButton" data-if="$arrows" icon="/ArcRmlUIDemo/UI/Rml/icons/chevron-right.svg" size="sm" disabled="{{ $index == $count - 1 }}" focusable="{{ !$nofocus &amp;&amp; $field != '' }}" data-event-click="callIf($index &lt; $count - 1, '', 'Selected', $field, $index * 1 + 1)"/>
+	</div>
+</component>

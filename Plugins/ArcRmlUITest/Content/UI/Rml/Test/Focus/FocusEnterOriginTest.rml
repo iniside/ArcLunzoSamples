@@ -1,0 +1,24 @@
+<rml>
+<head>
+	<title>Focus Enter Origin Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="AreaBackTest.rcss"/>
+	<viewmodel name="feo" preview="Preview/FocusEnterOriginTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="feo">
+<div class="abt-root">
+	<div data-focus-area="rows">
+		<div class="abt-btn" id="feo-trigger" style="width: 360px;" data-focus-enter="pop"><span id="feo-label" style="display: block; width: 60px; height: 40px;">Open</span></div>
+		<div class="abt-btn" id="feo-near" style="width: 60px;">Near</div>
+		<div class="abt-btn" id="feo-close" data-focus-enter="list" data-event-click="call('', 'Toggle')">Toggle</div>
+	</div>
+	<div data-focus-area="pop" data-focus-parent="rows">
+		<div class="abt-btn" id="feo-pop-1">Pop 1</div>
+	</div>
+	<div data-focus-area="list" data-focus-parent="rows" data-if="open">
+		<div class="abt-btn" id="feo-list-1">List 1</div>
+	</div>
+</div>
+</body>
+</rml>

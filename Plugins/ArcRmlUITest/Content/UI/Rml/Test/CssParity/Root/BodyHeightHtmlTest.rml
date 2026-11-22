@@ -1,0 +1,9 @@
+<rml class="full">
+<head>
+	<title>BodyHeightHtmlTest</title>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Root/BodyHeight.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="bh-box"></div>
+</body>
+</rml>

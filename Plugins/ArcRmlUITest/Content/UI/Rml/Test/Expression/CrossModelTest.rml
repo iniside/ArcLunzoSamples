@@ -1,0 +1,19 @@
+<rml>
+<head>
+	<title>Cross Model Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="xa" preview="Preview/CrossModelA.json"/>
+	<viewmodel name="xb" preview="Preview/CrossModelB.json"/>
+	<viewmodel name="xc" preview="Preview/CrossModelC.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="xa">
+	<div id="own">{{ Title }}</div>
+	<div id="foreign">{{ xb.Label }}</div>
+	<div id="foreign-expr">{{ xb.Count * 10 }}</div>
+	<div id="shadow">{{ xc.Label }}</div>
+	<div id="row-count">{{ xb.Items.size }}</div>
+	<div id="rows"><div class="xrow" data-for="it : xb.Items">{{ it.Name }}</div></div>
+</body>
+</rml>

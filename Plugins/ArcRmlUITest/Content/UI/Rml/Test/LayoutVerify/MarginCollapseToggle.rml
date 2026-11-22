@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title>MarginCollapseToggle</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/LayoutVerify/MarginCollapseToggle.rcss"/>
+	<viewmodel name="mct" preview="Preview/MarginCollapseToggle.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="mct">
+	<div id="mct-flex">
+		<div id="mct-item-a" class="mct-item"><div id="mct-a-wrap"><p id="mct-a-p" data-class-mct-big="big">Item A</p></div></div>
+		<div id="mct-item-b" class="mct-item"><div id="mct-b-wrap"><p id="mct-b-p">Item B</p></div></div>
+	</div>
+	<div id="mct-chain"><div id="mct-chain-inner"><div id="mct-added" data-if="showFirst">Added</div><p id="mct-chain-p">Chain</p></div></div>
+	<p id="mct-after">After</p>
+</body>
+</rml>

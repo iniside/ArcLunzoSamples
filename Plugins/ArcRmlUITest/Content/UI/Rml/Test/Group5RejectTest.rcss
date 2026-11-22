@@ -1,0 +1,31 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-color: #1a1d23;
+}
+
+div {
+	display: block;
+}
+
+.panel {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	width: 200px;
+	height: 120px;
+	background-color: #2a2f3a;
+}
+
+.shadow-rejected {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: #ffffff;
+}
+
+.shadow-none-rejected { filter: drop-shadow(#ff006e 4px 4px 0); }
+.shadow-none-rejected { filter: blur(2px) drop-shadow(none); }
+.shadow-empty-rejected { filter: drop-shadow(#2060ff 4px 4px 0); }
+.shadow-empty-rejected { filter: drop-shadow(); }

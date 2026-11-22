@@ -1,0 +1,118 @@
+<rml>
+<head>
+	<title>ArcRmlUI Aspect Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="AspectTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="tiles" class="panel">
+		<div class="sq"></div>
+		<div class="sq"></div>
+		<div class="sq"></div>
+		<div class="sq"></div>
+		<div class="sq"></div>
+		<div class="sq"></div>
+		<div class="sq"></div>
+		<div class="sq"></div>
+		<div class="sq alt"></div>
+		<div class="sq alt"></div>
+		<div class="sq alt"></div>
+		<div class="sq alt"></div>
+		<div class="sq alt"></div>
+		<div class="sq alt"></div>
+		<div class="sq alt"></div>
+		<div class="sq alt"></div>
+	</div>
+
+	<div id="tab" class="panel">
+		<div class="tab-grid">
+			<div class="tile"><div class="tile-label"></div></div>
+			<div class="tile"><div class="tile-label"></div></div>
+			<div class="tile"><div class="tile-label"></div></div>
+			<div class="tile"><div class="tile-label"></div></div>
+			<div class="tile"><div class="tile-label"></div></div>
+			<div class="tile"><div class="tile-label"></div></div>
+			<div class="tile"><div class="tile-label"></div></div>
+			<div class="tile"><div class="tile-label"></div></div>
+			<div class="tile alt"><div class="tile-label"></div></div>
+			<div class="tile alt"><div class="tile-label"></div></div>
+			<div class="tile alt"><div class="tile-label"></div></div>
+			<div class="tile alt"><div class="tile-label"></div></div>
+			<div class="tile alt"><div class="tile-label"></div></div>
+			<div class="tile alt"><div class="tile-label"></div></div>
+			<div class="tile alt"><div class="tile-label"></div></div>
+			<div class="tile alt"><div class="tile-label"></div></div>
+		</div>
+	</div>
+
+	<div id="flex1" class="panel">
+		<div class="f1 c1"></div>
+		<div class="f1 c2"></div>
+		<div class="f1 c3"></div>
+	</div>
+
+	<div id="flex3" class="panel">
+		<div class="f3 c1"></div>
+		<div class="f3 c2"></div>
+		<div class="f3 c3"></div>
+	</div>
+
+	<div id="gridratio" class="panel">
+		<div class="gr-a"></div>
+		<div class="gr-b"></div>
+	</div>
+
+	<div id="flex2" class="panel">
+		<div class="f2a c1"></div>
+		<div class="f2b c2"></div>
+		<div class="f2c c3"></div>
+	</div>
+
+	<div id="flex4" class="panel">
+		<div class="f4a c1"></div>
+		<div class="f4b c2"></div>
+	</div>
+
+	<div id="minh" class="panel">
+		<div class="mh-a c1"></div>
+		<div class="mh-b c2"></div>
+	</div>
+
+	<div id="border" class="panel">
+		<div class="bb"></div>
+		<div class="cb"></div>
+	</div>
+
+	<div id="blocks" class="panel">
+		<div class="b1"></div>
+		<div class="b2"></div>
+		<div class="b3"></div>
+		<div class="b4"></div>
+	</div>
+
+	<div id="replaced" class="panel">
+		<svg class="s1" viewBox="0 0 24 12"><rect width="24" height="12" fill="#3a86ff"/></svg>
+		<svg class="s2" viewBox="0 0 24 12"><rect width="24" height="12" fill="#ff006e"/></svg>
+		<svg class="s3" viewBox="0 0 24 12"><rect width="24" height="12" fill="#ffbe0b"/></svg>
+	</div>
+	<div id="imgrow" class="panel">
+		<svg viewBox="0 0 32 32"><rect width="32" height="32" fill="#3a86ff"/></svg>
+	</div>
+
+	<div id="maxw" class="panel">
+		<div class="mw"></div>
+	</div>
+
+	<div id="stretch" class="panel">
+		<div class="st-normal"></div>
+		<div class="st-explicit"></div>
+	</div>
+
+	<div id="mq" class="panel">
+		<div id="mq-a"></div>
+		<div id="mq-b"></div>
+		<div id="mq-c"></div>
+	</div>
+</body>
+</rml>

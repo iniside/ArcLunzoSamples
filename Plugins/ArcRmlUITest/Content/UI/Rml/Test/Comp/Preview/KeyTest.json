@@ -1,0 +1,6 @@
+{
+	"Rows": [
+		{ "Id": "a", "Label": "Row A" },
+		{ "Id": "b", "Label": "Row B" }
+	]
+}

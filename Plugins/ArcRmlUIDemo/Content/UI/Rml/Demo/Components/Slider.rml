@@ -1,0 +1,14 @@
+<component>
+	<prop name="value" default="50"/>
+	<prop name="min" default="0"/>
+	<prop name="max" default="100"/>
+	<prop name="step" default="1"/>
+	<prop name="valueLabel" default=""/>
+	<prop name="disabled"/>
+	<prop name="autofocus"/>
+	<prop name="field" default=""/>
+	<div class="dk-slider" data-class-disabled="$disabled">
+		<input class="dk-slider-input" type="range" data-attr-min="$min" data-attr-max="$max" data-attr-step="$step" data-attr-value="$value" data-attrif-disabled="$disabled" data-attrif-autofocus="$autofocus" data-style---fill="((($value - $min) / ($max - $min) * 100) | arcclamp(0, 100)) + '%'" data-event-input="call('', 'SliderInput', $field, ev.value)"/>
+		<span class="dk-slider-value">{{ $valueLabel != '' ? $valueLabel : $value }}</span>
+	</div>
+</component>

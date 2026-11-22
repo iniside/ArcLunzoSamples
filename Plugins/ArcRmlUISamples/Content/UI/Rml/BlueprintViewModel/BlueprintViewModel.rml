@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Blueprint view model</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="BlueprintViewModel.rcss"/>
+	<viewmodel name="counter" class="/ArcRmlUISamples/UI/Rml/BlueprintViewModel/BP_SampleVM.BP_SampleVM_C" create="true"/>
+</head>
+<body data-model="counter">
+	<div class="bv-panel">
+		<h1 class="bv-title">{{ Title }}</h1>
+		<p id="bv-count">Count: {{ Count }}</p>
+		<p>Step: {{ Step }}</p>
+		<div class="bv-buttons">
+			<button id="bv-increment" class="bv-button" data-event-click="call('', 'Increment')">Add step</button>
+			<button class="bv-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

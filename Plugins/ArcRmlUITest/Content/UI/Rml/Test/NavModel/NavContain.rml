@@ -1,0 +1,29 @@
+<rml>
+<head>
+	<title>Nav model nested contain test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="hide-lower" content="true"/>
+	<link type="text/rcss" href="NavModel.rcss"/>
+	<viewmodel name="nmc" preview="Preview/NavModel.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="nmc" data-event-navnotarget="call('', 'NoTarget', ev.direction, ev.area, ev.target_area)">
+<div class="nm-root">
+	<div class="nm-area" style="left: 20px; top: 40px; width: 760px; height: 260px;" data-focus-area="popup" data-focus-contain="">
+		<div class="nm-label">popup (contain)</div>
+		<div class="nm-area" style="left: 20px; top: 40px; width: 320px;" data-focus-area="inner-a" data-focus-primary="">
+			<div class="nm-label">inner-a</div>
+			<div id="ia1" class="nm-btn" autofocus="">Inner A 1</div>
+		</div>
+		<div class="nm-area" style="left: 400px; top: 40px; width: 320px;" data-focus-area="inner-b">
+			<div class="nm-label">inner-b</div>
+			<div id="ib1" class="nm-btn">Inner B 1</div>
+		</div>
+	</div>
+	<div class="nm-area" style="left: 820px; top: 40px; width: 160px;" data-focus-area="outside">
+		<div class="nm-label">outside</div>
+		<div id="o1" class="nm-btn">Outside 1</div>
+	</div>
+</div>
+</body>
+</rml>

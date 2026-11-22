@@ -1,0 +1,64 @@
+@keyframes hud-banner { 0% { opacity: 0; transform: translateY(-10px) scale(0.96); } 10% { opacity: 1; transform: translateY(0px) scale(1); } 85% { opacity: 1; transform: translateY(0px) scale(1); } 100% { opacity: 0; transform: translateY(-6px) scale(1); } }
+
+.dk-banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--ui-space-1);
+	text-align: center;
+	max-width: 100%;
+	box-sizing: border-box;
+	padding: var(--ui-space-3) var(--ui-space-6);
+	border-radius: var(--hud-radius);
+	background: var(--hud-plate);
+	border-top: 1px solid var(--hud-stroke);
+	border-bottom: 1px solid var(--hud-stroke);
+	box-shadow: var(--hud-plate-shadow);
+}
+
+.dk-banner-eye-s {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	letter-spacing: 0.24em;
+	text-transform: uppercase;
+	color: var(--ui-rarity-legendary);
+}
+
+.dk-banner-eye-s.zone {
+	color: var(--hud-text);
+}
+
+.dk-banner-eye-s.quest {
+	color: var(--ui-success);
+}
+
+.dk-banner-eye-s.achievement {
+	color: var(--ui-rarity-epic);
+}
+
+.dk-banner-title-s {
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-5);
+	font-weight: 700;
+	text-transform: var(--ui-display-case);
+	letter-spacing: var(--ui-display-tracking);
+	color: var(--ui-rarity-legendary);
+}
+
+.dk-banner-title-s.zone {
+	font-size: var(--ui-fs-6);
+	color: var(--hud-text);
+}
+
+.dk-banner-title-s.quest {
+	color: var(--ui-success);
+}
+
+.dk-banner-title-s.achievement {
+	color: var(--ui-rarity-epic);
+}
+
+.dk-banner-sub-s {
+	font-size: var(--ui-fs-2);
+	color: var(--hud-text-muted);
+}

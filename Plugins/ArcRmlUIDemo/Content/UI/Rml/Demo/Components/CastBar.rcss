@@ -1,0 +1,92 @@
+@keyframes hud-cast-end { 0% { opacity: 1; transform: scale(1); } 30% { opacity: 1; transform: scale(1.03); } 100% { opacity: 0; transform: scale(1); } }
+
+.dk-cast-bar {
+	display: flex;
+	flex-direction: column;
+	gap: var(--hud-space-xs);
+	width: 100%;
+	max-width: 420px;
+	min-width: 0;
+	animation: none;
+}
+
+.dk-cast-bar.interrupted {
+	animation: hud-cast-end var(--hud-dur-slow) var(--ui-ease) forwards;
+}
+
+.dk-cast-bar.success {
+	animation: hud-cast-end var(--hud-dur-slow) var(--ui-ease) forwards;
+}
+
+.dk-cast-bar-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: var(--ui-space-2);
+}
+
+.dk-cast-bar-name-s {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-1);
+	font-size: var(--ui-fs-2);
+	font-weight: 600;
+	color: var(--hud-text);
+	text-shadow: var(--hud-text-shadow);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-cast-bar-name-s.interrupted {
+	color: var(--ui-danger);
+}
+
+.dk-cast-bar-e4 {
+	display: inline-flex;
+}
+
+.dk-cast-bar-time-s {
+	font-family: var(--ui-font-mono);
+	font-size: var(--hud-fs-sm);
+	color: var(--hud-text);
+	text-shadow: var(--hud-text-shadow);
+}
+
+.dk-cast-bar-track {
+	position: relative;
+	border-radius: var(--hud-radius-sm);
+	background: var(--hud-plate);
+	border: 1px solid var(--hud-stroke);
+	overflow: hidden;
+}
+
+.dk-cast-bar-fill-s {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	transform-origin: left;
+	background: linear-gradient(180deg, color-mix(in srgb, var(--ui-warning) 65%, var(--hud-highlight)), var(--ui-warning));
+}
+
+.dk-cast-bar-fill-s.interrupted {
+	background: linear-gradient(180deg, color-mix(in srgb, var(--ui-danger) 65%, var(--hud-highlight)), var(--ui-danger));
+}
+
+.dk-cast-bar-fill-s.success {
+	background: linear-gradient(180deg, color-mix(in srgb, var(--ui-success) 65%, var(--hud-highlight)), var(--ui-success));
+}
+
+.dk-cast-bar-fill-s.no-interruptible {
+	background: linear-gradient(180deg, color-mix(in srgb, var(--ui-text-disabled) 65%, var(--hud-highlight)), var(--ui-text-disabled));
+}
+
+.dk-cast-bar-fill-s.interrupted.no-interruptible {
+	background: linear-gradient(180deg, color-mix(in srgb, var(--ui-danger) 65%, var(--hud-highlight)), var(--ui-danger));
+}
+
+.dk-cast-bar-fill-s.success.no-interruptible {
+	background: linear-gradient(180deg, color-mix(in srgb, var(--ui-success) 65%, var(--hud-highlight)), var(--ui-success));
+}

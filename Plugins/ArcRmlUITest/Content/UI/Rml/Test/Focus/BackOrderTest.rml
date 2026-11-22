@@ -1,0 +1,38 @@
+<rml>
+<head>
+	<title>Back Order Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="AreaBackTest.rcss"/>
+	<viewmodel name="bot" preview="Preview/BackOrderTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="bot" data-event-back="call('', 'BodyBack'); stopPropagation()">
+<div class="abt-root">
+	<div data-focus-area="home">
+		<div class="abt-btn" id="bot-home-1">Home</div>
+	</div>
+	<div data-focus-area="child" data-focus-parent="home">
+		<div class="abt-btn" id="bot-child-1">Child</div>
+	</div>
+	<div data-focus-area="orphan" data-focus-parent="missing">
+		<div class="abt-btn" id="bot-orphan-1">Orphan</div>
+	</div>
+	<div data-focus-area="hollow"></div>
+	<div data-focus-area="lonely" data-focus-parent="hollow">
+		<div class="abt-btn" id="bot-lonely-1">Lonely</div>
+	</div>
+	<div data-focus-area="self" data-focus-parent="self">
+		<div class="abt-btn" id="bot-self-1">Self</div>
+	</div>
+	<div data-focus-area="outer" data-focus-parent="home" data-event-back="call('', 'OuterBack'); stopPropagation()">
+		<div class="abt-btn" id="bot-outer-1">Outer</div>
+		<div data-focus-area="inner" data-focus-parent="outer">
+			<div class="abt-btn" id="bot-inner-1">Inner</div>
+		</div>
+		<div data-focus-area="loose">
+			<div class="abt-btn" id="bot-loose-1">Loose</div>
+		</div>
+	</div>
+</div>
+</body>
+</rml>

@@ -1,0 +1,32 @@
+.ts {
+	padding: 8px;
+	margin: 4px 0;
+	background-color: #141821;
+	border: 1px #3a86ff;
+	border-radius: 6px;
+}
+
+.ts-title {
+	color: #00ff88;
+}
+
+.ts-slot {
+	display: flex;
+	flex-direction: row;
+	margin: 2px 0;
+}
+
+.ts-rows {
+	display: flex;
+	flex-direction: row;
+}
+
+.ts-row {
+	margin-right: 8px;
+	color: #ff006e;
+}
+
+.ts-tag {
+	width: 24px;
+	color: #8890a0;
+}

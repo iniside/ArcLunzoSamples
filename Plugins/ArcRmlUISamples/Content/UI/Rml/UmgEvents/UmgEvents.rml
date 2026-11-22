@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title>UMG events</title>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="UmgEvents.rcss"/>
+</head>
+<body>
+	<div class="ue-card">
+		<h1 class="ue-title">UMG events</h1>
+		<p>The buttons below ask the widget to open another document or to close. The Widget Blueprint graph decides what happens.</p>
+		<div class="ue-buttons">
+			<button id="ue-next" class="ue-button" data-action="open:/ArcRmlUISamples/UI/Rml/UmgEvents/Second.rml">Open the second document</button>
+			<button class="ue-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

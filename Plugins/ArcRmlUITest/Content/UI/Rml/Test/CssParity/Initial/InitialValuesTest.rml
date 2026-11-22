@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>InitialValuesTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Initial/InitialValues.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="text" class="block">Unstyled text</div>
+	<div id="rem-pad" class="block"><div id="rem-inner" class="block"></div></div>
+	<div id="em-box" class="block"></div>
+	<div id="rem-box" class="block"></div>
+	<div id="kw-parent" class="block"><div id="kw-child" class="block"></div></div>
+</body>
+</rml>

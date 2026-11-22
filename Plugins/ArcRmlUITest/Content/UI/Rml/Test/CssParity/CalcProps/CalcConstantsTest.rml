@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>Calc Constants Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/CalcProps/CalcConstants.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="cc-pi" class="box pi"></div>
+	<div id="cc-e" class="box e"></div>
+	<div id="cc-min-inf" class="box min-inf"></div>
+	<div id="cc-max-neg-inf" class="box max-neg-inf"></div>
+	<div id="cc-upper" class="box upper"></div>
+</body>
+</rml>

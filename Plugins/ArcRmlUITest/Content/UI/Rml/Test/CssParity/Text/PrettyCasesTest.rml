@@ -1,0 +1,56 @@
+<rml>
+<head>
+	<title>Pretty Cases Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/PrettyCasesTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="prewrap-pretty" class="t pretty prewrap" style="left: 10px; top: 10px; width: 377px;">The caravan reached the old bridge at dusk,  and the guards waved it through without asking for papers.</div>
+	<div id="prewrap-greedy" class="t prewrap" style="left: 400px; top: 10px; width: 377px;">The caravan reached the old bridge at dusk,  and the guards waved it through without asking for papers.</div>
+	<div id="nowrap-pretty" class="t pretty" style="left: 800px; top: 10px; width: 250px;">The caravan reached the old bridge at dusk, and the guards waved it <span class="nw">through without asking</span> for papers.</div>
+	<div id="nowrap-greedy" class="t" style="left: 1100px; top: 10px; width: 250px;">The caravan reached the old bridge at dusk, and the guards waved it <span class="nw">through without asking</span> for papers.</div>
+	<div id="breakall-pretty" class="t pretty breakall" style="left: 10px; top: 130px; width: 266px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="breakall-greedy" class="t breakall" style="left: 300px; top: 130px; width: 266px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="brfloat-pretty" class="t pretty" style="left: 600px; top: 130px; width: 380px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.<br/>more <span class="fr">x</span></div>
+	<div id="ibfloat-pretty" class="t pretty" style="left: 1000px; top: 130px; width: 380px;"><span class="fl"></span>The caravan reached the old bridge at dusk, and the guards waved it <span class="ib">through</span> without asking for papers.</div>
+	<div id="ib-pretty" class="t pretty" style="left: 1000px; top: 230px; width: 380px;">The caravan reached the old bridge at dusk, and the guards waved it <span class="ib">through</span> without asking for papers.</div>
+	<div id="leadfloat-pretty" class="t pretty" style="left: 10px; top: 260px; width: 300px;"><span class="fl"></span>The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="leadfloat-greedy" class="t" style="left: 330px; top: 260px; width: 300px;"><span class="fl"></span>The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="sibfloat" class="t" style="left: 650px; top: 260px; width: 300px;"><div class="fl"></div><div class="pretty">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div></div>
+	<div id="midfloat-pretty" class="t pretty" style="left: 10px; top: 380px; width: 300px;">The caravan reached the old <span class="fl"></span>bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="tallfloat-pretty" class="t pretty" style="left: 330px; top: 380px; width: 420px;"><span class="fl tall"></span>The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="elemb-pretty" class="t pretty" style="left: 800px; top: 380px; width: 373px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for pa<span class="em">pers</span>.</div>
+	<div id="elemb-greedy" class="t" style="left: 1200px; top: 380px; width: 373px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for pa<span class="em">pers</span>.</div>
+	<div id="padspan-pretty" class="t pretty" style="left: 10px; top: 520px; width: 380px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for<span class="pl10"> papers.</span></div>
+	<div id="padopen-pretty" class="t pretty" style="left: 400px; top: 520px; width: 382px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking <span class="pl12">for papers.</span></div>
+	<div id="fit-greedy" class="t" style="left: 800px; top: 520px; width: 372.63px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="fit-pretty" class="t pretty" style="left: 1200px; top: 520px; width: 372.63px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="nbsp-prewrap" class="t prewrap" style="left: 10px; top: 640px; width: 100px;">aaaa aaaa &nbsp;bbbbbbbbbbbb</div>
+	<div id="hang-right" class="t prewrap right" style="left: 150px; top: 640px; width: 100px;">aaaa bbbb   cccc</div>
+	<div id="hang-center" class="t prewrap center" style="left: 300px; top: 640px; width: 100px;">aaaa bbbb   cccc</div>
+	<div id="hang-justify" class="t prewrap justify" style="left: 450px; top: 640px; width: 100px;">aaaa bbbb   cccc dd</div>
+	<div id="openfloat-pretty" class="t pretty" style="left: 600px; top: 640px; width: 300px;"><span><span class="fl"></span>The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</span></div>
+	<div id="openfloat-greedy" class="t" style="left: 950px; top: 640px; width: 300px;"><span><span class="fl"></span>The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</span></div>
+	<div id="nwfor-pretty" class="t pretty" style="left: 1300px; top: 640px; width: 200px;">The caravan reached the old bridge at dusk, and the guards waved it <span class="nw">through without asking</span> for papers.</div>
+	<div id="nwfor-greedy" class="t" style="left: 1550px; top: 640px; width: 200px;">The caravan reached the old bridge at dusk, and the guards waved it <span class="nw">through without asking</span> for papers.</div>
+	<div id="spanspaces" class="t prewrap" style="left: 10px; top: 800px; width: 36px;">aaaa bbb<span>   ccc</span></div>
+	<div id="spanspaces-pretty" class="t prewrap pretty" style="left: 100px; top: 800px; width: 36px;">aaaa bbb<span>   ccc</span></div>
+	<div id="indent-pretty" class="t prewrap pretty" style="left: 200px; top: 800px; width: 386px;">   The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="indent-greedy" class="t prewrap" style="left: 600px; top: 800px; width: 386px;">   The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="trail-center" class="t center" style="left: 1000px; top: 800px; width: 250px;">The caravan reached the old bridge at dusk, and the guards waved it <span class="nw">through without asking</span> for papers.</div>
+	<div id="trail-right" class="t right" style="left: 1300px; top: 800px; width: 250px;">The caravan reached the old bridge at dusk, and the guards waved it <span class="nw">through without asking</span> for papers.</div>
+	<div id="trail-float-right" class="t right" style="left: 1600px; top: 800px; width: 250px;">The caravan reached the old bridge.<br/>more <span class="fr">x</span></div>
+	<div id="trail-span-right" class="t right" style="left: 1000px; top: 960px; width: 120px;">The caravan reached <span class="em">the old</span> bridge at dusk</div>
+	<div id="pctdollar-ba" class="t breakall" style="left: 1200px; top: 960px; width: 60px;">aaaaaaa% bbbbbb$c cccccc|d</div>
+	<div id="ba-probe" class="t breakall" style="left: 1300px; top: 960px; width: 1px;">a%b$c|d-e.f(g)h'i&quot;j,k/l!m?n;o:p]q[r}s{t</div>
+	<div id="ip-a" class="t prewrap" style="left: 1000px; top: 800px; width: 2000px;">   The caravan</div>
+	<div id="ip-b" class="t prewrap" style="left: 1000px; top: 830px; width: 2000px;">The caravan</div>
+	<div id="ip-c" class="t prewrap" style="left: 1000px; top: 860px; width: 2000px;"> The caravan</div>
+	<div id="ip-d" class="t prewrap" style="left: 1000px; top: 890px; width: 2000px;">dusk, and</div>
+	<div id="ip-e" class="t prewrap" style="left: 1000px; top: 920px; width: 60px;">dusk, and</div>
+	<div id="ip-f" class="t prewrap" style="left: 1000px; top: 950px; width: 2000px;">dusk,</div>
+	<div id="ip-g" class="t prewrap" style="left: 1000px; top: 980px; width: 2000px;">a Tb</div>
+	<div id="ip-h" class="t prewrap" style="left: 1000px; top: 1010px; width: 2000px;">aTb</div>
+</body>
+</rml>

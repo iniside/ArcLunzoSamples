@@ -1,0 +1,51 @@
+html, body {
+	margin: 0;
+	background-color: #ffffff;
+}
+
+.box {
+	position: absolute;
+	top: 10px;
+	width: 40px;
+	height: 20px;
+}
+
+#outset-blue { left: 10px; border: 4px outset #3366cc; }
+#outset-dark { left: 70px; border: 4px outset #303030; }
+#outset-light { left: 130px; border: 4px outset #f0f0f0; }
+#outset-white { left: 190px; border: 4px outset #ffffff; }
+#outset-black { left: 250px; border: 4px outset #000000; }
+#outset-current { left: 310px; border: 4px outset; color: #cc3333; }
+#outset-mixed { left: 370px; border-width: 4px; border-style: outset inset; border-color: #3366cc; }
+
+#outset-button {
+	position: absolute;
+	left: 10px;
+	top: 60px;
+	width: 60px;
+	height: 30px;
+	appearance: none;
+}
+
+/* Collapsed tables: two cells share one vertical edge, equally wide, in different styles and colours; an equal rank keeps the
+   first cell's edge. Chrome 156 draws the inset edge of co-inset-outset (a collapsed inset is ridge, an outset groove, CSS 2.1
+   §17.6.3) and the dotted edge of co-outset-dotted. */
+.collapse {
+	position: absolute;
+	top: 110px;
+	border-collapse: collapse;
+}
+
+.collapse td {
+	width: 40px;
+	height: 40px;
+	padding: 0;
+}
+
+#co-inset-outset { left: 10px; }
+#co-io-a { border-right: 6px inset #cc3333; }
+#co-io-b { border-left: 6px outset #3366cc; }
+
+#co-outset-dotted { left: 130px; }
+#co-od-a { border-right: 6px outset #3366cc; }
+#co-od-b { border-left: 6px dotted #cc3333; }

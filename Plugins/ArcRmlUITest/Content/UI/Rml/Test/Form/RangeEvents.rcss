@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+}
+
+div {
+	display: block;
+}
+
+input {
+	display: block;
+	width: 216px;
+	height: 20px;
+	margin: 0 0 20px 0;
+	padding: 0;
+	border: 0;
+}
+
+.slider {
+	appearance: none;
+}
+
+.slider::-webkit-slider-runnable-track {
+	height: 6px;
+	background-color: rgb(0, 0, 255);
+}
+
+.slider::-webkit-slider-thumb {
+	width: 16px;
+	height: 16px;
+	margin-top: -5px;
+	background-color: rgb(0, 160, 0);
+}
+
+.btn {
+	height: 20px;
+	margin-bottom: 20px;
+	tab-index: auto;
+	nav: auto;
+}
+
+#re-wrap {
+	width: 240px;
+}
+
+#re-wrap:focus-within {
+	width: 250px;
+}
+
+#re-main:focus {
+	height: 21px;
+}
+
+#re-main:focus-visible {
+	height: 22px;
+}
+
+#re-scaled-wrap {
+	width: 216px;
+	height: 20px;
+	margin-left: 216px;
+	transform: scale(2);
+}
+
+#re-scaled {
+	margin: 0;
+}

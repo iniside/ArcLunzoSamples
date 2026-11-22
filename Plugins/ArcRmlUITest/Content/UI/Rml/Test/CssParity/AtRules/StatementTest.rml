@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title>StatementTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/LayerFirst.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/LayerMiddle.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="first-1" class="row"></div>
+	<div id="first-2" class="row"></div>
+	<div id="first-3" class="row"></div>
+	<div id="mid-1" class="row"></div>
+	<div id="mid-2" class="row"></div>
+	<div id="mid-3" class="row"></div>
+</body>
+</rml>

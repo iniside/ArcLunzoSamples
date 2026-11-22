@@ -1,0 +1,22 @@
+<rml>
+<head>
+	<title>RangeEventsTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/RangeEvents.rcss"/>
+	<viewmodel name="re" preview="Preview/RangeEventsTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="re">
+	<div id="re-wrap">
+		<input id="re-main" class="slider" type="range" min="0" max="100" step="1" value="50" data-event-input="call('', 'In', 'main', ev.value)" data-event-change="call('', 'Ch', 'main', ev.value)" data-event-click="call('', 'Cl', 'main', ev.offset_x, ev.offset_y)"/>
+	</div>
+	<div id="re-after" class="btn"></div>
+	<input id="re-bound" class="slider" type="range" min="0" max="100" step="1" data-attr-value="v" data-event-input="call('', 'In', 'bound', ev.value)" data-event-change="call('', 'Ch', 'bound', ev.value)"/>
+	<input id="re-derive" class="slider" type="range" value="50" data-attr-min="mn" data-attr-max="mx" data-attr-step="st" data-event-input="call('', 'In', 'derive', ev.value)" data-event-change="call('', 'Ch', 'derive', ev.value)"/>
+	<input id="re-bare" class="slider" type="range" data-event-input="call('', 'In', 'bare', ev.value)" data-event-change="call('', 'Ch', 'bare', ev.value)"/>
+	<input id="re-off" class="slider" type="range" min="0" max="100" step="1" value="50" disabled="" data-event-input="call('', 'In', 'off', ev.value)" data-event-change="call('', 'Ch', 'off', ev.value)"/>
+	<div id="re-scaled-wrap">
+		<input id="re-scaled" class="slider" type="range" min="0" max="100" step="1" value="50" data-event-input="call('', 'In', 'scaled', ev.value)" data-event-change="call('', 'Ch', 'scaled', ev.value)"/>
+	</div>
+</body>
+</rml>

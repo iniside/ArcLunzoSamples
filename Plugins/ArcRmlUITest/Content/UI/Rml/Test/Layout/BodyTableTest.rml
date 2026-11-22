@@ -1,0 +1,8 @@
+<rml>
+<head>
+	<title>Body Table Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body id="root-table" style="display: table; margin: 0 auto;"><div style="display: table-row;"><div style="display: table-cell; width: 300px; height: 100px;"></div></div></body>
+</rml>

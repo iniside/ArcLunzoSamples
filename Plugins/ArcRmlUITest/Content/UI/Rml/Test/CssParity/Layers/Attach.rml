@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Attach</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Layers/Attach.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="fixedbox" class="box"></div>
+	<div id="localbox" class="box"><div></div></div>
+</body>
+</rml>

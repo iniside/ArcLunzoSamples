@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Bound Style Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="bound" preview="Preview/Bound.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="bound">
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Diag/DiagSpacer.rml"/>
+	<div id="target" data-attr-style="bad ? 'colr: red; display: block; width: 100px; height: 40px;' : 'display: block; width: 100px; height: 40px;'">target</div>
+</body>
+</rml>

@@ -1,0 +1,69 @@
+body {
+	width: 100%;
+	height: 100%;
+}
+
+div, p, span {
+	display: block;
+}
+
+.panel {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	width: 760px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #4a5060;
+	padding: 10px;
+}
+
+.cell {
+	width: 170px;
+	margin: 5px;
+	padding: 6px;
+	background-color: #303642;
+}
+
+.cell.wide {
+	width: 360px;
+}
+
+.checker {
+	height: 70px;
+	decorator: repeating-linear-gradient(90deg, #ffffff 0px, #ffffff 12px, #606060 12px, #606060 24px);
+	padding: 10px;
+}
+
+.swatch {
+	width: 100%;
+	height: 100%;
+}
+
+.tag {
+	font-family: Roboto;
+	font-size: 12px;
+	color: #e0e4f0;
+	margin-top: 4px;
+}
+
+.note {
+	color: #8090a8;
+}
+
+.t {
+	font-family: Roboto;
+	font-size: 32px;
+	color: #ffffff;
+	margin: 0;
+}
+
+.mock { text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7); }
+.s0 { background-color: rgba(0, 0, 0, 0.7); }
+.s1 { background-color: rgba(255, 0, 0, 50%); }
+.s2 { background-color: rgba(0, 128, 255, 0); }
+.s3 { background-color: rgba(0, 200, 80, 1); }
+.s4 { background-color: hsla(210, 80%, 50%, 0.5); }
+.s5 { background-color: rgb(255, 0, 0); }
+.s6 { background-color: rgba(255, 255, 255, 150%); }
+.s7 { background-color: #00000080; }

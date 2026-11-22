@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title>Body Background Test</title>
+	<link type="text/rcss" href="BodyBackgroundTest.rcss"/>
+	<viewmodel name="bb" preview="Preview/BodyBackgroundTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="bb">
+	<div id="bb-button" data-event-click="call('', 'Clicked', 'bb-button')"></div>
+	<div id="bb-vw"></div>
+	<div id="bb-media"></div>
+	<div id="bb-off-box"></div>
+	<div id="bb-off-button" data-event-click="call('', 'Clicked', 'bb-off-button')"></div>
+	<div id="bb-anchor" data-world="'1600 400 1'"></div>
+	<div id="bb-clip-parent"><div id="bb-clip-none" data-event-click="call('', 'Clicked', 'bb-clip-none')"></div></div>
+	<div id="bb-none"></div>
+</body>
+</rml>

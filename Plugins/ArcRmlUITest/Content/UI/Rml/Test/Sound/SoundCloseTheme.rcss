@@ -1,0 +1,3 @@
+body {
+	--sound-close: "asset:/ArcRmlUITest/UI/Sound/MS_Alt.MS_Alt";
+}

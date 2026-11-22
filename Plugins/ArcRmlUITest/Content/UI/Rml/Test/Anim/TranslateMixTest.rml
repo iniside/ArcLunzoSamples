@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Translate Mix Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Anim/TranslateMixTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="mix" class="box"></div>
+	<div id="decomposed" class="box"></div>
+</body>
+</rml>

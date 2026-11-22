@@ -1,0 +1,25 @@
+<rml>
+<head>
+	<title>ArcRmlUI Nav Clip Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="NavClipTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+<div class="nc-root">
+	<div class="nc-left" id="nc-left">Left</div>
+	<div class="nc-list" id="nc-list">
+		<div class="nc-row" id="nc-r0">Row 0</div>
+		<div class="nc-row" id="nc-r1">Row 1</div>
+		<div class="nc-row" id="nc-r2">Row 2</div>
+		<div class="nc-row" id="nc-r3">Row 3</div>
+		<div class="nc-row" id="nc-r4">Row 4</div>
+		<div class="nc-row" id="nc-r5">Row 5</div>
+		<div class="nc-row" id="nc-r6">Row 6</div>
+		<div class="nc-row" id="nc-r7">Row 7</div>
+		<div class="nc-row" id="nc-r8">Row 8</div>
+		<div class="nc-row" id="nc-r9">Row 9</div>
+	</div>
+</div>
+</body>
+</rml>

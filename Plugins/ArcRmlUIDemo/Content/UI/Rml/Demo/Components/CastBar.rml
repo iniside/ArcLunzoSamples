@@ -1,0 +1,21 @@
+<component>
+	<prop name="label" default="Tidal Surge"/>
+	<prop name="progress" default="0"/>
+	<prop name="seconds" default="0.8"/>
+	<prop name="channel"/>
+	<prop name="state" default="casting"/>
+	<prop name="interruptible" default="true"/>
+	<prop name="height" default="12"/>
+	<div class="dk-cast-bar" data-class-interrupted="$state == 'interrupted'" data-class-success="$state == 'success'">
+		<div class="dk-cast-bar-top">
+			<span class="dk-cast-bar-name-s" data-class-interrupted="$state == 'interrupted'">
+				<i class="dk-cast-bar-e4" data-if="((!($state == 'interrupted')) &amp;&amp; ((!($state == 'success')) &amp;&amp; !$interruptible))"><svg src="/ArcRmlUIDemo/UI/Rml/icons/shield.svg" width="12" height="12" stroke-width="2.5"/></i>
+				{{ ($state == 'interrupted' ? 'Interrupted' : $label) }}
+			</span>
+			<span class="dk-cast-bar-time-s">{{ $state == 'casting' ? (($seconds * 1) | format(1)) + 's' : '' }}</span>
+		</div>
+		<div class="dk-cast-bar-track" data-style-height="(($height != 0 ? $height : 12) + 'px')">
+			<div class="dk-cast-bar-fill-s" data-class-interrupted="$state == 'interrupted'" data-class-success="$state == 'success'" data-class-no-interruptible="!$interruptible" data-style-transform="($channel ? ($state == 'interrupted' ? 'scaleX(1)' : ($state == 'success' ? 'scaleX(1)' : ('scaleX(' + (1 - ($progress | arcclamp(0, 1))) + ')'))) : ($state == 'interrupted' ? 'scaleX(1)' : ($state == 'success' ? 'scaleX(1)' : ('scaleX(' + ($progress | arcclamp(0, 1)) + ')'))))"/>
+		</div>
+	</div>
+</component>

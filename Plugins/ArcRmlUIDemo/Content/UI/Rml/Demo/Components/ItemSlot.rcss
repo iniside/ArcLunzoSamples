@@ -1,0 +1,282 @@
+.dk-itemslot {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	flex: none;
+	width: 64px;
+	height: 64px;
+	aspect-ratio: 1;
+	min-width: 0;
+	--c-r: var(--ui-rarity-common);
+	--bg: radial-gradient(circle at 50% 30%, color-mix(in srgb, var(--c-r) 22%, var(--ui-surface-2)) 0%, var(--ui-surface) 78%);
+	--bd: color-mix(in srgb, var(--c-r) 45%, transparent);
+	--h-bd: var(--ui-accent);
+	--sh-focus: 0 0 0 0 transparent;
+	--sh-sel: 0 0 0 0 transparent;
+	--sh-hi: 0 0 0 0 transparent;
+	--sh-leg: 0 0 0 0 transparent;
+	--sh-drag: 0 0 0 0 transparent;
+	background: var(--bg);
+	border: 1px solid var(--bd);
+	border-radius: var(--ui-radius-md);
+	box-shadow: var(--sh-focus), var(--sh-sel), var(--sh-hi), var(--sh-leg), var(--sh-drag);
+	cursor: pointer;
+	overflow: hidden;
+	transform: none;
+	opacity: 1;
+	transition: border-color var(--ui-dur-fast) var(--ui-ease), background-color var(--ui-dur-fast) var(--ui-ease), transform var(--ui-dur-fast) var(--ui-ease), opacity var(--ui-dur-fast) var(--ui-ease);
+}
+
+.dk-itemslot.uncommon {
+	--c-r: var(--ui-rarity-uncommon);
+}
+
+.dk-itemslot.rare {
+	--c-r: var(--ui-rarity-rare);
+}
+
+.dk-itemslot.epic {
+	--c-r: var(--ui-rarity-epic);
+}
+
+.dk-itemslot.legendary {
+	--c-r: var(--ui-rarity-legendary);
+}
+
+.dk-itemslot.uncommon, .dk-itemslot.rare, .dk-itemslot.epic, .dk-itemslot.legendary {
+	--bd: color-mix(in srgb, var(--c-r) 80%, transparent);
+}
+
+.dk-itemslot.hi {
+	--bg: radial-gradient(circle at 50% 30%, color-mix(in srgb, var(--c-r) 34%, var(--ui-surface-2)) 0%, var(--ui-surface) 78%);
+	--sh-hi: inset 0 0 14px color-mix(in srgb, var(--c-r) 45%, transparent);
+}
+
+.dk-itemslot.leg {
+	--sh-leg: 0 0 12px color-mix(in srgb, var(--c-r) 40%, transparent);
+}
+
+.dk-itemslot.empty {
+	--c-r: var(--ui-border-strong);
+	--bg: linear-gradient(var(--ui-surface), var(--ui-surface));
+	--bd: var(--ui-border);
+}
+
+.dk-itemslot.locked {
+	--c-r: var(--ui-border-strong);
+	--bg: repeating-linear-gradient(135deg, var(--ui-surface) 0px, var(--ui-surface) 6px, color-mix(in srgb, var(--ui-surface-2) 70%, transparent) 6px, color-mix(in srgb, var(--ui-surface-2) 70%, transparent) 12px);
+	--bd: var(--ui-border);
+}
+
+.dk-itemslot.off {
+	--bg: radial-gradient(circle at 50% 30%, color-mix(in srgb, var(--ui-danger) 22%, var(--ui-surface)) 0%, var(--ui-surface) 80%);
+	--bd: color-mix(in srgb, var(--ui-danger) 60%, transparent);
+}
+
+.dk-itemslot.inert {
+	cursor: default;
+	--h-bd: var(--bd);
+}
+
+.dk-itemslot.selected {
+	--bd: var(--ui-accent);
+	--sh-sel: inset 0 0 0 2px var(--ui-accent);
+	border-width: 2px;
+}
+
+.dk-itemslot.droptarget {
+	--bg: linear-gradient(var(--ui-accent-soft), var(--ui-accent-soft));
+	--bd: var(--ui-accent);
+	--h-bd: var(--ui-accent);
+	border-width: 2px;
+	border-style: dashed;
+}
+
+.dk-itemslot.ghost {
+	--bd: var(--ui-border-strong);
+	border-style: dashed;
+	opacity: 0.55;
+}
+
+.dk-itemslot.drag {
+	--sh-drag: var(--ui-shadow-lg);
+	transform: translate(6px, -8px) rotate(-4deg) scale(1.08);
+}
+
+.dk-itemslot:hover {
+	border-color: var(--h-bd);
+}
+
+.dk-itemslot:active {
+	transform: scale(0.95);
+}
+
+.dk-itemslot.inert:active {
+	transform: none;
+}
+
+.dk-itemslot.drag:active {
+	transform: translate(6px, -8px) rotate(-4deg) scale(1.08);
+}
+
+.dk-itemslot:focus-visible {
+	--bd: var(--ui-focus);
+	--h-bd: var(--ui-focus);
+	--sh-focus: var(--ui-focus-ring);
+}
+
+.dk-itemslot.droptarget:focus-visible {
+	--bd: var(--ui-accent);
+	--h-bd: var(--ui-accent);
+}
+
+.dk-itemslot.ghost:focus-visible {
+	--bd: var(--ui-border-strong);
+	--h-bd: var(--ui-border-strong);
+}
+
+.dk-itemslot.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+.dk-itemslot-orn-frame {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	bottom: 3px;
+	left: 3px;
+	border: calc(var(--ui-ornament-2) * 1px) solid var(--ui-ornament-color);
+	border-radius: var(--ui-radius-sm);
+	opacity: calc(var(--ui-ornament-2) * 0.7);
+	pointer-events: none;
+	z-index: 1;
+}
+
+.dk-itemslot-orn-corner {
+	position: absolute;
+	width: calc(var(--ui-ornament-2) * 6px);
+	height: calc(var(--ui-ornament-2) * 6px);
+	box-sizing: border-box;
+	opacity: var(--ui-ornament-2);
+	pointer-events: none;
+}
+
+.dk-itemslot-orn-corner.tl {
+	top: 1px;
+	left: 1px;
+	border-top: calc(var(--ui-ornament-2) * 2px) solid var(--ui-ornament-color);
+	border-left: calc(var(--ui-ornament-2) * 2px) solid var(--ui-ornament-color);
+}
+
+.dk-itemslot-orn-corner.tr {
+	top: 1px;
+	right: 1px;
+	border-top: calc(var(--ui-ornament-2) * 2px) solid var(--ui-ornament-color);
+	border-right: calc(var(--ui-ornament-2) * 2px) solid var(--ui-ornament-color);
+}
+
+.dk-itemslot-orn-corner.bl {
+	bottom: 1px;
+	left: 1px;
+	border-bottom: calc(var(--ui-ornament-2) * 2px) solid var(--ui-ornament-color);
+	border-left: calc(var(--ui-ornament-2) * 2px) solid var(--ui-ornament-color);
+}
+
+.dk-itemslot-orn-corner.br {
+	bottom: 1px;
+	right: 1px;
+	border-bottom: calc(var(--ui-ornament-2) * 2px) solid var(--ui-ornament-color);
+	border-right: calc(var(--ui-ornament-2) * 2px) solid var(--ui-ornament-color);
+}
+
+.dk-itemslot-icon {
+	display: inline-flex;
+	color: var(--ui-text);
+	opacity: 1;
+}
+
+.dk-itemslot.uncommon .dk-itemslot-icon, .dk-itemslot.rare .dk-itemslot-icon, .dk-itemslot.epic .dk-itemslot-icon, .dk-itemslot.legendary .dk-itemslot-icon {
+	color: color-mix(in srgb, var(--c-r) 70%, var(--ui-text));
+}
+
+.dk-itemslot.off .dk-itemslot-icon {
+	color: color-mix(in srgb, var(--ui-danger) 75%, var(--ui-text));
+}
+
+.dk-itemslot.empty .dk-itemslot-icon {
+	color: var(--ui-text-disabled);
+	opacity: 0.6;
+}
+
+.dk-itemslot-icon svg {
+	display: block;
+}
+
+.dk-itemslot-qty {
+	position: absolute;
+	right: 4px;
+	bottom: 3px;
+	font-family: var(--ui-font-mono);
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1;
+	color: var(--ui-text);
+	text-shadow: 0 1px 2px var(--ui-shade), 0 0 4px var(--ui-shade);
+}
+
+.dk-itemslot-dur {
+	position: absolute;
+	left: 4px;
+	bottom: 4px;
+	height: 3px;
+	border-radius: 2px;
+	background: var(--ui-success);
+}
+
+.dk-itemslot-dur.mid {
+	background: var(--ui-warning);
+}
+
+.dk-itemslot-dur.low {
+	background: var(--ui-danger);
+}
+
+.dk-itemslot-cd {
+	--cd: 0%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-2);
+	font-weight: 600;
+	color: var(--ui-text);
+	text-shadow: 0 1px 2px var(--ui-shade);
+	background: conic-gradient(rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.62) var(--cd), transparent var(--cd), transparent 100%);
+}
+
+.dk-itemslot-new {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--ui-warning);
+	box-shadow: 0 0 0 2px var(--ui-bg);
+}
+
+.dk-itemslot-lock {
+	display: inline-flex;
+	color: var(--ui-text-disabled);
+}
+
+.dk-itemslot-lock svg {
+	display: block;
+}

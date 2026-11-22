@@ -1,0 +1,24 @@
+<rml>
+<head>
+	<title>Lists</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="Lists.rcss"/>
+	<viewmodel name="lists" class="/Script/ArcRmlUISamples.ArcRmlSamplesListsViewModel" create="true"/>
+</head>
+<body data-model="lists">
+	<div class="ls-panel">
+		<h1 class="ls-title">Lists</h1>
+		<div class="ls-row" data-for="r, i : Items" data-key="r.Name">
+			<span class="ls-name">{{ i + 1 }}. {{ r.Name }}</span>
+			<span>x{{ r.Quantity }}</span>
+			<button class="ls-remove ls-button" data-event-click="call('', 'Remove', i)">Remove</button>
+		</div>
+		<div class="ls-buttons">
+			<button id="ls-add" class="ls-button" data-event-click="call('', 'Add')">Add</button>
+			<button class="ls-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

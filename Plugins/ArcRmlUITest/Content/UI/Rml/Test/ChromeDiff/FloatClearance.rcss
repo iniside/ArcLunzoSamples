@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+}
+
+.wf-case {
+	display: flow-root;
+	width: 300px;
+	height: 200px;
+}
+
+.wf-f {
+	float: left;
+	width: 50px;
+	height: 5px;
+	background: red;
+}
+
+.wf-line {
+	width: 100px;
+	font-size: 0;
+	line-height: 0;
+	white-space: nowrap;
+}
+
+.wf-ib {
+	display: inline-block;
+	height: 10px;
+}
+
+.wf-fixed-line {
+	font-size: 16px;
+	line-height: 20px;
+}

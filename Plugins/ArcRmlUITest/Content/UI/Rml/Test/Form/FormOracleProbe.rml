@@ -1,0 +1,25 @@
+<rml>
+<head>
+	<title>FormOracleProbe</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/FormOracleProbe.rcss"/>
+	<viewmodel name="fo" preview="Preview/FormOracleProbe.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="row"><select id="fo-select"><option value="a">Apple</option><option value="b" selected="">Banana split</option><option value="c" disabled="">Cherry</option></select></div>
+	<div class="row"><select id="fo-select-short"><option value="x">cd</option></select></div>
+	<div class="row" data-model="fo">
+		<select id="fo-select-for">
+			<option data-for="row : rows" data-attr-value="row.v">{{ row.name }}</option>
+		</select>
+	</div>
+	<div class="row"><input id="fo-ibutton" type="button" value="Save"/></div>
+	<div class="row"><input id="fo-submit" type="submit" value="Send"/></div>
+	<div class="row"><input id="fo-reset" type="reset" value="Clear"/></div>
+	<div class="row"><button id="fo-button">Go</button></div>
+	<div class="row"><textarea id="fo-ta">notes</textarea></div>
+	<div class="row"><input id="fo-text" type="text" value="Hello"/></div>
+	<div class="row preflight"><input id="fo-pf-font" class="pf-font" type="text" value="inherit"/><button id="fo-pf-family" class="pf-family">Inherit</button></div>
+</body>
+</rml>

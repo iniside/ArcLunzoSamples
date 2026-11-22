@@ -1,0 +1,20 @@
+<rml>
+<head>
+	<title>Overflow Wrap Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/OverflowWrap.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="cb"><div id="ow-anywhere-min" class="minc anywhere">aaaaaaaa</div></div>
+	<div class="cb"><div id="ow-break-word-min" class="minc break-word">aaaaaaaa</div></div>
+	<div class="cb"><div id="ow-word-break-min" class="minc word-break">aaaaaaaa</div></div>
+	<div class="cb"><div id="ow-break-word-narrow" class="narrow break-word">aaaaaaaaaaaa</div></div>
+	<div class="cb"><div id="ow-word-wrap-narrow" class="narrow word-wrap">aaaaaaaaaaaa</div></div>
+	<div class="cb"><div id="ow-anywhere-narrow" class="narrow anywhere">aaaaaaaaaaaa</div></div>
+	<div class="cb"><div id="ow-normal-narrow" class="narrow">aaaaaaaaaaaa</div></div>
+	<div class="cb"><div id="ow-break-word-late" class="narrow break-word">aa aaaaaaaaa</div></div>
+	<div class="cb flex narrow"><div id="ow-anywhere-flex" class="anywhere">aaaaaaaaaaaa</div></div>
+	<div class="cb flex narrow"><div id="ow-break-word-flex" class="break-word">aaaaaaaaaaaa</div></div>
+</body>
+</rml>

@@ -1,0 +1,34 @@
+<component>
+	<prop name="header"/>
+	<prop name="headerLabels" default="[]"/>
+	<prop name="cols" default="[]"/>
+	<prop name="highlightCol" default="0"/>
+	<prop name="rank" default=""/>
+	<prop name="initials" default=""/>
+	<prop name="label" default=""/>
+	<prop name="team" default="accent"/>
+	<prop name="mvp"/>
+	<prop name="local"/>
+	<prop name="localLabel" default=""/>
+	<prop name="disconnected"/>
+	<prop name="ping" default="0"/>
+	<prop name="pingLabel" default=""/>
+	<div class="dk-scoreboardrow-header" data-if="$header" data-style-grid-template-columns="'32px minmax(0, 1fr) repeat(' + ($headerLabels.size - 2) + ', minmax(40px, 60px))'">
+		<span class="dk-scoreboardrow-head">{{ $headerLabels[0] }}</span>
+		<span class="dk-scoreboardrow-head">{{ $headerLabels[1] }}</span>
+		<div class="dk-scoreboardrow-headcell" data-for="ScoreboardRowH, ScoreboardRowH_index : $headerLabels">
+			<span class="dk-scoreboardrow-head dk-scoreboardrow-head-right" data-if="ScoreboardRowH_index &gt;= 2">{{ ScoreboardRowH }}</span>
+		</div>
+	</div>
+	<div class="dk-scoreboardrow" data-if="!$header" data-class-danger="$team == 'danger'" data-class-local="$local" data-class-disconnected="$disconnected" data-style-grid-template-columns="'32px minmax(0, 1fr) repeat(' + ($cols.size + 1) + ', minmax(40px, 60px))'">
+		<span class="dk-scoreboardrow-rank">{{ $rank }}</span>
+		<div class="dk-scoreboardrow-player">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Avatar" initials="{{ $initials }}" size="sm" tone="{{ $team }}"/>
+			<span class="dk-scoreboardrow-name">{{ $label }}</span>
+			<i class="dk-scoreboardrow-mvp" data-if="$mvp"><svg src="/ArcRmlUIDemo/UI/Rml/icons/crown.svg" width="16" height="16" stroke-width="2"/></i>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Badge" data-if="$local &amp;&amp; $localLabel != ''" label="{{ $localLabel }}" tone="accent" solid="{{ true }}"/>
+		</div>
+		<span class="dk-scoreboardrow-cell" data-for="ScoreboardRowC, ScoreboardRowC_index : $cols" data-class-hi="ScoreboardRowC_index == $highlightCol">{{ ScoreboardRowC }}</span>
+		<span class="dk-scoreboardrow-cell dk-scoreboardrow-ping" data-class-mid="$ping * 1 &gt; 70 &amp;&amp; $ping * 1 &lt;= 120" data-class-high="$ping * 1 &gt; 120">{{ $pingLabel != '' ? $pingLabel : $ping }}</span>
+	</div>
+</component>

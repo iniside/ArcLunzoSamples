@@ -1,0 +1,168 @@
+@keyframes hud-wheel-in { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+
+.dk-weapon-wheel {
+	position: relative;
+	animation: hud-wheel-in var(--ui-dur-fast) var(--ui-ease);
+}
+
+.dk-weapon-wheel-ring {
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	right: 50px;
+	bottom: 50px;
+	border-radius: 50%;
+	background: radial-gradient(circle, var(--hud-plate) 55%, color-mix(in srgb, var(--hud-plate) 45%, transparent) 56%, color-mix(in srgb, var(--hud-plate) 45%, transparent) 70%, transparent 71%);
+}
+
+.dk-weapon-wheel-w-pos {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0;
+	height: 0;
+	--dk-weapon-wheel-w-pos-transform-1: -150px;
+	transform: rotate(0deg) translateY(var(--dk-weapon-wheel-w-pos-transform-1)) rotate(-0deg);
+}
+
+.dk-weapon-wheel-w-s {
+	position: absolute;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	box-shadow: var(--hud-plate-shadow);
+	transition: transform var(--ui-dur-fast) var(--ui-ease);
+}
+
+.dk-weapon-wheel-e5 {
+	display: inline-flex;
+}
+
+.dk-weapon-wheel-w-pos-2 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0;
+	height: 0;
+	--dk-weapon-wheel-w-pos-transform-1: -150px;
+	transform: rotate(45deg) translateY(var(--dk-weapon-wheel-w-pos-transform-1)) rotate(-45deg);
+}
+
+.dk-weapon-wheel-e8 {
+	display: inline-flex;
+}
+
+.dk-weapon-wheel-w-pos-3 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0;
+	height: 0;
+	--dk-weapon-wheel-w-pos-transform-1: -150px;
+	transform: rotate(90deg) translateY(var(--dk-weapon-wheel-w-pos-transform-1)) rotate(-90deg);
+}
+
+.dk-weapon-wheel-e11 {
+	display: inline-flex;
+}
+
+.dk-weapon-wheel-w-pos-4 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0;
+	height: 0;
+	--dk-weapon-wheel-w-pos-transform-1: -150px;
+	transform: rotate(135deg) translateY(var(--dk-weapon-wheel-w-pos-transform-1)) rotate(-135deg);
+}
+
+.dk-weapon-wheel-e14 {
+	display: inline-flex;
+}
+
+.dk-weapon-wheel-w-pos-5 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0;
+	height: 0;
+	--dk-weapon-wheel-w-pos-transform-1: -150px;
+	transform: rotate(180deg) translateY(var(--dk-weapon-wheel-w-pos-transform-1)) rotate(-180deg);
+}
+
+.dk-weapon-wheel-e17 {
+	display: inline-flex;
+}
+
+.dk-weapon-wheel-w-pos-6 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0;
+	height: 0;
+	--dk-weapon-wheel-w-pos-transform-1: -150px;
+	transform: rotate(225deg) translateY(var(--dk-weapon-wheel-w-pos-transform-1)) rotate(-225deg);
+}
+
+.dk-weapon-wheel-e20 {
+	display: inline-flex;
+}
+
+.dk-weapon-wheel-w-pos-7 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0;
+	height: 0;
+	--dk-weapon-wheel-w-pos-transform-1: -150px;
+	transform: rotate(270deg) translateY(var(--dk-weapon-wheel-w-pos-transform-1)) rotate(-270deg);
+}
+
+.dk-weapon-wheel-e23 {
+	display: inline-flex;
+}
+
+.dk-weapon-wheel-w-pos-8 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0;
+	height: 0;
+	--dk-weapon-wheel-w-pos-transform-1: -150px;
+	transform: rotate(315deg) translateY(var(--dk-weapon-wheel-w-pos-transform-1)) rotate(-315deg);
+}
+
+.dk-weapon-wheel-e26 {
+	display: inline-flex;
+}
+
+.dk-weapon-wheel-centre {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--hud-space-xs);
+	text-align: center;
+}
+
+.dk-weapon-wheel-name-s {
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-4);
+	font-weight: 700;
+	text-transform: var(--ui-display-case);
+	color: var(--hud-text);
+	text-shadow: var(--hud-text-shadow);
+	white-space: nowrap;
+}
+
+.dk-weapon-wheel-sub-s {
+	font-size: var(--ui-fs-1);
+	color: var(--hud-text);
+	text-shadow: var(--hud-text-shadow);
+	opacity: 0.75;
+}

@@ -1,0 +1,51 @@
+.dk-modal {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.dk-modal.backdrop {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: var(--ui-scrim);
+	backdrop-filter: blur(6px);
+	align-items: center;
+	padding: var(--ui-space-6);
+	box-sizing: border-box;
+	z-index: 50;
+}
+
+.dk-modal-box {
+	width: 100%;
+	max-width: 560px;
+	display: flex;
+	flex-direction: column;
+}
+
+.dk-modal-content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-4);
+}
+
+.dk-modal-text {
+	margin: 0;
+	font-size: var(--ui-fs-3);
+	line-height: 1.55;
+	color: var(--ui-text-muted);
+}
+
+.dk-modal-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: var(--ui-space-3);
+	width: 100%;
+}
+
+.dk-modal-icon {
+	display: flex;
+}

@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>Anchor Selector Test</title>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="anchorsel" preview="Preview/AnchorSelectorTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Comp/AnchorSelectorTest.rcss"/>
+</head>
+<body data-model="anchorsel">
+	<div id="list"><div class="ls-row" data-for="r : Rows" data-key="r.Id">{{ r.Label }}</div></div>
+	<div id="list2"><div class="ls-row" data-for="s : Rows">{{ s.Label }}</div><div class="ls-tail">T</div></div>
+	<div id="one"><div class="ls-one" data-for="o : One">{{ o.Label }}</div></div>
+	<div id="cond"><div class="ls-if">A</div><div class="ls-if" data-if="One.size > 0">B</div></div>
+</body>
+</rml>

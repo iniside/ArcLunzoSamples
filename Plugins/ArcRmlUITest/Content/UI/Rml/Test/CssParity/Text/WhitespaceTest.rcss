@@ -1,0 +1,110 @@
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #202020;
+	color: #ffffff;
+	font-family: 'Space Grotesk';
+	font-size: 16px;
+}
+
+div {
+	display: block;
+}
+
+.t {
+	position: absolute;
+}
+
+.j {
+	text-align: justify;
+}
+
+.c {
+	text-align: center;
+}
+
+.prewrap {
+	white-space: pre-wrap;
+}
+
+.pre {
+	white-space: pre;
+}
+
+.preline {
+	white-space: pre-line;
+}
+
+.blk {
+	margin: 6px 0;
+	background-color: #406080;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ib {
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	background-color: #406080;
+}
+
+.pad {
+	padding: 0 6px;
+	background-color: #604020;
+}
+
+.contents {
+	display: contents;
+}
+
+.fl {
+	float: left;
+	width: 30px;
+	height: 20px;
+	background-color: #804060;
+}
+
+.abs {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 10px;
+	height: 10px;
+}
+
+.hidden {
+	display: none;
+}
+
+table {
+	display: table;
+}
+
+tr {
+	display: table-row;
+}
+
+td {
+	display: table-cell;
+	padding: 0 8px;
+}
+
+.emp {
+	height: 10px;
+	width: 40px;
+}
+
+.emp:empty {
+	width: 80px;
+}
+
+b { font-weight: normal; }

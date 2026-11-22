@@ -1,0 +1,24 @@
+<rml>
+<head>
+	<title>GridAutoRowsNestedFlex</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/LayoutVerify/GridAutoRowsNestedFlex.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+<input type="radio" name="w" id="r-a" class="rb rb-a" checked=""/>
+<input type="radio" name="w" id="r-b" class="rb rb-b"/>
+<input type="radio" name="w" id="r-anim" class="rb rb-anim"/>
+<div class="grid">
+<div class="item"><div class="row"><div class="icon"></div><div class="grow"><div class="row"><div class="chip">nested</div><div class="chip">flex row</div></div></div></div><div class="tail">text under the flex row that wraps at narrow widths</div></div>
+<div class="item"><div class="col"><div class="chip">column</div><div class="row"><div class="chip">row in</div><div class="chip">column</div></div><div class="grow">grow text alpha beta gamma</div></div></div>
+<div class="item"><div class="wrap"><div class="chip">one</div><div class="chip">two two</div><div class="chip">three three</div><div class="chip">four</div><div class="chip">five five five</div></div></div>
+<div class="item"><div class="row"><div class="grow">animated neighbour</div><div class="sp"></div></div></div>
+<div class="item"><div class="row"><div class="icon"></div><div class="grow"><div class="col"><div class="chip">deep</div><div class="row"><div class="chip">deeper</div><div class="chip">row</div></div></div></div></div></div>
+<div class="item"><div class="row"><div class="chip">plain</div><div class="chip">row of chips</div><div class="chip">that wraps text</div></div></div>
+<div class="item"><div class="col"><div class="row"><div class="icon"></div><div class="grow">clean row alpha beta</div></div><div class="tail">clean tail</div></div></div>
+<div class="item"><div class="wrap"><div class="chip">a</div><div class="chip">bb</div><div class="chip">ccc</div><div class="chip">dddd</div></div></div>
+<div class="item"><div class="row"><div class="grow">third row</div><div class="icon"></div></div></div>
+</div>
+</body>
+</rml>

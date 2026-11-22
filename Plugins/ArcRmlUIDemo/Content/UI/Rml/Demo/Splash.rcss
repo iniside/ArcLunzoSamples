@@ -1,0 +1,42 @@
+@keyframes ui-pulse {
+	0% { opacity: 1; }
+	50% { opacity: 0.4; }
+	100% { opacity: 1; }
+}
+
+.sp-center {
+	position: relative;
+	height: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: var(--ui-space-6);
+	padding: clamp(24px, 4.5vw, 88px);
+}
+
+.sp-status {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 32px;
+}
+
+.sp-pulse {
+	animation: ui-pulse 1.6s ease-in-out infinite;
+}
+
+.sp-version {
+	position: absolute;
+	left: clamp(24px, 4.5vw, 88px);
+	bottom: clamp(24px, 4.5vw, 88px);
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	color: var(--ui-text-muted);
+	letter-spacing: 0.06em;
+}
+
+.sp-root {
+	tab-index: auto;
+}

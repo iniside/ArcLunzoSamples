@@ -1,0 +1,27 @@
+<rml>
+<head>
+	<title>Field binding</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="FieldBinding.rcss"/>
+	<viewmodel name="fields" class="/Script/ArcRmlUISamples.ArcRmlSamplesFieldBindingViewModel" create="true"/>
+</head>
+<body data-model="fields">
+	<div class="fb-panel">
+		<h1 class="fb-title">Field binding</h1>
+		<p>Count: {{ Count }}</p>
+		<p>Progress: {{ Progress | format(1) }}</p>
+		<p>{{ Message | to_upper }}</p>
+		<p data-if="bEven">The count is even.</p>
+		<p data-if="!bEven">The count is odd.</p>
+		<div class="fb-badge" data-class-fb-odd="!bEven">odd or even</div>
+		<div class="fb-bar"><div class="fb-fill" data-style-width="(Progress * 100) + '%'" data-style-background-color="Accent"></div></div>
+		<progress class="fb-progress" max="1" data-attr-value="Progress"></progress>
+		<div class="fb-buttons">
+			<button id="fb-add" class="fb-button" data-event-click="call('', 'Increment')">Add one</button>
+			<button class="fb-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

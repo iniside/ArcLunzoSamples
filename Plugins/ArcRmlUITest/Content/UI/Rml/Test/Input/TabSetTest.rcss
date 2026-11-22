@@ -1,0 +1,6 @@
+tabset { display: block; width: 600px; }
+tabs { display: block; height: 30px; }
+tab { display: inline-block; width: 100px; height: 30px; tab-index: auto; background-color: #303030; }
+tab:selected { background-color: #c03030; }
+panels { display: block; }
+panel { display: block; height: 50px; }

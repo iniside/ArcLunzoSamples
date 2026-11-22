@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>Back Order Close Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="AreaBackTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+<div class="abt-root">
+	<div data-focus-area="orphan" data-focus-parent="missing">
+		<div class="abt-btn" id="boc-orphan-1">Orphan</div>
+	</div>
+</div>
+</body>
+</rml>

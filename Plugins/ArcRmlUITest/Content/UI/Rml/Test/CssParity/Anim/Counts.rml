@@ -1,0 +1,19 @@
+<rml>
+<head>
+	<title>Counts</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Anim/Counts.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="i-zero" class="row"></div>
+	<div id="i-half" class="row"></div>
+	<div id="i-alt" class="row"></div>
+	<div id="z-half" class="row"></div>
+	<div id="z-quarter" class="row"></div>
+	<div id="z-alt" class="row"></div>
+	<div id="z-zero" class="row"></div>
+	<div id="z-two" class="row"></div>
+	<div id="z-mid" class="row"></div>
+</body>
+</rml>

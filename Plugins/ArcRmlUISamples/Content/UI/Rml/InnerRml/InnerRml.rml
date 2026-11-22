@@ -1,0 +1,25 @@
+<rml>
+<head>
+	<title>Inner RML</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="InnerRml.rcss"/>
+	<viewmodel name="ir" class="/Script/ArcRmlUISamples.ArcRmlSamplesInnerRmlViewModel" create="true"/>
+</head>
+<body data-model="ir">
+	<div class="ir-panel">
+		<h1 class="ir-title">Inner RML</h1>
+		<p class="ir-label">A model string written by the game, shown with data-rml</p>
+		<p id="ir-banner" class="ir-line" data-rml="Banner"></p>
+		<p class="ir-label">Text the player types (starts as markup)</p>
+		<input id="ir-input" class="ir-field" type="text" autofocus=""
+			data-attr-value="Typed"
+			data-event-input="call('', 'SetTyped', ev.value)"/>
+		<p class="ir-label">Shown as text: always literal</p>
+		<p id="ir-text" class="ir-line">{{ Typed }}</p>
+		<p class="ir-label">Shown as inner RML: parsed as markup</p>
+		<p id="ir-rml" class="ir-line" data-rml="Typed"></p>
+	</div>
+</body>
+</rml>

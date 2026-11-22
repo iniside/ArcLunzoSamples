@@ -1,0 +1,5 @@
+<component>
+	<prop name="label"/>
+	<prop name="action"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Components/Button" label="{{ $label }}" action="{{ $action }}"/>
+</component>

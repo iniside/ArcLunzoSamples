@@ -1,0 +1,20 @@
+<rml>
+<head>
+	<title>Table Border Collapse Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Table/BorderCollapse.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="cb"><table id="pf" class="pf collapse"><thead id="pf-h"><tr id="pf-hr"><th id="pf-h1"><span class="b"></span></th><th id="pf-h2"><span class="b"></span></th></tr></thead><tbody id="pf-b"><tr id="pf-r1"><td id="pf-r1a"><span class="b"></span></td><td id="pf-r1b"><span class="b"></span></td></tr><tr id="pf-r2"><td id="pf-r2a"><span class="b"></span></td><td id="pf-r2b"><span class="b"></span></td></tr><tr id="pf-r3"><td id="pf-r3a"><span class="b"></span></td><td id="pf-r3b"><span class="b"></span></td></tr></tbody></table></div>
+	<div class="cb"><table id="all" class="all collapse"><tr id="all-r1"><td id="all-a"><span class="b"></span></td><td id="all-b"><span class="b"></span></td></tr><tr id="all-r2"><td id="all-c"><span class="b"></span></td><td id="all-d"><span class="b"></span></td></tr></table></div>
+	<div class="cb"><table id="wide" class="wide collapse"><tr><td id="wide-a" class="w3"><span class="b"></span></td><td id="wide-b"><span class="b"></span></td></tr></table></div>
+	<div class="cb"><table id="dash" class="dash collapse"><tr><td id="dash-a" class="d"><span class="b"></span></td><td id="dash-b"><span class="b"></span></td></tr></table></div>
+	<div class="cb"><table id="sep" class="sep"><tr id="sep-r1"><td id="sep-a"><span class="b"></span></td><td id="sep-b"><span class="b"></span></td></tr><tr id="sep-r2"><td id="sep-c"><span class="b"></span></td><td id="sep-d"><span class="b"></span></td></tr></table></div>
+	<div class="cb"><table id="spc" class="spc"><tr><td id="spc-a"><span class="b"></span></td><td id="spc-b"><span class="b"></span></td></tr><tr><td id="spc-c"><span class="b"></span></td><td id="spc-d"><span class="b"></span></td></tr></table></div>
+	<div class="cb"><table id="ft" class="ft"><tfoot id="ft-f"><tr id="ft-fr"><td id="ft-f1"><span class="b"></span></td></tr></tfoot><tbody id="ft-b"><tr id="ft-br"><td id="ft-b1"><span class="b"></span></td></tr></tbody><thead id="ft-h"><tr id="ft-hr"><td id="ft-h1"><span class="b"></span></td></tr></thead></table></div>
+	<div class="cb"><table id="ua"><tr><td id="ua-a"><span class="b"></span></td><td id="ua-b"><span class="b"></span></td></tr></table></div>
+	<div class="cb kw"><table id="kw-t"><tr><td id="kw-fit" class="fit"><span class="ib60"></span> <span class="ib60"></span> <span class="ib60"></span> <span class="ib60"></span> <span class="ib60"></span></td><td id="kw-other"><span class="ib30"></span> <span class="ib30"></span> <span class="ib30"></span> <span class="ib30"></span></td></tr></table></div>
+	<div class="cb kw"><table id="kw-twin"><tr><td id="kw-auto"><span class="ib60"></span> <span class="ib60"></span> <span class="ib60"></span> <span class="ib60"></span> <span class="ib60"></span></td><td id="kw-auto-other"><span class="ib30"></span> <span class="ib30"></span> <span class="ib30"></span> <span class="ib30"></span></td></tr></table></div>
+</body>
+</rml>

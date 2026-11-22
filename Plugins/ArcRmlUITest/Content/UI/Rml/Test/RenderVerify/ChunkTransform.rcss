@@ -1,0 +1,28 @@
+body {
+	width: 100%;
+	height: 100%;
+}
+
+div {
+	display: block;
+}
+
+#panel {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	width: 200px;
+	height: 100px;
+	transform: translateX(-2000px);
+	background-color: #202020;
+}
+
+#panel.shown {
+	transform: translateX(0px);
+}
+
+.kid {
+	width: 50px;
+	height: 20px;
+	background-color: #5b2c8f;
+}

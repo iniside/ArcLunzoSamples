@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>Hex Escape Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Selectors/HexEscape.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="he-2xl" class="box 2xl:p-4"></div>
+	<div id="he-10" class="box 10"></div>
+	<div class="box 10"><div id="he-10-inner" class="inner"></div></div>
+	<div class="box 1"><div id="he-1-inner" class="inner"></div></div>
+	<div id="he-at" class="box @md"></div>
+</body>
+</rml>

@@ -1,0 +1,26 @@
+<component>
+	<prop name="label" default="Aurelia"/>
+	<prop name="level" default="38"/>
+	<prop name="icon" default="/ArcRmlUIDemo/UI/Rml/icons/shield-half.svg"/>
+	<prop name="health"/>
+	<prop name="resource"/>
+	<prop name="xp" default="0.64"/>
+	<prop name="combat"/>
+	<div class="dk-player-frame">
+		<span class="dk-player-frame-portrait" data-class-combat="$combat">
+			<i class="dk-player-frame-e3"><svg data-attr-src="$icon" width="34" height="34" stroke-width="1.75"/></i>
+			<span class="dk-player-frame-lvl-s">{{ $level }}</span>
+		</span>
+		<div class="dk-player-frame-e5">
+			<div class="dk-player-frame-e6">
+				<span class="dk-player-frame-name-s">{{ ($label != '' ? $label : 'Aurelia') }}</span>
+				<span class="dk-player-frame-combat-s" data-if="$combat">
+					<i class="dk-player-frame-e9"><svg src="/ArcRmlUIDemo/UI/Rml/icons/swords.svg" width="12" height="12" stroke-width="2.5"/></i>
+				</span>
+			</div>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ResourceBar" value="{{ $health.Value }}" trail="{{ $health.Trail }}" shield="{{ $health.Shield }}" kind="health" label="{{ ($health.Cur | arcnum) + ' / ' + ($health.Max | arcnum) }}" height="{{ 16 }}" pulse="{{ $health.Value &lt; 0.25 }}"/>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ResourceBar" value="{{ $resource.Value }}" trail="{{ $resource.Value }}" kind="{{ $resource.Kind }}" label="{{ $resource.Cur + ' / ' + $resource.Max }}" height="{{ 10 }}"/>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ResourceBar" value="{{ $xp }}" trail="{{ $xp }}" kind="xp" show-label="{{ false }}" height="{{ 4 }}" ticks="{{ 10 }}"/>
+		</div>
+	</div>
+</component>

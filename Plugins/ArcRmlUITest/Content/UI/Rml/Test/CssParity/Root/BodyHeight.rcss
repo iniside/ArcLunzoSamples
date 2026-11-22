@@ -1,0 +1,4 @@
+html.full { height: 100%; }
+body { display: block; margin: 0; height: 100%; }
+div { display: block; }
+#bh-box { height: 40px; }

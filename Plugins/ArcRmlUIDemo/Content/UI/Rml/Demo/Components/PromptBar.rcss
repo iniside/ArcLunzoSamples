@@ -1,0 +1,15 @@
+.dk-promptbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-end;
+	gap: var(--ui-space-2) var(--ui-space-5);
+}
+
+.dk-promptbar.start {
+	justify-content: flex-start;
+}
+
+.dk-promptbar.center {
+	justify-content: center;
+}

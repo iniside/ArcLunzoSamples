@@ -1,0 +1,156 @@
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #141821;
+}
+
+div {
+	display: block;
+}
+
+.sq {
+	position: absolute;
+	top: 100px;
+	width: 120px;
+	height: 120px;
+	background-color: #f0f0f0;
+}
+
+#sq15 {
+	left: 100px;
+	transform: rotate(15deg);
+}
+
+#sq30 {
+	left: 320px;
+	transform: rotate(30deg);
+}
+
+.ring {
+	position: absolute;
+	left: 540px;
+	top: 100px;
+	width: 120px;
+	height: 120px;
+	box-sizing: border-box;
+	border: 10px solid #f0f0f0;
+	border-radius: 12px;
+	transform: rotate(20deg);
+}
+
+.chev {
+	position: absolute;
+	left: 760px;
+	top: 140px;
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+	border-top: 25px solid #f0f0f0;
+	border-right: 25px solid #f0f0f0;
+	border-radius: 10px;
+	transform: rotate(45deg);
+}
+
+.text {
+	position: absolute;
+	left: 100px;
+	top: 320px;
+	font-family: 'Space Grotesk';
+	font-size: 24px;
+	color: #f0f0f0;
+	transform: rotate(15deg);
+}
+
+.image {
+	position: absolute;
+	left: 450px;
+	top: 300px;
+	width: 96px;
+	height: 96px;
+	transform: rotate(20deg);
+}
+
+.box {
+	position: absolute;
+	left: 640px;
+	top: 300px;
+	width: 120px;
+	height: 80px;
+	background-color: #3a86ff;
+	border: 8px solid #f0f0f0;
+	border-radius: 16px;
+	transform: rotate(25deg);
+}
+
+.clip {
+	position: absolute;
+	left: 860px;
+	top: 300px;
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	transform: rotate(30deg);
+}
+
+.clip-inner {
+	width: 200px;
+	height: 200px;
+	background-color: #f0f0f0;
+}
+
+.stripes {
+	position: absolute;
+	left: 1080px;
+	top: 80px;
+	width: 300px;
+	height: 300px;
+}
+
+.stripe {
+	height: 50px;
+}
+
+.stripe.a {
+	background-color: #ff006e;
+}
+
+.stripe.b {
+	background-color: #3a86ff;
+}
+
+.glass {
+	position: absolute;
+	left: 1150px;
+	top: 150px;
+	width: 160px;
+	height: 160px;
+	background-color: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(6px);
+	transform: rotate(25deg);
+}
+
+.mask-ring {
+	position: absolute;
+	left: 1460px;
+	top: 120px;
+	width: 160px;
+	height: 160px;
+	padding: 40px;
+	box-sizing: border-box;
+	background-color: #f0f0f0;
+	mask-image: linear-gradient(#000, #000), linear-gradient(#000, #000);
+	mask-clip: content-box, border-box;
+	mask-composite: exclude;
+	transform: rotate(25deg);
+}
+
+.skew {
+	position: absolute;
+	left: 120px;
+	top: 540px;
+	width: 160px;
+	height: 100px;
+	background-color: #3a86ff;
+	border: 6px solid #f0f0f0;
+	transform: skewX(30deg) scale(1.4, 0.7);
+}

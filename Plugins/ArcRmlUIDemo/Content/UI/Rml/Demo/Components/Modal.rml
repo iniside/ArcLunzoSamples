@@ -1,0 +1,34 @@
+<component>
+	<prop name="title" default=""/>
+	<prop name="body" default=""/>
+	<prop name="hasIcon"/>
+	<prop name="variant" default=""/>
+	<prop name="backdrop"/>
+	<prop name="width" default="560"/>
+	<prop name="buttons" default="[]"/>
+	<prop name="focused" default="-1"/>
+	<div class="dk-modal" data-class-backdrop="$backdrop">
+		<div class="dk-modal-box" data-style-max-width="$width + 'px'">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" surface="overlay" title="{{ $title }}" has-icon="{{ $hasIcon || $variant == 'danger' }}" tone="{{ $variant == 'danger' ? 'danger' : 'default' }}" has-footer="{{ true }}">
+				<div class="dk-modal-icon" slot="icon"><slot name="icon"/><svg data-if="!$hasIcon && $variant == 'danger'" src="/ArcRmlUIDemo/UI/Rml/icons/triangle-alert.svg" width="22" height="22" stroke-width="2"/></div>
+				<div class="dk-modal-content">
+					<p class="dk-modal-text" data-if="$body != ''">{{ $body }}</p>
+					<slot/>
+				</div>
+				<div class="dk-modal-footer" slot="footer">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" data-for="ModalB, ModalB_index : $buttons" data-event-click="callIf(!ModalB.bDisabled, '', 'Choose', ModalB_index)" label="{{ ModalB.Label }}" variant="{{ ModalB.Variant != '' ? ModalB.Variant : (ModalB_index == $buttons.size - 1 ? ($variant == 'danger' ? 'danger' : 'primary') : 'secondary') }}" has-icon="{{ ModalB.Key != '' }}" disabled="{{ ModalB.bDisabled }}" focusable="{{ true }}" autofocus="{{ ModalB_index == $focused }}">
+						<svg slot="icon" data-if="ModalB.Key == 'quit'" src="/ArcRmlUIDemo/UI/Rml/icons/power.svg" width="18" height="18" stroke-width="2"/>
+						<svg slot="icon" data-if="ModalB.Key == 'save-quit'" src="/ArcRmlUIDemo/UI/Rml/icons/save.svg" width="18" height="18" stroke-width="2"/>
+						<svg slot="icon" data-if="ModalB.Key == 'quit-menu'" src="/ArcRmlUIDemo/UI/Rml/icons/log-out.svg" width="18" height="18" stroke-width="2"/>
+						<svg slot="icon" data-if="ModalB.Key == 'delete'" src="/ArcRmlUIDemo/UI/Rml/icons/trash-2.svg" width="18" height="18" stroke-width="2"/>
+						<svg slot="icon" data-if="ModalB.Key == 'abandon'" src="/ArcRmlUIDemo/UI/Rml/icons/trash-2.svg" width="18" height="18" stroke-width="2"/>
+						<svg slot="icon" data-if="ModalB.Key == 'reset'" src="/ArcRmlUIDemo/UI/Rml/icons/rotate-ccw.svg" width="18" height="18" stroke-width="2"/>
+						<svg slot="icon" data-if="ModalB.Key == 'buy'" src="/ArcRmlUIDemo/UI/Rml/icons/shopping-cart.svg" width="18" height="18" stroke-width="2"/>
+						<svg slot="icon" data-if="ModalB.Key == 'sell'" src="/ArcRmlUIDemo/UI/Rml/icons/hand-coins.svg" width="18" height="18" stroke-width="2"/>
+						<svg slot="icon" data-if="ModalB.Key == 'buyback'" src="/ArcRmlUIDemo/UI/Rml/icons/undo-2.svg" width="18" height="18" stroke-width="2"/>
+					</dc-import>
+				</div>
+			</dc-import>
+		</div>
+	</div>
+</component>

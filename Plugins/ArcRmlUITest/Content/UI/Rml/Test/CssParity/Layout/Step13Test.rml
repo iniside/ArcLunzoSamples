@@ -1,0 +1,24 @@
+<rml>
+<head>
+	<title>Step 13 Indefinite Percentages Overflow And Tables</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Layout/Step13Test.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="calcrow" class="box calcrow"><div id="calcrow-flex" class="calcrowflex"><div id="calc50" class="calc50">Extraordinarily</div></div></div>
+	<div id="img-row" class="box imgrow"><img id="img-pct" class="imgpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/dot.png"/></div>
+	<div id="itab-line" class="box line5">Text <span id="itab" class="itab"><div class="trow"><div id="tc-a" class="tcell narrow">Ab cd</div><div id="tc-b" class="tcell">Ef</div></div><div class="trow"><div id="tc-c" class="tcell">Gh</div><div id="tc-d" class="tcell">Ij</div></div></span> after</div>
+	<div id="tl1" class="box tl1">Text <span id="ita" class="itauto"><div class="trow"><div id="ta1" class="tc">Short</div><div id="ta2" class="tc">A longer cell</div></div></span> after</div>
+	<div id="tl2" class="box tl2"><div id="tfa" class="tauto"><div class="trow"><div id="tfa1" class="tc">One two</div><div id="tfa2" class="tc">Three</div></div></div></div>
+	<div id="tl3" class="box tl3"><div id="tba" class="tauto"><div class="trow"><div id="tba1" class="tc">Alpha beta gamma</div><div id="tba2" class="tc">D</div></div><div class="trow"><div id="tba3" class="tc">E</div><div id="tba4" class="tc">Some much longer words in here</div></div></div></div>
+	<div id="tl4" class="box tl4"><div id="tnr" class="tauto"><div class="trow"><div id="tnr1" class="tc">Narrow table wrapping words</div><div id="tnr2" class="tc">Second column text</div></div></div></div>
+	<div id="tl5" class="box tl5"><div id="twd" class="twide"><div class="trow"><div id="twd1" class="tc">Ab</div><div id="twd2" class="tc">Longer text here</div></div></div></div>
+	<div id="tl6" class="box tl6"><div id="tbl" class="tauto"><div class="trow"><div id="tbl1" class="tc big24">Big</div><div id="tbl2" class="tc small12">small</div><div id="tbl3" class="tc ctop">top</div><div id="tbl4" class="tc cmid">mid</div><div id="tbl5" class="tc"><div class="empty"></div></div></div><div class="trow"><div id="tbl6" class="tc small12">x</div><div id="tbl7" class="tc big24">Y</div><div id="tbl8" class="tc">z</div><div id="tbl9" class="tc">w</div><div id="tbl10" class="tc">v</div></div></div></div>
+	<div id="fp1" class="box fp1"><div id="fp1-a" class="fpa mxh50">stretched max</div><div id="fp1-b" class="fpa mnh50">min</div><div id="fp1-c" class="fpb">tall</div></div>
+	<div id="fp2" class="box fp2"><div id="fp2-a" class="fpa h50">height 50</div><div id="fp2-b" class="fpa mxh50">max 50</div></div>
+	<div id="fp3" class="box fp3"><div id="fp3-a" class="fpa fb50">basis 50</div><div id="fp3-b" class="fpa mnh50">min 50</div></div>
+	<div id="ovx-hid-line" class="box ovxline ovx1"><span id="ovx-hid" class="ibx ibhid"><div class="wide"></div></span></div>
+	<div id="ovx-vis-line" class="box ovxline ovx2"><span id="ovx-vis" class="ibx"><div class="wide"></div></span></div>
+</body>
+</rml>

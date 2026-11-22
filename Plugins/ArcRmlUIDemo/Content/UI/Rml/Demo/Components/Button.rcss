@@ -1,0 +1,176 @@
+.dk-button {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--ui-space-2);
+	min-height: 44px;
+	min-width: 44px;
+	padding: 0 var(--ui-space-4);
+	width: auto;
+	box-sizing: border-box;
+	border-radius: var(--ui-radius-md);
+	border: 1px solid var(--ui-accent);
+	background: var(--ui-accent);
+	color: var(--ui-accent-text);
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-3);
+	font-weight: 600;
+	line-height: 1.1;
+	text-transform: var(--ui-display-case);
+	letter-spacing: var(--ui-display-tracking);
+	white-space: nowrap;
+	cursor: pointer;
+	box-shadow: none;
+	user-select: none;
+	transition: background-color var(--ui-dur-fast) var(--ui-ease), border-color var(--ui-dur-fast) var(--ui-ease), color var(--ui-dur-fast) var(--ui-ease), transform var(--ui-dur-fast) var(--ui-ease);
+	--h-bg: color-mix(in srgb, var(--ui-accent) 84%, var(--ui-tint));
+	--h-bd: var(--ui-accent);
+	--h-fg: var(--ui-accent-text);
+	--p-tf: translateY(1px) scale(0.98);
+}
+
+.dk-button.secondary {
+	background: var(--ui-surface-2);
+	color: var(--ui-text);
+	border: 1px solid var(--ui-border-strong);
+	--h-bg: color-mix(in srgb, var(--ui-surface-2) 78%, var(--ui-accent));
+	--h-bd: var(--ui-accent);
+	--h-fg: var(--ui-text);
+}
+
+.dk-button.ghost {
+	background: transparent;
+	color: var(--ui-text);
+	border: 1px solid transparent;
+	--h-bg: var(--ui-accent-soft);
+	--h-bd: transparent;
+	--h-fg: var(--ui-accent);
+}
+
+.dk-button.danger {
+	background: var(--ui-danger);
+	color: var(--ui-accent-text);
+	border: 1px solid var(--ui-danger);
+	--h-bg: color-mix(in srgb, var(--ui-danger) 84%, var(--ui-tint));
+	--h-bd: var(--ui-danger);
+	--h-fg: var(--ui-accent-text);
+}
+
+.dk-button.sm {
+	min-height: 32px;
+	min-width: 32px;
+	padding: 0 var(--ui-space-3);
+	font-size: var(--ui-fs-2);
+}
+
+.dk-button.lg {
+	min-height: 56px;
+	min-width: 56px;
+	padding: 0 var(--ui-space-5);
+	font-size: var(--ui-fs-4);
+}
+
+.dk-button.block {
+	display: flex;
+	width: 100%;
+}
+
+.dk-button.icon-only {
+	padding: 0;
+}
+
+.dk-button.selected {
+	background: var(--ui-accent-soft);
+	color: var(--ui-accent);
+	border: 1px solid var(--ui-accent);
+	--h-bg: var(--ui-accent-soft);
+	--h-bd: var(--ui-accent);
+	--h-fg: var(--ui-accent);
+}
+
+.dk-button.inset {
+	box-shadow: inset 0 0 0 2px var(--ui-accent-text);
+}
+
+.dk-button.loading {
+	cursor: default;
+	--p-tf: none;
+	--h-bg: var(--ui-accent);
+	--h-bd: var(--ui-accent);
+	--h-fg: var(--ui-accent-text);
+}
+
+.dk-button.loading.secondary {
+	--h-bg: var(--ui-surface-2);
+	--h-bd: var(--ui-border-strong);
+	--h-fg: var(--ui-text);
+}
+
+.dk-button.loading.ghost {
+	--h-bg: transparent;
+	--h-bd: transparent;
+	--h-fg: var(--ui-text);
+}
+
+.dk-button.loading.danger {
+	--h-bg: var(--ui-danger);
+	--h-bd: var(--ui-danger);
+	--h-fg: var(--ui-accent-text);
+}
+
+.dk-button.loading.selected {
+	--h-bg: var(--ui-accent-soft);
+	--h-bd: var(--ui-accent);
+	--h-fg: var(--ui-accent);
+}
+
+.dk-button.disabled {
+	background: var(--ui-surface-2);
+	color: var(--ui-text-disabled);
+	border: 1px solid var(--ui-border);
+	cursor: default;
+	--h-bg: var(--ui-surface-2);
+	--h-bd: var(--ui-border);
+	--h-fg: var(--ui-text-disabled);
+	--p-tf: none;
+}
+
+.dk-button.disabled.ghost {
+	background: transparent;
+	border: 1px solid transparent;
+	--h-bg: transparent;
+	--h-bd: transparent;
+}
+
+.dk-button:hover, .dk-button:focus-visible {
+	background: var(--h-bg);
+	border-color: var(--h-bd);
+	color: var(--h-fg);
+}
+
+.dk-button:active {
+	transform: var(--p-tf);
+}
+
+.dk-button:focus-visible {
+	box-shadow: var(--ui-focus-ring);
+}
+
+.dk-button.inset:focus-visible {
+	box-shadow: var(--ui-focus-ring), inset 0 0 0 2px var(--ui-accent-text);
+}
+
+.dk-button.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-button-icon {
+	display: inline-flex;
+	flex: none;
+}
+
+.dk-button-icon svg {
+	display: block;
+}

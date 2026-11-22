@@ -1,0 +1,9 @@
+.ls-row:first-child { margin-left: 1px; }
+.ls-row:last-child { margin-right: 2px; }
+.ls-row:nth-child(odd) { padding-left: 3px; }
+.ls-one:only-child { padding-right: 4px; }
+.ls-row + .ls-row { margin-top: 5px; }
+.ls-row ~ .ls-row { margin-bottom: 6px; }
+.ls-row + .ls-tail { padding-top: 7px; }
+#one:empty { padding-bottom: 8px; }
+.ls-if:last-child { padding-left: 9px; }

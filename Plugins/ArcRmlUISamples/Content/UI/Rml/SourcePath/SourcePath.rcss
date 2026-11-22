@@ -1,0 +1,36 @@
+.sp-panel {
+	position: absolute;
+	left: 80px;
+	top: 80px;
+	width: 520px;
+	padding: 24px 32px;
+	background-color: rgba(20, 24, 32, 0.9);
+	border-radius: 8px;
+}
+
+.sp-title {
+	display: block;
+	font-size: 36px;
+	margin-bottom: 12px;
+}
+
+.sp-row {
+	display: block;
+	margin: 6px 0;
+}
+
+.sp-buttons {
+	margin-top: 16px;
+}
+
+.sp-button {
+	margin-right: 12px;
+	padding: 8px 20px;
+	border-radius: 4px;
+	background-color: #3a4456;
+	color: #e8e8e8;
+}
+
+.sp-button:hover {
+	background-color: #4d5a72;
+}

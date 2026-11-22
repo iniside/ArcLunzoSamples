@@ -1,0 +1,21 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background: linear-gradient(to right, #ff0000 50%, #ff8800 50%) 0 0 / 200px 40px repeat-x, linear-gradient(#00ff00, #00ff00) 0 100% / 100% 1px repeat-x, linear-gradient(#0000ff, #0000ff) 0 200px / 100px 100px no-repeat;
+	background-color: #203050;
+}
+body.fade { opacity: 0.5; }
+body.slide { transform: translateX(100px); }
+#bb-button { position: absolute; left: 100px; top: 80px; width: 200px; height: 60px; background-color: #cc3366; }
+#bb-vw { position: absolute; left: 0; top: 400px; width: 100vw; height: 10px; background-color: #66ccaa; }
+#bb-media { position: absolute; left: 0; top: 420px; width: 50px; height: 10px; background-color: #aa0000; }
+@media (max-aspect-ratio: 16/9) {
+	#bb-media { background-color: #00aa00; }
+}
+#bb-off-box { position: absolute; left: -200px; top: 600px; width: 300px; height: 100px; background-color: #c0c0c1; box-shadow: 0px 0px 40px 20px #808081; }
+#bb-off-button { position: absolute; left: -200px; top: 800px; width: 300px; height: 100px; background-color: #c0a0c0; }
+#bb-anchor { position: absolute; left: 0; top: 0; width: 20px; height: 20px; background-color: #ffcc00; }
+#bb-none { display: none; position: absolute; left: 70px; top: 90px; width: 30px; height: 30px; }
+#bb-clip-parent { position: absolute; left: 20px; top: 1000px; width: 200px; height: 100px; overflow: hidden; }
+#bb-clip-none { position: absolute; left: -220px; top: 0; width: 500px; height: 100px; clip: none; background-color: #a0c0e0; }

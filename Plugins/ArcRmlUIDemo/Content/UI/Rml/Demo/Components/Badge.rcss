@@ -1,0 +1,61 @@
+.dk-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--ui-space-1);
+	padding: 2px var(--ui-space-2);
+	border-radius: var(--ui-radius-sm);
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: var(--ui-text-muted);
+	background: color-mix(in srgb, var(--ui-text-muted) 14%, transparent);
+	border: 1px solid color-mix(in srgb, var(--ui-text-muted) 45%, transparent);
+}
+
+.dk-badge.accent {
+	color: var(--ui-accent);
+	background: color-mix(in srgb, var(--ui-accent) 14%, transparent);
+	border: 1px solid color-mix(in srgb, var(--ui-accent) 45%, transparent);
+}
+
+.dk-badge.success {
+	color: var(--ui-success);
+	background: color-mix(in srgb, var(--ui-success) 14%, transparent);
+	border: 1px solid color-mix(in srgb, var(--ui-success) 45%, transparent);
+}
+
+.dk-badge.warning {
+	color: var(--ui-warning);
+	background: color-mix(in srgb, var(--ui-warning) 14%, transparent);
+	border: 1px solid color-mix(in srgb, var(--ui-warning) 45%, transparent);
+}
+
+.dk-badge.danger {
+	color: var(--ui-danger);
+	background: color-mix(in srgb, var(--ui-danger) 14%, transparent);
+	border: 1px solid color-mix(in srgb, var(--ui-danger) 45%, transparent);
+}
+
+.dk-badge.solid {
+	color: var(--ui-accent-text);
+	background: var(--ui-text-muted);
+}
+
+.dk-badge.solid.accent {
+	background: var(--ui-accent);
+}
+
+.dk-badge.solid.success {
+	background: var(--ui-success);
+}
+
+.dk-badge.solid.warning {
+	background: var(--ui-warning);
+}
+
+.dk-badge.solid.danger {
+	background: var(--ui-danger);
+}

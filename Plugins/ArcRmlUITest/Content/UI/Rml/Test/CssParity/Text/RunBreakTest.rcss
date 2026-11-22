@@ -1,0 +1,129 @@
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #202020;
+	color: #ffffff;
+	font-family: 'Space Grotesk';
+	font-size: 16px;
+}
+
+div {
+	display: block;
+}
+
+.line {
+	position: absolute;
+}
+
+.kerned {
+	left: 20px;
+	top: 10px;
+	width: 260px;
+	color: #d0a020;
+}
+
+.sweep {
+	left: 320px;
+	color: #a0d010;
+}
+
+.mono-wrap {
+	left: 600px;
+	top: 10px;
+	width: 100px;
+	font-family: 'JetBrains Mono';
+	font-size: 14px;
+	word-break: break-all;
+	color: #10a0d0;
+}
+
+.ign {
+	left: 20px;
+	font-family: 'JetBrains Mono';
+	font-size: 16px;
+	white-space: nowrap;
+}
+
+#ign-hangul { top: 300px; }
+#ign-filler { top: 330px; }
+#ign-bidi { top: 360px; }
+
+.measure {
+	left: 900px;
+	font-size: 20px;
+	white-space: nowrap;
+}
+
+#m-office { top: 10px; }
+#m-offi { top: 40px; }
+#m-o { top: 70px; }
+#m-ab { top: 100px; }
+#m-a { top: 130px; }
+
+.field {
+	position: absolute;
+	left: 700px;
+	width: 300px;
+	padding: 0;
+	margin: 0;
+	border-width: 0;
+	background-color: #303030;
+	color: #ffffff;
+	font-family: 'Space Grotesk';
+	font-size: 20px;
+}
+
+.lig-field {
+	top: 200px;
+	height: 30px;
+	caret-color: #ff0000;
+}
+
+.bidi-field {
+	top: 260px;
+	height: 30px;
+	caret-color: #ffff00;
+}
+
+.ta-field {
+	top: 320px;
+	height: 100px;
+	color: #ff8000;
+	caret-color: #00ff00;
+}
+
+
+.vat-0 {
+	top: 10px;
+	width: 46.5px;
+}
+
+.vat-1 {
+	top: 55px;
+	width: 48.5px;
+}
+
+.lava-0 {
+	top: 250px;
+	width: 49.5px;
+}
+
+.lava-1 {
+	top: 295px;
+	width: 51.5px;
+}
+
+.fit {
+	left: 20px;
+	color: #a0d010;
+}
+
+.fit-ya {
+	top: 450px;
+	width: 104px;
+}
+
+.fit-tokyo {
+	top: 480px;
+	width: 103px;
+}

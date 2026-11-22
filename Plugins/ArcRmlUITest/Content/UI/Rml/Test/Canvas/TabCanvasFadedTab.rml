@@ -1,0 +1,10 @@
+<rml>
+<head>
+	<title>Tab Canvas Faded Tab</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Canvas/TabCanvasFadedFrame.rml"/>
+	<link type="text/rcss" href="TabCanvasTab.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="tt-box"></div>
+</body>
+</rml>

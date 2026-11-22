@@ -1,0 +1,7 @@
+<component>
+	<prop name="value" default=""/>
+	<prop name="placeholder" default=""/>
+	<prop name="disabled"/>
+	<prop name="field" default=""/>
+	<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/TextField" icon="/ArcRmlUIDemo/UI/Rml/icons/search.svg" clearable="{{ true }}" value="{{ $value }}" placeholder="{{ $placeholder }}" disabled="{{ $disabled }}" field="{{ $field }}"/>
+</component>

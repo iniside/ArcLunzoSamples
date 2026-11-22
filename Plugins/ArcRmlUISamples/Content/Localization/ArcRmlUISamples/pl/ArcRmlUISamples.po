@@ -1,0 +1,64 @@
+﻿# ArcRmlUISamples Polish translation.
+# Copyright 2026 Lukasz Baran. All Rights Reserved.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ArcRmlUISamples\n"
+"POT-Creation-Date: 2026-11-19 08:32\n"
+"PO-Revision-Date: 2026-11-19 08:32\n"
+"Language-Team: \n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. Key:	AddCoin
+#. SourceLocation:	/ArcRmlUISamples/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+#: /ArcRmlUISamples/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+msgctxt "/ArcRmlUISamples/UI/Rml/Localization/Localization.rml,AddCoin"
+msgid "Add a coin"
+msgstr "Dodaj monetę"
+
+#. Key:	Coins
+#. SourceLocation:	/ArcRmlUISamples/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+#: /ArcRmlUISamples/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+msgctxt "/ArcRmlUISamples/UI/Rml/Localization/Localization.rml,Coins"
+msgid "{0}|plural(one={0} coin,other={0} coins)"
+msgstr "{0}|plural(one={0} moneta,few={0} monety,many={0} monet,other={0} monety)"
+
+#. Key:	CultureLabel
+#. SourceLocation:	/ArcRmlUISamples/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+#: /ArcRmlUISamples/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+msgctxt "/ArcRmlUISamples/UI/Rml/Localization/Localization.rml,CultureLabel"
+msgid "Culture:"
+msgstr "Kultura:"
+
+#. Key:	Intro
+#. SourceLocation:	/ArcRmlUISamples/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+#: /ArcRmlUISamples/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+msgctxt "/ArcRmlUISamples/UI/Rml/Localization/Localization.rml,Intro"
+msgid "Every text with a loc attribute comes from the String Table ST_Localization."
+msgstr "Każdy tekst z atrybutem loc pochodzi z tabeli ST_Localization."
+
+#. Key:	PurseLabel
+#. SourceLocation:	/ArcRmlUISamples/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+#: /ArcRmlUISamples/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+msgctxt "/ArcRmlUISamples/UI/Rml/Localization/Localization.rml,PurseLabel"
+msgid "Purse:"
+msgstr "Sakiewka:"
+
+#. Key:	Title
+#. SourceLocation:	/ArcRmlUISamples/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+#: /ArcRmlUISamples/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+msgctxt "/ArcRmlUISamples/UI/Rml/Localization/Localization.rml,Title"
+msgid "Localization"
+msgstr "Lokalizacja"
+
+#. Key:	Welcome
+#. SourceLocation:	/ArcRmlUISamples/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+#: /ArcRmlUISamples/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+msgctxt "/ArcRmlUISamples/UI/Rml/Localization/Localization.rml,Welcome"
+msgid "Welcome, traveler!"
+msgstr "Witaj, wędrowcze!"
+

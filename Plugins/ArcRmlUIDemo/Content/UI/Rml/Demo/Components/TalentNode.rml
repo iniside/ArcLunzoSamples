@@ -1,0 +1,22 @@
+<component>
+	<prop name="state" default="locked"/>
+	<prop name="keystone"/>
+	<prop name="icon" default="star"/>
+	<prop name="rank" default="0"/>
+	<prop name="maxRank" default="1"/>
+	<prop name="hideRank"/>
+	<prop name="x" default=""/>
+	<prop name="y" default=""/>
+	<prop name="selected"/>
+	<prop name="nodeId" default=""/>
+	<prop name="navUp" default=""/>
+	<prop name="navDown" default=""/>
+	<prop name="navLeft" default=""/>
+	<prop name="navRight" default=""/>
+	<prop name="focusable"/>
+	<div class="dk-talentnode" data-class-available="$state == 'available'" data-class-allocated="$state == 'allocated'" data-class-maxed="$state == 'maxed'" data-class-keystone="$keystone" data-class-placed="$x != ''" data-class-selected="$selected" data-class-focusable="$focusable" data-attrif-selected="$selected" data-attr-id="$nodeId" data-style-left="$x != '' ? ($x - ($keystone ? 38 : 28)) + 'px' : 'auto'" data-style-top="$y != '' ? ($y - ($keystone ? 38 : 28)) + 'px' : 'auto'" data-style-nav-up="$navUp != '' ? '#' + $navUp : 'auto'" data-style-nav-down="$navDown != '' ? '#' + $navDown : 'auto'" data-style-nav-left="$navLeft != '' ? '#' + $navLeft : 'auto'" data-style-nav-right="$navRight != '' ? '#' + $navRight : 'auto'">
+		<span class="dk-talentnode-halo" data-if="$state == 'available'"></span>
+		<i class="dk-talentnode-icon"><svg data-attr-src="$icon" data-attr-width="$keystone ? 32 : 24" data-attr-height="$keystone ? 32 : 24" stroke-width="2"/></i>
+		<span class="dk-talentnode-rank" data-if="!$hideRank">{{ $rank + '/' + $maxRank }}</span>
+	</div>
+</component>

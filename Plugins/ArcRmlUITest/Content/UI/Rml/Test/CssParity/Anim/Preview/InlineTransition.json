@@ -1,0 +1,8 @@
+{
+	"cls": "100",
+	"timing": "100",
+	"timingTransition": "width 1s linear",
+	"rev": "100",
+	"ret": "100",
+	"kf": "50"
+}

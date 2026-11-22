@@ -1,0 +1,263 @@
+body {
+	width: 100%;
+	height: 100%;
+}
+
+div {
+	display: block;
+}
+
+.panel {
+	position: absolute;
+	background-color: #141821;
+}
+
+.c1 { background-color: #3a86ff; }
+.c2 { background-color: #ff006e; }
+.c3 { background-color: #ffbe0b; }
+
+#tiles {
+	left: 20px;
+	top: 20px;
+	width: 480px;
+	display: grid;
+	grid-template-columns: repeat(8, minmax(0, 1fr));
+	gap: 8px;
+}
+
+.sq {
+	aspect-ratio: 1;
+	background-color: #3a86ff;
+}
+
+.sq.alt {
+	background-color: #ff006e;
+}
+
+#tab {
+	left: 20px;
+	top: 150px;
+	width: 480px;
+}
+
+.tab-grid {
+	display: grid;
+	grid-template-columns: repeat(8, minmax(0, 1fr));
+	gap: 6px;
+	padding: 12px 16px 16px;
+}
+
+.tile {
+	aspect-ratio: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 4px;
+	background-color: #3a86ff;
+}
+
+.tile.alt {
+	background-color: #ff006e;
+}
+
+.tile-label {
+	height: 10px;
+	background-color: #000000;
+}
+
+#flex1 {
+	left: 20px;
+	top: 310px;
+	width: 480px;
+	height: 100px;
+	display: flex;
+}
+
+.f1 {
+	aspect-ratio: 1;
+}
+
+#flex3 {
+	left: 20px;
+	top: 430px;
+	width: 300px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.f3 {
+	flex: 1 1 0;
+	aspect-ratio: 1;
+}
+
+#gridratio {
+	left: 20px;
+	top: 550px;
+	width: 300px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 120px;
+}
+
+.gr-a {
+	aspect-ratio: 2;
+	background-color: #3a86ff;
+}
+
+.gr-b {
+	height: 100px;
+	aspect-ratio: 1;
+	background-color: #ff006e;
+}
+
+#flex2 {
+	left: 540px;
+	top: 20px;
+	width: 300px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.f2a { width: 60px; aspect-ratio: 2; }
+.f2b { width: 40px; aspect-ratio: 1; }
+.f2c { width: 80px; aspect-ratio: 4/3; }
+
+#flex4 {
+	left: 540px;
+	top: 110px;
+	width: 300px;
+	display: flex;
+}
+
+.f4a { width: 60px; aspect-ratio: 2; }
+.f4b { width: 40px; aspect-ratio: 1; }
+
+#minh {
+	left: 540px;
+	top: 190px;
+	width: 300px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.mh-a { aspect-ratio: 1; min-height: 80px; }
+.mh-b { width: 40px; aspect-ratio: 2; min-height: 50px; }
+
+#border {
+	left: 540px;
+	top: 300px;
+	width: 300px;
+}
+
+.bb {
+	box-sizing: border-box;
+	width: 200px;
+	padding: 10px;
+	border: 4px solid #ffffff;
+	aspect-ratio: 2;
+	background-color: #3a86ff;
+}
+
+.cb {
+	margin-top: 10px;
+	width: 200px;
+	padding: 10px;
+	border: 4px solid #ffffff;
+	aspect-ratio: 2;
+	background-color: #ff006e;
+}
+
+#blocks {
+	left: 880px;
+	top: 20px;
+	width: 240px;
+}
+
+.b1 { width: 50%; aspect-ratio: 16/9; background-color: #3a86ff; }
+.b2 { margin-top: 6px; width: 100%; aspect-ratio: 16 / 9; background-color: #ff006e; }
+.b3 { margin-top: 6px; height: 40px; aspect-ratio: 2; background-color: #ffbe0b; }
+.b4 { margin-top: 6px; width: 100%; aspect-ratio: auto 3/2; background-color: #00ff88; }
+
+#replaced {
+	left: 880px;
+	top: 470px;
+	width: 240px;
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.s1 { width: 60px; }
+.s2 { width: 60px; aspect-ratio: 1; }
+.s3 { width: 60px; aspect-ratio: auto 1; }
+
+#imgrow {
+	left: 1160px;
+	top: 20px;
+	display: grid;
+	grid-template-columns: 200px;
+	background-color: #00ff88;
+}
+
+#maxw {
+	left: 1160px;
+	top: 80px;
+	display: grid;
+	grid-template-columns: 300px;
+	background-color: #00ff88;
+}
+
+.mw {
+	aspect-ratio: 1;
+	max-width: 100px;
+	background-color: #3a86ff;
+}
+
+#stretch {
+	left: 1160px;
+	top: 210px;
+	display: grid;
+	grid-template-columns: 100px 100px;
+	grid-template-rows: 200px;
+	column-gap: 10px;
+	background-color: #00ff88;
+}
+
+.st-normal {
+	aspect-ratio: 1;
+	background-color: #3a86ff;
+}
+
+.st-explicit {
+	aspect-ratio: 1;
+	align-self: stretch;
+	background-color: #ff006e;
+}
+
+#mq {
+	left: 1160px;
+	top: 440px;
+	display: flex;
+	gap: 10px;
+}
+
+#mq div {
+	width: 40px;
+	height: 40px;
+}
+
+#mq-a { background-color: #ff0000; }
+#mq-b { background-color: #00ff88; }
+#mq-c { background-color: #ff0000; }
+
+@media (min-aspect-ratio: 1/2) {
+	#mq-a { background-color: #00ff88; }
+}
+
+@media (max-aspect-ratio: 1/100) {
+	#mq-b { background-color: #ff0000; }
+}
+
+@media (aspect-ratio: 1.5) {
+	#mq-c { background-color: #00ff88; }
+}

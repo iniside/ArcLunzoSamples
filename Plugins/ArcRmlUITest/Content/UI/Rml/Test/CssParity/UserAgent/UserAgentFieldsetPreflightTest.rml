@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>UserAgentFieldsetPreflightTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/UserAgent/UserAgentFieldsetPreflight.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="uf-before" class="before"></div>
+	<fieldset id="uf-fieldset"><p id="uf-p" class="mt16">Paragraph</p></fieldset>
+	<fieldset id="uf-legend-fieldset"><legend id="uf-legend">Legend</legend><div id="uf-legend-next">Next</div></fieldset>
+	<fieldset id="uf-float-fieldset"><div id="uf-float" class="float"></div></fieldset>
+	<div id="uf-after">After</div>
+</body>
+</rml>

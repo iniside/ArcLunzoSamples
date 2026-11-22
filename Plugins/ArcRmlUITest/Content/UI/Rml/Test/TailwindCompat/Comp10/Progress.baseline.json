@@ -1,0 +1,17 @@
+{
+	"reference_sha1": "663176DF39C25F8B3D4AAFBD7AA184D239173B87",
+	"tol": 1,
+	"mismatches":
+	{
+		"0|scroll_size.h":
+		{
+			"rmlui": 84,
+			"chrome": 1080,
+			"diff": 996
+		}
+	},
+	"missing": [],
+	"unmatched":
+	{
+	}
+}

@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Perf Probe Trace Counters Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="TraceCounters.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="row"><div class="bar"></div><span>Alpha</span></div>
+	<div class="row"><div class="bar"></div><span>Beta</span></div>
+	<div class="row"><div class="bar"></div><span>Gamma</span></div>
+</body>
+</rml>

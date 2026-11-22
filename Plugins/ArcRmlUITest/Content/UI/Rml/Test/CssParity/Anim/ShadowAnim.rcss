@@ -1,0 +1,92 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.box {
+	display: block;
+	width: 40px;
+	height: 16px;
+	margin: 12px;
+}
+
+.text {
+	display: block;
+	height: 24px;
+}
+
+@keyframes a0 { from { box-shadow: 0 0 0 0 red; } to { box-shadow: 4px 8px 12px 2px blue; } }
+#k-basic {  animation: a0 1s linear 0s 1 both; }
+
+@keyframes a1 { from { box-shadow: 2px 2px 0 0 red; } to { box-shadow: 2px 2px 0 0 blue, 4px 4px 4px 0 green; } }
+#k-one-two {  animation: a1 1s linear 0s 1 both; }
+
+@keyframes a2 { from { box-shadow: 2px 2px 0 0 red, inset 4px 4px 4px 0 green; } to { box-shadow: 6px 6px 2px 0 blue; } }
+#k-two-one {  animation: a2 1s linear 0s 1 both; }
+
+@keyframes a3 { from { box-shadow: 2px 2px 0 0 red; } to { box-shadow: inset 2px 2px 0 0 blue; } }
+#k-inset {  animation: a3 1s linear 0s 1 both; }
+
+@keyframes a4 { from { box-shadow: none; } to { box-shadow: 4px 4px 4px 2px blue; } }
+#k-none {  animation: a4 1s linear 0s 1 both; }
+
+@keyframes a5 { from { box-shadow: inset 4px 4px 4px 2px blue; } to { box-shadow: none; } }
+#k-inset-none {  animation: a5 1s linear 0s 1 both; }
+
+@keyframes a6 { from { box-shadow: 0 0 0 0 currentcolor; } to { box-shadow: 4px 4px 4px 0 blue; } }
+#k-current { color: #00ff00; animation: a6 1s linear 0s 1 both; }
+
+@keyframes a7 { from { box-shadow: 0 0; } to { box-shadow: 4px 4px; } }
+#k-nocolor { color: #ff8000; animation: a7 1s linear 0s 1 both; }
+
+@keyframes a8 { from { box-shadow: 0.5em 0 0 0 red; } to { box-shadow: 24px 0 0 0 red; } }
+#k-units { font-size: 16px; animation: a8 1s linear 0s 1 both; }
+
+@keyframes a9 { from { box-shadow: 0 0 0 0 color-mix(in srgb, red 50%, blue); } to { box-shadow: 4px 4px 0 0 green; } }
+#k-mix {  animation: a9 1s linear 0s 1 both; }
+
+@keyframes a10 { from { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.2); } to { box-shadow: 4px 4px 0 0 rgba(0, 0, 255, 1); } }
+#k-alpha {  animation: a10 1s linear 0s 1 both; }
+
+@keyframes a11 { from { text-shadow: 0 0 0 red; } to { text-shadow: 4px 4px 2px blue; } }
+#kt-basic {  animation: a11 1s linear 0s 1 both; }
+
+@keyframes a12 { from { text-shadow: 1px 1px 0 red; } to { text-shadow: 2px 2px 0 blue, 4px 4px 2px green; } }
+#kt-one-two {  animation: a12 1s linear 0s 1 both; }
+
+@keyframes a13 { from { text-shadow: none; } to { text-shadow: 2px 2px 2px blue; } }
+#kt-none {  animation: a13 1s linear 0s 1 both; }
+
+@keyframes a14 { from { text-shadow: 0 0 0 currentcolor; } to { text-shadow: 4px 4px 2px blue; } }
+#kt-current { color: #00ff00; animation: a14 1s linear 0s 1 both; }
+
+@keyframes f0 { from { filter: drop-shadow(0 0 0 red); } to { filter: drop-shadow(4px 4px 2px blue); } }
+#k-filter {  animation: f0 1s linear 0s 1 both; }
+
+@keyframes f1 { from { filter: none; } to { filter: drop-shadow(4px 4px 2px blue); } }
+#k-filter-none {  animation: f1 1s linear 0s 1 both; }
+
+@keyframes f2 { from { filter: drop-shadow(0 0 0 currentcolor); } to { filter: drop-shadow(4px 4px 2px blue); } }
+#k-filter-current { color: #00ff00; animation: f2 1s linear 0s 1 both; }
+
+@keyframes u0 { from { box-shadow: 2px 2px red; } to { box-shadow: 4px 4px 4px 2px blue; } }
+#k-unset {  animation: u0 1s linear 0s 1 both; }
+
+@keyframes u1 { from { text-shadow: 2px 2px red; } to { text-shadow: 4px 4px 2px blue; } }
+#kt-unset {  animation: u1 1s linear 0s 1 both; }
+
+@keyframes o0 { from { box-shadow: 10px 10px 0 red; } to { box-shadow: 10px 10px 8px red; } }
+#k-over {  animation: o0 1s cubic-bezier(.5,-0.6,.5,1) 0s 1 both; }
+
+@keyframes o1 { from { filter: drop-shadow(10px 10px 0 red); } to { filter: drop-shadow(10px 10px 8px red); } }
+#k-over-filter {  animation: o1 1s cubic-bezier(.5,-0.6,.5,1) 0s 1 both; }
+
+@keyframes o2 { from { box-shadow: 0 0 0 -4px red; } to { box-shadow: 0 0 0 4px blue; } }
+#k-negspread {  animation: o2 1s linear 0s 1 both; }
+
+@keyframes o3 { from { color: red; } to { color: lime; } }
+@keyframes o4 { from { box-shadow: 0 0 0 0 blue; } to { box-shadow: 0 0 0 0 currentcolor; } }
+#k-colouranim {  animation: o3 1s linear 0s 1 both, o4 1s linear 0s 1 both; }

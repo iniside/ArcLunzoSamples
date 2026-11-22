@@ -1,0 +1,18 @@
+<rml>
+<head>
+	<title>Sound Area Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="SoundArea.rcss"/>
+	<viewmodel name="sa" preview="Preview/SoundArea.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="sa">
+<div class="sa-root" data-focus-area="top">
+	<div class="sa-btn" id="sa-top-1">Top 1</div>
+	<div class="sa-leaf" data-focus-area="leaf" data-focus-parent="top" data-focus-primary="">
+		<div class="sa-btn" id="sa-leaf-1">Leaf 1</div>
+		<div class="sa-btn" id="sa-leaf-2">Leaf 2</div>
+	</div>
+</div>
+</body>
+</rml>

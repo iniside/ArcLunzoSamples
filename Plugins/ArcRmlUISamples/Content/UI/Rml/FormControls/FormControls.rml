@@ -1,0 +1,41 @@
+<rml>
+<head>
+	<title>Form controls</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="FormControls.rcss"/>
+	<viewmodel name="fc" class="/Script/ArcRmlUISamples.ArcRmlSamplesFormControlsViewModel" create="true"/>
+</head>
+<body data-model="fc">
+	<div class="fc-panel">
+		<h1 class="fc-title">Form controls</h1>
+		<div class="fc-row">
+			<input id="fc-subtitles" type="checkbox" autofocus=""
+				data-checked="bSubtitles"
+				data-event-change="call('', 'SetSubtitles', ev.checked)"/>
+			<label for="fc-subtitles">Subtitles</label>
+		</div>
+		<p class="fc-label">Class (radio group)</p>
+		<div class="fc-row">
+			<input id="fc-warrior" type="radio" name="class" value="warrior"
+				data-checked="ClassName" data-event-change="call('', 'SetClassName', ev.value)"/> Warrior
+			<input id="fc-mage" type="radio" name="class" value="mage"
+				data-checked="ClassName" data-event-change="call('', 'SetClassName', ev.value)"/> Mage
+			<input id="fc-rogue" type="radio" name="class" value="rogue"
+				data-checked="ClassName" data-event-change="call('', 'SetClassName', ev.value)"/> Rogue
+		</div>
+		<p class="fc-label">Volume (range)</p>
+		<input id="fc-volume" class="fc-range" type="range" min="0" max="100" step="5"
+			data-value="Volume"
+			data-event-input="call('', 'SetVolume', ev.value)"/>
+		<p class="fc-label">Quality (select)</p>
+		<select id="fc-quality" data-attr-value="Quality" data-event-change="call('', 'SetQuality', ev.value)">
+			<option value="low">Low</option>
+			<option value="medium">Medium</option>
+			<option value="high">High</option>
+		</select>
+		<p id="fc-readout" class="fc-result">Subtitles: {{ bSubtitles ? 'on' : 'off' }}, class: {{ ClassName }}, volume: {{ Volume }}, quality: {{ Quality }}</p>
+	</div>
+</body>
+</rml>

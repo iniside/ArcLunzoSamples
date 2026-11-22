@@ -1,0 +1,55 @@
+.lc-panel {
+	position: absolute;
+	left: 80px;
+	top: 60px;
+	width: 680px;
+	padding: 24px 32px;
+	background-color: rgba(20, 24, 32, 0.9);
+	border-radius: 8px;
+}
+
+.lc-title {
+	display: block;
+	font-size: 36px;
+	margin-bottom: 12px;
+}
+
+.lc-text {
+	margin-bottom: 12px;
+}
+
+.lc-plain {
+	margin-bottom: 16px;
+	color: #9aa6ba;
+}
+
+.lc-row {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 16px;
+}
+
+.lc-value {
+	color: #ffd27a;
+}
+
+.lc-buttons {
+	display: flex;
+	gap: 8px;
+}
+
+.lc-button {
+	padding: 8px 20px;
+	border-radius: 4px;
+	background-color: #3a4456;
+	color: #e8e8e8;
+}
+
+.lc-button.selected {
+	background-color: #5a6b2f;
+}
+
+.lc-button:focus-visible {
+	background-color: #2f6fb0;
+}

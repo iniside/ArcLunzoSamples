@@ -1,0 +1,20 @@
+<rml>
+<head>
+	<title>Idle Backdrop</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="Idle.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="solid"></div>
+	<div id="behind"></div>
+	<div id="glass"></div>
+	<div id="after"></div>
+	<div id="text" class="t">Glass text</div>
+	<div id="half"></div>
+	<div id="round"><div id="roundkid"></div></div>
+	<div id="opacity"></div>
+	<div id="grad"></div>
+	<div id="rot"></div>
+</body>
+</rml>

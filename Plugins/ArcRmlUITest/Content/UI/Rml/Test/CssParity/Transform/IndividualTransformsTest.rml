@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Individual Transforms Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Transform/IndividualTransforms.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="row"><div id="it-compose" class="box"></div></div>
+	<div class="row"><div id="it-half" class="box wide"></div></div>
+	<div class="row"><div id="it-scale" class="box wide"></div></div>
+	<div class="row"><div id="it-rotate" class="box wide"></div></div>
+	<div class="row"><div id="it-order" class="box"></div></div>
+	<div class="row"><div id="it-var" class="box wide"></div></div>
+	<div class="row"><div id="it-scale-two" class="box wide"></div></div>
+	<div class="row"><div id="it-translate-anim" class="box wide"></div></div>
+	<div class="row"><div id="it-scale-anim" class="box wide"></div></div>
+	<div class="row"><div id="it-rotate-scale" class="box"></div></div>
+	<div class="row"><div id="it-rotate-transform" class="box"></div></div>
+</body>
+</rml>

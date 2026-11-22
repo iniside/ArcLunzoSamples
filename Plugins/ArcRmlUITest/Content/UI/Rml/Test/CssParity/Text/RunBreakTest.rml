@@ -1,0 +1,30 @@
+<rml>
+<head>
+	<title>Run Break Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/RunBreakTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="kerned" class="line kerned">AVATAR WAVE Tokyo Yacht Taffy LAVA AWAY Typography VAT YAW Wavy Toy AVOW Tyre Vault Yoyo TAV AT AV To Ya</div>
+	<div id="vat-0" class="line sweep vat-0">to VAT YAW</div>
+	<div id="vat-1" class="line sweep vat-1">to VAT YAW</div>
+	<div id="lava-0" class="line sweep lava-0">a LAVA AWAY</div>
+	<div id="lava-1" class="line sweep lava-1">a LAVA AWAY</div>
+	<div id="fit-ya" class="line fit fit-ya">VAT VAT AWAY</div>
+	<div id="fit-tokyo" class="line fit fit-tokyo">VAT AWAY Yes</div>
+	<div id="mono-wrap" class="line mono-wrap">a-&gt;b!=c=&gt;d===e|&gt;f&lt;=g&gt;=h--i++j::k</div>
+	<div id="ign-hangul" class="line ign">aㅤb</div>
+	<div id="ign-filler" class="line ign">aᅟb</div>
+	<div id="ign-bidi" class="line ign">a‎b</div>
+	<div id="m-office" class="line measure">office</div>
+	<div id="m-offi" class="line measure">offi</div>
+	<div id="m-o" class="line measure">o</div>
+	<div id="m-ab" class="line measure">ab</div>
+	<div id="m-a" class="line measure">a</div>
+	<input id="in-lig" class="field lig-field" type="text" value="office"/>
+	<input id="in-bidi" class="field bidi-field" type="text" value="a‎b"/>
+	<textarea id="ta" class="field ta-field">ab
+cd</textarea>
+</body>
+</rml>

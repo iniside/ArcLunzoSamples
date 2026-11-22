@@ -1,0 +1,21 @@
+/* Minimal HTML UA defaults for the b1 measurement, from HTML Standard section 15 (Rendering).
+   Only defaults Tailwind preflight does not reset; unsupported values are replaced by the
+   nearest supported one and noted. */
+address, blockquote, center, dialog, div, figure, figcaption, footer, form, header, hr, legend,
+main, p, pre, search, article, aside, h1, h2, h3, h4, h5, h6, hgroup, nav, section,
+dd, dl, dt, menu, ol, ul, fieldset, details, summary, li { display: block; }
+table { display: table; }
+colgroup { display: table-column-group; }
+col { display: table-column; }
+thead, tbody, tfoot { display: table-row-group; }
+tr { display: table-row; }
+td, th { display: table-cell; }
+input, select, button, textarea { display: inline-block; }
+area, base, datalist, head, link, meta, script, style, template, title { display: none; }
+[hidden] { display: none; }
+dialog { position: absolute; left: 0; right: 0; margin: auto; }
+th { font-weight: bold; text-align: center; }
+b, strong { font-weight: bold; }
+i, em, cite, var, dfn { font-style: italic; }
+button { text-align: center; }
+textarea { white-space: pre-wrap; }

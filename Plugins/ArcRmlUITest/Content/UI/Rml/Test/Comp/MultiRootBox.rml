@@ -1,0 +1,5 @@
+<component>
+	<div class="mrb"
+		style="colr: orange;"><slot/></div>
+	<div class="mrb-after" style="colr: olive;">after</div>
+</component>

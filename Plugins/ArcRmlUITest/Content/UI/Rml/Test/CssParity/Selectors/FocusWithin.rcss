@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+}
+
+div {
+	display: block;
+}
+
+.fw {
+	padding-top: 0;
+}
+
+.fw:focus-within {
+	padding-top: 4px;
+}
+
+.field {
+	display: block;
+	box-sizing: border-box;
+	width: 30px;
+	height: 10px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.field:focus-within {
+	width: 50px;
+}
+
+.mark {
+	width: 40px;
+	height: 10px;
+}
+
+#outer:focus-within .mark {
+	width: 70px;
+}
+
+.after {
+	width: 40px;
+	height: 10px;
+}
+
+.fw:focus-within + .after {
+	height: 20px;
+}

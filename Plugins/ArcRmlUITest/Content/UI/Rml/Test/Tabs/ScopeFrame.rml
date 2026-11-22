@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>Scope Frame</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<link type="text/rcss" href="ScopeFrame.rcss"/>
+	<viewmodel name="scopeframe" preview="Preview/ScopeFrame.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="scopeframe">
+	<div id="sf-hover">frame hover</div>
+	<div id="sf-plain">frame plain</div>
+	<div class="embed" arc-embed=""></div>
+</body>
+</rml>

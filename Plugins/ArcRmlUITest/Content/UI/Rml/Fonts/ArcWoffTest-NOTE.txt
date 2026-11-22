@@ -1,0 +1,4 @@
+ArcWoffTest.woff is JetBrains Mono renamed for the WOFF loading tests.
+Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
+Licensed under the SIL Open Font License, Version 1.1; see OFL-JetBrainsMono.txt.
+No Reserved Font Name applies.

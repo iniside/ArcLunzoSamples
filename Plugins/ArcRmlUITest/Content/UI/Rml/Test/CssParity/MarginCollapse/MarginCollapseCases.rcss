@@ -1,0 +1,48 @@
+.mcc-gap {
+	height: 30px;
+}
+
+#mcc-mixed-parent {
+	margin-top: 20px;
+}
+
+#mcc-mixed-p {
+	margin-top: -10px;
+}
+
+#mcc-neg-parent {
+	margin-top: -5px;
+}
+
+#mcc-neg-p {
+	margin-top: -12px;
+}
+
+#mcc-negbottom-parent {
+	margin-bottom: 20px;
+}
+
+#mcc-negbottom-p {
+	margin-bottom: -8px;
+}
+
+#mcc-overflow {
+	overflow: hidden;
+}
+
+#mcc-height {
+	height: 60px;
+}
+
+#mcc-padbottom {
+	padding-bottom: 4px;
+}
+
+#mcc-flex {
+	display: flex;
+	margin-top: 24px;
+}
+
+#mcc-flexrow {
+	display: flex;
+}

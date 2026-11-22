@@ -1,0 +1,7 @@
+<component>
+	<prop name="hud"/>
+	<div class="tf">
+		<dc-import name="/ArcRmlUITest/UI/Rml/Components/TestMember" item="{{ $hud.Item }}"/>
+		<dc-import name="/ArcRmlUITest/UI/Rml/Components/TestSlots" title="Forwarded" rows="{{ $hud.Rows }}"/>
+	</div>
+</component>

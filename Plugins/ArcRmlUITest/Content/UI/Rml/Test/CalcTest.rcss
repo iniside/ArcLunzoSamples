@@ -1,0 +1,95 @@
+body {
+	width: 100%;
+	height: 100%;
+}
+
+div {
+	display: block;
+}
+
+.panel {
+	position: absolute;
+	background-color: #101010;
+	--gap: 8px;
+}
+
+#ruler {
+	position: absolute;
+	left: 20px;
+	top: 4px;
+	width: 100px;
+	height: 8px;
+	background-color: #01fe81;
+}
+
+#keybinds { left: 20px; top: 20px; width: 300px; height: 110px; }
+.slot { position: absolute; top: 10px; width: 46px; height: 46px; }
+.slot-a { left: 10px; background-color: #3a3a90; }
+.slot-b { left: 90px; background-color: #903a3a; }
+.slot-c { left: 170px; background-color: #3a903a; }
+.key { position: absolute; }
+.key-top4 { top: calc(100% + 4px); left: 0px; width: 46px; height: 10px; background-color: #ffff00; }
+.key-top3 { top: calc(100% + 3px); left: 0px; width: 46px; height: 10px; background-color: #ff00ff; }
+.key-left3 { left: calc(100% + 3px); top: 0px; width: 10px; height: 46px; background-color: #00ffff; }
+
+#sizes { left: 20px; top: 150px; width: 400px; font-size: 16px; }
+.bar { height: 14px; margin-bottom: 4px; }
+.w-half { width: calc(50% - 10px); background-color: #ff0000; }
+.w-min-a { width: min(150px, 50%); background-color: #00ff00; }
+.w-min-b { width: min(300px, 25%); background-color: #0000ff; }
+.w-max-a { width: max(100px, 30%); background-color: #ff8000; }
+.w-max-b { width: max(250px, 30%); background-color: #8000ff; }
+.w-clamp { width: clamp(100px, 30vw, 400px); background-color: #00ff80; }
+.w-clamp-low { width: clamp(100px, 1vw, 400px); background-color: #ff0080; }
+.w-nested { width: calc((100% - var(--gap)) / 2 + min(10%, 1em * 2)); background-color: #80ff00; }
+.w-fold { width: calc(10px * 3 + 20px); background-color: #0080ff; }
+.w-invalid { width: 60px; width: calc(100%-4px); background-color: #ffffff; }
+.w-em { font-size: 20px; width: calc(5em + 10%); background-color: #ff4040; }
+
+#spacing { left: 460px; top: 20px; width: 300px; height: 120px; font-size: 16px; }
+.pad { width: 200px; height: 40px; padding-left: calc(10% + 5px); padding-top: calc(1% + 2px); background-color: #404080; }
+.pad-inner { width: 50px; height: 20px; background-color: #ffff80; }
+.margin-box { width: 50px; height: 20px; margin-left: calc(20% - 10px); margin-top: calc(1em + 2px); background-color: #80ffff; }
+
+#gap { left: 460px; top: 160px; width: 400px; height: 50px; display: flex; column-gap: calc(5% + 2px); }
+.gap-item { width: 50px; height: 40px; }
+.gap-a { background-color: #c00000; }
+.gap-b { background-color: #00c000; }
+.gap-c { background-color: #0000c0; }
+
+#grid {
+	left: 460px; top: 230px; width: 400px; height: 120px;
+	display: grid;
+	grid-template-columns: calc(100px + 10%) 1fr;
+	grid-template-rows: 40px calc(20% + 10px);
+	column-gap: calc(2% + 2px);
+	row-gap: 4px;
+}
+.cell-a { background-color: #c08000; }
+.cell-b { background-color: #00c080; }
+.cell-c { background-color: #8000c0; }
+.cell-d { background-color: #c00080; }
+
+#insets { left: 900px; top: 20px; width: 300px; height: 100px; }
+.inset-box { position: absolute; left: calc(10% + 5px); right: calc(20% - 10px); top: calc(50% - 10px); height: 20px; background-color: #c0c000; }
+
+@keyframes calc-grow {
+	from { width: 50px; }
+	to { width: calc(50% + 10px); }
+}
+#anim { left: 900px; top: 140px; width: 300px; height: 40px; }
+.anim-box { height: 30px; background-color: #00c0c0; animation: 2s cubic-in-out infinite alternate calc-grow; }
+
+#neg { left: 20px; top: 400px; width: 400px; font-size: 16px; }
+.n-pct { width: calc(50% - 300px); border-left: 2px solid #ffffff; background-color: #ff0000; }
+.n-em { width: calc(1em - 20px); border-left: 2px solid #ffffff; background-color: #00ff00; }
+.n-fold { width: calc(10px - 20px); border-left: 2px solid #ffffff; background-color: #0000ff; }
+.n-margin { width: 50px; margin-left: calc(10% - 60px); background-color: #ff8000; }
+.n-tokens { width: 60px; width: calc(10px- 5px); background-color: #8000ff; }
+.neg-row { height: 20px; margin-bottom: 4px; }
+#neg-gap { display: flex; column-gap: calc(5% - 30px); }
+#neg-gap .gap-item { height: 20px; }
+#neg-basis { display: flex; }
+.basis-item { flex: 0 0 auto; flex-basis: calc(10% - 50px); height: 20px; border-left: 2px solid #ffffff; background-color: #ff00ff; }
+#neg-basis .gap-item { flex: 0 0 auto; height: 20px; }
+#neg-grid { display: grid; grid-template-columns: calc(10px - 20px) 100px; }

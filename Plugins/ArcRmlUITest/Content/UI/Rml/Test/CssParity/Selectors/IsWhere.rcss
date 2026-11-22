@@ -1,0 +1,69 @@
+:root {
+	--spacing: .25rem;
+	--color-brand: #3366cc;
+	--color-accent: #cc3366;
+	--color-line: #00aa55;
+}
+
+*, ::before, ::after {
+	--tw-space-y-reverse: 0;
+	--tw-divide-y-reverse: 0;
+	--tw-border-style: solid;
+}
+
+body {
+	display: block;
+}
+
+div, p, span {
+	display: block;
+}
+
+.box {
+	height: 10px;
+	width: 40px;
+	background-color: #808080;
+}
+
+:where(.space-y-4>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)))}
+:where(.space-y-1\.5>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing) * 1.5) * var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing) * 1.5) * calc(1 - var(--tw-space-y-reverse)))}
+:where(.divide-y>:not(:last-child)){--tw-divide-y-reverse:0;border-bottom-style:var(--tw-border-style);border-top-style:var(--tw-border-style);border-top-width:calc(1px * var(--tw-divide-y-reverse));border-bottom-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)))}
+:where(.divide-line>:not(:last-child)){border-color:var(--color-line)}
+@media (hover:hover){.group-hover\:bg-brand:is(:where(.group):hover *){background-color:var(--color-brand)}}
+
+:where(.a) p {
+	background-color: #ff0000;
+	border-top-color: #ff00aa;
+}
+
+p {
+	height: 10px;
+	width: 40px;
+	background-color: #00ff00;
+}
+
+:is(.b, #c) span {
+	background-color: #0000ff;
+}
+
+.b span.x {
+	background-color: #ffff00;
+}
+
+.nest:not(:is(.n1, .n2)) {
+	background-color: #ff8000;
+}
+
+.nest:is(:not(.n1)):where(.n3) {
+	border-top-color: #8000ff;
+}
+
+:is(:bogus-state, ::before .x, .forgiving) {
+	background-color: #008080;
+}
+
+.esc:not(.md\:x) {
+	background-color: #a0522d;
+}
+
+body { margin: 0; }

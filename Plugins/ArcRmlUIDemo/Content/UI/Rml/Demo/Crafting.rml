@@ -1,0 +1,103 @@
+<rml>
+<head>
+	<title>ArcRmlUI Demo Crafting</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="hide-lower" content="true"/>
+	<meta name="keep-alive" content="true"/>
+	<meta name="input-mapping" content="/ArcRmlUIDemo/Demo/Input/IMC_ArcDemo_Crafting"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/tokens.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Fonts/Fonts.rcss"/>
+	<link type="text/rcss" href="GameUI.rcss"/>
+	<link type="text/rcss" href="Crafting.rcss"/>
+	<viewmodel name="ui" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoUIVM.BP_ArcRmlDemoUIVM_C" context="VM_ArcRmlDemoUI"/>
+	<viewmodel name="crafting" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoCraftingVM.BP_ArcRmlDemoCraftingVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+</head>
+<body data-model="ui" data-class-theme-ember="Theme == 'ember'" data-class-theme-daylight="Theme == 'daylight'" data-class-theme-slate="Theme == 'slate'" data-class-theme-relic="Theme == 'relic'" data-event-back="call('', 'Back'); stopPropagation()" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_DevBar', '', 'ToggleDevBar')">
+	<div class="gu-layer">
+		<div class="gu-screen" data-model="crafting">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/SceneBackdrop" label="Game scene" dim="strong"/>
+			<div class="cr-frame">
+				<div class="cr-head">
+					<div class="cr-titles">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Breadcrumb" items="{{ Crumbs }}" field="crumbs" nofocus="{{ true }}"/>
+						<span class="cr-title">Crafting</span>
+					</div>
+					<div class="cr-skill">
+						<div class="cr-skillbar">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ProgressBar" value="{{ 97 }}" label="Weaponsmithing" value-label="145 / 150" tone="success"/>
+						</div>
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/CurrencyDisplay" items="{{ Wallet }}"/>
+					</div>
+				</div>
+				<div class="cr-body">
+					<div class="cr-col">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="Recipes" subtitle="{{ RecipesSub }}" icon="/ArcRmlUIDemo/UI/Rml/icons/book-open.svg" padded="{{ false }}" fill="{{ true }}" style="width: 100%; height: 100%">
+							<div class="cr-filters">
+								<div class="cr-chips" data-focus-area="chips" data-focus-parent="recipes" data-event-back="callIf(bJob, '', 'Back'); stopPropagation(bJob)">
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/FilterChip" data-for="crChip, crChip_index : Chips" label="{{ crChip.Label }}" count="{{ crChip.Count }}" active="{{ crChip.bActive }}" focusable="{{ true }}" data-event-click="call('', 'SelectChip', crChip_index)"/>
+								</div>
+								<div class="gu-area" data-focus-area="filters" data-focus-parent="recipes" data-event-back="callIf(bJob, '', 'Back'); stopPropagation(bJob)">
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/SearchField" value="{{ Query }}" placeholder="Search recipes" field="craftSearch" style="width: 100%"/>
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Checkbox" label="Can craft only" checked="{{ bCanCraftOnly }}" focusable="{{ true }}" data-event-click="call('', 'ToggleCanCraft')"/>
+								</div>
+							</div>
+							<div class="cr-list" data-focus-area="recipes" data-focus-primary="">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ListRow" data-for="crRecipe, crRecipe_index : RecipeRows" icon="{{ crRecipe.Icon }}" title="{{ crRecipe.Name }}" subtitle="{{ crRecipe.Type }}" meta="{{ crRecipe.Meta }}" selected="{{ crRecipe.bSelected }}" disabled="{{ crRecipe.bDisabled }}" focusable="{{ true }}" autofocus="{{ crRecipe.bSelected }}" data-event-click="call('', 'SelectRecipe', crRecipe_index)">
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/RarityBadge" rarity="{{ crRecipe.Rarity }}" label="{{ crRecipe.RarityLabel }}"/>
+								</dc-import>
+							</div>
+						</dc-import>
+					</div>
+					<div class="cr-col">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="{{ RecipeName }}" subtitle="{{ RecipeSub }}" icon="/ArcRmlUIDemo/UI/Rml/icons/hammer.svg" scroll="{{ true }}" fill="{{ true }}" has-footer="{{ true }}" style="width: 100%; height: 100%">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Divider" label="Ingredients"/>
+							<div class="cr-ings" data-focus-area="ingredients" data-focus-parent="recipes" data-event-back="callIf(bJob, '', 'Back'); stopPropagation(bJob)">
+								<div class="cr-ing" data-for="crIng, crIng_index : Ingredients" data-class-short="crIng.bShort">
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ItemSlot" icon="{{ crIng.Icon }}" rarity="{{ crIng.Rarity }}" size="{{ 56 }}" disabled="{{ crIng.bShort }}" focusable="{{ true }}"/>
+									<div class="cr-ing-text">
+										<span class="cr-ing-name">{{ crIng.Name }}</span>
+										<span class="cr-ing-count" data-class-short="crIng.bShort">{{ crIng.CountLabel }}</span>
+										<span class="cr-ing-where" data-if="crIng.bShort">{{ crIng.Where }}</span>
+									</div>
+								</div>
+							</div>
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Divider" label="Batch"/>
+							<div class="cr-batch">
+								<div class="cr-qty" data-focus-area="batch" data-focus-parent="recipes" data-event-back="callIf(bJob, '', 'Back'); stopPropagation(bJob)">
+									<span class="cr-label">Quantity</span>
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Stepper" value="{{ QuantityLabel }}" count="{{ 0 }}" disabled="{{ bJob }}" field="batch"/>
+								</div>
+								<div class="cr-facts">
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/StatRow" data-for="crFact : Facts" label="{{ crFact.Label }}" value="{{ crFact.Value }}"/>
+								</div>
+							</div>
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ProgressBar" data-if="bJob" value="{{ JobPct }}" label="{{ ProgressLabel }}" value-label="{{ JobLabel }}" tone="accent" size="lg"/>
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Toast" data-if="bMissing" tone="warning" title="Missing ingredients" body="{{ MissingBody }}"/>
+							<div slot="footer" class="cr-actions" data-focus-area="actions" data-focus-parent="recipes" data-event-back="callIf(bJob, '', 'Back'); stopPropagation(bJob)">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" data-if="bJob" label="Cancel" variant="secondary" icon-left="/ArcRmlUIDemo/UI/Rml/icons/x.svg" size="lg" focusable="{{ true }}" data-event-click="call('', 'CancelJob')"/>
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="{{ CraftLabel }}" icon-left="/ArcRmlUIDemo/UI/Rml/icons/hammer.svg" size="lg" loading="{{ bJob }}" disabled="{{ bMissing }}" focusable="{{ true }}" data-event-click="callIf(!bMissing &amp;&amp; !bJob, '', 'Craft')"/>
+							</div>
+						</dc-import>
+					</div>
+					<div class="cr-result">
+						<span class="cr-result-label">Result</span>
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ItemTooltip" item="{{ Result }}" header="Preview · stats roll in range" sell-label="Sell value" width="{{ 480 }}"/>
+					</div>
+				</div>
+				<div class="cr-footer">
+					<div class="gu-prompts gu-all" data-if="bJob"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Cancel crafting"/></dc-import></div>
+					<div class="gu-prompts gu-default" data-if="!bJob"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Craft" disabled="{{ !bCanCraft }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_CanCraftOnly }}" label="Can craft only" data-hotkey="IA_ArcDemo_CanCraftOnly" data-event-click="call('', 'ToggleCanCraft')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Track }}" label="Track ingredients" disabled="{{ !bHasRecipe }}" data-hotkey="IA_ArcDemo_Track" data-event-click="callIf(bHasRecipe, '', 'Track')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Leave"/></dc-import></div>
+					<div class="gu-prompts" data-area="recipes" data-if="!bJob"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Craft" disabled="{{ !bCanCraft }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_CanCraftOnly }}" label="Can craft only" data-hotkey="IA_ArcDemo_CanCraftOnly" data-event-click="call('', 'ToggleCanCraft')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Track }}" label="Track ingredients" disabled="{{ !bHasRecipe }}" data-hotkey="IA_ArcDemo_Track" data-event-click="callIf(bHasRecipe, '', 'Track')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Leave"/></dc-import></div>
+					<div class="gu-prompts" data-area="actions" data-if="!bJob"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Craft" disabled="{{ !bCanCraft }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_CanCraftOnly }}" label="Can craft only" data-hotkey="IA_ArcDemo_CanCraftOnly" data-event-click="call('', 'ToggleCanCraft')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Track }}" label="Track ingredients" disabled="{{ !bHasRecipe }}" data-hotkey="IA_ArcDemo_Track" data-event-click="callIf(bHasRecipe, '', 'Track')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Leave"/></dc-import></div>
+					<div class="gu-prompts" data-area="batch" data-if="!bJob"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Craft" disabled="{{ !bCanCraft }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="← →" glyph="← →" label="Quantity"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_CanCraftOnly }}" label="Can craft only" data-hotkey="IA_ArcDemo_CanCraftOnly" data-event-click="call('', 'ToggleCanCraft')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Track }}" label="Track ingredients" disabled="{{ !bHasRecipe }}" data-hotkey="IA_ArcDemo_Track" data-event-click="callIf(bHasRecipe, '', 'Track')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Leave"/></dc-import></div>
+					<div class="gu-prompts" data-area="chips" data-if="!bJob"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Filter"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_CanCraftOnly }}" label="Can craft only" data-hotkey="IA_ArcDemo_CanCraftOnly" data-event-click="call('', 'ToggleCanCraft')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Track }}" label="Track ingredients" disabled="{{ !bHasRecipe }}" data-hotkey="IA_ArcDemo_Track" data-event-click="callIf(bHasRecipe, '', 'Track')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Leave"/></dc-import></div>
+					<div class="gu-prompts" data-area="filters" data-if="!bJob"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Select"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_CanCraftOnly }}" label="Can craft only" data-hotkey="IA_ArcDemo_CanCraftOnly" data-event-click="call('', 'ToggleCanCraft')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Track }}" label="Track ingredients" disabled="{{ !bHasRecipe }}" data-hotkey="IA_ArcDemo_Track" data-event-click="callIf(bHasRecipe, '', 'Track')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Leave"/></dc-import></div>
+					<div class="gu-prompts" data-area="ingredients" data-if="!bJob"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_CanCraftOnly }}" label="Can craft only" data-hotkey="IA_ArcDemo_CanCraftOnly" data-event-click="call('', 'ToggleCanCraft')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Track }}" label="Track ingredients" disabled="{{ !bHasRecipe }}" data-hotkey="IA_ArcDemo_Track" data-event-click="callIf(bHasRecipe, '', 'Track')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Leave"/></dc-import></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/DevBar" data-if="DevOpen"/>
+</body>
+</rml>

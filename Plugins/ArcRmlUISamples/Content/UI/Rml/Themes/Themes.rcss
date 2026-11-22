@@ -1,0 +1,62 @@
+:root {
+	--panel: #2c3a52;
+	--text: #e8e8e8;
+	--accent: #2f6fb0;
+	--button: #3a4456;
+}
+
+body.theme-dark {
+	--panel: #0c0e14;
+	--text: #b8c0d0;
+	--accent: #7a4fd0;
+	--button: #1c212c;
+}
+
+body.theme-contrast {
+	--panel: #000000;
+	--text: #ffff00;
+	--accent: #ffffff;
+	--button: #000000;
+	--muted: #ffffff;
+}
+
+.th-panel {
+	position: absolute;
+	left: 80px;
+	top: 60px;
+	width: 640px;
+	padding: 24px 32px;
+	background-color: var(--panel);
+	border: 3px solid var(--accent);
+	border-radius: 8px;
+	color: var(--text);
+}
+
+.th-title {
+	display: block;
+	font-size: 36px;
+	margin-bottom: 12px;
+}
+
+.th-text {
+	margin-bottom: 16px;
+	color: var(--muted, #9aa6ba);
+}
+
+.th-buttons {
+	display: flex;
+	gap: 8px;
+}
+
+.th-button {
+	padding: 8px 20px;
+	border-radius: 4px;
+	background-color: var(--button);
+	color: var(--text);
+	border: 2px solid var(--accent);
+}
+
+.th-button:focus-visible {
+	background-color: var(--accent);
+	color: var(--panel);
+}

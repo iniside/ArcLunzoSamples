@@ -1,0 +1,14 @@
+<rml>
+<head>
+	<title>ArcRmlUI Inline Style Rows Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<viewmodel name="mock" class="/Script/ArcRmlUITestRuntime.ArcRmlMockListViewModel" context="MockList"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="mock">
+	<div data-for="row : Rows">
+		<div style="colr: blue; display: block;">row {{ row.Name }}</div>
+		<div data-attr-style="'colr: red; display: block; height: 4px; width: ' + row.Value + 'px'"></div>
+	</div>
+</body>
+</rml>

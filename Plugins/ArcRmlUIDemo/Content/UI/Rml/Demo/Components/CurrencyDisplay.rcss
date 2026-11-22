@@ -1,0 +1,62 @@
+.dk-currency {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: var(--ui-space-2) var(--ui-space-4);
+}
+
+.dk-currency-item {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-1);
+}
+
+.dk-currency-icon {
+	display: inline-flex;
+	flex: none;
+	color: var(--ui-rarity-legendary);
+}
+
+.dk-currency-icon.common {
+	color: var(--ui-rarity-common);
+}
+
+.dk-currency-icon.uncommon {
+	color: var(--ui-rarity-uncommon);
+}
+
+.dk-currency-icon.rare {
+	color: var(--ui-rarity-rare);
+}
+
+.dk-currency-icon.epic {
+	color: var(--ui-rarity-epic);
+}
+
+.dk-currency-icon.insufficient {
+	color: var(--ui-danger);
+}
+
+.dk-currency-icon svg {
+	display: block;
+}
+
+.dk-currency-value {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-2);
+	font-weight: 600;
+	white-space: nowrap;
+	color: var(--ui-text);
+}
+
+.dk-currency.sm .dk-currency-value {
+	font-size: var(--ui-fs-1);
+}
+
+.dk-currency.lg .dk-currency-value {
+	font-size: var(--ui-fs-4);
+}
+
+.dk-currency-value.insufficient {
+	color: var(--ui-danger);
+}

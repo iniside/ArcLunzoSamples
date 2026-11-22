@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Expression Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="expr" preview="Preview/Expr.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="expr">
+	<div id="bad">{{ value + }}</div>
+</body>
+</rml>

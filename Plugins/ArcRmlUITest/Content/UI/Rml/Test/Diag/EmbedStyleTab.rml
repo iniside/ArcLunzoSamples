@@ -1,0 +1,10 @@
+<rml>
+<head>
+	<title>Embed Style Tab Diagnostics</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Diag/EmbedFrame.rml"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Diag/EmbedStyleTab.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="style-tab">style tab</div>
+</body>
+</rml>

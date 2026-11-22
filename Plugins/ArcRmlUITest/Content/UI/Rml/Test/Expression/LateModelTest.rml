@@ -1,0 +1,14 @@
+<rml>
+<head>
+	<title>Late Model Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="xa" preview="Preview/CrossModelA.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="xa">
+	<div id="own">{{ Title }}</div>
+	<div id="late">{{ xlate.Label }}</div>
+	<div id="late-lower">{{ xlate.label }}</div>
+</body>
+</rml>

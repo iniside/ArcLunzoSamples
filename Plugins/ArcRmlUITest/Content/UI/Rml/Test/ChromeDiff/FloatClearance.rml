@@ -1,0 +1,28 @@
+<rml>
+<head>
+	<title>FloatClearance</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ChromeDiff/FloatClearance.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="wf-case" id="c1"><div id="c1-p" style="margin-top:30px"><div id="c1-f" class="wf-f"></div><div id="c1-c" style="clear:right;margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="c2"><div id="c2-p" style="margin-top:30px"><div id="c2-f" class="wf-f"></div><div id="c2-c" style="clear:left;margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="c3"><div id="c3-p" style="margin-top:30px"><div id="c3-f" class="wf-f"></div><div id="c3-c" style="overflow:hidden;margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="c4"><div id="c4-p" style="margin-top:30px"><div id="c4-f" class="wf-f"></div><div id="c4-c" style="overflow:hidden;clear:left;margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="c5"><div id="c5-p" style="margin-top:30px"><div id="c5-f" class="wf-f" style="height:50px"></div><div id="c5-c" style="overflow:hidden;clear:left;margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="c6"><div id="c6-p" style="margin-top:30px"><div id="c6-f" class="wf-f"></div><div id="c6-c" style="overflow:hidden;width:300px;margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="c7"><div id="c7-p" style="margin-top:30px"><div id="c7-f" class="wf-f"></div><div style="margin-top:10px"></div><div style="margin-top:50px"><div></div></div><div id="c7-c" style="clear:left;margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="c8"><div id="c8-p" style="margin-top:30px"><div style="margin-top:10px"><div id="c8-f" class="wf-f"></div></div><div style="margin-top:60px"></div><div id="c8-c" style="clear:left;margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="c9"><div id="c9-p" style="margin-top:30px"><div id="c9-f" class="wf-f"></div><div id="c9-c" style="clear:both;margin-top:10px;height:10px"></div></div></div>
+	<div class="wf-case" id="c10"><div id="c10-p" style="margin-top:30px"><div id="c10-f" class="wf-f"></div><div id="c10-c" style="overflow:hidden;clear:left;margin-top:10px;height:10px"></div></div></div>
+	<div class="wf-case" id="c11"><div id="c11-p" style="margin-top:30px"><div id="c11-f" class="wf-f"></div><div id="c11-c" style="overflow:hidden;width:300px;margin-top:10px;height:10px"></div></div></div>
+	<div class="wf-case" id="c12"><div id="c12-p" style="margin-top:30px"><div id="c12-f" class="wf-f"></div> <span></span> <div id="c12-c" style="margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="c13"><div id="c13-p" class="wf-fixed-line" style="margin-top:30px"><div id="c13-f" class="wf-f"></div><span style="padding-left:5px"></span><div id="c13-c" style="margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="c14"><div id="c14-p" class="wf-fixed-line" style="margin-top:30px"><div id="c14-f" class="wf-f"></div><br/><div id="c14-c" style="margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="c15"><div id="c15-p" class="wf-fixed-line" style="margin-top:30px"><div id="c15-f" class="wf-f"></div><span style="display:inline-block"></span><div id="c15-c" style="margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="c16"><div id="c16-p" style="margin-top:30px"><div id="c16-f" class="wf-f"></div><span style="padding-top:5px"></span><div id="c16-c" style="margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="c17"><div id="c17-p" style="margin-top:30px;line-height:0;font-size:0"><div id="c17-f" class="wf-f"></div><span style="display:inline-block"></span><div id="c17-c" style="margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="c18"><div id="c18-p" class="wf-fixed-line" style="margin-top:30px"><div id="c18-f" class="wf-f"></div><span style="margin-left:5px"></span><div id="c18-c" style="margin-top:40px;height:10px"></div></div></div>
+</body>
+</rml>

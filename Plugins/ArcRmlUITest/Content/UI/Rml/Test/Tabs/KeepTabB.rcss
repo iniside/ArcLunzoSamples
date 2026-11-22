@@ -1,0 +1,51 @@
+@keyframes kSame {
+	from { width: 50px; }
+	to { width: 150px; }
+}
+
+@decorator kdSame : horizontal-gradient {
+	start-color: #0000ff;
+	stop-color: #0000ff;
+}
+
+#kb-anim {
+	height: 16px;
+	background-color: #335577;
+	animation: kSame 4s linear forwards;
+}
+
+#kb-deco {
+	width: 60px;
+	height: 16px;
+	decorator: kdSame;
+}
+
+#dup {
+	width: 333px;
+	height: 20px;
+	background-color: #0055aa;
+}
+
+#nid {
+	width: 93px;
+	height: 20px;
+	tab-index: auto;
+	nav: auto;
+	background-color: #0055aa;
+}
+
+.kt-box {
+	width: 130px;
+	height: 24px;
+	background-color: #00aa00;
+}
+
+#ka-box {
+	width: 17px;
+	background-color: #ffff00;
+}
+
+#kf-title {
+	height: 88px;
+	background-color: #ffff00;
+}

@@ -1,0 +1,22 @@
+<rml>
+<head>
+	<title>Area Back Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="AreaBackTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+<div class="abt-root">
+	<div class="abt-top" data-focus-area="top">
+		<div class="abt-btn" id="abt-top-1">Top 1</div>
+		<div class="abt-mid" data-focus-area="mid" data-focus-parent="top">
+			<div class="abt-btn" id="abt-mid-1">Mid 1</div>
+			<div class="abt-leaf" data-focus-area="leaf" data-focus-parent="mid" data-focus-primary="">
+				<div class="abt-btn" id="abt-leaf-1">Leaf 1</div>
+				<div class="abt-btn" id="abt-leaf-2">Leaf 2</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</rml>

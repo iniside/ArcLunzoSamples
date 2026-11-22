@@ -1,0 +1,43 @@
+@keyframes ui-tip-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0px); } }
+
+.dk-loadingtip {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-3);
+	width: 100%;
+	max-width: 640px;
+}
+
+.dk-loadingtip-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--ui-space-3);
+}
+
+.dk-loadingtip-eyebrow {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-2);
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--ui-accent);
+}
+
+.dk-loadingtip-icon {
+	display: inline-flex;
+}
+
+.dk-loadingtip-icon svg {
+	display: block;
+}
+
+.dk-loadingtip-body {
+	margin: 0;
+	font-size: var(--ui-fs-4);
+	line-height: 1.45;
+	color: var(--ui-text);
+	animation: ui-tip-in var(--ui-dur-normal) var(--ui-ease) both;
+}

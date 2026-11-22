@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Samples</title>
+	<meta name="layer" content="UI.Layer.GameMenu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="hide-lower" content="false"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="SamplesMenu.rcss"/>
+	<viewmodel name="menu" class="/Script/ArcRmlUISamples.ArcRmlSamplesMenuViewModel" create="true"/>
+</head>
+<body data-model="menu" data-event-back="stopPropagation()">
+	<div class="sm-column">
+		<h1 class="sm-title">Samples</h1>
+		<div class="sm-list">
+			<button class="sm-entry" data-for="s, i : Samples" data-attr-id="'sample-' + s.Name" data-attrif-autofocus="i == 0" data-event-click="call('', 'OpenSample', s.Name)">{{ s.Name }}</button>
+			<h2 class="sm-group">Blueprint</h2>
+			<button class="sm-entry" data-for="b : BlueprintSamples" data-attr-id="'sample-bp-' + b.Name" data-event-click="call('', 'OpenBlueprintSample', b.Name)">{{ b.Name }}</button>
+		</div>
+	</div>
+</body>
+</rml>

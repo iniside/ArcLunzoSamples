@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Animations</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="Animations.rcss"/>
+	<viewmodel name="animations" class="/Script/ArcRmlUISamples.ArcRmlSamplesAnimationsViewModel" create="true"/>
+</head>
+<body data-model="animations">
+	<div class="an-panel">
+		<h1 class="an-title">Animations</h1>
+		<p class="an-text">The panel fades in when it opens and out when it closes.</p>
+		<p id="an-hits" class="an-hits" data-pulse-flash="Hits">Hits: {{ Hits }}</p>
+		<div class="an-buttons">
+			<button id="an-hit" class="an-button" autofocus="" data-event-click="call('', 'Hit')">Hit</button>
+			<button id="an-close" class="an-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

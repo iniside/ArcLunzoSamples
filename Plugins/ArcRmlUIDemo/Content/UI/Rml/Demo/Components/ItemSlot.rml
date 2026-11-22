@@ -1,0 +1,52 @@
+<component>
+	<prop name="icon" default=""/>
+	<prop name="emptyIcon" default=""/>
+	<prop name="slotKey" default=""/>
+	<prop name="rarity" default="common"/>
+	<prop name="size" default="64"/>
+	<prop name="fluid"/>
+	<prop name="quantity" default="0"/>
+	<prop name="durability" default=""/>
+	<prop name="cooldown" default="0"/>
+	<prop name="cooldownLabel" default=""/>
+	<prop name="isNew"/>
+	<prop name="locked"/>
+	<prop name="disabled"/>
+	<prop name="selected"/>
+	<prop name="dropTarget"/>
+	<prop name="dragging"/>
+	<prop name="ghost"/>
+	<prop name="slotId" default=""/>
+	<prop name="navUp" default=""/>
+	<prop name="navDown" default=""/>
+	<prop name="navLeft" default=""/>
+	<prop name="navRight" default=""/>
+	<prop name="autofocus"/>
+	<prop name="focusable"/>
+	<div class="dk-itemslot" data-class-uncommon="$rarity == 'uncommon'" data-class-rare="$rarity == 'rare'" data-class-epic="$rarity == 'epic'" data-class-legendary="$rarity == 'legendary'" data-class-hi="$icon != '' &amp;&amp; !$locked &amp;&amp; !$disabled &amp;&amp; ($rarity == 'epic' || $rarity == 'legendary')" data-class-leg="$icon != '' &amp;&amp; !$locked &amp;&amp; !$disabled &amp;&amp; $rarity == 'legendary'" data-class-empty="$icon == ''" data-class-locked="$locked" data-class-off="$disabled &amp;&amp; $icon != ''" data-class-inert="$locked || ($disabled &amp;&amp; $icon == '')" data-class-selected="$selected" data-class-droptarget="$dropTarget" data-class-drag="$dragging" data-class-ghost="$ghost" data-class-focusable="$focusable &amp;&amp; !($locked || ($disabled &amp;&amp; $icon == ''))" data-attrif-selected="$selected" data-attrif-autofocus="$autofocus" data-attr-id="$slotId" data-style-nav-up="$navUp != '' ? '#' + $navUp : 'auto'" data-style-nav-down="$navDown != '' ? '#' + $navDown : 'auto'" data-style-nav-left="$navLeft != '' ? '#' + $navLeft : 'auto'" data-style-nav-right="$navRight != '' ? '#' + $navRight : 'auto'" data-style-width="$fluid ? '100%' : $size + 'px'" data-style-height="$fluid ? 'auto' : $size + 'px'">
+		<span class="dk-itemslot-orn-frame"></span>
+		<span class="dk-itemslot-orn-corner tl"></span>
+		<span class="dk-itemslot-orn-corner tr"></span>
+		<span class="dk-itemslot-orn-corner bl"></span>
+		<span class="dk-itemslot-orn-corner br"></span>
+		<i class="dk-itemslot-icon" data-if="!$locked &amp;&amp; $icon != ''"><svg data-attr-src="$icon" data-attr-width="($size * 0.5) | round" data-attr-height="($size * 0.5) | round" stroke-width="1.75"/></i>
+		<i class="dk-itemslot-icon" data-if="!$locked &amp;&amp; $icon == '' &amp;&amp; $emptyIcon != ''"><svg data-attr-src="$emptyIcon" data-attr-width="($size * 0.5) | round" data-attr-height="($size * 0.5) | round" stroke-width="1.75"/></i>
+		<i class="dk-itemslot-icon" data-if="!$locked &amp;&amp; $icon == '' &amp;&amp; $emptyIcon == '' &amp;&amp; $slotKey == 'helmet'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/hard-hat.svg" data-attr-width="($size * 0.5) | round" data-attr-height="($size * 0.5) | round" stroke-width="1.75"/></i>
+		<i class="dk-itemslot-icon" data-if="!$locked &amp;&amp; $icon == '' &amp;&amp; $emptyIcon == '' &amp;&amp; $slotKey == 'amulet'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/gem.svg" data-attr-width="($size * 0.5) | round" data-attr-height="($size * 0.5) | round" stroke-width="1.75"/></i>
+		<i class="dk-itemslot-icon" data-if="!$locked &amp;&amp; $icon == '' &amp;&amp; $emptyIcon == '' &amp;&amp; $slotKey == 'chest'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/shirt.svg" data-attr-width="($size * 0.5) | round" data-attr-height="($size * 0.5) | round" stroke-width="1.75"/></i>
+		<i class="dk-itemslot-icon" data-if="!$locked &amp;&amp; $icon == '' &amp;&amp; $emptyIcon == '' &amp;&amp; $slotKey == 'gloves'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/hand.svg" data-attr-width="($size * 0.5) | round" data-attr-height="($size * 0.5) | round" stroke-width="1.75"/></i>
+		<i class="dk-itemslot-icon" data-if="!$locked &amp;&amp; $icon == '' &amp;&amp; $emptyIcon == '' &amp;&amp; $slotKey == 'legs'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/layers.svg" data-attr-width="($size * 0.5) | round" data-attr-height="($size * 0.5) | round" stroke-width="1.75"/></i>
+		<i class="dk-itemslot-icon" data-if="!$locked &amp;&amp; $icon == '' &amp;&amp; $emptyIcon == '' &amp;&amp; $slotKey == 'boots'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/footprints.svg" data-attr-width="($size * 0.5) | round" data-attr-height="($size * 0.5) | round" stroke-width="1.75"/></i>
+		<i class="dk-itemslot-icon" data-if="!$locked &amp;&amp; $icon == '' &amp;&amp; $emptyIcon == '' &amp;&amp; $slotKey == 'ring1'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/circle-dot.svg" data-attr-width="($size * 0.5) | round" data-attr-height="($size * 0.5) | round" stroke-width="1.75"/></i>
+		<i class="dk-itemslot-icon" data-if="!$locked &amp;&amp; $icon == '' &amp;&amp; $emptyIcon == '' &amp;&amp; $slotKey == 'ring2'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/circle-dot.svg" data-attr-width="($size * 0.5) | round" data-attr-height="($size * 0.5) | round" stroke-width="1.75"/></i>
+		<i class="dk-itemslot-icon" data-if="!$locked &amp;&amp; $icon == '' &amp;&amp; $emptyIcon == '' &amp;&amp; $slotKey == 'trinket1'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/shell.svg" data-attr-width="($size * 0.5) | round" data-attr-height="($size * 0.5) | round" stroke-width="1.75"/></i>
+		<i class="dk-itemslot-icon" data-if="!$locked &amp;&amp; $icon == '' &amp;&amp; $emptyIcon == '' &amp;&amp; $slotKey == 'trinket2'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/shell.svg" data-attr-width="($size * 0.5) | round" data-attr-height="($size * 0.5) | round" stroke-width="1.75"/></i>
+		<i class="dk-itemslot-icon" data-if="!$locked &amp;&amp; $icon == '' &amp;&amp; $emptyIcon == '' &amp;&amp; $slotKey == 'main'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/sword.svg" data-attr-width="($size * 0.5) | round" data-attr-height="($size * 0.5) | round" stroke-width="1.75"/></i>
+		<i class="dk-itemslot-icon" data-if="!$locked &amp;&amp; $icon == '' &amp;&amp; $emptyIcon == '' &amp;&amp; $slotKey == 'off'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/shield.svg" data-attr-width="($size * 0.5) | round" data-attr-height="($size * 0.5) | round" stroke-width="1.75"/></i>
+		<span class="dk-itemslot-qty" data-if="$icon != '' &amp;&amp; $quantity &gt; 1">{{ $quantity }}</span>
+		<span class="dk-itemslot-dur" data-if="$durability != '' &amp;&amp; $icon != ''" data-class-low="$durability * 1 &lt;= 15" data-class-mid="$durability * 1 &gt; 15 &amp;&amp; $durability * 1 &lt;= 40" data-style-width="'calc((100% - 8px) * ' + (($durability | arcclamp(0, 100)) / 100) + ')'"></span>
+		<span class="dk-itemslot-cd" data-if="$cooldown * 1 &gt; 0 &amp;&amp; $icon != ''" data-style---cd="$cooldown + '%'">{{ $cooldownLabel }}</span>
+		<span class="dk-itemslot-new" data-if="$isNew &amp;&amp; $icon != ''"></span>
+		<i class="dk-itemslot-lock" data-if="$locked"><svg src="/ArcRmlUIDemo/UI/Rml/icons/lock.svg" width="16" height="16" stroke-width="2"/></i>
+	</div>
+</component>

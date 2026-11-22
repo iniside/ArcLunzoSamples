@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Source: resolver</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="SourceResolver.rcss"/>
+	<viewmodel name="greeting" class="/Script/ArcRmlUISamples.ArcRmlSamplesSourceResolverViewModel" resolver="/Script/ArcRmlUISamples.ArcRmlSamplesGreetingResolver" Greeting="Hello from the RML attribute"/>
+</head>
+<body data-model="greeting">
+	<div class="sr-panel">
+		<h1 class="sr-title">Source: resolver</h1>
+		<div data-if="ArcResolved">
+			<span class="sr-row">{{ Greeting }}</span>
+			<span class="sr-row">Player: {{ PlayerName }}</span>
+		</div>
+		<span class="sr-row" data-if="!ArcResolved">Waiting for the resolver</span>
+		<button class="sr-button" data-action="close">Close</button>
+	</div>
+</body>
+</rml>

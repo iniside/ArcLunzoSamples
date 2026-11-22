@@ -1,0 +1,20 @@
+<rml>
+<head>
+	<title>MarginCollapseTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/MarginCollapse/MarginCollapse.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body id="mc-body">
+	<h1 id="mc-h1">Heading</h1>
+	<div id="mc-p-parent"><p id="mc-p">First paragraph</p></div>
+	<div id="mc-ul-parent"><ul id="mc-ul"><li id="mc-li">Item</li></ul></div>
+	<div id="mc-border-parent" class="mc-border-top"><p id="mc-border-p">Border on top</p></div>
+	<div id="mc-padding-parent" class="mc-padding-top"><p id="mc-padding-p">Padding on top</p></div>
+	<div id="mc-flow-root" class="mc-flow-root"><p id="mc-flow-root-p">Flow root</p></div>
+	<div id="mc-outer"><div id="mc-middle"><p id="mc-inner-p">Nested</p></div></div>
+	<div id="mc-last-parent">Text<p id="mc-last-p">Last child</p></div>
+	<div id="mc-bottom-parent" class="mc-border-bottom"><p id="mc-bottom-p">Border at the bottom</p></div>
+	<p id="mc-tail">Tail</p>
+</body>
+</rml>

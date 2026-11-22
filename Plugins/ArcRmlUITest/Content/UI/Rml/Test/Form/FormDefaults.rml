@@ -1,0 +1,34 @@
+<rml>
+<head>
+	<title>FormDefaults</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/FormDefaults.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="row"><input id="fd-text" type="text"/></div>
+	<div class="row"><input id="fd-untyped"/></div>
+	<div class="row"><input id="fd-text-size" type="text" size="10"/></div>
+	<div class="row"><input id="fd-email" type="email"/></div>
+	<div class="row"><input id="fd-password" type="password"/></div>
+	<div class="row"><input id="fd-search" type="search"/></div>
+	<div class="row"><input id="fd-number" type="number"/></div>
+	<div class="row"><input id="fd-placeholder" type="text" placeholder="Your name"/></div>
+	<div class="row"><input id="fd-value" type="text" value="Hello"/></div>
+	<div class="row"><textarea id="fd-ta"></textarea></div>
+	<div class="row"><textarea id="fd-ta-rc" rows="4" cols="30"></textarea></div>
+	<div class="row"><select id="fd-select"><option value="a">Apple</option><option value="b">Banana split</option></select></div>
+	<div class="row"><button id="fd-button">Save</button></div>
+	<div class="row"><input id="fd-ibutton" type="button" value="Save"/></div>
+	<div class="row"><input id="fd-submit" type="submit" value="Send"/></div>
+	<div class="row"><input id="fd-reset" type="reset" value="Clear"/></div>
+	<div class="row"><input id="fd-checkbox" type="checkbox"/><input id="fd-checkbox-on" type="checkbox" checked=""/></div>
+	<div class="row"><input id="fd-radio" type="radio" name="fdg"/><input id="fd-radio-on" type="radio" name="fdg" checked=""/></div>
+	<div class="row"><input id="fd-range" type="range"/></div>
+	<div class="row" id="fd-line-text">ab <input id="fd-inl-text" type="text" value="cd"/> ef</div>
+	<div class="row" id="fd-line-button">ab <button id="fd-inl-button">cd</button> ef</div>
+	<div class="row" id="fd-line-select">ab <select id="fd-inl-select"><option value="x">cd</option></select> ef</div>
+	<div class="row" id="fd-line-checkbox">ab <input id="fd-inl-checkbox" type="checkbox"/> ef</div>
+	<div class="row" id="fd-line-textarea">ab <textarea id="fd-inl-ta">cd</textarea> ef</div>
+</body>
+</rml>

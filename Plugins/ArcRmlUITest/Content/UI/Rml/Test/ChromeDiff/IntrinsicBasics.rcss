@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+.t {
+	margin-bottom: 10px;
+	background: #ddd;
+}
+
+.c {
+	width: 100px;
+	height: 10px;
+	background: blue;
+}
+
+.i {
+	display: inline-block;
+	vertical-align: top;
+	width: 40px;
+	height: 20px;
+	background: green;
+}
+
+.w {
+	display: inline-block;
+	vertical-align: top;
+	width: 4000px;
+	height: 10px;
+	background: green;
+}
+
+.fr {
+	float: right;
+	height: 20px;
+	background: blue;
+}
+
+.ti {
+	display: inline-block;
+	vertical-align: top;
+	height: 20px;
+	background: green;
+}
+
+.tx {
+	display: inline-block;
+	vertical-align: top;
+	font-family: 'Space Grotesk';
+	font-size: 16px;
+	line-height: 20px;
+}

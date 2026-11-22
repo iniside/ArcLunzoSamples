@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>UserAgentPreflightTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/UserAgent/UserAgentPreflight.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<ul id="pf-ul"><li id="pf-li">Item</li></ul>
+	<p id="pf-p">Paragraph</p>
+	<div id="pf-after">After</div>
+</body>
+</rml>

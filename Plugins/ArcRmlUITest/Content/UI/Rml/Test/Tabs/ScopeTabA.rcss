@@ -1,0 +1,26 @@
+div {
+	display: block;
+}
+
+#sf-hover {
+	height: 90px;
+	color: #ff0000;
+}
+
+#sf-hover:hover {
+	height: 120px;
+	background-color: #00ff00;
+}
+
+.root-on #sf-hover {
+	height: 70px;
+}
+
+#sf-plain {
+	width: 150px;
+	background-color: #ff00ff;
+}
+
+#st-a {
+	width: 180px;
+}

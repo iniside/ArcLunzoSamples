@@ -1,0 +1,26 @@
+.bar {
+	width: 400px;
+	height: 10px;
+}
+
+.fill {
+	height: 10px;
+}
+
+.crow {
+	display: flex;
+	gap: 8px;
+	width: 400px;
+	margin-top: 10px;
+}
+
+.ctag {
+	width: 40px;
+	height: 24px;
+}
+
+.press {
+	width: 120px;
+	height: 40px;
+	margin-top: 10px;
+}

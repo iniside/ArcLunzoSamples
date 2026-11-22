@@ -1,0 +1,49 @@
+<rml>
+<head>
+	<title>Justify Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/JustifyTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="j-multi" class="t" style="left: 10px; top: 10px; width: 300px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="j-span" class="t" style="left: 330px; top: 10px; width: 300px;">The caravan reached the <span class="pad">old bridge at dusk, and the</span> guards waved it through without asking for papers.</div>
+	<div id="j-words" class="t" style="left: 650px; top: 10px; width: 300px;"><span>The</span> <span>caravan</span> <span>reached</span> <span>the</span> <span>old</span> <span>bridge</span> <span>at</span> <span>dusk,</span> <span>and</span> <span>the</span> <span>guards</span> <span>waved</span> <span>it</span> <span>through.</span></div>
+	<div id="j-long" class="t" style="left: 970px; top: 10px; width: 100px;">Incomprehensibilities overflow here</div>
+	<div id="j-br" class="t" style="left: 1100px; top: 10px; width: 300px;">The caravan reached the old bridge at dusk, and the guards waved it<br/>through without asking for papers at the gate of the city.</div>
+	<div id="j-prewrap" class="t prewrap" style="left: 1420px; top: 10px; width: 300px;">The caravan reached the old  bridge at dusk,   and the guards waved it through without asking for papers.</div>
+	<div id="j-newline" class="t prewrap" style="left: 10px; top: 200px; width: 300px;">The caravan reached the old bridge at dusk, and the
+guards waved it through without asking for papers.</div>
+	<div id="j-ls" class="t ls" style="left: 330px; top: 200px; width: 300px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="j-ib" class="t" style="left: 650px; top: 200px; width: 300px;">The caravan reached the <span class="ib">old</span> bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="j-pretty" class="t pretty" style="left: 970px; top: 200px; width: 380px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="j-nbsp" class="t" style="left: 1420px; top: 200px; width: 300px;">The caravan reached&nbsp;the old bridge at&nbsp;dusk, and the guards waved it through without asking for papers.</div>
+	<div id="j-sym" class="t" style="left: 10px; top: 400px; width: 200px;"><span>aaa</span>†<span>bbb</span>†<span>ccc</span> <span>ddd</span>‰ <span>eee</span> fff ggg hhh iii jjj</div>
+	<div id="j-float" class="t" style="left: 330px; top: 400px; width: 300px;"><span class="fl"></span>The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="j-trail" class="t" style="left: 650px; top: 400px; width: 300px;">The caravan reached the old bridge at dusk, and the guards waved it <span class="nw">through without asking</span> for papers.</div>
+	<div id="j-nowrap" class="t nowrap" style="left: 970px; top: 400px; width: 300px;">Short nowrap line</div>
+	<div id="jl-justify" class="t last-justify" style="left: 10px; top: 600px; width: 300px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="jl-center" class="t last-center" style="left: 330px; top: 600px; width: 300px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="jl-right" class="t last-right" style="left: 650px; top: 600px; width: 300px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="jl-centered" class="t centered last-right" style="left: 970px; top: 600px; width: 300px;">The caravan reached the old bridge at dusk, and the guards waved it through without asking for papers.</div>
+	<div id="jl-br" class="t last-justify" style="left: 1420px; top: 600px; width: 300px;">The caravan reached the old bridge<br/>at dusk, and the guards waved it through.</div>
+	<div id="je-justify" class="t last-justify" style="left: 10px; top: 800px; width: 900px;"><span>Trade</span><span> </span><span>🐎</span><span> </span><span>horses</span><span> </span><span>❤️</span><span> </span><span>and</span><span> </span><span>👨‍👩‍👧</span><span> </span><span>kin</span><span> </span><span>🇵🇱</span><span> </span><span>flag</span><span> </span><span>1️⃣</span><span> </span><span>key</span><span> </span><span>✈</span><span> </span><span>fly</span><span> </span><span>♀</span><span> </span><span>end</span></div>
+	<div id="je-left" class="t left" style="left: 10px; top: 840px; width: 900px;"><span>Trade</span><span> </span><span>🐎</span><span> </span><span>horses</span><span> </span><span>❤️</span><span> </span><span>and</span><span> </span><span>👨‍👩‍👧</span><span> </span><span>kin</span><span> </span><span>🇵🇱</span><span> </span><span>flag</span><span> </span><span>1️⃣</span><span> </span><span>key</span><span> </span><span>✈</span><span> </span><span>fly</span><span> </span><span>♀</span><span> </span><span>end</span></div>
+	<div id="tj-auto" class="t last-justify tja" style="left: 950px; top: 800px; width: 450px;"><span>ab</span><span> </span><span>cd</span><span>老</span><span>橋</span><span>ef</span><span>&nbsp;</span><span>gh</span><span class="ib">I</span><span>jk</span><span> </span><span>lm</span></div>
+	<div id="tjl-auto" class="t left tja" style="left: 950px; top: 824px; width: 450px;"><span>ab</span><span> </span><span>cd</span><span>老</span><span>橋</span><span>ef</span><span>&nbsp;</span><span>gh</span><span class="ib">I</span><span>jk</span><span> </span><span>lm</span></div>
+	<div id="tj-none" class="t last-justify tjn" style="left: 950px; top: 860px; width: 450px;"><span>ab</span><span> </span><span>cd</span><span>老</span><span>橋</span><span>ef</span><span>&nbsp;</span><span>gh</span><span class="ib">I</span><span>jk</span><span> </span><span>lm</span></div>
+	<div id="tjl-none" class="t left tjn" style="left: 950px; top: 884px; width: 450px;"><span>ab</span><span> </span><span>cd</span><span>老</span><span>橋</span><span>ef</span><span>&nbsp;</span><span>gh</span><span class="ib">I</span><span>jk</span><span> </span><span>lm</span></div>
+	<div id="tj-word" class="t last-justify tjw" style="left: 950px; top: 920px; width: 450px;"><span>ab</span><span> </span><span>cd</span><span>老</span><span>橋</span><span>ef</span><span>&nbsp;</span><span>gh</span><span class="ib">I</span><span>jk</span><span> </span><span>lm</span></div>
+	<div id="tjl-word" class="t left tjw" style="left: 950px; top: 944px; width: 450px;"><span>ab</span><span> </span><span>cd</span><span>老</span><span>橋</span><span>ef</span><span>&nbsp;</span><span>gh</span><span class="ib">I</span><span>jk</span><span> </span><span>lm</span></div>
+	<div id="tj-char" class="t last-justify tjc" style="left: 950px; top: 980px; width: 450px;"><span>ab</span><span> </span><span>cd</span><span>老</span><span>橋</span><span>ef</span><span>&nbsp;</span><span>gh</span><span class="ib">I</span><span>jk</span><span> </span><span>lm</span></div>
+	<div id="tjl-char" class="t left tjc" style="left: 950px; top: 1004px; width: 450px;"><span>ab</span><span> </span><span>cd</span><span>老</span><span>橋</span><span>ef</span><span>&nbsp;</span><span>gh</span><span class="ib">I</span><span>jk</span><span> </span><span>lm</span></div>
+	<div id="tj-dist" class="t last-justify tjd" style="left: 1440px; top: 800px; width: 450px;"><span>ab</span><span> </span><span>cd</span><span>老</span><span>橋</span><span>ef</span><span>&nbsp;</span><span>gh</span><span class="ib">I</span><span>jk</span><span> </span><span>lm</span></div>
+	<div id="tjl-dist" class="t left tjd" style="left: 1440px; top: 824px; width: 450px;"><span>ab</span><span> </span><span>cd</span><span>老</span><span>橋</span><span>ef</span><span>&nbsp;</span><span>gh</span><span class="ib">I</span><span>jk</span><span> </span><span>lm</span></div>
+	<div id="tj-inherit" class="t last-justify tjc" style="left: 1440px; top: 860px; width: 450px;"><span>ab</span><span> </span><span class="tjn">cd ef</span><span> </span><span>gh</span><span>ij</span><span> </span><span>kl</span></div>
+	<div id="tjl-inherit" class="t left tjc" style="left: 1440px; top: 884px; width: 450px;"><span>ab</span><span> </span><span class="tjn">cd ef</span><span> </span><span>gh</span><span>ij</span><span> </span><span>kl</span></div>
+	<div id="tj-cursive" class="t last-justify tjc" style="left: 1440px; top: 920px; width: 450px;"><span>ab</span><span>سلام</span><span>cd</span><span> </span><span>ef</span><span class="ib">I</span><span>سلام</span><span>gh</span></div>
+	<div id="tjl-cursive" class="t left tjc" style="left: 1440px; top: 944px; width: 450px;"><span>ab</span><span>سلام</span><span>cd</span><span> </span><span>ef</span><span class="ib">I</span><span>سلام</span><span>gh</span></div>
+	<div id="tj-cursive-auto" class="t last-justify tja" style="left: 1440px; top: 980px; width: 450px;"><span>ab</span><span>سلام</span><span>cd</span><span> </span><span>ef</span><span class="ib">I</span><span>سلام</span><span>gh</span></div>
+	<div id="tjl-cursive-auto" class="t left tja" style="left: 1440px; top: 1004px; width: 450px;"><span>ab</span><span>سلام</span><span>cd</span><span> </span><span>ef</span><span class="ib">I</span><span>سلام</span><span>gh</span></div>
+</body>
+</rml>

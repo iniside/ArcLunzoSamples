@@ -1,0 +1,24 @@
+<rml>
+<head>
+	<title>Flex Min Auto Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Layout/FlexMinAutoTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="actions" class="box actions"><div id="act-use" class="btn primary"><i class="bicon"></i><span class="blabel">Use</span><span class="bkey">E</span></div><div id="act-equip" class="btn secondary"><i class="bicon"></i><span class="blabel">Equip</span><span class="bkey">Q</span></div><div id="act-drop" class="btn secondary"><i class="bicon"></i><span class="blabel">Drop</span><span class="bkey">R</span></div></div>
+	<div id="word-row" class="box wordrow"><div id="word" class="grow">Extraordinarily</div><div id="word-b" class="grow">ab</div></div>
+	<div id="hid-row" class="box wordrow"><div id="hid" class="grow hid">Extraordinarily</div><div id="hid-b" class="grow">ab</div></div>
+	<div id="zero-row" class="box wordrow"><div id="zero" class="grow zero">Extraordinarily</div><div id="zero-b" class="grow">ab</div></div>
+	<div id="spec-row" class="box wordrow"><div id="spec" class="spec">Extraordinarily</div><div id="spec-b" class="grow">ab</div></div>
+	<div id="col" class="box col"><div id="col-tall" class="colitem">one two three four five six seven eight nine ten eleven twelve</div><div id="col-b" class="colitem">b</div></div>
+	<div id="ar-row" class="box arrow"><div id="ar" class="ar"></div><div id="ar-b" class="grow">ab</div></div>
+	<div id="nest-line" class="box line">Text <span id="outer-if" class="ifx"><span id="inner-if" class="ifx inner">ab</span></span> after</div>
+	<div id="base-row" class="box baserow"><div id="base-text" class="bt">Hx</div><div id="base-grid" class="bgrid"><div id="base-grid-a">Gy</div><div id="base-grid-b">two</div></div><div id="base-flex" class="bflex"><div id="base-flex-a">Fz</div></div><div id="base-block" class="bblock"><div id="base-block-flex" class="bflex"><div>Bq</div></div></div></div>
+	<div id="icol-line" class="box line">Text <span id="icol" class="icol"><div id="icol-a">A</div><div id="icol-b" class="bl30">B</div></span> after</div>
+	<div id="calccol" class="box calccol"><div id="calc20" class="calc20">one two three four five six seven eight</div></div>
+	<div id="calcrow" class="box calcrow"><div id="calcrow-flex" class="calcrowflex"><div id="calc50" class="calc50">Extraordinarily</div></div></div>
+	<div id="ib-line" class="box line">Text <span id="ib" class="ib"><div id="ib-a">line</div><div id="ib-ovh" class="ovh">x</div></span> after</div>
+	<div id="itab-line" class="box line">Text <span id="itab" class="itab"><div class="trow"><div id="tc-a" class="tcell narrow">Ab cd</div><div id="tc-b" class="tcell">Ef</div></div><div class="trow"><div id="tc-c" class="tcell">Gh</div><div id="tc-d" class="tcell">Ij</div></div></span> after</div>
+</body>
+</rml>

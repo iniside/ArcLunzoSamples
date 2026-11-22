@@ -1,0 +1,112 @@
+.dk-contextmenu {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	box-sizing: border-box;
+	width: 240px;
+	max-width: 100%;
+	padding: var(--ui-space-1);
+	background: var(--ui-overlay-bg);
+	border: 1px solid var(--ui-border-strong);
+	border-radius: var(--ui-radius-md);
+	box-shadow: var(--ui-shadow-lg);
+	backdrop-filter: blur(var(--ui-overlay-blur));
+	z-index: 20;
+}
+
+.dk-contextmenu-title {
+	padding: var(--ui-space-2) var(--ui-space-3) var(--ui-space-1);
+	font-family: var(--ui-font-mono);
+	font-size: 11px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--ui-text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-contextmenu-entry {
+	display: contents;
+}
+
+.dk-contextmenu-sep {
+	height: 1px;
+	margin: var(--ui-space-1) 0;
+	background: var(--ui-border);
+}
+
+.dk-contextmenu-row {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-3);
+	min-height: 40px;
+	padding: 0 var(--ui-space-3);
+	box-sizing: border-box;
+	border-radius: var(--ui-radius-sm);
+	color: var(--ui-text);
+	font-size: var(--ui-fs-2);
+	font-weight: 600;
+	cursor: pointer;
+	background: transparent;
+	box-shadow: none;
+	transition: background-color var(--ui-dur-fast) var(--ui-ease), color var(--ui-dur-fast) var(--ui-ease), transform var(--ui-dur-fast) var(--ui-ease);
+	--h-bg: var(--ui-accent-soft);
+	--h-fg: var(--ui-accent);
+	--p-tf: scale(0.98);
+}
+
+.dk-contextmenu-row.danger {
+	color: var(--ui-danger);
+	--h-bg: color-mix(in srgb, var(--ui-danger) 16%, transparent);
+	--h-fg: var(--ui-danger);
+}
+
+.dk-contextmenu-row.disabled {
+	color: var(--ui-text-disabled);
+	cursor: default;
+	--h-bg: transparent;
+	--h-fg: var(--ui-text-disabled);
+	--p-tf: none;
+}
+
+.dk-contextmenu-row:hover, .dk-contextmenu-row:focus-visible {
+	background: var(--h-bg);
+	color: var(--h-fg);
+}
+
+.dk-contextmenu-row:active {
+	transform: var(--p-tf);
+}
+
+.dk-contextmenu-row:focus-visible {
+	box-shadow: inset 0 0 0 2px var(--ui-focus);
+}
+
+.dk-contextmenu-row.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-contextmenu-icon {
+	display: inline-flex;
+	flex: none;
+}
+
+.dk-contextmenu-icon svg {
+	display: block;
+}
+
+.dk-contextmenu-label {
+	flex: 1;
+	min-width: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-contextmenu-key {
+	font-family: var(--ui-font-mono);
+	font-size: 11px;
+	color: var(--ui-text-muted);
+}

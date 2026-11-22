@@ -1,0 +1,14 @@
+<rml class="dark">
+<head>
+	<title>HtmlRootTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Root/HtmlRoot.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="rem-box" class="block"></div>
+	<div id="lh-text" class="block">Line height text</div>
+	<p id="dark-p" class="block">Dark text</p>
+	<div id="root-child" class="block"></div>
+</body>
+</rml>

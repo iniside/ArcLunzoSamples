@@ -1,0 +1,79 @@
+<rml>
+<head>
+	<title>ArcRmlUI Demo Game Menu · Character</title>
+	<meta name="frame" content="/ArcRmlUIDemo/UI/Rml/Demo/Hub.rml"/>
+	<meta name="input-mapping" content="/ArcRmlUIDemo/Demo/Input/IMC_ArcDemo_Character"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/tokens.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Fonts/Fonts.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/GameUI.rcss"/>
+	<link type="text/rcss" href="HubTab.rcss"/>
+	<link type="text/rcss" href="Character.rcss"/>
+	<viewmodel name="ui" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoUIVM.BP_ArcRmlDemoUIVM_C" context="VM_ArcRmlDemoUI"/>
+	<viewmodel name="character" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoCharacterVM.BP_ArcRmlDemoCharacterVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+</head>
+<body data-model="ui" data-class-theme-ember="Theme == 'ember'" data-class-theme-daylight="Theme == 'daylight'" data-class-theme-slate="Theme == 'slate'" data-class-theme-relic="Theme == 'relic'">
+	<div class="ht-root" data-model="character" data-event-back="call('', 'Back'); stopPropagation()">
+		<div class="ht-frame">
+			<div class="ch-body">
+				<div class="ht-col">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="Equipment" subtitle="Average item level 409" icon="/ArcRmlUIDemo/UI/Rml/icons/shirt.svg" fill="{{ true }}" scroll="{{ true }}" style="width: 100%; height: 100%">
+						<div class="ch-doll" data-focus-area="equip" data-focus-primary="">
+								<div class="ch-slots">
+									<div class="ch-slot" data-for="chEq, chEq_index : EquipLeft">
+										<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ItemSlot" icon="{{ chEq.Icon }}" slot-key="{{ chEq.SlotKey }}" rarity="{{ chEq.Rarity }}" durability="{{ chEq.Durability }}" size="{{ 60 }}" focusable="{{ true }}" data-event-click="call('', 'Change', chEq_index)" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_Unequip', '', 'Unequip', chEq_index); stopPropagation(ev.action == 'IA_ArcDemo_Unequip')"/>
+										<div class="ch-slot-text">
+											<span class="ch-slot-label">{{ chEq.Slot }}</span>
+											<span class="ch-slot-name" data-class-empty="chEq.Icon == ''" data-class-uncommon="chEq.Rarity == 'uncommon'" data-class-rare="chEq.Rarity == 'rare'" data-class-epic="chEq.Rarity == 'epic'" data-class-legendary="chEq.Rarity == 'legendary'">{{ chEq.Name }}</span>
+										</div>
+									</div>
+								</div>
+							<div class="ch-model">
+								<span class="ch-model-label">Character model</span>
+							</div>
+								<div class="ch-slots">
+									<div class="ch-slot rev" data-for="chEq, chEq_index : EquipRight">
+										<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ItemSlot" icon="{{ chEq.Icon }}" slot-key="{{ chEq.SlotKey }}" rarity="{{ chEq.Rarity }}" durability="{{ chEq.Durability }}" size="{{ 60 }}" focusable="{{ true }}" data-event-click="call('', 'Change', chEq_index + 6)" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_Unequip', '', 'Unequip', chEq_index + 6); stopPropagation(ev.action == 'IA_ArcDemo_Unequip')"/>
+										<div class="ch-slot-text">
+											<span class="ch-slot-label">{{ chEq.Slot }}</span>
+											<span class="ch-slot-name" data-class-empty="chEq.Icon == ''" data-class-uncommon="chEq.Rarity == 'uncommon'" data-class-rare="chEq.Rarity == 'rare'" data-class-epic="chEq.Rarity == 'epic'" data-class-legendary="chEq.Rarity == 'legendary'">{{ chEq.Name }}</span>
+										</div>
+									</div>
+								</div>
+						</div>
+					</dc-import>
+				</div>
+				<div class="ht-col">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="Attributes" subtitle="{{ PointsSub }}" icon="/ArcRmlUIDemo/UI/Rml/icons/sliders-horizontal.svg" fill="{{ true }}" scroll="{{ true }}" has-footer="{{ true }}" style="width: 100%; height: 100%">
+						<div class="ch-unspent" data-if="bUnspent">
+							<span class="ch-unspent-label">Points to spend</span>
+							<span class="ch-unspent-value">{{ Remaining }}</span>
+						</div>
+						<div class="ch-attrs">
+							<div class="ch-attr" data-for="chAttr, chAttr_index : Attributes" data-focus-area="attrs" data-focus-parent="equip">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/AttributeRow" icon="{{ chAttr.Icon }}" label="{{ chAttr.Label }}" description="{{ chAttr.Description }}" value="{{ chAttr.Value }}" delta="{{ chAttr.Delta }}" allocate="{{ bUnspent }}" can-inc="{{ chAttr.bCanInc }}" can-dec="{{ chAttr.bCanDec }}" info="{{ !bUnspent }}" area="attrs" index="{{ chAttr_index }}"/>
+							</div>
+						</div>
+						<div slot="footer" class="ch-footer" data-focus-area="footer" data-focus-parent="attrs">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="Reset" variant="secondary" icon-left="/ArcRmlUIDemo/UI/Rml/icons/rotate-ccw.svg" disabled="{{ bNoPending }}" focusable="{{ true }}" data-event-click="callIf(!bNoPending, '', 'ResetPoints')"/>
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="Apply" icon-left="/ArcRmlUIDemo/UI/Rml/icons/check.svg" disabled="{{ bNoPending }}" focusable="{{ true }}" data-event-click="callIf(!bNoPending, '', 'ApplyPoints')"/>
+						</div>
+					</dc-import>
+				</div>
+				<div class="ht-col">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="Stats" icon="/ArcRmlUIDemo/UI/Rml/icons/activity.svg" fill="{{ true }}" scroll="{{ true }}" style="width: 100%; height: 100%">
+						<div class="ch-group" data-for="chGroup : Stats">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Divider" label="{{ chGroup.Label }}"/>
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/StatRow" data-for="chStat : chGroup.Rows" label="{{ chStat.Label }}" value="{{ chStat.Value }}" delta="{{ chStat.Delta }}"/>
+						</div>
+					</dc-import>
+				</div>
+			</div>
+			<div class="ht-footer">
+				<div class="gu-prompts gu-default" data-area="equip"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Change"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Unequip }}" label="Unequip" disabled="{{ !bCanUnequip }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Close"/></dc-import></div>
+				<div class="gu-prompts" data-area="attrs"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="→" glyph="→" label="Add point" disabled="{{ !bCanAdd }}" data-if="bUnspent"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="←" glyph="←" label="Remove point" disabled="{{ bNoPending }}" data-if="bUnspent"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Apply }}" label="Apply" disabled="{{ bNoPending }}" data-hotkey="IA_ArcDemo_Apply" data-event-click="callIf(!bNoPending, '', 'ApplyPoints')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Reset }}" label="Reset" disabled="{{ bNoPending }}" data-hotkey="IA_ArcDemo_Reset" data-event-click="callIf(!bNoPending, '', 'ResetPoints')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Close"/></dc-import></div>
+				<div class="gu-prompts" data-area="footer"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Select" disabled="{{ bNoPending }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Close"/></dc-import></div>
+			</div>
+		</div>
+	</div>
+</body>
+</rml>

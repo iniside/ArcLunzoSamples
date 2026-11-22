@@ -1,0 +1,27 @@
+<rml>
+<head>
+	<title>FocusWithinTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Selectors/FocusWithin.rcss"/>
+	<viewmodel name="fw" preview="Preview/FocusWithinTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="fw">
+	<div id="outer" class="fw">
+		<div id="mid" class="fw">
+			<input id="fi" type="text" class="field" autofocus=""/>
+		</div>
+		<div id="mark" class="mark"></div>
+	</div>
+	<div id="after" class="after"></div>
+	<div id="side" class="fw">
+		<input id="fi2" type="text" class="field"/>
+	</div>
+	<div id="after2" class="after"></div>
+	<div id="dt-wrap" class="fw">
+		<div id="dt-host" class="fw" data-if="showDetach">
+			<input id="dt-field" type="text" class="field"/>
+		</div>
+	</div>
+</body>
+</rml>

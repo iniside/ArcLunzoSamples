@@ -1,0 +1,119 @@
+.dk-friendrow {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-3);
+	min-height: 60px;
+	box-sizing: border-box;
+	width: 100%;
+	padding: var(--ui-space-2) var(--ui-space-3);
+	background: transparent;
+	border: 1px solid transparent;
+	border-radius: var(--ui-radius-md);
+	box-shadow: none;
+	cursor: pointer;
+	z-index: auto;
+	transition: background-color var(--ui-dur-fast) var(--ui-ease), border-color var(--ui-dur-fast) var(--ui-ease);
+}
+
+.dk-friendrow:hover {
+	background-color: color-mix(in srgb, var(--ui-surface-2) 70%, transparent);
+	border-top-color: var(--ui-border);
+	border-right-color: var(--ui-border);
+	border-bottom-color: var(--ui-border);
+	border-left-color: var(--ui-border);
+}
+
+.dk-friendrow.selected, .dk-friendrow.open {
+	background-color: var(--ui-accent-soft);
+	border-top-color: var(--ui-accent);
+	border-right-color: var(--ui-accent);
+	border-bottom-color: var(--ui-accent);
+	border-left-color: var(--ui-accent);
+}
+
+.dk-friendrow.open {
+	z-index: 30;
+}
+
+.dk-friendrow:focus-visible {
+	border-top-color: var(--ui-focus);
+	border-right-color: var(--ui-focus);
+	border-bottom-color: var(--ui-focus);
+	border-left-color: var(--ui-focus);
+	box-shadow: var(--ui-focus-ring);
+}
+
+.dk-friendrow.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-friendrow-main {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+	flex: 1;
+}
+
+.dk-friendrow-head {
+	display: flex;
+	align-items: baseline;
+	gap: var(--ui-space-2);
+	min-width: 0;
+}
+
+.dk-friendrow-name {
+	font-size: var(--ui-fs-3);
+	font-weight: 600;
+	color: var(--ui-text);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-width: 0;
+}
+
+.dk-friendrow.offline .dk-friendrow-name {
+	color: var(--ui-text-muted);
+}
+
+.dk-friendrow-tag {
+	font-family: var(--ui-font-mono);
+	font-size: 11px;
+	color: var(--ui-text-muted);
+	flex: none;
+}
+
+.dk-friendrow-status {
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-friendrow.ingame .dk-friendrow-status {
+	color: var(--ui-online);
+}
+
+.dk-friendrow-actions {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-1);
+	flex: none;
+	opacity: 0;
+	transition: opacity var(--ui-dur-fast) var(--ui-ease);
+}
+
+.dk-friendrow.open .dk-friendrow-actions, .dk-friendrow.pin .dk-friendrow-actions, .dk-friendrow:hover .dk-friendrow-actions,
+.dk-friendrow:focus-within .dk-friendrow-actions {
+	opacity: 1;
+}
+
+.dk-friendrow-menu {
+	position: absolute;
+	right: var(--ui-space-2);
+	top: calc(100% - 6px);
+	z-index: 30;
+}

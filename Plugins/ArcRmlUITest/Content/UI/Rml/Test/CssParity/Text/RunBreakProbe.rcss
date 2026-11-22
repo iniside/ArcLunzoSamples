@@ -1,0 +1,35 @@
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #202020;
+	color: #ffffff;
+}
+
+div {
+	display: block;
+	position: absolute;
+}
+
+.kerned {
+	left: 20px;
+	top: 20px;
+	width: 260px;
+	font-family: 'Space Grotesk';
+	font-size: 16px;
+}
+
+.mono {
+	left: 20px;
+	top: 200px;
+	width: 150px;
+	font-family: 'JetBrains Mono';
+	font-size: 14px;
+}
+
+.long {
+	left: 400px;
+	top: 20px;
+	width: 520px;
+	font-family: 'Space Grotesk';
+	font-size: 15px;
+}

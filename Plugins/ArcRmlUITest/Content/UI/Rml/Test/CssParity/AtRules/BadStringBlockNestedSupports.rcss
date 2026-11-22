@@ -1,0 +1,8 @@
+.ns {
+	width: 46px;
+	@supports (display: 'a)
+	{ height: 20px; }
+	height: 14px;
+}
+
+.ns-after { width: 99px; }

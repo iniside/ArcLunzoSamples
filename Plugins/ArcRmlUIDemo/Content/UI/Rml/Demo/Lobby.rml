@@ -1,0 +1,102 @@
+<rml>
+<head>
+	<title>ArcRmlUI Demo Multiplayer Lobby</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="hide-lower" content="true"/>
+	<meta name="keep-alive" content="true"/>
+	<meta name="input-mapping" content="/ArcRmlUIDemo/Demo/Input/IMC_ArcDemo_Lobby"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/tokens.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Fonts/Fonts.rcss"/>
+	<link type="text/rcss" href="GameUI.rcss"/>
+	<link type="text/rcss" href="Lobby.rcss"/>
+	<viewmodel name="ui" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoUIVM.BP_ArcRmlDemoUIVM_C" context="VM_ArcRmlDemoUI"/>
+	<viewmodel name="lobby" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoLobbyVM.BP_ArcRmlDemoLobbyVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+</head>
+<body data-model="ui" data-class-theme-ember="Theme == 'ember'" data-class-theme-daylight="Theme == 'daylight'" data-class-theme-slate="Theme == 'slate'" data-class-theme-relic="Theme == 'relic'" data-event-back="call('', 'Back'); stopPropagation()" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_DevBar', '', 'ToggleDevBar')">
+	<div class="gu-layer">
+		<div class="gu-screen">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/SceneBackdrop" label="Game scene" dim="strong"/>
+			<div class="lb-frame" data-model="lobby">
+				<div class="lb-head">
+					<div class="lb-titles">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Breadcrumb" items="{{ Crumbs }}" field="crumbs" nofocus="{{ true }}"/>
+						<span class="lb-title">Multiplayer</span>
+					</div>
+					<div class="lb-status">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Badge" label="Online" tone="success"/>
+						<span class="lb-online">12,408 players online</span>
+					</div>
+				</div>
+				<div class="lb-body">
+					<div class="lb-col">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="Server browser" subtitle="128 servers · EU-West" icon="/ArcRmlUIDemo/UI/Rml/icons/server.svg" padded="{{ false }}" fill="{{ true }}" has-footer="{{ true }}" style="width: 100%; height: 100%">
+							<div slot="actions" class="gu-area" data-focus-area="header" data-focus-parent="servers">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/IconButton" icon="/ArcRmlUIDemo/UI/Rml/icons/star.svg" size="sm" focusable="{{ true }}" data-event-click="call('', 'ToggleFavourite')"/>
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/IconButton" icon="/ArcRmlUIDemo/UI/Rml/icons/refresh-cw.svg" size="sm" focusable="{{ true }}" data-event-click="call('', 'RefreshServers')"/>
+							</div>
+							<div class="lb-filters" data-focus-area="filters" data-focus-parent="servers">
+								<div class="lb-search">
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/SearchField" value="{{ Query }}" placeholder="Search servers" field="search" style="width: 100%"/>
+								</div>
+								<div class="lb-drop">
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Dropdown" data-focus-owner="" value="Region: Europe" field="region" style="width: 100%"/>
+								</div>
+								<div class="lb-drop">
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Dropdown" data-focus-owner="" value="Mode: Any" field="mode" style="width: 100%"/>
+								</div>
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Checkbox" label="Hide full" checked="{{ bHideFull }}" focusable="{{ true }}" data-event-click="call('', 'ToggleHideFull')"/>
+							</div>
+							<div class="lb-list">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ServerRow" header="{{ true }}" header-labels="{{ Columns }}" style="width: 100%"/>
+								<div class="lb-searching" data-if="bSearching">
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ProgressBar" indeterminate="{{ true }}" label="Searching for servers…" size="sm"/>
+								</div>
+								<div class="lb-scroll">
+									<div class="gu-area" data-focus-area="servers" data-focus-primary="">
+										<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ServerRow" data-for="lbServer, lbServer_index : Servers" label="{{ lbServer.Label }}" region="{{ lbServer.Region }}" mode="{{ lbServer.Mode }}" map="{{ lbServer.Map }}" players="{{ lbServer.Players }}" max-players="{{ lbServer.MaxPlayers }}" ping="{{ lbServer.Ping }}" locked="{{ lbServer.bLocked }}" favorite="{{ lbServer.bFavorite }}" selected="{{ lbServer_index == SelectedServer }}" focusable="{{ true }}" autofocus="{{ lbServer_index == SelectedServer }}" data-event-click="call('', 'SelectServer', lbServer_index)" style="width: 100%"/>
+									</div>
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/EmptyState" data-if="bEmpty" icon="/ArcRmlUIDemo/UI/Rml/icons/server-off.svg" title="No servers match" body="Try another region or clear your filters." data-focus-area="empty" style="width: 100%">
+										<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="Clear filters" variant="secondary" icon-left="/ArcRmlUIDemo/UI/Rml/icons/filter-x.svg" focusable="{{ true }}" data-event-click="call('', 'ClearFilters')"/>
+									</dc-import>
+								</div>
+							</div>
+							<div slot="footer" class="lb-pagerrow">
+								<span class="lb-showing">{{ Showing }}</span>
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Pager" mode="numeric" arrows="{{ true }}" count="{{ PageCount }}" index="{{ Page }}" field="pager" nofocus="{{ true }}"/>
+							</div>
+						</dc-import>
+					</div>
+					<div class="lb-col">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="Party" subtitle="{{ PartySub }}" icon="/ArcRmlUIDemo/UI/Rml/icons/users.svg" scroll="{{ true }}" fill="{{ true }}" has-footer="{{ true }}" style="width: 100%; height: 100%">
+							<div class="lb-party" data-focus-area="party" data-focus-parent="servers">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PlayerCard" data-for="lbPlayer, lbPlayer_index : Party" label="{{ lbPlayer.Label }}" initials="{{ lbPlayer.Initials }}" level="{{ lbPlayer.Level }}" level-label="Lv" role="{{ lbPlayer.Role }}" status="{{ lbPlayer.Status }}" host="{{ lbPlayer.bHost }}" ready-label="Ready" not-ready-label="Not ready" empty-label="Invite player" focusable="{{ true }}" style="width: 100%"/>
+							</div>
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ProgressBar" data-if="bReady" value="{{ 75 }}" label="Waiting for players" value-label="3 / 4" tone="success"/>
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Divider" label="Selected server"/>
+							<div class="lb-stats">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/StatRow" data-for="lbStat : ServerStats" label="{{ lbStat.Label }}" value="{{ lbStat.Value }}"/>
+							</div>
+							<div slot="footer" class="lb-actions" data-focus-area="actions" data-focus-parent="servers">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="Leave" variant="secondary" icon-left="/ArcRmlUIDemo/UI/Rml/icons/log-out.svg" focusable="{{ true }}" data-event-click="call('', 'Leave')"/>
+								<dc-import data-if="bReady" name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="{{ ReadyLabel }}" variant="{{ ReadyVariant }}" icon-left="/ArcRmlUIDemo/UI/Rml/icons/x.svg" focusable="{{ true }}" data-event-click="call('', 'ToggleReady')"/>
+								<dc-import data-if="!bReady" name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="{{ ReadyLabel }}" variant="{{ ReadyVariant }}" icon-left="/ArcRmlUIDemo/UI/Rml/icons/check.svg" focusable="{{ true }}" data-event-click="call('', 'ToggleReady')"/>
+							</div>
+						</dc-import>
+					</div>
+				</div>
+				<div class="lb-footer">
+					<div class="gu-prompts gu-all" data-if="bSearching"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Cancel"/></dc-import></div>
+					<div class="gu-prompts gu-default" data-area="servers" data-if="!bSearching"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Select"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Ready }}" label="{{ ReadyLabel }}" data-hotkey="IA_ArcDemo_Ready" data-event-click="call('', 'ToggleReady')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Back"/></dc-import></div>
+					<div class="gu-prompts" data-area="header" data-if="!bSearching"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Select"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Ready }}" label="{{ ReadyLabel }}" data-hotkey="IA_ArcDemo_Ready" data-event-click="call('', 'ToggleReady')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Back"/></dc-import></div>
+					<div class="gu-prompts" data-area="filters" data-if="!bSearching"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Select"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Ready }}" label="{{ ReadyLabel }}" data-hotkey="IA_ArcDemo_Ready" data-event-click="call('', 'ToggleReady')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Back"/></dc-import></div>
+					<div class="gu-prompts" data-area="actions" data-if="!bSearching"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Select"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Ready }}" label="{{ ReadyLabel }}" data-hotkey="IA_ArcDemo_Ready" data-event-click="call('', 'ToggleReady')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Back"/></dc-import></div>
+					<div class="gu-prompts" data-area="party" data-if="!bSearching"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Ready }}" label="{{ ReadyLabel }}" data-hotkey="IA_ArcDemo_Ready" data-event-click="call('', 'ToggleReady')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Back"/></dc-import></div>
+					<div class="gu-prompts" data-area="empty" data-if="!bSearching"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Clear filters"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Ready }}" label="{{ ReadyLabel }}" data-hotkey="IA_ArcDemo_Ready" data-event-click="call('', 'ToggleReady')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Back"/></dc-import></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/DevBar" data-if="DevOpen"/>
+</body>
+</rml>

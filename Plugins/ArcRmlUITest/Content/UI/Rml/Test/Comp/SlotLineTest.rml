@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Slot Line Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="slt" preview="Preview/CallTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="slt">
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/SlotLineBox" label="one
+two"><div id="slt-child" style="colr: red;">child</div></dc-import>
+</body>
+</rml>

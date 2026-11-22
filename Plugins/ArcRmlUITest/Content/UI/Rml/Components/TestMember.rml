@@ -1,0 +1,4 @@
+<component>
+	<prop name="item"/>
+	<div class="tb">{{ $item.name }}</div>
+</component>

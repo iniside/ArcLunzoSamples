@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Inline Style Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="diag" preview="Preview/Diag.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="diag">
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Diag/DiagSpacer.rml"/>
+	<div style="colr: red; width: 120px; height: 60px; background-color: #e63946;">inline style with a dropped declaration</div>
+</body>
+</rml>

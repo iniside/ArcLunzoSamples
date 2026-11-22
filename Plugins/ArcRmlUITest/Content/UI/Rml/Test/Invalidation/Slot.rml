@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>Slot Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<viewmodel name="slot" preview="Preview/Slot.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="slot">
+	<div id="slot" data-attr-class="'slot ' + Rarity" data-class-selected="bSelected">Slot</div>
+</body>
+</rml>

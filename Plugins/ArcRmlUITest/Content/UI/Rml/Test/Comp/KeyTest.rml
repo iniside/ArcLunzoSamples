@@ -1,0 +1,10 @@
+<rml>
+<head>
+	<title>Component Key Test</title>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="keytest" preview="Preview/KeyTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="keytest">
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/KeyRow" data-for="r : Rows" data-key="r.Id" label="{{ r.Label }}"/>
+</body>
+</rml>

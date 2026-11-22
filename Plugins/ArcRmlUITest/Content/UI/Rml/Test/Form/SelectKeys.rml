@@ -1,0 +1,121 @@
+<rml>
+<head>
+	<title>SelectKeys</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/SelectKeys.rcss"/>
+	<viewmodel name="sk" preview="Preview/SelectKeys.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="sk">
+	<div class="row"><div id="sk-before" class="btn">before</div></div>
+	<div class="row">
+		<select id="sk-sel" data-event-input="call('', 'In', 'sel', ev.value)" data-event-change="call('', 'Ch', 'sel', ev.value)">
+			<option value="a">Apple</option>
+			<option value="b" disabled="">Banana</option>
+			<option value="c">Cherry</option>
+			<option value="d">Date</option>
+			<option value="e" data-style-display="'none'">Elder</option>
+		</select>
+	</div>
+	<div class="row">
+		<select id="sk-sel-bound" data-attr-value="sel" data-event-input="call('', 'In', 'selb', ev.value)" data-event-change="call('', 'Ch', 'selb', ev.value)">
+			<option value="a">Apple</option>
+			<option value="b">Banana</option>
+			<option value="c">Cherry</option>
+		</select>
+	</div>
+	<div class="row" id="sk-long-row" data-event-click="call('', 'Wrap', 'long')">
+		<select id="sk-long" data-event-click="call('', 'Own', 'long')" data-attrif-disabled="off" data-event-input="call('', 'In', 'long', ev.value)" data-event-change="call('', 'Ch', 'long', ev.value)">
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+			<option value="4">Four</option>
+			<option value="5">Five</option>
+			<option value="6">Six</option>
+			<option value="7">Seven</option>
+			<option value="8">Eight</option>
+			<option value="9">Nine</option>
+			<option value="10">Ten</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="25">25</option>
+			<option value="26">26</option>
+			<option value="27">27</option>
+			<option value="28">28</option>
+			<option value="29">29</option>
+			<option value="30">30</option>
+			<option value="31">31</option>
+			<option value="32">32</option>
+			<option value="33">33</option>
+			<option value="34">34</option>
+			<option value="35">35</option>
+			<option value="36">36</option>
+			<option value="37">37</option>
+			<option value="38">38</option>
+			<option value="39">39</option>
+			<option value="40">40</option>
+			<option value="41">41</option>
+			<option value="42">42</option>
+			<option value="43">43</option>
+			<option value="44">44</option>
+			<option value="45">45</option>
+			<option value="46">46</option>
+			<option value="47">47</option>
+			<option value="48">48</option>
+			<option value="49">49</option>
+			<option value="50">50</option>
+			<option value="51">51</option>
+			<option value="52">52</option>
+			<option value="53">53</option>
+			<option value="54">54</option>
+			<option value="55">55</option>
+			<option value="56">56</option>
+			<option value="57">57</option>
+			<option value="58">58</option>
+			<option value="59">59</option>
+			<option value="60">60</option>
+		</select>
+	</div>
+	<div class="row"><div id="sk-after" class="btn">after</div></div>
+	<div class="row">
+		<select id="sk-hide" data-event-input="call('', 'In', 'hide', ev.value)" data-event-change="call('', 'Ch', 'hide', ev.value)">
+			<option value="1">One</option>
+			<option value="2" style="display: none">Two</option>
+			<option value="3" class="gone">Three</option>
+			<option value="4" data-style-display="'none'">Four</option>
+			<option value="5">Five</option>
+		</select>
+	</div>
+	<div id="sk-plain" class="plain">plain text, no pointer region</div>
+	<div class="row">
+		<select id="sk-edge" data-event-input="call('', 'In', 'edge', ev.value)" data-event-change="call('', 'Ch', 'edge', ev.value)">
+			<option value="0" disabled="">Zero</option>
+			<option value="h" style="display: none">Hidden</option>
+			<option value="1">One</option>
+			<option value="2" selected="">Two</option>
+			<option value="3">Three</option>
+			<option value="4" disabled="">Four</option>
+			<option value="x" data-style-display="'none'">Ex</option>
+		</select>
+	</div>
+	<div class="row" data-if="keep">
+		<select id="sk-gone" data-attrif-disabled="goneoff" data-event-input="call('', 'In', 'gone', ev.value)" data-event-change="call('', 'Ch', 'gone', ev.value)">
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+		</select>
+	</div>
+</body>
+</rml>

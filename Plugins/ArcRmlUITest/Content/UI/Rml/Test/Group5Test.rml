@@ -1,0 +1,74 @@
+<rml>
+<head>
+	<title>ArcRmlUI Group 5 Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ds/tokens.rcss"/>
+	<link type="text/rcss" href="Group5Test.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="panel">
+		<div class="cell" style="left: 20px; top: 20px;">
+			<div class="slot-host">
+				<div style="position: relative; width: 100%; aspect-ratio: 1; background: color-mix(in srgb, var(--accent) 16%, transparent); border: 1px solid color-mix(in srgb, var(--accent) 70%, transparent); display: flex; align-items: center; justify-content: center; color: var(--accent); cursor: pointer; border-radius: 6px; box-sizing: border-box;">
+					<img src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png" draggable="false" style="width: 84%; height: 84%; object-fit: contain; filter: drop-shadow(0 2px 3px rgba(0,0,0,0.65)); pointer-events: none;"/>
+				</div>
+			</div>
+		</div>
+		<div class="cell" style="left: 140px; top: 20px;">
+			<div class="listrow-host">
+				<img src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png" width="32" height="32" style="display: block; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.6));"/>
+			</div>
+		</div>
+		<div class="cell" style="left: 260px; top: 20px;">
+			<div class="icon-host">
+				<svg src="../icons/heart.svg" width="17" height="17" style="display: inline-flex; flex: none; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.7));"/>
+				<svg src="../icons/heart.svg" width="34" height="34" style="display: inline-flex; flex: none; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.7));"/>
+			</div>
+		</div>
+		<div class="cell" style="left: 380px; top: 20px;">
+			<div class="shadow-color-first"/>
+		</div>
+		<div class="cell" style="left: 500px; top: 20px;">
+			<div class="shadow-currentcolor"/>
+		</div>
+		<div class="cell stripes" style="left: 620px; top: 20px;">
+			<div class="backdrop-shadow"/>
+		</div>
+
+		<img class="fit fill" style="left: 20px; top: 140px;" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/>
+		<img class="fit contain" style="left: 160px; top: 140px;" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/>
+		<img class="fit cover" style="left: 300px; top: 140px;" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/>
+		<img class="fit none" style="left: 440px; top: 140px;" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/>
+		<img class="fit scale-down" style="left: 580px; top: 140px;" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/>
+
+		<img class="fit contain pos-left-top" style="left: 20px; top: 220px;" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/>
+		<img class="fit contain pos-edges" style="left: 160px; top: 220px;" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/>
+		<img class="fit cover pos-percent" style="left: 300px; top: 220px;" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/>
+		<img class="fit none pos-edges" style="left: 440px; top: 220px;" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/>
+		<img class="fit contain pos-top" style="left: 580px; top: 220px;" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/>
+
+		<svg class="fit-svg fill" style="left: 20px; top: 300px;" src="Group5Wide.svg"/>
+		<svg class="fit-svg contain" style="left: 120px; top: 300px;" src="Group5Wide.svg"/>
+		<svg class="fit-svg cover" style="left: 220px; top: 300px;" src="Group5Wide.svg"/>
+		<svg class="fit-svg none" style="left: 320px; top: 300px;" src="Group5Wide.svg"/>
+		<svg class="fit-svg scale-down" style="left: 420px; top: 300px;" src="Group5Wide.svg"/>
+		<svg class="fit-svg contain pos-left-bottom" style="left: 520px; top: 300px;" src="Group5Wide.svg"/>
+		<svg class="fit-svg cover pos-edges" style="left: 620px; top: 300px;" src="Group5Wide.svg"/>
+
+		<div class="scroller" style="left: 20px; top: 410px;"><div class="scroll-content"/></div>
+		<div class="scroller webkit-only" style="left: 180px; top: 410px;"><div class="scroll-content"/></div>
+		<div class="scroller standard-colors" style="left: 340px; top: 410px;"><div class="scroll-content"/></div>
+		<div class="scroller standard-none" style="left: 500px; top: 410px;"><div class="scroll-content"/></div>
+		<div class="scroller webkit-class" style="left: 660px; top: 410px;"><div class="scroll-content"/></div>
+
+		<div class="backdrop stripes">
+			<div class="backdrop-cell saturate" style="left: 10px;"/>
+			<div class="backdrop-cell brightness" style="left: 120px;"/>
+			<div class="backdrop-cell saturate-brightness" style="left: 230px;"/>
+			<div class="backdrop-cell" style="left: 340px; background: linear-gradient(180deg,rgba(14,15,17,0.72),rgba(4,5,6,0.78)); backdrop-filter: blur(30px) saturate(1.5) brightness(0.8); -webkit-backdrop-filter: blur(30px) saturate(1.5) brightness(0.8);"/>
+			<div class="backdrop-cell" style="left: 450px; height: 15px; top: 32px; background: rgba(14,15,17,0.35); backdrop-filter: blur(14px) saturate(1.4); -webkit-backdrop-filter: blur(14px) saturate(1.4); border: 1px solid rgba(255,255,255,0.14); border-radius: 4px; overflow: hidden;"/>
+		</div>
+	</div>
+</body>
+</rml>

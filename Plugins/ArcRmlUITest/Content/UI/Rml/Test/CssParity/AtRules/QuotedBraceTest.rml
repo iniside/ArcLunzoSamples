@@ -1,0 +1,18 @@
+<rml>
+<head>
+	<title>QuotedBraceTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/QuotedBrace.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="q1" class="q1"></div>
+	<div id="q2" class="q2"></div>
+	<div id="q3" class="q3"></div>
+	<div id="q4" class="q4"></div>
+	<div id="q5" class="q5" data-x="{"></div>
+	<div id="q6" class="q6" data-x="}"></div>
+	<div id="q7" class="q7"></div>
+	<div id="after" class="after"></div>
+</body>
+</rml>

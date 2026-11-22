@@ -1,0 +1,30 @@
+<rml>
+<head>
+	<title>UserAgentTextTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/UserAgent/UserAgentText.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="w-light" style="font-weight: 300">Light <b id="w-b1">One <b id="w-b2">Two <b id="w-b3">Three</b></b></b></div>
+	<div id="w-bold" style="font-weight: 700">Bold <span id="w-lighter" style="font-weight: lighter">Lighter</span> <strong id="w-strong">Strong</strong></div>
+	<p id="s-p">Text <small id="s-small1">small <small id="s-small2">smaller</small></small> <span id="s-larger" style="font-size: larger">larger</span> H<sub id="s-sub">2</sub>O x<sup id="s-sup">2</sup></p>
+	<p id="c-p">Call <code id="c-code">parse(x)</code> here</p>
+	<pre id="c-pre">pre block
+second line</pre>
+	<table id="t-start"><tr><th id="t-th1">A</th><td id="t-td1">Cell</td></tr></table>
+	<table id="t-left" style="text-align: left"><tr><th id="t-th2">A</th><td id="t-td2">Cell</td></tr></table>
+	<div id="t-right" style="text-align: right"><table id="t-right-table"><tr><th id="t-th3">A</th></tr></table></div>
+	<hr id="hr1"/>
+	<div id="after">After</div>
+	<div id="k-row">
+		<div style="font-weight: 99"><span id="k-l99" style="font-weight: lighter">a</span></div>
+		<div style="font-weight: 549"><span id="k-l549" style="font-weight: lighter">a</span></div>
+		<div style="font-weight: 550"><span id="k-l550" style="font-weight: lighter">a</span></div>
+		<div style="font-weight: 750"><span id="k-l750" style="font-weight: lighter">a</span></div>
+		<div style="font-weight: 900"><span id="k-l900" style="font-weight: lighter">a</span> <b id="k-b900">b</b></div>
+	</div>
+	<div id="i-row"><b id="i-b">Bold <span id="i-inherit" style="font-weight: inherit">inherit</span> <span id="i-unset" style="font-weight: unset">unset</span> <b id="i-b2">x <span id="i-inherit2" style="font-weight: inherit">y</span></b></b> <small id="i-small">s <span id="i-size" style="font-size: inherit">inherit</span> <span id="i-size-unset" style="font-size: unset">unset</span></small></div>
+	<table id="i-table"><tr><th id="i-th"><div id="i-th-inherit" style="text-align: inherit">A</div><div id="i-th-block">B</div></th></tr></table>
+</body>
+</rml>

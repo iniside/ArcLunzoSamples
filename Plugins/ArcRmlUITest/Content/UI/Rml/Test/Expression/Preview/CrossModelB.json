@@ -1,0 +1,9 @@
+{
+	"Label": "B label",
+	"Count": 2,
+	"Items": [
+		{ "Name": "one" },
+		{ "Name": "two" },
+		{ "Name": "three" }
+	]
+}

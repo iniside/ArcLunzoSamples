@@ -1,0 +1,23 @@
+<rml>
+<head>
+	<title>ScrollbarSpaceTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Scroll/ScrollbarSpaceTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="c1" class="box"><div class="tall"></div></div>
+	<div id="c2" class="box"><div class="short"></div></div>
+	<div id="c3" class="box"><div class="tall"></div></div>
+	<div id="c4" class="box"><div class="tall"></div></div>
+	<div id="c5" class="box"><div class="tall"></div></div>
+	<div id="c6" class="box"><div class="tall"></div><div id="c6abs"></div></div>
+	<div id="c7" class="box"><div id="c7child" class="narrow"></div></div>
+	<div id="c8wrap"><div id="c8a"><div id="c8achild" class="narrow"></div></div></div>
+	<div id="c8b" class="box"><div id="c8bchild" class="narrow"></div></div>
+	<div id="c9" class="box"><div id="c9item" class="tall"></div></div>
+	<div id="c10" class="box"><div class="tall"></div></div>
+	<div id="c10b" class="box"><div class="tall"></div></div>
+	<div id="c11" class="box"><div id="c11child" class="tall"></div></div>
+</body>
+</rml>

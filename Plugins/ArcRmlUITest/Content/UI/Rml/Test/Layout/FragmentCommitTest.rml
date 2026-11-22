@@ -1,0 +1,19 @@
+<rml>
+<head>
+	<title>Fragment Commit Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="p"><span id="s">a</span><textarea id="t" rows="2" cols="10"></textarea><input id="i" type="text"/></div>
+	<div id="f" style="display: flex; width: 400px;">
+		<div id="b" style="display: flow-root; width: 200px;">
+			<div id="e" style="display: flow-root; position: relative; height: 50%;">
+				<div id="d" style="position: absolute; left: 0px; top: 0px; width: 30px; height: 10px;"></div>
+			</div>
+			<div style="height: 100px;"></div>
+		</div>
+		<div id="sib" style="width: 100px; height: 40px;">a</div>
+	</div>
+</body>
+</rml>

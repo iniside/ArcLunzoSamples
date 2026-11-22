@@ -1,0 +1,30 @@
+<component>
+	<div class="dk-devbar">
+		<div class="dk-devbar-head">
+			<span class="dk-devbar-title">Dev bar · F10</span>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Badge" label="design tool" tone="warning"/>
+		</div>
+		<span class="dk-devbar-caption">Theme</span>
+		<div class="dk-devbar-group">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" size="sm" label="Midnight" variant="{{ Theme == 'midnight' ? 'primary' : 'secondary' }}" data-event-click="call('', 'SetTheme', 'midnight')"/>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" size="sm" label="Ember" variant="{{ Theme == 'ember' ? 'primary' : 'secondary' }}" data-event-click="call('', 'SetTheme', 'ember')"/>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" size="sm" label="Daylight" variant="{{ Theme == 'daylight' ? 'primary' : 'secondary' }}" data-event-click="call('', 'SetTheme', 'daylight')"/>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" size="sm" label="Slate" variant="{{ Theme == 'slate' ? 'primary' : 'secondary' }}" data-event-click="call('', 'SetTheme', 'slate')"/>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" size="sm" label="Relic" variant="{{ Theme == 'relic' ? 'primary' : 'secondary' }}" data-event-click="call('', 'SetTheme', 'relic')"/>
+		</div>
+		<span class="dk-devbar-caption">Input</span>
+		<div class="dk-devbar-group">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" size="sm" label="Keyboard" variant="{{ Input == 'keyboard' ? 'primary' : 'secondary' }}" data-event-click="call('', 'SetInputScheme', 'keyboard')"/>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" size="sm" label="Gamepad" variant="{{ Input == 'gamepad' ? 'primary' : 'secondary' }}" data-event-click="call('', 'SetInputScheme', 'gamepad')"/>
+		</div>
+		<span class="dk-devbar-caption">Jump to screen</span>
+		<div class="dk-devbar-group">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" data-for="DevBarS : DevBar.Screens" size="sm" label="{{ DevBarS.Label }}" variant="{{ DevBarS.Key == DevBar.Current ? 'primary' : 'secondary' }}" data-event-click="call('', 'Jump', DevBarS.Key)"/>
+		</div>
+		<span class="dk-devbar-caption" data-if="DevBar.Session != ''">Session</span>
+		<div class="dk-devbar-group" data-if="DevBar.Session != ''">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" size="sm" label="{{ DevBar.Session }}" variant="secondary" data-event-click="call('', 'ToggleMultiplayer')"/>
+		</div>
+		<span class="dk-devbar-caption">{{ DevBar.Status }}</span>
+	</div>
+</component>

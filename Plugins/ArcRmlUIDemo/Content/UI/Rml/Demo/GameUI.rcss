@@ -1,0 +1,105 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: #000000;
+}
+
+a {
+	color: inherit;
+}
+
+a:hover {
+	opacity: 0.8;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(128,128,128,0.4);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+@keyframes gameui-in {
+	from { opacity: 0; transform: scale(1.01); }
+	to { opacity: 1; transform: scale(1); }
+}
+
+.gu-layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	animation: gameui-in var(--ui-dur-normal) var(--ui-ease) both;
+}
+
+.gu-screen {
+	background: var(--ui-bg);
+	color: var(--ui-text);
+	font-family: var(--ui-font-body);
+	font-size: var(--ui-fs-3);
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	min-height: 480px;
+	overflow: hidden;
+}
+
+.gu-area {
+	display: contents;
+}
+
+.gu-cycle {
+	min-width: 0;
+}
+
+.gu-prompts {
+	display: none;
+}
+
+.gu-prompts.gu-all,
+body:not([data-focus-active]) .gu-prompts.gu-default,
+body[data-focus-active="rows"] .gu-prompts[data-area="rows"],
+body[data-focus-active="search"] .gu-prompts[data-area="search"],
+body[data-focus-active="slots"] .gu-prompts[data-area="slots"],
+body[data-focus-active="sort"] .gu-prompts[data-area="sort"],
+body[data-focus-active="actions"] .gu-prompts[data-area="actions"],
+body[data-focus-active="modal"] .gu-prompts[data-area="modal"],
+body[data-focus-active="servers"] .gu-prompts[data-area="servers"],
+body[data-focus-active="header"] .gu-prompts[data-area="header"],
+body[data-focus-active="filters"] .gu-prompts[data-area="filters"],
+body[data-focus-active="party"] .gu-prompts[data-area="party"],
+body[data-focus-active="empty"] .gu-prompts[data-area="empty"],
+body[data-focus-active="stock"] .gu-prompts[data-area="stock"],
+body[data-focus-active="tx"] .gu-prompts[data-area="tx"],
+body[data-focus-active="deal"] .gu-prompts[data-area="deal"],
+body[data-focus-active="bag"] .gu-prompts[data-area="bag"],
+body[data-focus-active="recipes"] .gu-prompts[data-area="recipes"],
+body[data-focus-active="chips"] .gu-prompts[data-area="chips"],
+body[data-focus-active="ingredients"] .gu-prompts[data-area="ingredients"],
+body[data-focus-active="grid"] .gu-prompts[data-area="grid"],
+body[data-focus-active="equip"] .gu-prompts[data-area="equip"],
+body[data-focus-active="attrs"] .gu-prompts[data-area="attrs"],
+body[data-focus-active="footer"] .gu-prompts[data-area="footer"],
+body[data-focus-active="nodes"] .gu-prompts[data-area="nodes"],
+body[data-focus-active="detail"] .gu-prompts[data-area="detail"],
+body[data-focus-active="reset"] .gu-prompts[data-area="reset"],
+body[data-focus-active="list"] .gu-prompts[data-area="list"],
+body[data-focus-active="menu"] .gu-prompts[data-area="menu"],
+body[data-focus-active="partyActions"] .gu-prompts[data-area="partyActions"],
+body[data-focus-active="requests"] .gu-prompts[data-area="requests"],
+body[data-focus-active="addId"] .gu-prompts[data-area="addId"],
+body[data-focus-active="send"] .gu-prompts[data-area="send"],
+body[data-focus-active="cats"] .gu-prompts[data-area="cats"],
+body[data-focus-active="cards"] .gu-prompts[data-area="cards"],
+body[data-focus-active="batch"] .gu-prompts[data-area="batch"] {
+	display: contents;
+}

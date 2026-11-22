@@ -1,0 +1,17 @@
+<component>
+	<prop name="x" default="50"/>
+	<prop name="y" default="50"/>
+	<prop name="visible" default="true"/>
+	<prop name="scale" default="1"/>
+	<prop name="keyLabel" default="F"/>
+	<prop name="glyph" default="A"/>
+	<prop name="label"/>
+	<prop name="hold" default="-1"/>
+	<div class="dk-interaction-prompt" data-class-no-visible="!$visible" data-style-left="($x + '%')" data-style-top="($y + '%')">
+		<div class="dk-interaction-prompt-content" data-style---dk-interaction-prompt-content-transform-1="$scale">
+			<span class="dk-interaction-prompt-ring" data-style---cd="((($hold &gt;= 0) ? (($hold * 100) | round) : 0) + '%')" data-style-box-shadow="(($hold &gt;= 0) ? 'inset 0 0 0 2px var(--ui-accent)' : 'inset 0 0 0 1px var(--hud-stroke)')" data-style-background-image="(($hold &gt;= 0) ? 'conic-gradient(color-mix(in srgb, var(--ui-accent) 45%, transparent) 0%, color-mix(in srgb, var(--ui-accent) 45%, transparent) var(--cd), transparent var(--cd), transparent 100%)' : 'none')">
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ($keyLabel != '' ? $keyLabel : 'F') }}" glyph="{{ ($glyph != '' ? $glyph : 'A') }}" label="{{ ((($hold &gt;= 0) ? 'Hold · ' : '') + ($label != '' ? $label : '')) }}"/>
+			</span>
+		</div>
+	</div>
+</component>

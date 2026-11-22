@@ -1,0 +1,180 @@
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.row {
+	display: block;
+	width: 40px;
+	height: 10px;
+	background-color: #000000;
+}
+
+@media (width >= 1280px) { #w-ge-1280 { background-color: #010101; } }
+@media (width > 1280px) { #w-gt-1280 { background-color: #020202; } }
+@media (700px <= height < 721px) { #h-700-721 { background-color: #030303; } }
+@media (aspect-ratio > 16/10) { #ar-gt-16-10 { background-color: #040404; } }
+@media (aspect-ratio <= 4/3) { #ar-le-4-3 { background-color: #050505; } }
+@media (1dppx <= resolution < 2dppx) { #res-1-2 { background-color: #060606; } }
+@media (resolution > 1dppx) { #res-gt-1 { background-color: #070707; } }
+@media (width >= 2000px) { #w-ge-2000 { background-color: #080808; } }
+@media (width >> 3px) { #malformed { background-color: #090909; } }
+@media (600px <= width) { #w-reversed { background-color: #0a0a0a; } }
+@media (400px < width <= 800px) { #w-400-800 { background-color: #0b0b0b; } }
+@media (1000px < width <= 1280px) { #w-1000-1280 { background-color: #0c0c0c; } }
+@media (min-width: 1280px) { #min-width { background-color: #0d0d0d; } }
+@media (max-width: 1279px) { #max-width { background-color: #0e0e0e; } }
+@media (width = 1280px) { #w-eq-1280 { background-color: #0f0f0f; } }
+@media (aspect-ratio: 1.5) { #ar-bare { background-color: #101010; } }
+@media (aspect-ratio: 16/9) { #ar-eq-16-9 { background-color: #111111; } }
+@media not (width > 2000px) { #not-w { background-color: #121212; } }
+@media screen and (width >= 1px) { #screen-and { background-color: #131313; } }
+@media print { #print { background-color: #141414; } }
+@media not print { #not-print { background-color: #151515; } }
+@media (width > 5000px), (height = 720px) { #comma-list { background-color: #161616; } }
+@media (400px < width > 800px) { #mixed-ops { background-color: #171717; } }
+@media (orientation: landscape) { #landscape { background-color: #181818; } }
+@media (min-orientation: landscape) { #min-orientation { background-color: #191919; } }
+@media(width >= 1px) { #no-space { background-color: #1a1a1a; } }
+@media not(width > 2000px) { #fn-not { background-color: #1b1b40; } }
+@media screen and(width >= 1px) { #fn-and { background-color: #1c1c40; } }
+@media (width > 1px) and foo(bar) { #fn-term { background-color: #1d1d40; } }
+@media foo(bar) or (width > 1px) { #fn-or { background-color: #1e1e40; } }
+@media (resolution >= 96dpi) { #dpi-ge { background-color: #1f1f40; } }
+@media (resolution < 97dpi) { #dpi-lt { background-color: #202040; } }
+@media (resolution >= 37.8dpcm) { #dpcm-ge { background-color: #212140; } }
+@media (resolution > 37.8dpcm) { #dpcm-gt { background-color: #222240; } }
+@media (min-resolution: 96dpi) { #dpi-plain { background-color: #232340; } }
+@media (resolution >= calc(0.5dppx + 0.5dppx)) { #res-calc { background-color: #242440; } }
+@media (resolution >= calc(48dpi + 48dpi)) { #res-calc-dpi { background-color: #252540; } }
+@media not (resolution > -1dppx) { #res-neg { background-color: #262640; } }
+@media (resolution > 0dppx) { #res-zero { background-color: #272740; } }
+@media (width) { #bool-width { background-color: #282840; } }
+@media (height) { #bool-height { background-color: #292940; } }
+@media (aspect-ratio) { #bool-ar { background-color: #2a2a40; } }
+@media (resolution) { #bool-res { background-color: #2b2b40; } }
+@media (orientation) { #bool-orient { background-color: #2c2c40; } }
+@media (min-width) { #bool-min { background-color: #2d2d40; } }
+@media not (width) { #bool-not { background-color: #2e2e40; } }
+@media screen and not (width > 2000px) { #screen-not { background-color: #2f2f40; } }
+@media (width > 2000px) or (height = 720px) { #or { background-color: #303040; } }
+@media not ((width > 2000px) or (height > 2000px)) { #not-or { background-color: #313140; } }
+@media ((width >= 1px) and (height >= 1px)) { #nested-and { background-color: #323240; } }
+@media (width > 2000px) and (height = 720px) or (width = 1280px) { #mixed-and-or { background-color: #333340; } }
+@media not (not (width > 2000px)) { #not-not { background-color: #343440; } }
+@media (foo) or (width > 1px) { #unknown-or { background-color: #353540; } }
+@media (foo) and (width > 1px) { #unknown-and { background-color: #363640; } }
+@media not (foo) { #not-unknown { background-color: #373740; } }
+@media not screen and (foo) { #not-screen-unknown { background-color: #383840; } }
+@media not tv and (foo) { #not-tv-unknown { background-color: #393940; } }
+@media all and (width > 1px) or (height > 1px) { #all-and-or { background-color: #3a3a40; } }
+@media only screen { #only-screen { background-color: #3b3b40; } }
+@media only (width > 1px) { #only-cond { background-color: #3c3c40; } }
+@media () { #empty-parens { background-color: #3d3d40; } }
+@media (width >= calc(100px + 1px)) { #calc-width { background-color: #3e3e40; } }
+@media (width >= calc(1em + 1px)) { #calc-mixed { background-color: #3f3f40; } }
+@media (width >= calc(1px * -1)) { #calc-neg { background-color: #404040; } }
+@media (width <= 80em) { #em-le { background-color: #414140; } }
+@media (width > 80em) { #em-gt { background-color: #424240; } }
+@media (width <= 80rem) { #rem-le { background-color: #434340; } }
+@media (max-width: 79em) { #em-plain { background-color: #444440; } }
+@media (width <= 100vw) { #vw { background-color: #454540; } }
+@media (width >= -1px) { #neg-ge { background-color: #464640; } }
+@media not (width < -1px) { #neg-not-lt { background-color: #474740; } }
+@media not (width >= 100) { #unitless { background-color: #484840; } }
+@media (width >= 0) { #zero { background-color: #494940; } }
+@media (width >= 1e3px) { #exp-len { background-color: #4a4a40; } }
+@media (aspect-ratio >= calc(16) / 10) { #ar-calc { background-color: #4b4b40; } }
+@media not (aspect-ratio: inf) { #ar-inf { background-color: #4c4c40; } }
+@media not (aspect-ratio > 0x10) { #ar-hex { background-color: #4d4d40; } }
+@media (aspect-ratio > 1e1/10) { #ar-exp { background-color: #4e4e40; } }
+@media (aspect-ratio > .5) { #ar-dot { background-color: #4f4f40; } }
+@media not (aspect-ratio > 1.) { #ar-trailing-dot { background-color: #505040; } }
+@media (aspect-ratio > +1) { #ar-plus { background-color: #515140; } }
+@media (aspect-ratio < 16/0) { #ar-inf-ratio { background-color: #525240; } }
+@media (aspect-ratio < 0/0) { #ar-zero-zero { background-color: #535340; } }
+@media (aspect-ratio > 0/1) { #ar-zero { background-color: #545440; } }
+@media (aspect-ratio = 1280/720) { #ar-exact { background-color: #555540; } }
+@media NOT (WIDTH > 2000PX) { #upper { background-color: #565640; } }
+@media layer { #layer { background-color: #575740; } }
+@media not (orientation: foo) { #not-orient-foo { background-color: #585840; } }
+@media (hover) { #hover-b { background-color: #303080; } }
+@media (hover: hover) { #hover-hover { background-color: #313180; } }
+@media (hover: none) { #hover-none { background-color: #323280; } }
+@media not (hover: foo) { #hover-foo { background-color: #333380; } }
+@media not (hover >= hover) { #hover-range { background-color: #343480; } }
+@media not (min-hover: hover) { #hover-min { background-color: #353580; } }
+@media (any-hover) { #anyhover-b { background-color: #363680; } }
+@media (any-hover: hover) { #anyhover-hover { background-color: #373780; } }
+@media (any-hover: none) { #anyhover-none { background-color: #383880; } }
+@media (pointer) { #pointer-b { background-color: #393980; } }
+@media (pointer: fine) { #pointer-fine { background-color: #3a3a80; } }
+@media (pointer: coarse) { #pointer-coarse { background-color: #3b3b80; } }
+@media (pointer: none) { #pointer-none { background-color: #3c3c80; } }
+@media (any-pointer) { #anypointer-b { background-color: #3d3d80; } }
+@media (any-pointer: fine) { #anypointer-fine { background-color: #3e3e80; } }
+@media (any-pointer: coarse) { #anypointer-coarse { background-color: #3f3f80; } }
+@media (color) { #color-b { background-color: #404080; } }
+@media (color: 8) { #color-8 { background-color: #414180; } }
+@media (color >= 8) { #color-ge8 { background-color: #424280; } }
+@media (color > 8) { #color-gt8 { background-color: #434380; } }
+@media (min-color: 8) { #color-min { background-color: #444480; } }
+@media (max-color: 7) { #color-max7 { background-color: #454580; } }
+@media (color: 0) { #color-0 { background-color: #464680; } }
+@media not (color >= 1.5) { #color-frac { background-color: #474780; } }
+@media (color >= -1) { #color-neg { background-color: #484880; } }
+@media not (color: 8px) { #color-px { background-color: #494980; } }
+@media (color: calc(4 + 4)) { #color-calc { background-color: #4a4a80; } }
+@media (1 <= color < 9) { #color-range2 { background-color: #4b4b80; } }
+@media (color-index) { #ci-b { background-color: #4c4c80; } }
+@media (color-index: 0) { #ci-0 { background-color: #4d4d80; } }
+@media (min-color-index: 0) { #ci-min { background-color: #4e4e80; } }
+@media (color-index > 0) { #ci-gt0 { background-color: #4f4f80; } }
+@media (monochrome) { #mono-b { background-color: #505080; } }
+@media (monochrome: 0) { #mono-0 { background-color: #515180; } }
+@media (max-monochrome: 0) { #mono-max { background-color: #525280; } }
+@media (monochrome < 1) { #mono-lt1 { background-color: #535380; } }
+@media (prefers-reduced-motion) { #prm-b { background-color: #545480; } }
+@media (prefers-reduced-motion: no-preference) { #prm-np { background-color: #555580; } }
+@media (prefers-reduced-motion: reduce) { #prm-reduce { background-color: #565680; } }
+@media not (prefers-reduced-motion: foo) { #prm-foo { background-color: #575780; } }
+@media (prefers-color-scheme) { #pcs-b { background-color: #585880; } }
+@media (prefers-color-scheme: light) { #pcs-light { background-color: #595980; } }
+@media (prefers-color-scheme: dark) { #pcs-dark { background-color: #5a5a80; } }
+@media not (prefers-color-scheme: no-preference) { #pcs-np { background-color: #5b5b80; } }
+@media (prefers-contrast) { #pc-b { background-color: #5c5c80; } }
+@media (prefers-contrast: no-preference) { #pc-np { background-color: #5d5d80; } }
+@media (prefers-contrast: more) { #pc-more { background-color: #5e5e80; } }
+@media (prefers-contrast: less) { #pc-less { background-color: #5f5f80; } }
+@media (prefers-contrast: custom) { #pc-custom { background-color: #606080; } }
+@media (forced-colors) { #fc-b { background-color: #616180; } }
+@media (forced-colors: none) { #fc-none { background-color: #626280; } }
+@media (forced-colors: active) { #fc-active { background-color: #636380; } }
+@media (inverted-colors) { #ic-b { background-color: #646480; } }
+@media (inverted-colors: none) { #ic-none { background-color: #656580; } }
+@media (inverted-colors: inverted) { #ic-inverted { background-color: #666680; } }
+@media (dynamic-range) { #dr-b { background-color: #676780; } }
+@media (dynamic-range: standard) { #dr-standard { background-color: #686880; } }
+@media (dynamic-range: high) { #dr-high { background-color: #696980; } }
+@media (update) { #upd-b { background-color: #6a6a80; } }
+@media (update: fast) { #upd-fast { background-color: #6b6b80; } }
+@media (update: slow) { #upd-slow { background-color: #6c6c80; } }
+@media (update: none) { #upd-none { background-color: #6d6d80; } }
+@media (scripting) { #scr-b { background-color: #6e6e80; } }
+@media (scripting: none) { #scr-none { background-color: #6f6f80; } }
+@media (scripting: enabled) { #scr-enabled { background-color: #707080; } }
+@media (scripting: initial-only) { #scr-initial { background-color: #717180; } }
+@media (HOVER: HOVER) { #upper-hover { background-color: #727280; } }
+@media (color-gamut) { #cg-b { background-color: #a0a010; } }
+@media (color-gamut: srgb) { #cg-srgb { background-color: #a1a110; } }
+@media (color-gamut: p3) { #cg-p3 { background-color: #a2a210; } }
+@media (color-gamut: rec2020) { #cg-rec2020 { background-color: #a3a310; } }
+@media not (color-gamut: foo) { #cg-foo { background-color: #a4a410; } }
+@media not (min-color-gamut: srgb) { #cg-min { background-color: #a5a510; } }
+@media not (color-gamut >= srgb) { #cg-range { background-color: #a6a610; } }
+@media (prefers-reduced-transparency) { #prt-b { background-color: #a7a710; } }
+@media (prefers-reduced-transparency: no-preference) { #prt-np { background-color: #a8a810; } }
+@media (prefers-reduced-transparency: reduce) { #prt-reduce { background-color: #a9a910; } }
+@media not (prefers-reduced-transparency: foo) { #prt-foo { background-color: #aaaa10; } }
+@media not (inverted-colors: none) { #ic-not-none { background-color: #abab10; } }
+@media not (inverted-colors) { #ic-not-b { background-color: #acac10; } }

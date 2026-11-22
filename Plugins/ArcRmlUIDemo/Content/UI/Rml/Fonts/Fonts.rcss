@@ -1,0 +1,84 @@
+@font-face {
+	font-family: 'Saira';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/Saira-Variable.ttf;
+}
+
+@font-face {
+	font-family: 'Oxanium';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/Oxanium[wght].ttf;
+}
+
+@font-face {
+	font-family: 'JetBrains Mono Variable';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/JetBrainsMono[wght].ttf;
+}
+
+@font-face {
+	font-family: 'Alegreya Sans';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/AlegreyaSans-Regular.ttf;
+}
+
+@font-face {
+	font-family: 'Alegreya Sans';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/AlegreyaSans-Medium.ttf;
+}
+
+@font-face {
+	font-family: 'Alegreya Sans';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/AlegreyaSans-Bold.ttf;
+}
+
+@font-face {
+	font-family: 'Cinzel';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/Cinzel[wght].ttf;
+}
+
+@font-face {
+	font-family: 'Atkinson Hyperlegible';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/AtkinsonHyperlegible-Regular.ttf;
+}
+
+@font-face {
+	font-family: 'Atkinson Hyperlegible';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/AtkinsonHyperlegible-Bold.ttf;
+}
+
+@font-face {
+	font-family: 'Archivo';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/Archivo-Variable.ttf;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/Inter-Variable.ttf;
+}
+
+@font-face {
+	font-family: 'Manrope';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/Manrope[wght].ttf;
+}
+
+@font-face {
+	font-family: 'EB Garamond';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/EBGaramond-Variable.ttf;
+}
+
+@font-face {
+	font-family: 'Cormorant SC';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/CormorantSC-Regular.ttf;
+}
+
+@font-face {
+	font-family: 'Cormorant SC';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/CormorantSC-Medium.ttf;
+}
+
+@font-face {
+	font-family: 'Cormorant SC';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/CormorantSC-SemiBold.ttf;
+}
+
+@font-face {
+	font-family: 'Cormorant SC';
+	src: /ArcRmlUIDemo/UI/Rml/Fonts/CormorantSC-Bold.ttf;
+}

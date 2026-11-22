@@ -1,0 +1,183 @@
+.dk-achievementcard {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--ui-space-3);
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 112px;
+	padding: var(--ui-space-3);
+	background: linear-gradient(var(--ui-surface), var(--ui-surface));
+	border: 1px solid var(--ui-border);
+	border-radius: var(--ui-radius-md);
+	box-shadow: none;
+	cursor: pointer;
+	transition: background-color var(--ui-dur-fast) var(--ui-ease), border-color var(--ui-dur-fast) var(--ui-ease), transform var(--ui-dur-fast) var(--ui-ease);
+	--tc: var(--ui-rarity-common);
+	--h-bd: var(--ui-accent);
+	--p-tf: scale(0.99);
+}
+
+.dk-achievementcard.uncommon {
+	--tc: var(--ui-rarity-uncommon);
+}
+
+.dk-achievementcard.rare {
+	--tc: var(--ui-rarity-rare);
+}
+
+.dk-achievementcard.epic {
+	--tc: var(--ui-rarity-epic);
+}
+
+.dk-achievementcard.legendary {
+	--tc: var(--ui-rarity-legendary);
+}
+
+.dk-achievementcard.unlocked {
+	background: linear-gradient(120deg, color-mix(in srgb, var(--tc) 12%, var(--ui-surface)), var(--ui-surface) 60%);
+	border: 1px solid color-mix(in srgb, var(--tc) 55%, transparent);
+}
+
+.dk-achievementcard:hover {
+	border-color: var(--h-bd);
+}
+
+.dk-achievementcard:active {
+	transform: var(--p-tf);
+}
+
+.dk-achievementcard:focus-visible {
+	border: 1px solid var(--ui-focus);
+	box-shadow: var(--ui-focus-ring);
+	--h-bd: var(--ui-focus);
+}
+
+.dk-achievementcard.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-achievementcard-frame {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: none;
+	width: 56px;
+	height: 56px;
+	box-sizing: border-box;
+	border-radius: var(--ui-radius-md);
+	border: 1px solid var(--ui-border);
+	background: linear-gradient(var(--ui-surface-2), var(--ui-surface-2));
+	color: var(--ui-text-disabled);
+	box-shadow: none;
+}
+
+.dk-achievementcard.unlocked .dk-achievementcard-frame {
+	border: 1px solid var(--tc);
+	background: radial-gradient(circle at 50% 35%, color-mix(in srgb, var(--tc) 40%, var(--ui-surface-2)), var(--ui-surface) 85%);
+	color: var(--tc);
+}
+
+.dk-achievementcard.unlocked.epic .dk-achievementcard-frame, .dk-achievementcard.unlocked.legendary .dk-achievementcard-frame {
+	box-shadow: 0 0 14px color-mix(in srgb, var(--tc) 35%, transparent);
+}
+
+.dk-achievementcard-icon {
+	display: inline-flex;
+}
+
+.dk-achievementcard-icon svg {
+	display: block;
+}
+
+.dk-achievementcard-main {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-1);
+	min-width: 0;
+	flex: 1;
+}
+
+.dk-achievementcard-head {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: var(--ui-space-3);
+}
+
+.dk-achievementcard-title {
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-3);
+	font-weight: 700;
+	text-transform: var(--ui-display-case);
+	letter-spacing: var(--ui-display-tracking);
+	color: var(--ui-text);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-width: 0;
+}
+
+.dk-achievementcard-title.hidden {
+	color: var(--ui-text-muted);
+}
+
+.dk-achievementcard-points {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	font-weight: 600;
+	color: var(--ui-text-muted);
+	flex: none;
+}
+
+.dk-achievementcard-redacted {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 3px 0;
+}
+
+.dk-achievementcard-bar {
+	height: 8px;
+	border-radius: 4px;
+	background: repeating-linear-gradient(90deg, var(--ui-surface-2) 0px, var(--ui-surface-2) 10px, transparent 10px, transparent 13px);
+}
+
+.dk-achievementcard-bar-long {
+	width: 92%;
+}
+
+.dk-achievementcard-bar-short {
+	width: 58%;
+}
+
+.dk-achievementcard-desc {
+	font-size: var(--ui-fs-2);
+	line-height: 1.4;
+	color: var(--ui-text-muted);
+}
+
+.dk-achievementcard-foot {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: var(--ui-space-1) var(--ui-space-3);
+}
+
+.dk-achievementcard-meta {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	color: var(--ui-text-muted);
+}
+
+.dk-achievementcard-meta.done {
+	color: var(--ui-success);
+}
+
+.dk-achievementcard-rarity {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	font-weight: 600;
+	color: var(--tc);
+}

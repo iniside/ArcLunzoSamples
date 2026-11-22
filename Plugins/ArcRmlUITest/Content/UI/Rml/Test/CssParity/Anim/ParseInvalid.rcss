@@ -1,0 +1,34 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.row {
+	display: block;
+	width: 100px;
+	height: 20px;
+	margin-bottom: 4px;
+}
+
+body.go .row {
+	width: 200px;
+}
+
+#inv-prop {
+	transition-property: width;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	transition-property: none, color;
+}
+
+#inv-short {
+	transition: width 1s linear;
+	transition: color 1s 0.5;
+}
+
+#inv-ctrl {
+	transition: width 1s linear;
+}

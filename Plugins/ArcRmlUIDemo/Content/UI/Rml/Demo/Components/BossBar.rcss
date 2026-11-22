@@ -1,0 +1,54 @@
+.dk-boss-bar {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-1);
+	width: 100%;
+	max-width: 560px;
+	min-width: 0;
+	box-sizing: border-box;
+	padding: var(--hud-space-sm) var(--ui-space-3);
+	border-radius: var(--hud-radius);
+	background: var(--hud-plate);
+	border: 1px solid var(--hud-stroke);
+	box-shadow: var(--hud-plate-shadow);
+}
+
+.dk-boss-bar-e2 {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: var(--ui-space-3);
+}
+
+.dk-boss-bar-name-s {
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-4);
+	font-weight: 700;
+	text-transform: var(--ui-display-case);
+	letter-spacing: var(--ui-display-tracking);
+	color: var(--hud-text);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-width: 0;
+}
+
+.dk-boss-bar-enr-s {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	font-weight: 700;
+	text-shadow: var(--hud-text-shadow);
+}
+
+.dk-boss-bar-e5 {
+	position: relative;
+}
+
+.dk-boss-bar-ph {
+	position: absolute;
+	top: -3px;
+	bottom: -3px;
+	width: 2px;
+	background: var(--hud-stroke-strong);
+	box-shadow: var(--hud-plate-shadow);
+}

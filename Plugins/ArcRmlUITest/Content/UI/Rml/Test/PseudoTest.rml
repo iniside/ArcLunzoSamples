@@ -1,0 +1,58 @@
+<rml>
+<head>
+	<title>ArcRmlUI Pseudo-element Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="PseudoTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="page">
+		<div class="cell">
+			<span class="label">strings + escapes + :before</span>
+			<div class="quote">Quoted text</div>
+			<div class="legacy">Single colon</div>
+		</div>
+
+		<div class="cell">
+			<span class="label">attr()</span>
+			<div class="stat" data-label="Health" data-max="250">180</div>
+			<div class="stat" data-label="Stamina" data-max="90">45</div>
+			<div class="missing">missing attr</div>
+		</div>
+
+		<div class="cell">
+			<span class="label">gold ring ::before + rhombus ::after</span>
+			<div class="panel">
+				<div class="panel-title">Panel title</div>
+			</div>
+		</div>
+
+		<div class="cell">
+			<span class="label">flex + grid order</span>
+			<div class="flexrow"><div>1</div><div>2</div><div>3</div></div>
+			<div class="gridrow"><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div></div>
+		</div>
+
+		<div class="cell">
+			<span class="label">:empty + nth-child</span>
+			<div class="box only-before"></div>
+			<div class="list"><div>first (green)</div><div>second (blue)</div><div>last (gold)</div></div>
+		</div>
+
+		<div class="cell">
+			<span class="label">hover + toggle + inherit</span>
+			<div class="hover">Hover me</div>
+			<div class="toggle on">toggle on</div>
+			<div class="toggle">toggle off</div>
+			<div class="hidden">display none pseudo</div>
+			<div class="inherit">font</div>
+		</div>
+
+		<div class="cell">
+			<span class="label">universal *::before + *.x + *:hover</span>
+			<div class="universal"><div>one</div><div class="x">two (.x)</div><div>three</div></div>
+			<div class="static-attr" data-label="Class toggles keep layout">body</div>
+		</div>
+	</div>
+</body>
+</rml>

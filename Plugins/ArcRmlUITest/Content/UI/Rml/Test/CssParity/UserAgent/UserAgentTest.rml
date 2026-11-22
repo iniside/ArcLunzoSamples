@@ -1,0 +1,23 @@
+<rml>
+<head>
+	<title>UserAgentTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/UserAgent/UserAgent.rcss"/>
+	<viewmodel name="ua" preview="Preview/UserAgentTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="ua">
+	<h1 id="ua-h1">Heading one</h1>
+	<h2 id="ua-h2">Heading two</h2>
+	<h6 id="ua-h6">Heading six</h6>
+	<p id="ua-p">Paragraph</p>
+	<ul id="ua-ul"><li id="ua-li">Item</li></ul>
+	<ol id="ua-ol"><li id="ua-ol-li">Item<ul id="ua-nested-ul"><li id="ua-nested-li">Nested</li></ul></li></ol>
+	<div id="ua-hidden" hidden="">Hidden</div>
+	<input id="ua-hidden-input" type="hidden"/>
+	<input id="ua-hidden-inline" type="hidden" style="display: block !important; width: 50px; height: 10px;"/>
+	<table id="ua-table"><thead><tr><th id="ua-th">Head</th></tr></thead><tbody><tr><td id="ua-td">Cell</td></tr></tbody></table>
+	<div id="ua-after">After</div>
+	<div id="ua-toggle" data-attrif-hidden="hideToggle">Toggle</div>
+</body>
+</rml>

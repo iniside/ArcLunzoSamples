@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Optional Area Tab</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Areas/AreaFrame.rml"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Focus/AreaBackTest.rcss"/>
+	<viewmodel name="optionalarea" class="/Script/ArcRmlUITestRuntime.ArcRmlMockListViewModel" context="OptionalAreaContext" optional/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="optionalarea">
+	<div class="abt-mid" data-focus-area="list" data-focus-primary="">
+		<div class="abt-btn" id="oa-row-1" data-if="ArcResolved">Row 1</div>
+	</div>
+</body>
+</rml>

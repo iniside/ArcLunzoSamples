@@ -1,0 +1,27 @@
+<component>
+	<prop name="value" default=""/>
+	<prop name="index" default="0"/>
+	<prop name="count" default="0"/>
+	<prop name="wrap" default="true"/>
+	<prop name="disabled"/>
+	<prop name="nofocus"/>
+	<prop name="autofocus"/>
+	<prop name="field" default=""/>
+	<div class="dk-stepper" data-class-disabled="$disabled" data-class-focusable="$field != '' &amp;&amp; !$nofocus" data-attrif-autofocus="$autofocus" data-event-keydown="callIf($field != '' &amp;&amp; !$nofocus &amp;&amp; ev.key == 'ArrowLeft' &amp;&amp; !$disabled &amp;&amp; !(!$wrap &amp;&amp; $index == 0), '', 'Stepped', $field, -1); callIf($field != '' &amp;&amp; !$nofocus &amp;&amp; ev.key == 'ArrowRight' &amp;&amp; !$disabled &amp;&amp; !(!$wrap &amp;&amp; $index == $count - 1), '', 'Stepped', $field, 1); stopPropagation($field != '' &amp;&amp; !$nofocus &amp;&amp; (ev.key == 'ArrowLeft' || ev.key == 'ArrowRight'))">
+		<span class="dk-stepper-arrow" data-class-dead="$disabled || (!$wrap &amp;&amp; $index == 0)" data-event-click="callIf(!$disabled &amp;&amp; !(!$wrap &amp;&amp; $index == 0), '', 'Stepped', $field, -1)"><i class="dk-stepper-icon"><svg src="/ArcRmlUIDemo/UI/Rml/icons/chevron-left.svg" width="18" height="18" stroke-width="2.5"/></i></span>
+		<div class="dk-stepper-center">
+			<span class="dk-stepper-value" data-class-disabled="$disabled">{{ $value }}</span>
+			<div class="dk-stepper-pips" data-if="$count &gt; 1">
+				<span class="dk-stepper-pip" data-if="$count &gt; 0" data-class-on="$index == 0" data-class-disabled="$disabled"></span>
+				<span class="dk-stepper-pip" data-if="$count &gt; 1" data-class-on="$index == 1" data-class-disabled="$disabled"></span>
+				<span class="dk-stepper-pip" data-if="$count &gt; 2" data-class-on="$index == 2" data-class-disabled="$disabled"></span>
+				<span class="dk-stepper-pip" data-if="$count &gt; 3" data-class-on="$index == 3" data-class-disabled="$disabled"></span>
+				<span class="dk-stepper-pip" data-if="$count &gt; 4" data-class-on="$index == 4" data-class-disabled="$disabled"></span>
+				<span class="dk-stepper-pip" data-if="$count &gt; 5" data-class-on="$index == 5" data-class-disabled="$disabled"></span>
+				<span class="dk-stepper-pip" data-if="$count &gt; 6" data-class-on="$index == 6" data-class-disabled="$disabled"></span>
+				<span class="dk-stepper-pip" data-if="$count &gt; 7" data-class-on="$index == 7" data-class-disabled="$disabled"></span>
+			</div>
+		</div>
+		<span class="dk-stepper-arrow" data-class-dead="$disabled || (!$wrap &amp;&amp; $index == $count - 1)" data-event-click="callIf(!$disabled &amp;&amp; !(!$wrap &amp;&amp; $index == $count - 1), '', 'Stepped', $field, 1)"><i class="dk-stepper-icon"><svg src="/ArcRmlUIDemo/UI/Rml/icons/chevron-right.svg" width="18" height="18" stroke-width="2.5"/></i></span>
+	</div>
+</component>

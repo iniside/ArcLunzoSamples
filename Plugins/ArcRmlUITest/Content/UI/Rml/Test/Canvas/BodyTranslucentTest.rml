@@ -1,0 +1,9 @@
+<rml>
+<head>
+	<title>Body Translucent Test</title>
+	<link type="text/rcss" href="BodyTranslucentTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="bt-box"></div>
+</body>
+</rml>

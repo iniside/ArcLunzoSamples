@@ -1,0 +1,11 @@
+<component>
+	<prop name="icon" default="inbox"/>
+	<prop name="title" default=""/>
+	<prop name="body" default=""/>
+	<div class="dk-emptystate">
+		<span class="dk-emptystate-circle"><i class="dk-emptystate-icon"><svg data-attr-src="$icon" width="28" height="28" stroke-width="1.5"/></i></span>
+		<span class="dk-emptystate-title">{{ $title }}</span>
+		<p class="dk-emptystate-body" data-if="$body != ''">{{ $body }}</p>
+		<div class="dk-emptystate-actions"><slot/></div>
+	</div>
+</component>

@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>World Anchor Value Test</title>
+	<link type="text/rcss" href="WorldAnchorValueTest.rcss"/>
+	<viewmodel name="wa" preview="Preview/WorldAnchorValueTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="wa">
+	<div id="wa-point" data-world="'1600 400 1'"></div>
+	<div id="wa-empty" data-world="''"></div>
+	<div id="wa-blank" data-world="'  '"></div>
+	<div id="wa-bad" data-world="'1 2'"></div>
+</body>
+</rml>

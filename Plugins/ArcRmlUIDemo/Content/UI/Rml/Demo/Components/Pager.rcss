@@ -1,0 +1,35 @@
+.dk-pager {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--ui-space-3);
+}
+
+.dk-pager-dots {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-2);
+}
+
+.dk-pager-dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	background: var(--ui-border-strong);
+	transition: background-color var(--ui-dur-normal) var(--ui-ease);
+}
+
+.dk-pager-dot.on {
+	width: 22px;
+	background: var(--ui-accent);
+}
+
+.dk-pager-numeric {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text-muted);
+	white-space: nowrap;
+}
+
+.dk-pager-current {
+	color: var(--ui-text);
+}

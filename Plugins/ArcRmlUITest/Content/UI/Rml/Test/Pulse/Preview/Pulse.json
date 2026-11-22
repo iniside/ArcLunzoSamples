@@ -1,0 +1,12 @@
+{
+	"Serial": 0,
+	"T": 0,
+	"Gold": "120 gold",
+	"Flag": true,
+	"Title": "Sword",
+	"$variants": {
+		"one": { "Serial": 1 },
+		"two": { "Serial": 2 },
+		"three": { "Serial": 3 }
+	}
+}

@@ -1,0 +1,9 @@
+<component>
+	<prop name="title" default="Card"/>
+	<prop name="accentColor" default="#3399ff"/>
+	<div class="cp-card">
+		<div class="cp-card-head" data-style-background-color="$accentColor">{{ $title }}</div>
+		<div class="cp-card-body"><slot/></div>
+		<div class="cp-card-foot"><slot name="footer"/></div>
+	</div>
+</component>

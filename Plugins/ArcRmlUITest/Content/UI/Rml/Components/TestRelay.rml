@@ -1,0 +1,4 @@
+<component>
+	<prop name="relayLabel"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Components/TestBox" label="{{ $relayLabel }}"/>
+</component>

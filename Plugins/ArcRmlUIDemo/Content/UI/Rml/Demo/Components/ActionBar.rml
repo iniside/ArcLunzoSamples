@@ -1,0 +1,33 @@
+<component>
+	<prop name="slots" default="[]"/>
+	<prop name="second" default="[]"/>
+	<prop name="input" default="keyboard"/>
+	<prop name="padSet" default="none"/>
+	<prop name="size" default="52"/>
+	<div class="dk-action-bar">
+		<div class="dk-action-bar-row" data-if="((!($input == 'gamepad')) &amp;&amp; ($second.size != 0))">
+			<dc-import data-for="ActionBarS, ActionBarS_index : $second" name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ActionSlot" icon="{{ ActionBarS.Icon }}" key-label="{{ ActionBarS.KeyLabel }}" glyph="{{ ActionBarS.Glyph }}" cooldown="{{ ActionBarS.Cooldown }}" seconds="{{ ActionBarS.Seconds }}" charges="{{ ActionBarS.Charges }}" no-resource="{{ ActionBarS.NoResource }}" out-of-range="{{ ActionBarS.OutOfRange }}" proc="{{ ActionBarS.Proc }}" pressed="{{ ActionBarS.Pressed }}" locked="{{ ActionBarS.Locked }}" input="{{ ($input == 'gamepad' ? 'gamepad' : 'keyboard') }}" size="{{ ($size != 0 ? $size : 52) }}"/>
+		</div>
+		<div class="dk-action-bar-row" data-if="!($input == 'gamepad')">
+			<dc-import data-for="ActionBarS2, ActionBarS2_index : $slots" name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ActionSlot" icon="{{ ActionBarS2.Icon }}" key-label="{{ ActionBarS2.KeyLabel }}" glyph="{{ ActionBarS2.Glyph }}" cooldown="{{ ActionBarS2.Cooldown }}" seconds="{{ ActionBarS2.Seconds }}" charges="{{ ActionBarS2.Charges }}" no-resource="{{ ActionBarS2.NoResource }}" out-of-range="{{ ActionBarS2.OutOfRange }}" proc="{{ ActionBarS2.Proc }}" pressed="{{ ActionBarS2.Pressed }}" locked="{{ ActionBarS2.Locked }}" input="{{ ($input == 'gamepad' ? 'gamepad' : 'keyboard') }}" size="{{ ($size != 0 ? $size : 52) }}"/>
+		</div>
+		<div class="dk-action-bar-row" data-if="$input == 'gamepad'">
+			<div class="dk-action-bar-set">
+				<span class="dk-action-bar-cap" data-class-on="$padSet == 'lt'">LT</span>
+				<div class="dk-action-bar-set-row">
+					<div data-for="ActionBarL, ActionBarL_index : $slots" data-style-display="((ActionBarL_index &gt;= 0 &amp;&amp; ActionBarL_index &lt; 4) ? 'block' : 'none')">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ActionSlot" icon="{{ ActionBarL.Icon }}" key-label="{{ ActionBarL.KeyLabel }}" glyph="{{ (ActionBarL_index == 0 ? 'A' : (ActionBarL_index == 1 ? 'B' : (ActionBarL_index == 2 ? 'X' : 'Y'))) }}" cooldown="{{ ActionBarL.Cooldown }}" seconds="{{ ActionBarL.Seconds }}" charges="{{ ActionBarL.Charges }}" no-resource="{{ ActionBarL.NoResource }}" out-of-range="{{ ActionBarL.OutOfRange }}" proc="{{ ActionBarL.Proc }}" pressed="{{ ActionBarL.Pressed }}" locked="{{ ActionBarL.Locked }}" input="{{ ($input == 'gamepad' ? 'gamepad' : 'keyboard') }}" dim="{{ $padSet != 'none' &amp;&amp; $padSet != 'lt' }}" big="{{ $padSet == 'lt' }}" size="{{ ($size != 0 ? $size : 52) }}"/>
+					</div>
+				</div>
+			</div>
+			<div class="dk-action-bar-set">
+				<span class="dk-action-bar-cap" data-class-on="$padSet == 'rt'">RT</span>
+				<div class="dk-action-bar-set-row">
+					<div data-for="ActionBarR, ActionBarR_index : $slots" data-style-display="((ActionBarR_index &gt;= 4 &amp;&amp; ActionBarR_index &lt; 8) ? 'block' : 'none')">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ActionSlot" icon="{{ ActionBarR.Icon }}" key-label="{{ ActionBarR.KeyLabel }}" glyph="{{ (ActionBarR_index == 4 ? 'A' : (ActionBarR_index == 5 ? 'B' : (ActionBarR_index == 6 ? 'X' : 'Y'))) }}" cooldown="{{ ActionBarR.Cooldown }}" seconds="{{ ActionBarR.Seconds }}" charges="{{ ActionBarR.Charges }}" no-resource="{{ ActionBarR.NoResource }}" out-of-range="{{ ActionBarR.OutOfRange }}" proc="{{ ActionBarR.Proc }}" pressed="{{ ActionBarR.Pressed }}" locked="{{ ActionBarR.Locked }}" input="{{ ($input == 'gamepad' ? 'gamepad' : 'keyboard') }}" dim="{{ $padSet != 'none' &amp;&amp; $padSet != 'rt' }}" big="{{ $padSet == 'rt' }}" size="{{ ($size != 0 ? $size : 52) }}"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</component>

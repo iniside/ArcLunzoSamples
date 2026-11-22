@@ -1,0 +1,119 @@
+.dk-stepper {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-1);
+	width: 100%;
+	min-width: 200px;
+	min-height: 44px;
+	box-sizing: border-box;
+	padding: var(--ui-space-1);
+	border-radius: var(--ui-radius-md);
+	background: var(--ui-surface);
+	border: 1px solid var(--ui-border);
+	box-shadow: none;
+}
+
+.dk-stepper:focus-visible {
+	border: 1px solid var(--ui-focus);
+	box-shadow: var(--ui-focus-ring);
+}
+
+.dk-stepper.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-stepper-arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: none;
+	width: 32px;
+	height: 32px;
+	border-radius: var(--ui-radius-sm);
+	color: var(--ui-text-muted);
+	cursor: pointer;
+	transition: color var(--ui-dur-fast) var(--ui-ease), background-color var(--ui-dur-fast) var(--ui-ease), transform var(--ui-dur-fast) var(--ui-ease);
+	--h-fg: var(--ui-accent);
+	--h-bg: var(--ui-accent-soft);
+	--p-tf: scale(0.9);
+}
+
+.dk-stepper:focus-visible .dk-stepper-arrow {
+	color: var(--ui-accent);
+}
+
+.dk-stepper-arrow.dead {
+	color: var(--ui-text-disabled);
+	cursor: default;
+	--h-fg: var(--ui-text-disabled);
+	--h-bg: transparent;
+	--p-tf: none;
+}
+
+.dk-stepper:focus-visible .dk-stepper-arrow.dead {
+	color: var(--ui-text-disabled);
+}
+
+.dk-stepper-arrow:hover {
+	color: var(--h-fg);
+	background: var(--h-bg);
+}
+
+.dk-stepper-arrow:active {
+	transform: var(--p-tf);
+}
+
+.dk-stepper-icon {
+	display: inline-flex;
+}
+
+.dk-stepper-icon svg {
+	display: block;
+}
+
+.dk-stepper-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--ui-space-1);
+	flex: 1;
+	min-width: 0;
+}
+
+.dk-stepper-value {
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-3);
+	font-weight: 600;
+	text-transform: var(--ui-display-case);
+	letter-spacing: var(--ui-display-tracking);
+	color: var(--ui-text);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+}
+
+.dk-stepper-value.disabled {
+	color: var(--ui-text-disabled);
+}
+
+.dk-stepper-pips {
+	display: flex;
+	gap: 3px;
+}
+
+.dk-stepper-pip {
+	width: 14px;
+	height: 3px;
+	border-radius: 2px;
+	background: var(--ui-border);
+}
+
+.dk-stepper-pip.on {
+	background: var(--ui-accent);
+}
+
+.dk-stepper-pip.on.disabled {
+	background: var(--ui-text-disabled);
+}

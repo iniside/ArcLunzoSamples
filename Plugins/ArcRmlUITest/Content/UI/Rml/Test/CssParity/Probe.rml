@@ -1,0 +1,18 @@
+<rml>
+<head>
+	<title>Draw Probe</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Probe.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="solid"></div>
+	<div id="clipbox"><div id="clipchild"></div></div>
+	<div id="roundbox"><div id="roundchild"></div></div>
+	<div id="label">ProbeText</div>
+	<div id="gradient"></div>
+	<div id="shadow"></div>
+	<img id="image" src="Probe.png"/>
+</body>
+</rml>

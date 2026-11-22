@@ -1,0 +1,30 @@
+<component>
+	<prop name="initials" default=""/>
+	<prop name="label" default=""/>
+	<prop name="tag" default=""/>
+	<prop name="presence" default="offline"/>
+	<prop name="status" default=""/>
+	<prop name="inGame"/>
+	<prop name="party" default=""/>
+	<prop name="selected"/>
+	<prop name="pinActions"/>
+	<prop name="menu" default="[]"/>
+	<prop name="focusable"/>
+	<div class="dk-friendrow" data-class-selected="$selected" data-class-open="$menu.size &gt; 0" data-class-pin="$pinActions" data-class-offline="$presence == 'offline'" data-class-ingame="$presence == 'online' &amp;&amp; $inGame" data-class-focusable="$focusable" data-attrif-selected="$selected">
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Avatar" initials="{{ $initials }}" presence="{{ $presence }}" size="md" dim="{{ $presence == 'offline' }}"/>
+		<div class="dk-friendrow-main">
+			<div class="dk-friendrow-head">
+				<span class="dk-friendrow-name">{{ $label }}</span>
+				<span class="dk-friendrow-tag" data-if="$tag != ''">{{ $tag }}</span>
+			</div>
+			<span class="dk-friendrow-status">{{ $status }}</span>
+		</div>
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Badge" data-if="$party != ''" label="{{ $party }}" tone="accent"/>
+		<div class="dk-friendrow-actions"><slot/></div>
+		<div class="dk-friendrow-menu" data-if="$menu.size &gt; 0">
+			<div data-focus-area="menu" data-focus-parent="list" data-focus-contain="" data-event-back="call('', 'Back'); stopPropagation()">
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ContextMenu" title="{{ $label }}" items="{{ $menu }}" field="menu"/>
+			</div>
+		</div>
+	</div>
+</component>

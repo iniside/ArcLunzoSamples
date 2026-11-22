@@ -1,0 +1,29 @@
+<rml>
+<head>
+	<title>Outline</title>
+	<link type="text/rcss" href="OutlineTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="o1" class="abs"/>
+	<div id="o2" class="abs"/>
+	<div id="o3" class="abs"/>
+	<div id="stack" class="abs"><div id="o4"/><div id="o4next"/></div>
+	<div id="clip" class="abs"><div id="o5"/></div>
+	<div id="o6" class="abs"/>
+	<div id="o7" class="abs"/>
+	<div id="o8" class="abs"/>
+	<div id="w1" class="abs wrap"><span id="s1">Alpha beta gamma delta epsilon</span></div>
+	<div id="w2" class="abs wrap"><span id="s2">Alpha beta gamma delta epsilon</span></div>
+	<div id="w3" class="abs wrap"><span id="s3">Alpha beta gamma delta epsilon</span></div>
+	<div id="w4" class="abs wrap"><span id="s4">Aa bbbbbbbbbbbb cc ddddddddd e</span></div>
+	<div id="flex" class="abs"><div id="fa"/><div id="fb"/></div>
+	<div id="chips" class="abs"><span id="ca"/><span id="cb"/></div>
+	<div id="grid" class="abs"><div id="ga"/><div id="gb"/></div>
+	<div id="floats" class="abs"><div id="la"/><div id="lb"/></div>
+	<div id="neg" class="abs"/>
+	<div id="ell" class="abs"/>
+	<div id="pos" class="abs"><div id="pa"><div id="pb"/></div></div>
+	<div id="o9" class="abs"/>
+	<div id="o10" class="abs"/>
+</body>
+</rml>

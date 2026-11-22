@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+	display: flow-root;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000000;
+}
+
+div {
+	display: block;
+	height: 10px;
+	width: 40px;
+}
+
+.nl-outer
+.nl-inner {
+	width: 60px;
+}
+
+.nl-outer, .nl-ctx {
+	width: 200px;
+	height: auto;
+}
+
+.nl-border {
+	border:
+4px
+solid
+#2050d0;
+	width: 40px;
+}
+
+.nl-parent {
+	width: 30px;
+	.nl-ctx
+	& {
+		width: 70px;
+		nl-bogus-nested: 1px;
+	}
+	nl-bogus-after: 1px;
+}
+
+.nl-line {
+	width: 20px;
+	nl-bogus-last: 1px;
+}

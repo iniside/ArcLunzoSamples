@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Restyle Opacity Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="Opacity.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="p1" class="parent"><div id="plain"></div></div>
+	<div id="p2" class="parent"><div id="inh"></div></div>
+	<div id="p3" class="parent"><div id="viavar"></div></div>
+</body>
+</rml>

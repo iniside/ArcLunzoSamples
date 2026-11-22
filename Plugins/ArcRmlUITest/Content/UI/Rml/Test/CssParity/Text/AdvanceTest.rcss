@@ -1,0 +1,117 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	color: #e8ecf4;
+}
+
+div {
+	display: block;
+}
+
+.line {
+	position: absolute;
+	white-space: nowrap;
+	font-kerning: none;
+}
+
+.chip {
+	left: 20dp;
+	top: 20dp;
+	font-family: 'JetBrains Mono';
+	font-weight: 600;
+	font-size: 9.5dp;
+	letter-spacing: 0.4dp;
+	text-transform: uppercase;
+}
+
+.main-hand {
+	left: 20dp;
+	top: 60dp;
+	font-family: 'JetBrains Mono';
+	font-weight: 400;
+	font-size: 10dp;
+}
+
+.enter {
+	left: 20dp;
+	top: 100dp;
+	font-family: 'JetBrains Mono';
+	font-weight: 400;
+	font-size: 9dp;
+}
+
+.title {
+	left: 20dp;
+	top: 140dp;
+	font-family: 'Space Grotesk';
+	font-weight: 600;
+	font-size: 12dp;
+}
+
+.phases {
+	left: 20px;
+	top: 200px;
+	font-family: 'JetBrains Mono';
+	font-weight: 400;
+	font-size: 10px;
+	letter-spacing: 0.25px;
+	color: #10a0d0;
+}
+
+.shifter {
+	left: 20px;
+	top: 240px;
+	font-family: 'JetBrains Mono';
+	font-weight: 400;
+	font-size: 15px;
+	color: #d010a0;
+}
+
+.shift .shifter {
+	left: 20.25px;
+}
+
+.counter-box {
+	position: absolute;
+	left: 20px;
+	top: 280px;
+	width: 40px;
+}
+
+.counter {
+	position: relative;
+	display: block;
+	width: 40px;
+	text-align: center;
+	font-family: 'JetBrains Mono';
+	font-weight: 400;
+	font-size: 11px;
+	color: #a0d010;
+}
+
+.under {
+	font-family: 'JetBrains Mono';
+	font-weight: 400;
+	font-size: 10px;
+	text-decoration: underline;
+}
+
+.under-control {
+	left: 100px;
+	top: 320px;
+	color: #20d0a0;
+}
+
+.under-shifted {
+	left: 100.25px;
+	top: 360.6px;
+	color: #d0a020;
+}
+
+.under-late {
+	left: 100.75px;
+	top: 400.4px;
+	color: #a020d0;
+}

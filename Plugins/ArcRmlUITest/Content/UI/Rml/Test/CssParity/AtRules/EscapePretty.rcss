@@ -1,0 +1,18 @@
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.row {
+	display: block;
+	width: 40px;
+	height: 10px;
+}
+
+.\@p1\:bg {
+	background-color: #111111;
+}
+
+.after-p {
+	background-color: #121212;
+}

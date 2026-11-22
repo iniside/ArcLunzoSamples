@@ -1,0 +1,6 @@
+<component>
+	<prop name="align" default="end"/>
+	<div class="dk-promptbar" data-class-start="$align == 'start'" data-class-center="$align == 'center'">
+		<slot/>
+	</div>
+</component>

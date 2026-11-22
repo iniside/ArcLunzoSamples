@@ -1,0 +1,67 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	color: #e8ecf4;
+}
+
+div {
+	display: block;
+}
+
+@keyframes kaLeave {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+
+@keyframes kaGrow {
+	from { width: 100px; }
+	to { width: 300px; }
+}
+
+body.leave {
+	animation: kaLeave .1s linear forwards;
+}
+
+body.enter #kk-anim {
+	animation: kaGrow 4s linear forwards;
+}
+
+#kk-anim {
+	height: 16px;
+	background-color: #335577;
+}
+
+.kk-row {
+	height: 20px;
+}
+
+.kk-btn {
+	tab-index: auto;
+	nav: auto;
+	width: 140px;
+	height: 26px;
+	margin-bottom: 4px;
+	background-color: #1e2330;
+}
+
+#kk-scroll {
+	width: 200px;
+	height: 90px;
+	overflow-y: auto;
+}
+
+.kk-srow {
+	height: 30px;
+}
+
+.kk-field {
+	display: block;
+	width: 200px;
+	height: 26px;
+}
+
+#kf-embed {
+	height: 200px;
+}

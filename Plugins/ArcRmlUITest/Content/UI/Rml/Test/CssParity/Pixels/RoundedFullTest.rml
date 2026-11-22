@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Rounded Full Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Pixels/RoundedFullTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="rf-pill" class="pill"></div>
+	<div id="rf-circle" class="circle"></div>
+</body>
+</rml>

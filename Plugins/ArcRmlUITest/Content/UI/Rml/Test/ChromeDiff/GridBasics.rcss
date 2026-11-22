@@ -1,0 +1,23 @@
+body {
+	margin: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+.t {
+	margin-bottom: 10px;
+	background: #ddd;
+}
+
+.b {
+	height: 20px;
+	background: blue;
+}
+
+.i {
+	display: inline-block;
+	vertical-align: top;
+	width: 40px;
+	height: 20px;
+	background: green;
+}

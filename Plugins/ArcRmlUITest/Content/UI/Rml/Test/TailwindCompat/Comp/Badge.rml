@@ -1,0 +1,19 @@
+<rml>
+<head>
+<title>Badge</title>
+<meta name="layer" content="UI.Layer.Menu"/>
+<meta name="input-mode" content="game"/>
+<link type="text/rcss" href="tw-hyperui.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body class="flex flex-wrap justify-center gap-4 p-6">
+    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-sm whitespace-nowrap text-purple-700">
+      Live
+    </span>
+
+    <span class="rounded-full border border-purple-500 px-2.5 py-0.5 text-sm whitespace-nowrap text-purple-700">
+      Live
+    </span>
+  
+
+</body>
+</rml>

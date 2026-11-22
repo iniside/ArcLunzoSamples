@@ -1,0 +1,20 @@
+<component>
+	<prop name="quests" default="[]"/>
+	<prop name="collapsed"/>
+	<div class="dk-quest-tracker">
+		<div class="dk-quest-tracker-e2">
+			<span class="dk-quest-tracker-head-s">Quests</span>
+			<span class="dk-quest-tracker-count-s">{{ $quests.size + ' tracked' }}</span>
+		</div>
+		<div class="dk-quest-tracker-list" data-if="!$collapsed">
+			<div data-for="QuestTrackerQ, QuestTrackerQ_index : $quests" class="dk-quest-tracker-q" data-style-display="((QuestTrackerQ_index &lt; 4) ? 'flex' : 'none')" data-class-done="QuestTrackerQ.State == 'completed'">
+				<span class="dk-quest-tracker-title" data-class-done="QuestTrackerQ.State == 'completed'">{{ QuestTrackerQ.Title }}</span>
+				<div class="dk-quest-tracker-objs" data-if="QuestTrackerQ.State != 'completed'">
+					<div data-for="QuestTrackerO, QuestTrackerO_index : QuestTrackerQ.Objectives" class="dk-quest-tracker-o" data-class-flash="QuestTrackerO.Flash">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ObjectiveRow" label="{{ QuestTrackerO.Label }}" current="{{ QuestTrackerO.Current }}" total="{{ QuestTrackerO.Total }}" state="{{ QuestTrackerO.State }}"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</component>

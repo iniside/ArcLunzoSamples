@@ -1,0 +1,11 @@
+* text=auto
+*.bat eol=crlf
+*.sh eol=lf
+*.uasset binary
+*.umap binary
+*.png binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.locres binary
+*.locmeta binary

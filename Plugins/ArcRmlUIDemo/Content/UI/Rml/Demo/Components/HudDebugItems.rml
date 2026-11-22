@@ -1,0 +1,22 @@
+<component>
+	<prop name="items" default="[]"/>
+	<div class="dk-hud-debug-items">
+		<div data-for="it, it_index : $items" class="dk-hud-debug-item">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Divider" data-if="it.Title != ''" label="{{ it.Title }}"/>
+			<div data-if="it.Kind == 'toggle'" class="dk-hud-debug-toggle">
+				<span class="dk-hud-debug-label" data-class-disabled="it.Disabled">{{ it.Label }}</span>
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Toggle" on="{{ it.On }}" disabled="{{ it.Disabled }}" focusable="{{ true }}" data-event-click="callIf(!it.Disabled, '', it.Fn, !it.On)"/>
+			</div>
+			<div data-if="it.Kind == 'slider'" class="dk-hud-debug-slider">
+				<span class="dk-hud-debug-label" data-class-disabled="it.Disabled">{{ it.Label }}</span>
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Slider" value="{{ it.Value }}" min="{{ it.Min }}" max="{{ it.Max }}" step="{{ it.Step }}" value-label="{{ it.ValueLabel }}" disabled="{{ it.Disabled }}" field="{{ it.Fn }}"/>
+			</div>
+			<div data-if="it.Kind == 'buttons'" class="dk-hud-debug-buttons">
+				<span class="dk-hud-debug-label" data-if="it.Label != ''" data-class-disabled="it.Disabled">{{ it.Label }}</span>
+				<div class="dk-hud-debug-options">
+					<dc-import data-for="o, o_index : it.Options" name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" size="sm" label="{{ o.Label }}" variant="{{ o_index == it.Value ? 'primary' : 'secondary' }}" disabled="{{ o.Disabled }}" focusable="{{ true }}" data-event-click="callIf(!o.Disabled, '', o.Fn)"/>
+				</div>
+			</div>
+		</div>
+	</div>
+</component>

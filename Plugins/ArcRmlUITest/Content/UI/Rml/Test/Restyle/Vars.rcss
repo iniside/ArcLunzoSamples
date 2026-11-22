@@ -1,0 +1,47 @@
+body {
+	width: 100%;
+	height: 100%;
+	color: #ffffff;
+	--y: #ff0000;
+}
+
+div {
+	display: block;
+	height: 20px;
+}
+
+#a {
+	color: var(--y);
+}
+
+#a.alt {
+	height: 30px;
+}
+
+#deep {
+	color: var(--y);
+}
+
+#b {
+	color: var(--x, #00ff00);
+}
+
+#sh {
+	border-top: 2px solid var(--y);
+}
+
+body.same {
+	--y: #ff0000;
+}
+
+body.diff {
+	--y: #0000ff;
+}
+
+body.has {
+	--x: #0000ff;
+}
+
+body.noop {
+	height: 100%;
+}

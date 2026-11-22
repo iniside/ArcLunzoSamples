@@ -1,0 +1,33 @@
+<rml>
+<head>
+	<title>Font Feature Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/FontFeatureTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="sg-p1" class="line">1111</div>
+	<div id="sg-p0" class="line">0000</div>
+	<div id="sg-t1" class="line">1111</div>
+	<div id="sg-t0" class="line">0000</div>
+	<div id="sg-f1" class="line">1111</div>
+	<div id="sg-tn-off" class="line">1111</div>
+	<div id="sg-z" class="line">0</div>
+	<div id="sg-zs" class="line">0</div>
+	<div id="sg-zf" class="line">0</div>
+	<div id="sg-fr-n" class="line">1/2</div>
+	<div id="sg-fr" class="line">1/2</div>
+	<div id="sg-o-n" class="line">1a2o</div>
+	<div id="sg-o" class="line">1a2o</div>
+	<div id="sg-l-n" class="line">fi</div>
+	<div id="sg-l-0" class="line">fi</div>
+	<div id="bc-n" class="line">Small Caps 1</div>
+	<div id="bc-sc" class="line">Small Caps 1</div>
+	<div id="bc-asc" class="line">Small Caps 1</div>
+	<div id="jb-n" class="line">1111</div>
+	<div id="jb-t" class="line">1111</div>
+	<div id="sg-sep" class="line">1 234 567</div>
+	<div id="sg-sp" class="line">1 234 567</div>
+	<div id="sg-nosep" class="line">1234567</div>
+</body>
+</rml>

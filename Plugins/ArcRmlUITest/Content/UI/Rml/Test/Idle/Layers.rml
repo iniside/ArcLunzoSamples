@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Idle Layers</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="Idle.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="solid"></div>
+	<div id="half"></div>
+	<div id="round"><div id="roundkid"></div></div>
+	<div id="opacity"></div>
+	<div id="blur"></div>
+	<div id="drop"></div>
+	<div id="mask"></div>
+	<div id="shadow"></div>
+	<div id="grad"></div>
+	<div id="rot"></div>
+	<div id="text" class="t">Idle composite text</div>
+</body>
+</rml>

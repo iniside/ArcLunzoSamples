@@ -1,0 +1,32 @@
+<rml>
+<head>
+	<title>Events</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="Events.rcss"/>
+	<viewmodel name="events" class="/Script/ArcRmlUISamples.ArcRmlSamplesEventsViewModel" create="true"/>
+</head>
+<body data-model="events" data-event-back="callIf(!bBackArmed, '', 'ArmBack'); stopPropagation(!bBackArmed)">
+	<div class="ev-panel">
+		<h1 class="ev-title">Events</h1>
+		<p class="ev-last">Last event: {{ LastEvent }}</p>
+		<div class="ev-row">
+			<button id="ev-red" class="ev-button" data-event-click="call('', 'Pick', 'Red', 1)">One red</button>
+			<button id="ev-blue" class="ev-button" data-event-click="call('', 'Pick', 'Blue', 3)">Three blue</button>
+			<button id="ev-caller" class="ev-button" data-event-click="call('', 'ShowCaller')">Who calls?</button>
+		</div>
+		<div id="ev-mouse" class="ev-box" data-event-mouseup="callIf(ev.button == 0, '', 'Pointer', 'left'); callIf(ev.button == 1, '', 'Pointer', 'right')">Click here with the left or the right mouse button.</div>
+		<div id="ev-keys" class="ev-box ev-focusable" autofocus="" data-event-keydown="callIf(ev.key == 'ArrowUp', '', 'Step', 1); callIf(ev.key == 'ArrowDown', '', 'Step', -1); stopPropagation(ev.key == 'ArrowUp' || ev.key == 'ArrowDown')">Value {{ Value }}: focus this box and press Up or Down.</div>
+		<div id="ev-outer" class="ev-box" data-event-click="call('', 'Outer')">
+			<p>Outer clicks: {{ OuterCount }}, inner clicks: {{ InnerCount }}</p>
+			<div class="ev-row">
+				<button id="ev-inner-stop" class="ev-button" data-event-click="call('', 'Inner'); stopPropagation()">Inner, stops</button>
+				<button id="ev-inner-bubble" class="ev-button" data-event-click="call('', 'Inner')">Inner, bubbles</button>
+			</div>
+		</div>
+		<p data-if="!bBackArmed">Press Back once: the document stays open.</p>
+		<p data-if="bBackArmed">Press Back again to close the document.</p>
+	</div>
+</body>
+</rml>

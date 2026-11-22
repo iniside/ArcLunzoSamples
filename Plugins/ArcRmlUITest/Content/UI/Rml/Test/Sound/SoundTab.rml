@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>Sound Tab</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Sound/SoundFrame.rml"/>
+	<link type="text/rcss" href="SoundCloseTheme.rcss"/>
+	<viewmodel name="sndtab" preview="Preview/SoundTab.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="sndtab">
+	<div id="sn-tab">{{ label }}</div>
+</body>
+</rml>

@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Batch Transform Break</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="Batch.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="r" style="left: 20px; top: 20px;"></div>
+	<div class="r a" style="left: 70px; top: 20px;"></div>
+	<div class="r" style="left: 120px; top: 20px;"></div>
+	<div class="moved">
+		<div class="r" style="left: 0px; top: 0px;"></div>
+		<div class="r a" style="left: 50px; top: 0px;"></div>
+		<div class="r" style="left: 100px; top: 0px;"></div>
+	</div>
+	<div class="r" style="left: 20px; top: 400px;"></div>
+	<div class="r a" style="left: 70px; top: 400px;"></div>
+	<div class="r" style="left: 120px; top: 400px;"></div>
+</body>
+</rml>

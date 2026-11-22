@@ -1,0 +1,33 @@
+<rml>
+<head>
+	<title>ArcRmlUI Nav Recover Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="NavRecoverTest.rcss"/>
+	<viewmodel name="nrt" preview="Preview/NavRecoverTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="nrt">
+<div class="nrt-root">
+	<div class="nrt-b" id="nrt-b" data-if="showB" data-style-top="bTop">B</div>
+	<div class="nrt-outer" data-style-height="outerH">
+		<div class="nrt-list" data-style-height="listH">
+			<div data-event-focus="callIf(ev.focus_visible, '', 'FocusVisible', 'nrt-r0')" data-event-focusvisible="call('', 'FocusVisible', 'nrt-r0')"><div class="nrt-row" id="nrt-r0" data-event-blur="call('', 'BlurSeen', 'nrt-r0')" data-event-focus="call('', 'FocusAny', 'nrt-r0')">Row 0</div></div>
+			<div data-event-focus="callIf(ev.focus_visible, '', 'FocusVisible', 'nrt-r1')" data-event-focusvisible="call('', 'FocusVisible', 'nrt-r1')"><div class="nrt-row" id="nrt-r1" data-event-blur="call('', 'BlurSeen', 'nrt-r1')" data-event-focus="call('', 'FocusAny', 'nrt-r1')">Row 1</div></div>
+			<div data-event-focus="callIf(ev.focus_visible, '', 'FocusVisible', 'nrt-r2')" data-event-focusvisible="call('', 'FocusVisible', 'nrt-r2')"><div class="nrt-row" id="nrt-r2" data-event-blur="call('', 'BlurSeen', 'nrt-r2')" data-event-focus="call('', 'FocusAny', 'nrt-r2')">Row 2</div></div>
+			<div data-event-focus="callIf(ev.focus_visible, '', 'FocusVisible', 'nrt-r3')" data-event-focusvisible="call('', 'FocusVisible', 'nrt-r3')"><div class="nrt-row" id="nrt-r3" data-event-blur="call('', 'BlurSeen', 'nrt-r3')" data-event-focus="call('', 'FocusAny', 'nrt-r3')">Row 3</div></div>
+			<div data-event-focus="callIf(ev.focus_visible, '', 'FocusVisible', 'nrt-r4')" data-event-focusvisible="call('', 'FocusVisible', 'nrt-r4')"><div class="nrt-row" id="nrt-r4" data-event-blur="call('', 'BlurSeen', 'nrt-r4')" data-event-focus="call('', 'FocusAny', 'nrt-r4')">Row 4</div></div>
+			<div data-event-focus="callIf(ev.focus_visible, '', 'FocusVisible', 'nrt-r5')" data-event-focusvisible="call('', 'FocusVisible', 'nrt-r5')"><div class="nrt-row" id="nrt-r5" data-event-blur="call('', 'BlurSeen', 'nrt-r5')" data-event-focus="call('', 'FocusAny', 'nrt-r5')">Row 5</div></div>
+			<div data-event-focus="callIf(ev.focus_visible, '', 'FocusVisible', 'nrt-r6')" data-event-focusvisible="call('', 'FocusVisible', 'nrt-r6')"><div class="nrt-row" id="nrt-r6" data-event-blur="call('', 'BlurSeen', 'nrt-r6')" data-event-focus="call('', 'FocusAny', 'nrt-r6')">Row 6</div></div>
+			<div data-event-focus="callIf(ev.focus_visible, '', 'FocusVisible', 'nrt-r7')" data-event-focusvisible="call('', 'FocusVisible', 'nrt-r7')"><div class="nrt-row" id="nrt-r7" data-event-blur="call('', 'BlurSeen', 'nrt-r7')" data-event-focus="call('', 'FocusAny', 'nrt-r7')">Row 7</div></div>
+			<div data-event-focus="callIf(ev.focus_visible, '', 'FocusVisible', 'nrt-r8')" data-event-focusvisible="call('', 'FocusVisible', 'nrt-r8')"><div class="nrt-row" id="nrt-r8" data-event-blur="call('', 'BlurSeen', 'nrt-r8')" data-event-focus="call('', 'FocusAny', 'nrt-r8')">Row 8</div></div>
+			<div data-event-focus="callIf(ev.focus_visible, '', 'FocusVisible', 'nrt-r9')" data-event-focusvisible="call('', 'FocusVisible', 'nrt-r9')"><div class="nrt-row" id="nrt-r9" data-event-blur="call('', 'BlurSeen', 'nrt-r9')" data-event-focus="call('', 'FocusAny', 'nrt-r9')">Row 9</div></div>
+			<div class="nrt-abs" id="nrt-abs" data-if="showAbs">Abs</div>
+		</div>
+	</div>
+	<div class="nrt-dialog" data-if="showDialog">
+		<div class="nrt-dbtn" id="nrt-d1">D1</div>
+		<div class="nrt-dbtn" id="nrt-d2">D2</div>
+	</div>
+</div>
+</body>
+</rml>

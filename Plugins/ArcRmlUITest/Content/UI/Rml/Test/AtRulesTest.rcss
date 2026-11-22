@@ -1,0 +1,163 @@
+/* Compiled at-rules validation (rml-compiled-at-rules plan step 3). */
+
+@spritesheet atrules-icons {
+	src: AtRulesSprites.png;
+	icon-red: 0px 0px 32px 32px;
+	icon-green: 32px 0px 32px 32px;
+	icon-blue: 64px 0px 32px 32px;
+	icon-yellow: 96px 0px 32px 32px;
+	tile-left: 0px 32px 16px 32px;
+	tile-center: 16px 32px 16px 32px;
+	tile-right: 32px 32px 16px 32px;
+	dup: 0px 0px 32px 32px;
+}
+
+/* Expected: one InvalidAtRule warning at the 'dup' declaration line, sprite 'dup' already defined; the later rectangle (blue) wins. */
+@spritesheet atrules-dup {
+	src: AtRulesSprites.png;
+	dup: 64px 0px 32px 32px;
+}
+
+@spritesheet atrules-patch {
+	src: AtRulesNinePatch.png;
+	np-outer: 0px 0px 48px 48px;
+	np-inner: 12px 12px 24px 24px;
+}
+
+/* Expected: InvalidAtRule, spritesheet without sprites. */
+@spritesheet atrules-broken {
+	src: AtRulesSprites.png;
+}
+
+@decorator frame : ninepatch {
+	outer: np-outer;
+	inner: np-inner;
+	edge: 12px;
+}
+
+/* Inherits outer/inner from 'frame', overrides the edge. */
+@decorator frame-thin : frame {
+	edge: 4px;
+}
+
+@decorator stripe : tiled-horizontal {
+	left-image: tile-left;
+	center-image: tile-center;
+	right-image: tile-right;
+}
+
+@decorator blue-icon : image {
+	image-src: icon-blue;
+}
+
+/* New family from an existing Fonts/ file. */
+@font-face {
+	font-family: 'AtRules Mono';
+	src: ../Fonts/JetBrainsMono-Bold.ttf;
+}
+
+/* Expected at read: InvalidAtRule duplicate warning naming SpaceGrotesk-Regular.ttf as the winner. */
+@font-face {
+	font-family: 'Space Grotesk';
+	font-weight: normal;
+	src: ../Fonts/JetBrainsMono-Regular.ttf;
+}
+
+/* Same file as the auto-loaded face: silent. */
+@font-face {
+	font-family: 'Space Grotesk';
+	font-weight: bold;
+	src: ../Fonts/SpaceGrotesk-Bold.ttf;
+}
+
+/* Expected: InvalidAtRule at compile, no src. */
+@font-face {
+	font-family: 'AtRules Broken';
+}
+
+/* Expected at read: one InvalidAtRule at the src line with the reason, and no FontProvider error line. */
+@font-face {
+	font-family: 'AtRules Missing';
+	src: NoSuchFont.ttf;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	font-family: 'Space Grotesk', sans-serif;
+	color: rgba(255,255,255,0.9);
+}
+
+div, p, span {
+	display: block;
+}
+
+.page {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding: 24px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	gap: 14px;
+	background-color: #08090a;
+}
+
+.cell {
+	width: 300px;
+	height: 190px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	background-color: rgba(255,255,255,0.05);
+	border: 1px solid rgba(255,255,255,0.1);
+}
+
+.label {
+	font-size: 12px;
+	color: rgba(255,255,255,0.5);
+}
+
+.row { display: flex; gap: 10px; align-items: center; }
+
+.np-box { width: 200px; height: 100px; decorator: frame; }
+.np-thin { width: 200px; height: 100px; decorator: frame-thin; }
+.stripe-box { width: 260px; height: 32px; decorator: stripe; }
+.stripe-tall { width: 180px; height: 48px; decorator: stripe; }
+.img-sprite { width: 64px; height: 64px; }
+.deco-sprite { width: 64px; height: 64px; decorator: image(icon-green); }
+.deco-named { width: 64px; height: 64px; decorator: blue-icon; }
+.media-box { width: 64px; height: 64px; background-color: #400; }
+.after-reject { width: 160px; height: 40px; background-color: #400; }
+.dup-box { width: 64px; height: 64px; decorator: image(dup); }
+
+.font-default { font-size: 22px; }
+.font-custom { font-size: 22px; font-family: 'AtRules Mono'; }
+.font-dup { font-size: 22px; font-family: 'Space Grotesk'; }
+.font-bold { font-size: 22px; font-family: 'Space Grotesk'; font-weight: bold; }
+
+@media (min-width: 640px) {
+	@decorator yellow-icon : image {
+		image-src: icon-yellow;
+	}
+
+	.media-box { background-color: transparent; decorator: yellow-icon; }
+}
+
+@media (min-width: 640px) {
+	/* Expected: InvalidAtRule, unknown decorator type; the block is skipped and the rule after it still applies. */
+	@decorator broken-deco : no-such-type {
+		image-src: icon-red;
+	}
+
+	.after-reject { background-color: #2a8; }
+}

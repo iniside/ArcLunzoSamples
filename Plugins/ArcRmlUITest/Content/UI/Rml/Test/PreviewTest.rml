@@ -1,0 +1,24 @@
+<rml>
+<head>
+	<title>ArcRmlUI Preview Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="PreviewTest.rcss"/>
+	<viewmodel name="preview" preview="../Preview/PreviewTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="preview">
+	<div class="panel" data-if="ArcResolved">
+		<div class="title" data-style-color="accent">{{ title }} ({{ variant }})</div>
+		<div class="row">{{ player.name }}: level {{ player.stats.level }}, hp {{ player.stats.hp | format(1) }}, ratio {{ player.stats.ratio | format(2) }}</div>
+		<div class="swatch" data-style-background-color="accent">accent</div>
+		<div class="item" data-for="item, i : player.items">
+			<div class="cell" data-style-color="item.tint">{{ i }} {{ item.name }}</div>
+			<div class="tag" data-for="tag : item.tags">{{ tag }}</div>
+			<div class="tag" data-if="item.tags.size == 0">no tags</div>
+		</div>
+		<div class="row" data-if="player.items.size == 0">no items</div>
+		<div class="warning" data-if="showWarning">warning variant active</div>
+		<div id="call" class="button" data-event-click="call('player', 'Equip', player.stats.level, 'axe', true)">call() logs on click</div>
+	</div>
+</body>
+</rml>

@@ -1,0 +1,97 @@
+.dk-player-frame {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-3);
+	width: 100%;
+	max-width: 340px;
+	min-width: 0;
+	box-sizing: border-box;
+	padding: var(--hud-space-sm) var(--ui-space-2);
+	border-radius: var(--hud-radius);
+	background: var(--hud-plate);
+	border: 1px solid var(--hud-stroke);
+	box-shadow: var(--hud-plate-shadow);
+	backdrop-filter: blur(var(--hud-blur));
+}
+
+.dk-player-frame-portrait {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: none;
+	width: 60px;
+	height: 60px;
+	box-sizing: border-box;
+	border-radius: var(--hud-radius);
+	border: 2px solid var(--hud-stroke);
+	background: var(--hud-plate-2);
+	color: var(--hud-icon);
+	box-shadow: var(--hud-plate-shadow);
+}
+
+.dk-player-frame-portrait.combat {
+	border: 2px solid var(--ui-danger);
+	box-shadow: 0 0 0 1px var(--ui-danger), 0 0 14px color-mix(in srgb, var(--ui-danger) 55%, transparent);
+}
+
+.dk-player-frame-e3 {
+	display: inline-flex;
+}
+
+.dk-player-frame-lvl-s {
+	position: absolute;
+	bottom: -7px;
+	right: -7px;
+	min-width: 22px;
+	height: 18px;
+	padding: 0 var(--ui-space-1);
+	box-sizing: border-box;
+	border-radius: var(--hud-radius-pill);
+	background: var(--hud-plate);
+	border: 1px solid var(--hud-stroke-strong);
+	font-family: var(--ui-font-mono);
+	font-size: var(--hud-fs-sm);
+	font-weight: 700;
+	color: var(--hud-text);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dk-player-frame-e5 {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-1);
+	flex: 1;
+	min-width: 0;
+}
+
+.dk-player-frame-e6 {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: var(--ui-space-2);
+}
+
+.dk-player-frame-name-s {
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-3);
+	font-weight: 700;
+	text-transform: var(--ui-display-case);
+	letter-spacing: var(--ui-display-tracking);
+	color: var(--hud-text);
+	text-shadow: var(--hud-text-shadow);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-player-frame-combat-s {
+	display: flex;
+	color: var(--ui-danger);
+}
+
+.dk-player-frame-e9 {
+	display: inline-flex;
+}

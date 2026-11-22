@@ -1,0 +1,8 @@
+.n1 {
+	width: 45px;
+	.c[title='a
+	{ width: 99px; }
+	height: 12px;
+}
+
+.n1-after { width: 99px; }

@@ -1,0 +1,33 @@
+<rml>
+<head>
+	<title>Back and parent</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="BackAndParent.rcss"/>
+	<viewmodel name="back" class="/Script/ArcRmlUISamples.ArcRmlSamplesBackAndParentViewModel" create="true"/>
+</head>
+<body data-model="back" data-event-back="call('', 'CountBack')">
+	<div class="bp-panel">
+		<h1 class="bp-title">Back and parent</h1>
+		<div class="bp-columns">
+			<div class="bp-area" data-focus-area="list" data-focus-primary="">
+				<p class="bp-label">list</p>
+				<button id="bp-sword" class="bp-item" autofocus="" data-event-click="call('', 'Select', 'Sword')">Sword</button>
+				<button id="bp-shield" class="bp-item" data-event-click="call('', 'Select', 'Shield')">Shield</button>
+				<button id="bp-potion" class="bp-item" data-event-click="call('', 'Select', 'Potion')">Potion</button>
+			</div>
+			<div class="bp-area" data-focus-area="detail" data-focus-parent="list" data-focus-exit="#bp-done">
+				<p class="bp-label">detail (parent: list)</p>
+				<p data-if="Selected == ''">Nothing selected</p>
+				<p data-if="Selected != ''">Selected: {{ Selected }}</p>
+				<button id="bp-use" class="bp-item" data-event-click="call('', 'Use')">Use</button>
+				<button id="bp-done" class="bp-item" data-event-click="call('', 'Exit')">Done</button>
+			</div>
+		</div>
+		<p class="bp-counts">Backs heard: {{ BackCount }}. Done clicked: {{ ExitCount }}. Use clicked: {{ UseCount }}.</p>
+		<p>Back in the detail returns to the list item you came from; Back in the list closes the document.</p>
+		<button id="bp-back" class="bp-item bp-back" data-event-click="call('', 'PressBack')">Back</button>
+	</div>
+</body>
+</rml>

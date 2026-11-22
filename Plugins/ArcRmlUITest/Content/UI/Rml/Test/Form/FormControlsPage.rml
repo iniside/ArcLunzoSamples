@@ -1,0 +1,67 @@
+<rml>
+<head>
+	<title>FormControlsPage</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/FormControlsPage.rcss"/>
+	<viewmodel name="fcp" preview="Preview/FormControlsPage.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="fcp">
+	<div class="page">
+	<div class="stack" data-focus-area="forms" data-focus-primary="">
+		<h1>{{ title }}</h1>
+		<h2>1. Range</h2>
+		<div class="row"><div class="label">bare</div><div class="cell"><input id="fc-range" type="range" min="0" max="100" step="1" value="50" data-event-input="call('', 'In', 'range', ev.value)" data-event-change="call('', 'Ch', 'range', ev.value)"/></div></div>
+		<div class="row"><div class="label">accent-color</div><div class="cell"><input id="fc-range-accent" class="accent" type="range" min="0" max="100" step="1" value="50" data-event-input="call('', 'In', 'rangeaccent', ev.value)" data-event-change="call('', 'Ch', 'rangeaccent', ev.value)"/></div></div>
+		<div class="row"><div class="label">author-styled</div><div class="cell"><input id="fc-range-styled" class="slider" type="range" min="0" max="100" step="1" value="50" data-event-input="call('', 'In', 'rangestyled', ev.value)" data-event-change="call('', 'Ch', 'rangestyled', ev.value)"/></div></div>
+		<div class="row"><div class="label">disabled</div><div class="cell"><input id="fc-range-off" type="range" min="0" max="100" step="1" value="50" disabled="" data-event-input="call('', 'In', 'rangeoff', ev.value)" data-event-change="call('', 'Ch', 'rangeoff', ev.value)"/></div></div>
+		<h2>2. Select</h2>
+		<div class="row"><div class="label">bare, 6 options (Cherry disabled)</div><div class="cell"><select id="fc-sel" data-event-input="call('', 'In', 'sel', ev.value)" data-event-change="call('', 'Ch', 'sel', ev.value)"><option value="a">Apple</option><option value="b">Banana</option><option value="c" disabled="">Cherry</option><option value="d">Date</option><option value="e">Elderberry</option><option value="f">Fig</option></select></div></div>
+		<div class="row"><div class="label">appearance: none, chevron image</div><div class="cell"><select id="fc-sel-none" class="plain" data-event-input="call('', 'In', 'selnone', ev.value)" data-event-change="call('', 'Ch', 'selnone', ev.value)"><option value="a">Apple</option><option value="b">Banana</option><option value="c" disabled="">Cherry</option><option value="d">Date</option><option value="e">Elderberry</option><option value="f">Fig</option></select></div></div>
+		<div class="row"><div class="label">long list (30 options)</div><div class="cell"><select id="fc-sel-long" data-event-input="call('', 'In', 'sellong', ev.value)" data-event-change="call('', 'Ch', 'sellong', ev.value)"><option value="1">Item 1</option><option value="2">Item 2</option><option value="3">Item 3</option><option value="4">Item 4</option><option value="5">Item 5</option><option value="6">Item 6</option><option value="7">Item 7</option><option value="8">Item 8</option><option value="9">Item 9</option><option value="10">Item 10</option><option value="11">Item 11</option><option value="12">Item 12</option><option value="13">Item 13</option><option value="14">Item 14</option><option value="15">Item 15</option><option value="16">Item 16</option><option value="17">Item 17</option><option value="18">Item 18</option><option value="19">Item 19</option><option value="20">Item 20</option><option value="21">Item 21</option><option value="22">Item 22</option><option value="23">Item 23</option><option value="24">Item 24</option><option value="25">Item 25</option><option value="26">Item 26</option><option value="27">Item 27</option><option value="28">Item 28</option><option value="29">Item 29</option><option value="30">Item 30</option></select></div></div>
+		<div class="row"><div class="label">disabled</div><div class="cell"><select id="fc-sel-off" disabled="" data-event-input="call('', 'In', 'seloff', ev.value)" data-event-change="call('', 'Ch', 'seloff', ev.value)"><option value="a">Apple</option><option value="b">Banana</option><option value="c" disabled="">Cherry</option></select></div></div>
+		<h2>3. Checkbox</h2>
+		<div class="row"><div class="label">bare, unchecked</div><div class="cell"><input id="fc-cb" type="checkbox" value="cb" data-event-input="call('', 'In', 'cb', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'cb', ev.value, ev.checked)"/></div></div>
+		<div class="row"><div class="label">bare, checked</div><div class="cell"><input id="fc-cb-on" type="checkbox" value="cbon" checked="" data-event-input="call('', 'In', 'cbon', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'cbon', ev.value, ev.checked)"/></div></div>
+		<div class="row"><div class="label">accent-color, checked</div><div class="cell"><input id="fc-cb-accent" type="checkbox" value="cbaccent" checked="" class="accent" data-event-input="call('', 'In', 'cbaccent', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'cbaccent', ev.value, ev.checked)"/></div></div>
+		<div class="row"><div class="label">appearance: none, tick image (checked, unchecked)</div><div class="cell"><input id="fc-cb-none" type="checkbox" value="cbnone" checked="" class="tick" data-event-input="call('', 'In', 'cbnone', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'cbnone', ev.value, ev.checked)"/> <input id="fc-cb-none-off" type="checkbox" value="cbnoneoff" class="tick" data-event-input="call('', 'In', 'cbnoneoff', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'cbnoneoff', ev.value, ev.checked)"/></div></div>
+		<div class="row"><div class="label">disabled (unchecked, checked)</div><div class="cell"><input id="fc-cb-off" type="checkbox" value="cboff" disabled="" data-event-input="call('', 'In', 'cboff', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'cboff', ev.value, ev.checked)"/> <input id="fc-cb-off-on" type="checkbox" value="cboffon" checked="" disabled="" data-event-input="call('', 'In', 'cboffon', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'cboffon', ev.value, ev.checked)"/></div></div>
+		<div class="row"><div class="label">wrapped in a label</div><div class="cell"><label id="fc-cb-label"><input id="fc-cb-wrapped" type="checkbox" value="cbwrapped" data-event-input="call('', 'In', 'cbwrapped', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'cbwrapped', ev.value, ev.checked)"/> Accept the terms</label></div></div>
+		<h2>4. Radio</h2>
+		<div class="row"><div class="label">group of 3, third disabled</div><div class="cell"><label><input id="fc-r1" type="radio" name="fc-group" value="r1" checked="" data-event-input="call('', 'In', 'r1', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'r1', ev.value, ev.checked)"/> One</label> <label><input id="fc-r2" type="radio" name="fc-group" value="r2" data-event-input="call('', 'In', 'r2', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'r2', ev.value, ev.checked)"/> Two</label> <label><input id="fc-r3" type="radio" name="fc-group" value="r3" disabled="" data-event-input="call('', 'In', 'r3', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'r3', ev.value, ev.checked)"/> Three</label></div></div>
+		<h2>5. Text input</h2>
+		<div class="row"><div class="label">bare</div><div class="cell"><input id="fc-text" type="text" data-event-input="call('', 'In', 'text', ev.value)" data-event-change="call('', 'Ch', 'text', ev.value)"/></div></div>
+		<div class="row"><div class="label">placeholder</div><div class="cell"><input id="fc-text-ph" type="text" placeholder="Your name" data-event-input="call('', 'In', 'textph', ev.value)" data-event-change="call('', 'Ch', 'textph', ev.value)"/></div></div>
+		<div class="row"><div class="label">required, :required style</div><div class="cell"><input id="fc-text-req" type="text" required="" class="req" data-event-input="call('', 'In', 'textreq', ev.value)" data-event-change="call('', 'Ch', 'textreq', ev.value)"/></div></div>
+		<div class="row"><div class="label">readonly</div><div class="cell"><input id="fc-text-ro" type="text" value="read only" readonly="" data-event-input="call('', 'In', 'textro', ev.value)" data-event-change="call('', 'Ch', 'textro', ev.value)"/></div></div>
+		<div class="row"><div class="label">maxlength 8</div><div class="cell"><input id="fc-text-max" type="text" maxlength="8" placeholder="8 chars" data-event-input="call('', 'In', 'textmax', ev.value)" data-event-change="call('', 'Ch', 'textmax', ev.value)"/></div></div>
+		<div class="row"><div class="label">disabled</div><div class="cell"><input id="fc-text-off" type="text" value="disabled" disabled="" data-event-input="call('', 'In', 'textoff', ev.value)" data-event-change="call('', 'Ch', 'textoff', ev.value)"/></div></div>
+		<h2>6. Textarea</h2>
+		<div class="row"><div class="label">bare, cols 30 rows 2</div><div class="cell"><textarea id="fc-ta" cols="30" rows="2" data-event-input="call('', 'In', 'ta', ev.value)" data-event-change="call('', 'Ch', 'ta', ev.value)"></textarea></div></div>
+		<div class="row"><div class="label">rows 4</div><div class="cell"><textarea id="fc-ta-rows" rows="4" data-event-input="call('', 'In', 'tarows', ev.value)" data-event-change="call('', 'Ch', 'tarows', ev.value)">line one
+line two</textarea></div></div>
+		<div class="row"><div class="label">placeholder</div><div class="cell"><textarea id="fc-ta-ph" placeholder="Write something" rows="3" data-event-input="call('', 'In', 'taph', ev.value)" data-event-change="call('', 'Ch', 'taph', ev.value)"></textarea></div></div>
+		<h2>7. Button</h2>
+		<div class="row"><div class="label">bare</div><div class="cell"><button id="fc-btn" data-event-click="call('', 'Click', 'btn')">Button</button></div></div>
+		<div class="row"><div class="label">160 x 60 (centring)</div><div class="cell"><button id="fc-btn-big" class="big" data-event-click="call('', 'Click', 'btn-big')">Centred</button></div></div>
+		<div class="row"><div class="label">disabled</div><div class="cell"><button id="fc-btn-off" disabled="" data-event-click="call('', 'Click', 'btn-off')">Disabled</button></div></div>
+		<div class="row"><div class="label">input type=submit</div><div class="cell"><input id="fc-submit" type="submit" value="Submit" data-event-click="call('', 'Click', 'submit')"/></div></div>
+		<h2>8. Contact form</h2>
+		<div class="contact">
+			<div class="field"><label for="fc-c-name">Name</label>
+				<input id="fc-c-name" class="control" type="text" required="" placeholder="Jane Doe" data-event-input="call('', 'In', 'cname', ev.value)" data-event-change="call('', 'Ch', 'cname', ev.value)"/></div>
+			<div class="field"><label for="fc-c-mail">Email</label>
+				<input id="fc-c-mail" class="control" type="text" placeholder="jane@example.com" data-event-input="call('', 'In', 'cmail', ev.value)" data-event-change="call('', 'Ch', 'cmail', ev.value)"/></div>
+			<div class="field"><label for="fc-c-topic">Topic</label>
+				<select id="fc-c-topic" class="control" data-event-input="call('', 'In', 'ctopic', ev.value)" data-event-change="call('', 'Ch', 'ctopic', ev.value)"><option value="s">Support</option><option value="b">Billing</option><option value="o">Other</option></select></div>
+			<div class="field"><label for="fc-c-msg">Message</label>
+				<textarea id="fc-c-msg" class="control" rows="4" placeholder="How can we help?" data-event-input="call('', 'In', 'cmsg', ev.value)" data-event-change="call('', 'Ch', 'cmsg', ev.value)"></textarea></div>
+			<div class="field inline"><input id="fc-c-agree" type="checkbox" value="agree" data-event-input="call('', 'In', 'cagree', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'cagree', ev.value, ev.checked)"/> <label for="fc-c-agree">I agree to be contacted</label></div>
+			<div class="field"><button id="fc-c-send" class="send" type="submit" data-event-click="call('', 'Click', 'csend')">Send message</button></div>
+		</div>
+		<h2>9. Long list at the page bottom (opens above)</h2>
+		<div class="row"><div class="label">long list, last row</div><div class="cell"><select id="fc-sel-bottom" data-event-input="call('', 'In', 'selbottom', ev.value)" data-event-change="call('', 'Ch', 'selbottom', ev.value)"><option value="1">Item 1</option><option value="2">Item 2</option><option value="3">Item 3</option><option value="4">Item 4</option><option value="5">Item 5</option><option value="6">Item 6</option><option value="7">Item 7</option><option value="8">Item 8</option><option value="9">Item 9</option><option value="10">Item 10</option><option value="11">Item 11</option><option value="12">Item 12</option><option value="13">Item 13</option><option value="14">Item 14</option><option value="15">Item 15</option><option value="16">Item 16</option><option value="17">Item 17</option><option value="18">Item 18</option><option value="19">Item 19</option><option value="20">Item 20</option><option value="21">Item 21</option><option value="22">Item 22</option><option value="23">Item 23</option><option value="24">Item 24</option><option value="25">Item 25</option><option value="26">Item 26</option><option value="27">Item 27</option><option value="28">Item 28</option><option value="29">Item 29</option><option value="30">Item 30</option></select></div></div>
+	</div>
+	</div>
+</body>
+</rml>

@@ -1,0 +1,27 @@
+<rml>
+<head>
+	<title>ArcRmlUI Perf Data For List</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="PerfDataForList.rcss"/>
+	<viewmodel name="mock" class="/Script/ArcRmlUITestRuntime.ArcRmlMockListViewModel" context="MockList"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="mock">
+	<div class="title">Live list: {{ Rows.size }} rows (keyed left, unkeyed right)</div>
+	<div class="list keyed">
+		<div class="row" data-for="row, i : Rows" data-key="row.Id">
+			<span class="idx">{{ i }}</span>
+			<span class="name">{{ row.Name }}</span>
+			<span class="val">{{ row.Value }}</span>
+			<span class="bar" data-style-width="(row.Value / 10) + 'px'"></span>
+		</div>
+	</div>
+	<div class="list unkeyed">
+		<div class="row" data-for="row, i : Rows">
+			<span class="idx">{{ i }}</span>
+			<span class="name">{{ row.Name }}</span>
+			<span class="val" data-class-odd="row.Value > 500">{{ row.Value }}</span>
+		</div>
+	</div>
+</body>
+</rml>

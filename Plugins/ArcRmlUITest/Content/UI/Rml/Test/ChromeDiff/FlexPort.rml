@@ -1,0 +1,49 @@
+<rml>
+<head>
+	<title>FlexPort</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ChromeDiff/FlexBasics.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="t" id="CW" style="display:flex;flex-direction:column;flex-wrap:wrap;height:96px;width:300px"><div id="CW1" style="height:100px;flex:1 1 0%;width:40px"><div style="height:20px"></div></div><div id="CW2" style="height:100px;flex:1 1 0%;width:40px"><div style="height:20px"></div></div><div id="CW3" style="height:100px;flex:1 1 0%;width:40px"><div style="height:20px"></div></div></div>
+	<div class="t" id="CM" style="display:flex;flex-direction:column;flex-wrap:wrap;max-height:50px;width:300px"><div class="b" id="CM1" style="height:30px"></div><div class="b" id="CM2" style="height:30px"></div><div class="b" id="CM3" style="height:30px"></div></div>
+	<div class="t" id="CX" style="width:600px"><div id="CX0" style="display:inline-block;vertical-align:top"><div id="CX1" style="display:flex;flex-direction:column;flex-wrap:wrap;max-height:50px"><div class="b" style="height:30px"></div><div class="b" style="height:30px"></div><div class="b" style="height:30px"></div></div></div></div>
+	<div class="t" id="J1" style="display:flex;width:300px;justify-content:space-between"><div class="b" id="J1a"></div><div class="b" id="J1b"></div><div class="b" id="J1c"></div></div>
+	<div class="t" id="J2" style="display:flex;width:300px;justify-content:space-around"><div class="b" id="J2a"></div><div class="b" id="J2b"></div><div class="b" id="J2c"></div></div>
+	<div class="t" id="J3" style="display:flex;width:300px;justify-content:space-evenly"><div class="b" id="J3a"></div><div class="b" id="J3b"></div><div class="b" id="J3c"></div></div>
+	<div class="t" id="J4" style="display:flex;width:300px;justify-content:center"><div class="b" id="J4a"></div><div class="b" id="J4b"></div></div>
+	<div class="t" id="J5" style="display:flex;width:300px;justify-content:flex-end"><div class="b" id="J5a"></div><div class="b" id="J5b"></div></div>
+	<div class="t" id="J6" style="display:flex;flex-direction:row-reverse;width:300px"><div class="b" id="J6a"></div><div class="b" id="J6b" style="height:30px"></div></div>
+	<div class="t" id="J7" style="display:flex;flex-direction:row-reverse;width:300px;justify-content:space-between"><div class="b" id="J7a"></div><div class="b" id="J7b"></div><div class="b" id="J7c"></div></div>
+	<div class="t" id="AM" style="display:flex;width:300px;height:60px"><div class="b" id="AM1" style="margin:auto"></div><div class="b" id="AM2" style="margin-left:auto"></div></div>
+	<div class="t" id="AC" style="display:flex;width:300px;height:60px"><div class="b" id="AC1" style="margin-top:auto"></div><div class="b" id="AC2" style="margin-top:auto;margin-bottom:auto"></div><div class="b" id="AC3"></div></div>
+	<div class="t" id="AI" style="display:flex;width:300px;height:60px;align-items:center"><div class="b" id="AI1"></div><div class="b" id="AI2" style="align-self:flex-end"></div><div class="b" id="AI3" style="align-self:stretch;height:auto"></div><div class="b" id="AI4" style="align-self:flex-start"></div></div>
+	<div class="t" id="BL" style="display:flex;align-items:baseline;width:300px"><div class="b" id="BL1" style="height:20px;margin-top:10px"></div><div class="b" id="BL2" style="height:40px"></div><div class="b" id="BL3" style="height:30px;margin-bottom:5px"></div></div>
+	<div class="t" id="BR" style="display:flex;flex-wrap:wrap-reverse;align-items:baseline;width:300px"><div class="b" id="BR1" style="height:20px"></div><div class="b" id="BR2" style="height:40px"></div></div>
+	<div class="t" id="WR" style="display:flex;flex-wrap:wrap-reverse;width:150px;height:100px;align-content:center"><div class="b" id="WR1"></div><div class="b" id="WR2"></div><div class="b" id="WR3"></div></div>
+	<div class="t" id="WS" style="display:flex;flex-wrap:wrap;width:150px;height:100px;align-content:space-between;row-gap:5px"><div class="b" id="WS1"></div><div class="b" id="WS2"></div><div class="b" id="WS3"></div></div>
+	<div class="t" id="WE" style="display:flex;flex-wrap:wrap;width:150px;height:100px;align-content:flex-end;align-items:flex-start"><div class="b" id="WE1"></div><div class="b" id="WE2" style="height:30px"></div><div class="b" id="WE3"></div></div>
+	<div class="t" id="SH" style="display:flex;width:100px"><div id="SH1" style="flex:0 1 80px"><div style="width:60px;height:10px"></div></div><div id="SH2" style="flex:0 1 80px;height:10px"></div></div>
+	<div class="t" id="GM" style="display:flex;width:300px"><div id="GM1" style="flex:1;max-width:50px;height:10px"></div><div id="GM2" style="flex:1;height:10px"></div><div id="GM3" style="flex:2;height:10px"></div></div>
+	<div class="t" id="GH" style="display:flex;width:300px"><div id="GH1" style="flex-grow:0.25;height:10px"></div><div id="GH2" style="flex-grow:0.25;height:10px"></div></div>
+	<div class="t" id="CR" style="display:flex;flex-direction:column-reverse;width:100px;height:100px"><div class="b" id="CR1"></div><div class="b" id="CR2"></div></div>
+	<div class="t" id="CJ" style="display:flex;flex-direction:column;width:100px;height:100px;justify-content:space-between;align-items:flex-end"><div class="b" id="CJ1"></div><div class="b" id="CJ2"></div></div>
+	<div class="t" id="CA" style="display:flex;flex-direction:column;width:100px;height:100px"><div class="b" id="CA1" style="margin-top:auto"></div><div class="b" id="CA2" style="margin-left:auto"></div></div>
+	<div class="t" id="CS" style="display:flex;flex-direction:column;width:100px"><div id="CS1" style="height:10px"></div><div id="CS2" style="height:10px;width:40px"></div><div id="CS3" style="height:10px;align-self:center"><div style="width:30px;height:10px"></div></div></div>
+	<div class="t" id="CF" style="display:flex;flex-direction:column;width:100px;min-height:100px"><div id="CF1" style="flex:1"><div style="height:10px"></div></div><div id="CF2" style="flex:2"><div style="height:10px"></div></div></div>
+	<div class="t" id="RG" style="display:flex;flex-wrap:wrap;width:130px;gap:6px 10px"><div class="b" id="RG1"></div><div class="b" id="RG2"></div><div class="b" id="RG3"></div></div>
+	<div class="t" id="OR" style="display:flex;width:300px"><div class="b" id="OR1" style="order:2"></div><div class="b" id="OR2"></div><div class="b" id="OR3" style="order:-1"></div></div>
+	<div class="t" id="SW" style="display:flex;width:300px"><div id="SW1" style="width:70px;flex:0 1 40px"><div style="width:50px;height:10px"></div></div></div>
+	<div class="t" id="SA" style="display:flex;width:300px;height:40px"><div id="SA2" style="aspect-ratio:2;width:30px"></div></div>
+	<div class="t" id="TT" style="display:flex;width:50px"><table id="TT0" style="min-width:0;border-spacing:0"><tbody><tr><td style="padding:0"><div style="width:80px;height:10px"></div></td></tr></tbody></table><div id="TT1" style="width:20px;height:10px"></div></div>
+	<div class="t" id="TU" style="display:flex;width:50px"><table id="TU0" style="flex:0 1 20px;min-width:0;border-spacing:0"><tbody><tr><td style="padding:0"><div style="width:80px;height:10px"></div></td></tr></tbody></table></div>
+	<div class="t" id="TV" style="display:flex;flex-direction:column;width:100px;height:20px"><table id="TV0" style="min-height:0;border-spacing:0"><tbody><tr><td style="padding:0"><div style="width:30px;height:80px"></div></td></tr></tbody></table><div id="TV1" style="width:20px;height:10px"></div></div>
+	<div class="t" id="TR" style="width:400px"><table id="TR0" style="border-spacing:2px"><tbody><tr><td id="TR1" style="padding:0"><div style="width:30px;height:10px"></div></td></tr><tr><td id="TR2" style="padding:0"><div style="width:20px;height:10px"></div></td><td id="TR3" style="padding:0"><div style="width:40px;height:10px"></div></td><td id="TR4" style="padding:0"><div style="width:10px;height:10px"></div></td></tr></tbody></table></div>
+	<div class="t" id="TQ" style="width:400px"><table id="TQ0" style="width:300px;border-spacing:0"><col style="width:50%;max-width:20%"/><tbody><tr><td id="TQ1" style="padding:0"><div style="width:10px;height:10px"></div></td><td id="TQ2" style="padding:0"><div style="width:10px;height:10px"></div></td></tr></tbody></table></div>
+	<div class="t" id="TE" style="width:400px"><table id="TE0" style="border:3px solid black;padding:4px;border-spacing:5px"></table></div>
+	<div class="t" id="TG" style="width:400px"><table id="TG0" style="border:3px solid black;padding:4px;border-spacing:5px"><col/></table></div>
+	<div class="t" id="TW" style="width:400px"><table id="TW0" style="border:3px solid black;padding:4px;border-spacing:5px"><col style="width:40px"/></table></div>
+	<div class="t" id="TX" style="width:400px"><table id="TX0" style="width:100px;border:3px solid black;border-spacing:5px"></table></div>
+</body>
+</rml>

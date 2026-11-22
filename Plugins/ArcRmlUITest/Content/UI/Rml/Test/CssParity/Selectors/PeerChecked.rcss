@@ -1,0 +1,19 @@
+:root {
+	--color-accent: #cc3366;
+}
+
+body {
+	display: block;
+}
+
+div {
+	display: block;
+}
+
+.box {
+	height: 10px;
+	width: 40px;
+	background-color: #808080;
+}
+
+.peer-checked\:bg-accent:is(:where(.peer):checked~*){background-color:var(--color-accent)}

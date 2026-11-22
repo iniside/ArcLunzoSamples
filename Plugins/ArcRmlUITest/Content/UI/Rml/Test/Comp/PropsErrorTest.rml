@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Component Props Error Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<viewmodel name="props" preview="Preview/PropsTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="props">
+	<dc-import name="/ArcRmlUITest/UI/Rml/Components/TestRelay" relay-label="Don't"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Components/TestMember" item="x"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Components/TestBox" data-unknown="x"/>
+</body>
+</rml>

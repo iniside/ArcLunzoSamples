@@ -1,0 +1,20 @@
+<rml>
+<head>
+	<title>Nav model frame</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="hide-lower" content="true"/>
+	<link type="text/rcss" href="NavModel.rcss"/>
+	<viewmodel name="nmframe" preview="Preview/NavModel.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="nmframe">
+<div class="nm-root">
+	<div class="nm-tabs" data-focus-area="tabs" data-hotkey-cycle="IA_UITabPrev IA_UITabNext">
+		<div id="t1" class="nm-btn" data-attrif-selected="tab == '1'" data-action="tab:1">Tab 1</div>
+		<div id="t2" class="nm-btn" data-attrif-selected="tab == '2'" data-action="tab:2" data-focus-enter="tab2-main">Tab 2 (focus-enter tab2-main)</div>
+		<div id="t3" class="nm-btn" data-attrif-selected="tab == '3'" data-action="tab:3">Tab 3 (no focus-enter)</div>
+	</div>
+	<div class="nm-embed" arc-embed=""></div>
+</div>
+</body>
+</rml>

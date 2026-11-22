@@ -1,0 +1,9 @@
+<rml>
+<head>
+	<title>Tab Canvas Frame</title>
+	<link type="text/rcss" href="TabCanvasFrame.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="tc-embed" arc-embed=""></div>
+</body>
+</rml>

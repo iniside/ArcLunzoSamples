@@ -1,0 +1,20 @@
+{
+	"Action": "",
+	"Armed": false,
+	"PeNone": false,
+	"Hidden": false,
+	"Gone": false,
+	"Show": true,
+	"Shift": false,
+	"Tall": true,
+	"Wide": false,
+	"Grow": false,
+	"Open": false,
+	"PeOff": false,
+	"Flat": false,
+	"Items": [
+		{ "Id": "a", "W": 40 },
+		{ "Id": "b", "W": 120 },
+		{ "Id": "c", "W": 200 }
+	]
+}

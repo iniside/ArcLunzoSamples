@@ -1,0 +1,18 @@
+<component>
+	<prop name="who" default=""/>
+	<prop name="tabs" default="[]"/>
+	<prop name="active" default="0"/>
+	<prop name="currency" default="[]"/>
+	<prop name="nofocus"/>
+	<prop name="area" default="main"/>
+	<div class="dk-gamemenuheader">
+		<div class="dk-gamemenuheader-top">
+			<div class="dk-gamemenuheader-titles">
+				<span class="dk-gamemenuheader-who">{{ $who }}</span>
+				<span class="dk-gamemenuheader-title">{{ $tabs[$active].Label }}</span>
+			</div>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/CurrencyDisplay" items="{{ $currency }}" size="lg"/>
+		</div>
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/TabBar" tabs="{{ $tabs }}" active="{{ $active }}" prompts="{{ true }}" nofocus="{{ $nofocus }}" area="{{ $area }}"/>
+	</div>
+</component>

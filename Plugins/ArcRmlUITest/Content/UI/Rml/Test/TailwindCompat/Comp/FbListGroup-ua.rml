@@ -1,0 +1,20 @@
+<rml>
+<head>
+<title>FbListGroup</title>
+<meta name="layer" content="UI.Layer.Menu"/>
+<meta name="input-mode" content="game"/>
+<link type="text/rcss" href="ua-min.rcss"/>
+<link type="text/rcss" href="tw-flowbite.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body class="p-6">
+
+<ul class="w-48 text-sm font-medium text-heading bg-neutral-primary-soft border border-default rounded-base">
+    <li class="w-full px-4 py-2 border-b border-default rounded-t-lg">Profile</li>
+    <li class="w-full px-4 py-2 border-b border-default">Settings</li>
+    <li class="w-full px-4 py-2 border-b border-default">Messages</li>
+    <li class="w-full px-4 py-2 rounded-b-lg">Download</li>
+</ul>
+
+
+</body>
+</rml>

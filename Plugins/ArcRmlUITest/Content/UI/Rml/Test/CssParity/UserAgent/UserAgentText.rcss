@@ -1,0 +1,23 @@
+body {
+	font-size: 16px;
+}
+
+table {
+	border-spacing: 0;
+}
+
+th, td {
+	width: 200px;
+}
+
+body.edited #w-light {
+	font-weight: 500 !important;
+}
+
+body.edited #s-p {
+	font-size: 20px !important;
+}
+
+body.edited #t-left {
+	text-align: start !important;
+}

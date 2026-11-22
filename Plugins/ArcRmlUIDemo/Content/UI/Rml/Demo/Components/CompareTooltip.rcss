@@ -1,0 +1,17 @@
+.dk-comparetooltip {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	gap: var(--ui-space-3);
+}
+
+.dk-comparetooltip-cell {
+	flex: 1 1 300px;
+	min-width: 0;
+	max-width: 380px;
+	display: flex;
+}
+
+.dk-comparetooltip-equipped {
+	opacity: 0.94;
+}

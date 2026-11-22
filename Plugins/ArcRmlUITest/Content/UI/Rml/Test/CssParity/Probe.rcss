@@ -1,0 +1,83 @@
+body > div, body > img {
+	position: absolute;
+}
+
+#solid {
+	left: 20px;
+	top: 20px;
+	width: 100px;
+	height: 50px;
+	background-color: #c81e28;
+}
+
+#clipbox, #roundbox {
+	top: 20px;
+	width: 100px;
+	height: 100px;
+	box-sizing: content-box;
+	border: 4px solid #505050;
+	overflow: hidden;
+}
+
+#clipbox {
+	left: 200px;
+}
+
+#roundbox {
+	left: 400px;
+	border-radius: 20px;
+}
+
+#clipchild, #roundchild {
+	width: 150px;
+	height: 150px;
+}
+
+#clipchild {
+	background-color: #1ec83c;
+}
+
+#roundchild {
+	background-color: #1e3cc8;
+}
+
+#label {
+	left: 20px;
+	top: 200px;
+	font-size: 24px;
+	color: #7814c8;
+}
+
+#gradient {
+	left: 300px;
+	top: 200px;
+	width: 120px;
+	height: 60px;
+	background: linear-gradient(90deg, #14c8dc, #dc14b4);
+}
+
+#shadow {
+	left: 500px;
+	top: 200px;
+	width: 80px;
+	height: 60px;
+	background-color: #dcb414;
+	box-shadow: 0px 0px 12px 4px #646464;
+}
+
+#image {
+	left: 700px;
+	top: 200px;
+	width: 64px;
+	height: 64px;
+}
+
+.moved #solid {
+	left: 60px;
+	top: 90px;
+	background-color: #28c81e;
+}
+
+.recolor #shadow {
+	box-shadow: 0px 0px 12px 4px #3c8cc8;
+}

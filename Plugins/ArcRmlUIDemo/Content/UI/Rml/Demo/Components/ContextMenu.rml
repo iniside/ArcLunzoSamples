@@ -1,0 +1,22 @@
+<component>
+	<prop name="title" default=""/>
+	<prop name="items" default="[]"/>
+	<prop name="width" default="240"/>
+	<prop name="field" default=""/>
+	<div class="dk-contextmenu" data-style-width="$width + 'px'">
+		<span class="dk-contextmenu-title" data-if="$title != ''">{{ $title }}</span>
+		<div class="dk-contextmenu-entry" data-for="ContextMenuR, ContextMenuR_index : $items">
+			<span class="dk-contextmenu-sep" data-if="ContextMenuR.bSeparator"></span>
+			<div class="dk-contextmenu-row" data-class-danger="ContextMenuR.bDanger" data-class-disabled="ContextMenuR.bDisabled" data-class-focusable="$field != ''" data-event-click="callIf(!ContextMenuR.bDisabled, '', 'Selected', $field, ContextMenuR_index); stopPropagation()">
+				<i class="dk-contextmenu-icon" data-if="ContextMenuR.Key == 'invite'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/user-plus.svg" width="16" height="16" stroke-width="2"/></i>
+				<i class="dk-contextmenu-icon" data-if="ContextMenuR.Key == 'message'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/message-square.svg" width="16" height="16" stroke-width="2"/></i>
+				<i class="dk-contextmenu-icon" data-if="ContextMenuR.Key == 'profile'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/user-round.svg" width="16" height="16" stroke-width="2"/></i>
+				<i class="dk-contextmenu-icon" data-if="ContextMenuR.Key == 'join'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/log-in.svg" width="16" height="16" stroke-width="2"/></i>
+				<i class="dk-contextmenu-icon" data-if="ContextMenuR.Key == 'remove'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/user-minus.svg" width="16" height="16" stroke-width="2"/></i>
+				<i class="dk-contextmenu-icon" data-if="ContextMenuR.Key == 'block'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/ban.svg" width="16" height="16" stroke-width="2"/></i>
+				<span class="dk-contextmenu-label">{{ ContextMenuR.Label }}</span>
+				<span class="dk-contextmenu-key" data-if="ContextMenuR.KeyLabel != ''">{{ ContextMenuR.KeyLabel }}</span>
+			</div>
+		</div>
+	</div>
+</component>

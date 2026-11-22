@@ -1,0 +1,20 @@
+<rml>
+<head>
+	<title>TextIndentTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/TextIndent.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="ti-px" class="box px">Hello</div>
+	<div id="ti-neg" class="box neg">Hello</div>
+	<div id="ti-pct" class="box pct">Hello</div>
+	<div id="ti-center" class="box center">Hello</div>
+	<div id="ti-right" class="box right">Hello</div>
+	<div id="ti-wrap" class="box wrap">The quick brown fox jumps over the lazy dog again and again</div>
+	<div class="box parent"><div id="ti-child">Inherited</div></div>
+	<div class="box parent"><div id="ti-ib" class="ib">Inline block</div></div>
+	<div class="box parent"><table><tr><td id="ti-td">Cell</td></tr></table></div>
+	<div class="box parent"><button id="ti-btn" class="btn">Press</button></div>
+</body>
+</rml>

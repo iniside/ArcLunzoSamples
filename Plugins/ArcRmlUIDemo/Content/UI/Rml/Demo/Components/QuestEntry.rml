@@ -1,0 +1,37 @@
+<component>
+	<prop name="state" default="active"/>
+	<prop name="kind" default=""/>
+	<prop name="tracked"/>
+	<prop name="icon" default=""/>
+	<prop name="title" default=""/>
+	<prop name="region" default=""/>
+	<prop name="level" default=""/>
+	<prop name="levelLabel" default=""/>
+	<prop name="playerLevel" default=""/>
+	<prop name="progress" default=""/>
+	<prop name="completedLabel" default=""/>
+	<prop name="failedLabel" default=""/>
+	<prop name="rewards" default="[]"/>
+	<prop name="selected"/>
+	<prop name="focusable"/>
+	<div class="dk-questentry" data-class-selected="$selected" data-class-done="$state == 'completed'" data-class-failed="$state == 'failed'" data-class-main="$kind == 'main'" data-class-focusable="$focusable" data-attrif-selected="$selected">
+		<span class="dk-questentry-iconbox"><i class="dk-questentry-icon" data-if="$state == 'failed'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/circle-x.svg" width="18" height="18" stroke-width="2"/></i><i class="dk-questentry-icon" data-if="$state == 'completed'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/circle-check.svg" width="18" height="18" stroke-width="2"/></i><i class="dk-questentry-icon" data-if="$state != 'failed' &amp;&amp; $state != 'completed' &amp;&amp; $icon != ''"><svg data-attr-src="$icon" width="18" height="18" stroke-width="2"/></i><i class="dk-questentry-icon" data-if="$state != 'failed' &amp;&amp; $state != 'completed' &amp;&amp; $icon == ''"><svg src="/ArcRmlUIDemo/UI/Rml/icons/scroll-text.svg" width="18" height="18" stroke-width="2"/></i></span>
+		<div class="dk-questentry-main">
+			<div class="dk-questentry-head">
+				<span class="dk-questentry-title">{{ $title }}</span>
+				<i class="dk-questentry-pin" data-if="$tracked &amp;&amp; $state != 'completed' &amp;&amp; $state != 'failed'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/pin.svg" width="14" height="14" stroke-width="2.25"/></i>
+			</div>
+			<div class="dk-questentry-sub">
+				<span class="dk-questentry-level" data-class-warn="$level - ($playerLevel != '' ? $playerLevel : $level) &gt;= 1" data-class-danger="$level - ($playerLevel != '' ? $playerLevel : $level) &gt;= 3">{{ $levelLabel != '' ? $levelLabel : 'Lv ' + $level }}</span>
+				<span class="dk-questentry-region">{{ $region }}</span>
+			</div>
+			<div class="dk-questentry-rewards" data-if="$rewards.size &gt; 0">
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/RewardChip" data-for="QuestEntryRw : $rewards" icon="{{ QuestEntryRw.Icon }}" label="{{ QuestEntryRw.Label }}" rarity="{{ QuestEntryRw.Rarity }}"/>
+			</div>
+		</div>
+		<div class="dk-questentry-side">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Badge" data-if="$state == 'completed' || $state == 'failed'" label="{{ $state == 'completed' ? $completedLabel : $failedLabel }}" tone="{{ $state == 'completed' ? 'success' : 'danger' }}"/>
+			<span class="dk-questentry-progress">{{ $progress }}</span>
+		</div>
+	</div>
+</component>

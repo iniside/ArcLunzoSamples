@@ -1,0 +1,26 @@
+<rml>
+<head>
+	<title>Component</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="Component.rcss"/>
+	<viewmodel name="card" class="/Script/ArcRmlUISamples.ArcRmlSamplesComponentViewModel" create="true"/>
+</head>
+<body data-model="card">
+	<div class="cp-panel">
+		<h1 class="cp-title">Component</h1>
+		<dc-import name="/ArcRmlUISamples/UI/Rml/Component/Card" title="Static title" accent-color="#ff9933">
+			<p>The default slot: any children.</p>
+			<p slot="footer">The footer slot.</p>
+		</dc-import>
+		<dc-import name="/ArcRmlUISamples/UI/Rml/Component/Card" title="{{ Title }}">
+			<p>Pressed {{ Count }} times.</p>
+			<button id="cp-press" slot="footer" class="cp-button" data-event-click="call('', 'Increment')">Press</button>
+		</dc-import>
+		<div class="cp-buttons">
+			<button class="cp-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

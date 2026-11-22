@@ -1,0 +1,11 @@
+<component>
+	<prop name="initials" default=""/>
+	<prop name="presence" default=""/>
+	<prop name="size" default="md"/>
+	<prop name="tone" default=""/>
+	<prop name="dim"/>
+	<div class="dk-avatar" data-class-sm="$size == 'sm'" data-class-lg="$size == 'lg'" data-class-xl="$size == 'xl'" data-class-accent="$tone == 'accent'" data-class-danger="$tone == 'danger'" data-class-warning="$tone == 'warning'" data-class-legendary="$tone == 'legendary'" data-class-dim="$dim">
+		<span class="dk-avatar-initials">{{ $initials }}</span>
+		<span class="dk-avatar-dot" data-if="$presence != ''"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PresenceDot" status="{{ $presence }}" size="{{ ($size == 'lg' || $size == 'xl') ? 14 : 10 }}"/></span>
+	</div>
+</component>

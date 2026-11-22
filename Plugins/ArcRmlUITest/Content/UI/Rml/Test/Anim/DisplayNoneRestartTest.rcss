@@ -1,0 +1,22 @@
+div {
+	display: block;
+}
+
+body {
+	margin: 0;
+}
+
+@keyframes grow {
+	from { width: 100px; }
+	to { width: 300px; }
+}
+
+#grow {
+	height: 16px;
+	background-color: #335577;
+	animation: grow 4s linear forwards;
+}
+
+body.hide #grow {
+	display: none;
+}

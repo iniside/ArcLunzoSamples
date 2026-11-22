@@ -1,0 +1,27 @@
+<component>
+	<prop name="label" default=""/>
+	<prop name="description" default=""/>
+	<prop name="badge" default=""/>
+	<prop name="meta" default=""/>
+	<prop name="icon" default=""/>
+	<prop name="hasIcon"/>
+	<prop name="size" default=""/>
+	<prop name="selected"/>
+	<prop name="disabled"/>
+	<prop name="autofocus"/>
+	<prop name="focusable"/>
+	<div class="dk-menuitem" data-class-compact="$size == 'md'" data-class-selected="$selected" data-class-disabled="$disabled" data-class-focusable="$focusable" data-attrif-selected="$selected" data-attrif-autofocus="$autofocus">
+		<span class="dk-menuitem-bar"></span>
+		<i class="dk-menuitem-icon" data-if="$icon != ''"><svg data-attr-src="$icon" data-attr-width="$size == 'md' ? 20 : 24" data-attr-height="$size == 'md' ? 20 : 24" stroke-width="1.75"/></i>
+		<i class="dk-menuitem-icon" data-if="$hasIcon"><slot name="icon"/></i>
+		<div class="dk-menuitem-main">
+			<div class="dk-menuitem-row">
+				<span class="dk-menuitem-label" data-class-compact="$size == 'md'">{{ $label }}</span>
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Badge" data-if="$badge != ''" label="{{ $badge }}" tone="accent" solid="{{ true }}"/>
+			</div>
+			<span class="dk-menuitem-desc" data-if="$description != ''">{{ $description }}</span>
+		</div>
+		<span class="dk-menuitem-meta" data-if="$meta != ''">{{ $meta }}</span>
+		<i class="dk-menuitem-chevron"><svg src="/ArcRmlUIDemo/UI/Rml/icons/chevron-right.svg" width="20" height="20" stroke-width="2"/></i>
+	</div>
+</component>

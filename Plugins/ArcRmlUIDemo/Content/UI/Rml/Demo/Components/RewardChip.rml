@@ -1,0 +1,10 @@
+<component>
+	<prop name="icon" default="sparkles"/>
+	<prop name="label" default=""/>
+	<prop name="rarity" default=""/>
+	<prop name="claimed"/>
+	<div class="dk-rewardchip" data-class-has-rarity="$rarity != ''" data-class-uncommon="$rarity == 'uncommon'" data-class-rare="$rarity == 'rare'" data-class-epic="$rarity == 'epic'" data-class-legendary="$rarity == 'legendary'" data-class-common="$rarity == 'common'" data-class-claimed="$claimed">
+		<i class="dk-rewardchip-icon"><svg data-attr-src="$icon" width="14" height="14" stroke-width="2"/></i>
+		<span class="dk-rewardchip-label">{{ $label }}</span>
+	</div>
+</component>

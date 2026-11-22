@@ -1,0 +1,9 @@
+<rml>
+<head>
+	<title>Ime Field Test</title>
+	<link type="text/rcss" href="ImeFieldTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<input type="text" id="ime-field" autofocus=""/>
+</body>
+</rml>

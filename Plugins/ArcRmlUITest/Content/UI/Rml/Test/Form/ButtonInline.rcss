@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+}
+
+.row {
+	display: block;
+	margin-bottom: 12px;
+}
+
+.inline {
+	display: inline;
+}
+
+.tall {
+	height: 40px;
+}
+
+.ring {
+	outline: 3px solid #e000e0;
+}
+
+.paint {
+	background-color: #00c000;
+}
+
+.inner {
+	display: block;
+	width: 20px;
+	height: 10px;
+	background-color: #2040ff;
+}

@@ -1,0 +1,4 @@
+<component>
+	<prop name="p"/>
+	<div data-alias-x="$p"><span id="ab-text">{{ x }}</span></div>
+</component>

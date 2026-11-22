@@ -1,0 +1,17 @@
+<component>
+	<prop name="value" default="0"/>
+	<prop name="indeterminate"/>
+	<prop name="tone" default="accent"/>
+	<prop name="size" default=""/>
+	<prop name="label" default=""/>
+	<prop name="valueLabel" default=""/>
+	<div class="dk-progressbar">
+		<div class="dk-progressbar-top" data-if="$label != '' || $valueLabel != ''">
+			<span class="dk-progressbar-label">{{ $label }}</span>
+			<span class="dk-progressbar-value">{{ $indeterminate ? '' : ($valueLabel != '' ? $valueLabel : (($value | arcclamp(0, 100)) | round) + '%') }}</span>
+		</div>
+		<div class="dk-progressbar-track" data-class-sm="$size == 'sm'" data-class-lg="$size == 'lg'">
+			<div class="dk-progressbar-fill" data-class-success="$tone == 'success'" data-class-warning="$tone == 'warning'" data-class-danger="$tone == 'danger'" data-class-indet="$indeterminate" data-style-width="$indeterminate ? '30%' : (($value | arcclamp(0, 100)) + '%')"></div>
+		</div>
+	</div>
+</component>

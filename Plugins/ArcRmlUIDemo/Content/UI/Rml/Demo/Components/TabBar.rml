@@ -1,0 +1,25 @@
+<component>
+	<prop name="tabs" default="[]"/>
+	<prop name="active" default="0"/>
+	<prop name="variant" default=""/>
+	<prop name="prompts"/>
+	<prop name="nofocus"/>
+	<prop name="area" default=""/>
+	<div class="dk-tabbar">
+		<div class="dk-tabbar-prompt dk-tabbar-prompt-start" data-if="$prompts"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="Q" glyph="LB" size="sm"/></div>
+		<div class="dk-tabbar-tab" data-for="TabBarT, TabBarT_index : $tabs" data-class-icon-only="$variant == 'icon'" data-class-active="TabBarT_index == $active" data-class-disabled="TabBarT.bDisabled" data-class-focusable="$area != '' &amp;&amp; !$nofocus &amp;&amp; !TabBarT.bDisabled" data-class-cycle="$nofocus &amp;&amp; !TabBarT.bDisabled" data-attrif-selected="TabBarT_index == $active" data-event-click="callIf(!TabBarT.bDisabled, '', 'TabSelected', $area, TabBarT_index)">
+			<i class="dk-tabbar-icon" data-if="TabBarT.Icon != ''"><svg data-attr-src="TabBarT.Icon" data-attr-width="$variant == 'icon' ? 22 : 18" data-attr-height="$variant == 'icon' ? 22 : 18" stroke-width="2"/></i>
+			<i class="dk-tabbar-icon" data-if="TabBarT.Icon == '' &amp;&amp; TabBarT.Key == 'gameplay'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/gamepad-2.svg" data-attr-width="$variant == 'icon' ? 22 : 18" data-attr-height="$variant == 'icon' ? 22 : 18" stroke-width="2"/></i>
+			<i class="dk-tabbar-icon" data-if="TabBarT.Icon == '' &amp;&amp; TabBarT.Key == 'graphics'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/monitor.svg" data-attr-width="$variant == 'icon' ? 22 : 18" data-attr-height="$variant == 'icon' ? 22 : 18" stroke-width="2"/></i>
+			<i class="dk-tabbar-icon" data-if="TabBarT.Icon == '' &amp;&amp; TabBarT.Key == 'audio'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/volume-2.svg" data-attr-width="$variant == 'icon' ? 22 : 18" data-attr-height="$variant == 'icon' ? 22 : 18" stroke-width="2"/></i>
+			<i class="dk-tabbar-icon" data-if="TabBarT.Icon == '' &amp;&amp; TabBarT.Key == 'controls'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/keyboard.svg" data-attr-width="$variant == 'icon' ? 22 : 18" data-attr-height="$variant == 'icon' ? 22 : 18" stroke-width="2"/></i>
+			<i class="dk-tabbar-icon" data-if="TabBarT.Icon == '' &amp;&amp; TabBarT.Key == 'accessibility'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/accessibility.svg" data-attr-width="$variant == 'icon' ? 22 : 18" data-attr-height="$variant == 'icon' ? 22 : 18" stroke-width="2"/></i>
+			<i class="dk-tabbar-icon" data-if="TabBarT.Icon == '' &amp;&amp; TabBarT.Key == 'buy'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/shopping-cart.svg" data-attr-width="$variant == 'icon' ? 22 : 18" data-attr-height="$variant == 'icon' ? 22 : 18" stroke-width="2"/></i>
+			<i class="dk-tabbar-icon" data-if="TabBarT.Icon == '' &amp;&amp; TabBarT.Key == 'sell'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/hand-coins.svg" data-attr-width="$variant == 'icon' ? 22 : 18" data-attr-height="$variant == 'icon' ? 22 : 18" stroke-width="2"/></i>
+			<i class="dk-tabbar-icon" data-if="TabBarT.Icon == '' &amp;&amp; TabBarT.Key == 'buyback'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/undo-2.svg" data-attr-width="$variant == 'icon' ? 22 : 18" data-attr-height="$variant == 'icon' ? 22 : 18" stroke-width="2"/></i>
+			<span class="dk-tabbar-label" data-if="$variant != 'icon'">{{ TabBarT.Label }}</span>
+			<span class="dk-tabbar-badge" data-if="TabBarT.Badge != ''" data-class-icon-only="$variant == 'icon'" data-class-active="TabBarT_index == $active">{{ TabBarT.Badge }}</span>
+		</div>
+		<div class="dk-tabbar-prompt dk-tabbar-prompt-end" data-if="$prompts"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="E" glyph="RB" size="sm"/></div>
+	</div>
+</component>

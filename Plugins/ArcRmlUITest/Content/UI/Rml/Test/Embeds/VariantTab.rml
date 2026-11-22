@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>Variant Tab</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Embeds/VariantFrame.rml"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="vtab" preview="Preview/VariantTab.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="vtab">
+	<div id="vt-label">{{ label }}</div>
+</body>
+</rml>

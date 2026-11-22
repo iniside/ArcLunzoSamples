@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>If Tab</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Embeds/IfFrame.rml"/>
+	<link type="text/rcss" href="IfTab.rcss"/>
+	<viewmodel name="iftab" preview="Preview/IfTab.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="iftab">
+	<div id="if-tab">{{ label }}</div>
+</body>
+</rml>

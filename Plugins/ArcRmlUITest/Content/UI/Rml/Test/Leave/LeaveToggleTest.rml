@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Leave Toggle Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="LeaveToggleTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="ltt-btn" id="ltt-first">First</div>
+	<div class="ltt-btn" id="ltt-second">Second</div>
+</body>
+</rml>

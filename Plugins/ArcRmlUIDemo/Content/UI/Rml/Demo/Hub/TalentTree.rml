@@ -1,0 +1,82 @@
+<rml>
+<head>
+	<title>ArcRmlUI Demo Game Menu · Talents</title>
+	<meta name="frame" content="/ArcRmlUIDemo/UI/Rml/Demo/Hub.rml"/>
+	<meta name="input-mapping" content="/ArcRmlUIDemo/Demo/Input/IMC_ArcDemo_TalentTree"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/tokens.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Fonts/Fonts.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/GameUI.rcss"/>
+	<link type="text/rcss" href="HubTab.rcss"/>
+	<link type="text/rcss" href="TalentTree.rcss"/>
+	<viewmodel name="ui" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoUIVM.BP_ArcRmlDemoUIVM_C" context="VM_ArcRmlDemoUI"/>
+	<viewmodel name="talents" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoTalentsVM.BP_ArcRmlDemoTalentsVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+</head>
+<body data-model="ui" data-class-theme-ember="Theme == 'ember'" data-class-theme-daylight="Theme == 'daylight'" data-class-theme-slate="Theme == 'slate'" data-class-theme-relic="Theme == 'relic'">
+	<div class="ht-root" data-model="talents" data-event-back="call('', 'Back'); stopPropagation()">
+		<div class="ht-frame">
+			<div class="tt-body">
+				<div class="ht-col">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" padded="{{ false }}" fill="{{ true }}" has-footer="{{ true }}" style="width: 100%; height: 100%">
+						<div class="tt-trees">
+							<div class="gu-cycle">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/TabBar" tabs="{{ Trees }}" active="{{ SubTab }}" area="sub" nofocus="{{ true }}" data-hotkey-cycle="IA_ArcDemo_PrevSubTab IA_ArcDemo_NextSubTab"/>
+							</div>
+						</div>
+						<div class="tt-scroll">
+							<div class="tt-canvas" data-focus-area="nodes" data-focus-primary="">
+								<div class="tt-tier" data-for="ttTier : Tiers" data-class-locked="ttTier.bLocked" data-class-first="ttTier.bFirst" data-style-top="ttTier.Top + 'px'">
+									<span class="tt-tier-label">{{ ttTier.Label }}</span>
+									<span class="tt-tier-req">{{ ttTier.Req }}</span>
+								</div>
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/TalentLink" data-for="ttLink : Links" x1="{{ ttLink.X1 }}" y1="{{ ttLink.Y1 }}" len="{{ ttLink.Len }}" ang="{{ ttLink.Ang }}" active="{{ ttLink.bActive }}"/>
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/TalentNode" data-for="ttNode, ttNode_index : Nodes" icon="{{ ttNode.Icon }}" rank="{{ ttNode.Rank }}" max-rank="{{ ttNode.MaxRank }}" state="{{ ttNode.State }}" keystone="{{ ttNode.bKeystone }}" x="{{ ttNode.X }}" y="{{ ttNode.Y }}" selected="{{ ttNode.Id == Selected }}" node-id="{{ 'tn-' + ttNode.Id }}" nav-up="{{ ttNode.NavUp }}" nav-down="{{ ttNode.NavDown }}" nav-left="{{ ttNode.NavLeft }}" nav-right="{{ ttNode.NavRight }}" focusable="{{ true }}" data-event-click="call('', 'Learn', ttNode_index)" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_Unlearn', '', 'Unlearn', ttNode_index); stopPropagation(ev.action == 'IA_ArcDemo_Unlearn')"/>
+							</div>
+						</div>
+						<div slot="footer" class="tt-footer">
+							<span class="tt-legend">Drag or use the stick to pan · Tiers unlock every 4 points spent in this tree</span>
+							<div class="gu-area" data-focus-area="reset" data-focus-parent="nodes">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="Reset tree" variant="danger" size="sm" icon-left="/ArcRmlUIDemo/UI/Rml/icons/rotate-ccw.svg" focusable="{{ true }}" data-hotkey="IA_ArcDemo_Reset" data-focus-enter="modal" data-event-click="call('', 'ResetTree', -1)"/>
+							</div>
+						</div>
+					</dc-import>
+				</div>
+				<div class="ht-col">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="{{ Detail.Name }}" subtitle="{{ Detail.Sub }}" fill="{{ true }}" scroll="{{ true }}" has-footer="{{ true }}" style="width: 100%; height: 100%">
+						<div class="tt-sel">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/TalentNode" icon="{{ Detail.Icon }}" rank="{{ Detail.Rank }}" max-rank="{{ Detail.MaxRank }}" state="allocated"/>
+							<div class="tt-sel-text">
+								<span class="tt-sel-rank">{{ Detail.RankLabel }}</span>
+								<span class="tt-sel-caption">Current rank</span>
+							</div>
+						</div>
+						<div class="tt-current">
+							<span class="tt-current-label">Rank 2 · current</span>
+							<span class="tt-current-text">{{ Detail.Current }}</span>
+						</div>
+						<div class="tt-next">
+							<span class="tt-next-label">Rank 3 · next</span>
+							<span class="tt-next-text">{{ Detail.Next }}</span>
+						</div>
+						<div class="tt-facts">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/StatRow" data-for="ttFact : Detail.Facts" label="{{ ttFact.Label }}" value="{{ ttFact.Value }}"/>
+						</div>
+						<div slot="footer" class="tt-detail-footer" data-focus-area="detail" data-focus-parent="nodes">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="Unlearn" variant="secondary" icon-left="/ArcRmlUIDemo/UI/Rml/icons/minus.svg" focusable="{{ true }}" data-event-click="call('', 'Unlearn', -1)"/>
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="Learn" icon-left="/ArcRmlUIDemo/UI/Rml/icons/plus.svg" focusable="{{ true }}" data-event-click="call('', 'Learn', -1)"/>
+						</div>
+					</dc-import>
+				</div>
+			</div>
+			<div class="ht-footer">
+				<div class="gu-prompts gu-all" data-if="bConfirm"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Confirm"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Cancel"/></dc-import></div>
+				<div class="gu-prompts gu-default" data-area="nodes" data-if="!bConfirm"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Learn" disabled="{{ !bCanLearn }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_PrevSubTab + ' / ' + ArcKeys.IA_ArcDemo_NextSubTab }}" glyph="LT / RT" label="Tree"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Unlearn }}" label="Unlearn" disabled="{{ !bCanUnlearn }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Reset }}" label="Reset tree" disabled="{{ !bCanReset }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Close"/></dc-import></div>
+				<div class="gu-prompts" data-area="detail" data-if="!bConfirm"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Select"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_PrevSubTab + ' / ' + ArcKeys.IA_ArcDemo_NextSubTab }}" glyph="LT / RT" label="Tree"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Close"/></dc-import></div>
+				<div class="gu-prompts" data-area="reset" data-if="!bConfirm"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Reset tree" disabled="{{ !bCanReset }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_PrevSubTab + ' / ' + ArcKeys.IA_ArcDemo_NextSubTab }}" glyph="LT / RT" label="Tree"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Close"/></dc-import></div>
+			</div>
+		</div>
+		<div class="gu-area" data-if="bConfirm" data-focus-area="modal" data-focus-contain="" data-event-uiaction="stopPropagation(ev.action != 'IA_ArcDemo_DevBar' &amp;&amp; ev.action != 'IA_ArcDemo_GameMenu')">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Modal" title="{{ ResetTitle }}" body="{{ ResetBody }}" variant="danger" buttons="{{ ModalButtons }}" backdrop="{{ true }}" focused="{{ 0 }}"/>
+		</div>
+	</div>
+</body>
+</rml>

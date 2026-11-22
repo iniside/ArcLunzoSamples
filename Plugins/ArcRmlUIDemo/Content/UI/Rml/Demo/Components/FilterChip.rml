@@ -1,0 +1,13 @@
+<component>
+	<prop name="icon" default=""/>
+	<prop name="label" default=""/>
+	<prop name="count" default=""/>
+	<prop name="active"/>
+	<prop name="disabled"/>
+	<prop name="focusable"/>
+	<div class="dk-filterchip" data-class-active="$active" data-class-disabled="$disabled" data-class-focusable="$focusable" data-attrif-selected="$active">
+		<i class="dk-filterchip-icon" data-if="$icon != ''"><svg data-attr-src="$icon" width="15" height="15" stroke-width="2"/></i>
+		<span class="dk-filterchip-label">{{ $label }}</span>
+		<span class="dk-filterchip-count" data-if="$count != ''" data-class-active="$active" data-class-disabled="$disabled">{{ $count }}</span>
+	</div>
+</component>

@@ -1,0 +1,84 @@
+@keyframes hud-wpn-a { from { transform: translateY(8px) scale(0.9); opacity: 0.4; } to { transform: translateY(0px) scale(1); opacity: 1; } }
+
+@keyframes hud-wpn-b { from { transform: translateY(8px) scale(0.9); opacity: 0.4; } to { transform: translateY(0px) scale(1); opacity: 1; } }
+
+.dk-weapon-bar {
+	display: flex;
+	align-items: flex-end;
+	gap: var(--hud-space-sm);
+	min-width: 0;
+}
+
+.dk-weapon-bar-w-s {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-2);
+	border-radius: var(--hud-radius);
+	box-shadow: var(--hud-plate-shadow);
+}
+
+.dk-weapon-bar-w-icon-s {
+	display: flex;
+}
+
+.dk-weapon-bar-e4 {
+	display: inline-flex;
+}
+
+.dk-weapon-bar-e5 {
+	display: flex;
+	flex-direction: column;
+	gap: var(--hud-space-xs);
+	min-width: 0;
+}
+
+.dk-weapon-bar-name-s {
+	font-size: var(--ui-fs-1);
+	font-weight: 600;
+	color: var(--hud-text);
+	text-shadow: var(--hud-text-shadow);
+	white-space: nowrap;
+	max-width: 140px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-weapon-bar-w-ammo-s {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	font-weight: 700;
+	text-shadow: var(--hud-text-shadow);
+}
+
+.dk-weapon-bar-r-track {
+	position: relative;
+	width: 100%;
+	height: 3px;
+	background: var(--hud-plate-2);
+	border-radius: var(--hud-radius-sm);
+	overflow: hidden;
+}
+
+.dk-weapon-bar-r-fill {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	transform-origin: left;
+	--dk-weapon-bar-r-fill-transform-1: 0;
+	transform: scaleX(var(--dk-weapon-bar-r-fill-transform-1));
+	background: var(--ui-warning);
+}
+
+.dk-weapon-bar-key-s {
+	position: absolute;
+	top: -14px;
+	left: 2px;
+	font-family: var(--ui-font-mono);
+	font-size: var(--hud-fs-xs);
+	font-weight: 700;
+	color: var(--hud-text);
+	text-shadow: var(--hud-text-shadow);
+}

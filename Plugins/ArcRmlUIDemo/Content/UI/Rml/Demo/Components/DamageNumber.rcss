@@ -1,0 +1,74 @@
+@keyframes hud-dmg-nl { 0% { opacity: 0; transform: translate(-50%, -50%) scale(1); } 12% { opacity: 1; transform: translate(-50%, -90%) scale(1); } 70% { opacity: 1; } 100% { opacity: 0; transform: translate(calc(-50% + -28px), -260%) scale(1); } }
+
+@keyframes hud-dmg-nc { 0% { opacity: 0; transform: translate(-50%, -50%) scale(1); } 12% { opacity: 1; transform: translate(-50%, -90%) scale(1); } 70% { opacity: 1; } 100% { opacity: 0; transform: translate(calc(-50% + 0px), -260%) scale(1); } }
+
+@keyframes hud-dmg-nr { 0% { opacity: 0; transform: translate(-50%, -50%) scale(1); } 12% { opacity: 1; transform: translate(-50%, -90%) scale(1); } 70% { opacity: 1; } 100% { opacity: 0; transform: translate(calc(-50% + 28px), -260%) scale(1); } }
+
+@keyframes hud-dmg-kl { 0% { opacity: 0; transform: translate(-50%, -50%) scale(1.6); } 12% { opacity: 1; transform: translate(-50%, -90%) scale(1.25); } 70% { opacity: 1; } 100% { opacity: 0; transform: translate(calc(-50% + -28px), -260%) scale(1); } }
+
+@keyframes hud-dmg-kc { 0% { opacity: 0; transform: translate(-50%, -50%) scale(1.6); } 12% { opacity: 1; transform: translate(-50%, -90%) scale(1.25); } 70% { opacity: 1; } 100% { opacity: 0; transform: translate(calc(-50% + 0px), -260%) scale(1); } }
+
+@keyframes hud-dmg-kr { 0% { opacity: 0; transform: translate(-50%, -50%) scale(1.6); } 12% { opacity: 1; transform: translate(-50%, -90%) scale(1.25); } 70% { opacity: 1; } 100% { opacity: 0; transform: translate(calc(-50% + 28px), -260%) scale(1); } }
+
+.dk-damage-number {
+	position: absolute;
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-4);
+	font-weight: 800;
+	color: var(--hud-dmg-normal);
+	text-shadow: var(--hud-dmg-shadow);
+	white-space: nowrap;
+	pointer-events: none;
+	opacity: 0;
+	animation: hud-dmg-nc 1.2s cubic-bezier(0.2,0.7,0.3,1) forwards;
+}
+
+.dk-damage-number.crit {
+	font-size: var(--ui-fs-5);
+	color: var(--hud-dmg-crit);
+	animation-name: hud-dmg-kc;
+}
+
+.dk-damage-number.heal {
+	color: var(--hud-dmg-heal);
+}
+
+.dk-damage-number.dot {
+	font-size: var(--ui-fs-3);
+	color: var(--hud-dmg-dot);
+}
+
+.dk-damage-number.miss {
+	font-size: var(--ui-fs-3);
+	color: var(--hud-dmg-miss);
+}
+
+.dk-damage-number.block {
+	font-size: var(--ui-fs-3);
+	color: var(--hud-dmg-miss);
+}
+
+.dk-damage-number.immune {
+	font-size: var(--ui-fs-3);
+	color: var(--hud-dmg-miss);
+}
+
+.dk-damage-number.taken {
+	color: var(--hud-dmg-taken);
+}
+
+.dk-damage-number.drift-neg1 {
+	animation-name: hud-dmg-nl;
+}
+
+.dk-damage-number.drift-1 {
+	animation-name: hud-dmg-nr;
+}
+
+.dk-damage-number.crit.drift-neg1 {
+	animation-name: hud-dmg-kl;
+}
+
+.dk-damage-number.crit.drift-1 {
+	animation-name: hud-dmg-kr;
+}

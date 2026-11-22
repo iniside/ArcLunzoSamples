@@ -1,0 +1,10 @@
+<rml>
+<head>
+	<title>Window Drag Test</title>
+	<link type="text/rcss" href="WindowDragTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<handle id="wd-handle" move_target="#document"></handle>
+	<div id="wd-content"></div>
+</body>
+</rml>

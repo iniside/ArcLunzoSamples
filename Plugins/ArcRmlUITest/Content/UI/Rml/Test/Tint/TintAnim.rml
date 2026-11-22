@@ -1,0 +1,14 @@
+<rml>
+<head>
+	<title>Tint Animation Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="TintAnim.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="abg" class="item"></div>
+	<div id="abd" class="item"></div>
+	<div id="aop" class="item"></div>
+	<div id="atx">Tint</div>
+</body>
+</rml>

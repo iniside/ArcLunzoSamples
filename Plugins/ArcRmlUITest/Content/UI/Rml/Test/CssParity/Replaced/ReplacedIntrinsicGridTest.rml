@@ -1,0 +1,24 @@
+<rml>
+<head>
+	<title>Replaced Elements In Grid And Flex Intrinsic Widths Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/ReplacedIntrinsic.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="cbw" style="left: 20px; top: 10px;"><div class="ga"><div id="ga-px-w" class="p"><img id="ga-px-w-r" class="r-px" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbn" style="left: 720px; top: 10px;"><div class="ga"><div id="ga-px-n" class="p"><img id="ga-px-n-r" class="r-px" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbw" style="left: 20px; top: 105px;"><div class="ga"><div id="ga-pct-w" class="p"><img id="ga-pct-w-r" class="r-pct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbn" style="left: 720px; top: 105px;"><div class="ga"><div id="ga-pct-n" class="p"><img id="ga-pct-n-r" class="r-pct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbw" style="left: 20px; top: 200px;"><div class="gm"><div id="gm-px-w" class="p"><img id="gm-px-w-r" class="r-px" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbn" style="left: 720px; top: 200px;"><div class="gm"><div id="gm-px-n" class="p"><img id="gm-px-n-r" class="r-px" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbw" style="left: 20px; top: 295px;"><div class="gm"><div id="gm-pct-w" class="p"><img id="gm-pct-w-r" class="r-pct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbn" style="left: 720px; top: 295px;"><div class="gm"><div id="gm-pct-n" class="p"><img id="gm-pct-n-r" class="r-pct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbw" style="left: 20px; top: 400px;"><div class="gs"><div id="gs-pct" class="p"><img id="gs-pct-r" class="r-pct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbw" style="left: 190px; top: 400px;"><div class="gs"><div id="gs-maxpct" class="p"><img id="gs-maxpct-r" class="r-maxpct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div></div>
+	<div class="cbw" style="left: 20px; top: 500px;"><div id="fb-w" class="fbx"><img id="fb-w-r" class="r-fb" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 720px; top: 500px;"><div id="fb-n" class="fbx"><img id="fb-n-r" class="r-fb" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbw" style="left: 190px; top: 500px;"><div id="fbp-w" class="fbx"><img id="fbp-w-r" class="r-fb r-pct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+	<div class="cbn" style="left: 860px; top: 500px;"><div id="fbp-n" class="fbx"><img id="fbp-n-r" class="r-fb r-pct" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Replaced/Image120x80.png"/></div></div>
+</body>
+</rml>

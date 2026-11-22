@@ -1,0 +1,5 @@
+<component>
+	<prop name="size" default="md"/>
+	<prop name="tone" default=""/>
+	<span class="dk-spinner" data-class-sm="$size == 'sm'" data-class-lg="$size == 'lg'" data-class-accent="$tone == 'accent'"></span>
+</component>

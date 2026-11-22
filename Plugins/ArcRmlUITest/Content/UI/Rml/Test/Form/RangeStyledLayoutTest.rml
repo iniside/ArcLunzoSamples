@@ -1,0 +1,16 @@
+<rml>
+<head>
+	<title>RangeStyledLayoutTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/RangeStyledLayout.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="row"><input id="rs-canon" class="slider" type="range" min="0" max="100" step="1" value="50"/></div>
+	<div class="row"><input id="rs-mid" class="slider ink" type="range" min="0" max="100" step="1" value="50"/></div>
+	<div class="row"><input id="rs-min" class="slider ink" type="range" min="0" max="100" step="1" value="0"/></div>
+	<div class="row"><input id="rs-max" class="slider ink" type="range" min="0" max="100" step="1" value="100"/></div>
+	<div class="row"><input id="rs-tall" class="slider ink tall" type="range" min="0" max="100" step="1" value="30"/></div>
+	<div class="row"><input id="rs-pad" class="slider ink pad" type="range" min="0" max="10" step="1" value="7"/></div>
+</body>
+</rml>

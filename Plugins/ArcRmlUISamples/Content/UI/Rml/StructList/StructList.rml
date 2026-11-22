@@ -1,0 +1,26 @@
+<rml>
+<head>
+	<title>StructList</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="StructList.rcss"/>
+	<viewmodel name="rows" class="/Script/ArcRmlUISamples.ArcRmlSamplesStructListViewModel" create="true"/>
+</head>
+<body data-model="rows">
+	<div class="sl-panel">
+		<h1 class="sl-title">Struct list</h1>
+		<div class="sl-row" data-for="r, i : Rows" data-key="r.Id">
+			<span class="sl-name">{{ r.Name }}</span>
+			<span>x{{ r.Quantity }}</span>
+			<button class="sl-bump sl-button" data-event-click="call('', 'Bump', i)">+1</button>
+			<button class="sl-remove sl-button" data-event-click="call('', 'Remove', i)">Remove</button>
+		</div>
+		<div class="sl-buttons">
+			<button id="sl-add" class="sl-button" data-event-click="call('', 'Add')">Add</button>
+			<button id="sl-reverse" class="sl-button" data-event-click="call('', 'Reverse')">Reverse</button>
+			<button class="sl-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

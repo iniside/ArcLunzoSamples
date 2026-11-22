@@ -1,0 +1,58 @@
+<rml>
+<head>
+	<title>CalcPropsTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/CalcProps/CalcProps.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="t-xs" class="b text-xs">Ag</div>
+	<div id="t-sm" class="b text-sm">Ag</div>
+	<div id="t-base" class="b text-base">Ag</div>
+	<div id="t-lg" class="b text-lg">Ag</div>
+	<div id="t-xl" class="b text-xl">Ag</div>
+	<div id="t-2xl" class="b text-2xl">Ag</div>
+	<div id="t-3xl" class="b text-3xl">Ag</div>
+	<div id="t-4xl" class="b text-4xl">Ag</div>
+	<div id="t-5xl" class="b text-5xl">Ag</div>
+	<div id="t-6xl" class="b text-6xl">Ag</div>
+	<div id="t-7xl" class="b text-7xl">Ag</div>
+	<div id="t-8xl" class="b text-8xl">Ag</div>
+	<div id="t-9xl" class="b text-9xl">Ag</div>
+	<div id="more" class="b">
+		<div id="lead6" class="b leading-6">Ag</div>
+		<div id="t-sm6" class="b text-sm/6">Ag</div>
+		<div id="lead-sm" class="b text-sm leading-6">Ag</div>
+		<div id="lh-num" class="b"><div id="lh-num-child" class="b">Ag</div></div>
+		<div id="lh-len" class="b"><div id="lh-len-child" class="b">Ag</div></div>
+		<div id="lh-pct" class="b">Ag</div>
+		<div id="tr"><span id="tr-none" class="ib">AAAAAAAAAA</span></div>
+		<div id="tr1"><span id="tr-tight" class="ib tracking-tight">AAAAAAAAAA</span></div>
+		<div id="tr2"><span id="tr-neg" class="ib -tracking-tight">AAAAAAAAAA</span></div>
+		<div id="tr3"><span id="tr-mixed" class="ib">AAAAAAAAAA</span></div>
+		<div id="dx" class="divide-x-2"><div id="dx-a" class="cell"></div><div id="dx-b" class="cell"></div><div id="dx-c" class="cell"></div></div>
+		<div id="bw-mixed" class="b"></div>
+		<div id="bw-neg" class="b"></div>
+		<div id="ord"><div id="ord-c" class="cell"></div><div id="ord-a" class="cell"></div><div id="ord-b" class="cell"></div></div>
+		<div id="ord2"><div id="ord2-t" class="cell"></div><div id="ord2-p" class="cell"></div><div id="ord2-s" class="cell"></div><div id="ord2-r" class="cell"></div></div>
+		<div id="lead-late" class="b leading-6 text-sm-late">Ag</div>
+		<div id="dxr" class="divide-x-2 divide-x-reverse"><div id="dxr-a" class="cell"></div><div id="dxr-b" class="cell"></div><div id="dxr-c" class="cell"></div></div>
+		<div id="ls-em" class="b"><span id="ls-em-child" class="ib">AAAAAAAAAA</span></div>
+		<div id="ls-calc" class="b"><span id="ls-calc-child" class="ib">AAAAAAAAAA</span></div>
+		<div id="ls-inh" class="b"><div id="ls-inh-mid" class="b"><span id="ls-inh-child" class="ib">AAAAAAAAAA</span></div></div>
+		<div id="ls-unset" class="b"><div id="ls-unset-mid" class="b"><span id="ls-unset-child" class="ib">AAAAAAAAAA</span></div></div>
+	</div>
+	<div id="zwrap">
+		<div id="za" class="zbox"></div>
+		<div id="zb" class="zbox"></div>
+		<div id="zd" class="zbox"></div>
+		<div id="zc" class="zbox"></div>
+		<div id="zf" class="zbox"></div>
+		<div id="zg" class="zbox"></div>
+		<div id="zh" class="zbox"></div>
+		<div id="zi" class="zbox"></div>
+	</div>
+	<div id="oo-pos" class="oo"></div>
+	<div id="oo-neg" class="oo"></div>
+</body>
+</rml>

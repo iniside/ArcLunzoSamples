@@ -1,0 +1,7 @@
+.vf {
+	width: 47px;
+	font-family: f('a);
+	height: 15px;
+}
+
+.vf-after { width: 99px; }

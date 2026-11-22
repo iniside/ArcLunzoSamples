@@ -1,0 +1,16 @@
+{
+	"showB": true,
+	"showAbs": false,
+	"showDialog": false,
+	"bTop": "60px",
+	"outerH": "400px",
+	"listH": "120px",
+	"$variants": {
+		"gone": { "showB": false },
+		"empty": { "showB": false, "listH": "0px" },
+		"nestedPrep": { "bTop": "180px", "outerH": "80.4px" },
+		"nested": { "showB": false, "bTop": "180px", "outerH": "80.4px" },
+		"abs": { "showAbs": true },
+		"dialog": { "showB": false, "listH": "0px", "showDialog": true }
+	}
+}

@@ -1,0 +1,46 @@
+/* A body family other than sans-serif, so a control that lost the user-agent family would draw in it. */
+body {
+	margin: 0;
+	font-family: "JetBrains Mono";
+}
+
+.row {
+	display: block;
+	margin-bottom: 4px;
+}
+
+/* Author rules on a control: each set property beats the user-agent form rule, the rest stay the user agent's. */
+#fu-author {
+	display: block;
+	padding: 5px 7px;
+	border-color: #ff0000;
+	margin: 6px;
+	font-size: 20px;
+}
+
+#fu-author-button {
+	text-align: left;
+	border-style: solid;
+}
+
+/* A normal author display does not show a hidden input: the user-agent rule is !important. */
+#fu-hidden-author {
+	display: inline-block;
+}
+
+/* The configured families of sans-serif and monospace (DefaultGame.ini GenericFontFamilies) at the control font size. */
+#fu-ref-sans {
+	font-family: "Space Grotesk";
+	font-size: 13.3333px;
+}
+
+#fu-ref-mono,
+#fu-ref-mono-m {
+	font-family: "JetBrains Mono";
+	font-size: 13.3333px;
+}
+
+/* A sans-serif parent, so a textarea that lost the user-agent monospace would size its columns in Space Grotesk. */
+.sans {
+	font-family: "Space Grotesk";
+}

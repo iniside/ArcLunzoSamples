@@ -1,0 +1,9 @@
+<rml>
+<head>
+	<title>Tab Canvas Faded Frame</title>
+	<link type="text/rcss" href="TabCanvasFadedFrame.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="tf-clip"><div id="tf-embed" arc-embed=""></div></div>
+</body>
+</rml>

@@ -1,0 +1,27 @@
+<rml>
+<head>
+	<title>Shaping Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/ShapingTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="hdr-compat" class="line hdr">Compatible Gear</div>
+	<div id="hdr-item" class="line hdr">Item Details</div>
+	<div id="hdr-storage" class="line hdr">Storage Chest</div>
+	<div id="hdr-inv" class="line hdr">Inventory</div>
+	<div id="kern-on" class="line kern">AVATAR Type Wave To</div>
+	<div id="kern-off" class="line kern kern-off">AVATAR Type Wave To</div>
+	<div id="s12" class="line s12">Inventory Wave Type</div>
+	<div id="s10" class="line s10">Inventory Wave Type</div>
+	<div id="mono" class="line mono">a -&gt; b != c</div>
+	<div id="fallback" class="line fallback">AǄA</div>
+	<div id="nnbsp" class="line nnbsp">1 234</div>
+	<div id="nnbsp-space" class="line nnbsp">1 234</div>
+	<div id="nnbsp-none" class="line nnbsp">1234</div>
+	<div id="lig" class="line lig">fi fl ffi ffl</div>
+	<div id="lig-spaced" class="line lig lig-spaced">fi fl ffi ffl</div>
+	<div id="zw" class="line zw">a-​&gt;b</div>
+	<div id="zw-control" class="line zw zw-control">a-&gt;b</div>
+</body>
+</rml>

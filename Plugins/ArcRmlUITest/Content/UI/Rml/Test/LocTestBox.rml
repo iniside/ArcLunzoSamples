@@ -1,0 +1,12 @@
+<component>
+	<prop name="label" default=""/>
+	<prop name="mode" default="text"/>
+	<div data-if="$mode == 'attr'" title="{{ $label }}">attr</div>
+	<div data-if="$mode == 'mixed'">x {{ $label }}</div>
+	<div data-if="$mode == 'live'">{{ $label }} {{ count }}</div>
+	<div data-if="$mode == 'text'">{{ $label }}</div>
+	<div data-if="$mode == 'sum'">{{ $label + count }}</div>
+	<div data-if="$mode == 'note'">{{ $label }}<!-- note --></div>
+	<input data-if="$mode == 'value'" type="text" data-value="{{ $label }}"/>
+	<div data-if="$mode == 'rml'" data-rml="$label"></div>
+</component>

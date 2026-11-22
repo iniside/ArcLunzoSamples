@@ -1,0 +1,17 @@
+<rml lang="en">
+<head>
+	<title>Main menu</title>
+	<link type="text/rcss" href="page.rcss"/>
+</head>
+<body>
+<div class="menu">
+<h1>Main menu</h1>
+<p>Pick an entry<br/>or press Back to leave.</p>
+<button class="entry">Start</button>
+<button class="entry">Options</button>
+<button class="entry">Quit</button>
+</div>
+
+
+</body>
+</rml>

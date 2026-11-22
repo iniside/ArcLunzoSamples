@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>UMG layout</title>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="UmgLayout.rcss"/>
+</head>
+<body>
+	<div class="ul-card">
+		<h1 class="ul-title">UMG layout</h1>
+		<p>This document sits in a SizeBox inside a ScrollBox.</p>
+	</div>
+</body>
+</rml>

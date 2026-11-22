@@ -1,0 +1,76 @@
+<rml>
+<head>
+	<title>ArcRmlUI Demo Game Menu · Quests</title>
+	<meta name="frame" content="/ArcRmlUIDemo/UI/Rml/Demo/Hub.rml"/>
+	<meta name="input-mapping" content="/ArcRmlUIDemo/Demo/Input/IMC_ArcDemo_QuestLog"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/tokens.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Fonts/Fonts.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/GameUI.rcss"/>
+	<link type="text/rcss" href="HubTab.rcss"/>
+	<link type="text/rcss" href="QuestLog.rcss"/>
+	<viewmodel name="ui" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoUIVM.BP_ArcRmlDemoUIVM_C" context="VM_ArcRmlDemoUI"/>
+	<viewmodel name="quests" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoQuestsVM.BP_ArcRmlDemoQuestsVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+</head>
+<body data-model="ui" data-class-theme-ember="Theme == 'ember'" data-class-theme-daylight="Theme == 'daylight'" data-class-theme-slate="Theme == 'slate'" data-class-theme-relic="Theme == 'relic'">
+	<div class="ht-root" data-model="quests" data-event-back="call('', 'Back'); stopPropagation()">
+		<div class="ht-frame">
+			<div class="ql-body">
+				<div class="ht-col">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" padded="{{ false }}" fill="{{ true }}" style="width: 100%; height: 100%">
+						<div class="ql-tabs">
+							<div class="gu-cycle">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/TabBar" tabs="{{ Tabs }}" active="{{ SubTab }}" area="sub" nofocus="{{ true }}" data-hotkey-cycle="IA_ArcDemo_PrevSubTab IA_ArcDemo_NextSubTab"/>
+							</div>
+						</div>
+						<div class="ql-list" data-focus-area="list" data-focus-primary="">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/QuestEntry" data-for="qlQuest, qlQuest_index : Quests" title="{{ qlQuest.Title }}" kind="{{ qlQuest.Kind }}" icon="{{ DetailIcon }}" level="{{ qlQuest.Level }}" player-level="{{ 38 }}" region="{{ qlQuest.Region }}" progress="{{ qlQuest.Progress }}" state="{{ qlQuest.State }}" completed-label="Completed" failed-label="Failed" tracked="{{ qlQuest.bTracked }}" selected="{{ qlQuest_index == Selected }}" focusable="{{ true }}" data-focus-enter="actions" data-event-click="call('', 'Details', qlQuest_index)" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_Track', '', 'Track', qlQuest_index); callIf(ev.action == 'IA_ArcDemo_ShowOnMap', '', 'ShowOnMap', qlQuest_index); callIf(ev.action == 'IA_ArcDemo_Abandon' &amp;&amp; bCanAbandon, '', 'Details', qlQuest_index); stopPropagation(ev.action == 'IA_ArcDemo_Track' || ev.action == 'IA_ArcDemo_ShowOnMap')"/>
+						</div>
+					</dc-import>
+				</div>
+				<div class="ht-col">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="{{ DetailTitle }}" subtitle="{{ DetailSub }}" icon="{{ DetailIcon }}" scroll="{{ true }}" fill="{{ true }}" has-footer="{{ true }}" style="width: 100%; height: 100%">
+						<div class="ql-paras">
+							<p class="ql-para" data-for="qlPara : DetailBody">{{ qlPara }}</p>
+						</div>
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Divider" label="Objectives"/>
+						<div class="ql-objectives">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ObjectiveRow" data-for="qlObj : Objectives" label="{{ qlObj.Label }}" current="{{ qlObj.Current }}" total="{{ qlObj.Total }}" state="{{ qlObj.State }}" optional-label="{{ qlObj.Optional }}"/>
+						</div>
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Divider" label="Rewards"/>
+						<div class="ql-chips">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/RewardChip" data-for="qlChip : RewardChips" icon="{{ qlChip.Icon }}" label="{{ qlChip.Label }}" rarity="{{ qlChip.Rarity }}" claimed="{{ bDone }}"/>
+						</div>
+						<div class="ql-choose">
+							<span class="ql-choose-label">Choose one item</span>
+							<div class="ql-items">
+								<div class="ql-item" data-for="qlItem : RewardItems">
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ItemSlot" icon="{{ qlItem.Icon }}" rarity="{{ qlItem.Rarity }}" size="{{ 52 }}" disabled="{{ qlItem.bUnusable }}"/>
+									<div class="ql-item-text">
+										<span class="ql-item-name" data-class-uncommon="qlItem.Rarity == 'uncommon'" data-class-rare="qlItem.Rarity == 'rare'" data-class-epic="qlItem.Rarity == 'epic'" data-class-legendary="qlItem.Rarity == 'legendary'">{{ qlItem.Name }}</span>
+										<span class="ql-item-type">{{ qlItem.Type }}</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div slot="footer" class="ql-footer" data-focus-area="actions" data-focus-parent="list">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" data-if="bCanAbandon" label="Abandon" variant="ghost" icon-left="/ArcRmlUIDemo/UI/Rml/icons/trash-2.svg" focusable="{{ true }}" data-hotkey="IA_ArcDemo_Abandon" data-focus-enter="modal" data-event-click="call('', 'Abandon', -1)"/>
+							<div class="ql-footer-end">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="Show on map" variant="secondary" icon-left="/ArcRmlUIDemo/UI/Rml/icons/map.svg" focusable="{{ true }}" data-event-click="call('', 'ShowOnMap', -1)"/>
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="{{ TrackLabel }}" icon-left="/ArcRmlUIDemo/UI/Rml/icons/pin.svg" variant="{{ TrackVariant }}" disabled="{{ bDone }}" focusable="{{ true }}" autofocus="{{ true }}" data-event-click="callIf(!bDone, '', 'Track', -1)"/>
+							</div>
+						</div>
+					</dc-import>
+				</div>
+			</div>
+			<div class="ht-footer">
+				<div class="gu-prompts gu-all" data-if="bConfirm"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Confirm"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Cancel"/></dc-import></div>
+				<div class="gu-prompts gu-default" data-area="list" data-if="!bConfirm"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Details" disabled="{{ !bHasQuest }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_PrevSubTab + ' / ' + ArcKeys.IA_ArcDemo_NextSubTab }}" glyph="LT / RT" label="Category"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Track }}" label="{{ TrackLabel }}" disabled="{{ !bCanTrack }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_ShowOnMap }}" label="Map" disabled="{{ !bHasQuest }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Abandon }}" label="Abandon" disabled="{{ !(bCanAbandon &amp;&amp; bHasQuest) }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Close"/></dc-import></div>
+				<div class="gu-prompts" data-area="actions" data-if="!bConfirm"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Select"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_PrevSubTab + ' / ' + ArcKeys.IA_ArcDemo_NextSubTab }}" glyph="LT / RT" label="Category"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Back"/></dc-import></div>
+			</div>
+		</div>
+		<div class="gu-area" data-if="bConfirm" data-focus-area="modal" data-focus-contain="" data-event-uiaction="stopPropagation(ev.action != 'IA_ArcDemo_DevBar' &amp;&amp; ev.action != 'IA_ArcDemo_GameMenu')">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Modal" title="Abandon this quest?" body="Your objective progress will be lost. You can pick the quest up again from the quartermaster in Old Port." variant="danger" buttons="{{ ModalButtons }}" backdrop="{{ true }}" focused="{{ 0 }}"/>
+		</div>
+	</div>
+</body>
+</rml>

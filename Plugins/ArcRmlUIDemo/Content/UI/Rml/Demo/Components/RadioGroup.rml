@@ -1,0 +1,13 @@
+<component>
+	<prop name="options" default="[]"/>
+	<prop name="value" default="0"/>
+	<prop name="direction" default=""/>
+	<prop name="disabled"/>
+	<prop name="field" default=""/>
+	<div class="dk-radiogroup" data-class-column="$direction == 'column'">
+		<div class="dk-radiogroup-item" data-for="RadioGroupO, RadioGroupO_index : $options" data-class-on="RadioGroupO_index == $value" data-class-disabled="$disabled" data-event-click="callIf(!$disabled, '', 'Selected', $field, RadioGroupO_index)">
+			<span class="dk-radiogroup-ring" data-class-on="RadioGroupO_index == $value" data-class-disabled="$disabled"><span class="dk-radiogroup-dot" data-class-on="RadioGroupO_index == $value" data-class-disabled="$disabled"></span></span>
+			<span class="dk-radiogroup-label">{{ RadioGroupO }}</span>
+		</div>
+	</div>
+</component>

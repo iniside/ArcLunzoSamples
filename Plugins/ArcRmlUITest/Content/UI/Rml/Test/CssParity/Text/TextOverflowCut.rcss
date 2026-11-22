@@ -1,0 +1,13 @@
+body {
+	margin: 0;
+	display: flow-root;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000000;
+}
+
+p { margin: 0 0 10px 0; }
+.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 152px; }
+.blue { color: #2050d0; }
+.green { color: #20a040; }

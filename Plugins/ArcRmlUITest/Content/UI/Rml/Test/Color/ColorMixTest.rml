@@ -1,0 +1,25 @@
+<rml>
+<head>
+	<title>Color Mix Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Color/ColorMixTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="mix-bg" class="box"></div>
+	<div id="mix-color" class="box">text</div>
+	<div id="mix-inline" class="box" style="background-color: color-mix(in srgb, currentcolor 50%, #00ff00);"></div>
+	<div id="mix-transition" class="box"></div>
+	<div id="oklch-transition" class="box"></div>
+	<div id="oklch-keyframes" class="box"></div>
+	<div id="mix-oklch" class="box"></div>
+	<input id="site-caret" type="text" class="box" value="caret" style="color: inherit; caret-color: color-mix(in srgb, currentcolor 50%, transparent);"/>
+	<div id="site-box-shadow" class="box" style="box-shadow: 0 0 4px color-mix(in srgb, currentcolor 50%, transparent);"></div>
+	<div id="site-gradient" class="box" style="decorator: linear-gradient(to right, color-mix(in srgb, currentcolor 50%, white), #0000ff);"></div>
+	<div id="site-text-shadow" class="box" style="text-shadow: 1px 1px color-mix(in srgb, currentcolor 50%, black);">shadow</div>
+	<div id="site-drop-shadow" class="box" style="filter: drop-shadow(1px 1px 2px color-mix(in srgb, currentcolor 50%, black));"></div>
+	<div id="site-font-effect" class="box" style="font-effect: outline(1px color-mix(in srgb, currentcolor 50%, black));">effect</div>
+	<div id="site-text-stroke" class="box" style="-webkit-text-stroke: 1px color-mix(in srgb, currentcolor 50%, black);">stroke</div>
+	<div id="site-scrollbar" class="scroller" style="scrollbar-color: color-mix(in srgb, currentcolor 50%, white) color-mix(in srgb, currentcolor 25%, black);"><div class="tall"></div></div>
+</body>
+</rml>

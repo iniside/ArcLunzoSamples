@@ -1,0 +1,52 @@
+.nd-bag, .nd-equip {
+	position: absolute;
+	width: 120px;
+}
+
+.nd-bag {
+	left: 40px;
+	top: 55px;
+	height: 60px;
+}
+
+.nd-equip {
+	left: 300px;
+	top: 55px;
+	height: 180px;
+}
+
+.nd-slot {
+	display: block;
+	width: 100px;
+	height: 60px;
+	margin-bottom: 20px;
+	tab-index: auto;
+	nav: auto;
+	background-color: rgb(40, 40, 200);
+}
+
+#nd-a {
+	background-color: rgb(200, 40, 40);
+	drag: clone;
+}
+
+#nd-a:drag {
+	background-color: rgb(20, 180, 220);
+}
+
+.nd-list {
+	position: absolute;
+	left: 260px;
+	top: -15px;
+	width: 200px;
+	height: 120px;
+	overflow-y: auto;
+}
+
+.nd-row {
+	display: block;
+	height: 30px;
+	tab-index: auto;
+	nav: auto;
+	background-color: rgb(60, 140, 90);
+}

@@ -1,0 +1,8 @@
+<component>
+	<div class="spacer">
+		<span>spacer line one</span>
+		<span>spacer line two</span>
+		<span>spacer line three</span>
+		<span>spacer line four</span>
+	</div>
+</component>

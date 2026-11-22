@@ -1,0 +1,35 @@
+<rml>
+<head>
+	<title>ArcRmlUI Drag and Drop Test</title>
+	<meta name="layer" content="UI.Layer.GameMenu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="input-mapping" content="/ArcRmlUITest/Input/IMC_TabMenu"/>
+	<meta name="input-mapping-priority" content="1"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ds/tokens.rcss"/>
+	<link type="text/rcss" href="DragDropTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-drag-action="IA_UISecondary">
+<div class="dd-root">
+	<div class="dd-help">Mouse: drag a coloured item. Pad / keyboard: focus a slot with an item, press X (Secondary) to pick it up, move, Accept to drop, Back to cancel. Watch the log for drag lines.</div>
+	<div class="dd-row">
+		<div class="dd-panel" data-focus-area="bag" data-focus-primary="">
+			<div class="dd-title">Bag (accepts weapon, potion)</div>
+			<div class="dd-grid">
+				<div id="bag-1" class="dd-slot dd-source" data-drag-type="weapon" data-drop-accept="weapon potion"><div id="sword" class="dd-item dd-weapon">Sword</div></div>
+				<div id="bag-2" class="dd-slot dd-source" data-drag-type="potion" data-drop-accept="weapon potion"><div id="potion" class="dd-item dd-potion">Potion</div></div>
+				<div id="bag-3" class="dd-slot dd-source" data-drag-type="weapon" data-drop-accept="weapon potion"><div id="axe" class="dd-item dd-weapon">Axe</div></div>
+				<div id="bag-4" class="dd-slot" data-drop-accept="weapon potion"></div>
+				<div id="bag-5" class="dd-slot" data-drop-accept="weapon potion"></div>
+				<div id="bag-6" class="dd-slot" data-drop-accept="weapon potion"></div>
+			</div>
+		</div>
+		<div class="dd-panel" data-focus-area="equip" data-focus-parent="bag">
+			<div class="dd-title">Equipment</div>
+			<div id="eq-hand" class="dd-slot dd-wide" data-drop-accept="weapon">Hand (weapon)</div>
+			<div id="eq-belt" class="dd-slot dd-wide" data-drop-accept="potion">Belt (potion)</div>
+			<div id="eq-none" class="dd-slot dd-wide">Nothing (accepts none)</div>
+		</div>
+	</div>
+</div>
+</body>
+</rml>

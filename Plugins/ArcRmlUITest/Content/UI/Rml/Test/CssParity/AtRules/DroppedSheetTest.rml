@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>DroppedSheetTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/DroppedSheetNormal.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/DroppedSheetOnly.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="ds-box" class="ds-box"></div>
+</body>
+</rml>

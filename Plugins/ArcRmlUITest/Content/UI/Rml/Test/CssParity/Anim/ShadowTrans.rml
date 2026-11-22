@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>ShadowTrans</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Anim/ShadowTrans.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="t-basic" class="box"></div>
+	<div id="t-inset" class="box"></div>
+	<div id="t-none" class="box"></div>
+	<div id="t-text" class="text">Shadow</div>
+	<div id="t-current" class="box"></div>
+</body>
+</rml>

@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>ArcRmlUI Colour Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="ColorTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="panel">
+		<div class="cell"><div class="checker"><div class="swatch s0"></div></div><span class="tag">rgba(0,0,0,0.7)</span><span class="tag note">~70% black (a=179)</span></div>
+		<div class="cell"><div class="checker"><div class="swatch s1"></div></div><span class="tag">rgba(255,0,0,50%)</span><span class="tag note">50% red (a=128)</span></div>
+		<div class="cell"><div class="checker"><div class="swatch s2"></div></div><span class="tag">rgba(0,128,255,0)</span><span class="tag note">fully transparent</span></div>
+		<div class="cell"><div class="checker"><div class="swatch s3"></div></div><span class="tag">rgba(...,1)</span><span class="tag note">opaque green</span></div>
+		<div class="cell"><div class="checker"><div class="swatch s4"></div></div><span class="tag">hsla(210,80%,50%,0.5)</span><span class="tag note">50% blue</span></div>
+		<div class="cell"><div class="checker"><div class="swatch s5"></div></div><span class="tag">rgb(255,0,0)</span><span class="tag note">opaque red (no alpha)</span></div>
+		<div class="cell"><div class="checker"><div class="swatch s6"></div></div><span class="tag">rgba(255,255,255,150%)</span><span class="tag note">clamped opaque white</span></div>
+		<div class="cell"><div class="checker"><div class="swatch s7"></div></div><span class="tag">#00000080</span><span class="tag note">hex 50% black</span></div>
+		<div class="cell wide"><div class="checker"><p class="t mock">Mockup text-shadow</p></div><span class="tag">text-shadow: 0 1px 2px rgba(0,0,0,0.7)</span></div>
+	</div>
+</body>
+</rml>

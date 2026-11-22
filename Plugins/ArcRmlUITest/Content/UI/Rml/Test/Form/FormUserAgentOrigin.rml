@@ -1,0 +1,18 @@
+<rml>
+<head>
+	<title>FormUserAgentOrigin</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/FormUserAgentOrigin.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="row"><input id="fu-author" type="text" value="cd"/></div>
+	<div class="row"><button id="fu-author-button">cd</button></div>
+	<div class="row"><input id="fu-hidden" type="hidden" value="x"/><input id="fu-hidden-author" type="hidden" value="y"/></div>
+	<div class="row"><span id="fu-ref-sans">cd</span></div>
+	<div class="row"><span id="fu-ref-mono">cd</span></div>
+	<div class="row"><span id="fu-ref-mono-m">mmmmmmmmmmmmmmmmmmmm</span></div>
+	<div class="row"><button id="fu-button">cd</button></div>
+	<div class="row sans"><textarea id="fu-ta"></textarea></div>
+</body>
+</rml>

@@ -1,0 +1,47 @@
+<rml>
+<head>
+	<title>ArcRmlUI Demo Pause Menu</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="hide-lower" content="true"/>
+	<meta name="keep-alive" content="true"/>
+	<meta name="input-mapping" content="/ArcRmlUIDemo/Demo/Input/IMC_ArcDemo_PauseMenu"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/tokens.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Fonts/Fonts.rcss"/>
+	<link type="text/rcss" href="GameUI.rcss"/>
+	<link type="text/rcss" href="PauseMenu.rcss"/>
+	<viewmodel name="ui" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoUIVM.BP_ArcRmlDemoUIVM_C" context="VM_ArcRmlDemoUI"/>
+	<viewmodel name="pause" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoPauseMenuVM.BP_ArcRmlDemoPauseMenuVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+</head>
+<body data-model="ui" data-class-theme-ember="Theme == 'ember'" data-class-theme-daylight="Theme == 'daylight'" data-class-theme-slate="Theme == 'slate'" data-class-theme-relic="Theme == 'relic'" data-event-back="call('', 'Back'); stopPropagation()" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_DevBar', '', 'ToggleDevBar'); callIf(ev.action == 'IA_ArcDemo_Pause', '', 'Back')">
+	<div class="gu-layer">
+		<div class="gu-screen" data-model="pause">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/SceneBackdrop" label="Gameplay frame (paused)" dim="strong"/>
+			<div class="pm-frame">
+				<div class="pm-col">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="Paused" subtitle="{{ Subtitle }}" icon="/ArcRmlUIDemo/UI/Rml/icons/pause.svg" scroll="{{ true }}" has-footer="{{ true }}" style="width: 100%; max-height: 100%">
+						<div class="pm-items" data-focus-area="menu" data-focus-primary="">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/MenuItem" data-for="pmItem, pmItem_index : Items" size="md" label="{{ pmItem.Label }}" has-icon="{{ true }}" description="{{ pmItem.Description }}" disabled="{{ pmItem.bDisabled }}" focusable="{{ true }}" autofocus="{{ pmItem_index == Selected }}" data-event-click="callIf(!pmItem.bDisabled, '', 'Activate', pmItem_index)" style="width: 100%">
+								<svg slot="icon" data-if="pmItem.Id == 'resume'" src="/ArcRmlUIDemo/UI/Rml/icons/play.svg" width="20" height="20" stroke-width="1.75"/>
+								<svg slot="icon" data-if="pmItem.Id == 'hub'" src="/ArcRmlUIDemo/UI/Rml/icons/layout-grid.svg" width="20" height="20" stroke-width="1.75"/>
+								<svg slot="icon" data-if="pmItem.Id == 'settings'" src="/ArcRmlUIDemo/UI/Rml/icons/settings.svg" width="20" height="20" stroke-width="1.75"/>
+								<svg slot="icon" data-if="pmItem.Id == 'save'" src="/ArcRmlUIDemo/UI/Rml/icons/save.svg" width="20" height="20" stroke-width="1.75"/>
+								<svg slot="icon" data-if="pmItem.Id == 'load'" src="/ArcRmlUIDemo/UI/Rml/icons/folder-open.svg" width="20" height="20" stroke-width="1.75"/>
+								<svg slot="icon" data-if="pmItem.Id == 'quitMenu'" src="/ArcRmlUIDemo/UI/Rml/icons/log-out.svg" width="20" height="20" stroke-width="1.75"/>
+								<svg slot="icon" data-if="pmItem.Id == 'quit'" src="/ArcRmlUIDemo/UI/Rml/icons/power.svg" width="20" height="20" stroke-width="1.75"/>
+							</dc-import>
+						</div>
+						<div slot="footer" class="pm-footer">
+							<div class="gu-prompts gu-all"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar" style="width: 100%"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Select"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Resume"/></dc-import></div>
+						</div>
+					</dc-import>
+				</div>
+			</div>
+			<div class="pm-toast" data-if="Toast.bVisible">
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Toast" tone="{{ Toast.Tone }}" title="{{ Toast.Title }}" body="{{ Toast.Body }}" progress="{{ Toast.Progress }}" style="width: 100%"/>
+			</div>
+		</div>
+	</div>
+	<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/DevBar" data-if="DevOpen"/>
+</body>
+</rml>

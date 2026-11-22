@@ -1,0 +1,78 @@
+{
+	"reference_sha1": "E3881DE3204122AF8C76E3BFCF04C76B8389428E",
+	"tol": 1,
+	"mismatches":
+	{
+		"0.0.1.1|scroll_size.h":
+		{
+			"rmlui": 18,
+			"chrome": 0,
+			"diff": 18
+		},
+		"0.0.1.1|scroll_size.w":
+		{
+			"rmlui": 63.616210899999999,
+			"chrome": 0,
+			"diff": 63.616210899999999
+		},
+		"0.0.1|rect.h":
+		{
+			"rmlui": 21,
+			"chrome": 54,
+			"diff": 33
+		},
+		"0.0.1|rect.w":
+		{
+			"rmlui": 63.616210899999999,
+			"chrome": 272,
+			"diff": 208.3837891
+		},
+		"0.0.1|scroll_size.h":
+		{
+			"rmlui": 21,
+			"chrome": 0,
+			"diff": 21
+		},
+		"0.0.1|scroll_size.w":
+		{
+			"rmlui": 63.616210899999999,
+			"chrome": 0,
+			"diff": 63.616210899999999
+		},
+		"0|scroll_size.h":
+		{
+			"rmlui": 112,
+			"chrome": 1080,
+			"diff": 968
+		}
+	},
+	"missing": [],
+	"unmatched":
+	{
+		"0.0.1.3.0": "absent",
+		"0.0.1.3.1": "absent",
+		"0.0.1.3.1.0": "absent",
+		"0.0.1.3.10": "absent",
+		"0.0.1.3.11": "absent",
+		"0.0.1.3.11.0": "absent",
+		"0.0.1.3.12": "absent",
+		"0.0.1.3.13": "absent",
+		"0.0.1.3.13.0": "absent",
+		"0.0.1.3.14": "absent",
+		"0.0.1.3.15": "absent",
+		"0.0.1.3.15.0": "absent",
+		"0.0.1.3.16": "absent",
+		"0.0.1.3.2": "absent",
+		"0.0.1.3.3": "absent",
+		"0.0.1.3.3.0": "absent",
+		"0.0.1.3.4": "absent",
+		"0.0.1.3.5": "absent",
+		"0.0.1.3.5.0": "absent",
+		"0.0.1.3.6": "absent",
+		"0.0.1.3.7": "absent",
+		"0.0.1.3.7.0": "absent",
+		"0.0.1.3.8": "absent",
+		"0.0.1.3.9": "absent",
+		"0.0.1.3.9.0": "absent"
+	}
+}

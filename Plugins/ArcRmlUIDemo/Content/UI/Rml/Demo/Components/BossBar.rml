@@ -1,0 +1,19 @@
+<component>
+	<prop name="label" default="The Drowned Choir"/>
+	<prop name="value" default="1"/>
+	<prop name="trail" default="0.66"/>
+	<prop name="phases" default="[]"/>
+	<prop name="enrage" default="0"/>
+	<prop name="buffs"/>
+	<div class="dk-boss-bar">
+		<div class="dk-boss-bar-e2">
+			<span class="dk-boss-bar-name-s">{{ ($label != '' ? $label : 'The Drowned Choir') }}</span>
+			<span class="dk-boss-bar-enr-s" data-style-color="(((($enrage &gt; 0) &amp;&amp; ($enrage &lt; 30)) || ($enrage &lt;= 0)) ? 'var(--ui-danger)' : 'var(--hud-text)')">{{ $enrage > 0 ? 'Enrage ' + (($enrage * 1) | arctime) : 'Enraged' }}</span>
+		</div>
+		<div class="dk-boss-bar-e5">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ResourceBar" value="{{ $value }}" trail="{{ ($trail != '' ? $trail : $value) }}" kind="boss" label="{{ ((($value * 100) | round) + '%') }}" height="{{ 18 }}"/>
+			<span data-for="BossBarPh, BossBarPh_index : $phases" class="dk-boss-bar-ph" data-style-left="((BossBarPh * 100) + '%')"></span>
+		</div>
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/BuffRow" buffs="{{ $buffs }}" size="{{ 22 }}"/>
+	</div>
+</component>

@@ -1,0 +1,20 @@
+<rml>
+<head>
+	<title>Batch Alternating Rows</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="Batch.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="row" style="top: 20px;">Row 0</div>
+	<div class="row a" style="top: 50px;">Row 1</div>
+	<div class="row" style="top: 80px;">Row 2</div>
+	<div class="row a" style="top: 110px;">Row 3</div>
+	<div class="row" style="top: 140px;">Row 4</div>
+	<div class="row a" style="top: 170px;">Row 5</div>
+	<div class="row" style="top: 200px;">Row 6</div>
+	<div class="row a" style="top: 230px;">Row 7</div>
+	<div class="row" style="top: 260px;">Row 8</div>
+	<div class="row a" style="top: 290px;">Row 9</div>
+</body>
+</rml>

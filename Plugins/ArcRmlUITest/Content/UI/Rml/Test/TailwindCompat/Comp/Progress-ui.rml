@@ -1,0 +1,20 @@
+<rml>
+<head>
+<title>Progress</title>
+<meta name="layer" content="UI.Layer.Menu"/>
+<meta name="input-mode" content="game"/>
+<link type="text/rcss" href="ua-init.rcss"/>
+<link type="text/rcss" href="tw-hyperui.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body class="mx-auto max-w-md p-6">
+    <div role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" aria-label="Progress">
+      <p class="text-sm font-medium text-gray-900">25%</p>
+
+      <div class="mt-2 h-2 w-full rounded-full bg-gray-200">
+        <div class="h-full rounded-full bg-blue-600" style="width: 25%"></div>
+      </div>
+    </div>
+  
+
+</body>
+</rml>

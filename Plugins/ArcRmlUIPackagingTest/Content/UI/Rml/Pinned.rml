@@ -1,0 +1,10 @@
+<rml>
+<head>
+	<title>Pinned</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+</head>
+<body>
+	<div>Opened by BP_PinSeed</div>
+</body>
+</rml>

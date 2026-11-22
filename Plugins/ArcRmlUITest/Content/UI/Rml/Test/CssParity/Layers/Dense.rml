@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Dense</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Layers/Dense.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="border1202" class="box"></div>
+	<div id="tile4img" class="box"></div>
+	<div id="tile4grad" class="box"></div>
+</body>
+</rml>

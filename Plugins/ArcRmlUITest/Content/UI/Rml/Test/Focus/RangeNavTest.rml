@@ -1,0 +1,22 @@
+<rml>
+<head>
+	<title>RangeNavTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="RangeNavTest.rcss"/>
+	<viewmodel name="rn" preview="Preview/RangeNavTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="rn">
+	<div class="col col-a">
+		<div id="rn-top" class="btn"></div>
+		<input id="rn-range" type="range" min="0" max="10" step="1" value="5" data-event-change="call('', 'RangeChanged', ev.value)"/>
+		<input id="rn-off" type="range" min="0" max="10" step="1" value="5" disabled=""/>
+		<div id="rn-below" class="btn"></div>
+	</div>
+	<div class="col col-b">
+		<div id="rn-b-top" class="btn"></div>
+		<input id="rn-nonav" class="nonav" type="range" min="0" max="10" step="1" value="5"/>
+		<div id="rn-b-below" class="btn"></div>
+	</div>
+</body>
+</rml>

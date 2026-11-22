@@ -1,0 +1,8 @@
+<component>
+	<prop name="dim" default="none"/>
+	<prop name="label" default=""/>
+	<div class="dk-scenebackdrop">
+		<div class="dk-scenebackdrop-dim" data-class-soft="$dim == 'soft'" data-class-strong="$dim == 'strong'"></div>
+		<span class="dk-scenebackdrop-label" data-if="$label != ''">{{ $label }}</span>
+	</div>
+</component>

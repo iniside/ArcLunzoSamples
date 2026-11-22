@@ -1,0 +1,13 @@
+#src {
+	position: absolute;
+	left: 40px;
+	top: 40px;
+	width: 100px;
+	height: 60px;
+	background-color: rgb(200, 40, 40);
+	drag: clone;
+}
+
+#src[class^="icon-"]:drag {
+	background-color: rgb(20, 180, 220);
+}

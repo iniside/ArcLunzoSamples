@@ -1,0 +1,25 @@
+<rml>
+<head>
+	<title>ProbeBreakWord</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/LayoutVerify/ProbeReuse.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+<input type="radio" name="w" value="a" id="r-a" class="rb rb-a" checked=""/>
+<input type="radio" name="w" value="b" id="r-b" class="rb rb-b"/>
+<input type="radio" name="w" value="c" id="r-c" class="rb rb-c"/>
+<input type="radio" name="w" value="anim" id="r-anim" class="rb rb-anim"/>
+<div class="host">
+<div class="bw ib"><div class="fr">Verylongunbreakablewordthatmustbreakinsidethebox and some tail words</div></div>
+<div class="bw flt"><div class="fr">Verylongunbreakablewordthatmustbreakinsidethebox and some tail words</div></div>
+<div class="bw fit"><div class="fr">Verylongunbreakablewordthatmustbreakinsidethebox and some tail words</div></div>
+<div class="bw minc"><div class="fr">Verylongunbreakablewordthatmustbreakinsidethebox and some tail words</div></div>
+<div class="bw maxc"><div class="fr">Verylongunbreakablewordthatmustbreakinsidethebox and some tail words</div></div>
+<div class="g3"><div class="bw"><div class="fr">Verylongunbreakablewordthatmustbreakinsidethebox and some tail words</div></div><div class="bw"><div class="fr">Verylongunbreakablewordthatmustbreakinsidethebox and some tail words</div></div></div>
+<div class="ib"><div class="fr"><img class="im" src="asset:/Engine/EngineResources/AICON-Green.AICON-Green"/><img class="im2" src="asset:/Engine/EngineResources/AICON-Green.AICON-Green"/><span class="t">image text</span></div></div>
+<div class="g3"><div class="bw"><div class="fr"><img class="im2" src="asset:/Engine/EngineResources/AICON-Green.AICON-Green"/> image cell text that wraps</div></div></div>
+</div>
+<div class="chg">changing sibling text</div>
+</body>
+</rml>

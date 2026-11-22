@@ -1,0 +1,24 @@
+<rml>
+<head>
+	<title>Expression Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="expr" preview="Preview/ExpressionTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="expr">
+	<div id="mod-literal">{{ 7 % 3 }}</div>
+	<div id="mod-int">{{ Seven % Three }}</div>
+	<div id="mod-frac">{{ SevenHalf % Two }}</div>
+	<div id="mod-neg">{{ MinusSeven % Three }}</div>
+	<div id="mod-prec">{{ 1 + Seven % Three * 2 }}</div>
+	<div id="ceil">{{ TwoPointTwo | ceil }}</div>
+	<div id="floor">{{ MinusTwoPointTwo | floor }}</div>
+	<div id="abs-neg">{{ MinusTwoPointTwo | abs }}</div>
+	<div id="abs-pos">{{ TwoPointTwo | abs }}</div>
+	<div id="abs-int">{{ MinusSeven | abs }}</div>
+	<div id="length-literal">{{ 'ÄBC' | length }}</div>
+	<div id="length-field">{{ Name | length }}</div>
+	<div id="length-empty">{{ Empty | length }}</div>
+</body>
+</rml>

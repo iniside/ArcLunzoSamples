@@ -1,0 +1,14 @@
+<component>
+	<prop name="label" default=""/>
+	<prop name="checked"/>
+	<prop name="indeterminate"/>
+	<prop name="disabled"/>
+	<prop name="focusable"/>
+	<div class="dk-checkbox" data-class-on="$checked || $indeterminate" data-class-disabled="$disabled" data-class-focusable="$focusable">
+		<span class="dk-checkbox-box">
+			<i class="dk-checkbox-mark" data-if="$indeterminate"><svg src="/ArcRmlUIDemo/UI/Rml/icons/minus.svg" width="16" height="16" stroke-width="3"/></i>
+			<i class="dk-checkbox-mark" data-if="$checked &amp;&amp; !$indeterminate"><svg src="/ArcRmlUIDemo/UI/Rml/icons/check.svg" width="16" height="16" stroke-width="3"/></i>
+		</span>
+		<span data-if="$label != ''">{{ $label }}</span>
+	</div>
+</component>

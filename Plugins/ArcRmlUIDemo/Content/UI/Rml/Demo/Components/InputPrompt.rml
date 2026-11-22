@@ -1,0 +1,14 @@
+<component>
+	<prop name="keyLabel" default=""/>
+	<prop name="padLabel" default=""/>
+	<prop name="glyph" default=""/>
+	<prop name="label" default=""/>
+	<prop name="size" default=""/>
+	<prop name="disabled"/>
+	<prop name="padHotkey" default=""/>
+	<div class="dk-inputprompt" data-class-sm="$size == 'sm'" data-class-disabled="$disabled">
+		<span class="dk-inputprompt-cap" data-class-sm="$size == 'sm'" data-class-pad="ArcKeys.scheme == 'gamepad'" data-class-round="ArcKeys.scheme == 'gamepad' &amp;&amp; ($glyph != '' ? ($glyph == 'A' || $glyph == 'B' || $glyph == 'X' || $glyph == 'Y') : (($keyLabel + $padLabel) == 'Gamepad Face Button Bottom' || ($keyLabel + $padLabel) == 'Gamepad A' || ($keyLabel + $padLabel) == 'Gamepad Face Button Right' || ($keyLabel + $padLabel) == 'Gamepad B' || ($keyLabel + $padLabel) == 'Gamepad Face Button Left' || ($keyLabel + $padLabel) == 'Gamepad X' || ($keyLabel + $padLabel) == 'Gamepad Face Button Top' || ($keyLabel + $padLabel) == 'Gamepad Y' || ($keyLabel + $padLabel) == ''))" data-class-disabled="$disabled">{{ ArcKeys.scheme == 'gamepad' ? ($glyph != '' ? $glyph : ((($keyLabel + $padLabel) == 'Gamepad Face Button Bottom' || ($keyLabel + $padLabel) == 'Gamepad A') ? 'A' : ((($keyLabel + $padLabel) == 'Gamepad Face Button Right' || ($keyLabel + $padLabel) == 'Gamepad B') ? 'B' : ((($keyLabel + $padLabel) == 'Gamepad Face Button Left' || ($keyLabel + $padLabel) == 'Gamepad X') ? 'X' : ((($keyLabel + $padLabel) == 'Gamepad Face Button Top' || ($keyLabel + $padLabel) == 'Gamepad Y') ? 'Y' : ((($keyLabel + $padLabel) == 'Gamepad Left Shoulder') ? 'LB' : ((($keyLabel + $padLabel) == 'Gamepad Right Shoulder') ? 'RB' : ((($keyLabel + $padLabel) == 'Gamepad Left Trigger') ? 'LT' : ((($keyLabel + $padLabel) == 'Gamepad Right Trigger') ? 'RT' : ((($keyLabel + $padLabel) == 'Gamepad Left Thumbstick Button') ? 'LS' : ((($keyLabel + $padLabel) == 'Gamepad Right Thumbstick Button') ? 'RS' : ((($keyLabel + $padLabel) == 'Gamepad Right Thumbstick Up') ? 'R↑' : ((($keyLabel + $padLabel) == 'Gamepad Special Right' || ($keyLabel + $padLabel) == 'Gamepad Start') ? 'Start' : ((($keyLabel + $padLabel) == 'Gamepad Special Left' || ($keyLabel + $padLabel) == 'Gamepad Back') ? 'View' : ((($keyLabel + $padLabel) == '') ? 'A' : (($keyLabel + $padLabel))))))))))))))))) : (($keyLabel + $padLabel) == 'Left Shift' ? 'Shift' : (($keyLabel + $padLabel) == 'Left Ctrl' ? 'Ctrl' : (($keyLabel + $padLabel) == 'Escape' ? 'Esc' : (($keyLabel + $padLabel) == 'Delete' ? 'Del' : (($keyLabel + $padLabel) != '' ? ($keyLabel + $padLabel) : 'Enter'))))) }}</span>
+		<span class="dk-inputprompt-label" data-if="$label != ''">{{ $label }}</span>
+		<span class="dk-inputprompt-hotkey" data-if="$padHotkey != ''" data-attr-data-hotkey="$padHotkey"></span>
+	</div>
+</component>

@@ -1,0 +1,9 @@
+.b1 { width: 41px; }
+
+.b1[title='a
+{ width: 99px; }
+
+.b1-after { width: 99px; }
+
+.b1-again[title='b
+{ width: 99px; }

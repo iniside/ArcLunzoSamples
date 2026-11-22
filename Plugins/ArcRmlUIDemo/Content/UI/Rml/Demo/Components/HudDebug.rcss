@@ -1,0 +1,57 @@
+.dk-hud-debug {
+	position: absolute;
+	top: var(--ui-space-4);
+	left: var(--ui-space-4);
+	bottom: var(--ui-space-4);
+	z-index: 80;
+	width: min(340px, calc(100% - 32px));
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-3);
+	padding: var(--ui-space-4);
+	overflow-y: auto;
+	border-radius: var(--ui-radius-md);
+	background: var(--ui-panel-bg);
+	border: 1px dashed var(--ui-warning);
+	box-shadow: var(--ui-shadow-lg);
+	backdrop-filter: blur(var(--ui-blur));
+}
+
+.dk-hud-debug-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--ui-space-2);
+}
+
+.dk-hud-debug-title {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--ui-warning);
+}
+
+.dk-hud-debug-group {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-2);
+}
+
+.dk-hud-debug-row {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.dk-hud-debug-row-options {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+}
+
+.dk-hud-debug-row-label {
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text);
+}

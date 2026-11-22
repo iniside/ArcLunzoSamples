@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Item Store</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+<style>
+  body { margin: 0; font-family: Roboto, Arial, sans-serif; background: linear-gradient(180deg, #13161c, #0a0b0e); color: #eee; }
+  .topbar { display: flex; align-items: center; justify-content: space-between; padding: 12px 24px; background: rgba(0,0,0,.4); }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; }
+  .logo svg { width: 28px; height: 28px; }
+  .gold { color: #f5c542; }
+  main { padding: 24px; }
+  h2 { margin: 0 0 16px; font-size: 18px; letter-spacing: .05em; text-transform: uppercase; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+  .card { position: relative; display: flex; flex-direction: column; background: #1a1d24; border: 1px solid #2a2f38; border-radius: 12px; overflow: hidden; transition: transform .15s ease, box-shadow .15s ease; }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,.5); }
+  .card img, .card picture img { width: 100%; height: 140px; object-fit: cover; display: block; }
+  .card .body { padding: 12px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+  .card h3 { margin: 0; font-size: 16px; }
+  .card p { margin: 0; font-size: 13px; color: #a8adb7; }
+  .badge { position: absolute; top: 8px; left: 8px; padding: 2px 8px; border-radius: 999px; background: #c0392b; font-size: 11px; font-weight: 700; }
+  .price { margin-top: auto; display: flex; justify-content: space-between; align-items: center; }
+  .btn { display: inline-block; padding: 6px 12px; border-radius: 6px; background: #3b82f6; color: #fff; text-decoration: none; font-size: 13px; border: none; }
+  .btn:hover { background: #2563eb; }
+  ol.steps { padding-left: 20px; color: #a8adb7; font-size: 13px; }
+  dl { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 13px; }
+  dt { color: #a8adb7; }
+  blockquote { margin: 16px 0; padding: 8px 16px; border-left: 3px solid #3b82f6; color: #cfd3da; font-style: italic; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="logo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+    <span>Item&nbsp;Store</span>
+  </div>
+  <div class="gold">&#9733; 1,250 gold</div>
+</div>
+<main>
+  <h2>Featured</h2>
+  <section class="grid">
+    <article class="card">
+      <span class="badge">NEW</span>
+      <picture>
+        <source srcset="img/sword.webp" type="image/webp">
+        <img src="img/sword.png" alt="Iron sword" width="200" height="140" loading="lazy">
+      </picture>
+      <div class="body">
+        <h3>Iron Sword</h3>
+        <p>A sturdy blade. Damage 12&ndash;18.</p>
+        <div class="price"><span class="gold">300&nbsp;g</span><button class="btn" onclick="buy('sword')">Buy</button></div>
+      </div>
+    </article>
+    <article class="card">
+      <img src="img/shield.png" srcset="img/shield.png 1x, img/shield@2x.png 2x" alt="Shield">
+      <div class="body">
+        <h3>Oak Shield</h3>
+        <p>Blocks 30% of incoming damage.</p>
+        <div class="price"><span class="gold">220&nbsp;g</span><a class="btn" href="#buy-shield">Buy</a></div>
+      </div>
+    </article>
+    <article class="card">
+      <img src="img/potion.png" alt="Potion">
+      <div class="body">
+        <h3>Health Potion <small>x5</small></h3>
+        <p>Restores <strong>50 HP</strong> over <em>5 s</em>.</p>
+        <div class="price"><span class="gold">45&nbsp;g</span><button class="btn" type="button">Buy</button></div>
+      </div>
+    </article>
+  </section>
+
+  <h2>How to buy</h2>
+  <ol class="steps">
+    <li>Select an item</li>
+    <li>Click <b>Buy</b></li>
+    <li>Confirm &raquo; done</li>
+  </ol>
+  <dl>
+    <dt>Currency</dt><dd>Gold</dd>
+    <dt>Refunds</dt><dd>Within 24&nbsp;h</dd>
+  </dl>
+  <blockquote>&ldquo;Best prices in the realm.&rdquo; &mdash; the merchant</blockquote>
+  <iframe src="https://example.com/ad" width="300" height="100" title="ad"></iframe>
+  <video src="trailer.mp4" autoplay muted loop></video>
+  <canvas id="fx" width="100" height="100"></canvas>
+  <span class="sr-only">Screen reader text</span>
+</main>
+<script src="https://cdn.example.com/analytics.js" async></script>
+<script>document.getElementById('fx').getContext('2d');</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<rml>
+<head>
+	<title>ArcRmlUI 3D Transform Test</title>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ds/tokens.rcss"/>
+	<link type="text/rcss" href="Transform3DTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+<div class="t3-root">
+	<div class="t3-help">Each panel should look tilted in 3D. The flat panel on the left is the reference. Not supported yet (TODO): preserve-3d and backface-visibility.</div>
+	<div class="t3-row">
+		<div class="t3-cell"><div class="t3-panel">Flat (reference)</div><div class="t3-label">no transform</div></div>
+		<div class="t3-cell"><div class="t3-panel t3-rotate-y">rotateY 38deg</div><div class="t3-label">perspective(900px) rotateY(38deg)</div></div>
+		<div class="t3-cell"><div class="t3-panel t3-rotate-x">rotateX 45deg</div><div class="t3-label">perspective(600px) rotateX(45deg)</div></div>
+		<div class="t3-cell"><div class="t3-panel t3-rotate-neg">rotateY -38deg</div><div class="t3-label">perspective(900px) rotateY(-38deg)</div></div>
+	</div>
+	<div class="t3-row">
+		<div class="t3-cell t3-stage"><div class="t3-panel t3-stage-child">Parent perspective</div><div class="t3-label">parent perspective: 700px; child rotateY(50deg)</div></div>
+		<div class="t3-cell"><div class="t3-panel t3-clip"><div class="t3-clip-inner">Rounded clip with overflow hidden and a long line of text that must be cut by the tilted rounded edge</div></div><div class="t3-label">border-radius + overflow: hidden, rotateY(30deg)</div></div>
+		<div class="t3-cell"><div class="t3-panel t3-shadow">Shadow + filter</div><div class="t3-label">box-shadow, filter: brightness, rotateX(-30deg)</div></div>
+		<div class="t3-cell"><div class="t3-panel t3-spin">Animated</div><div class="t3-label">rotateY keyframes, 4 s loop</div></div>
+	</div>
+</div>
+</body>
+</rml>

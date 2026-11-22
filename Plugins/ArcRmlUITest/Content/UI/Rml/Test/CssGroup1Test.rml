@@ -1,0 +1,129 @@
+<rml>
+<head>
+	<title>ArcRmlUI CSS Group 1 Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ds/tokens.rcss"/>
+	<link type="text/rcss" href="CssGroup1Test.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="page">
+		<div class="cell">
+			<span class="label">color-mix + !important</span>
+			<div class="item" style="display: flex; align-items: center; gap: 11px; padding: 9px 11px; background: rgba(255,255,255,0.07); border-width: 1px; border-style: solid; border-color: rgba(255,255,255,0.12); border-radius: 6px; cursor: pointer;"><span>Hover me</span></div>
+			<div class="item forced" style="display: flex; align-items: center; gap: 11px; padding: 9px 11px; background: rgba(255,255,255,0.07); border-width: 1px; border-style: solid; border-color: rgba(255,255,255,0.12); border-radius: 6px; cursor: pointer;"><span>Forced hover (important beats inline)</span></div>
+			<div class="item control" style="display: flex; align-items: center; gap: 11px; padding: 9px 11px; background: rgba(255,255,255,0.07); border-width: 1px; border-style: solid; border-color: rgba(255,255,255,0.12); border-radius: 6px; cursor: pointer;"><span>Control (inline wins)</span></div>
+			<div class="row">
+				<div class="swatch mix-a"></div>
+				<div class="swatch mix-b"></div>
+				<div class="swatch mix-c"></div>
+				<div class="accent-gold"><div class="swatch mix-d"></div></div>
+				<div class="swatch mix-e"></div>
+			</div>
+		</div>
+
+		<div class="cell">
+			<span class="label">font-family lists</span>
+			<p class="f-grotesk">'Space Grotesk', sans-serif</p>
+			<p class="f-mono">'JetBrains Mono', monospace</p>
+			<p class="f-missing">'Nope Font', "JetBrains Mono"</p>
+			<p class="f-legacy">Space Grotesk (unquoted)</p>
+			<p class="f-quoted-serif">"serif" quoted: literal family, renders nothing</p>
+			<p class="f-quoted-serif-list">"serif", 'JetBrains Mono': renders in JetBrains Mono</p>
+		</div>
+
+		<div class="cell">
+			<span class="label">border-radius %</span>
+			<div class="row">
+				<div class="circle"></div>
+				<div class="indicator"></div>
+				<div class="dot-on"></div>
+				<div class="dot-off"></div>
+				<div class="pill"></div>
+			</div>
+			<div class="corner-mix"></div>
+		</div>
+
+		<div class="cell">
+			<span class="label">animations</span>
+			<div class="row">
+				<div class="rise"></div>
+				<div class="drain-track"><div class="drain"></div></div>
+				<div class="pulse"></div>
+				<div class="native-tween"></div>
+			</div>
+			<div class="hold"></div>
+			<div class="nohold"></div>
+			<div class="row"><div class="backfill"></div><div class="nobackfill"></div></div>
+			<div class="row"><div class="zero-back"></div><div class="zero-rev-back"></div><div class="zero-altrev-both"></div><div class="zero-fwd"></div><div class="zero-rev-fwd"></div></div>
+			<div class="stepper"></div>
+			<div class="keyframe-important"></div>
+			<div class="float-host"><span class="float">-128</span></div>
+		</div>
+
+		<div class="cell">
+			<span class="label">transitions (parse)</span>
+			<div class="row">
+				<div class="tab">DISPLAY</div>
+				<div class="tab">AUDIO</div>
+			</div>
+			<div class="fill"></div>
+			<div class="btn">Button</div>
+			<div class="surv"></div>
+			<div class="steps-t"></div>
+		</div>
+
+		<div class="cell">
+			<span class="label">inherit / initial</span>
+			<div class="row">
+				<div class="rpanel"><div class="rchild"></div></div>
+				<div class="rpanel"><div class="rchild inherit"></div></div>
+			</div>
+			<div class="fs-parent"><p class="fs-child">font-size inherit</p></div>
+			<div class="w-parent"><div class="w-child"></div></div>
+			<div class="w-parent"><div class="w-child half"></div></div>
+			<div class="bg-initial"></div>
+			<div class="bg-initial reset"></div>
+		</div>
+
+		<div class="cell">
+			<span class="label">line-height normal</span>
+			<p class="lh lh-14">Space Grotesk 14px normal</p>
+			<p class="lh lh-mono">JetBrains Mono 13px normal</p>
+			<p class="lh lh-34">Heading 34px</p>
+			<p class="lh lh-fixed">Fixed line-height 1.6</p>
+		</div>
+
+		<div class="cell">
+			<span class="label">calc() in transforms</span>
+			<div class="calc-host">
+				<div class="center-line"></div>
+				<div class="calc-box"></div>
+				<div class="calc-x"></div>
+			</div>
+		</div>
+
+		<div class="cell">
+			<span class="label">aliases</span>
+			<div class="stripes"><div class="frost"></div></div>
+		</div>
+
+		<div class="cell">
+			<span class="label">display: contents</span>
+			<div class="contents-flex">
+				<div class="contents-item">A</div>
+				<div class="contents-wrap" style="display: contents"><div class="contents-item">B</div><div class="contents-item">C</div></div>
+				<div class="contents-item">D</div>
+			</div>
+			<div class="contents-grid">
+				<div class="contents-item">1</div>
+				<div class="contents-wrap" style="display: contents"><div class="contents-item">2</div><div class="contents-item">3</div><div class="contents-item">4</div></div>
+				<div class="contents-item">5</div>
+			</div>
+			<div class="contents-block">
+				<div class="contents-wrap" style="display: contents"><span class="contents-line">block child one</span><span class="contents-line">block child two</span></div>
+			</div>
+		</div>
+	</div>
+</body>
+</rml>

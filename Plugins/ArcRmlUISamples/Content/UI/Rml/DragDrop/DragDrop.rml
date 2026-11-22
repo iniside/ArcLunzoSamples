@@ -1,0 +1,39 @@
+<rml>
+<head>
+	<title>Drag and drop</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="input-mapping" content="/ArcRmlUISamples/UI/Rml/DragDrop/IMC_Sample_DragDrop"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="DragDrop.rcss"/>
+	<viewmodel name="dd" class="/Script/ArcRmlUISamples.ArcRmlSamplesDragDropViewModel" create="true"/>
+</head>
+<body data-model="dd" data-drag-action="IA_Sample_Carry">
+	<div class="dd-panel">
+		<h1 class="dd-title">Drag and drop</h1>
+		<div class="dd-columns">
+			<div class="dd-column">
+				<p class="dd-label">Bag</p>
+				<div id="dd-sword" class="dd-slot dd-item" autofocus="" data-drag-type="weapon" data-item="Sword">Sword</div>
+				<div id="dd-shield" class="dd-slot dd-item" data-drag-type="weapon" data-item="Shield">Shield</div>
+				<div id="dd-potion" class="dd-slot dd-item" data-drag-type="potion" data-item="Potion">Potion</div>
+			</div>
+			<div class="dd-column">
+				<p class="dd-label">Hand (weapons)</p>
+				<div id="dd-hand" class="dd-slot dd-target" data-drop-accept="weapon" data-slot="Hand" data-event-dragdrop="call('', 'Dropped', 'drag:data-item', 'target:data-slot')">{{ Hand }}</div>
+				<p class="dd-label">Ring (rings only)</p>
+				<div id="dd-ring" class="dd-slot dd-target" data-drop-accept="ring" data-slot="Ring" data-event-dragdrop="call('', 'Dropped', 'drag:data-item', 'target:data-slot')"></div>
+			</div>
+			<div class="dd-column">
+				<p class="dd-label">Stash (weapons and potions)</p>
+				<div class="dd-list">
+					<div id="dd-stash-0" class="dd-row dd-target" data-drop-accept="weapon potion" data-slot="Stash0" data-event-dragdrop="call('', 'Dropped', 'drag:data-item', 'target:data-slot')">{{ Stash0 }}</div>
+					<div id="dd-stash-1" class="dd-row dd-target" data-drop-accept="weapon potion" data-slot="Stash1" data-event-dragdrop="call('', 'Dropped', 'drag:data-item', 'target:data-slot')">{{ Stash1 }}</div>
+					<div id="dd-stash-2" class="dd-row dd-target" data-drop-accept="weapon potion" data-slot="Stash2" data-event-dragdrop="call('', 'Dropped', 'drag:data-item', 'target:data-slot')">{{ Stash2 }}</div>
+				</div>
+			</div>
+		</div>
+		<p class="dd-hint">Drag an item with the mouse, or focus it and press {{ ArcKeys.IA_Sample_Carry }}, move to a slot and press {{ ArcKeys.confirm }}. {{ ArcKeys.back }} cancels a carry.</p>
+	</div>
+</body>
+</rml>

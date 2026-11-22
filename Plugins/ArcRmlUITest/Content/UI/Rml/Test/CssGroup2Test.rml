@@ -1,0 +1,103 @@
+<rml>
+<head>
+	<title>ArcRmlUI CSS Group 2 Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ds/tokens.rcss"/>
+	<link type="text/rcss" href="CssGroup2Test.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="page">
+		<div class="cell">
+			<span class="label">glass panel + header layer</span>
+			<div class="panel">
+				<div class="panel-head"><span class="panel-title">Panel title</span></div>
+				<div class="panel-body">
+					<div class="panel-row"><div class="panel-icon"></div><span class="panel-text">Row · normal (najedź = hover)</span></div>
+					<div class="disabled-row">Disabled row: bare text, striped</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cell">
+			<span class="label">slots + border-style</span>
+			<div class="row">
+				<div class="slot-plain"></div>
+				<div class="slot-filled"></div>
+				<div class="slot-empty"></div>
+			</div>
+			<div class="row">
+				<div class="b b-dashed-3"></div>
+				<div class="b b-dotted-2"></div>
+				<div class="b b-dotted-r"></div>
+				<div class="b b-mixed"></div>
+			</div>
+			<div class="row">
+				<div class="b b-none"></div>
+				<div class="b b-order"></div>
+				<div class="b b-style-sh"></div>
+				<div class="b b-reset over"></div>
+			</div>
+		</div>
+
+		<div class="cell">
+			<span class="label">resource tracks + fills</span>
+			<div class="row" style="align-items: flex-end; gap: 16px;">
+				<div style="display: flex; flex-direction: column; gap: 9px;">
+					<div class="track-h"><div class="fill-hp"></div></div>
+					<div class="track-h"><div class="fill-mp"></div></div>
+				</div>
+				<div class="track-v"><div class="fill-surv"></div></div>
+			</div>
+			<div class="bar-val-host"><span class="bar-val">156 / 200</span></div>
+		</div>
+
+		<div class="cell">
+			<span class="label">background layers</span>
+			<div class="row">
+				<div class="lay lay-tile"></div>
+				<div class="lay lay-repeat-x"></div>
+				<div class="lay lay-pos"></div>
+			</div>
+			<div class="row">
+				<div class="lay lay-pos2"></div>
+				<div class="lay lay-img"></div>
+				<div class="lay lay-bgimage"></div>
+			</div>
+			<div class="row">
+				<div class="lay lay-anim"></div>
+				<div class="lay lay-discrete"></div>
+			</div>
+		</div>
+
+		<div class="cell">
+			<span class="label">text stroke + generic fonts</span>
+			<div class="dmg-row">
+				<span class="dmg-a">34</span>
+				<span class="dmg-b">128</span>
+				<span class="dmg-c">7</span>
+				<span class="dmg-d">+42</span>
+			</div>
+			<div class="dmg-row">
+				<span class="dmg-thick">999</span>
+				<span class="dmg-current">CUR</span>
+			</div>
+			<p class="f-generic-sans">sans-serif → Space Grotesk</p>
+			<p class="f-generic-mono">monospace → JetBrains Mono</p>
+		</div>
+
+		<div class="cell">
+			<span class="label">anonymous flex / grid items</span>
+			<div class="row">
+				<span class="key-accent">E</span>
+				<span class="key-plain">Q</span>
+				<span class="key-plain">1</span>
+			</div>
+			<div class="flex-mixed">Loot <b>bold</b> trailing text</div>
+			<div class="grid-text">Grid text A<span>span B</span></div>
+			<div class="flex-center">centered bare text</div>
+			<div class="flex-wrap-text">long bare text that wraps inside a flex item</div>
+		</div>
+	</div>
+</body>
+</rml>

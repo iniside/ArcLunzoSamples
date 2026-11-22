@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+}
+
+.cell {
+	display: block;
+	margin-bottom: 4px;
+}
+
+.ind {
+	color: rgb(0, 0, 0);
+	margin-left: 4px;
+}
+
+.cell > .ctl:enabled ~ .en {
+	color: rgb(0, 128, 0);
+}
+
+.cell > .ctl:disabled ~ .dis {
+	color: rgb(0, 128, 1);
+}
+
+.cell > .ctl:required ~ .req {
+	color: rgb(0, 128, 2);
+}
+
+.cell > .ctl:optional ~ .opt {
+	color: rgb(0, 128, 3);
+}
+
+.cell > .ctl:read-only ~ .ro {
+	color: rgb(0, 128, 4);
+}
+
+.cell > .ctl:read-write ~ .rw {
+	color: rgb(0, 128, 5);
+}
+
+.ctl:read-only {
+	background-color: rgb(250, 240, 230);
+}
+
+.ctl:read-write {
+	background-color: rgb(230, 240, 250);
+}
+
+.ph::placeholder {
+	color: rgb(200, 0, 0);
+	opacity: 0.5;
+}
+
+.ph:focus::placeholder {
+	color: rgb(0, 0, 200);
+}
+
+.ph-font::placeholder {
+	color: rgb(0, 120, 0);
+	font-size: 20px;
+	font-style: italic;
+}
+
+.ph-font:focus::placeholder {
+	font-size: 24px;
+}
+
+.ph-center {
+	text-align: center;
+}
+
+.ph-center::placeholder {
+	color: rgb(0, 0, 0);
+}
+
+.required\:text-blue-600:required {
+	color: rgb(37, 99, 235);
+}
+
+.placeholder\:text-red::placeholder {
+	color: rgb(239, 68, 68);
+}
+
+placeholder {
+	color: rgb(0, 255, 0);
+}

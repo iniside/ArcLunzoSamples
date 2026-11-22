@@ -1,0 +1,171 @@
+.dk-questentry {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--ui-space-3);
+	box-sizing: border-box;
+	width: 100%;
+	padding: var(--ui-space-3);
+	background: transparent;
+	border: 1px solid transparent;
+	border-radius: var(--ui-radius-md);
+	box-shadow: none;
+	cursor: pointer;
+	transition: background-color var(--ui-dur-fast) var(--ui-ease), border-color var(--ui-dur-fast) var(--ui-ease), transform var(--ui-dur-fast) var(--ui-ease);
+	--h-bg: color-mix(in srgb, var(--ui-surface-2) 70%, transparent);
+	--h-bd: var(--ui-border);
+	--p-tf: scale(0.99);
+	--ic: var(--ui-accent);
+}
+
+.dk-questentry.main {
+	--ic: var(--ui-rarity-legendary);
+}
+
+.dk-questentry.done {
+	--ic: var(--ui-success);
+}
+
+.dk-questentry.failed {
+	--ic: var(--ui-danger);
+}
+
+.dk-questentry.selected {
+	background: var(--ui-accent-soft);
+	border: 1px solid var(--ui-accent);
+	--h-bg: var(--ui-accent-soft);
+	--h-bd: var(--ui-accent);
+}
+
+.dk-questentry:hover {
+	background: var(--h-bg);
+	border-color: var(--h-bd);
+}
+
+.dk-questentry:active {
+	transform: var(--p-tf);
+}
+
+.dk-questentry:focus-visible {
+	border: 1px solid var(--ui-focus);
+	box-shadow: var(--ui-focus-ring);
+	--h-bd: var(--ui-focus);
+}
+
+.dk-questentry.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-questentry-iconbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: none;
+	width: 36px;
+	height: 36px;
+	border-radius: var(--ui-radius-sm);
+	background: var(--ui-surface-2);
+	color: var(--ic);
+}
+
+.dk-questentry-icon {
+	display: inline-flex;
+}
+
+.dk-questentry-icon svg {
+	display: block;
+}
+
+.dk-questentry-main {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	min-width: 0;
+	flex: 1;
+}
+
+.dk-questentry-head {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-2);
+	min-width: 0;
+}
+
+.dk-questentry-title {
+	font-size: var(--ui-fs-3);
+	font-weight: 600;
+	color: var(--ui-text);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-width: 0;
+}
+
+.dk-questentry.done .dk-questentry-title, .dk-questentry.failed .dk-questentry-title {
+	color: var(--ui-text-muted);
+}
+
+.dk-questentry-pin {
+	display: inline-flex;
+	flex: none;
+	color: var(--ui-accent);
+}
+
+.dk-questentry-pin svg {
+	display: block;
+}
+
+.dk-questentry-sub {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-2);
+	min-width: 0;
+	font-size: var(--ui-fs-1);
+	color: var(--ui-text-muted);
+}
+
+.dk-questentry-level {
+	font-family: var(--ui-font-mono);
+	font-weight: 600;
+	flex: none;
+	color: var(--ui-text);
+}
+
+.dk-questentry-level.warn {
+	color: var(--ui-warning);
+}
+
+.dk-questentry-level.danger {
+	color: var(--ui-danger);
+}
+
+.dk-questentry.done .dk-questentry-level, .dk-questentry.failed .dk-questentry-level {
+	color: var(--ui-text-muted);
+}
+
+.dk-questentry-region {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-questentry-rewards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--ui-space-1);
+	padding-top: 2px;
+}
+
+.dk-questentry-side {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: var(--ui-space-1);
+	flex: none;
+}
+
+.dk-questentry-progress {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	color: var(--ui-text-muted);
+}

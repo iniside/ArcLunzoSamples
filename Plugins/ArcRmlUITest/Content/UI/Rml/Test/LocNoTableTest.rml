@@ -1,0 +1,14 @@
+<rml>
+<head>
+	<title>Loc No Table Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="ComponentTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="col left">
+		<div class="title">expects one missing string table error</div>
+		<span loc="NoTable">No table</span>
+	</div>
+</body>
+</rml>

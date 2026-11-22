@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>Scope Tab A</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Tabs/ScopeFrame.rml"/>
+	<link type="text/rcss" href="ScopeTabA.rcss"/>
+	<viewmodel name="scopetaba" preview="Preview/ScopeTabA.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="scopetaba">
+	<div id="st-a">{{ label }}</div>
+</body>
+</rml>

@@ -1,0 +1,20 @@
+<component>
+	<prop name="lowHealth" default="true"/>
+	<prop name="hits" default="[]"/>
+	<prop name="dead"/>
+	<prop name="respawnIn" default="0"/>
+	<prop name="showHits" default="true"/>
+	<div class="dk-screen-effects">
+		<div class="dk-screen-effects-vig-s" data-if="($lowHealth &amp;&amp; !$dead)"/>
+		<div class="dk-screen-effects-hits" data-if="$showHits">
+			<div data-for="ScreenEffectsH, ScreenEffectsH_index : $hits" class="dk-screen-effects-h-s" data-style---dk-screen-effects-h-s-transform-1="(ScreenEffectsH.Angle + 'deg')">
+				<span class="dk-screen-effects-arc-s"/>
+			</div>
+		</div>
+		<div class="dk-screen-effects-death-s" data-if="$dead">
+			<span class="dk-screen-effects-died-s">You died</span>
+			<span class="dk-screen-effects-resp-s">{{ $respawnIn > 0 ? 'Respawn in ' + ($respawnIn | arcmax(0) | ceil) : 'Ready' }}</span>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" data-if="($respawnIn &lt;= 0)" key-label="Enter" glyph="A" label="Respawn"/>
+		</div>
+	</div>
+</component>

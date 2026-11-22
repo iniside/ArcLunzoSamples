@@ -1,0 +1,78 @@
+<rml>
+<head>
+	<title>ArcRmlUI Calc Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="CalcTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="ruler"></div>
+
+	<div id="keybinds" class="panel">
+		<div class="slot slot-a"><div class="key key-top4"></div></div>
+		<div class="slot slot-b"><div class="key key-top3"></div></div>
+		<div class="slot slot-c"><div class="key key-left3"></div></div>
+	</div>
+
+	<div id="sizes" class="panel">
+		<div class="bar w-half"></div>
+		<div class="bar w-min-a"></div>
+		<div class="bar w-min-b"></div>
+		<div class="bar w-max-a"></div>
+		<div class="bar w-max-b"></div>
+		<div class="bar w-clamp"></div>
+		<div class="bar w-clamp-low"></div>
+		<div class="bar w-nested"></div>
+		<div class="bar w-fold"></div>
+		<div class="bar w-invalid"></div>
+		<div class="bar w-em"></div>
+	</div>
+
+	<div id="spacing" class="panel">
+		<div class="pad"><div class="pad-inner"></div></div>
+		<div class="margin-box"></div>
+	</div>
+
+	<div id="gap" class="panel">
+		<div class="gap-item gap-a"></div>
+		<div class="gap-item gap-b"></div>
+		<div class="gap-item gap-c"></div>
+	</div>
+
+	<div id="grid" class="panel">
+		<div class="cell cell-a"></div>
+		<div class="cell cell-b"></div>
+		<div class="cell cell-c"></div>
+		<div class="cell cell-d"></div>
+	</div>
+
+	<div id="insets" class="panel">
+		<div class="inset-box"></div>
+	</div>
+
+	<div id="neg" class="panel">
+		<div class="bar n-pct"></div>
+		<div class="bar n-em"></div>
+		<div class="bar n-fold"></div>
+		<div class="bar n-margin"></div>
+		<div class="bar n-tokens"></div>
+		<div id="neg-gap" class="neg-row">
+			<div class="gap-item gap-a"></div>
+			<div class="gap-item gap-b"></div>
+			<div class="gap-item gap-c"></div>
+		</div>
+		<div id="neg-basis" class="neg-row">
+			<div class="basis-item"></div>
+			<div class="gap-item gap-b"></div>
+		</div>
+		<div id="neg-grid" class="neg-row">
+			<div class="cell cell-a"></div>
+			<div class="cell cell-b"></div>
+		</div>
+	</div>
+
+	<div id="anim" class="panel">
+		<div class="anim-box"></div>
+	</div>
+</body>
+</rml>

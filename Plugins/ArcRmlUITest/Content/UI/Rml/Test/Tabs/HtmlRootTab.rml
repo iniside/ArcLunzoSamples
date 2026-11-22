@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>Html Root Tab</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Tabs/HtmlRootFrame.rml"/>
+	<link type="text/rcss" href="HtmlRootTab.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="ht-box"></div>
+	<div id="ht-text">Tab text</div>
+</body>
+</rml>

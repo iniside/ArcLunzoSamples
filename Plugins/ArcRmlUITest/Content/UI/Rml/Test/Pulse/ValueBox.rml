@@ -1,0 +1,4 @@
+<component>
+	<prop name="amount"/>
+	<input id="vb-input" type="text" data-value="$amount"/>
+</component>

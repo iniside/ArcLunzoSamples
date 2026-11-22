@@ -1,0 +1,88 @@
+.dk-party-frames {
+	display: flex;
+	flex-direction: column;
+	gap: var(--hud-space-sm);
+	width: 100%;
+	max-width: 220px;
+	min-width: 0;
+	box-sizing: border-box;
+	padding: var(--hud-space-sm);
+	border-radius: var(--hud-radius);
+	background: var(--hud-plate);
+	border: 1px solid var(--hud-stroke);
+	box-shadow: var(--hud-plate-shadow);
+}
+
+.dk-party-frames-m {
+	display: flex;
+	align-items: center;
+	gap: var(--hud-space-sm);
+	opacity: 1;
+}
+
+.dk-party-frames-m.range {
+	opacity: 0.7;
+}
+
+.dk-party-frames-m.offline {
+	opacity: 0.45;
+}
+
+.dk-party-frames-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 26px;
+	height: 26px;
+	flex: none;
+	border-radius: var(--hud-radius-sm);
+	background: var(--hud-plate-2);
+	border: 1px solid var(--hud-stroke);
+	color: var(--hud-icon);
+}
+
+.dk-party-frames-icon.dead {
+	color: var(--ui-danger);
+}
+
+.dk-party-frames-i {
+	display: inline-flex;
+}
+
+.dk-party-frames-body {
+	display: flex;
+	flex-direction: column;
+	gap: var(--hud-space-xs);
+	flex: 1;
+	min-width: 0;
+}
+
+.dk-party-frames-head {
+	display: flex;
+	justify-content: space-between;
+	gap: var(--ui-space-1);
+}
+
+.dk-party-frames-name {
+	font-size: var(--ui-fs-1);
+	font-weight: 600;
+	color: var(--hud-text);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-party-frames-st {
+	font-family: var(--ui-font-mono);
+	font-size: var(--hud-fs-xs);
+	color: var(--hud-text-muted);
+	opacity: 0;
+}
+
+.dk-party-frames-st.faded {
+	opacity: 1;
+}
+
+.dk-party-frames-st.dead {
+	color: var(--ui-danger);
+}

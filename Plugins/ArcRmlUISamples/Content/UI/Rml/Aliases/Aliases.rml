@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Aliases</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="Aliases.rcss"/>
+	<viewmodel name="al" class="/Script/ArcRmlUISamples.ArcRmlSamplesAliasesViewModel" create="true"/>
+</head>
+<body data-model="al">
+	<div class="al-panel">
+		<h1 class="al-title">Aliases</h1>
+		<div class="al-card" data-alias-sel="Selected">
+			<p id="al-name" class="al-name">{{ sel.Name }}</p>
+			<p>{{ sel.Title }}, level {{ sel.Level }}</p>
+		</div>
+		<p id="al-long" class="al-result">Same name, written in full: {{ Selected.Name }}</p>
+		<button id="al-next" class="al-button" autofocus="" data-event-click="call('', 'SelectNext')">Next hero</button>
+	</div>
+</body>
+</rml>

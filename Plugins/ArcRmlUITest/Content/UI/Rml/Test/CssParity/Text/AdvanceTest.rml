@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Advance Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/AdvanceTest.rcss"/>
+	<viewmodel name="advance" preview="Preview/Advance.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="advance">
+	<div id="chip" class="line chip">T3 · Expert</div>
+	<div id="main-hand" class="line main-hand">Main Hand</div>
+	<div id="enter" class="line enter">ENTER</div>
+	<div id="title" class="line title">Equipment Loadout</div>
+	<div id="phases" class="line phases">iiiiiiii</div>
+	<div id="shifter" class="line shifter">iiiiiiii</div>
+	<div id="counter-box" class="counter-box"><div id="counter" class="line counter">{{ count }}</div></div>
+	<div id="under-control" class="line under under-control">iiiiiiii</div>
+	<div id="under-shifted" class="line under under-shifted">iiiiiiii</div>
+	<div id="under-late" class="line under under-late">iiiiiiii</div>
+</body>
+</rml>

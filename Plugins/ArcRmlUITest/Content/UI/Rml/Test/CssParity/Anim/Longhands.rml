@@ -1,0 +1,22 @@
+<rml>
+<head>
+	<title>Longhands</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Anim/Longhands.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="a-short" class="row"></div>
+	<div id="b-list" class="row"></div>
+	<div id="c-all" class="row"></div>
+	<div id="d-normal" class="row"></div>
+	<div id="d-discrete" class="row"></div>
+	<div id="e-vis" class="row"></div>
+	<div id="f-paused" class="row"></div>
+	<div id="f-paused-neg" class="row"></div>
+	<div id="f-paused-delay" class="row"></div>
+	<div id="f-run" class="row"></div>
+	<div id="g-delay" class="row"></div>
+	<div id="h-alt" class="row"></div>
+</body>
+</rml>

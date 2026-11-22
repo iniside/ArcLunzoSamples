@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Tab Frame</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="tabframe" preview="Preview/TabFrame.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="tabframe">
+	<div id="frame-title">{{ title }}</div>
+	<div class="embed" arc-embed=""></div>
+</body>
+</rml>

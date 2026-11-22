@@ -1,0 +1,22 @@
+<rml>
+<head>
+	<title>Rotated Edges Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Render/RotatedEdgesTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="sq15" class="sq"></div>
+	<div id="sq30" class="sq"></div>
+	<div id="ring" class="ring"></div>
+	<div id="chev" class="chev"></div>
+	<div id="text" class="text">Rotated text 15deg</div>
+	<svg id="image" class="image" viewBox="0 0 8 8"><rect width="4" height="4" fill="#3a86ff"/><rect x="4" y="4" width="4" height="4" fill="#3a86ff"/><rect x="4" width="4" height="4" fill="#ff006e"/><rect y="4" width="4" height="4" fill="#ff006e"/></svg>
+	<div id="box" class="box"></div>
+	<div id="clip" class="clip"><div class="clip-inner"></div></div>
+	<div id="stripes" class="stripes"><div class="stripe a"></div><div class="stripe b"></div><div class="stripe a"></div><div class="stripe b"></div><div class="stripe a"></div><div class="stripe b"></div></div>
+	<div id="glass" class="glass"></div>
+	<div id="maskring" class="mask-ring"></div>
+	<div id="skew" class="skew"></div>
+</body>
+</rml>

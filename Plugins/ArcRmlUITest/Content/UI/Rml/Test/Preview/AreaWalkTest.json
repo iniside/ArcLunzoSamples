@@ -1,0 +1,13 @@
+{
+	"showTop": true,
+	"showWrap": true,
+	"showWrapRow": true,
+	"rowHidden": false,
+	"$variants": {
+		"hideWrap": { "showWrap": false },
+		"hideWrapRow": { "showWrapRow": false },
+		"hideWrapRowVisibility": { "rowHidden": true },
+		"hideTop": { "showTop": false },
+		"hideBoth": { "showTop": false, "showWrap": false }
+	}
+}

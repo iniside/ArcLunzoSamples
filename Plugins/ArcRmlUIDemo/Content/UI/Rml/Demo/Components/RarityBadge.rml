@@ -1,0 +1,5 @@
+<component>
+	<prop name="rarity" default="common"/>
+	<prop name="label" default=""/>
+	<span class="dk-raritybadge" data-class-uncommon="$rarity == 'uncommon'" data-class-rare="$rarity == 'rare'" data-class-epic="$rarity == 'epic'" data-class-legendary="$rarity == 'legendary'">{{ $label }}</span>
+</component>

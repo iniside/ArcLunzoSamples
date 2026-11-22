@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Component Props Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="props" preview="Preview/PropsTest.json"/>
+	<viewmodel name="other" preview="Preview/PropsOther.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="props">
+	<div id="static"><dc-import name="/ArcRmlUITest/UI/Rml/Components/TestBox" label="Static label" value="A &amp; B \ back-slash" style="width: 360px; color: red; position: relative; left: 12px" data-note="note text"/></div>
+	<div id="bound"><dc-import name="/ArcRmlUITest/UI/Rml/Components/TestBox" label="{{ BarId }}" value="{{ Slots.size }}" tone="warn"/></div>
+	<div id="defaults"><dc-import name="/ArcRmlUITest/UI/Rml/Components/TestBox"/></div>
+	<div id="slots"><dc-import name="/ArcRmlUITest/UI/Rml/Components/TestSlots" title="Two slots" rows="{{ Slots }}" note="note set">
+		<div class="chip" data-for="slot, i : Slots">c{{ i }}</div>
+	</dc-import></div>
+	<div id="slotsmissing"><dc-import name="/ArcRmlUITest/UI/Rml/Components/TestSlots" title="Missing rows"/></div>
+	<div id="forward"><dc-import name="/ArcRmlUITest/UI/Rml/Components/TestForward"/></div>
+	<div id="hosted"><dc-import name="/ArcRmlUITest/UI/Rml/Components/TestBox" data-model="other" label="{{ Label }}" value="{{ Gold }}"/></div>
+</body>
+</rml>

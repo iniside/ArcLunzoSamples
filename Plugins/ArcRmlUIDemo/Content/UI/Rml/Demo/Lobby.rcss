@@ -1,0 +1,142 @@
+.lb-frame {
+	position: relative;
+	height: 100%;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-rows: auto minmax(0, 1fr) auto;
+	gap: var(--ui-space-5);
+	padding: clamp(24px, 3.5vw, 72px);
+}
+
+.lb-head {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: var(--ui-space-4);
+	flex-wrap: wrap;
+}
+
+.lb-titles {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-2);
+}
+
+.lb-title {
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-6);
+	font-weight: 700;
+	line-height: 1;
+	text-transform: var(--ui-display-case);
+	letter-spacing: var(--ui-display-tracking);
+	text-shadow: var(--ui-text-glow);
+}
+
+.lb-status {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-3);
+}
+
+.lb-online {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text-muted);
+}
+
+.lb-body {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(340px, 26%);
+	gap: var(--ui-space-5);
+	min-height: 0;
+}
+
+.lb-col {
+	display: flex;
+	min-height: 0;
+	min-width: 0;
+}
+
+.lb-filters {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: var(--ui-space-3);
+	padding: var(--ui-space-4) var(--ui-space-5) 0;
+}
+
+.lb-search {
+	flex: 2 1 240px;
+	min-width: 0;
+}
+
+.lb-drop {
+	flex: 1 1 160px;
+	min-width: 0;
+}
+
+.lb-list {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	min-height: 0;
+	padding: var(--ui-space-4) var(--ui-space-5) var(--ui-space-4);
+}
+
+.lb-searching {
+	padding: var(--ui-space-3) 0;
+}
+
+.lb-scroll {
+	flex: 1;
+	min-height: 0;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-1);
+	padding: var(--ui-space-2) var(--ui-space-1);
+}
+
+.lb-pagerrow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: var(--ui-space-3);
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.lb-showing {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	color: var(--ui-text-muted);
+}
+
+.lb-party {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-2);
+}
+
+.lb-stats {
+	display: flex;
+	flex-direction: column;
+}
+
+.lb-actions {
+	display: flex;
+	gap: var(--ui-space-3);
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.lb-footer {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: var(--ui-space-4);
+	flex-wrap: wrap;
+	border-top: 1px solid var(--ui-border);
+	padding-top: var(--ui-space-4);
+}

@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Table Role Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Layout/TableRoleTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="wrap"><div id="t-inline" class="t inline"><div class="row"><div class="cell"></div></div></div></div>
+	<div class="wrap"><div id="t-float" class="t float"><div class="row"><div class="cell"></div></div></div></div>
+	<div class="wrap"><div id="t-block" class="t"><div class="row"><div class="cell"></div></div></div></div>
+</body>
+</rml>

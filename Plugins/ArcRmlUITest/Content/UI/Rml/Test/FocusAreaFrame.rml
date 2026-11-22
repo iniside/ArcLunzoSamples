@@ -1,0 +1,24 @@
+<rml>
+<head>
+	<title>ArcRmlUI Focus Area Test Frame</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="hide-lower" content="true"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ds/tokens.rcss"/>
+	<link type="text/rcss" href="FocusAreaTest.rcss"/>
+	<viewmodel name="fatframe" preview="Preview/FocusAreaFrame.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="fatframe">
+<div class="fat-root">
+	<dc-import name="/ArcRmlUITest/UI/Rml/Components/GlassBar" direction="{{ barDirection }}" data-focus-area="tabs" data-focus-down="" data-hotkey-cycle="IA_UITabPrev IA_UITabNext">
+		<div class="fat-tab tab-a" data-attrif-selected="tab == 'a'" data-action="tab:a">Tab A</div>
+		<div class="fat-tab tab-b" data-attrif-selected="tab == 'b'" data-action="tab:b">Tab B</div>
+		<div class="fat-tab tab-c" data-attrif-selected="tab == 'c'" data-action="tab:c" data-event-back="call('', 'BackOnTabC'); stopPropagation()">Tab C (back handled)</div>
+	</dc-import>
+	<div class="fat-row">
+		<div id="outside" class="fat-button" data-hotkey="IA_UIAlt" data-action="outside-alt">Frame, outside any area (IA_UIAlt)</div>
+	</div>
+	<div class="fat-embed" arc-embed=""></div>
+</div>
+</body>
+</rml>

@@ -1,0 +1,37 @@
+#hr-action { position: absolute; left: 40px; top: 40px; width: 80px; height: 60px; background-color: #3366cc; }
+#hr-event { position: absolute; left: 160px; top: 40px; width: 80px; height: 60px; background-color: #3366cc; }
+#hr-pe { position: absolute; left: 280px; top: 40px; width: 80px; height: 60px; background-color: #3366cc; }
+#hr-pe.pe-none { pointer-events: none; }
+#hr-vis { position: absolute; left: 400px; top: 40px; width: 80px; height: 60px; background-color: #3366cc; }
+#hr-vis.hidden { visibility: hidden; }
+#hr-disp { position: absolute; left: 520px; top: 40px; width: 80px; height: 60px; }
+#hr-disp.gone { display: none; }
+#hr-disp-child { width: 80px; height: 60px; background-color: #3366cc; }
+#hr-dom { position: absolute; left: 640px; top: 40px; width: 80px; height: 60px; background-color: #3366cc; }
+#hr-xf { position: absolute; left: 760px; top: 40px; width: 80px; height: 60px; }
+#hr-xf.shift { transform: translateX(200px); }
+#hr-xf-child { width: 80px; height: 60px; background-color: #3366cc; }
+#hr-scroll { position: absolute; left: 40px; top: 200px; width: 200px; height: 120px; overflow-y: auto; background-color: #222222; }
+.hr-row { height: 50px; margin-bottom: 4px; background-color: #555555; }
+#hr-cells { position: absolute; left: 40px; top: 400px; width: 1200px; height: 100px; }
+.hr-cell { display: inline-block; width: 24px; height: 24px; margin: 2px; background-color: #555555; }
+#hr-shrink { position: absolute; left: 300px; top: 200px; width: 120px; height: 100px; overflow-y: auto; background-color: #222222; }
+#hr-shrink-content { height: 50px; background-color: #555555; }
+#hr-shrink.tall #hr-shrink-content { height: 300px; }
+#hr-box { position: absolute; left: 460px; top: 200px; width: 80px; height: 60px; background-color: #3366cc; }
+#hr-box.wide { width: 160px; }
+#hr-flow { position: absolute; left: 660px; top: 200px; width: 100px; }
+#hr-grow { height: 20px; background-color: #444444; }
+#hr-grow.grow { height: 80px; }
+#hr-flow-btn { height: 40px; background-color: #3366cc; }
+#hr-clip { position: absolute; left: 800px; top: 200px; width: 80px; height: 60px; overflow: hidden; background-color: #444444; }
+#hr-clip.open { overflow: visible; }
+#hr-clip-btn { width: 160px; height: 40px; background-color: #3366cc; }
+#hr-pe-wrap { position: absolute; left: 980px; top: 200px; width: 80px; height: 60px; }
+#hr-pe-wrap.pe-off { pointer-events: none; }
+#hr-pe-child { width: 80px; height: 60px; background-color: #3366cc; }
+#hr-keyed { position: absolute; left: 1080px; top: 200px; width: 200px; }
+.hr-keyed-row { height: 20px; background-color: #3366cc; }
+#hr-ovf { position: absolute; left: 300px; top: 330px; width: 120px; height: 60px; overflow-y: auto; background-color: #222222; }
+#hr-ovf.flat { overflow-y: hidden; }
+#hr-ovf-content { height: 200px; background-color: #555555; }

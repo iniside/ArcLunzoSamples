@@ -1,0 +1,32 @@
+html {
+	font-size: 20px;
+}
+
+html, :host {
+	line-height: 1.5;
+}
+
+body {
+	font-size: 10px;
+}
+
+.block {
+	display: block;
+}
+
+#rem-box {
+	width: 5rem;
+	height: 2rem;
+}
+
+:root > body > #root-child {
+	width: 70px;
+	height: 10px;
+}
+
+.dark p {
+	color: #ff0000;
+}
+
+body { margin: 0; }
+p { margin: 0; }

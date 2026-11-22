@@ -1,0 +1,10 @@
+<rml>
+<head>
+	<title>Component Call Test</title>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="calltest" preview="Preview/CallTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="calltest">
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/CallButton" label="Press" data-event-click="call('', 'Pressed', 'one')"/>
+</body>
+</rml>

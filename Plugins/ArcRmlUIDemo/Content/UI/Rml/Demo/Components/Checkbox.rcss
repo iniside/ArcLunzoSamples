@@ -1,0 +1,71 @@
+.dk-checkbox {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--ui-space-3);
+	min-height: 32px;
+	cursor: pointer;
+	color: var(--ui-text);
+	font-size: var(--ui-fs-3);
+	transition: transform var(--ui-dur-fast) var(--ui-ease);
+	--h-fg: var(--ui-text);
+	--p-tf: scale(0.98);
+}
+
+.dk-checkbox.disabled {
+	cursor: default;
+	color: var(--ui-text-disabled);
+	--h-fg: var(--ui-text-disabled);
+	--p-tf: none;
+}
+
+.dk-checkbox:hover {
+	color: var(--h-fg);
+}
+
+.dk-checkbox:active {
+	transform: var(--p-tf);
+}
+
+.dk-checkbox.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-checkbox-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: none;
+	width: 24px;
+	height: 24px;
+	box-sizing: border-box;
+	border-radius: var(--ui-radius-sm);
+	border: 2px solid var(--ui-border-strong);
+	background: transparent;
+	color: var(--ui-accent-text);
+	box-shadow: none;
+	transition: background-color var(--ui-dur-fast) var(--ui-ease), border-color var(--ui-dur-fast) var(--ui-ease);
+}
+
+.dk-checkbox.on .dk-checkbox-box {
+	border: 2px solid var(--ui-accent);
+	background: var(--ui-accent);
+}
+
+.dk-checkbox.disabled .dk-checkbox-box {
+	border: 2px solid var(--ui-border);
+	background: var(--ui-surface-2);
+	color: var(--ui-text-disabled);
+}
+
+.dk-checkbox:focus-visible .dk-checkbox-box {
+	box-shadow: var(--ui-focus-ring);
+}
+
+.dk-checkbox-mark {
+	display: inline-flex;
+}
+
+.dk-checkbox-mark svg {
+	display: block;
+}

@@ -1,0 +1,14 @@
+<component>
+	<prop name="label" default=""/>
+	<prop name="value" default=""/>
+	<prop name="delta" default=""/>
+	<prop name="inverse"/>
+	<div class="dk-statrow">
+		<span class="dk-statrow-label">{{ $label }}</span>
+		<div class="dk-statrow-main">
+			<span class="dk-statrow-value" data-if="$value != ''">{{ $value }}</span>
+			<span class="dk-statrow-delta" data-if="$delta != '' &amp;&amp; $delta != '0'" data-class-good="$inverse ? ($delta * 1 &lt; 0) : !($delta * 1 &lt; 0)">{{ $delta }}</span>
+			<slot/>
+		</div>
+	</div>
+</component>

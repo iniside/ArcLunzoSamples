@@ -1,0 +1,12 @@
+div {
+	display: block;
+}
+
+@keyframes bodyLeave { from { opacity: 1; } to { opacity: 0; } }
+body.leave { animation: bodyLeave 1s linear forwards; }
+
+#blt-box {
+	width: 100px;
+	height: 40px;
+	background-color: #1e2330;
+}

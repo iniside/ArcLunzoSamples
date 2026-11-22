@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Embed Tab Diagnostics</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Diag/EmbedFrame.rml"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="tab" preview="Preview/Tab.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="tab">
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Diag/DiagSpacer.rml"/>
+	<div id="tab-body" data-attr-style="'tabcolr: red; display: block; height: 8px;'">tab</div>
+	<div id="tab-click" data-attr-style="clickBad ? 'clickcolr: red; display: block; height: 8px;' : 'display: block; height: 8px;'">click</div>
+</body>
+</rml>

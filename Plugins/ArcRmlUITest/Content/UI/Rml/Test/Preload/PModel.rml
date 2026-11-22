@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Preload Model</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="Preload.rcss"/>
+	<viewmodel name="pm" class="/Script/ArcRmlUITest.ArcRmlKeptTabViewModel" context="PreloadModel" on-close="OnLeftA"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="pm">
+	<div id="pm-count" class="p-row">{{ Count }}</div>
+</body>
+</rml>

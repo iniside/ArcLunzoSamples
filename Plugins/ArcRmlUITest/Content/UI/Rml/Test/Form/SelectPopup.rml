@@ -1,0 +1,132 @@
+<rml>
+<head>
+	<title>SelectPopup</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/SelectPopup.rcss"/>
+	<viewmodel name="spp" preview="Preview/SelectPopup.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="spp">
+	<div class="row">
+		<select id="spp-20">
+			<option value="1">Item 1</option>
+			<option value="2">Item 2</option>
+			<option value="3">Item 3</option>
+			<option value="4">Item 4</option>
+			<option value="5">Item 5</option>
+			<option value="6">Item 6</option>
+			<option value="7">Item 7</option>
+			<option value="8">Item 8</option>
+			<option value="9">Item 9</option>
+			<option value="10">Item 10</option>
+			<option value="11">Item 11</option>
+			<option value="12">Item 12</option>
+			<option value="13">Item 13</option>
+			<option value="14">Item 14</option>
+			<option value="15">Item 15</option>
+			<option value="16">Item 16</option>
+			<option value="17">Item 17</option>
+			<option value="18">Item 18</option>
+			<option value="19">Item 19</option>
+			<option value="20">Item 20</option>
+		</select>
+	</div>
+	<div class="row">
+		<select id="spp-21">
+			<option value="1">Item 1</option>
+			<option value="2">Item 2</option>
+			<option value="3">Item 3</option>
+			<option value="4">Item 4</option>
+			<option value="5">Item 5</option>
+			<option value="6">Item 6</option>
+			<option value="7">Item 7</option>
+			<option value="8">Item 8</option>
+			<option value="9">Item 9</option>
+			<option value="10">Item 10</option>
+			<option value="11">Item 11</option>
+			<option value="12">Item 12</option>
+			<option value="13">Item 13</option>
+			<option value="14">Item 14</option>
+			<option value="15">Item 15</option>
+			<option value="16">Item 16</option>
+			<option value="17">Item 17</option>
+			<option value="18">Item 18</option>
+			<option value="19">Item 19</option>
+			<option value="20">Item 20</option>
+			<option value="21">Item 21</option>
+		</select>
+	</div>
+	<div class="row">
+		<select id="spp-hl">
+			<option value="a">Apple</option>
+			<option value="r" style="color: rgb(255, 0, 0); background-color: rgb(255, 255, 0)">Red</option>
+			<option value="b" data-style-color="ink">Blue</option>
+			<option value="p">Plain</option>
+		</select>
+	</div>
+	<div class="row">
+		<select id="spp-long">
+			<option value="1">Item 1</option>
+			<option value="2">Item 2</option>
+			<option value="3">Item 3</option>
+			<option value="4">Item 4</option>
+			<option value="5">Item 5</option>
+			<option value="6">Item 6</option>
+			<option value="7">Item 7</option>
+			<option value="8">Item 8</option>
+			<option value="9">Item 9</option>
+			<option value="10">Item 10</option>
+			<option value="11">Item 11</option>
+			<option value="12">Item 12</option>
+			<option value="13">Item 13</option>
+			<option value="14">Item 14</option>
+			<option value="15">Item 15</option>
+			<option value="16">Item 16</option>
+			<option value="17">Item 17</option>
+			<option value="18">Item 18</option>
+			<option value="19">Item 19</option>
+			<option value="20">Item 20</option>
+			<option value="21">Item 21</option>
+			<option value="22">Item 22</option>
+			<option value="23">Item 23</option>
+			<option value="24">Item 24</option>
+			<option value="25">Item 25</option>
+			<option value="26">Item 26</option>
+			<option value="27">Item 27</option>
+			<option value="28">Item 28</option>
+			<option value="29">Item 29</option>
+			<option value="30">Item 30</option>
+			<option value="31">Item 31</option>
+			<option value="32">Item 32</option>
+			<option value="33">Item 33</option>
+			<option value="34">Item 34</option>
+			<option value="35">Item 35</option>
+			<option value="36">Item 36</option>
+			<option value="37">Item 37</option>
+			<option value="38">Item 38</option>
+			<option value="39">Item 39</option>
+			<option value="40" selected="">Item 40</option>
+			<option value="41">Item 41</option>
+			<option value="42">Item 42</option>
+			<option value="43">Item 43</option>
+			<option value="44">Item 44</option>
+			<option value="45">Item 45</option>
+			<option value="46">Item 46</option>
+			<option value="47">Item 47</option>
+			<option value="48">Item 48</option>
+			<option value="49">Item 49</option>
+			<option value="50">Item 50</option>
+			<option value="51">Item 51</option>
+			<option value="52">Item 52</option>
+			<option value="53">Item 53</option>
+			<option value="54">Item 54</option>
+			<option value="55">Item 55</option>
+			<option value="56">Item 56</option>
+			<option value="57">Item 57</option>
+			<option value="58">Item 58</option>
+			<option value="59">Item 59</option>
+			<option value="60">Item 60</option>
+		</select>
+	</div>
+</body>
+</rml>

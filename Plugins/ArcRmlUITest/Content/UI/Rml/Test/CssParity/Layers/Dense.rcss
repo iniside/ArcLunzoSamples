@@ -1,0 +1,8 @@
+body > div {
+	position: absolute;
+	left: 10px;
+}
+
+#border1202 { top: 10px; width: 1200px; height: 38px; border: 1px solid transparent; background: linear-gradient(#e6194b, #e6194b); background-size: 1200px 38px; }
+#tile4img { top: 70px; width: 1200px; height: 20px; background: url(Tile4.png); }
+#tile4grad { top: 110px; width: 1200px; height: 20px; background: linear-gradient(#3cb44b, #3cb44b); background-size: 4px 4px; }

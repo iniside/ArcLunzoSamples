@@ -1,0 +1,14 @@
+<rml>
+<head>
+	<title>Tab B</title>
+	<meta name="frame" content="/ArcRmlUISamples/UI/Rml/FrameTabs/Frame.rml"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="Tab.rcss"/>
+	<viewmodel name="tabb" class="/Script/ArcRmlUISamples.ArcRmlSamplesFrameTabsTabViewModel" create="true"/>
+</head>
+<body data-model="tabb">
+	<p class="ft-label">Tab B</p>
+	<p class="ft-count">Count: {{ Count }}</p>
+	<button id="ft-b-add" class="ft-add" data-event-click="call('', 'Add')">Add one</button>
+</body>
+</rml>

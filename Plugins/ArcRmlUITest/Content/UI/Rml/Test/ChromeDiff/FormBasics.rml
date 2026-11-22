@@ -1,0 +1,22 @@
+<rml>
+<head>
+	<title>FormBasics</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ChromeDiff/FormBasics.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="t"><button class="bt" id="B1" style="height:100px"><div class="c" id="B1a" style="height:50%"></div></button></div>
+	<div class="t"><button class="bt" id="B2" style="height:100px;padding:10px 0 6px;border-width:5px 0 3px"><div class="c" id="B2a" style="height:50%"></div><div class="c" id="B2b" style="height:20px"></div></button></div>
+	<div class="t"><button class="bt" id="B3" style="height:100px;box-sizing:border-box;padding:10px;border-width:5px"><div class="c" id="B3a" style="height:50%"></div></button></div>
+	<div class="t"><button class="bt" id="B4" style="min-height:100px"><div class="c" id="B4a" style="height:50%"></div><div class="c" id="B4b" style="height:20px"></div></button></div>
+	<div class="t"><button class="bt" id="B5" style="height:100px"><div class="c" id="B5a" style="height:150px"></div></button></div>
+	<div class="t"><button class="bt" id="B6" style="height:100px"><div class="c" id="B6a" style="height:20px"></div><div class="c" id="B6b" style="height:50%;position:relative;top:10%"></div></button></div>
+	<div class="t"><button class="bt" id="B7" style="height:100px"><div class="c" id="B7a" style="height:10px;margin-top:10px;margin-bottom:5px"></div></button></div>
+	<div class="t"><button class="bt" id="B8" style="height:100px;position:relative;padding-top:10px"><div class="c" id="B8a" style="position:absolute;height:50%;top:0"></div><div class="c" id="B8b" style="height:20px"></div></button></div>
+	<div class="t" style="display:flex;height:200px;align-items:flex-start"><button class="bt" id="B9" style="height:100px"><div class="c" id="B9a" style="height:50%"></div></button></div>
+	<div class="t"><button class="bt" id="B10" style="height:100px"><span id="B10a" style="display:inline-block;width:30px;height:20px;background:red"></span></button></div>
+	<div class="t"><button class="bt" id="B11" style="height:100px"><div class="c" id="B11a" style="height:50%;margin-top:20px"></div><div class="c" id="B11b" style="height:20px;float:left"></div><div class="c" id="B11c" style="height:5px;clear:left"></div></button></div>
+	<div class="t"><button class="bt" id="B12" style="height:100px;overflow:hidden"><div class="c" id="B12a" style="height:50%"></div></button></div>
+</body>
+</rml>

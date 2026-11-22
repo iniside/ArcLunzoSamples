@@ -1,0 +1,7 @@
+div {
+	display: block;
+}
+
+.kt-row {
+	height: 20px;
+}

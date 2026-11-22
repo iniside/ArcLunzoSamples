@@ -1,0 +1,60 @@
+<rml>
+<head>
+	<title>ArcRmlUI At-Rules Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="AtRulesTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="page">
+		<div class="cell">
+			<span class="label">ninepatch @decorator frame (edge 12px)</span>
+			<div class="np-box"></div>
+		</div>
+
+		<div class="cell">
+			<span class="label">@decorator frame-thin : frame (edge 4px)</span>
+			<div class="np-thin"></div>
+		</div>
+
+		<div class="cell">
+			<span class="label">tiled-horizontal @decorator stripe</span>
+			<div class="stripe-box"></div>
+			<div class="stripe-tall"></div>
+		</div>
+
+		<div class="cell">
+			<span class="label">img sprite / image(sprite) / named image</span>
+			<div class="row">
+				<img class="img-sprite" sprite="icon-red"/>
+				<div class="deco-sprite"></div>
+				<div class="deco-named"></div>
+			</div>
+			<span class="label">red circle, green triangle, blue square</span>
+		</div>
+
+		<div class="cell">
+			<span class="label">@decorator inside @media (yellow diamond)</span>
+			<div class="media-box"></div>
+			<span class="label">rule after rejected @decorator (green bar)</span>
+			<div class="after-reject"></div>
+		</div>
+
+		<div class="cell">
+			<span class="label">sprite 'dup' defined twice (blue wins)</span>
+			<div class="row">
+				<div class="dup-box"></div>
+				<img class="img-sprite" sprite="dup"/>
+			</div>
+		</div>
+
+		<div class="cell" style="width: 620px;">
+			<span class="label">@font-face family 'AtRules Mono' vs default</span>
+			<p class="font-default">Default Space Grotesk 0123 iIl1</p>
+			<p class="font-custom">AtRules Mono 0123 iIl1</p>
+			<p class="font-dup">Space Grotesk normal (first wins)</p>
+			<p class="font-bold">Space Grotesk bold (same file)</p>
+		</div>
+	</div>
+</body>
+</rml>

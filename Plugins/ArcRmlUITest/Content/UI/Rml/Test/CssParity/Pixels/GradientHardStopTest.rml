@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Gradient Hard Stop</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Pixels/GradientHardStopTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="split"></div>
+	<div id="stripes"></div>
+	<div id="diagonal"></div>
+</body>
+</rml>

@@ -1,0 +1,81 @@
+@font-face {
+	font-family: 'Space Grotesk';
+	font-weight: 400;
+	src: /ArcRmlUITest/UI/Rml/Fonts/SpaceGrotesk-Regular.ttf;
+	-rmlui-fallback-face: true;
+}
+
+@font-face {
+	font-family: 'Space Grotesk';
+	font-weight: 500;
+	src: /ArcRmlUITest/UI/Rml/Fonts/SpaceGrotesk-Medium.ttf;
+	-rmlui-fallback-face: true;
+}
+
+@font-face {
+	font-family: 'Space Grotesk';
+	font-weight: 600;
+	src: /ArcRmlUITest/UI/Rml/Fonts/SpaceGrotesk-SemiBold.ttf;
+	-rmlui-fallback-face: true;
+}
+
+@font-face {
+	font-family: 'Space Grotesk';
+	font-weight: 700;
+	src: /ArcRmlUITest/UI/Rml/Fonts/SpaceGrotesk-Bold.ttf;
+	-rmlui-fallback-face: true;
+}
+
+@font-face {
+	font-family: 'JetBrains Mono';
+	font-weight: 400;
+	src: /ArcRmlUITest/UI/Rml/Fonts/JetBrainsMono-Regular.ttf;
+}
+
+@font-face {
+	font-family: 'JetBrains Mono';
+	font-weight: 500;
+	src: /ArcRmlUITest/UI/Rml/Fonts/JetBrainsMono-Medium.ttf;
+}
+
+@font-face {
+	font-family: 'JetBrains Mono';
+	font-weight: 600;
+	src: /ArcRmlUITest/UI/Rml/Fonts/JetBrainsMono-SemiBold.ttf;
+}
+
+@font-face {
+	font-family: 'JetBrains Mono';
+	font-weight: 700;
+	src: /ArcRmlUITest/UI/Rml/Fonts/JetBrainsMono-Bold.ttf;
+}
+
+@font-face {
+	font-family: 'Barlow Condensed';
+	font-weight: 500;
+	src: /ArcRmlUITest/UI/Rml/Fonts/BarlowCondensed-Medium.ttf;
+}
+
+@font-face {
+	font-family: 'Barlow Condensed';
+	font-weight: 600;
+	src: /ArcRmlUITest/UI/Rml/Fonts/BarlowCondensed-SemiBold.ttf;
+}
+
+@font-face {
+	font-family: 'Barlow Condensed';
+	font-weight: 700;
+	src: /ArcRmlUITest/UI/Rml/Fonts/BarlowCondensed-Bold.ttf;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-weight: 400;
+	src: /ArcRmlUITest/UI/Rml/Fonts/Roboto-Regular.ttf;
+}
+
+@font-face {
+	font-family: 'Noto Sans Devanagari';
+	font-weight: 400;
+	src: /ArcRmlUITest/UI/Rml/Fonts/NotoSansDevanagari-Regular.ttf;
+}

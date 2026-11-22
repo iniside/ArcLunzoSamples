@@ -1,0 +1,26 @@
+{
+	"title": "Preview test",
+	"variant": "base",
+	"accent": { "$colour": "#3a86ffff" },
+	"player": {
+		"name": "Aldric",
+		"stats": { "level": 7, "hp": 82.5, "ratio": 0.25 },
+		"items": [
+			{ "name": "Stone Axe", "tint": { "$colour": "#c8a26eff" }, "tags": ["melee", "two-hand"] },
+			{ "name": "Oak Staff", "tint": { "$colour": "#5aa0ffff" }, "tags": ["magic"] },
+			{ "name": "Iron Shield", "tint": { "$colour": "#b0b8c8ff" }, "tags": [] }
+		]
+	},
+	"showWarning": false,
+	"$variants": {
+		"warning": {
+			"variant": "warning",
+			"accent": { "$colour": "#ffbe0bff" },
+			"showWarning": true
+		},
+		"empty": {
+			"variant": "empty",
+			"player": { "name": "Nobody", "stats": { "level": 1, "hp": 0.0, "ratio": 0.0 }, "items": [] }
+		}
+	}
+}

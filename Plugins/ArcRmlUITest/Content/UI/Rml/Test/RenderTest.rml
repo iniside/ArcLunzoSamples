@@ -1,0 +1,33 @@
+<rml>
+<head>
+	<title>ArcRmlUI Render Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="RenderTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="grid">
+		<div class="card"><div class="swatch linear"></div><p>linear-gradient</p></div>
+		<div class="card"><div class="swatch radial"></div><p>radial-gradient</p></div>
+		<div class="card"><div class="swatch conic"></div><p>conic-gradient</p></div>
+		<div class="card"><div class="swatch repeating"></div><p>repeating-linear</p></div>
+		<div class="card"><div class="swatch shadowed"></div><p>box-shadow</p></div>
+		<div class="card"><div class="clip"><div class="clip-content"></div></div><p>rounded overflow clip</p></div>
+		<div class="card"><div class="swatch masked"></div><p>mask-image</p></div>
+		<div class="card"><div class="swatch rotated"></div><p>transform</p></div>
+		<div class="card"><div class="spinner"></div><p>@keyframes</p></div>
+		<div class="card"><div class="swatch filtered"></div><p>filter chain</p></div>
+		<div class="card">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<circle cx="12" cy="12" r="9"/>
+				<path d="M12 3v4M12 17v4M3 12h4M17 12h4"/>
+			</svg>
+			<p>inline svg</p>
+		</div>
+		<div class="card"><input type="text" value="Type here"/><p>text input</p></div>
+	</div>
+	<div class="stripes"></div>
+	<div class="glass"><p>backdrop-filter: blur + saturate over stripes</p></div>
+	<div class="glass scene"><p>backdrop-filter over the scene</p></div>
+</body>
+</rml>

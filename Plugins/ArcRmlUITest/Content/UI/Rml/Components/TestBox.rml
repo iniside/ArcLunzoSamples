@@ -1,0 +1,13 @@
+<component>
+	<prop name="label" default="Box (default label, with spaces)"/>
+	<prop name="value"/>
+	<prop name="tone" default="info"/>
+	<prop name="dataNote"/>
+	<div class="tb" data-class-tb-warn="$tone == 'warn'">
+		<div class="tb-label">{{ $label }}</div>
+		<div class="tb-value" data-if="$value != ''">{{ $value }}</div>
+		<div class="tb-empty" data-if="$value == ''">no value</div>
+		<div class="tb-value" data-if="$dataNote != ''">{{ $dataNote }}</div>
+		<div class="tb-body"><slot/></div>
+	</div>
+</component>

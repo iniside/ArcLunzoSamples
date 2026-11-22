@@ -1,0 +1,29 @@
+<component>
+	<prop name="label" default=""/>
+	<prop name="description" default=""/>
+	<prop name="changed"/>
+	<prop name="disabled"/>
+	<prop name="tag" default=""/>
+	<prop name="tagTone" default="warning"/>
+	<prop name="controlMin" default="260"/>
+	<prop name="autofocus"/>
+	<prop name="nofocus"/>
+	<prop name="steps"/>
+	<prop name="field" default=""/>
+	<div class="dk-settingrow" data-class-changed="$changed" data-class-disabled="$disabled" data-class-focusable="$field != '' &amp;&amp; !$nofocus" data-style-grid-template-columns="'minmax(0, 1fr) minmax(' + $controlMin + 'px, 42%)'" data-attrif-autofocus="$autofocus" data-event-keydown="callIf($steps &amp;&amp; ev.key == 'ArrowLeft', '', 'Stepped', $field, -1); callIf($steps &amp;&amp; ev.key == 'ArrowRight', '', 'Stepped', $field, 1); stopPropagation($field != '' &amp;&amp; (ev.key == 'ArrowLeft' || ev.key == 'ArrowRight'))">
+		<span class="dk-settingrow-dot"></span>
+		<div class="dk-settingrow-main">
+			<div class="dk-settingrow-head">
+				<span class="dk-settingrow-label">{{ $label }}</span>
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Badge" data-if="$tag != ''" label="{{ $tag }}" tone="{{ $tagTone }}"/>
+			</div>
+			<span class="dk-settingrow-desc" data-if="$description != ''">{{ $description }}</span>
+		</div>
+		<div class="dk-settingrow-control">
+			<div class="dk-settingrow-slot"><slot/></div>
+			<div class="dk-settingrow-reset">
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/IconButton" data-if="$changed" icon="/ArcRmlUIDemo/UI/Rml/icons/rotate-ccw.svg" size="sm" disabled="{{ $disabled }}" data-event-click="callIf(!$disabled, '', 'FieldReset', $field); stopPropagation()"/>
+			</div>
+		</div>
+	</div>
+</component>

@@ -1,0 +1,11 @@
+<component>
+	<prop name="kind" default="level"/>
+	<prop name="title" default="Level 39"/>
+	<prop name="sub" default="+2 attribute points"/>
+	<prop name="life" default="3.2"/>
+	<div class="dk-banner" data-style-animation="(($life == 0) ? 'none' : ('hud-banner ' + ($life != 0 ? $life : 3.2) + 's var(--ui-ease) forwards'))">
+		<span class="dk-banner-eye-s" data-class-zone="$kind == 'zone'" data-class-quest="$kind == 'quest'" data-class-achievement="$kind == 'achievement'">{{ ($kind == 'zone' ? 'Entering' : ($kind == 'quest' ? 'Quest completed' : ($kind == 'achievement' ? 'Achievement unlocked' : 'Level up'))) }}</span>
+		<span class="dk-banner-title-s" data-class-zone="$kind == 'zone'" data-class-quest="$kind == 'quest'" data-class-achievement="$kind == 'achievement'">{{ $title }}</span>
+		<span class="dk-banner-sub-s" data-if="$sub != ''">{{ $sub }}</span>
+	</div>
+</component>

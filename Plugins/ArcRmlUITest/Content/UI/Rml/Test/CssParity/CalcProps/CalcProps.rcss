@@ -1,0 +1,369 @@
+:root {
+	--spacing: 0.25rem;
+	--text-xs: 0.75rem;
+	--text-xs--line-height: calc(1 / 0.75);
+	--text-sm: 0.875rem;
+	--text-sm--line-height: calc(1.25 / 0.875);
+	--text-base: 1rem;
+	--text-base--line-height: calc(1.5 / 1);
+	--text-lg: 1.125rem;
+	--text-lg--line-height: calc(1.75 / 1.125);
+	--text-xl: 1.25rem;
+	--text-xl--line-height: calc(1.75 / 1.25);
+	--text-2xl: 1.5rem;
+	--text-2xl--line-height: calc(2 / 1.5);
+	--text-3xl: 1.875rem;
+	--text-3xl--line-height: calc(2.25 / 1.875);
+	--text-4xl: 2.25rem;
+	--text-4xl--line-height: calc(2.5 / 2.25);
+	--text-5xl: 3rem;
+	--text-5xl--line-height: 1;
+	--text-6xl: 3.75rem;
+	--text-6xl--line-height: 1;
+	--text-7xl: 4.5rem;
+	--text-7xl--line-height: 1;
+	--text-8xl: 6rem;
+	--text-8xl--line-height: 1;
+	--text-9xl: 8rem;
+	--text-9xl--line-height: 1;
+	--tracking-tight: -0.025em;
+	--tw-border-style: solid;
+}
+
+body {
+	display: block;
+	font-family: Roboto;
+}
+
+.b {
+	display: block;
+}
+
+.text-xs {
+	font-size: var(--text-xs);
+	line-height: var(--tw-leading, var(--text-xs--line-height));
+}
+
+.text-sm {
+	font-size: var(--text-sm);
+	line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+
+.text-base {
+	font-size: var(--text-base);
+	line-height: var(--tw-leading, var(--text-base--line-height));
+}
+
+.text-lg {
+	font-size: var(--text-lg);
+	line-height: var(--tw-leading, var(--text-lg--line-height));
+}
+
+.text-xl {
+	font-size: var(--text-xl);
+	line-height: var(--tw-leading, var(--text-xl--line-height));
+}
+
+.text-2xl {
+	font-size: var(--text-2xl);
+	line-height: var(--tw-leading, var(--text-2xl--line-height));
+}
+
+.text-3xl {
+	font-size: var(--text-3xl);
+	line-height: var(--tw-leading, var(--text-3xl--line-height));
+}
+
+.text-4xl {
+	font-size: var(--text-4xl);
+	line-height: var(--tw-leading, var(--text-4xl--line-height));
+}
+
+.text-5xl {
+	font-size: var(--text-5xl);
+	line-height: var(--tw-leading, var(--text-5xl--line-height));
+}
+
+.text-6xl {
+	font-size: var(--text-6xl);
+	line-height: var(--tw-leading, var(--text-6xl--line-height));
+}
+
+.text-7xl {
+	font-size: var(--text-7xl);
+	line-height: var(--tw-leading, var(--text-7xl--line-height));
+}
+
+.text-8xl {
+	font-size: var(--text-8xl);
+	line-height: var(--tw-leading, var(--text-8xl--line-height));
+}
+
+.text-9xl {
+	font-size: var(--text-9xl);
+	line-height: var(--tw-leading, var(--text-9xl--line-height));
+}
+
+.text-sm\/6 {
+	font-size: var(--text-sm);
+	line-height: calc(var(--spacing) * 6);
+}
+
+.leading-6 {
+	--tw-leading: calc(var(--spacing) * 6);
+	line-height: calc(var(--spacing) * 6);
+}
+
+.tracking-tight {
+	--tw-tracking: var(--tracking-tight);
+	letter-spacing: var(--tracking-tight);
+}
+
+.-tracking-tight {
+	--tw-tracking: calc(var(--tracking-tight) * -1);
+	letter-spacing: calc(var(--tracking-tight) * -1);
+}
+
+.divide-x-2 > :not(:last-child) {
+	--tw-divide-x-reverse: 0;
+	border-inline-style: var(--tw-border-style);
+	border-inline-start-width: calc(2px * var(--tw-divide-x-reverse));
+	border-inline-end-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
+}
+
+.divide-x-reverse > :not(:last-child) {
+	--tw-divide-x-reverse: 1;
+}
+
+.text-sm-late {
+	font-size: var(--text-sm);
+	line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+
+#more {
+	position: absolute;
+	left: 400px;
+	top: 0;
+	width: 600px;
+	font-size: 16px;
+}
+
+#lh-num {
+	font-size: 10px;
+	line-height: calc(3 / 2);
+}
+
+#lh-num-child {
+	font-size: 20px;
+}
+
+#lh-len {
+	font-size: 10px;
+	line-height: calc(1em + 4px);
+}
+
+#lh-len-child {
+	font-size: 20px;
+}
+
+#lh-pct {
+	font-size: 10px;
+	line-height: calc(100% + 6px);
+}
+
+#tr, #tr1, #tr2, #tr3 {
+	display: block;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.ib {
+	display: inline-block;
+}
+
+#tr-mixed {
+	letter-spacing: calc(0.1em + 1px);
+}
+
+#ls-em, #ls-calc {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+#ls-em {
+	letter-spacing: 0.1em;
+}
+
+#ls-calc {
+	letter-spacing: calc(0.1em + 1px);
+}
+
+#ls-em-child, #ls-calc-child {
+	font-size: 10px;
+}
+
+.ls-big #ls-em {
+	font-size: 30px;
+}
+
+#ls-inh, #ls-unset {
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 0.1em;
+}
+
+#ls-inh-mid, #ls-unset-mid {
+	font-size: 10px;
+}
+
+#ls-inh-child {
+	letter-spacing: inherit;
+}
+
+#ls-unset-child {
+	letter-spacing: unset;
+}
+
+#dx, #ord, #ord2, #dxr {
+	display: flex;
+	height: 10px;
+}
+
+.cell {
+	display: block;
+	width: 50px;
+	height: 10px;
+}
+
+#bw-mixed {
+	width: 50px;
+	height: 10px;
+	font-size: 20px;
+	border-style: solid;
+	border-width: calc(0.1em + 1px);
+}
+
+#bw-neg {
+	width: 50px;
+	height: 10px;
+	border-left-style: solid;
+	border-left-width: calc(2px - 5px);
+	border-right-style: solid;
+	border-right-width: max(1px, 0.25em);
+}
+
+#ord-b {
+	order: calc(4 * -1);
+}
+
+#ord-c {
+	order: calc(0.6);
+}
+
+#ord2-t {
+	order: 1;
+}
+
+#ord2-p {
+	order: calc(0.4);
+}
+
+#ord2-s {
+	order: -1;
+}
+
+#ord2-r {
+	order: calc(-1.5);
+}
+
+#zwrap {
+	position: absolute;
+	left: 1000px;
+	top: 400px;
+	width: 200px;
+	height: 200px;
+	z-index: 0;
+}
+
+.zbox {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+}
+
+#za {
+	left: 0;
+	top: 0;
+	background-color: #ff0000;
+	z-index: calc(1.6);
+}
+
+#zb {
+	left: 30px;
+	top: 0;
+	background-color: #0000ff;
+	z-index: 1;
+}
+
+#zd {
+	left: 100px;
+	top: 0;
+	background-color: #00ff00;
+}
+
+#zc {
+	left: 130px;
+	top: 0;
+	background-color: #ffff00;
+	z-index: calc(10 * -1);
+}
+
+#zf {
+	left: 0;
+	top: 100px;
+	background-color: #0000ff;
+	z-index: 2;
+}
+
+#zg {
+	left: 30px;
+	top: 100px;
+	background-color: #ff0000;
+	z-index: calc(1.4);
+}
+
+#zh {
+	left: 100px;
+	top: 100px;
+	background-color: #ff0000;
+	z-index: calc(1.5);
+}
+
+#zi {
+	left: 130px;
+	top: 100px;
+	background-color: #0000ff;
+	z-index: 1;
+}
+
+.oo {
+	position: absolute;
+	top: 600px;
+	width: 40px;
+	height: 40px;
+	background-color: #00ff00;
+	outline: 2px solid #ff0000;
+	font-size: 10px;
+}
+
+#oo-pos {
+	left: 1000px;
+	outline-offset: calc(0.2em + 2px);
+}
+
+#oo-neg {
+	left: 1100px;
+	outline-offset: calc(2px * -1);
+}
+
+body { margin: 0; }

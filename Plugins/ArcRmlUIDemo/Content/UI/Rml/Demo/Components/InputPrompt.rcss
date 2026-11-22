@@ -1,0 +1,77 @@
+.dk-inputprompt {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--ui-space-2);
+	color: var(--ui-text-muted);
+	font-size: var(--ui-fs-3);
+	font-family: var(--ui-font-body);
+	white-space: nowrap;
+}
+
+.dk-inputprompt.sm {
+	font-size: var(--ui-fs-2);
+}
+
+.dk-inputprompt.disabled {
+	color: var(--ui-text-disabled);
+}
+
+.dk-inputprompt-hotkey {
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+.dk-inputprompt-label {
+	white-space: nowrap;
+}
+
+.dk-inputprompt-cap {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: none;
+	box-sizing: border-box;
+	min-width: 28px;
+	height: 28px;
+	padding: 0 var(--ui-space-2);
+	border-radius: var(--ui-radius-sm);
+	border: 1px solid var(--ui-border-strong);
+	border-bottom-width: 3px;
+	background: var(--ui-surface);
+	color: var(--ui-text);
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+
+.dk-inputprompt-cap.sm {
+	min-width: 22px;
+	height: 22px;
+}
+
+.dk-inputprompt-cap.pad {
+	border-radius: 14px;
+	border-bottom-width: 1px;
+	background: var(--ui-surface-2);
+}
+
+.dk-inputprompt-cap.pad.sm {
+	border-radius: 11px;
+}
+
+.dk-inputprompt-cap.round {
+	padding: 0;
+	border-radius: 50%;
+}
+
+.dk-inputprompt-cap.disabled {
+	border: 1px solid var(--ui-border);
+	color: var(--ui-text-disabled);
+}
+
+.dk-inputprompt-cap.disabled.pad {
+	border-bottom-width: 1px;
+}

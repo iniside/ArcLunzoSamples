@@ -1,0 +1,1 @@
+.row{display:block;width:40px;height:10px}#mid-1{background-color:#040404}@layer components;@layer utilities{#mid-2{background-color:#050505}}#mid-3{background-color:#060606}

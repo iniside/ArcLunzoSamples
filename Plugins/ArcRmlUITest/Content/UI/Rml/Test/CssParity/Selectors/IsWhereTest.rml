@@ -1,0 +1,22 @@
+<rml>
+<head>
+	<title>IsWhereTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Selectors/IsWhere.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="space" class="space-y-4"><div id="space-a" class="box"></div><div id="space-b" class="box"></div><div id="space-c" class="box"></div></div>
+	<div id="space-half" class="space-y-1.5"><div id="space-half-a" class="box"></div><div id="space-half-b" class="box"></div><div id="space-half-c" class="box"></div></div>
+	<div id="divide" class="divide-y divide-line"><div id="divide-a" class="box"></div><div id="divide-b" class="box"></div><div id="divide-c" class="box"></div></div>
+	<div id="group" class="group"><div id="group-lead" class="box"></div><div id="group-target" class="box group-hover:bg-brand"></div></div>
+	<div id="group-idle" class="group"><div id="group-idle-target" class="box group-hover:bg-brand"></div></div>
+	<div class="a"><p id="where-p"></p></div>
+	<div class="b"><span id="is-span" class="box x"></span></div>
+	<div id="nest-n3" class="box nest n3"></div>
+	<div id="nest-n1" class="box nest n1"></div>
+	<div id="forgiving" class="box forgiving"></div>
+	<div id="esc-plain" class="box esc"></div>
+	<div id="esc-md" class="box esc md:x"></div>
+</body>
+</rml>

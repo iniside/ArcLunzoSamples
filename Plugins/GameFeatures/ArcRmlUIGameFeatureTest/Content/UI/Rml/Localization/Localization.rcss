@@ -1,0 +1,99 @@
+/* Barlow has no Chinese or Arabic letters; RmlUi takes a glyph a face lacks from the fallback faces. */
+@font-face {
+	font-family: 'Droid Sans Fallback';
+	src: ../Fonts/DroidSansFallback.ttf;
+	-rmlui-fallback-face: true;
+}
+
+@font-face {
+	font-family: 'Noto Naskh Arabic UI';
+	src: ../Fonts/NotoNaskhArabicUI-Regular.ttf;
+	-rmlui-fallback-face: true;
+}
+
+@font-face {
+	font-family: 'Barlow Condensed';
+	font-weight: 500;
+	src: ../Fonts/BarlowCondensed-Medium.ttf;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(8, 12, 20, 0.85);
+	font-family: 'Barlow Condensed';
+	color: #e8ecf4;
+}
+
+.loc-panel {
+	display: flex;
+	flex-direction: column;
+	width: 720px;
+	padding: 32px 48px;
+	border: 2px solid #3d7bd9;
+	border-radius: 12px;
+	background-color: #141c2b;
+}
+
+.loc-title {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+
+.loc-text {
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+
+.loc-items {
+	display: flex;
+	gap: 24px;
+	margin-bottom: 16px;
+}
+
+.loc-item {
+	font-size: 22px;
+	color: #f2c94c;
+}
+
+.loc-plain {
+	font-size: 18px;
+	color: #a9b4c6;
+	margin-bottom: 20px;
+}
+
+.loc-culture {
+	font-size: 18px;
+	color: #a9b4c6;
+	margin-bottom: 8px;
+}
+
+.loc-menu {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.loc-button {
+	font-size: 18px;
+	padding: 6px 18px;
+	border: 2px solid #3d7bd9;
+	border-radius: 6px;
+	background-color: #1c2840;
+}
+
+.loc-button:hover {
+	background-color: #2a3b5e;
+}
+
+.loc-button.selected {
+	background-color: #3d7bd9;
+}

@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>MarginCollapsePFirstTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body id="mcp-body">
+	<p id="mcp-p">Paragraph</p>
+	<ul id="mcp-ul"><li id="mcp-li">Last item</li></ul>
+</body>
+</rml>

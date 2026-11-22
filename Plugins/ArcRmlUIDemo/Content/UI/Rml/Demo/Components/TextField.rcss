@@ -1,0 +1,105 @@
+.dk-textfield {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-1);
+	width: 100%;
+	min-width: 180px;
+}
+
+.dk-textfield-label {
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text-muted);
+}
+
+.dk-textfield-box {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-2);
+	min-height: 44px;
+	box-sizing: border-box;
+	padding: 0 var(--ui-space-3);
+	background: var(--ui-surface);
+	border: 1px solid var(--ui-border-strong);
+	border-radius: var(--ui-radius-md);
+	box-shadow: none;
+	cursor: text;
+	transition: border-color var(--ui-dur-fast) var(--ui-ease);
+	--h-bd: var(--ui-accent);
+}
+
+.dk-textfield-box:hover {
+	border-color: var(--h-bd);
+}
+
+.dk-textfield-box:focus-within {
+	border: 1px solid var(--ui-focus);
+	box-shadow: var(--ui-focus-ring);
+	--h-bd: var(--ui-focus);
+}
+
+.dk-textfield-box.error {
+	border: 1px solid var(--ui-danger);
+	--h-bd: var(--ui-danger);
+}
+
+.dk-textfield-box.error:focus-within {
+	box-shadow: 0 0 0 2px var(--ui-bg), 0 0 0 4px var(--ui-danger);
+}
+
+.dk-textfield-box.disabled {
+	background: var(--ui-surface-2);
+	border: 1px solid var(--ui-border);
+	cursor: default;
+	--h-bd: var(--ui-border);
+}
+
+.dk-textfield-input {
+	appearance: none;
+	flex: 1;
+	min-width: 0;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	background: transparent;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: var(--ui-fs-3);
+	font-family: var(--ui-font-body);
+	color: var(--ui-text);
+}
+
+.dk-textfield-input::placeholder {
+	color: var(--ui-text-muted);
+}
+
+.dk-textfield-box.disabled .dk-textfield-input {
+	color: var(--ui-text-disabled);
+}
+
+.dk-textfield-icon, .dk-textfield-clear {
+	display: inline-flex;
+	flex: none;
+	color: var(--ui-text-muted);
+}
+
+.dk-textfield-erroricon {
+	display: inline-flex;
+	flex: none;
+	color: var(--ui-danger);
+}
+
+.dk-textfield-icon svg, .dk-textfield-clear svg, .dk-textfield-erroricon svg {
+	display: block;
+}
+
+.dk-textfield-error {
+	font-size: var(--ui-fs-2);
+	color: var(--ui-danger);
+}
+
+.dk-textfield-hint {
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text-muted);
+}

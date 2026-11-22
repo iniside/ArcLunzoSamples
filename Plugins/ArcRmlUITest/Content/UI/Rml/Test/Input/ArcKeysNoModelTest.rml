@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>ArcKeys Without View Model Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="ak-back">{{ ArcKeys.back }}</div>
+</body>
+</rml>

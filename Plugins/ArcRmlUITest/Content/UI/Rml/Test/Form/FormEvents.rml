@@ -1,0 +1,51 @@
+<rml>
+<head>
+	<title>FormEvents</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/FormEvents.rcss"/>
+	<viewmodel name="fe" preview="Preview/FormEventsTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="fe">
+	<div class="row"><input id="fe-cb" type="checkbox" value="yes" data-event-input="call('', 'In', 'cb', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'cb', ev.value, ev.checked)"/></div>
+	<div class="row"><label id="fe-cb-label">Wrapped <input id="fe-cb-wrapped" type="checkbox" data-event-input="call('', 'In', 'cbw', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'cbw', ev.value, ev.checked)"/></label></div>
+	<div class="row"><input id="fe-cb-off" type="checkbox" disabled="" data-event-input="call('', 'In', 'cboff', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'cboff', ev.value, ev.checked)"/></div>
+	<div class="row"><input id="fe-cb-bound" type="checkbox" data-attrif-checked="chk" data-event-input="call('', 'In', 'cbb', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'cbb', ev.value, ev.checked)"/></div>
+	<div class="row">
+		<input id="fe-r1" type="radio" name="fe-g" value="r1" data-event-input="call('', 'In', 'r1', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'r1', ev.value, ev.checked)"/>
+		<input id="fe-r2" type="radio" name="fe-g" value="r2" checked="" data-event-input="call('', 'In', 'r2', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'r2', ev.value, ev.checked)"/>
+		<input id="fe-r3" type="radio" name="fe-g" value="r3" data-attrif-checked="rad" data-event-input="call('', 'In', 'r3', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'r3', ev.value, ev.checked)"/>
+		<label id="fe-r1-label" for="fe-r1">R1</label>
+	</div>
+	<div class="row">
+		<select id="fe-sel" data-event-input="call('', 'In', 'sel', ev.value)" data-event-change="call('', 'Ch', 'sel', ev.value)">
+			<option value="a">Apple</option>
+			<option value="b">Banana</option>
+			<option value="c">Cherry</option>
+		</select>
+		<select id="fe-sel-bound" data-attr-value="sel" data-event-input="call('', 'In', 'selb', ev.value)" data-event-change="call('', 'Ch', 'selb', ev.value)">
+			<option value="a">Apple</option>
+			<option value="b">Banana</option>
+			<option value="c">Cherry</option>
+		</select>
+	</div>
+	<div id="fe-text-row" class="row" data-event-change="call('', 'Up', 'text', ev.value)"><input id="fe-text" type="text" value="ab" data-event-input="call('', 'In', 'text', ev.value)" data-event-change="call('', 'Ch', 'text', ev.value)" data-event-blur="call('', 'Bl', 'text')"/></div>
+	<div class="row"><input id="fe-text-bound" type="text" data-attr-value="txt" data-event-input="call('', 'In', 'textb', ev.value)" data-event-change="call('', 'Ch', 'textb', ev.value)"/></div>
+	<div class="row"><input id="fe-text-ro" type="text" value="ab" readonly="" data-event-input="call('', 'In', 'textro', ev.value)" data-event-change="call('', 'Ch', 'textro', ev.value)"/></div>
+	<div class="row"><input id="fe-text-off" type="text" value="ab" disabled="" data-event-input="call('', 'In', 'textoff', ev.value)" data-event-change="call('', 'Ch', 'textoff', ev.value)"/></div>
+	<div class="row"><input id="fe-kind" type="text" value="ab" data-attr-type="kind" data-attr-value="txt" data-event-input="call('', 'In', 'kind', ev.value)" data-event-change="call('', 'Ch', 'kind', ev.value)"/></div>
+	<div class="row"><textarea id="fe-ta" data-event-input="call('', 'In', 'ta', ev.value, ev.linebreak)" data-event-change="call('', 'Ch', 'ta', ev.value)">ab</textarea></div>
+	<div class="row"><div id="fe-after" class="btn">after</div></div>
+	<div class="row">
+		<select id="fe-sel-off" disabled="" data-event-input="call('', 'In', 'seloff', ev.value)" data-event-change="call('', 'Ch', 'seloff', ev.value)">
+			<option value="a">Apple</option>
+			<option value="b">Banana</option>
+		</select>
+		<input id="fe-r-off" type="radio" name="fe-g2" value="roff" disabled="" data-event-input="call('', 'In', 'roff', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'roff', ev.value, ev.checked)"/>
+	</div>
+	<div class="row"><textarea id="fe-ta-ro" readonly="" data-event-input="call('', 'In', 'taro', ev.value, ev.linebreak)" data-event-change="call('', 'Ch', 'taro', ev.value)">ab</textarea></div>
+	<div class="row"><input id="fe-cb-for" type="checkbox" data-event-input="call('', 'In', 'cbf', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'cbf', ev.value, ev.checked)"/> <label id="fe-cb-for-label" for="fe-cb-for">For label</label></div>
+	<div class="row"><input id="fe-cb-dis" type="checkbox" value="d" data-attrif-disabled="off" data-event-input="call('', 'In', 'cbd', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'cbd', ev.value, ev.checked)"/> <label id="fe-cb-dis-label" for="fe-cb-dis">Bound disabled</label></div>
+	<div class="row"><label id="fe-rm-label" for="fe-rm">Removed control</label> <input id="fe-rm" type="checkbox" data-if="keep" data-event-input="call('', 'In', 'rm', ev.value, ev.checked)" data-event-change="call('', 'Ch', 'rm', ev.value, ev.checked)"/></div>
+</body>
+</rml>

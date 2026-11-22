@@ -1,0 +1,9 @@
+<component>
+	<prop name="x" default="50"/>
+	<prop name="y" default="50"/>
+	<prop name="value" default="0"/>
+	<prop name="kind" default="normal"/>
+	<prop name="drift" default="0"/>
+	<prop name="duration" default="1.2"/>
+	<span class="dk-damage-number" data-class-crit="$kind == 'crit'" data-class-heal="$kind == 'heal'" data-class-dot="$kind == 'dot'" data-class-miss="$kind == 'miss'" data-class-block="$kind == 'block'" data-class-immune="$kind == 'immune'" data-class-taken="$kind == 'taken'" data-class-drift-neg1="$drift == -1" data-class-drift-1="$drift == 1" data-style-left="($x + '%')" data-style-top="($y + '%')" data-style-animation-duration="('' + ($duration != 0 ? $duration : 1.2) + 's')">{{ $kind == 'miss' ? 'Miss' : ($kind == 'block' ? 'Block' : ($kind == 'immune' ? 'Immune' : (($kind == 'heal' ? '+' : ($kind == 'taken' ? '−' : '')) + (($value * 1) | arcnum) + ($kind == 'crit' ? '!' : '')))) }}</span>
+</component>

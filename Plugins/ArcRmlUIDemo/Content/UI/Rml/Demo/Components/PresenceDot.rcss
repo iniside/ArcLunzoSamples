@@ -1,0 +1,21 @@
+.dk-presencedot {
+	display: inline-block;
+	flex: none;
+	box-sizing: border-box;
+	border-radius: 50%;
+	background: var(--ui-online);
+	border: none;
+}
+
+.dk-presencedot.away {
+	background: var(--ui-away);
+}
+
+.dk-presencedot.busy {
+	background: var(--ui-busy);
+}
+
+.dk-presencedot.offline {
+	background: transparent;
+	border: 2px solid var(--ui-offline);
+}

@@ -1,0 +1,16 @@
+<rml>
+<head>
+	<title>Preloaded</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="KeepAlive.rcss"/>
+</head>
+<body>
+	<div class="ka-panel">
+		<h1 class="ka-title">Preloaded</h1>
+		<p class="ka-text">This screen has no keep-alive meta. After Preload it is loaded while hidden, an open shows it at once and every close parks it. Without Preload it opens and closes like any screen.</p>
+		<button id="ka-preloaded-ok" class="ka-button" autofocus="">Back closes it</button>
+	</div>
+</body>
+</rml>

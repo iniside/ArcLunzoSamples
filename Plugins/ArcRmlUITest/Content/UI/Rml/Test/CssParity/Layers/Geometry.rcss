@@ -1,0 +1,30 @@
+body > div {
+	position: absolute;
+	width: 120px;
+	height: 60px;
+}
+
+#sizeafter { left: 10px; top: 10px; background: linear-gradient(#e6194b, #e6194b) no-repeat; background-size: 50px 20px; }
+#cover { left: 150px; top: 10px; background: url(Cover.png) no-repeat center / cover; }
+#contain { left: 290px; top: 10px; background: url(Contain.png) no-repeat center / contain; }
+#rightbottom { left: 430px; top: 10px; background: linear-gradient(#3cb44b, #3cb44b) no-repeat; background-size: 30px 20px; background-position: right 10px bottom 5px; }
+#pos3bg { left: 570px; top: 10px; background: linear-gradient(#ffe119, #ffe119) no-repeat right 10px bottom / 30px 20px; }
+#pos3mask { left: 710px; top: 10px; background: #4363d8; mask: linear-gradient(#000 0 0) no-repeat right 10px bottom / 30px 20px; }
+#pos3maskpos { left: 850px; top: 10px; background: #f58231; mask-image: linear-gradient(#000 0 0); mask-repeat: no-repeat; mask-size: 30px 20px; mask-position: right 10px bottom; }
+#space { left: 990px; top: 10px; background: linear-gradient(#911eb4, #911eb4); background-size: 25px 22px; background-repeat: space; }
+#spaceone { left: 1130px; top: 10px; background: linear-gradient(#46f0f0, #46f0f0); background-size: 70px 30px; background-repeat: space; background-position: 10px 5px; }
+
+#round { left: 10px; top: 90px; background: linear-gradient(90deg, #f032e6 50%, rgba(0, 0, 0, 0) 50%); background-size: 45px 25px; background-repeat: round; }
+#repeatx { left: 150px; top: 90px; background: linear-gradient(#bcf60c, #bcf60c) repeat-x; background-size: 20px 10px; }
+#twolayers { left: 290px; top: 90px; background-image: linear-gradient(#fabebe, #fabebe), linear-gradient(#008080, #008080), linear-gradient(#e6beff, #e6beff); background-size: 20px 10px, 40px 20px, 60px 40px; background-position: 0 0, 50px 30px; background-repeat: no-repeat; }
+#glass { left: 430px; top: 90px; height: 40px; background: linear-gradient(90deg, #9a6324 0%, #9a6324 100%) bottom / 100% 1px no-repeat; }
+#urlmask { left: 570px; top: 90px; background: #800000; mask-image: url(Wide.png); mask-size: 50%; mask-repeat: no-repeat; }
+#maskshort { left: 710px; top: 90px; background: #aaffc3; mask: linear-gradient(#000 0 0) no-repeat 10px 20px / 30px 40px; }
+#masklong { left: 850px; top: 90px; background: #808000; mask-image: linear-gradient(#000 0 0); mask-repeat: no-repeat; mask-position: 10px 20px; mask-size: 30px 40px; }
+#maskfixed { left: 990px; top: 90px; background: #ffd8b1; mask: url(MaskFixed.png) fixed; }
+#urlflip { left: 1130px; top: 90px; background: url(Flip.png flip-horizontal); }
+
+#addc { left: 10px; top: 170px; background: #000075; mask: linear-gradient(#000 0 0) no-repeat 0 0 / 50% 100% add, linear-gradient(#000 0 0) no-repeat 0 0 / 100% 50%; }
+#subc { left: 150px; top: 170px; background: #a9a9a9; mask: linear-gradient(#000 0 0) no-repeat 0 0 / 50% 100% subtract, linear-gradient(#000 0 0) no-repeat 0 0 / 100% 50%; }
+#interc { left: 290px; top: 170px; background: #e91e63; mask: linear-gradient(#000 0 0) no-repeat 0 0 / 50% 100% intersect, linear-gradient(#000 0 0) no-repeat 0 0 / 100% 50%; }
+#exclc { left: 430px; top: 170px; background: #00bcd4; mask: linear-gradient(#000 0 0) no-repeat 0 0 / 50% 100% exclude, linear-gradient(#000 0 0) no-repeat 0 0 / 100% 50%; }

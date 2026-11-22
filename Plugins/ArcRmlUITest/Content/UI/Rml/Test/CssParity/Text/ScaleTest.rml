@@ -1,0 +1,18 @@
+<rml>
+<head>
+	<title>Scale Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/ScaleTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="sz-shoulders" class="line sz-a">Shoulders</div>
+	<div id="sz-main-hand" class="line sz-b">Main Hand</div>
+	<div id="sz-count" class="line sz-c">1,385</div>
+	<div id="sz-kerned" class="line sz-d">AVATAR Type Wave To</div>
+	<div id="big-single" class="line big-single">H</div>
+	<div id="big-pair" class="line big-pair">HH</div>
+	<div id="zero-spaced" class="line zero zero-spaced">abc</div>
+	<div id="zero-plain" class="line zero">abc</div>
+</body>
+</rml>

@@ -1,0 +1,59 @@
+.dk-rewardchip {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--ui-space-1);
+	min-height: 24px;
+	padding: 0 var(--ui-space-2);
+	box-sizing: border-box;
+	border-radius: var(--ui-radius-sm);
+	background: var(--ui-surface-2);
+	border: 1px solid var(--ui-border);
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	font-weight: 600;
+	color: var(--ui-text);
+	opacity: 1;
+	--c: var(--ui-accent);
+}
+
+.dk-rewardchip.common {
+	--c: var(--ui-rarity-common);
+}
+
+.dk-rewardchip.uncommon {
+	--c: var(--ui-rarity-uncommon);
+}
+
+.dk-rewardchip.rare {
+	--c: var(--ui-rarity-rare);
+}
+
+.dk-rewardchip.epic {
+	--c: var(--ui-rarity-epic);
+}
+
+.dk-rewardchip.legendary {
+	--c: var(--ui-rarity-legendary);
+}
+
+.dk-rewardchip.has-rarity {
+	border: 1px solid color-mix(in srgb, var(--c) 45%, transparent);
+}
+
+.dk-rewardchip.claimed {
+	opacity: 0.5;
+}
+
+.dk-rewardchip-icon {
+	display: inline-flex;
+	flex: none;
+	color: var(--c);
+}
+
+.dk-rewardchip-icon svg {
+	display: block;
+}
+
+.dk-rewardchip-label {
+	white-space: nowrap;
+}

@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+}
+
+div {
+	display: block;
+}
+
+.box {
+	height: 10px;
+	width: 40px;
+	background-color: #808080;
+}
+
+.ltr\:w-50:where(:dir(ltr), [dir="ltr"], [dir="ltr"] *) { width: 50px; }
+.rtl\:w-50:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) { width: 50px; }
+.plain-ltr:dir(ltr) { width: 50px; }
+.plain-rtl:dir(rtl) { width: 50px; }
+.upper:dir(LTR) { width: 50px; }
+.other:dir(auto) { width: 50px; }
+.bad:dir(1) { width: 50px; }
+.bad-string:dir("ltr") { width: 50px; }
+div.forgive:where(:dir(1), .forgive) { width: 50px; }
+
+div.spec:dir(ltr) { width: 60px; }
+.spec.spec2 { width: 50px; }
+
+.zero:where(:dir(ltr)) { width: 60px; }
+.zero { width: 50px; }

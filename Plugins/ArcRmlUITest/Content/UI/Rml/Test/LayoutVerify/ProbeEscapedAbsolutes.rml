@@ -1,0 +1,23 @@
+<rml>
+<head>
+	<title>ProbeEscapedAbsolutes</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/LayoutVerify/ProbeReuse.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+<input type="radio" name="w" value="a" id="r-a" class="rb rb-a" checked=""/>
+<input type="radio" name="w" value="b" id="r-b" class="rb rb-b"/>
+<input type="radio" name="w" value="c" id="r-c" class="rb rb-c"/>
+<input type="radio" name="w" value="anim" id="r-anim" class="rb rb-anim"/>
+<div class="host">
+<div class="ib"><div class="fr"><div class="t">Escaped absolute host text that wraps with width</div><div class="abs">abs</div></div><div class="fr"><span class="t">second</span><div class="abs2">abs2</div></div></div>
+<div class="fx"><div class="w2"><div class="fr"><div class="t">flex item escaped absolute text wraps</div><div class="abs">abs</div></div></div></div>
+</div>
+<div class="chg">changing sibling text</div>
+<div class="py py-oh"><div class="wib">inline-block text<div class="pa"></div><div class="pa2"></div></div><div class="wfl">float text<div class="pa"></div></div><div class="wfit">fit text<div class="pa pa-r"></div><div class="pa2"></div></div><div class="wib"><div class="dd">deep box text<div class="pa pa-b"></div></div></div></div>
+<div class="py py-fr"><div class="wib">inline-block text<div class="pa"></div><div class="pa2"></div></div><div class="wfl">float text<div class="pa"></div></div><div class="wfit">fit text<div class="pa pa-r"></div><div class="pa2"></div></div><div class="wib"><div class="dd">deep box text<div class="pa pa-b"></div></div></div></div>
+<div class="pfx"><div class="chg chg2">flex sibling</div><div class="py py-fi"><div class="wib">inline-block text<div class="pa"></div><div class="pa2"></div></div><div class="wfl">float text<div class="pa"></div></div><div class="wfit">fit text<div class="pa pa-r"></div><div class="pa2"></div></div><div class="wib"><div class="dd">deep box text<div class="pa pa-b"></div></div></div></div></div>
+<div class="pz"><div class="py py-oh py-an"><div class="wib">inline-block text<div class="pa"></div><div class="pa2"></div></div><div class="wfl">float text<div class="pa"></div></div><div class="wfit">fit text<div class="pa pa-r"></div><div class="pa2"></div></div><div class="wib"><div class="dd">deep box text<div class="pa pa-b"></div></div></div></div></div>
+</body>
+</rml>

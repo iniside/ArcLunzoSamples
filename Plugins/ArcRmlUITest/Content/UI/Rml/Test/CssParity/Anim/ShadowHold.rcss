@@ -1,0 +1,54 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.box {
+	display: block;
+	width: 40px;
+	height: 16px;
+	margin: 12px;
+	color: red;
+}
+
+.text {
+	display: block;
+	height: 24px;
+	color: red;
+}
+
+#h-text span { color: yellow; }
+.go .box, .go .text { color: lime; }
+
+@keyframes hf { from { box-shadow: 0 0 0 0 blue; } to { box-shadow: 0 0 8px 0 currentcolor; } }
+#h-fwd { animation: hf 1s linear 0s 1 forwards; }
+#h-paused { animation: hf 1s linear -0.5s 1 paused; }
+
+@keyframes hb { from { background-color: blue; } to { background-color: currentcolor; } }
+#h-bg-fwd { animation: hb 1s linear 0s 1 forwards; }
+#h-bg-paused { animation: hb 1s linear -0.5s 1 paused; }
+
+@keyframes hd { from { filter: drop-shadow(0 0 0 blue); } to { filter: drop-shadow(0 0 4px currentcolor); } }
+#h-filter-fwd { animation: hd 1s linear 0s 1 forwards; }
+#h-filter-paused { animation: hd 1s linear -0.5s 1 paused; }
+
+@keyframes ht { from { text-shadow: 0 0 0 blue; } to { text-shadow: 2px 2px 0 currentcolor; } }
+#h-text { animation: ht 1s linear -0.5s 1 paused; }
+
+@keyframes hg { from { decorator: linear-gradient(blue, blue); } to { decorator: linear-gradient(currentcolor, currentcolor); } }
+#h-grad { animation: hg 1s linear -0.5s 1 paused; }
+
+@keyframes ha { from { background-color: currentcolor; } to { background-color: color-mix(in srgb, red, blue); } }
+#h-mix-a { animation: ha 1s linear -0.5s 1 paused; }
+
+@keyframes hm { from { background-color: color-mix(in srgb, currentcolor 50%, red); } to { background-color: blue; } }
+#h-mix-b { animation: hm 1s linear -0.5s 1 paused; }
+
+@keyframes hk { from { background-color: currentcolor; } to { background-color: oklab(0.5 0.1 0.1); } }
+#h-oklab { animation: hk 1s linear -0.5s 1 paused; }
+
+@keyframes hs { from { box-shadow: 0 0 0 0 currentcolor; } to { box-shadow: 0 0 0 0 color-mix(in srgb, red, blue); } }
+#h-shadow-mix { animation: hs 1s linear -0.5s 1 paused; }

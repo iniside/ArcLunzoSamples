@@ -1,0 +1,26 @@
+<component>
+	<prop name="value" default=""/>
+	<prop name="placeholder" default=""/>
+	<prop name="options" default="[]"/>
+	<prop name="selectedIndex" default="-1"/>
+	<prop name="highlightIndex" default=""/>
+	<prop name="open"/>
+	<prop name="error"/>
+	<prop name="disabled"/>
+	<prop name="nofocus"/>
+	<prop name="field" default=""/>
+	<div class="dk-dropdown">
+		<div class="dk-dropdown-box" data-class-open="$open &amp;&amp; !$disabled" data-class-error="$error" data-class-disabled="$disabled" data-class-focusable="$field != '' &amp;&amp; !$nofocus">
+			<span class="dk-dropdown-value" data-class-placeholder="$value == ''" data-class-disabled="$disabled">{{ $value != '' ? $value : $placeholder }}</span>
+			<i class="dk-dropdown-chevron" data-class-open="$open" data-class-disabled="$disabled"><svg src="/ArcRmlUIDemo/UI/Rml/icons/chevron-down.svg" width="18" height="18" stroke-width="2"/></i>
+		</div>
+		<div class="dk-dropdown-list" data-if="$open &amp;&amp; !$disabled">
+			<div class="dk-dropdown-options" data-focus-area="dropdown" data-focus-contain="" data-focus-enter="" data-event-back="call('', 'CloseDropdown', $field); stopPropagation()" data-event-blur="callIf(!ev.related_in_owner, '', 'CloseDropdown', $field)">
+				<div class="dk-dropdown-option" data-for="DropdownO, DropdownO_index : $options" data-class-hi="DropdownO_index == ($highlightIndex != '' ? $highlightIndex : $selectedIndex)" data-class-focusable="$field != ''" data-attrif-autofocus="DropdownO_index == $selectedIndex" data-event-click="call('', 'Selected', $field, DropdownO_index); stopPropagation()">
+					<span class="dk-dropdown-option-label">{{ DropdownO }}</span>
+					<i class="dk-dropdown-check" data-if="DropdownO_index == $selectedIndex"><svg src="/ArcRmlUIDemo/UI/Rml/icons/check.svg" width="16" height="16" stroke-width="2.5"/></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</component>

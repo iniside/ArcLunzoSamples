@@ -1,0 +1,19 @@
+<rml>
+<head>
+	<title>View model source: manual</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="ViewModelScreens.rcss"/>
+	<viewmodel name="screen" class="/Script/ArcRmlUITest.ArcRmlScreenViewModel" manual/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="screen">
+	<div class="card">
+		<div class="title">Source: manual</div>
+		<div class="source">SetViewModel before OpenDocument</div>
+		<div class="row"><div class="key">Label</div><div class="value">{{ Label }}</div></div>
+		<div class="row"><div class="key">Level</div><div class="value">{{ Level }}</div></div>
+		<div class="row"><div class="key">Gold</div><div class="value">{{ Gold }}</div></div>
+		<div class="row"><div class="key">Resolved</div><div class="value">{{ ArcResolved ? 'yes' : 'no' }}</div></div>
+	</div>
+</body>
+</rml>

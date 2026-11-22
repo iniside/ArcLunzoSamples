@@ -1,0 +1,44 @@
+<component>
+	<prop name="item" default="[]"/>
+	<prop name="header" default=""/>
+	<prop name="sellLabel" default=""/>
+	<prop name="width" default="360"/>
+	<prop name="dim"/>
+	<div class="dk-itemtooltip" data-class-uncommon="$item.Rarity == 'uncommon'" data-class-rare="$item.Rarity == 'rare'" data-class-epic="$item.Rarity == 'epic'" data-class-legendary="$item.Rarity == 'legendary'" data-class-dim="$dim" data-style-max-width="$width + 'px'">
+		<span class="dk-itemtooltip-header" data-if="$header != ''">{{ $header }}</span>
+		<div class="dk-itemtooltip-title">
+			<span class="dk-itemtooltip-name">{{ $item.Name }}</span>
+			<div class="dk-itemtooltip-meta">
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/RarityBadge" rarity="{{ $item.Rarity }}" label="{{ $item.RarityLabel }}"/>
+				<span class="dk-itemtooltip-type">{{ $item.Type }}</span>
+			</div>
+		</div>
+		<div class="dk-itemtooltip-primary" data-if="$item.Primary.size &gt; 0">
+			<div class="dk-itemtooltip-primary-row" data-for="ItemTooltipPr : $item.Primary">
+				<span class="dk-itemtooltip-primary-value">{{ ItemTooltipPr.Value }}</span>
+				<span class="dk-itemtooltip-primary-label">{{ ItemTooltipPr.Label }}</span>
+				<span class="dk-itemtooltip-delta" data-if="ItemTooltipPr.Delta != ''" data-class-good="ItemTooltipPr.bDeltaGood">{{ ItemTooltipPr.Delta }}</span>
+			</div>
+		</div>
+		<div class="dk-itemtooltip-stats">
+			<div class="dk-itemtooltip-stat" data-for="ItemTooltipSt : $item.Stats">
+				<span class="dk-itemtooltip-stat-text"><span class="dk-itemtooltip-stat-value">{{ ItemTooltipSt.Value }}</span> {{ ItemTooltipSt.Label }}</span>
+				<span class="dk-itemtooltip-delta" data-if="ItemTooltipSt.Delta != ''" data-class-good="ItemTooltipSt.bDeltaGood">{{ ItemTooltipSt.Delta }}</span>
+			</div>
+		</div>
+		<div class="dk-itemtooltip-set" data-if="$item.bHasSet">
+			<span class="dk-itemtooltip-set-name">{{ $item.SetName }} <span class="dk-itemtooltip-set-progress">({{ $item.SetProgress }})</span></span>
+			<span class="dk-itemtooltip-set-line" data-for="ItemTooltipSl : $item.SetLines" data-class-active="ItemTooltipSl.bActive">{{ ItemTooltipSl.Label }}</span>
+		</div>
+		<span class="dk-itemtooltip-flavour" data-if="$item.Flavour != ''">{{ $item.Flavour }}</span>
+		<div class="dk-itemtooltip-foot">
+			<div class="dk-itemtooltip-reqs">
+				<span class="dk-itemtooltip-req" data-for="ItemTooltipRq : $item.Reqs" data-class-unmet="!ItemTooltipRq.bMet">{{ ItemTooltipRq.Label }}</span>
+			</div>
+			<div class="dk-itemtooltip-sell" data-if="$item.SellItems.size &gt; 0">
+				<span class="dk-itemtooltip-sell-label">{{ $sellLabel }}</span>
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/CurrencyDisplay" items="{{ $item.SellItems }}" size="sm"/>
+			</div>
+		</div>
+	</div>
+</component>

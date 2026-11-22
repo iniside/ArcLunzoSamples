@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Body Back Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="AreaBackTest.rcss"/>
+	<viewmodel name="bbt" preview="Preview/BodyBackTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="bbt" data-event-back="call('', 'BodyBack'); stopPropagation()">
+	<div id="bbt-text">{{ label }}</div>
+</body>
+</rml>

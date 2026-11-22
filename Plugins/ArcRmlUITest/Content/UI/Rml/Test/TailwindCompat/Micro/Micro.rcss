@@ -1,0 +1,31 @@
+.a1 { box-shadow: 0 0 #0000; }
+.a2 { box-shadow: 0 0 #0000, 0 0 #0000; }
+.a3 { box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); }
+.a4 { box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); }
+.a5 { box-shadow: 0 0 0 calc(2px + 0px) currentcolor; }
+.a6 { box-shadow: 0 0 0 2px currentcolor; }
+.a7 { box-shadow: 0 1px 2px 0 oklab(from rgb(0 0 0 / 0.05) l a b / 100%); }
+.a8 { box-shadow:  0 0 0 2px currentcolor; }
+.a9 { box-shadow: , 0 0 0 2px red; }
+.b1 { border-radius: calc(infinity * 1px); }
+.b2 { opacity: 50%; }
+.b3 { opacity: 0.5; }
+.c1 { line-height: calc(1.25 / 0.875); }
+.c2 { line-height: calc(0.25rem * 6); }
+.c3 { line-height: 1.4285; }
+.d1 { --tw-x: 0 0 #0000; box-shadow: var(--tw-x), var(--tw-x); }
+.e1 { transform: skewX(2deg); }
+.e2 { transform:   skewX(2deg); }
+.f1 { color: color-mix(in oklab, red 50%, transparent); }
+.f2 { color: color-mix(in srgb, oklch(63.7% 0.237 25.331) 50%, transparent); }
+.g1 { background-image: linear-gradient(to right, var(--a), var(--b)); }
+.g2 { background-image: linear-gradient(to right in oklab, red 0%, blue 100%); }
+.g3 { background-image: linear-gradient(to right, red 0%, blue 100%); }
+.h1 { filter: blur(8px); }
+.h2 { filter:  blur(8px)    ; }
+.h3 { backdrop-filter: blur(8px) ; }
+.i1 { width: fit-content; }
+.i2 { height: 100dvh; }
+.i3 { max-width: 65ch; }
+.j1 { font-weight: bolder; }
+.k1 { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'/%3e"); }

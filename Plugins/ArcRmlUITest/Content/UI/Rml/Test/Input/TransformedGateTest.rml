@@ -1,0 +1,38 @@
+<rml>
+<head>
+	<title>Transformed Gate Test</title>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<link type="text/rcss" href="TransformedGateTest.rcss"/>
+	<viewmodel name="tg" preview="Preview/TransformedGateTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="tg">
+	<div id="tg-translate" data-event-click="call('', 'Clicked', 'tg-translate')"></div>
+	<div id="tg-rotate" data-event-click="call('', 'Clicked', 'tg-rotate')"></div>
+	<div id="tg-scale-anc">
+		<div id="tg-scale" data-event-click="call('', 'Clicked', 'tg-scale')"></div>
+	</div>
+	<div id="tg-clip-panel">
+		<div id="tg-clip-btn" data-event-click="call('', 'Clicked', 'tg-clip-btn')"></div>
+	</div>
+	<div id="tg-fit-panel">
+		<div id="tg-fit-btn" data-event-click="call('', 'Clicked', 'tg-fit-btn')"></div>
+	</div>
+	<div id="tg-radius-panel">
+		<div id="tg-radius-btn" data-event-click="call('', 'Clicked', 'tg-radius-btn')"></div>
+	</div>
+	<div id="tg-list">
+		<div class="tg-row"></div>
+		<div class="tg-row"></div>
+		<div class="tg-row"></div>
+		<div class="tg-row" id="tg-list-row" data-event-click="call('', 'Clicked', 'tg-list-row')"></div>
+		<div class="tg-row"></div>
+		<div class="tg-row"></div>
+	</div>
+	<div id="tg-wrap"><a id="tg-link" data-event-click="call('', 'Clicked', 'tg-link')">MMMMMMMM MMMMMMMM</a></div>
+	<div id="tg-persp" data-event-click="call('', 'Clicked', 'tg-persp')"></div>
+	<div id="tg-edge" data-event-click="call('', 'Clicked', 'tg-edge')"></div>
+	<div id="tg-plain" data-event-click="call('', 'Clicked', 'tg-plain')"></div>
+	<div id="tg-mirror" data-event-click="call('', 'Clicked', 'tg-mirror')"></div>
+	<div id="tg-frac" data-event-click="call('', 'Clicked', 'tg-frac')"></div>
+</body>
+</rml>

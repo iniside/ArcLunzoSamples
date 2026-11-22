@@ -1,0 +1,13 @@
+body {
+	margin: 0;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+}
+
+.box { width: 200px; height: 10px; margin-bottom: 4px; background-color: #dde3ee; }
+.inner { width: 20px; height: 10px; background-color: #cc3366; }
+.\32 xl\:p-4 { padding: 16px; }
+.\31 0 { width: 100px; }
+.\31 0 .inner { width: 30px; }
+.\31  .inner { width: 50px; }
+.\40 md { width: 60px; }

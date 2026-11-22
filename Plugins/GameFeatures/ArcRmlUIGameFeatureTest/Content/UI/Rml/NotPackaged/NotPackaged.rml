@@ -1,0 +1,10 @@
+<rml>
+<head>
+	<title>ArcRmlUI Game Feature Test Not Packaged</title>
+	<meta name="layer" content="UI.Layer.Modal"/>
+	<meta name="input-mode" content="game"/>
+</head>
+<body>
+	<span>This document must not be in the package.</span>
+</body>
+</rml>

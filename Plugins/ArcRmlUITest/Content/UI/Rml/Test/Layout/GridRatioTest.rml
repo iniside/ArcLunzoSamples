@@ -1,0 +1,32 @@
+<rml>
+<head>
+	<title>Grid Ratio Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Layout/GridRatioTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="g-a-auto" class="grid"><div id="a-auto" class="r"></div><div></div></div>
+	<div id="g-a-start" class="grid"><div id="a-start" class="r"></div><div></div></div>
+	<div id="g-a-zero" class="grid"><div id="a-zero" class="r"></div><div></div></div>
+	<div id="g-col-auto" class="grid"><div id="col-auto" class="r"></div><div></div></div>
+	<div id="g-col-fixed" class="grid"><div id="col-fixed" class="r"></div><div></div></div>
+	<div id="g-margin10" class="grid"><div id="margin10" class="r"></div><div></div></div>
+	<div id="g-margin-left10" class="grid"><div id="margin-left10" class="r"></div><div></div></div>
+	<div id="g-padded" class="grid"><div id="padded" class="r"></div><div></div></div>
+	<div id="g-border-box" class="grid"><div id="border-box" class="r"></div><div></div></div>
+	<div id="g-content" class="grid"><div id="content" class="r"><div class="inner"></div></div><div></div></div>
+	<div id="g-span2" class="grid"><div id="span2" class="r"></div><div></div></div>
+	<div id="g-row-minmax" class="grid"><div id="row-minmax" class="r"></div><div></div></div>
+	<div id="g-stretch-zero" class="grid"><div id="stretch-zero" class="r"></div><div></div></div>
+	<div id="g-min-h130" class="grid"><div id="min-h130" class="r"></div><div></div></div>
+	<div id="g-min-h50" class="grid"><div id="min-h50" class="r"></div><div></div></div>
+	<div id="g-max-h100" class="grid"><div id="max-h100" class="r"></div><div></div></div>
+	<div id="g-max-w200" class="grid"><div id="max-w200" class="r"></div><div></div></div>
+	<div id="g-s-margin10" class="grid"><div id="s-margin10" class="r"></div><div></div></div>
+	<div id="g-s-padded" class="grid"><div id="s-padded" class="r"></div><div></div></div>
+	<div id="g-s-max-h100" class="grid"><div id="s-max-h100" class="r"></div><div></div></div>
+	<div id="g-center" class="grid"><div id="center" class="r"></div><div></div></div>
+	<div id="g-items-start" class="grid"><div id="items-start" class="r"></div><div></div></div>
+</body>
+</rml>

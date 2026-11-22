@@ -1,0 +1,75 @@
+@keyframes hud-blink { 0% { opacity: 1; } 100% { opacity: 0.35; } }
+
+.dk-buff-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--ui-space-1);
+	justify-content: flex-start;
+}
+
+.dk-buff-row.end {
+	justify-content: flex-end;
+}
+
+.dk-buff-row-cell {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--hud-space-xs);
+}
+
+.dk-buff-row-cell.expiring {
+	animation: hud-blink var(--hud-dur-slow) steps(2) infinite;
+}
+
+.dk-buff-row-frame {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	border-radius: var(--hud-radius-sm);
+	--dc: var(--ui-danger);
+	border: 2px solid var(--hud-stroke);
+	background: linear-gradient(180deg, var(--hud-plate-2), var(--hud-plate));
+	color: var(--hud-icon);
+	overflow: hidden;
+}
+
+.dk-buff-row-frame.debuff {
+	border: 2px solid var(--dc);
+	background: color-mix(in srgb, var(--dc) 28%, var(--hud-plate));
+}
+
+.dk-buff-row-icon {
+	display: inline-flex;
+}
+
+.dk-buff-row-sweep {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	--cd: 0%;
+	background: conic-gradient(color-mix(in srgb, var(--hud-shade) 60%, transparent) 0%, color-mix(in srgb, var(--hud-shade) 60%, transparent) var(--cd), transparent var(--cd), transparent 100%);
+}
+
+.dk-buff-row-stack {
+	position: absolute;
+	right: 1px;
+	bottom: 0px;
+	font-family: var(--ui-font-mono);
+	font-size: var(--hud-fs-xs);
+	font-weight: 700;
+	color: var(--hud-text);
+	text-shadow: var(--hud-text-shadow);
+}
+
+.dk-buff-row-time {
+	font-family: var(--ui-font-mono);
+	font-size: var(--hud-fs-xs);
+	color: var(--hud-text);
+	text-shadow: var(--hud-text-shadow);
+	min-height: 12px;
+}

@@ -1,0 +1,14 @@
+<component>
+	<prop name="title" default="Slots"/>
+	<prop name="rows" default="[]"/>
+	<prop name="note"/>
+	<div class="ts">
+		<div class="ts-title">{{ $title }} ({{ $rows.size }} rows)</div>
+		<div class="ts-slot"><div class="ts-tag">A</div><slot/></div>
+		<div class="ts-slot"><div class="ts-tag">B</div><slot/></div>
+		<div class="ts-rows">
+			<div class="ts-row" data-for="row, i : $rows">r{{ i }}</div>
+		</div>
+		<dc-import name="/ArcRmlUITest/UI/Rml/Components/TestBox" label="{{ $title }}" value="{{ $note }}" tone="warn"/>
+	</div>
+</component>

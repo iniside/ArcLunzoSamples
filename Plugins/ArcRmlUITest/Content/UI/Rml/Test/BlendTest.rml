@@ -1,0 +1,46 @@
+<rml>
+<head>
+	<title>ArcRmlUI Blend Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="BlendTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="bg white" style="left: 100px; top: 120px;">
+		<div class="sw k75" style="left: 20px; top: 20px;"></div>
+		<div class="sw glasstop" style="left: 140px; top: 20px;"></div>
+		<div class="sw blue" style="left: 260px; top: 20px;"><div class="sw red50" style="left: 0px; top: 0px;"></div></div>
+		<div class="sw glassbot" style="left: 380px; top: 20px;"></div>
+		<div class="sw k50" style="left: 500px; top: 20px;"></div>
+	</div>
+	<div class="bg grey" style="left: 100px; top: 280px;">
+		<div class="sw k75" style="left: 20px; top: 20px;"></div>
+		<div class="sw glasstop" style="left: 140px; top: 20px;"></div>
+		<div class="sw blue" style="left: 260px; top: 20px;"><div class="sw red50" style="left: 0px; top: 0px;"></div></div>
+		<div class="sw glassbot" style="left: 380px; top: 20px;"></div>
+		<div class="sw k50" style="left: 500px; top: 20px;"></div>
+	</div>
+	<div class="bg orange" style="left: 100px; top: 440px;">
+		<div class="sw bright08" style="left: 20px; top: 20px;"></div>
+		<div class="sw sat15" style="left: 140px; top: 20px;"></div>
+		<div class="sw satbright" style="left: 260px; top: 20px;"></div>
+		<div class="sw glassnoblur" style="left: 380px; top: 20px;"></div>
+		<div class="sw glassfull" style="left: 500px; top: 20px;"></div>
+	</div>
+	<div class="bg white" style="left: 100px; top: 600px;">
+		<div class="sw bright08" style="left: 20px; top: 20px;"></div>
+		<div class="sw sat15" style="left: 140px; top: 20px;"></div>
+		<div class="sw satbright" style="left: 260px; top: 20px;"></div>
+		<div class="sw glassnoblur" style="left: 380px; top: 20px;"></div>
+		<div class="sw glassfull" style="left: 500px; top: 20px;"></div>
+	</div>
+	<div class="sw k75" style="left: 820px; top: 140px;"></div>
+	<div class="sw bright08" style="left: 940px; top: 140px;"></div>
+	<div class="sw glassnoblur" style="left: 1060px; top: 140px;"></div>
+	<div class="sw glassfull" style="left: 1180px; top: 140px;"></div>
+	<div class="sw k75" style="left: 820px; top: 700px;"></div>
+	<div class="sw bright08" style="left: 940px; top: 700px;"></div>
+	<div class="sw glassnoblur" style="left: 1060px; top: 700px;"></div>
+	<div class="sw glassfull" style="left: 1180px; top: 700px;"></div>
+</body>
+</rml>

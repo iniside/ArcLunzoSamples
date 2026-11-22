@@ -1,0 +1,135 @@
+body {
+	margin: 0;
+}
+
+div {
+	display: block;
+}
+
+input {
+	display: block;
+	width: 200px;
+	height: 20px;
+	margin: 0 0 10px 0;
+	padding: 0;
+	border: 0;
+}
+
+slidertrack {
+	height: 3px;
+	visibility: hidden;
+	background-color: rgb(255, 0, 0);
+}
+
+sliderbar {
+	width: 40px;
+	visibility: hidden;
+	background-color: rgb(255, 0, 0);
+}
+
+sliderprogress {
+	height: 2px;
+	visibility: hidden;
+	background-color: rgb(255, 0, 0);
+}
+
+input[type=range] > sliderbar {
+	height: 4px;
+}
+
+.none {
+	appearance: none;
+}
+
+.wk-none {
+	-webkit-appearance: none;
+}
+
+.later-auto {
+	appearance: none;
+	-webkit-appearance: auto;
+}
+
+.later-none {
+	-webkit-appearance: auto;
+	appearance: none;
+}
+
+.styled::-webkit-slider-runnable-track {
+	height: 6px;
+	background-color: rgb(0, 0, 255);
+}
+
+.styled::-webkit-slider-thumb {
+	appearance: none;
+	width: 16px;
+	height: 16px;
+	background-color: rgb(0, 128, 0);
+}
+
+.styled::-webkit-slider-thumb:hover {
+	background-color: rgb(255, 165, 0);
+}
+
+#rp-id::-webkit-slider-thumb {
+	width: 24px;
+}
+
+.acc {
+	accent-color: rgb(255, 0, 0);
+	appearance: none;
+}
+
+.app-auto {
+	appearance: auto;
+}
+
+.app-inherit {
+	appearance: inherit;
+}
+
+.sup {
+	height: 0;
+}
+
+@supports (accent-color: auto) {
+	#sup-accent-auto {
+		height: 10px;
+	}
+}
+
+@supports (accent-color: rgb(1, 2, 3)) {
+	#sup-accent-color {
+		height: 10px;
+	}
+}
+
+@supports (appearance: none) {
+	#sup-appearance {
+		height: 10px;
+	}
+}
+
+@supports (-webkit-appearance: none) {
+	#sup-wk-appearance {
+		height: 10px;
+	}
+}
+
+@supports selector(::-webkit-slider-thumb) {
+	#sup-thumb {
+		height: 10px;
+	}
+}
+
+@supports selector(::-webkit-slider-runnable-track) {
+	#sup-track {
+		height: 10px;
+	}
+}
+
+@supports selector(input::-webkit-slider-thumb:hover) {
+	#sup-thumb-hover {
+		height: 10px;
+	}
+}

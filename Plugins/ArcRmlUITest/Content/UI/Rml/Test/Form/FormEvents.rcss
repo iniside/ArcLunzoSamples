@@ -1,0 +1,14 @@
+body {
+	margin: 0;
+}
+
+.row {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.btn {
+	display: inline-block;
+	tab-index: auto;
+	nav: auto;
+}

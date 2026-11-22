@@ -1,0 +1,11 @@
+<component>
+	<prop name="label" default="Section"/>
+	<prop name="size" default="sm"/>
+	<prop name="align" default="between"/>
+	<prop name="meta" default=""/>
+	<div class="sectionlabel" data-style-justify-content="$align == 'center' ? 'center' : 'space-between'">
+		<span class="sectionlabel-sm" data-if="$size != 'lg'">{{ $label }}</span>
+		<span class="sectionlabel-lg" data-if="$size == 'lg'">{{ $label }}</span>
+		<span class="sectionlabel-meta" data-if="$meta != ''">{{ $meta }}</span>
+	</div>
+</component>

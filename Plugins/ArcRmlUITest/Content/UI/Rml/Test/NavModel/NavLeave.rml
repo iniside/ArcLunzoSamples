@@ -1,0 +1,33 @@
+<rml>
+<head>
+	<title>Nav model leave test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="hide-lower" content="true"/>
+	<link type="text/rcss" href="NavModel.rcss"/>
+	<viewmodel name="nm" preview="Preview/NavModel.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="nm" data-event-navnotarget="call('', 'NoTarget', ev.direction, ev.area, ev.target_area)">
+<div class="nm-root">
+	<div class="nm-area" style="left: 40px; top: 40px;" data-focus-area="list" data-focus-primary="">
+		<div class="nm-label">list (primary)</div>
+		<div id="l1" class="nm-btn" autofocus="">List 1</div>
+		<div id="l2" class="nm-btn">List 2</div>
+		<div id="l3" class="nm-btn">List 3</div>
+	</div>
+	<div class="nm-area" style="left: 520px; top: 40px;" data-focus-area="detail" data-focus-parent="list">
+		<div class="nm-label">detail (parent list)</div>
+		<div id="d1" class="nm-btn nm-vertical">Detail 1 (nav: vertical)</div>
+		<div id="d2" class="nm-btn">Detail 2</div>
+	</div>
+	<div class="nm-area" style="left: 40px; top: 360px;" data-focus-area="pop" data-focus-contain="">
+		<div class="nm-label">pop (contain)</div>
+		<div id="p1" class="nm-btn">Pop 1</div>
+	</div>
+	<div class="nm-area" style="left: 520px; top: 360px;" data-focus-area="guard">
+		<div class="nm-label">guard (cancels navnotarget)</div>
+		<div id="g1" class="nm-btn" data-event-navnotarget="call('', 'Cancelled', ev.direction, ev.area, ev.target_area); stopPropagation()">Guard 1</div>
+	</div>
+</div>
+</body>
+</rml>

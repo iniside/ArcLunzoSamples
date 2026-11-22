@@ -1,0 +1,20 @@
+#mct-flex {
+	display: flex;
+	align-items: flex-start;
+}
+
+.mct-item {
+	width: 200px;
+}
+
+.mct-big {
+	margin-top: 40px;
+}
+
+#mct-added {
+	margin-top: 12px;
+}
+
+#mct-after {
+	display: flow-root;
+}

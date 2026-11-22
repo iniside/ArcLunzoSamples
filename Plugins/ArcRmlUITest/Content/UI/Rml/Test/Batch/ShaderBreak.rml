@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>Batch Shader Break</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="Batch.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="r" style="left: 20px; top: 20px;"></div>
+	<div class="r a" style="left: 70px; top: 20px;"></div>
+	<div class="grad" style="left: 140px; top: 20px;"></div>
+	<div class="r" style="left: 200px; top: 20px;"></div>
+	<div class="r a" style="left: 250px; top: 20px;"></div>
+</body>
+</rml>

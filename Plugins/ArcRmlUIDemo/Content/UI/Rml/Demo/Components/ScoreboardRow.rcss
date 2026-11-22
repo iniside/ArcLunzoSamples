@@ -1,0 +1,123 @@
+.dk-scoreboardrow-header {
+	display: grid;
+	grid-template-columns: 32px minmax(0, 1fr) repeat(5, minmax(40px, 60px));
+	align-items: center;
+	column-gap: var(--ui-space-2);
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 var(--ui-space-3);
+	min-height: 32px;
+	border-bottom: 1px solid var(--ui-border);
+}
+
+.dk-scoreboardrow-headcell {
+	display: contents;
+}
+
+.dk-scoreboardrow-head {
+	font-family: var(--ui-font-mono);
+	font-size: 11px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--ui-text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-scoreboardrow-head-right {
+	text-align: right;
+}
+
+.dk-scoreboardrow {
+	display: grid;
+	grid-template-columns: 32px minmax(0, 1fr) repeat(5, minmax(40px, 60px));
+	align-items: center;
+	column-gap: var(--ui-space-2);
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 var(--ui-space-3);
+	min-height: 48px;
+	border-radius: var(--ui-radius-sm);
+	border: 1px solid transparent;
+	background: transparent;
+	box-shadow: none;
+	opacity: 1;
+	transition: background-color var(--ui-dur-fast) var(--ui-ease);
+	--tc: var(--ui-accent);
+	--h-bg: color-mix(in srgb, var(--ui-surface-2) 60%, transparent);
+}
+
+.dk-scoreboardrow.danger {
+	--tc: var(--ui-danger);
+}
+
+.dk-scoreboardrow.local {
+	border: 1px solid var(--tc);
+	background: linear-gradient(90deg, color-mix(in srgb, var(--tc) 26%, transparent), color-mix(in srgb, var(--tc) 8%, transparent));
+	--h-bg: linear-gradient(90deg, color-mix(in srgb, var(--tc) 32%, transparent), color-mix(in srgb, var(--tc) 12%, transparent));
+}
+
+.dk-scoreboardrow.disconnected {
+	opacity: 0.5;
+}
+
+.dk-scoreboardrow:hover {
+	background: var(--h-bg);
+}
+
+.dk-scoreboardrow-rank {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-2);
+	font-weight: 600;
+	color: var(--ui-text-muted);
+}
+
+.dk-scoreboardrow-player {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-3);
+	min-width: 0;
+}
+
+.dk-scoreboardrow-name {
+	font-size: var(--ui-fs-3);
+	font-weight: 600;
+	color: var(--ui-text);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-width: 0;
+}
+
+.dk-scoreboardrow-mvp {
+	display: inline-flex;
+	flex: none;
+	color: var(--ui-rarity-legendary);
+}
+
+.dk-scoreboardrow-mvp svg {
+	display: block;
+}
+
+.dk-scoreboardrow-cell {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-2);
+	font-weight: 400;
+	color: var(--ui-text-muted);
+	text-align: right;
+	white-space: nowrap;
+}
+
+.dk-scoreboardrow-cell.hi {
+	font-weight: 600;
+	color: var(--ui-text);
+}
+
+.dk-scoreboardrow-ping.mid {
+	color: var(--ui-warning);
+}
+
+.dk-scoreboardrow-ping.high {
+	color: var(--ui-danger);
+}

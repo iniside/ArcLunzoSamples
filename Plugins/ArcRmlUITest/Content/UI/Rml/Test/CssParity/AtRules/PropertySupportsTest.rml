@@ -1,0 +1,27 @@
+<rml>
+<head>
+	<title>PropertySupportsTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/PropertySupports.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/PropertySupportsOther.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="pb-dashed" class="outer border border-dashed"><div id="pb-dashed-child" class="inner border"></div></div>
+	<div id="pb-none" class="outer border border-none-var"><div id="pb-none-child" class="inner border"></div></div>
+	<div id="reg-parent" class="reg-set"><div id="reg-child" class="reg-read"></div></div>
+	<div id="reg-initial" class="reg-read reg-initial"></div>
+	<div id="reg-inherit-parent" class="reg-set"><div id="reg-inherit" class="reg-read reg-inherit"></div></div>
+	<div id="reg-grand" class="reg-set"><div id="reg-mid"><div id="reg-inherit-grand" class="reg-read reg-inherit"></div></div></div>
+	<div id="unreg-initial" class="unreg-initial"></div>
+	<div id="other-sheet" class="other-sheet"></div>
+	<div id="sup-grid" class="box sup-grid"></div>
+	<div id="sup-moz" class="box sup-moz"></div>
+	<div id="sup-not" class="box sup-not"></div>
+	<div id="sup-and" class="box sup-and"></div>
+	<div id="sup-or" class="box sup-or"></div>
+	<div id="sup-selector" class="box sup-selector"></div>
+	<div id="sup-unknown-selector" class="box sup-unknown-selector"></div>
+	<div id="start" class="box start"></div>
+</body>
+</rml>

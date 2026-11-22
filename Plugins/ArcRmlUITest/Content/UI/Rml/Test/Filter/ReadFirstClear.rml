@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title>Read first clear</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="ReadFirstClear.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="band"></div>
+	<div id="blur" class="e"></div>
+	<div id="opacity" class="e"></div>
+	<div id="matrix" class="e"></div>
+	<div id="drop" class="e"></div>
+	<div id="mask" class="e"></div>
+	<div id="ctl"></div>
+</body>
+</rml>

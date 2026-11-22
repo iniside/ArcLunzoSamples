@@ -1,0 +1,30 @@
+<rml>
+<head>
+	<title>Sizing Keywords Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Layout/SizingKeywords.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="cb"><div id="sk-min" class="box w-min"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb"><div id="sk-max" class="box w-max"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb"><div id="sk-fit" class="box w-fit"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb narrow"><div id="sk-fit-narrow" class="box w-fit"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb"><div id="sk-minw" class="box w20 minw-min"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb"><div id="sk-maxw" class="box maxw-max"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb"><div id="sk-maxw-min" class="box w-max maxw-min"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb"><div id="sk-border" class="box w-max border-box"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb"><div id="sk-inline-size" class="box is-min"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb pos"><div id="sk-abs" class="box abs w-fit"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb"><div id="sk-parent" class="ib-parent"><div id="sk-child" class="box w-min"><span class="ib a"></span> <span class="ib b"></span></div></div></div>
+	<div class="cb"><div id="sk-h-fit" class="box hbox h-fit"><div class="tall"></div></div></div>
+	<div class="cb"><div id="sk-h-min" class="box hbox h20 minh-min"><div class="tall"></div></div></div>
+	<div class="cb"><div id="sk-h-max" class="box hbox h500 maxh-max"><div class="tall"></div></div></div>
+	<div class="cb"><div id="sk-h-minfit" class="box hbox h100 minh-fit"><div class="tall"></div></div></div>
+	<div class="cb flex"><div id="sk-flex-min" class="box w-min"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb flex column"><div id="sk-flex-col-fit" class="box w-fit"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb flex h100"><div id="sk-flex-h-fit" class="box h-fit"><div class="tall"></div></div></div>
+	<div class="cb flex column narrow"><div id="sk-flex-minw" class="box minw-max"><span class="ib a"></span> <span class="ib b"></span></div></div>
+	<div class="cb grid"><div id="sk-grid-min" class="box w-min"><span class="ib a"></span> <span class="ib b"></span></div></div>
+</body>
+</rml>

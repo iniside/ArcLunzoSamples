@@ -1,0 +1,7 @@
+<component>
+	<prop name="status" default="online"/>
+	<prop name="size" default="10"/>
+	<prop name="ring" default="true"/>
+	<prop name="ringColor" default=""/>
+	<span class="dk-presencedot" data-class-away="$status == 'away'" data-class-busy="$status == 'busy'" data-class-offline="$status == 'offline'" data-style-width="$size + 'px'" data-style-height="$size + 'px'" data-style-box-shadow="$ring ? '0 0 0 2px ' + ($ringColor != '' ? $ringColor : 'var(--ui-bg)') : 'none'"></span>
+</component>

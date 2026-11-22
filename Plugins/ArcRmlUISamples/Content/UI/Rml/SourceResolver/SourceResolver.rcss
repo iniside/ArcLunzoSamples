@@ -1,0 +1,32 @@
+.sr-panel {
+	position: absolute;
+	left: 80px;
+	top: 80px;
+	width: 520px;
+	padding: 24px 32px;
+	background-color: rgba(20, 24, 32, 0.9);
+	border-radius: 8px;
+}
+
+.sr-title {
+	display: block;
+	font-size: 36px;
+	margin-bottom: 12px;
+}
+
+.sr-row {
+	display: block;
+	margin: 6px 0;
+}
+
+.sr-button {
+	margin-top: 16px;
+	padding: 8px 20px;
+	border-radius: 4px;
+	background-color: #3a4456;
+	color: #e8e8e8;
+}
+
+.sr-button:hover {
+	background-color: #4d5a72;
+}

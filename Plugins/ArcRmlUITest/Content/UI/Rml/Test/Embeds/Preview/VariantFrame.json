@@ -1,0 +1,8 @@
+{
+	"title": "Frame Base",
+	"$variants": {
+		"alt": {
+			"title": "Frame Alt"
+		}
+	}
+}

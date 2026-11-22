@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title>UserAgentDialogTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/UserAgent/UserAgentDialog.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="ud-before" class="before"></div>
+	<dialog id="ud-open" open="open" class="max576">Sizing keywords give the dialog its fit-content width: the smaller of its max-content width and the available width, here limited by its max-width of 576 pixels, so this sentence wraps.</dialog>
+	<dialog id="ud-closed">Closed</dialog>
+	<dialog id="ud-short" open="open" class="second"><div id="ud-short-text">Short</div></dialog>
+	<fieldset id="ud-fieldset"><div id="ud-fieldset-block" class="block300"></div></fieldset>
+	<div class="narrow"><fieldset id="ud-fieldset-min"><div id="ud-fieldset-min-block" class="block300"></div></fieldset></div>
+	<fieldset id="ud-fieldset-legend"><legend id="ud-legend">Legend</legend><div class="block300"></div></fieldset>
+</body>
+</rml>

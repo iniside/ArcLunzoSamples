@@ -1,0 +1,19 @@
+.dk-talentlink {
+	position: absolute;
+	height: 2px;
+	transform-origin: 0 50%;
+	border-radius: 2px;
+	z-index: 0;
+	pointer-events: none;
+	background: linear-gradient(var(--ui-border-strong), var(--ui-border-strong));
+	box-shadow: none;
+	opacity: 0.6;
+}
+
+.dk-talentlink.active {
+	height: 4px;
+	border-radius: 4px;
+	background: linear-gradient(90deg, var(--ui-accent), color-mix(in srgb, var(--ui-accent) 70%, var(--ui-tint)), var(--ui-accent));
+	box-shadow: var(--ui-glow);
+	opacity: 1;
+}

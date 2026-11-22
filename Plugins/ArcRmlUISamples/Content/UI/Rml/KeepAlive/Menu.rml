@@ -1,0 +1,22 @@
+<rml>
+<head>
+	<title>Keep alive</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="KeepAlive.rcss"/>
+	<viewmodel name="menu" class="/Script/ArcRmlUISamples.ArcRmlSamplesKeepAliveMenuViewModel" create="true"/>
+</head>
+<body data-model="menu">
+	<div class="ka-panel">
+		<h1 class="ka-title">Keep alive</h1>
+		<div class="ka-column">
+			<button id="ka-preload" class="ka-button" autofocus="" data-event-click="call('', 'Preload')">Preload</button>
+			<button id="ka-open-kept" class="ka-button" data-event-click="call('', 'OpenKept')">Open kept</button>
+			<button id="ka-open-preloaded" class="ka-button" data-event-click="call('', 'OpenPreloaded')">Open preloaded</button>
+			<button id="ka-discard" class="ka-button" data-event-click="call('', 'DiscardBoth')">Discard both</button>
+		</div>
+		<p class="ka-hint">Back closes an opened screen and returns here.</p>
+	</div>
+</body>
+</rml>

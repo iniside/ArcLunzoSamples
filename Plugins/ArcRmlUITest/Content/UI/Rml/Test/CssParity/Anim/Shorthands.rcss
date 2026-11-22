@@ -1,0 +1,41 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.row {
+	display: block;
+	width: 100px;
+	height: 20px;
+	margin-bottom: 4px;
+}
+
+@keyframes grow {
+	from { width: 200px; }
+	to { width: 400px; }
+}
+
+#s-trans {
+	transition: width 1s linear 0.5s allow-discrete;
+}
+
+body.go #s-trans {
+	width: 200px;
+}
+
+#s-anim {
+	animation: grow 1s linear 0.5s 2 alternate both;
+}
+
+#s-two {
+	transition: width 1s linear 0.5s, height 2s linear;
+	transition-duration: 4s;
+}
+
+body.go #s-two {
+	width: 200px;
+	height: 120px;
+}

@@ -1,0 +1,11 @@
+#sf-hover {
+	height: 40px;
+}
+
+#sf-hover:hover {
+	background-color: #336699;
+}
+
+#st-a, #st-b {
+	background-color: #123456;
+}

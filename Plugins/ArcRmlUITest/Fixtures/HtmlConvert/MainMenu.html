@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="sc-dc-ready" data-theme="dark"><head><style>
+    .sc-placeholder{background:color-mix(in srgb,currentColor 8%,transparent);border:1px solid color-mix(in srgb,currentColor 50%,transparent);border-radius:2px;box-sizing:border-box;overflow:hidden}
+    @keyframes sc-shine{0%{background-position:100% 50%}100%{background-position:0% 50%}}
+    html.sc-dc-streaming .sc-placeholder:nth-child(n+9 of .sc-placeholder){animation:none}
+    .sc-logic-error{position:absolute;top:8px;left:8px;max-width:60ch;padding:6px 10px;background:#b00020;color:#fff;font:12px/1.4 ui-monospace,monospace}
+    @media print {
+      @page { margin: 0.5cm; }
+      figure, table { break-inside: avoid; }
+      *, *::before, *::after { print-color-adjust: exact; }
+    }
+  </style><style>
+    :root{--mm-bg:#0b0d12;--mm-accent:#e3a33b;--mm-text:#eef0f4;--mm-muted:#8b93a1}
+    body{margin:0;height:100%;background:var(--mm-bg);color:var(--mm-text);font-family:'Space Grotesk',sans-serif}
+    #dc-root{position:relative;height:100%;background-image:url(assets/menu-bg.png);background-size:cover}
+    .mm-title{font-size:64px;letter-spacing:.08em;text-transform:uppercase}
+    .mm-list{display:flex;flex-direction:column;gap:6px;width:320px}
+    .mm-item{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:6px;color:var(--mm-text)}
+    .mm-item:hover{background:color-mix(in srgb,var(--mm-accent) 18%,transparent)}
+    .mm-item svg{width:20px;height:20px}
+    .mm-foot{position:absolute;bottom:16px;left:24px;color:var(--mm-muted);font-size:12px}
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Main Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo.svg">
+  <script src="support.js"></script>
+</head><body><div id="dc-root" data-screen-label="Main menu"><div class="sc-host" data-sc-name="MainMenu" data-dc-tpl="0" data-props="{&quot;version&quot;:&quot;0.4&quot;}">
+<div class="mm-shell" data-dc-tpl="1">
+  <img src="assets/logo.svg" alt="" width="96" height="96" data-dc-tpl="2">
+  <h1 class="mm-title" data-dc-tpl="3">Arc&nbsp;Game</h1>
+  <nav class="mm-list" data-dc-tpl="4">
+    <div class="sc-host mm-item" data-sc-name="MenuItem" data-action="open:/ArcRmlUITest/UI/Rml/Play.rml" data-dc-tpl="5" onclick="dc.go('play')"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="lucide" data-lucide="play" data-rendered="true"><polygon points="7 4 19 12 7 20 7 4"></polygon></svg><span>Play</span></div>
+    <div class="sc-host mm-item" data-sc-name="MenuItem" data-action="open:/ArcRmlUITest/UI/Rml/Settings.rml" data-dc-tpl="5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="lucide" data-lucide="settings" data-rendered="true"><circle cx="12" cy="12" r="3"></circle><circle cx="12" cy="12" r="8"></circle></svg><span>Settings</span></div>
+    <div class="sc-host mm-item" data-sc-name="MenuItem" data-action="close" data-dc-tpl="5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="lucide" data-lucide="log-out" data-rendered="true"><rect x="3" y="4" width="10" height="16" rx="1"></rect><line x1="10" y1="12" x2="21" y2="12"></line></svg><span>Quit</span></div>
+  </nav>
+  <div class="mm-foot" data-dc-tpl="6">Build 0.4 &middot; &copy; 2026 Arc</div>
+</div>
+</div></div>
+<script data-dc-script="">window.dc && dc.mount(document.getElementById('dc-root'));</script>
+</body></html>

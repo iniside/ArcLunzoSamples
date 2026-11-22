@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>First screen</title>
+	<meta name="layer" content="UI.Layer.Game"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="FirstScreen.rcss"/>
+</head>
+<body>
+	<div class="fs-panel">
+		<h1 class="fs-title">Hello from ArcRmlUI</h1>
+		<p>This document has no view model. Game code opens and closes it.</p>
+	</div>
+</body>
+</rml>

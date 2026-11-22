@@ -1,0 +1,71 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	color: #ff0000;
+}
+
+body.blue {
+	color: #0000ff;
+}
+
+.box {
+	display: block;
+	width: 60px;
+	height: 20px;
+}
+
+.scroller {
+	display: block;
+	width: 60px;
+	height: 40px;
+	overflow-y: scroll;
+}
+
+.tall {
+	display: block;
+	height: 200px;
+}
+
+#mix-bg {
+	background-color: color-mix(in srgb, currentcolor 50%, #0000ff);
+	border: 2px solid color-mix(in srgb, currentcolor 25%, transparent);
+}
+
+#mix-color {
+	color: color-mix(in srgb, currentcolor 25%, white);
+	background-color: color-mix(in srgb, currentcolor, black);
+}
+
+#mix-transition {
+	background-color: #000000;
+	transition: background-color 4s linear;
+}
+
+@keyframes oklch-fade {
+	from { background-color: #000000; }
+	to { background-color: oklch(0.6 0.2 250); }
+}
+
+#oklch-keyframes {
+	animation: 4s linear oklch-fade;
+}
+
+#mix-oklch {
+	background-color: color-mix(in srgb, oklch(0.7 0.3 150) 50%, white);
+}
+
+#oklch-transition {
+	background-color: #000000;
+	transition: background-color 4s linear;
+}
+
+body.blue #oklch-transition {
+	background-color: oklch(0.7 0.15 30);
+}
+
+body.blue #mix-transition {
+	background-color: color-mix(in srgb, currentcolor 50%, #ffffff);
+}

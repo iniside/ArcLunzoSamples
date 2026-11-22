@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>FormNoFont</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/FormNoFont.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="row"><input id="fnf-text" type="text"/></div>
+	<div class="row"><textarea id="fnf-ta"></textarea></div>
+</body>
+</rml>

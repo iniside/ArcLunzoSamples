@@ -1,0 +1,23 @@
+<rml>
+<head>
+	<title>Sounds</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="Sounds.rcss"/>
+	<viewmodel name="sounds" class="/Script/ArcRmlUISamples.ArcRmlSamplesSoundsViewModel" create="true"/>
+</head>
+<body data-model="sounds">
+	<div class="sd-panel">
+		<h1 class="sd-title">Sounds</h1>
+		<div class="sd-group">
+			<button id="sd-click" class="sd-button" autofocus="" data-event-click="call('', 'Click')">Click: sound from the parent</button>
+			<button id="sd-hover" class="sd-button" data-event-click="call('', 'Click')">Hover: sound on entering</button>
+			<button id="sd-focus" class="sd-button" data-event-click="call('', 'Click')">Focus: sound on a key or pad move</button>
+		</div>
+		<p id="sd-count" class="sd-count">Clicks: {{ Clicks }}</p>
+		<p class="sd-hint">Escape or pad back plays the back sound; Close plays the close sound.</p>
+		<button id="sd-close" class="sd-button" data-action="close">Close</button>
+	</div>
+</body>
+</rml>

@@ -1,0 +1,19 @@
+<component>
+	<prop name="keyLabel" default=""/>
+	<prop name="state" default="bound"/>
+	<prop name="listeningLabel" default=""/>
+	<prop name="unboundLabel" default=""/>
+	<prop name="conflictLabel" default=""/>
+	<prop name="disabled"/>
+	<prop name="field" default=""/>
+	<div class="dk-keybindfield">
+		<div class="dk-keybindfield-box" data-class-listening="$state == 'listening'" data-class-conflict="$state == 'conflict'" data-class-disabled="$disabled">
+			<i class="dk-keybindfield-warn" data-if="$state == 'conflict'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/triangle-alert.svg" width="16" height="16" stroke-width="2"/></i>
+			<span class="dk-keybindfield-cap" data-if="$state != 'listening' &amp;&amp; $state != 'unbound'" data-class-conflict="$state == 'conflict'" data-class-disabled="$disabled">{{ $keyLabel }}</span>
+			<span class="dk-keybindfield-listening" data-if="$state == 'listening'">{{ $listeningLabel != '' ? $listeningLabel : 'Press a key…' }}</span>
+			<span class="dk-keybindfield-unbound" data-if="$state == 'unbound'">{{ $unboundLabel != '' ? $unboundLabel : 'Unbound' }}</span>
+			<input class="dk-keybindfield-input" type="text" readonly="" data-attrif-disabled="$disabled" data-event-keydown="callIf(ev.key == 'Escape', '', 'KeybindCancel', $field); callIf(ev.key != 'Escape', '', 'KeyBound', $field, ev.key); stopPropagation($state == 'listening')"/>
+		</div>
+		<span class="dk-keybindfield-conflict" data-if="$state == 'conflict'">{{ $conflictLabel }}</span>
+	</div>
+</component>

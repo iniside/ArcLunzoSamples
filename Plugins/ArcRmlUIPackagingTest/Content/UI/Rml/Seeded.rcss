@@ -1,0 +1,10 @@
+body {
+	font-family: sans-serif;
+	color: #e8ecf4;
+}
+
+.seeded-icon {
+	width: 64px;
+	height: 64px;
+	decorator: image(/ArcRmlUIPackagingTest/UI/Rml/img/seeded.svg);
+}

@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Html Root Frame</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="HtmlRootFrame.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="hf-box"></div>
+	<div id="hf-embed" arc-embed=""></div>
+</body>
+</rml>

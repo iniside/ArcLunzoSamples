@@ -1,0 +1,17 @@
+{
+	"Sel": 2,
+	"Rows": [
+		{ "Id": "a", "Name": "Row A", "Value": 10, "Tag": "t0", "Show": false, "Inner": { "Label": "In A" } },
+		{ "Id": "b", "Name": "Row B", "Value": 20, "Tag": "t1", "Show": false, "Inner": { "Label": "In B" } },
+		{ "Id": "c", "Name": "Row C", "Value": 30, "Tag": "t2", "Show": false, "Inner": { "Label": "In C" } },
+		{ "Id": "d", "Name": "Row D", "Value": 40, "Tag": "t3", "Show": false, "Inner": { "Label": "In D" } },
+		{ "Id": "e", "Name": "Row E", "Value": 50, "Tag": "t4", "Show": false, "Inner": { "Label": "In E" } }
+	],
+	"Group": {
+		"Rows": [
+			{ "Name": "G0" },
+			{ "Name": "G1" },
+			{ "Name": "G2" }
+		]
+	}
+}

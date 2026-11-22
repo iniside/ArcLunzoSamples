@@ -1,0 +1,35 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.box {
+	display: block;
+	width: 40px;
+	height: 16px;
+	margin: 12px;
+}
+
+.text {
+	display: block;
+	height: 24px;
+}
+
+#t-basic {  box-shadow: 0 0 0 0 red; transition: box-shadow 1s linear; }
+.go #t-basic { box-shadow: 4px 8px 12px 2px blue; }
+
+#t-inset {  box-shadow: 2px 2px 0 0 red; transition: box-shadow 1s linear; }
+.go #t-inset { box-shadow: inset 2px 2px 0 0 blue; }
+
+#t-none {  box-shadow: none; transition: box-shadow 1s linear; }
+.go #t-none { box-shadow: 4px 4px 4px 2px blue; }
+
+#t-text {  text-shadow: 0 0 0 red; transition: text-shadow 1s linear; }
+.go #t-text { text-shadow: 4px 4px 2px blue; }
+
+#t-current { color: #00ff00; box-shadow: 0 0 0 0 currentcolor; transition: box-shadow 1s linear; }
+.go #t-current { box-shadow: 4px 4px 4px 0 blue; }
+

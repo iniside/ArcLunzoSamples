@@ -1,0 +1,709 @@
+{
+"elements": {
+"0": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+0,
+0,
+1920,
+144
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+1920,
+1080
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+704,
+0,
+704
+],
+"padding": [
+24,
+24,
+24,
+24
+],
+"rect": [
+704,
+0,
+512,
+144
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+512,
+144
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.0": {
+"lines": [],
+"text": "\n    "
+},
+"0.0.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+728,
+24,
+464,
+96
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+464,
+96
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.0": {
+"lines": [],
+"text": "\n      "
+},
+"0.0.1.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+-1,
+-1,
+-1,
+-1
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+727,
+23,
+1,
+1
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+94,
+24
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.0": {
+"lines": [
+{
+"height": 21,
+"text": "Checkboxes",
+"top": 24,
+"width": 94.265625,
+"x": 727
+}
+],
+"text": "Checkboxes"
+},
+"0.0.1.2": {
+"lines": [],
+"text": "\n\n      "
+},
+"0.0.1.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "flex",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+728,
+24,
+464,
+96
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+464,
+96
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.0": {
+"lines": [],
+"text": "\n        "
+},
+"0.0.1.3.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "flex",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+728,
+24,
+94.890625,
+24
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+95,
+24
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.1.0": {
+"lines": [],
+"text": "\n          "
+},
+"0.0.1.3.1.1": {
+"border": [
+1,
+1,
+1,
+1
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+728,
+26,
+20,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+18,
+18
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.1.2": {
+"lines": [],
+"text": "\n\n          "
+},
+"0.0.1.3.1.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+760,
+24,
+62.890625,
+24
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+63,
+24
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.1.3.0": {
+"lines": [
+{
+"height": 21,
+"text": " Option 1 ",
+"top": 25,
+"width": 62.890625,
+"x": 760
+}
+],
+"text": " Option 1 "
+},
+"0.0.1.3.1.4": {
+"lines": [],
+"text": "\n        "
+},
+"0.0.1.3.2": {
+"lines": [],
+"text": "\n\n        "
+},
+"0.0.1.3.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "flex",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+728,
+60,
+97.5,
+24
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+98,
+24
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.3.0": {
+"lines": [],
+"text": "\n          "
+},
+"0.0.1.3.3.1": {
+"border": [
+1,
+1,
+1,
+1
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+728,
+62,
+20,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+18,
+18
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.3.2": {
+"lines": [],
+"text": "\n\n          "
+},
+"0.0.1.3.3.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+760,
+60,
+65.5,
+24
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+66,
+24
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.3.3.0": {
+"lines": [
+{
+"height": 21,
+"text": " Option 2 ",
+"top": 61,
+"width": 65.5,
+"x": 760
+}
+],
+"text": " Option 2 "
+},
+"0.0.1.3.3.4": {
+"lines": [],
+"text": "\n        "
+},
+"0.0.1.3.4": {
+"lines": [],
+"text": "\n\n        "
+},
+"0.0.1.3.5": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "flex",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+728,
+96,
+97.625,
+24
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+98,
+24
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.5.0": {
+"lines": [],
+"text": "\n          "
+},
+"0.0.1.3.5.1": {
+"border": [
+1,
+1,
+1,
+1
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+728,
+98,
+20,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+18,
+18
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.5.2": {
+"lines": [],
+"text": "\n\n          "
+},
+"0.0.1.3.5.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+760,
+96,
+65.625,
+24
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+66,
+24
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.3.5.3.0": {
+"lines": [
+{
+"height": 21,
+"text": " Option 3 ",
+"top": 97,
+"width": 65.625,
+"x": 760
+}
+],
+"text": " Option 3 "
+},
+"0.0.1.3.5.4": {
+"lines": [],
+"text": "\n        "
+},
+"0.0.1.3.6": {
+"lines": [],
+"text": "\n      "
+},
+"0.0.1.4": {
+"lines": [],
+"text": "\n    "
+},
+"0.0.2": {
+"lines": [],
+"text": "\n  \n\n\n\n"
+}
+},
+"inputs_sha1": {
+"Checkbox.chrome.html": "7158c75fbc38e50b04a16a66fd33e37ef85e7873",
+"img/ph.png": "7c1ddc8365ec171043d756e950635cb3f913bf71",
+"tw-flowbite.rcss": "1a2f56bcf8423b7a22700823ab1a001908e649a1",
+"tw-hyperui.rcss": "6174e5823107a67d486cadfda96038e576d07204",
+"tw-probe.rcss": "6a9ee68f33dd40210aa8e9b1fab10df54d28b533"
+},
+"viewport": [
+1920,
+1080
+]
+}

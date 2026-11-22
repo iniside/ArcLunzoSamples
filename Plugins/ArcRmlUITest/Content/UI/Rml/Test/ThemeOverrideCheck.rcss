@@ -1,0 +1,8 @@
+:root
+{
+	--accent: #00ff00;
+}
+body
+{
+	color: #ff00ff;
+}

@@ -1,0 +1,63 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	color: #e8ecf4;
+}
+
+div {
+	display: block;
+}
+
+.line {
+	position: absolute;
+	left: 20px;
+	white-space: nowrap;
+}
+
+.sz-a {
+	top: 10px;
+	font-weight: 600;
+	font-size: 10dp;
+}
+
+.sz-b {
+	top: 40px;
+	font-weight: 400;
+	font-size: 11.5dp;
+}
+
+.sz-c {
+	top: 70px;
+	font-family: 'JetBrains Mono';
+	font-size: 14dp;
+}
+
+.sz-d {
+	top: 100px;
+	font-weight: 700;
+	font-size: 11.5dp;
+}
+
+.big-single {
+	top: 140px;
+	font-family: 'JetBrains Mono';
+	font-size: 900px;
+}
+
+.big-pair {
+	top: 1100px;
+	font-family: 'JetBrains Mono';
+	font-size: 640px;
+}
+
+.zero {
+	top: 2000px;
+	font-size: 0;
+	color: #20a0d0;
+}
+
+.zero-spaced {
+	top: 2020px;
+	letter-spacing: 2px;
+}

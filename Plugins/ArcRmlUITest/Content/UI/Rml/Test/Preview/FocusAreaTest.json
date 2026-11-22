@@ -1,0 +1,19 @@
+{
+	"tab": "a",
+	"qty": 1,
+	"detailsShown": false,
+	"boundHotkey": "IA_UIBound",
+	"cells": [
+		{ "name": "A", "picked": false },
+		{ "name": "B", "picked": true },
+		{ "name": "C", "picked": false },
+		{ "name": "D", "picked": false },
+		{ "name": "E", "picked": false },
+		{ "name": "F", "picked": false }
+	],
+	"$variants": {
+		"details": {
+			"detailsShown": true
+		}
+	}
+}

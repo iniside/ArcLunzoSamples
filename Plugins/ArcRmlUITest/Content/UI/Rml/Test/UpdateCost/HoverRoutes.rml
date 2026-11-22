@@ -1,0 +1,19 @@
+<rml>
+<head>
+	<title>Update Cost Hover Routes Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="HoverRoutes.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="h1" class="hov a"><div id="x1" class="x"></div></div>
+	<div id="h2" class="hov b"><div id="x2" class="x"></div></div>
+	<div id="h3" class="hov c"></div>
+	<div id="x3" class="x"></div>
+	<div id="h4" class="hov d"></div>
+	<div class="y"></div>
+	<div id="x4" class="x"></div>
+	<div id="h5" class="hov e"></div>
+	<div id="pointer" class="pointer"></div>
+</body>
+</rml>

@@ -1,0 +1,10 @@
+body {
+	margin: 0;
+}
+
+#uaf-embed {
+	width: 600px;
+	height: 400px;
+	margin-left: 100px;
+	margin-top: 50px;
+}

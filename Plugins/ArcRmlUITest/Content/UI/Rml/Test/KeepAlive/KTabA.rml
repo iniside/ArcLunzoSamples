@@ -1,0 +1,10 @@
+<rml>
+<head>
+	<title>Keep Alive Tab A</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/KeepAlive/KFrame.rml"/>
+	<link type="text/rcss" href="KTab.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="kta-text" class="kt-row">Tab A</div>
+</body>
+</rml>

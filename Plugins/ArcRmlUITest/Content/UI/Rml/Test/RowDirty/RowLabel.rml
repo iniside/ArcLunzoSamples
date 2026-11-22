@@ -1,0 +1,5 @@
+<component>
+	<prop name="label"/>
+	<prop name="idx"/>
+	<span class="rl" data-attr-id="'comp' + $idx">{{ $label }}</span>
+</component>

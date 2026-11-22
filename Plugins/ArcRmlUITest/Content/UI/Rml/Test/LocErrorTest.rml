@@ -1,0 +1,29 @@
+<rml>
+<head>
+	<title>Loc Error Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ds/tokens.rcss"/>
+	<link type="text/rcss" href="ComponentTest.rcss"/>
+	<viewmodel name="loctest" preview="Preview/LocTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="loctest">
+	<div class="col left">
+		<div class="title">expects 14 loc errors</div>
+		<span loc="Child">Text <b>bold</b></span>
+		<span loc="Bound">{{ count }}</span>
+		<dc-import name="/ArcRmlUITest/UI/Rml/Components/SectionLabel" loc="Whole"/>
+		<span loc="bad key!">Bad</span>
+		<dc-import name="/ArcRmlUITest/UI/Rml/Components/SectionLabel" loc-label="bad key"/>
+		<dc-import name="/ArcRmlUITest/UI/Rml/Components/SectionLabel" loc-nope="Nope"/>
+		<dc-import name="/ArcRmlUITest/UI/Rml/Components/SectionLabel" label="{{ count }}" loc-label="BoundProp"/>
+		<dc-import name="/ArcRmlUITest/UI/Rml/Components/Button" label="Ok" loc-title="Tip"/>
+		<dc-import name="/ArcRmlUITest/UI/Rml/Test/LocTestBox.rml" mode="attr" loc-label="Attr"/>
+		<dc-import name="/ArcRmlUITest/UI/Rml/Test/LocTestBox.rml" mode="mixed" loc-label="Mixed"/>
+		<dc-import name="/ArcRmlUITest/UI/Rml/Test/LocTestBox.rml" mode="live" loc-label="Live"/>
+		<dc-import name="/ArcRmlUITest/UI/Rml/Test/LocTestBox.rml" mode="sum" loc-label="Sum"/>
+		<dc-import name="/ArcRmlUITest/UI/Rml/Test/LocTestBox.rml" mode="value" loc-label="Value"/>
+		<dc-import name="/ArcRmlUITest/UI/Rml/Test/LocTestBox.rml" mode="rml" loc-label="Rml"/>
+	</div>
+</body>
+</rml>

@@ -1,0 +1,8 @@
+<component>
+	<prop name="label" default="E"/>
+	<prop name="variant" default="default"/>
+	<span class="keybadge-accent" data-if="$variant == 'accent'">{{ $label }}</span>
+	<span class="keybadge-outline" data-if="$variant == 'outline'">{{ $label }}</span>
+	<span class="keybadge-danger" data-if="$variant == 'danger'">{{ $label }}</span>
+	<span class="keybadge-default" data-if="$variant != 'accent' &amp;&amp; $variant != 'danger' &amp;&amp; $variant != 'outline'">{{ $label }}</span>
+</component>

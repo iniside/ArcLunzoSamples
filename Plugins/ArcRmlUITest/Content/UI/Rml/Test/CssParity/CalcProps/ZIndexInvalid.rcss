@@ -1,0 +1,30 @@
+body {
+	display: block;
+}
+
+#zwrap {
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	width: 200px;
+	height: 100px;
+	z-index: 0;
+}
+
+.zbox {
+	position: absolute;
+	top: 0;
+	width: 60px;
+	height: 60px;
+}
+
+#ia {
+	left: 0;
+	background-color: #ff0000;
+	z-index: 1.5;
+}
+
+#ib {
+	left: 30px;
+	background-color: #0000ff;
+}

@@ -1,0 +1,18 @@
+<component>
+	<prop name="value" default="1"/>
+	<prop name="trail" default="0.78"/>
+	<prop name="shield" default="0"/>
+	<prop name="kind" default="health"/>
+	<prop name="label" default="1 240 / 2 000"/>
+	<prop name="showLabel" default="true"/>
+	<prop name="ticks" default="0"/>
+	<prop name="height" default="14"/>
+	<prop name="pulse"/>
+	<div class="dk-resource-bar" data-style-height="(($height != 0 ? $height : 14) + 'px')">
+		<div class="dk-resource-bar-trail-s" data-style---dk-resource-bar-trail-s-transform-1="(($value | arcclamp(0, 1)) | arcmax((($trail != '' ? $trail : ($value | arcclamp(0, 1))) | arcmin(1))))"/>
+		<div class="dk-resource-bar-fill-s" data-class-mana="$kind == 'mana'" data-class-stamina="$kind == 'stamina'" data-class-rage="$kind == 'rage'" data-class-xp="$kind == 'xp'" data-class-enemy="$kind == 'enemy'" data-class-elite="$kind == 'elite'" data-class-boss="$kind == 'boss'" data-class-friendly="$kind == 'friendly'" data-class-neutral="$kind == 'neutral'" data-class-pulse="$pulse" data-style---dk-resource-bar-fill-s-transform-1="($value | arcclamp(0, 1))"/>
+		<div class="dk-resource-bar-shield-s" data-if="((($shield != 0 ? $shield : 0) | arcclamp(0, 1)) &gt; 0)" data-style---dk-resource-bar-shield-s-transform-1="(($shield != 0 ? $shield : 0) | arcclamp(0, 1))"/>
+		<div class="dk-resource-bar-tick-s" data-if="(($ticks != 0 ? $ticks : 0) &gt; 1)" data-style---dk-resource-bar-tick-s-background-1="((100 / (($ticks != 0 ? $ticks : 0) | arcmax(1))) + '%')"/>
+		<span class="dk-resource-bar-label-s" data-if="($showLabel &amp;&amp; (($label != '') &amp;&amp; (($height != 0 ? $height : 14) &gt;= 10)))" data-style-font-size="((($height != 0 ? $height : 14) &gt;= 14) ? 'var(--hud-fs-sm)' : 'var(--hud-fs-xs)')">{{ $label }}</span>
+	</div>
+</component>

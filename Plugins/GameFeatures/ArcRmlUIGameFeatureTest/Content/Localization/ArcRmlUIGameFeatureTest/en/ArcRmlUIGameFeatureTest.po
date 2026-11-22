@@ -1,0 +1,64 @@
+﻿# ArcRmlUIGameFeatureTest English translation.
+# Copyright 2026 Lukasz Baran. All Rights Reserved.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ArcRmlUIGameFeatureTest\n"
+"POT-Creation-Date: 2026-11-19 08:46\n"
+"PO-Revision-Date: 2026-11-19 08:46\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Key:	DependenciesLocText
+#. SourceLocation:	/ArcRmlUIGameFeatureTest/UI/Rml/Dependencies/Loc/ST_Dependencies.ST_Dependencies
+#: /ArcRmlUIGameFeatureTest/UI/Rml/Dependencies/Loc/ST_Dependencies.ST_Dependencies
+msgctxt "/ArcRmlUIGameFeatureTest/UI/Rml/Dependencies/Dependencies.rml,DependenciesLocText"
+msgid "Text from the String Table ST_Dependencies"
+msgstr "Text from the String Table ST_Dependencies"
+
+#. Key:	LocNewGame
+#. SourceLocation:	/ArcRmlUIGameFeatureTest/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+#: /ArcRmlUIGameFeatureTest/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+msgctxt "/ArcRmlUIGameFeatureTest/UI/Rml/Localization/Localization.rml,LocNewGame"
+msgid "New game"
+msgstr "New game"
+
+#. Key:	LocOptions
+#. SourceLocation:	/ArcRmlUIGameFeatureTest/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+#: /ArcRmlUIGameFeatureTest/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+msgctxt "/ArcRmlUIGameFeatureTest/UI/Rml/Localization/Localization.rml,LocOptions"
+msgid "Options"
+msgstr "Options"
+
+#. Key:	LocQuit
+#. SourceLocation:	/ArcRmlUIGameFeatureTest/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+#: /ArcRmlUIGameFeatureTest/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+msgctxt "/ArcRmlUIGameFeatureTest/UI/Rml/Localization/Localization.rml,LocQuit"
+msgid "Quit"
+msgstr "Quit"
+
+#. Key:	LocStory
+#. SourceLocation:	/ArcRmlUIGameFeatureTest/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+#: /ArcRmlUIGameFeatureTest/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+msgctxt "/ArcRmlUIGameFeatureTest/UI/Rml/Localization/Localization.rml,LocStory"
+msgid "Your journey begins in the old town. Find the blacksmith and ask him about the lost sword."
+msgstr "Your journey begins in the old town. Find the blacksmith and ask him about the lost sword."
+
+#. Key:	LocTitle
+#. SourceLocation:	/ArcRmlUIGameFeatureTest/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+#: /ArcRmlUIGameFeatureTest/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+msgctxt "/ArcRmlUIGameFeatureTest/UI/Rml/Localization/Localization.rml,LocTitle"
+msgid "Localization test"
+msgstr "Localization test"
+
+#. Key:	LocWelcome
+#. SourceLocation:	/ArcRmlUIGameFeatureTest/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+#: /ArcRmlUIGameFeatureTest/UI/Rml/Localization/Loc/ST_Localization.ST_Localization
+msgctxt "/ArcRmlUIGameFeatureTest/UI/Rml/Localization/Localization.rml,LocWelcome"
+msgid "Welcome, traveler!"
+msgstr "Welcome, traveler!"
+

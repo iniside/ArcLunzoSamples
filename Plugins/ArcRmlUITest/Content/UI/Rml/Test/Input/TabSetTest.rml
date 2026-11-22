@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Tab Set Test</title>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<link type="text/rcss" href="TabSetTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<tabset id="ts">
+		<tabs id="ts-tabs">
+			<tab id="t1">A</tab>
+			<tab id="t2">B</tab>
+			<tab id="t3">C</tab>
+		</tabs>
+		<panels id="ts-panels">
+			<panel id="p1">Panel A</panel>
+			<panel id="p2">Panel B</panel>
+			<panel id="p3">Panel C</panel>
+		</panels>
+	</tabset>
+</body>
+</rml>

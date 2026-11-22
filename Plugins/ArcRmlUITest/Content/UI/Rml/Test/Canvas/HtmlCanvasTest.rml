@@ -1,0 +1,9 @@
+<rml>
+<head>
+	<title>Html Canvas Test</title>
+	<link type="text/rcss" href="HtmlCanvasTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="hc-box"></div>
+</body>
+</rml>

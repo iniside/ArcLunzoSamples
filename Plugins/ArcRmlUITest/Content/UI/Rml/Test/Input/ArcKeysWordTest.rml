@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>ArcKeys Word Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="akw-word">ArcKeys are listed in the settings.</div>
+	<div id="akw-literal" title="MyArcKeys.back" data-if="false">shown</div>
+</body>
+</rml>

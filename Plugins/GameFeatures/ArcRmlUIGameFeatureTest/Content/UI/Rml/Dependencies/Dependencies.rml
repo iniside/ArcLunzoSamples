@@ -1,0 +1,67 @@
+<rml>
+<head>
+	<title>ArcRmlUI Game Feature Dependencies</title>
+	<meta name="layer" content="UI.Layer.Modal"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="../Shared/Shared.rcss"/>
+	<link type="text/rcss" href="Dependencies.rcss"/>
+</head>
+<body>
+	<div class="dep-panel">
+		<span class="dep-title">Game Feature packaging: dependencies</span>
+		<div class="dep-grid">
+			<div class="dep-cell">
+				<img class="dep-box" src="../Shared/Images/Element.png"/>
+				<span class="dep-label">1. img src PNG, outside the selection (Shared/Images/Element.png)</span>
+			</div>
+			<div class="dep-cell">
+				<svg class="dep-box" src="Images/Vector.svg" width="64" height="64"/>
+				<span class="dep-label">2. svg src (Dependencies/Images/Vector.svg)</span>
+			</div>
+			<div class="dep-cell">
+				<div class="dep-box dep-url"></div>
+				<span class="dep-label">3. background url() in Shared.rcss (Shared/Images/Background.png)</span>
+			</div>
+			<div class="dep-cell">
+				<div class="dep-box dep-image-function"></div>
+				<span class="dep-label">4. decorator: image() in Dependencies.rcss (Shared/Images/ImageFunction.png)</span>
+			</div>
+			<div class="dep-cell">
+				<div class="dep-box dep-named"></div>
+				<span class="dep-label">5. named @decorator dep-named (Dependencies/Images/Named.png)</span>
+			</div>
+			<div class="dep-cell">
+				<div class="dep-sprites">
+					<img class="dep-sprite" sprite="dep-sprite-circle"/>
+					<img class="dep-sprite" sprite="dep-sprite-square"/>
+				</div>
+				<span class="dep-label">6. @spritesheet with img sprite (Dependencies/Images/Sprites.png)</span>
+			</div>
+			<div class="dep-cell">
+				<progress class="dep-progress" value="0.65"/>
+				<span class="dep-label">7. progress fill-image (Dependencies/Images/Fill.png)</span>
+			</div>
+			<div class="dep-cell">
+				<div class="dep-box" style="decorator: image(../Shared/Images/Inline.png);"></div>
+				<span class="dep-label">8. image() in a style attribute (Shared/Images/Inline.png)</span>
+			</div>
+			<div class="dep-cell">
+				<img class="dep-box" src="asset:/ArcRmlUIGameFeatureTest/UI/Textures/T_DependenciesAsset.T_DependenciesAsset"/>
+				<span class="dep-label">9. asset: texture (UI/Textures/T_DependenciesAsset)</span>
+			</div>
+			<div class="dep-cell">
+				<div class="dep-box dep-sound">sound</div>
+				<span class="dep-label">10. --sound-click / --sound-hover in Shared.rcss (UI/Sound/MS_Dependencies*)</span>
+			</div>
+			<div class="dep-cell">
+				<span class="dep-loc" loc="DependenciesLocText">Text from the String Table ST_Dependencies</span>
+				<span class="dep-label">11. loc text (Dependencies/Loc/ST_Dependencies)</span>
+			</div>
+			<div class="dep-cell">
+				<span class="dep-font">Barlow Condensed 0123</span>
+				<span class="dep-label">12. font face from UI/Rml/Fonts (BarlowCondensed-Medium.ttf)</span>
+			</div>
+		</div>
+	</div>
+</body>
+</rml>

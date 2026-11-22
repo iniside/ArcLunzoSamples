@@ -1,0 +1,42 @@
+@keyframes hud-loot { 0% { opacity: 0; transform: translateX(24px); } 7% { opacity: 1; transform: translateX(0px); } 87% { opacity: 1; transform: translateX(0px); } 100% { opacity: 0; transform: translateX(0px); } }
+
+.dk-loot-feed {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: var(--ui-space-1);
+	max-width: 100%;
+	min-width: 0;
+}
+
+.dk-loot-feed-l {
+	display: flex;
+	align-items: center;
+	gap: var(--hud-space-sm);
+	max-width: 100%;
+	min-width: 0;
+	box-sizing: border-box;
+	padding: var(--hud-space-xs) var(--ui-space-2);
+	border-radius: var(--hud-radius-sm);
+	background: linear-gradient(90deg, transparent, var(--hud-plate) 30%);
+	--c: var(--ui-rarity-common);
+}
+
+.dk-loot-feed-icon {
+	display: flex;
+	color: var(--c);
+}
+
+.dk-loot-feed-i {
+	display: inline-flex;
+}
+
+.dk-loot-feed-text {
+	font-size: var(--ui-fs-2);
+	font-weight: 600;
+	color: var(--c);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-width: 0;
+}

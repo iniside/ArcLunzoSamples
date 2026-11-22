@@ -1,0 +1,118 @@
+@keyframes hud-low { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+
+.dk-resource-bar {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: var(--hud-radius-sm);
+	background: var(--hud-plate);
+	border: 1px solid var(--hud-stroke);
+	box-shadow: var(--hud-plate-shadow);
+	overflow: hidden;
+}
+
+.dk-resource-bar-trail-s {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	transform-origin: left;
+	--dk-resource-bar-trail-s-transform-1: 1;
+	transform: scaleX(var(--dk-resource-bar-trail-s-transform-1));
+	background: var(--hud-health-trail);
+	opacity: 0.85;
+}
+
+.dk-resource-bar-fill-s {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	transform-origin: left;
+	--dk-resource-bar-fill-s-transform-1: 1;
+	transform: scaleX(var(--dk-resource-bar-fill-s-transform-1));
+	background: linear-gradient(180deg, color-mix(in srgb, var(--hud-health) 70%, var(--hud-highlight)), var(--hud-health) 45%, color-mix(in srgb, var(--hud-health) 75%, var(--hud-shade)));
+	animation: none;
+}
+
+.dk-resource-bar-fill-s.mana {
+	background: linear-gradient(180deg, color-mix(in srgb, var(--hud-mana) 70%, var(--hud-highlight)), var(--hud-mana) 45%, color-mix(in srgb, var(--hud-mana) 75%, var(--hud-shade)));
+}
+
+.dk-resource-bar-fill-s.stamina {
+	background: linear-gradient(180deg, color-mix(in srgb, var(--hud-stamina) 70%, var(--hud-highlight)), var(--hud-stamina) 45%, color-mix(in srgb, var(--hud-stamina) 75%, var(--hud-shade)));
+}
+
+.dk-resource-bar-fill-s.rage {
+	background: linear-gradient(180deg, color-mix(in srgb, var(--hud-rage) 70%, var(--hud-highlight)), var(--hud-rage) 45%, color-mix(in srgb, var(--hud-rage) 75%, var(--hud-shade)));
+}
+
+.dk-resource-bar-fill-s.xp {
+	background: linear-gradient(180deg, color-mix(in srgb, var(--hud-xp) 70%, var(--hud-highlight)), var(--hud-xp) 45%, color-mix(in srgb, var(--hud-xp) 75%, var(--hud-shade)));
+}
+
+.dk-resource-bar-fill-s.enemy {
+	background: linear-gradient(180deg, color-mix(in srgb, var(--hud-enemy) 70%, var(--hud-highlight)), var(--hud-enemy) 45%, color-mix(in srgb, var(--hud-enemy) 75%, var(--hud-shade)));
+}
+
+.dk-resource-bar-fill-s.elite {
+	background: linear-gradient(180deg, color-mix(in srgb, var(--hud-elite) 70%, var(--hud-highlight)), var(--hud-elite) 45%, color-mix(in srgb, var(--hud-elite) 75%, var(--hud-shade)));
+}
+
+.dk-resource-bar-fill-s.boss {
+	background: linear-gradient(180deg, color-mix(in srgb, var(--hud-boss) 70%, var(--hud-highlight)), var(--hud-boss) 45%, color-mix(in srgb, var(--hud-boss) 75%, var(--hud-shade)));
+}
+
+.dk-resource-bar-fill-s.friendly {
+	background: linear-gradient(180deg, color-mix(in srgb, var(--hud-friendly) 70%, var(--hud-highlight)), var(--hud-friendly) 45%, color-mix(in srgb, var(--hud-friendly) 75%, var(--hud-shade)));
+}
+
+.dk-resource-bar-fill-s.neutral {
+	background: linear-gradient(180deg, color-mix(in srgb, var(--hud-neutral) 70%, var(--hud-highlight)), var(--hud-neutral) 45%, color-mix(in srgb, var(--hud-neutral) 75%, var(--hud-shade)));
+}
+
+.dk-resource-bar-fill-s.pulse {
+	animation: hud-low var(--hud-dur-pulse) var(--ui-ease) infinite;
+}
+
+.dk-resource-bar-shield-s {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	transform-origin: left;
+	--dk-resource-bar-shield-s-transform-1: 0;
+	transform: scaleX(var(--dk-resource-bar-shield-s-transform-1));
+	background: repeating-linear-gradient(135deg, var(--hud-shield) 0px, var(--hud-shield) 3px, color-mix(in srgb, var(--hud-highlight) 25%, transparent) 3px, color-mix(in srgb, var(--hud-highlight) 25%, transparent) 6px);
+	opacity: 0.75;
+}
+
+.dk-resource-bar-tick-s {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	transform-origin: left;
+	--dk-resource-bar-tick-s-background-1: 100%;
+	background: repeating-linear-gradient(90deg, transparent 0px, transparent calc(var(--dk-resource-bar-tick-s-background-1) - 1px), var(--hud-plate) calc(var(--dk-resource-bar-tick-s-background-1) - 1px), var(--hud-plate) var(--dk-resource-bar-tick-s-background-1));
+}
+
+.dk-resource-bar-label-s {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--ui-font-mono);
+	font-weight: 600;
+	color: var(--hud-text);
+	text-shadow: var(--hud-text-shadow);
+	white-space: nowrap;
+}

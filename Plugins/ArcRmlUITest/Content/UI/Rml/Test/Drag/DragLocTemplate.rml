@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Drag Loc Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Drag/DragTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="loc-src" class="cell" data-drag-type="item" loc="Section">Section source</div>
+</body>
+</rml>

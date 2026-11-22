@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title>Layout Reuse Keyed Rows Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="KeyedRowsScrollGrow.rcss"/>
+	<viewmodel name="rows" preview="Preview/Rows.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="rows">
+	<div class="list">
+		<div class="row" data-for="row : Rows" data-key="row.Id" data-attr-id="'row-' + row.Id">
+			<span class="name" data-attr-id="'name-' + row.Id">{{ row.Name }}</span>
+			<span class="val">{{ row.Value }}</span>
+		</div>
+	</div>
+</body>
+</rml>

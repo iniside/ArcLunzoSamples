@@ -1,0 +1,51 @@
+<rml>
+<head>
+	<title>Many Errors Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="diag" preview="Preview/Diag.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="diag">
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton1"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton2"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton3"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton4"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton5"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton6"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton7"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton8"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton9"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton10"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton11"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton12"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton13"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton14"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton15"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton16"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton17"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton18"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton19"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton20"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton21"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton22"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton23"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton24"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton25"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton26"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton27"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton28"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton29"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton30"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton31"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton32"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton33"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton34"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton35"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton36"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton37"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton38"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton39"/>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Comp/MissingButton40"/>
+</body>
+</rml>

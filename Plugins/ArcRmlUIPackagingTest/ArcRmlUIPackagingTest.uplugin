@@ -1,0 +1,27 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1",
+	"FriendlyName": "ArcRmlUI Packaging Test",
+	"Description": "Content-only plugin that checks the ArcRmlUI cook follows references without Package Everything",
+	"Category": "ArcX",
+	"CreatedBy": "Lukasz Baran",
+	"CreatedByURL": "https://arcx.dev/",
+	"DocsURL": "https://arcx.dev/docs/arcrmlui/",
+	"SupportURL": "https://arcx.dev/#support",
+	"FabURL": "",
+	"EngineVersion": "5.8.0",
+	"CanContainContent": true,
+	"IsExperimentalVersion": true,
+	"Installed": false,
+	"Plugins": [
+		{
+			"Name": "ArcRmlUI",
+			"Enabled": true
+		},
+		{
+			"Name": "ArcRmlUIDemo",
+			"Enabled": true
+		}
+	]
+}

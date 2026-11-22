@@ -1,0 +1,127 @@
+.dk-iconbutton {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: none;
+	width: 44px;
+	height: 44px;
+	box-sizing: border-box;
+	border-radius: var(--ui-radius-md);
+	border: 1px solid transparent;
+	background: transparent;
+	color: var(--ui-text-muted);
+	cursor: pointer;
+	box-shadow: none;
+	transition: background-color var(--ui-dur-fast) var(--ui-ease), border-color var(--ui-dur-fast) var(--ui-ease), color var(--ui-dur-fast) var(--ui-ease), transform var(--ui-dur-fast) var(--ui-ease);
+	--h-bg: var(--ui-accent-soft);
+	--h-bd: transparent;
+	--h-fg: var(--ui-text);
+	--p-tf: scale(0.94);
+}
+
+.dk-iconbutton.secondary {
+	border: 1px solid var(--ui-border);
+	background: var(--ui-surface-2);
+	color: var(--ui-text);
+	--h-bg: color-mix(in srgb, var(--ui-surface-2) 78%, var(--ui-accent));
+	--h-bd: var(--ui-accent);
+	--h-fg: var(--ui-text);
+}
+
+.dk-iconbutton.primary {
+	border: 1px solid var(--ui-accent);
+	background: var(--ui-accent);
+	color: var(--ui-accent-text);
+	--h-bg: color-mix(in srgb, var(--ui-accent) 84%, var(--ui-tint));
+	--h-bd: var(--ui-accent);
+	--h-fg: var(--ui-accent-text);
+}
+
+.dk-iconbutton.sm {
+	width: 32px;
+	height: 32px;
+}
+
+.dk-iconbutton.lg {
+	width: 56px;
+	height: 56px;
+}
+
+.dk-iconbutton.round {
+	border-radius: 50%;
+}
+
+.dk-iconbutton.selected {
+	border: 1px solid var(--ui-accent);
+	background: var(--ui-accent-soft);
+	color: var(--ui-accent);
+	--h-bg: var(--ui-accent-soft);
+	--h-bd: var(--ui-accent);
+	--h-fg: var(--ui-accent);
+}
+
+.dk-iconbutton.disabled {
+	border: 1px solid var(--ui-border);
+	background: var(--ui-surface-2);
+	color: var(--ui-text-disabled);
+	cursor: default;
+	--h-bg: var(--ui-surface-2);
+	--h-bd: var(--ui-border);
+	--h-fg: var(--ui-text-disabled);
+	--p-tf: none;
+}
+
+.dk-iconbutton.disabled.ghost {
+	border: 1px solid transparent;
+	background: transparent;
+	--h-bg: transparent;
+	--h-bd: transparent;
+}
+
+.dk-iconbutton:hover, .dk-iconbutton:focus-visible {
+	background: var(--h-bg);
+	border-color: var(--h-bd);
+	color: var(--h-fg);
+}
+
+.dk-iconbutton:active {
+	transform: var(--p-tf);
+}
+
+.dk-iconbutton:focus-visible {
+	box-shadow: var(--ui-focus-ring);
+}
+
+.dk-iconbutton.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-iconbutton-icon {
+	display: inline-flex;
+}
+
+.dk-iconbutton-icon svg {
+	display: block;
+}
+
+.dk-iconbutton-badge {
+	position: absolute;
+	top: -6px;
+	right: -6px;
+	min-width: 18px;
+	height: 18px;
+	padding: 0 var(--ui-space-1);
+	box-sizing: border-box;
+	border-radius: 9px;
+	background: var(--ui-danger);
+	color: var(--ui-accent-text);
+	font-family: var(--ui-font-mono);
+	font-size: 11px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 0 2px var(--ui-bg);
+}

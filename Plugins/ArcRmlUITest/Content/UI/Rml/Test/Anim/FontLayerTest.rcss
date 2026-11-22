@@ -1,0 +1,24 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 24px;
+	color: #ffffff;
+}
+
+@keyframes hue {
+	from { color: #ff0000; }
+	to { color: #0000ff; }
+}
+
+.stroked {
+	-webkit-text-stroke-width: 1px;
+	animation: hue 10s linear infinite;
+}
+
+.shadowed {
+	font-size: 20px;
+	font-effect: outline(2px currentcolor);
+	animation: hue 10s linear infinite;
+}

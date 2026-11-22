@@ -1,0 +1,10 @@
+<component>
+	<prop name="lines" default="[]"/>
+	<prop name="life" default="4.6"/>
+	<div class="dk-loot-feed">
+		<div data-for="LootFeedL, LootFeedL_index : $lines" class="dk-loot-feed-l" data-style-display="((LootFeedL_index &gt;= $lines.size - 6) ? 'flex' : 'none')" data-style---c="(LootFeedL.Kind == 'xp' ? 'var(--hud-xp)' : (LootFeedL.Kind == 'gold' ? 'var(--ui-rarity-legendary)' : ('var(--ui-rarity-' + (LootFeedL.Rarity != '' ? LootFeedL.Rarity : 'common') + ')')))" data-style-animation="($life == 0 ? 'none' : ('hud-loot ' + $life + 's var(--ui-ease) forwards'))">
+			<span class="dk-loot-feed-icon"><i class="dk-loot-feed-i"><svg data-attr-src="LootFeedL.Icon" width="16" height="16" stroke-width="2"/></i></span>
+			<span class="dk-loot-feed-text">{{ LootFeedL.Text }}</span>
+		</div>
+	</div>
+</component>

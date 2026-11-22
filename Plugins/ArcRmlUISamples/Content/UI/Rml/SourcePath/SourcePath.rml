@@ -1,0 +1,22 @@
+<rml>
+<head>
+	<title>Source: path</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="SourcePath.rcss"/>
+	<viewmodel name="item" class="/Script/ArcRmlUISamples.ArcRmlSamplesSourcePathViewModel" path="GetOwningPlayer.SampleViewModel"/>
+</head>
+<body data-model="item">
+	<div class="sp-panel">
+		<h1 class="sp-title">Source: path</h1>
+		<div data-if="ArcResolved">
+			<span class="sp-row">{{ Label }}</span>
+		</div>
+		<span class="sp-row" data-if="!ArcResolved">Waiting for the view model</span>
+		<div class="sp-buttons">
+			<button class="sp-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

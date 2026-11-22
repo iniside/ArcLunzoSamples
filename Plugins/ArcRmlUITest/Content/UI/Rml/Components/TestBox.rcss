@@ -1,0 +1,23 @@
+.tb {
+	padding: 6px 10px;
+	margin: 4px 0;
+	background-color: #1d2433;
+	border-radius: 6px;
+	border-left: 3px #3a86ff;
+}
+
+.tb.tb-warn {
+	border-left-color: #ffbe0b;
+}
+
+.tb-label {
+	color: #ffbe0b;
+}
+
+.tb-value {
+	color: #e8ecf4;
+}
+
+.tb-empty {
+	color: #8890a0;
+}

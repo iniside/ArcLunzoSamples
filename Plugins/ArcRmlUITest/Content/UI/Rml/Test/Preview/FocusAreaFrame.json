@@ -1,0 +1,9 @@
+{
+	"tab": "a",
+	"barDirection": "column",
+	"$variants": {
+		"tabc": {
+			"tab": "c"
+		}
+	}
+}

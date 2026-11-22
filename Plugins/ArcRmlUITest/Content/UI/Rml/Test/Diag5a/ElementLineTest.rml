@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title>Element Line Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body
+	style="colr: blue;">
+	<div id="multi"
+		class="probe"
+		style="widht: 1px;">Multi</div>
+	<div data-tex="x">Typo</div>
+	<div data-test="x">Custom</div>
+	<div data-fro="x">Swap</div>
+</body>
+</rml>

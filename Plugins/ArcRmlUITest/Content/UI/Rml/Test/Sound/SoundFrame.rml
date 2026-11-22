@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>Sound Frame</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="SoundTest.rcss"/>
+	<viewmodel name="snd" preview="Preview/SoundTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="snd">
+<div class="sn-root">
+	<div class="sn-focusable" id="sn-close" data-action="close">Close</div>
+	<div id="sn-embed" arc-embed=""></div>
+</div>
+</body>
+</rml>

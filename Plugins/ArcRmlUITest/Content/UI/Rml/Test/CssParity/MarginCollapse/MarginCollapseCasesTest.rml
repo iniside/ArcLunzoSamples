@@ -1,0 +1,22 @@
+<rml>
+<head>
+	<title>MarginCollapseCasesTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/MarginCollapse/MarginCollapseCases.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body id="mcc-body">
+	<div class="mcc-gap">Gap</div>
+	<div id="mcc-mixed-parent"><p id="mcc-mixed-p">Mixed signs</p></div>
+	<div class="mcc-gap">Gap</div>
+	<div id="mcc-neg-parent"><p id="mcc-neg-p">Both negative</p></div>
+	<div id="mcc-negbottom-parent"><p id="mcc-negbottom-p">Negative bottom</p></div>
+	<div class="mcc-gap">Gap</div>
+	<div id="mcc-overflow"><p id="mcc-overflow-p">Overflow hidden</p></div>
+	<div id="mcc-height"><p id="mcc-height-p">Fixed height</p></div>
+	<div id="mcc-padbottom"><p id="mcc-padbottom-p">Bottom padding</p></div>
+	<div id="mcc-flex-parent"><div id="mcc-flex"><span>Flex</span></div></div>
+	<div id="mcc-flexrow"><div id="mcc-item"><p id="mcc-item-p">Flex item</p></div></div>
+	<div id="mcc-end" class="mcc-gap">End</div>
+</body>
+</rml>

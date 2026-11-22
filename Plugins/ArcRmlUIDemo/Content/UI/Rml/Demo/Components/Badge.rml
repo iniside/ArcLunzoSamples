@@ -1,0 +1,6 @@
+<component>
+	<prop name="label" default=""/>
+	<prop name="tone" default="neutral"/>
+	<prop name="solid"/>
+	<span class="dk-badge" data-class-accent="$tone == 'accent'" data-class-success="$tone == 'success'" data-class-warning="$tone == 'warning'" data-class-danger="$tone == 'danger'" data-class-solid="$solid">{{ $label }}</span>
+</component>

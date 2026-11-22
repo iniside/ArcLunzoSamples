@@ -1,0 +1,107 @@
+.dk-objectiverow {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--ui-space-3);
+	padding: var(--ui-space-2) 0;
+	border-bottom: 1px solid var(--ui-border);
+	--c: var(--ui-border-strong);
+}
+
+.dk-objectiverow.completed {
+	--c: var(--ui-success);
+}
+
+.dk-objectiverow.failed {
+	--c: var(--ui-danger);
+}
+
+.dk-objectiverow-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: none;
+	width: 20px;
+	height: 20px;
+	margin-top: 1px;
+	box-sizing: border-box;
+	border-radius: var(--ui-radius-sm);
+	border: 2px solid var(--c);
+	background: transparent;
+	color: var(--ui-accent-text);
+}
+
+.dk-objectiverow.completed .dk-objectiverow-box, .dk-objectiverow.failed .dk-objectiverow-box {
+	background: var(--c);
+}
+
+.dk-objectiverow-mark {
+	display: inline-flex;
+}
+
+.dk-objectiverow-mark svg {
+	display: block;
+}
+
+.dk-objectiverow-main {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-1);
+	flex: 1;
+	min-width: 0;
+}
+
+.dk-objectiverow-head {
+	display: flex;
+	align-items: baseline;
+	gap: var(--ui-space-2);
+	flex-wrap: wrap;
+}
+
+.dk-objectiverow-label {
+	font-size: var(--ui-fs-3);
+	line-height: 1.35;
+	color: var(--ui-text);
+	text-decoration: none;
+}
+
+.dk-objectiverow.completed .dk-objectiverow-label {
+	color: var(--ui-text-muted);
+	text-decoration: line-through;
+}
+
+.dk-objectiverow.failed .dk-objectiverow-label {
+	color: var(--ui-danger);
+}
+
+.dk-objectiverow-optional {
+	font-size: var(--ui-fs-1);
+	color: var(--ui-text-muted);
+}
+
+.dk-objectiverow-bar {
+	height: 3px;
+	border-radius: 2px;
+	background: var(--ui-surface-2);
+	display: flex;
+}
+
+.dk-objectiverow-fill {
+	border-radius: 2px;
+	background: var(--ui-accent);
+}
+
+.dk-objectiverow-count {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-2);
+	font-weight: 600;
+	flex: none;
+	color: var(--ui-text);
+}
+
+.dk-objectiverow.completed .dk-objectiverow-count {
+	color: var(--ui-success);
+}
+
+.dk-objectiverow.failed .dk-objectiverow-count {
+	color: var(--ui-danger);
+}

@@ -1,0 +1,62 @@
+.dk-gamelogo {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: var(--ui-space-2);
+	text-align: left;
+}
+
+.dk-gamelogo.center {
+	align-items: center;
+	text-align: center;
+}
+
+.dk-gamelogo-eyebrow {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	letter-spacing: 0.32em;
+	text-transform: uppercase;
+	color: var(--ui-accent);
+}
+
+.dk-gamelogo-title {
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-7);
+	font-weight: 700;
+	line-height: 0.95;
+	text-transform: var(--ui-display-case);
+	letter-spacing: var(--ui-display-tracking);
+	color: var(--ui-text);
+	text-shadow: var(--ui-text-glow);
+}
+
+.dk-gamelogo-title.md {
+	font-size: var(--ui-fs-6);
+}
+
+.dk-gamelogo-sub {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-3);
+	width: 100%;
+	justify-content: flex-start;
+}
+
+.dk-gamelogo-sub.center {
+	justify-content: center;
+}
+
+.dk-gamelogo-rule {
+	height: 1px;
+	width: 48px;
+	background: var(--ui-border-strong);
+}
+
+.dk-gamelogo-subtitle {
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-3);
+	letter-spacing: 0.24em;
+	text-transform: uppercase;
+	color: var(--ui-text-muted);
+	white-space: nowrap;
+}

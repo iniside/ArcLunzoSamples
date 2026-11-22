@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.cb { width: 400px; margin-bottom: 4px; background-color: #dde3ee; }
+.flex { display: flex; }
+.minc { width: min-content; background-color: #cc3366; }
+.narrow { width: 40px; }
+.anywhere { overflow-wrap: anywhere; }
+.break-word { overflow-wrap: break-word; }
+.word-wrap { word-wrap: break-word; }
+.word-break { word-break: break-word; }

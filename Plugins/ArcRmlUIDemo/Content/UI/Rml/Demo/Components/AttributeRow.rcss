@@ -1,0 +1,112 @@
+.dk-attributerow {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-3);
+	min-height: 56px;
+	box-sizing: border-box;
+	width: 100%;
+	padding: var(--ui-space-2) var(--ui-space-3);
+	border-radius: var(--ui-radius-md);
+	border: 1px solid transparent;
+	background: transparent;
+	box-shadow: none;
+	transition: background-color var(--ui-dur-fast) var(--ui-ease), border-color var(--ui-dur-fast) var(--ui-ease);
+	--h-bg: color-mix(in srgb, var(--ui-surface-2) 70%, transparent);
+	--h-bd: var(--ui-border);
+}
+
+.dk-attributerow:hover {
+	background: var(--h-bg);
+	border-color: var(--h-bd);
+}
+
+.dk-attributerow:focus-visible {
+	background: var(--ui-accent-soft);
+	border: 1px solid var(--ui-focus);
+	box-shadow: var(--ui-focus-ring);
+	--h-bg: var(--ui-accent-soft);
+	--h-bd: var(--ui-focus);
+}
+
+.dk-attributerow.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-attributerow-iconbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: none;
+	width: 36px;
+	height: 36px;
+	border-radius: var(--ui-radius-sm);
+	background: var(--ui-surface-2);
+	color: var(--ui-accent);
+}
+
+.dk-attributerow-icon {
+	display: inline-flex;
+}
+
+.dk-attributerow-icon svg {
+	display: block;
+}
+
+.dk-attributerow-main {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+	flex: 1;
+}
+
+.dk-attributerow-label {
+	font-size: var(--ui-fs-3);
+	font-weight: 600;
+	color: var(--ui-text);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-attributerow-desc {
+	font-size: var(--ui-fs-1);
+	color: var(--ui-text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-attributerow-valuebox {
+	display: flex;
+	align-items: baseline;
+	justify-content: flex-end;
+	gap: var(--ui-space-2);
+	min-width: 64px;
+	flex: none;
+}
+
+.dk-attributerow-value {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-4);
+	font-weight: 600;
+	color: var(--ui-text);
+}
+
+.dk-attributerow-delta {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-2);
+	font-weight: 600;
+	color: var(--ui-success);
+}
+
+.dk-attributerow-delta.neg {
+	color: var(--ui-danger);
+}
+
+.dk-attributerow-steps {
+	display: flex;
+	gap: var(--ui-space-1);
+	flex: none;
+}

@@ -1,0 +1,141 @@
+.dk-tabbar {
+	display: flex;
+	align-items: stretch;
+	gap: var(--ui-space-1);
+	border-bottom: 1px solid var(--ui-border);
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.dk-tabbar-prompt {
+	display: flex;
+	align-items: center;
+	flex: none;
+}
+
+.dk-tabbar-prompt-start {
+	padding: 0 var(--ui-space-3) 0 0;
+}
+
+.dk-tabbar-prompt-end {
+	padding: 0 0 0 var(--ui-space-3);
+}
+
+.dk-tabbar-tab {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--ui-space-2);
+	flex: none;
+	min-height: 52px;
+	min-width: auto;
+	padding: 0 var(--ui-space-4);
+	box-sizing: border-box;
+	color: var(--ui-text-muted);
+	background: transparent;
+	border-bottom: 2px solid transparent;
+	margin-bottom: -1px;
+	border-radius: var(--ui-radius-sm) var(--ui-radius-sm) 0 0;
+	box-shadow: none;
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-3);
+	font-weight: 600;
+	text-transform: var(--ui-display-case);
+	letter-spacing: var(--ui-display-tracking);
+	cursor: pointer;
+	transition: background-color var(--ui-dur-fast) var(--ui-ease), color var(--ui-dur-fast) var(--ui-ease), transform var(--ui-dur-fast) var(--ui-ease);
+	--h-fg: var(--ui-text);
+	--h-bg: var(--ui-accent-soft);
+	--p-tf: translateY(1px);
+}
+
+.dk-tabbar-tab.icon-only {
+	min-width: 52px;
+	padding: 0;
+}
+
+.dk-tabbar-tab.active {
+	color: var(--ui-accent);
+	background: linear-gradient(0deg, var(--ui-accent-soft), transparent);
+	border-bottom: 2px solid var(--ui-accent);
+	--h-fg: var(--ui-accent);
+	--h-bg: var(--ui-accent-soft);
+}
+
+.dk-tabbar-tab.disabled {
+	color: var(--ui-text-disabled);
+	cursor: default;
+	--h-fg: var(--ui-text-disabled);
+	--h-bg: transparent;
+	--p-tf: none;
+}
+
+.dk-tabbar-tab.disabled.active {
+	--h-bg: var(--ui-accent-soft);
+}
+
+.dk-tabbar-tab:hover, .dk-tabbar-tab:focus-visible {
+	color: var(--h-fg);
+	background: var(--h-bg);
+}
+
+.dk-tabbar-tab:active {
+	transform: var(--p-tf);
+}
+
+.dk-tabbar-tab:focus-visible {
+	box-shadow: inset 0 0 0 2px var(--ui-focus);
+}
+
+.dk-tabbar-tab.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-tabbar-tab.cycle {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-tabbar-icon {
+	display: inline-flex;
+	flex: none;
+}
+
+.dk-tabbar-icon svg {
+	display: block;
+}
+
+.dk-tabbar-label {
+	white-space: nowrap;
+}
+
+.dk-tabbar-badge {
+	min-width: 18px;
+	height: 18px;
+	padding: 0 var(--ui-space-1);
+	box-sizing: border-box;
+	border-radius: 9px;
+	background: var(--ui-surface-2);
+	color: var(--ui-text);
+	font-family: var(--ui-font-mono);
+	font-size: 11px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 0;
+}
+
+.dk-tabbar-badge.active {
+	background: var(--ui-accent);
+	color: var(--ui-accent-text);
+}
+
+.dk-tabbar-badge.icon-only {
+	position: absolute;
+	top: 6px;
+	right: 4px;
+}

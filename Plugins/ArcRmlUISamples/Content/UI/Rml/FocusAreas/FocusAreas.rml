@@ -1,0 +1,54 @@
+<rml>
+<head>
+	<title>Focus areas</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="FocusAreas.rcss"/>
+	<viewmodel name="areas" class="/Script/ArcRmlUISamples.ArcRmlSamplesFocusAreasViewModel" create="true"/>
+</head>
+<body data-model="areas" data-event-navnotarget="call('', 'NoTarget', ev.direction, ev.area, ev.target_area)">
+	<div class="fa-panel">
+		<h1 class="fa-title">Focus areas</h1>
+		<div class="fa-columns">
+			<div class="fa-area" data-focus-area="left">
+				<p class="fa-label">left</p>
+				<button id="fa-left-1" class="fa-item">Left 1</button>
+				<button id="fa-left-2" class="fa-item">Left 2</button>
+			</div>
+			<div class="fa-area" data-focus-area="middle" data-focus-primary="">
+				<p class="fa-label">middle (primary)</p>
+				<button id="fa-middle-1" class="fa-item" autofocus="">Middle 1</button>
+				<button id="fa-middle-2" class="fa-item">Middle 2</button>
+			</div>
+			<div class="fa-area" data-focus-area="right">
+				<p class="fa-label">right</p>
+				<button id="fa-right-1" class="fa-item">Right 1</button>
+				<button id="fa-right-2" class="fa-item" data-event-navnotarget="callIf(ev.direction == 'down', '', 'Cancelled', ev.direction, ev.area, ev.target_area); stopPropagation(ev.direction == 'down')">Right 2 (stops Down)</button>
+			</div>
+		</div>
+		<div class="fa-popup" data-focus-area="popup" data-focus-contain="">
+			<p class="fa-label">popup (data-focus-contain)</p>
+			<div class="fa-columns">
+				<div class="fa-area" data-focus-area="popup-a">
+					<p class="fa-label">popup-a</p>
+					<button id="fa-popup-a" class="fa-item">Popup A</button>
+				</div>
+				<div class="fa-area" data-focus-area="popup-b">
+					<p class="fa-label">popup-b</p>
+					<button id="fa-popup-b" class="fa-item">Popup B</button>
+				</div>
+			</div>
+		</div>
+		<div class="fa-log">
+			<p data-if="EventCount == 0">No navnotarget yet: press an arrow at the edge of an area.</p>
+			<div data-if="EventCount &gt; 0">
+				<p>navnotarget {{ EventCount }}: direction {{ Direction }}, area {{ Area }}</p>
+				<p data-if="TargetArea != '' &amp;&amp; !bCancelled">target area: {{ TargetArea }} (focus leaves into it)</p>
+				<p data-if="TargetArea == '' &amp;&amp; !bCancelled">target area: none (focus stays)</p>
+				<p data-if="bCancelled">target area: {{ TargetArea }}, cancelled by stopPropagation() (focus stays)</p>
+			</div>
+		</div>
+	</div>
+</body>
+</rml>

@@ -1,0 +1,48 @@
+<rml>
+<head>
+	<title>FormLookPixel</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/FormLookPixel.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="row">
+		<input id="fl-text" type="text"/>
+		<input id="fl-ph" type="text" placeholder="Name"/>
+		<input id="fl-text-none" class="none" type="text"/>
+		<input id="fl-text-author" class="author" type="text"/>
+	</div>
+	<div class="row tall">
+		<textarea id="fl-ta"></textarea>
+		<textarea id="fl-ta-none" class="none"></textarea>
+	</div>
+	<div class="row">
+		<select id="fl-sel"><option value="a">Apple</option><option value="b">Banana split</option></select>
+		<select id="fl-sel-none" class="none"><option value="a">Apple</option><option value="b">Banana split</option></select>
+		<select id="fl-sel-author" class="author"><option value="a">Apple</option><option value="b">Banana split</option></select>
+		<select id="fl-sel-color" class="ink"><option value="a">Apple</option></select>
+	</div>
+	<div class="row">
+		<button id="fl-btn">Save</button>
+		<input id="fl-ibutton" type="button" value="Go"/>
+		<input id="fl-submit" type="submit" value="Send"/>
+		<input id="fl-reset" type="reset" value="Clear"/>
+		<button id="fl-btn-none" class="none">None</button>
+		<button id="fl-btn-author" class="author">Author</button>
+	</div>
+	<div class="row">
+		<input id="fl-cb" type="checkbox"/>
+		<input id="fl-cb-on" type="checkbox" checked=""/>
+		<input id="fl-cb-accent" class="accent" type="checkbox" checked=""/>
+		<input id="fl-cb-none" class="none" type="checkbox" checked=""/>
+		<input id="fl-cb-big" class="big" type="checkbox" checked=""/>
+	</div>
+	<div class="row">
+		<input id="fl-rd" type="radio" name="fl-a"/>
+		<input id="fl-rd-on" type="radio" name="fl-b" checked=""/>
+		<input id="fl-rd-accent" class="accent" type="radio" name="fl-c" checked=""/>
+		<input id="fl-rd-none" class="none" type="radio" name="fl-d" checked=""/>
+		<input id="fl-rd-big" class="big" type="radio" name="fl-e" checked=""/>
+	</div>
+</body>
+</rml>

@@ -1,0 +1,17 @@
+body.dlg {
+	background: transparent;
+}
+
+.dlg-layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	animation: dlg-in var(--ui-dur-normal) var(--ui-ease) both;
+}
+
+@keyframes dlg-in {
+	from { opacity: 0; transform: scale(1.01); }
+	to { opacity: 1; transform: scale(1); }
+}

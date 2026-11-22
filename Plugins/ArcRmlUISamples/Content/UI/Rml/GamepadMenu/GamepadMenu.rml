@@ -1,0 +1,26 @@
+<rml>
+<head>
+	<title>Gamepad menu</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="input-mapping" content="/ArcRmlUISamples/UI/Rml/GamepadMenu/IMC_Sample_GamepadMenu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="GamepadMenu.rcss"/>
+	<viewmodel name="menu" class="/Script/ArcRmlUISamples.ArcRmlSamplesGamepadMenuViewModel" create="true"/>
+</head>
+<body data-model="menu">
+	<div class="gm-panel">
+		<h1 class="gm-title">Gamepad menu</h1>
+		<button id="gm-play" class="gm-button" autofocus="" data-event-click="call('', 'Choose', 'Play')">Play</button>
+		<button id="gm-options" class="gm-button" data-event-click="call('', 'Choose', 'Options')">Options</button>
+		<button id="gm-credits" class="gm-button" data-event-click="call('', 'Choose', 'Credits')">Credits</button>
+		<p class="gm-last">Last choice: {{ LastChoice }}</p>
+		<p class="gm-info" data-if="bInfoShown">Arrows or the D-pad move the focus, {{ ArcKeys.confirm }} presses the focused button, {{ ArcKeys.back }} closes the menu.</p>
+		<div class="gm-prompts">
+			<span class="gm-prompt">{{ ArcKeys.confirm }} Select</span>
+			<span id="gm-info" class="gm-prompt" data-hotkey="IA_Sample_MenuInfo" data-event-click="call('', 'ToggleInfo')">{{ ArcKeys.IA_Sample_MenuInfo }} Info</span>
+			<span class="gm-prompt">{{ ArcKeys.back }} Close</span>
+		</div>
+	</div>
+</body>
+</rml>

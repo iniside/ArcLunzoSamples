@@ -1,0 +1,16 @@
+<rml>
+<head>
+	<title>Area Frame</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Focus/AreaBackTest.rcss"/>
+	<viewmodel name="areaframe" preview="Preview/AreaFrame.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="areaframe">
+	<div class="abt-top" data-focus-area="bar">
+		<div class="abt-btn" id="af-tab-1" selected="">{{ title }}</div>
+		<div class="abt-btn" id="af-tab-2">Tab 2</div>
+	</div>
+	<div class="embed" arc-embed=""></div>
+</body>
+</rml>

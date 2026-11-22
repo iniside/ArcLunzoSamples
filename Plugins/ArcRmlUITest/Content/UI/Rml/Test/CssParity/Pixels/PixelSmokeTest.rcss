@@ -1,0 +1,9 @@
+body > div {
+	position: absolute;
+	top: 20px;
+}
+
+#box { left: 20px; width: 100px; height: 60px; background-color: #3366cc; }
+#gradient { left: 140px; width: 256px; height: 60px; background: linear-gradient(to right, #ff0000, #0000ff); }
+#rounded { left: 420px; width: 100px; height: 100px; background-color: #228844; border-radius: 40px; }
+#tint { left: 540px; width: 100px; height: 60px; background-color: rgba(51, 102, 204, 0.5); }

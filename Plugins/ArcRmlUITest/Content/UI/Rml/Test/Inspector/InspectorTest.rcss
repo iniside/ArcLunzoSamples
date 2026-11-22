@@ -1,0 +1,38 @@
+#parent {
+	color: #123456;
+	font-size: 20px;
+	width: 300px;
+}
+
+#child {
+	height: 10px;
+}
+
+#rotated {
+	width: 100px;
+	height: 40px;
+	transform: rotate(45deg);
+}
+
+#toggled {
+	width: 120px;
+	height: 20px;
+}
+
+#bar {
+	height: 10px;
+}
+
+#twice { width: 10px; } #twice { height: 20px; }
+
+/* lead */ #noted, /* x */ #other { width: 30px; }
+
+.slot {
+	width: 60px;
+	height: 10px;
+}
+
+.bare {
+	width: 40px;
+	height: 10px;
+}

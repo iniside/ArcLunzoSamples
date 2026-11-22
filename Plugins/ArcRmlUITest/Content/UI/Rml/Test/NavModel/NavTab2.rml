@@ -1,0 +1,16 @@
+<rml>
+<head>
+	<title>Nav model tab 2</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/NavModel/NavFrame.rml"/>
+	<link type="text/rcss" href="NavModel.rcss"/>
+	<viewmodel name="nmtab2" preview="Preview/NavModel.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="nmtab2">
+<div class="nm-tab-root">
+	<div class="nm-area" style="left: 40px; top: 20px;" data-focus-area="tab2-main" data-focus-primary="" data-focus-parent="tabs">
+		<div class="nm-label">tab2-main</div>
+		<div id="b1" class="nm-btn">Tab2 first</div><div id="b2" class="nm-btn" autofocus="">Tab2 autofocus</div>
+	</div>
+</div>
+</body>
+</rml>

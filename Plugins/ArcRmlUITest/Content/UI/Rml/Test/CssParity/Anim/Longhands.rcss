@@ -1,0 +1,126 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.row {
+	display: block;
+	width: 100px;
+	height: 20px;
+	margin-bottom: 4px;
+	color: #ff0000;
+	background-color: #00ff00;
+}
+
+@keyframes grow {
+	from { width: 200px; }
+	to { width: 400px; }
+}
+
+@keyframes tall {
+	from { height: 40px; }
+	to { height: 80px; }
+}
+
+#a-short {
+	transition: color 2s linear;
+	transition-duration: 1s;
+}
+
+body.go #a-short {
+	color: #0000ff;
+}
+
+#b-list {
+	transition-property: color, background-color, width;
+	transition-duration: 1s, 3s;
+	transition-timing-function: linear;
+}
+
+body.go #b-list {
+	width: 200px;
+	color: #0000ff;
+	background-color: #ff0000;
+}
+
+#c-all {
+	transition-property: all, color;
+	transition-duration: 1s, 3s;
+	transition-timing-function: linear;
+}
+
+body.go #c-all {
+	width: 200px;
+	color: #0000ff;
+}
+
+#d-normal {
+	transition-property: display;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	transition-behavior: normal;
+}
+
+#d-discrete {
+	transition-property: display;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	transition-behavior: allow-discrete;
+}
+
+body.go #d-normal, body.go #d-discrete {
+	display: none;
+}
+
+#e-vis {
+	transition-property: visibility;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	transition-behavior: normal;
+}
+
+body.go #e-vis {
+	visibility: hidden;
+}
+
+#f-paused {
+	animation-name: grow;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-play-state: paused;
+}
+
+#f-paused-neg {
+	animation: grow 2s linear -0.5s paused;
+}
+
+#f-paused-delay {
+	animation: grow 2s linear 1s paused;
+}
+
+#f-run {
+	animation-name: grow;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-play-state: running;
+}
+
+#g-delay {
+	animation-name: grow, tall;
+	animation-duration: 1s;
+	animation-delay: 0.5s, 1.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: both;
+}
+
+#h-alt {
+	animation-name: grow;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+}

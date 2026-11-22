@@ -1,0 +1,36 @@
+<rml>
+<head>
+<title>Checkbox</title>
+<meta name="layer" content="UI.Layer.Menu"/>
+<meta name="input-mode" content="game"/>
+<link type="text/rcss" href="ua-min.rcss"/>
+<link type="text/rcss" href="tw-hyperui.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body class="mx-auto max-w-lg p-6">
+    <fieldset>
+      <legend class="sr-only">Checkboxes</legend>
+
+      <div class="flex flex-col items-start gap-3">
+        <label for="Option1" class="inline-flex items-center gap-3">
+          <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm" id="Option1"/>
+
+          <span class="font-medium text-gray-700"> Option 1 </span>
+        </label>
+
+        <label for="Option2" class="inline-flex items-center gap-3">
+          <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm" id="Option2"/>
+
+          <span class="font-medium text-gray-700"> Option 2 </span>
+        </label>
+
+        <label for="Option3" class="inline-flex items-center gap-3">
+          <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm" id="Option3"/>
+
+          <span class="font-medium text-gray-700"> Option 3 </span>
+        </label>
+      </div>
+    </fieldset>
+  
+
+</body>
+</rml>

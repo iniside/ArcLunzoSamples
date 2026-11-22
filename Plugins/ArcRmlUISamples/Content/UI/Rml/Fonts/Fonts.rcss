@@ -1,0 +1,4 @@
+@font-face {
+	font-family: 'Arc Samples Sans';
+	src: /ArcRmlUISamples/UI/Rml/Fonts/AtkinsonHyperlegible-Regular.ttf;
+}

@@ -1,0 +1,18 @@
+<rml>
+<head>
+	<title>Grid Min Width Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Layout/GridMinWidthTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="g-auto" class="grid"><div id="g-auto-a" class="a"><div class="b41"></div><div class="b41"></div><div class="b35"></div></div><div id="g-auto-b" class="b"><div class="b72"></div><div class="b72"></div><div class="b72"></div><div class="b63"></div></div></div>
+	<div id="g-zero" class="grid"><div id="g-zero-a" class="a"><div class="b41"></div><div class="b41"></div><div class="b35"></div></div><div id="g-zero-b" class="b"><div class="b72"></div><div class="b72"></div><div class="b72"></div><div class="b63"></div></div></div>
+	<div id="g-initial" class="grid"><div id="g-initial-a" class="a"><div class="b41"></div><div class="b41"></div><div class="b35"></div></div><div id="g-initial-b" class="b"><div class="b72"></div><div class="b72"></div><div class="b72"></div><div class="b63"></div></div></div>
+	<div id="g-inherit" class="grid"><div id="g-inherit-a" class="a"><div class="b41"></div><div class="b41"></div><div class="b35"></div></div><div id="g-inherit-b" class="b"><div class="b72"></div><div class="b72"></div><div class="b72"></div><div class="b63"></div></div></div>
+	<div id="g-inherit-px" class="grid"><div id="g-inherit-px-a" class="a"><div class="b41"></div><div class="b41"></div><div class="b35"></div></div><div id="g-inherit-px-b" class="b"><div class="b72"></div><div class="b72"></div><div class="b72"></div><div class="b63"></div></div></div>
+	<div id="g-inline" class="grid"><div id="g-inline-a" class="a" style="min-width: initial"><div class="b41"></div><div class="b41"></div><div class="b35"></div></div><div id="g-inline-b" class="b" style="min-width: initial"><div class="b72"></div><div class="b72"></div><div class="b72"></div><div class="b63"></div></div></div>
+	<div id="g-contents" class="grid"><div class="contents"><div id="g-contents-a" class="a"><div class="b41"></div><div class="b41"></div><div class="b35"></div></div><div id="g-contents-b" class="b"><div class="b72"></div><div class="b72"></div><div class="b72"></div><div class="b63"></div></div></div></div>
+	<div id="g-flex-inherit" class="grid narrow"><div id="g-flex-inherit-item" class="flexitem"><div id="g-flex-inherit-child" class="inherit-min"><div class="b72"></div></div></div></div>
+</body>
+</rml>

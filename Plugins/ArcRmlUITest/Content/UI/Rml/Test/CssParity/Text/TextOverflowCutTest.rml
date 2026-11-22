@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Text Overflow Cut Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/TextOverflowCut.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<p id="to-cut" class="truncate blue">amet consectetur adipisicing elit</p>
+	<p id="to-fits" class="truncate green">amet consectetur</p>
+	<div id="to-after">after</div>
+</body>
+</rml>

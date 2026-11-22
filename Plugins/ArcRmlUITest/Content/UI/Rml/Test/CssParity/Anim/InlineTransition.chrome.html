@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { margin: 0; font-family: sans-serif; font-size: 16px; }
+.row { display: block; width: 10px; height: 20px; }
+.trans { transition: width 1s linear; }
+@keyframes grow { from { width: 0px; } to { width: 400px; } }
+.grow { animation: grow 2s linear; }
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+.fade { background-color: #ff0000; opacity: 0.5 !important; animation: fade 2s linear; }
+</style>
+</head>
+<body>
+<div id="cls" class="row trans" style="width: 100px;"></div>
+<div id="timing" class="row trans" style="width: 100px; transition: width 1s linear;"></div>
+<div id="rev" class="row trans" style="width: 100px;"></div>
+<div id="ret" class="row trans" style="width: 100px;"></div>
+<div id="kf" class="row grow" style="width: 50px;"></div>
+<div id="imp" class="row grow" style="width: 60px !important;"></div>
+<div id="op" class="row fade"></div>
+<pre id="out"></pre>
+<script>
+const results = {};
+const el = (id) => document.getElementById(id);
+const width = (id) => el(id).getBoundingClientRect().width;
+const flush = (id) => getComputedStyle(el(id)).width;
+const seek = (id, ms) => { for (const a of el(id).getAnimations()) { a.pause(); a.currentTime = ms; } flush(id); };
+const count = (id) => el(id).getAnimations().length;
+window.addEventListener('load', () => {
+	for (const a of document.getAnimations()) a.pause();
+	results.cls_first = width('cls');
+	results.cls_first_animations = count('cls');
+	el('cls').style.width = '200px'; flush('cls');
+	seek('cls', 250); results.cls_250 = width('cls');
+	seek('cls', 1000); results.cls_end = width('cls'); results.cls_end_animations = count('cls'); results.cls_end_inline = el('cls').style.width;
+
+	el('timing').style.transition = 'width 2s linear'; el('timing').style.width = '300px'; flush('timing');
+	seek('timing', 500); results.timing_500 = width('timing');
+
+	el('rev').style.width = '200px'; flush('rev');
+	seek('rev', 500); results.rev_500 = width('rev');
+	el('rev').style.width = '100px'; flush('rev');
+	results.rev_reversed_at_once = width('rev');
+	seek('rev', 250); results.rev_back_250 = width('rev');
+	seek('rev', 500); results.rev_back_500 = width('rev'); results.rev_back_500_animations = count('rev');
+
+	el('ret').style.width = '200px'; flush('ret');
+	seek('ret', 500); results.ret_500 = width('ret');
+	el('ret').style.width = '300px'; flush('ret');
+	results.ret_retarget_at_once = width('ret');
+	seek('ret', 500); results.ret_new_500 = width('ret');
+	seek('ret', 1000); results.ret_new_end = width('ret');
+
+	seek('kf', 500); el('kf').style.width = '80px'; flush('kf');
+	results.kf_500 = width('kf');
+	seek('kf', 1000); results.kf_1000 = width('kf');
+	seek('kf', 2500); results.kf_end = width('kf'); results.kf_end_animations = count('kf');
+
+	seek('imp', 500); results.imp_500 = width('imp');
+	seek('op', 500); results.op_500 = getComputedStyle(el('op')).opacity;
+	el('out').textContent = JSON.stringify(results);
+});
+</script>
+</body>
+</html>

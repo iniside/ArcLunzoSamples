@@ -1,0 +1,14 @@
+html {
+	font-size: 20px;
+	line-height: 1.5;
+	color: #0000c8;
+}
+
+div {
+	display: block;
+}
+
+#ht-box {
+	width: 5rem;
+	height: 2rem;
+}

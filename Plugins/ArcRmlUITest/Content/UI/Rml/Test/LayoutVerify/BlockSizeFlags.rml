@@ -1,0 +1,61 @@
+<rml>
+<head>
+	<title>BlockSizeFlags</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/LayoutVerify/BlockSizeFlags.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+<input type="radio" name="c" id="r-c00" class="rb" style="left: 10px;" checked=""/>
+<input type="radio" name="c" id="r-c01" class="rb" style="left: 32px;"/>
+<input type="radio" name="c" id="r-c02" class="rb" style="left: 54px;"/>
+<input type="radio" name="c" id="r-c03" class="rb" style="left: 76px;"/>
+<input type="radio" name="c" id="r-c04" class="rb" style="left: 98px;"/>
+<input type="radio" name="c" id="r-c05" class="rb" style="left: 120px;"/>
+<input type="radio" name="c" id="r-c06" class="rb" style="left: 142px;"/>
+<input type="radio" name="c" id="r-c07" class="rb" style="left: 164px;"/>
+<input type="radio" name="c" id="r-c08" class="rb" style="left: 186px;"/>
+<input type="radio" name="c" id="r-c09" class="rb" style="left: 208px;"/>
+<input type="radio" name="c" id="r-c10" class="rb" style="left: 230px;"/>
+<input type="radio" name="c" id="r-c11" class="rb" style="left: 252px;"/>
+<input type="radio" name="c" id="r-c12" class="rb" style="left: 274px;"/>
+<input type="radio" name="c" id="r-c13" class="rb" style="left: 296px;"/>
+<input type="radio" name="c" id="r-c14" class="rb" style="left: 318px;"/>
+<input type="radio" name="c" id="r-c15" class="rb" style="left: 340px;"/>
+<input type="radio" name="c" id="r-c16" class="rb" style="left: 362px;"/>
+<input type="radio" name="c" id="r-c17" class="rb" style="left: 384px;"/>
+<input type="radio" name="c" id="r-c18" class="rb" style="left: 406px;"/>
+<input type="radio" name="c" id="r-c19" class="rb" style="left: 428px;"/>
+<input type="radio" name="c" id="r-c20" class="rb" style="left: 450px;"/>
+<input type="radio" name="c" id="r-c21" class="rb" style="left: 472px;"/>
+<input type="radio" name="c" id="r-c22" class="rb" style="left: 494px;"/>
+<input type="radio" name="c" id="r-c23" class="rb" style="left: 516px;"/>
+<input type="radio" name="c" id="r-c24" class="rb" style="left: 538px;"/>
+<input type="radio" name="c" id="r-all" class="rb" style="left: 560px;"/>
+<div class="case c00"><div class="lbl">c00 control: block item, no block-size read</div><div class="g"><div class="e">Control text that wraps inside the item<div class="sp"></div></div></div></div>
+<div class="case c01"><div class="lbl">c01 own min-height in %</div><div class="g"><div class="e e01">Own min-height percentage<div class="sp"></div></div></div></div>
+<div class="case c02"><div class="lbl">c02 own relative top in %</div><div class="g"><div class="e e02">Own relative top percentage<div class="sp"></div></div></div></div>
+<div class="case c03"><div class="lbl">c03 descendant height in %</div><div class="g"><div class="e">Descendant height percentage<div class="half">half</div><div class="sp"></div></div></div></div>
+<div class="case c04"><div class="lbl">c04 absolutes with % inset or height</div><div class="g"><div class="e e04">Absolutes inside<div class="ab"></div><div class="ab2"></div><div class="sp"></div></div></div></div>
+<div class="case c05"><div class="lbl">c05 column flex</div><div class="g"><div class="e e05"><div class="grow">grow</div><div class="sp"></div></div></div></div>
+<div class="case c06"><div class="lbl">c06 wrapping flex</div><div class="g"><div class="e e06"><div class="chip">one</div><div class="chip">two two</div><div class="chip">three three</div><div class="chip">four</div><div class="chip">five five five</div><div class="sp"></div></div></div></div>
+<div class="case c07"><div class="lbl">c07 aspect-ratio flex item</div><div class="g"><div class="e e07"><div class="ar"></div><div class="sp"></div></div></div></div>
+<div class="case c08"><div class="lbl">c08 row stretch at an indefinite height</div><div class="g"><div class="e e08"><div class="st">stretched</div><div class="sp spw"></div></div></div></div>
+<div class="case c09"><div class="lbl">c09 row stretch at a definite height below</div><div class="g"><div class="e"><div class="fx40"><div class="st">stretched</div><div class="st">two</div></div><div class="sp"></div></div></div></div>
+<div class="case c10"><div class="lbl">c10 grid with fr rows</div><div class="g"><div class="e e10"><div class="cell">fr row</div><div class="sp"></div></div></div></div>
+<div class="case c11"><div class="lbl">c11 grid with % rows</div><div class="g"><div class="e e11"><div class="cell">% row</div><div class="sp"></div></div></div></div>
+<div class="case c12"><div class="lbl">c12 table</div><div class="g"><div class="e"><table class="tb"><tr><td>cell one</td><td class="mid">mid</td><td><div class="sp"></div></td></tr></table></div></div></div>
+<div class="case c13"><div class="lbl">c13 replaced element height in %</div><div class="g"><div class="e"><img class="im" src="asset:/Engine/EngineResources/AICON-Green.AICON-Green"/><div class="sp"></div></div></div></div>
+<div class="case c14"><div class="lbl">c14 overflow auto</div><div class="g"><div class="e e14"><div class="wide">wide content that overflows horizontally</div><div class="sp"></div></div></div></div>
+<div class="case c15"><div class="lbl">c15 grid item in a fixed row</div><div class="g"><div class="e e15"><div class="cell">fixed row</div><div class="sp"></div></div></div></div>
+<div class="case c16"><div class="lbl">c16 relative descendant top in %</div><div class="g"><div class="e">Relative child<div class="rel">rel</div><div class="sp"></div></div></div></div>
+<div class="case c17"><div class="lbl">c17 button at a definite height</div><div class="g"><div class="e"><button class="bt">Button</button><div class="sp"></div></div></div></div>
+<div class="case c18"><div class="lbl">c18 block results under size-only</div><div class="g"><div class="e e18"><div class="it">plain block item text</div><div class="it"><div class="fxi"><div class="chip">nested</div><div class="chip">flex</div></div></div><div class="it"><div class="sp"></div></div></div></div></div>
+<div class="case c19"><div class="lbl">c19 grid auto row: child margin-top in %</div><div class="g"><div class="e">Percent margin child<div class="mp">x</div><div class="sp"></div></div></div></div>
+<div class="case c20"><div class="lbl">c20 grid auto row: child margin-top in calc</div><div class="g"><div class="e">Calc margin child<div class="mc">x</div><div class="sp"></div></div></div></div>
+<div class="case c21"><div class="lbl">c21 grid auto row: fixed-height child with auto margins</div><div class="g"><div class="e">Auto margin child<div class="ma"></div><div class="sp"></div></div></div></div>
+<div class="case c22"><div class="lbl">c22 row flex stretch: child margin-top in %</div><div class="fr"><div class="fi">Percent margin child<div class="mp">x</div><div class="sp"></div></div><div class="fi">short</div></div></div>
+<div class="case c23"><div class="lbl">c23 row flex stretch: child margin-top in calc</div><div class="fr"><div class="fi">Calc margin child<div class="mc">x</div><div class="sp"></div></div><div class="fi">short</div></div></div>
+<div class="case c24"><div class="lbl">c24 row flex stretch: fixed-height child with auto margins</div><div class="fr"><div class="fi">Auto margin child<div class="ma"></div><div class="sp"></div></div><div class="fi">short</div></div></div>
+</body>
+</rml>

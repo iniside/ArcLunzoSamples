@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Prop Line Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<dc-import name="/ArcRmlUITest/UI/Rml/Test/Diag5a/PropText" label="first
+second"/>
+</body>
+</rml>

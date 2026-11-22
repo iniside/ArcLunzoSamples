@@ -1,0 +1,52 @@
+<component>
+	<prop name="weapons"/>
+	<prop name="highlight" default="0"/>
+	<prop name="radius" default="150"/>
+	<div class="dk-weapon-wheel" data-style-width="(((($radius != 0 ? $radius : 150) * 2) + 100) + 'px')" data-style-height="(((($radius != 0 ? $radius : 150) * 2) + 100) + 'px')">
+		<div class="dk-weapon-wheel-ring"/>
+		<div class="dk-weapon-wheel-w-pos" data-style---dk-weapon-wheel-w-pos-transform-1="((0 - ($radius != 0 ? $radius : 150)) + 'px')">
+			<span class="dk-weapon-wheel-w-s" data-style-left="((0 == $highlight) ? '-36px' : '-28px')" data-style-top="((0 == $highlight) ? '-36px' : '-28px')" data-style-width="((0 == $highlight) ? '72px' : '56px')" data-style-height="((0 == $highlight) ? '72px' : '56px')" data-style-background="((0 == $highlight) ? 'var(--ui-accent)' : 'var(--hud-plate)')" data-style-border="('2px solid ' + ((0 == $highlight) ? 'var(--ui-focus)' : 'var(--hud-stroke)'))" data-style-color="((0 == $highlight) ? 'var(--ui-accent-text)' : ((0 &lt; $weapons.size) ? 'var(--hud-icon)' : 'var(--hud-text-muted)'))">
+				<i class="dk-weapon-wheel-e5"><svg data-attr-src="(0 &lt; $weapons.size ? $weapons[0].Icon : '/ArcRmlUIDemo/UI/Rml/icons/plus.svg')" width="26" height="26" stroke-width="2"/></i>
+			</span>
+		</div>
+		<div class="dk-weapon-wheel-w-pos-2" data-style---dk-weapon-wheel-w-pos-transform-1="((0 - ($radius != 0 ? $radius : 150)) + 'px')">
+			<span class="dk-weapon-wheel-w-s" data-style-left="((1 == $highlight) ? '-36px' : '-28px')" data-style-top="((1 == $highlight) ? '-36px' : '-28px')" data-style-width="((1 == $highlight) ? '72px' : '56px')" data-style-height="((1 == $highlight) ? '72px' : '56px')" data-style-background="((1 == $highlight) ? 'var(--ui-accent)' : 'var(--hud-plate)')" data-style-border="('2px solid ' + ((1 == $highlight) ? 'var(--ui-focus)' : 'var(--hud-stroke)'))" data-style-color="((1 == $highlight) ? 'var(--ui-accent-text)' : ((1 &lt; $weapons.size) ? 'var(--hud-icon)' : 'var(--hud-text-muted)'))">
+				<i class="dk-weapon-wheel-e8"><svg data-attr-src="(1 &lt; $weapons.size ? $weapons[1].Icon : '/ArcRmlUIDemo/UI/Rml/icons/plus.svg')" width="26" height="26" stroke-width="2"/></i>
+			</span>
+		</div>
+		<div class="dk-weapon-wheel-w-pos-3" data-style---dk-weapon-wheel-w-pos-transform-1="((0 - ($radius != 0 ? $radius : 150)) + 'px')">
+			<span class="dk-weapon-wheel-w-s" data-style-left="((2 == $highlight) ? '-36px' : '-28px')" data-style-top="((2 == $highlight) ? '-36px' : '-28px')" data-style-width="((2 == $highlight) ? '72px' : '56px')" data-style-height="((2 == $highlight) ? '72px' : '56px')" data-style-background="((2 == $highlight) ? 'var(--ui-accent)' : 'var(--hud-plate)')" data-style-border="('2px solid ' + ((2 == $highlight) ? 'var(--ui-focus)' : 'var(--hud-stroke)'))" data-style-color="((2 == $highlight) ? 'var(--ui-accent-text)' : ((2 &lt; $weapons.size) ? 'var(--hud-icon)' : 'var(--hud-text-muted)'))">
+				<i class="dk-weapon-wheel-e11"><svg data-attr-src="(2 &lt; $weapons.size ? $weapons[2].Icon : '/ArcRmlUIDemo/UI/Rml/icons/plus.svg')" width="26" height="26" stroke-width="2"/></i>
+			</span>
+		</div>
+		<div class="dk-weapon-wheel-w-pos-4" data-style---dk-weapon-wheel-w-pos-transform-1="((0 - ($radius != 0 ? $radius : 150)) + 'px')">
+			<span class="dk-weapon-wheel-w-s" data-style-left="((3 == $highlight) ? '-36px' : '-28px')" data-style-top="((3 == $highlight) ? '-36px' : '-28px')" data-style-width="((3 == $highlight) ? '72px' : '56px')" data-style-height="((3 == $highlight) ? '72px' : '56px')" data-style-background="((3 == $highlight) ? 'var(--ui-accent)' : 'var(--hud-plate)')" data-style-border="('2px solid ' + ((3 == $highlight) ? 'var(--ui-focus)' : 'var(--hud-stroke)'))" data-style-color="((3 == $highlight) ? 'var(--ui-accent-text)' : ((3 &lt; $weapons.size) ? 'var(--hud-icon)' : 'var(--hud-text-muted)'))">
+				<i class="dk-weapon-wheel-e14"><svg data-attr-src="(3 &lt; $weapons.size ? $weapons[3].Icon : '/ArcRmlUIDemo/UI/Rml/icons/plus.svg')" width="26" height="26" stroke-width="2"/></i>
+			</span>
+		</div>
+		<div class="dk-weapon-wheel-w-pos-5" data-style---dk-weapon-wheel-w-pos-transform-1="((0 - ($radius != 0 ? $radius : 150)) + 'px')">
+			<span class="dk-weapon-wheel-w-s" data-style-left="((4 == $highlight) ? '-36px' : '-28px')" data-style-top="((4 == $highlight) ? '-36px' : '-28px')" data-style-width="((4 == $highlight) ? '72px' : '56px')" data-style-height="((4 == $highlight) ? '72px' : '56px')" data-style-background="((4 == $highlight) ? 'var(--ui-accent)' : 'var(--hud-plate)')" data-style-border="('2px solid ' + ((4 == $highlight) ? 'var(--ui-focus)' : 'var(--hud-stroke)'))" data-style-color="((4 == $highlight) ? 'var(--ui-accent-text)' : ((4 &lt; $weapons.size) ? 'var(--hud-icon)' : 'var(--hud-text-muted)'))">
+				<i class="dk-weapon-wheel-e17"><svg data-attr-src="(4 &lt; $weapons.size ? $weapons[4].Icon : '/ArcRmlUIDemo/UI/Rml/icons/plus.svg')" width="26" height="26" stroke-width="2"/></i>
+			</span>
+		</div>
+		<div class="dk-weapon-wheel-w-pos-6" data-style---dk-weapon-wheel-w-pos-transform-1="((0 - ($radius != 0 ? $radius : 150)) + 'px')">
+			<span class="dk-weapon-wheel-w-s" data-style-left="((5 == $highlight) ? '-36px' : '-28px')" data-style-top="((5 == $highlight) ? '-36px' : '-28px')" data-style-width="((5 == $highlight) ? '72px' : '56px')" data-style-height="((5 == $highlight) ? '72px' : '56px')" data-style-background="((5 == $highlight) ? 'var(--ui-accent)' : 'var(--hud-plate)')" data-style-border="('2px solid ' + ((5 == $highlight) ? 'var(--ui-focus)' : 'var(--hud-stroke)'))" data-style-color="((5 == $highlight) ? 'var(--ui-accent-text)' : ((5 &lt; $weapons.size) ? 'var(--hud-icon)' : 'var(--hud-text-muted)'))">
+				<i class="dk-weapon-wheel-e20"><svg data-attr-src="(5 &lt; $weapons.size ? $weapons[5].Icon : '/ArcRmlUIDemo/UI/Rml/icons/plus.svg')" width="26" height="26" stroke-width="2"/></i>
+			</span>
+		</div>
+		<div class="dk-weapon-wheel-w-pos-7" data-style---dk-weapon-wheel-w-pos-transform-1="((0 - ($radius != 0 ? $radius : 150)) + 'px')">
+			<span class="dk-weapon-wheel-w-s" data-style-left="((6 == $highlight) ? '-36px' : '-28px')" data-style-top="((6 == $highlight) ? '-36px' : '-28px')" data-style-width="((6 == $highlight) ? '72px' : '56px')" data-style-height="((6 == $highlight) ? '72px' : '56px')" data-style-background="((6 == $highlight) ? 'var(--ui-accent)' : 'var(--hud-plate)')" data-style-border="('2px solid ' + ((6 == $highlight) ? 'var(--ui-focus)' : 'var(--hud-stroke)'))" data-style-color="((6 == $highlight) ? 'var(--ui-accent-text)' : ((6 &lt; $weapons.size) ? 'var(--hud-icon)' : 'var(--hud-text-muted)'))">
+				<i class="dk-weapon-wheel-e23"><svg data-attr-src="(6 &lt; $weapons.size ? $weapons[6].Icon : '/ArcRmlUIDemo/UI/Rml/icons/plus.svg')" width="26" height="26" stroke-width="2"/></i>
+			</span>
+		</div>
+		<div class="dk-weapon-wheel-w-pos-8" data-style---dk-weapon-wheel-w-pos-transform-1="((0 - ($radius != 0 ? $radius : 150)) + 'px')">
+			<span class="dk-weapon-wheel-w-s" data-style-left="((7 == $highlight) ? '-36px' : '-28px')" data-style-top="((7 == $highlight) ? '-36px' : '-28px')" data-style-width="((7 == $highlight) ? '72px' : '56px')" data-style-height="((7 == $highlight) ? '72px' : '56px')" data-style-background="((7 == $highlight) ? 'var(--ui-accent)' : 'var(--hud-plate)')" data-style-border="('2px solid ' + ((7 == $highlight) ? 'var(--ui-focus)' : 'var(--hud-stroke)'))" data-style-color="((7 == $highlight) ? 'var(--ui-accent-text)' : ((7 &lt; $weapons.size) ? 'var(--hud-icon)' : 'var(--hud-text-muted)'))">
+				<i class="dk-weapon-wheel-e26"><svg data-attr-src="(7 &lt; $weapons.size ? $weapons[7].Icon : '/ArcRmlUIDemo/UI/Rml/icons/plus.svg')" width="26" height="26" stroke-width="2"/></i>
+			</span>
+		</div>
+		<div class="dk-weapon-wheel-centre">
+			<span class="dk-weapon-wheel-name-s">{{ $highlight &lt; $weapons.size ? $weapons[$highlight].Name : 'Empty' }}</span>
+			<span class="dk-weapon-wheel-sub-s">Release to equip</span>
+		</div>
+	</div>
+</component>

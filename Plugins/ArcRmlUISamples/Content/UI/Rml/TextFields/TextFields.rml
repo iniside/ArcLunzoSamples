@@ -1,0 +1,31 @@
+<rml>
+<head>
+	<title>Text fields</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="TextFields.rcss"/>
+	<viewmodel name="tf" class="/Script/ArcRmlUISamples.ArcRmlSamplesTextFieldsViewModel" create="true"/>
+</head>
+<body data-model="tf">
+	<div class="tf-panel">
+		<h1 class="tf-title">Text fields</h1>
+		<p class="tf-label">Name (input)</p>
+		<input id="tf-input" class="tf-field" type="text" placeholder="Type a name"
+			data-attr-value="Live"
+			data-event-input="call('', 'SetLive', ev.value)"
+			data-event-change="call('', 'Commit', ev.value)"/>
+		<p class="tf-label">Notes (textarea)</p>
+		<textarea id="tf-notes" class="tf-field tf-notes" placeholder="Type some notes"
+			data-attr-value="NotesLive"
+			data-event-input="call('', 'SetNotesLive', ev.value)"
+			data-event-change="call('', 'CommitNotes', ev.value)"></textarea>
+		<p class="tf-result">Live: {{ Live }}</p>
+		<p class="tf-result">Committed: {{ Committed }}</p>
+		<p class="tf-result">Notes live: {{ NotesLive }}</p>
+		<p class="tf-result">Notes committed: {{ NotesCommitted }}</p>
+		<p class="tf-result">Commits so far: {{ CommitCount }}</p>
+		<p>Leaving a field commits its text. Enter commits an input; Enter in the textarea starts a new line.</p>
+	</div>
+</body>
+</rml>

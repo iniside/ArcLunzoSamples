@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>Dynamic</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<viewmodel name="dynamic" preview="Preview/Dynamic.json"/>
+</head>
+<body data-model="dynamic">
+	<div data-attr-data-action="'open:' + target">Open from data</div>
+</body>
+</rml>

@@ -1,0 +1,1 @@
+#warnbox { position: absolute; left: 10px; top: 10px; width: 120px; height: 60px; padding: 8px; border: 4px solid #808080; decorator: image(Warn.png); background-origin: border-box; background-clip: padding-box; }

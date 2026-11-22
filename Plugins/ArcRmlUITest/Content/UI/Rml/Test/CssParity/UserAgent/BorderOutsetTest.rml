@@ -1,0 +1,20 @@
+<rml>
+<head>
+	<title>BorderOutsetTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/UserAgent/BorderOutset.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="outset-blue" class="box"></div>
+	<div id="outset-dark" class="box"></div>
+	<div id="outset-light" class="box"></div>
+	<div id="outset-white" class="box"></div>
+	<div id="outset-black" class="box"></div>
+	<div id="outset-current" class="box"></div>
+	<div id="outset-mixed" class="box"></div>
+	<button id="outset-button"></button>
+	<table id="co-inset-outset" class="collapse"><tr><td id="co-io-a"></td><td id="co-io-b"></td></tr></table>
+	<table id="co-outset-dotted" class="collapse"><tr><td id="co-od-a"></td><td id="co-od-b"></td></tr></table>
+</body>
+</rml>

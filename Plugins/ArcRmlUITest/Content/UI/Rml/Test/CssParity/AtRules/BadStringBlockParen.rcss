@@ -1,0 +1,6 @@
+.p1 { width: 42px; }
+
+@supports (display: 'a)
+{ .p1 { width: 99px; } }
+
+.p1-after { width: 99px; }

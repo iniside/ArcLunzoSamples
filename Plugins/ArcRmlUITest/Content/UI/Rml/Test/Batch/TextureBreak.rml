@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>Batch Texture Break</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="Batch.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="r" style="left: 20px; top: 20px;"></div>
+	<div class="t" style="left: 80px; top: 20px;">Ab</div>
+	<div class="r a" style="left: 140px; top: 20px;"></div>
+	<div class="t big" style="left: 200px; top: 20px;">Cd</div>
+	<div class="r" style="left: 300px; top: 20px;"></div>
+</body>
+</rml>

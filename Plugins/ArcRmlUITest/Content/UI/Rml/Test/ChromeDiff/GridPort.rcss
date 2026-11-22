@@ -1,0 +1,37 @@
+body {
+	margin: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+.t {
+	margin-bottom: 10px;
+	background: #ddd;
+}
+
+.b {
+	height: 20px;
+	background: blue;
+}
+
+.i {
+	display: inline-block;
+	vertical-align: top;
+	width: 40px;
+	height: 20px;
+	background: green;
+}
+
+.areas {
+	display: grid;
+	width: 300px;
+	grid-template-columns: 80px 1fr;
+	grid-template-rows: 30px auto 20px;
+	grid-template-areas: "head head" "side main" "foot foot";
+	gap: 4px;
+}
+
+.head { grid-area: head; }
+.side { grid-area: side; }
+.main { grid-area: main; }
+.foot { grid-area: foot; }

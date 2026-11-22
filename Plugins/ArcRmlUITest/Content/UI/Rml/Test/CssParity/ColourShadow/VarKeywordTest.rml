@@ -1,0 +1,24 @@
+<rml>
+<head>
+	<title>VarKeywordTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/ColourShadow/VarKeyword.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="initial-fallback" class="swatch"></div>
+	<div id="initial-empty-fallback" class="swatch"></div>
+	<div id="initial-parent" class="holder"><div id="initial-inherited" class="swatch"></div></div>
+	<div id="initial-over-parent" class="holder"><div id="initial-overrides" class="swatch"></div></div>
+	<div id="unset-parent" class="holder"><div id="unset-inherits" class="swatch"></div></div>
+	<div id="inherit-parent" class="holder"><div id="inherit-inherits" class="swatch"></div></div>
+	<div id="initial-no-fallback" class="swatch"></div>
+	<div id="chain-fallback" class="swatch"></div>
+	<div id="chain-parent" class="holder"><div id="chain-inherited" class="swatch"></div></div>
+	<div id="chain-no-fallback" class="swatch"></div>
+	<div id="cycle-fallback" class="swatch"></div>
+	<div id="cycle-other-fallback" class="swatch"></div>
+	<div id="cycle-nested-fallback" class="swatch"></div>
+	<div id="cycle-self" class="swatch"></div>
+</body>
+</rml>

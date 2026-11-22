@@ -1,0 +1,36 @@
+<rml>
+<head>
+	<title>Render Verify Embed Glass Tab</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/RenderVerify/EmbedFrame.rml"/>
+	<link type="text/rcss" href="EmbedGlassTab.rcss"/>
+	<viewmodel name="eg" preview="Preview/EmbedGlassTab.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="eg">
+	<div class="eg-root">
+		<div class="eg-col">
+			<div class="eg-glass">
+				<div class="eg-header">
+					<span class="eg-title">{{ Title }}</span>
+				</div>
+				<div class="eg-body">
+					<div class="eg-row">alpha</div>
+					<div class="eg-row">beta</div>
+					<div class="eg-row">gamma</div>
+				</div>
+			</div>
+		</div>
+		<div class="eg-col">
+			<div class="eg-glass">
+				<div class="eg-header">
+					<span class="eg-title">{{ Title }}</span>
+				</div>
+				<div class="eg-flush">
+					<div class="eg-item">
+						<div class="eg-row">delta</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</rml>

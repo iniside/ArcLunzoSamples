@@ -1,0 +1,8 @@
+{
+	"label": "Tab Base",
+	"$variants": {
+		"alt": {
+			"label": "Tab Alt"
+		}
+	}
+}

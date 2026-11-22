@@ -1,0 +1,22 @@
+<rml>
+<head>
+	<title>ShadowHold</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Anim/ShadowHold.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="h-fwd" class="box"></div>
+	<div id="h-paused" class="box"></div>
+	<div id="h-bg-fwd" class="box"></div>
+	<div id="h-bg-paused" class="box"></div>
+	<div id="h-filter-fwd" class="box"></div>
+	<div id="h-filter-paused" class="box"></div>
+	<div id="h-text" class="text">Shadow <span>Child</span></div>
+	<div id="h-grad" class="box"></div>
+	<div id="h-mix-a" class="box"></div>
+	<div id="h-mix-b" class="box"></div>
+	<div id="h-oklab" class="box"></div>
+	<div id="h-shadow-mix" class="box"></div>
+</body>
+</rml>

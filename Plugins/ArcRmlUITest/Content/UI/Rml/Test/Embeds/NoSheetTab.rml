@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>No Sheet Tab</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Embeds/IfFrame.rml"/>
+	<link type="text/rcss" href="NoSheetMissing.rcss"/>
+	<viewmodel name="nosheettab" preview="Preview/IfTab.json"/>
+</head>
+<body data-model="nosheettab">
+	<div id="no-sheet-tab">{{ label }}</div>
+</body>
+</rml>

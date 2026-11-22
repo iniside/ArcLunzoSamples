@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Restyle Moved Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="Moved.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body id="b">
+	<div id="origin"><div id="c1" class="c"><div id="c1k" class="k"></div></div><div id="c2" class="c"><div id="c2k" class="k"></div></div><div id="c3" class="c"><div id="c3k" class="k"></div></div></div>
+	<div id="host"><div id="hostkid"></div></div>
+	<div id="warm" class="warm"><div id="warmwrap"></div></div>
+</body>
+</rml>

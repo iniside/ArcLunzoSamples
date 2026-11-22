@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+	background-color: rgb(180, 200, 220);
+}
+
+.row {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 12px;
+	height: 40px;
+	padding-left: 10px;
+	padding-top: 6px;
+}
+
+.tall {
+	height: 60px;
+}
+
+.none {
+	appearance: none;
+}
+
+.author {
+	border: 1px solid rgb(200, 0, 0);
+	background-color: rgb(255, 240, 200);
+}
+
+.ink {
+	color: rgb(0, 120, 0);
+}
+
+.accent {
+	accent-color: rgb(220, 30, 60);
+}
+
+.big {
+	width: 26px;
+	height: 26px;
+}

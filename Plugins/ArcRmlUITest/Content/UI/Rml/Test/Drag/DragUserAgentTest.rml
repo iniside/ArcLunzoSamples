@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>Drag User Agent Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="DragUserAgentTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<h2 id="ua-src" data-drag-type="item">Heading</h2>
+</body>
+</rml>

@@ -1,0 +1,92 @@
+<rml>
+<head>
+	<title>ArcRmlUI Demo Game Menu · Social</title>
+	<meta name="frame" content="/ArcRmlUIDemo/UI/Rml/Demo/Hub.rml"/>
+	<meta name="input-mapping" content="/ArcRmlUIDemo/Demo/Input/IMC_ArcDemo_Friends"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/tokens.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Fonts/Fonts.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/GameUI.rcss"/>
+	<link type="text/rcss" href="HubTab.rcss"/>
+	<link type="text/rcss" href="Friends.rcss"/>
+	<viewmodel name="ui" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoUIVM.BP_ArcRmlDemoUIVM_C" context="VM_ArcRmlDemoUI"/>
+	<viewmodel name="social" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoSocialVM.BP_ArcRmlDemoSocialVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+</head>
+<body data-model="ui" data-class-theme-ember="Theme == 'ember'" data-class-theme-daylight="Theme == 'daylight'" data-class-theme-slate="Theme == 'slate'" data-class-theme-relic="Theme == 'relic'">
+	<div class="ht-root" data-model="social" data-event-back="call('', 'Back'); stopPropagation()">
+		<div class="ht-frame">
+			<div class="fr-body">
+				<div class="ht-col">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="Friends" subtitle="{{ FriendsSub }}" icon="/ArcRmlUIDemo/UI/Rml/icons/users.svg" padded="{{ false }}" fill="{{ true }}" style="width: 100%; height: 100%">
+						<div class="fr-tabs">
+							<div class="gu-cycle">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/TabBar" tabs="{{ Tabs }}" active="{{ SubTab }}" area="sub" nofocus="{{ true }}" data-hotkey-cycle="IA_ArcDemo_PrevSubTab IA_ArcDemo_NextSubTab"/>
+							</div>
+						</div>
+						<div class="fr-tools">
+							<div class="fr-search" data-focus-area="search" data-focus-parent="list">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/SearchField" value="{{ Query }}" placeholder="Search friends" field="friendsSearch" style="width: 100%"/>
+							</div>
+							<div class="fr-addid" data-focus-area="addId" data-focus-parent="list">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/TextField" value="{{ AddId }}" placeholder="Add by ID · Name#0000" icon="/ArcRmlUIDemo/UI/Rml/icons/hash.svg" field="friendsAdd" style="width: 100%"/>
+							</div>
+							<div class="gu-area" data-focus-area="send" data-focus-parent="list">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="Send request" variant="secondary" icon-left="/ArcRmlUIDemo/UI/Rml/icons/user-plus.svg" focusable="{{ true }}" data-event-click="call('', 'SendRequest')"/>
+							</div>
+						</div>
+						<div class="fr-list" data-focus-area="list" data-focus-primary="" data-event-uiaction="stopPropagation(MenuRow &gt;= 0 &amp;&amp; (ev.action == 'IA_ArcDemo_PrevTab' || ev.action == 'IA_ArcDemo_NextTab' || ev.action == 'IA_ArcDemo_PrevSubTab' || ev.action == 'IA_ArcDemo_NextSubTab'))">
+							<div class="fr-group" data-for="frGroup : Groups">
+								<div class="fr-group-head">
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PresenceDot" status="{{ frGroup.Key }}" ring="{{ false }}"/>
+									<span class="fr-group-label">{{ frGroup.Label }}</span>
+									<span class="fr-group-count">{{ frGroup.Count }}</span>
+								</div>
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/FriendRow" data-for="frRow : frGroup.Rows" initials="{{ frRow.Initials }}" label="{{ frRow.Name }}" tag="{{ frRow.Tag }}" presence="{{ frRow.Presence }}" status="{{ frRow.Status }}" in-game="{{ frRow.bInGame }}" party="{{ frRow.Party }}" menu="{{ frRow.Menu }}" focusable="{{ true }}" data-focus-enter="menu" data-event-click="call('', 'OpenMenu', frRow.Index)" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_Invite', '', 'Invite', frRow.Index); callIf(ev.action == 'IA_ArcDemo_Message', '', 'Message', frRow.Index); stopPropagation(ev.action == 'IA_ArcDemo_Invite' || ev.action == 'IA_ArcDemo_Message')">
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/IconButton" icon="/ArcRmlUIDemo/UI/Rml/icons/user-plus.svg" size="sm" data-event-click="call('', 'Invite', frRow.Index); stopPropagation()"/>
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/IconButton" icon="/ArcRmlUIDemo/UI/Rml/icons/message-square.svg" size="sm" data-event-click="call('', 'Message', frRow.Index); stopPropagation()"/>
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/IconButton" icon="/ArcRmlUIDemo/UI/Rml/icons/ellipsis.svg" size="sm" selected="{{ frRow.Menu.size &gt; 0 }}" data-event-click="call('', 'OpenMenu', frRow.Index); stopPropagation()"/>
+								</dc-import>
+							</div>
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/EmptyState" data-if="bNoResults" icon="/ArcRmlUIDemo/UI/Rml/icons/user-search.svg" title="{{ EmptyTitle }}" body="Check the spelling, or send a request using their full ID." style="width: 100%">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="Send request by ID" variant="secondary" icon-left="/ArcRmlUIDemo/UI/Rml/icons/user-plus.svg" focusable="{{ true }}" data-event-click="call('', 'SendRequest')"/>
+							</dc-import>
+						</div>
+					</dc-import>
+				</div>
+				<div class="fr-side">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="Party" subtitle="3 / 4 · Nightjar is leader" icon="/ArcRmlUIDemo/UI/Rml/icons/crown.svg" has-footer="{{ true }}">
+						<div class="fr-party" data-focus-area="party" data-focus-parent="list">
+							<div class="fr-player" data-for="frPlayer, frPlayer_index : Party" data-attr-data-focus-enter="frPlayer.Status == 'empty' ? 'list' : ''">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PlayerCard" label="{{ frPlayer.Label }}" initials="{{ frPlayer.Initials }}" level="{{ frPlayer.Level }}" level-label="Lv" role="{{ frPlayer.Role }}" status="{{ frPlayer.Status }}" host="{{ frPlayer.bHost }}" ready-label="Ready" not-ready-label="Not ready" empty-label="Invite a friend" focusable="{{ true }}" style="width: 100%"/>
+							</div>
+						</div>
+						<div slot="footer" class="fr-party-footer" data-focus-area="partyActions" data-focus-parent="party">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="Leave" variant="ghost" icon-left="/ArcRmlUIDemo/UI/Rml/icons/log-out.svg" focusable="{{ true }}" data-event-click="call('', 'LeaveParty')"/>
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="Ready" icon-left="/ArcRmlUIDemo/UI/Rml/icons/check.svg" focusable="{{ true }}" data-event-click="call('', 'ToggleReady')"/>
+						</div>
+					</dc-import>
+					<div class="fr-requests-col">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="Requests" subtitle="3 pending" icon="/ArcRmlUIDemo/UI/Rml/icons/mail.svg" scroll="{{ true }}" fill="{{ true }}" style="width: 100%; height: 100%">
+							<div class="fr-requests" data-focus-area="requests" data-focus-parent="list">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/FriendRow" data-for="frReq, frReq_index : Requests" initials="{{ frReq.Initials }}" label="{{ frReq.Name }}" tag="{{ frReq.Tag }}" presence="{{ frReq.Presence }}" status="{{ frReq.Status }}" pin-actions="{{ true }}" focusable="{{ true }}" data-event-click="call('', 'Accept', frReq_index)" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_Decline', '', 'Decline', frReq_index); stopPropagation(ev.action == 'IA_ArcDemo_Decline')">
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/IconButton" icon="/ArcRmlUIDemo/UI/Rml/icons/check.svg" variant="primary" size="sm" data-event-click="call('', 'Accept', frReq_index); stopPropagation()"/>
+									<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/IconButton" icon="/ArcRmlUIDemo/UI/Rml/icons/x.svg" variant="secondary" size="sm" data-event-click="call('', 'Decline', frReq_index); stopPropagation()"/>
+								</dc-import>
+							</div>
+						</dc-import>
+					</div>
+				</div>
+			</div>
+			<div class="ht-footer">
+				<div class="gu-prompts gu-all" data-if="MenuRow &gt;= 0"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Select"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Close menu"/></dc-import></div>
+				<div class="gu-prompts gu-default" data-area="list" data-if="MenuRow &lt; 0"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Options"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_PrevSubTab + ' / ' + ArcKeys.IA_ArcDemo_NextSubTab }}" glyph="LT / RT" label="Tab"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Invite }}" label="Invite" disabled="{{ !bCanInvite }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Message }}" label="Message"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Search }}" label="Search" data-hotkey="IA_ArcDemo_Search" data-focus-enter="search"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Close"/></dc-import></div>
+				<div class="gu-prompts" data-area="requests" data-if="MenuRow &lt; 0"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Accept"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_PrevSubTab + ' / ' + ArcKeys.IA_ArcDemo_NextSubTab }}" glyph="LT / RT" label="Tab"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_Decline }}" label="Decline"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Back"/></dc-import></div>
+				<div class="gu-prompts" data-area="partyActions" data-if="MenuRow &lt; 0"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Select"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_PrevSubTab + ' / ' + ArcKeys.IA_ArcDemo_NextSubTab }}" glyph="LT / RT" label="Tab"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Back"/></dc-import></div>
+				<div class="gu-prompts" data-area="party" data-if="MenuRow &lt; 0"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Invite"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_PrevSubTab + ' / ' + ArcKeys.IA_ArcDemo_NextSubTab }}" glyph="LT / RT" label="Tab"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Back"/></dc-import></div>
+				<div class="gu-prompts" data-area="search" data-if="MenuRow &lt; 0"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Search"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_PrevSubTab + ' / ' + ArcKeys.IA_ArcDemo_NextSubTab }}" glyph="LT / RT" label="Tab"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Back"/></dc-import></div>
+				<div class="gu-prompts" data-area="addId" data-if="MenuRow &lt; 0"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Type ID"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_PrevSubTab + ' / ' + ArcKeys.IA_ArcDemo_NextSubTab }}" glyph="LT / RT" label="Tab"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Back"/></dc-import></div>
+				<div class="gu-prompts" data-area="send" data-if="MenuRow &lt; 0"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Send request" disabled="{{ !bCanSend }}"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_PrevSubTab + ' / ' + ArcKeys.IA_ArcDemo_NextSubTab }}" glyph="LT / RT" label="Tab"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Back"/></dc-import></div>
+			</div>
+		</div>
+	</div>
+</body>
+</rml>

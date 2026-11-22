@@ -1,0 +1,34 @@
+<rml>
+<head>
+	<title>Line Edge Probe</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/LineEdgeProbe.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="ba-space" class="sg ba">ab cd</div>
+	<div id="ba-space-r" class="sg ba right">ab cd</div>
+	<div id="ba-trail" class="sg ba trail">abcdef </div>
+	<div id="mix" class="barlow">AǅB</div>
+	<div id="plain" class="barlow plain">AB</div>
+	<div id="mix-fixed" class="barlow fixed">AǅB</div>
+	<input id="in15" class="in15" type="text" value="Hxg"/>
+	<div id="div15" class="div15">Hxg</div>
+	<div id="fit-under" class="sg fitw under">ab cd</div>
+	<div id="fit-exact" class="sg fitw exact">ab cd</div>
+	<div id="win-rob20" class="win rob s20">Hxg</div>
+	<div id="win-rob48" class="win rob s48">Hxg</div>
+	<div id="typo-dev20" class="win dev s20">Hxg</div>
+	<div id="typo-dev48" class="win dev s48">Hxg</div>
+	<div id="fit-off" class="sg fitw off">ab cd</div>
+	<div id="fx-badge" class="fxrow">Text <span id="badge-box" class="fxbadge"><div class="fxbox"></div></span> after</div>
+	<div id="fx-img" class="fxrow img">Text <span id="badge-img" class="fxbadge"><img class="fximg" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/dot.png"/></span> after</div>
+	<div id="fx-two" class="fxrow two">Text <span id="badge-two" class="fxbadge"><div class="fxbox"></div><div class="fxtext">ab</div></span> after</div>
+	<div id="fit-49" class="sg fitw f49">ab cd</div>
+	<div id="fit-48" class="sg fitw f48">ab cd</div>
+	<div id="gr-row" class="grrow">Text <span id="empty-grid" class="emptygrid"></span> after</div>
+	<div id="vm" class="vmono">Ǆ</div>
+	<div id="vm-ref" class="vref">Ǆ</div>
+	<div id="ib-row" class="ibrow">Text <span id="empty-flex" class="emptyflex"></span> after</div>
+</body>
+</rml>

@@ -1,0 +1,49 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 16px;
+	color: #e8ecf4;
+}
+
+div {
+	display: block;
+}
+
+.hov {
+	width: 200px;
+	min-height: 30px;
+	background-color: #202020;
+	margin-bottom: 4px;
+}
+
+.x {
+	width: 100px;
+	height: 10px;
+	margin-bottom: 4px;
+	background-color: #000000;
+}
+
+.y {
+	width: 100px;
+	height: 10px;
+	margin-bottom: 4px;
+}
+
+.a:hover .x { background-color: #00ff00; }
+.b:hover > .x { background-color: #00ff00; }
+.c:hover + .x { background-color: #00ff00; }
+.d:hover ~ .x { background-color: #00ff00; }
+
+.e:hover::before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 40px;
+}
+
+.pointer {
+	width: 200px;
+	height: 30px;
+	cursor: pointer;
+}

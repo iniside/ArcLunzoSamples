@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>Class Tab</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Tabs/TabFrame.rml"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="classtab" class="/Script/ArcRmlUITest.ArcRmlPreviewFieldsTestViewModel" context="ClassTabContext"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="classtab">
+	<div id="class-base">{{ Base }}</div>
+</body>
+</rml>

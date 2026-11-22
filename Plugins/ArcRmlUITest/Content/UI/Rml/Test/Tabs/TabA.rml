@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Tab A</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Tabs/TabFrame.rml"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="taba" preview="Preview/TabA.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="taba">
+	<div id="tab-a">{{ label }}</div>
+	<div id="open-b" data-action="open:/ArcRmlUITest/UI/Rml/Test/Tabs/TabB.rml">Open B</div>
+</body>
+</rml>

@@ -1,0 +1,5 @@
+<component>
+	<textarea class="tab">
+		<slot/>
+	</textarea>
+</component>

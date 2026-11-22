@@ -1,0 +1,5 @@
+<component>
+	<prop name="label"/>
+	<div class="proptext" data-attr-title="$label">Text</div>
+	<div style="widht: 1px;">After</div>
+</component>

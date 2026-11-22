@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+}
+
+.row {
+	display: flex;
+	align-items: flex-start;
+	height: 40px;
+}
+
+.accent {
+	accent-color: rgb(220, 30, 60);
+}
+
+.wide {
+	width: 300px;
+}
+
+.tall {
+	height: 30px;
+}

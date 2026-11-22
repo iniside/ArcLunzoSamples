@@ -1,0 +1,45 @@
+<rml>
+<head>
+	<title>ArcRmlUI Demo Loading Screen</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="hide-lower" content="true"/>
+	<meta name="keep-alive" content="true"/>
+	<meta name="any-input" content="true"/>
+	<meta name="input-mapping" content="/ArcRmlUIDemo/Demo/Input/IMC_ArcDemo_LoadingScreen"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/tokens.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Fonts/Fonts.rcss"/>
+	<link type="text/rcss" href="GameUI.rcss"/>
+	<link type="text/rcss" href="LoadingScreen.rcss"/>
+	<viewmodel name="ui" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoUIVM.BP_ArcRmlDemoUIVM_C" context="VM_ArcRmlDemoUI"/>
+	<viewmodel name="loading" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoLoadingScreenVM.BP_ArcRmlDemoLoadingScreenVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+</head>
+<body data-model="ui" data-class-theme-ember="Theme == 'ember'" data-class-theme-daylight="Theme == 'daylight'" data-class-theme-slate="Theme == 'slate'" data-class-theme-relic="Theme == 'relic'" data-event-back="stopPropagation()" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_DevBar', '', 'ToggleDevBar'); stopPropagation(ev.action == 'IA_ArcDemo_DevBar')">
+	<div class="gu-layer">
+		<div class="gu-screen ld-root" data-model="loading" autofocus="" data-event-mouseup="callIf(ev.button == 0, '', 'Continue')" data-event-anyinput="callIf(ev.action != 'IA_ArcDemo_DevBar', '', 'Continue')">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/SceneBackdrop" label="Loading art / level preview"/>
+			<div class="ld-scrim"></div>
+			<div class="ld-frame">
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/GameLogo" eyebrow="{{ Chapter.Eyebrow }}" title="{{ Chapter.Title }}" subtitle="{{ Chapter.Subtitle }}" size="md"/>
+				<div class="ld-bottom">
+					<div class="gu-area" data-focus-area="tip" data-focus-primary="" data-event-keydown="callIf(ev.key == 'ArrowLeft', '', 'TipStep', -1); callIf(ev.key == 'ArrowRight', '', 'TipStep', 1); stopPropagation(ev.key == 'ArrowLeft' || ev.key == 'ArrowRight')">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/LoadingTip" eyebrow="Tip" body="{{ Tip }}" index="{{ TipIndex }}" count="{{ TipCount }}" arrows="{{ true }}" field="tip"/>
+					</div>
+					<div class="ld-progress">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ProgressBar" data-if="State == 'loading'" value="{{ Progress }}" label="Loading world" value-label="{{ Progress + '%' }}" size="lg"/>
+						<div class="ld-step" data-if="State == 'loading'">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Spinner" size="sm" tone="accent"/>
+							<span>{{ Step }}</span>
+						</div>
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ProgressBar" data-if="State == 'ready'" value="{{ 100 }}" label="Ready" value-label="100%" tone="success" size="lg"/>
+						<div class="ld-press" data-if="State == 'ready'">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="Any key" glyph="A" label="{{ ArcKeys.scheme == 'gamepad' ? 'Press any button' : 'Press any key' }}"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/DevBar" data-if="DevOpen"/>
+</body>
+</rml>

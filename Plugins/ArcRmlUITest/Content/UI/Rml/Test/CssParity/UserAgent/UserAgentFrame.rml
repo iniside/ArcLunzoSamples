@@ -1,0 +1,9 @@
+<rml>
+<head>
+	<title>UserAgentFrame</title>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/UserAgent/UserAgentFrame.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="uaf-embed" arc-embed=""></div>
+</body>
+</rml>

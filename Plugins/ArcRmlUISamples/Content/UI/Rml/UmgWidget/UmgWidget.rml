@@ -1,0 +1,18 @@
+<rml>
+<head>
+	<title>UMG widget</title>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="UmgWidget.rcss"/>
+	<viewmodel name="counter" class="/Script/ArcRmlUISamples.ArcRmlSamplesUmgWidgetViewModel" manual="true"/>
+</head>
+<body data-model="counter">
+	<div class="uw-card">
+		<h1 class="uw-title">UMG widget</h1>
+		<p>Count: {{ Count }}</p>
+		<div class="uw-buttons">
+			<button id="uw-add" class="uw-button" data-event-click="call('', 'Increment')">Add one</button>
+			<button class="uw-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

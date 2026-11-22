@@ -1,0 +1,30 @@
+<component>
+	<prop name="x" default="50"/>
+	<prop name="y" default="40"/>
+	<prop name="visible" default="true"/>
+	<prop name="scale" default="1"/>
+	<prop name="label"/>
+	<prop name="level" default="39"/>
+	<prop name="rank" default="enemy"/>
+	<prop name="health" default="1"/>
+	<prop name="trail" default="0.8"/>
+	<prop name="cast" default="-1"/>
+	<prop name="isTarget"/>
+	<prop name="aggro"/>
+	<prop name="hideFull" default="true"/>
+	<prop name="dead"/>
+	<div class="dk-nameplate" data-class-no-visible="!$visible" data-style-left="($x + '%')" data-style-top="($y + '%')">
+		<div class="dk-nameplate-content" data-class-dead="$dead" data-style---dk-nameplate-content-transform-1="$scale">
+			<span class="dk-nameplate-name-s" data-class-elite="$rank == 'elite'" data-class-boss="$rank == 'boss'" data-class-friendly="$rank == 'friendly'" data-class-neutral="$rank == 'neutral'">{{ ((($level != '') ? ($level + '  ') : '') + ($label != '' ? $label : '')) }}</span>
+			<span class="dk-nameplate-aggro-s" data-if="($aggro &amp;&amp; !$dead)">!</span>
+			<span class="dk-nameplate-mark-s" data-if="$isTarget"/>
+			<div class="dk-nameplate-track" data-if="(!$hideFull ? !$dead : (!$dead &amp;&amp; (!(($health | arcclamp(0, 1)) &gt;= 1))))" data-class-is-target="$isTarget">
+				<div class="dk-nameplate-trail-s" data-style---dk-nameplate-trail-s-transform-1="(($health | arcclamp(0, 1)) | arcmax(($trail != '' ? $trail : ($health | arcclamp(0, 1)))))"/>
+				<div class="dk-nameplate-fill-s" data-class-elite="$rank == 'elite'" data-class-boss="$rank == 'boss'" data-class-friendly="$rank == 'friendly'" data-class-neutral="$rank == 'neutral'" data-style---dk-nameplate-fill-s-transform-1="($health | arcclamp(0, 1))"/>
+			</div>
+			<div class="dk-nameplate-cast-track" data-if="(!$dead &amp;&amp; ($cast &gt;= 0))">
+				<div class="dk-nameplate-cast-fill" data-style---dk-nameplate-cast-fill-transform-1="($cast | arcmax(0))"/>
+			</div>
+		</div>
+	</div>
+</component>

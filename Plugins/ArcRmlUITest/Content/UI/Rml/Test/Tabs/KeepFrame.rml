@@ -1,0 +1,23 @@
+<rml>
+<head>
+	<title>Keep Frame</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="KeepFrame.rcss"/>
+	<viewmodel name="keepframe" preview="Preview/KeepFrame.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="keepframe">
+	<div id="kf-title">{{ title }}</div>
+	<div class="kf-bar" data-focus-area="bar" data-focus-down="list">
+		<div id="kf-btn" class="kf-btn">Bar</div>
+	</div>
+	<div class="kf-bar" data-focus-area="bar2" data-focus-down="a-only">
+		<div id="kf-btn2" class="kf-btn">Bar two</div>
+	</div>
+	<div id="dup">frame dup</div>
+	<div id="nid">frame nid</div>
+	<div id="kf-same"></div>
+	<div id="kf-deco"></div>
+	<div id="kf-embed" class="embed" arc-embed=""></div>
+</body>
+</rml>

@@ -1,0 +1,34 @@
+body {
+	width: 100%;
+	height: 100%;
+	color: #ffffff;
+}
+
+div {
+	display: block;
+	height: 20px;
+}
+
+.t {
+	color: #0000ff;
+}
+
+body[data-x] .t {
+	color: #ff0000;
+}
+
+.a .b > .c {
+	color: #00ff00;
+}
+
+.p.q {
+	color: #ff00ff;
+}
+
+.on + .s2 {
+	color: #ffff00;
+}
+
+[class^="icon-"] {
+	color: #00ffff;
+}

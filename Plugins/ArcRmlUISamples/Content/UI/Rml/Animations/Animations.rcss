@@ -1,0 +1,70 @@
+@keyframes an-enter {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes an-leave {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+
+@keyframes an-flash {
+	from { background-color: #ffd27a; color: #1a1a1a; }
+	to { background-color: #3a4456; color: #e8e8e8; }
+}
+
+body.enter {
+	animation: an-enter 0.4s linear forwards;
+}
+
+body.leave {
+	animation: an-leave 0.3s linear forwards;
+}
+
+.an-panel {
+	position: absolute;
+	left: 80px;
+	top: 60px;
+	width: 640px;
+	padding: 24px 32px;
+	background-color: rgba(20, 24, 32, 0.9);
+	border-radius: 8px;
+}
+
+.an-title {
+	display: block;
+	font-size: 36px;
+	margin-bottom: 12px;
+}
+
+.an-text {
+	margin-bottom: 16px;
+}
+
+.an-hits {
+	display: inline-block;
+	padding: 8px 20px;
+	margin-bottom: 16px;
+	border-radius: 4px;
+	background-color: #3a4456;
+}
+
+.an-hits.flash {
+	animation: an-flash 0.6s linear forwards;
+}
+
+.an-buttons {
+	display: flex;
+	gap: 8px;
+}
+
+.an-button {
+	padding: 8px 20px;
+	border-radius: 4px;
+	background-color: #3a4456;
+	color: #e8e8e8;
+}
+
+.an-button:focus-visible {
+	background-color: #2f6fb0;
+}

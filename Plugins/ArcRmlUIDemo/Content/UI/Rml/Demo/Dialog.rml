@@ -1,0 +1,23 @@
+<rml>
+<head>
+	<title>ArcRmlUI Demo Dialog</title>
+	<meta name="layer" content="UI.Layer.Modal"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="hide-lower" content="false"/>
+	<meta name="keep-alive" content="true"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/tokens.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Fonts/Fonts.rcss"/>
+	<link type="text/rcss" href="Dialog.rcss"/>
+	<viewmodel name="ui" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoUIVM.BP_ArcRmlDemoUIVM_C" context="VM_ArcRmlDemoUI"/>
+	<viewmodel name="dialog" class="/Script/ArcRmlUIDemo.ArcRmlDemoDialogViewModel" manual on-close="Closed"/>
+</head>
+<body data-model="ui" class="dlg" data-class-theme-ember="Theme == 'ember'" data-class-theme-daylight="Theme == 'daylight'" data-class-theme-slate="Theme == 'slate'" data-class-theme-relic="Theme == 'relic'" data-event-back="call('', 'Back'); stopPropagation()">
+	<div class="dlg-layer" data-model="dialog" data-focus-area="modal" data-focus-primary="">
+		<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Modal" backdrop="{{ true }}" title="{{ Title }}" body="{{ Body }}" has-icon="{{ Variant == 'unsaved' || Variant == 'display' }}" variant="{{ Variant }}" buttons="{{ Buttons }}" focused="{{ Focused }}">
+			<svg slot="icon" data-if="Variant == 'unsaved'" src="/ArcRmlUIDemo/UI/Rml/icons/circle-help.svg" width="22" height="22" stroke-width="2"/>
+			<svg slot="icon" data-if="Variant == 'display'" src="/ArcRmlUIDemo/UI/Rml/icons/monitor.svg" width="22" height="22" stroke-width="2"/>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ProgressBar" data-if="bCountdown" value="{{ CountdownPct }}" label="{{ CountdownLabel }}" value-label="{{ CountdownValue }}" tone="warning"/>
+		</dc-import>
+	</div>
+</body>
+</rml>

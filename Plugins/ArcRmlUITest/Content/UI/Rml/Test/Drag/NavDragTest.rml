@@ -1,0 +1,29 @@
+<rml>
+<head>
+	<title>Nav Drag Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<link type="text/rcss" href="NavDragTest.rcss"/>
+	<viewmodel name="dd" preview="Preview/DragTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="dd" data-drag-action="IA_UISecondary">
+	<div class="nd-bag" data-focus-area="bag" data-focus-primary="" data-focus-down="equip">
+		<div id="nd-a" class="nd-slot" data-drag-type="item" data-slot="A" data-event-dragend="call('', 'DragEnded', 'A')"></div>
+	</div>
+	<div class="nd-equip" data-focus-area="equip" data-focus-parent="bag">
+		<div id="nd-ok" class="nd-slot" data-drop-accept="item" data-slot="T1" data-event-dragdrop="call('', 'Dropped', 'drag:data-slot', 'target:data-slot')"></div>
+		<div id="nd-no" class="nd-slot" data-drop-accept="spell" data-slot="T2" data-event-dragdrop="call('', 'Dropped', 'drag:data-slot', 'target:data-slot')"></div>
+		<div id="nd-list" class="nd-list">
+			<div id="nd-r0" class="nd-row" data-drop-accept="item" data-slot="R0" data-event-dragdrop="call('', 'Dropped', 'drag:data-slot', 'target:data-slot')"></div>
+			<div id="nd-r1" class="nd-row" data-drop-accept="item" data-slot="R1" data-event-dragdrop="call('', 'Dropped', 'drag:data-slot', 'target:data-slot')"></div>
+			<div id="nd-r2" class="nd-row" data-drop-accept="item" data-slot="R2" data-event-dragdrop="call('', 'Dropped', 'drag:data-slot', 'target:data-slot')"></div>
+			<div id="nd-r3" class="nd-row" data-drop-accept="item" data-slot="R3" data-event-dragdrop="call('', 'Dropped', 'drag:data-slot', 'target:data-slot')"></div>
+			<div id="nd-r4" class="nd-row" data-drop-accept="item" data-slot="R4" data-event-dragdrop="call('', 'Dropped', 'drag:data-slot', 'target:data-slot')"></div>
+			<div id="nd-r5" class="nd-row" data-drop-accept="item" data-slot="R5" data-event-dragdrop="call('', 'Dropped', 'drag:data-slot', 'target:data-slot')"></div>
+			<div id="nd-r6" class="nd-row" data-drop-accept="item" data-slot="R6" data-event-dragdrop="call('', 'Dropped', 'drag:data-slot', 'target:data-slot')"></div>
+			<div id="nd-r7" class="nd-row" data-drop-accept="item" data-slot="R7" data-event-dragdrop="call('', 'Dropped', 'drag:data-slot', 'target:data-slot')"></div>
+		</div>
+	</div>
+</body>
+</rml>

@@ -1,0 +1,34 @@
+<rml>
+<head>
+	<title>ShadowAnim</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Anim/ShadowAnim.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="k-basic" class="box"></div>
+	<div id="k-one-two" class="box"></div>
+	<div id="k-two-one" class="box"></div>
+	<div id="k-inset" class="box"></div>
+	<div id="k-none" class="box"></div>
+	<div id="k-inset-none" class="box"></div>
+	<div id="k-current" class="box"></div>
+	<div id="k-nocolor" class="box"></div>
+	<div id="k-units" class="box"></div>
+	<div id="k-mix" class="box"></div>
+	<div id="k-alpha" class="box"></div>
+	<div id="k-unset" class="box"></div>
+	<div id="k-over" class="box"></div>
+	<div id="k-over-filter" class="box"></div>
+	<div id="k-negspread" class="box"></div>
+	<div id="k-colouranim" class="box"></div>
+	<div id="k-filter" class="box"></div>
+	<div id="k-filter-none" class="box"></div>
+	<div id="k-filter-current" class="box"></div>
+	<div id="kt-basic" class="text">Shadow</div>
+	<div id="kt-one-two" class="text">Shadow</div>
+	<div id="kt-none" class="text">Shadow</div>
+	<div id="kt-unset" class="text">Shadow</div>
+	<div id="kt-current" class="text">Shadow</div>
+</body>
+</rml>

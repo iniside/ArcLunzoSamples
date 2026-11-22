@@ -1,0 +1,10 @@
+<rml>
+<head>
+	<title>Link Case Test</title>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/common.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="link-case">link case</div>
+</body>
+</rml>

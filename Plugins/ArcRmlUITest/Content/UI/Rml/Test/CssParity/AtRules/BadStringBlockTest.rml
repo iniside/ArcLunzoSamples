@@ -1,0 +1,35 @@
+<rml>
+<head>
+	<title>BadStringBlockTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/BadStringBlockBase.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/BadStringBlockBracket.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/BadStringBlockParen.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/BadStringBlockMatch.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/BadStringBlockNested.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/BadStringBlockNestedSupports.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/BadStringBlockValue.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/AtRules/BadStringBlockDeep.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="b1" class="b1"></div>
+	<div id="b1-after" class="b1-after"></div>
+	<div id="p1" class="p1"></div>
+	<div id="p1-after" class="p1-after"></div>
+	<div id="m1" class="m1"></div>
+	<div id="m2" class="m2"></div>
+	<div id="m3" class="m3"></div>
+	<div id="m4" class="m4"></div>
+	<div id="n1" class="n1"></div>
+	<div id="n1-after" class="n1-after"></div>
+	<div id="ns" class="ns"></div>
+	<div id="ns-after" class="ns-after"></div>
+	<div id="vf" class="vf"></div>
+	<div id="vf-after" class="vf-after"></div>
+	<div id="k1" class="k1"></div>
+	<div id="k2" class="k2"></div>
+	<div id="k3" class="k3"></div>
+	<div id="k4" class="k4"></div>
+</body>
+</rml>

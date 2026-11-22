@@ -1,0 +1,56 @@
+.dk-emptystate {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: var(--ui-space-3);
+	text-align: center;
+	padding: var(--ui-space-6) var(--ui-space-5);
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.dk-emptystate-circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: var(--ui-surface-2);
+	border: 1px solid var(--ui-border);
+	color: var(--ui-text-muted);
+}
+
+.dk-emptystate-icon {
+	display: inline-flex;
+}
+
+.dk-emptystate-icon svg {
+	display: block;
+}
+
+.dk-emptystate-title {
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-4);
+	font-weight: 700;
+	text-transform: var(--ui-display-case);
+	letter-spacing: var(--ui-display-tracking);
+	color: var(--ui-text);
+}
+
+.dk-emptystate-body {
+	margin: 0;
+	max-width: 380px;
+	font-size: var(--ui-fs-2);
+	line-height: 1.5;
+	color: var(--ui-text-muted);
+}
+
+.dk-emptystate-actions {
+	display: flex;
+	gap: var(--ui-space-3);
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: var(--ui-space-2);
+}

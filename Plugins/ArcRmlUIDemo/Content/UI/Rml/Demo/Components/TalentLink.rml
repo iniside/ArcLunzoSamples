@@ -1,0 +1,8 @@
+<component>
+	<prop name="x1" default="0"/>
+	<prop name="y1" default="0"/>
+	<prop name="len" default="100"/>
+	<prop name="ang" default="0"/>
+	<prop name="active"/>
+	<div class="dk-talentlink" data-class-active="$active" data-style-left="$x1 + 'px'" data-style-top="($y1 - ($active ? 2 : 1)) + 'px'" data-style-width="$len + 'px'" data-style-transform="'rotate(' + $ang + 'deg)'"></div>
+</component>

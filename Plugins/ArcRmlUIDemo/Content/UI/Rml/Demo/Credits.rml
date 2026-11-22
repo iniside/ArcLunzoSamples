@@ -1,0 +1,41 @@
+<rml>
+<head>
+	<title>ArcRmlUI Demo Credits</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="hide-lower" content="true"/>
+	<meta name="keep-alive" content="true"/>
+	<meta name="input-mapping" content="/ArcRmlUIDemo/Demo/Input/IMC_ArcDemo_Credits"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/tokens.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Fonts/Fonts.rcss"/>
+	<link type="text/rcss" href="GameUI.rcss"/>
+	<link type="text/rcss" href="Credits.rcss"/>
+	<viewmodel name="ui" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoUIVM.BP_ArcRmlDemoUIVM_C" context="VM_ArcRmlDemoUI"/>
+	<viewmodel name="credits" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoCreditsVM.BP_ArcRmlDemoCreditsVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+</head>
+<body data-model="ui" data-class-theme-ember="Theme == 'ember'" data-class-theme-daylight="Theme == 'daylight'" data-class-theme-slate="Theme == 'slate'" data-class-theme-relic="Theme == 'relic'" data-event-back="call('', 'Back'); stopPropagation()" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_DevBar', '', 'ToggleDevBar')">
+	<div class="gu-layer">
+		<div class="gu-screen" data-event-click="call('', 'Back')">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/SceneBackdrop" label="" dim="strong"/>
+			<div class="cr-frame">
+				<div class="cr-panelbox">
+					<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="Credits" icon="/ArcRmlUIDemo/UI/Rml/icons/clapperboard.svg" padded="{{ false }}" fill="{{ true }}" style="width: 100%; height: 100%">
+						<div class="cr-viewport">
+							<div class="cr-roll" data-model="credits">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/GameLogo" title="Hollow Meridian" subtitle="Definitive Edition" size="md" align="center"/>
+								<div class="cr-section" data-for="crSec : Sections">
+									<span class="cr-section-title">{{ crSec.Title }}</span>
+									<span class="cr-name" data-for="crName : crSec.Names">{{ crName }}</span>
+								</div>
+								<span class="cr-thanks">Thank you for playing.</span>
+							</div>
+						</div>
+					</dc-import>
+				</div>
+				<div class="gu-prompts gu-all"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Back"/></dc-import></div>
+			</div>
+		</div>
+	</div>
+	<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/DevBar" data-if="DevOpen"/>
+</body>
+</rml>

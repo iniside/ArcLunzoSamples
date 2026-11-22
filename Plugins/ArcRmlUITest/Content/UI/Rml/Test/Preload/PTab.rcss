@@ -1,0 +1,7 @@
+div {
+	display: block;
+}
+
+.pt-row {
+	height: 20px;
+}

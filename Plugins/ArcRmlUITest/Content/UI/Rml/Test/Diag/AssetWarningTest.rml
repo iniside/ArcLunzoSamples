@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Asset Warning Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="aw-box">
+		<img id="aw-icon" style="display: none;" src="asset:/ArcRmlUITest/UI/Unscanned/T_Pending.T_Pending"/>
+	</div>
+</body>
+</rml>

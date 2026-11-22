@@ -1,0 +1,76 @@
+<rml>
+<head>
+	<title>ArcRmlUI Demo Match Results</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="hide-lower" content="true"/>
+	<meta name="keep-alive" content="true"/>
+	<meta name="input-mapping" content="/ArcRmlUIDemo/Demo/Input/IMC_ArcDemo_MatchResults"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Demo/tokens.rcss"/>
+	<link type="text/rcss" href="/ArcRmlUIDemo/UI/Rml/Fonts/Fonts.rcss"/>
+	<link type="text/rcss" href="GameUI.rcss"/>
+	<link type="text/rcss" href="MatchResults.rcss"/>
+	<viewmodel name="ui" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoUIVM.BP_ArcRmlDemoUIVM_C" context="VM_ArcRmlDemoUI"/>
+	<viewmodel name="results" class="/ArcRmlUIDemo/Demo/ViewModels/BP_ArcRmlDemoMatchResultsVM.BP_ArcRmlDemoMatchResultsVM_C" resolver="/Script/ArcRmlUIDemo.ArcRmlDemoViewModelResolver"/>
+</head>
+<body data-model="ui" data-class-theme-ember="Theme == 'ember'" data-class-theme-daylight="Theme == 'daylight'" data-class-theme-slate="Theme == 'slate'" data-class-theme-relic="Theme == 'relic'" data-event-back="call('', 'Back'); stopPropagation()" data-event-uiaction="callIf(ev.action == 'IA_ArcDemo_DevBar', '', 'ToggleDevBar')">
+	<div class="gu-layer">
+		<div class="gu-screen" data-model="results">
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/SceneBackdrop" label="Game scene" dim="strong"/>
+			<div class="mr-frame">
+				<div class="mr-band" data-class-defeat="!bWin">
+					<span class="mr-mode">{{ ModeLabel }}</span>
+					<span class="mr-banner" data-class-defeat="!bWin">{{ Banner }}</span>
+					<div class="mr-score">
+						<span class="mr-score-a">{{ ScoreA }}</span>
+						<span class="mr-vs">–</span>
+						<span class="mr-score-b">{{ ScoreB }}</span>
+					</div>
+				</div>
+				<div class="mr-body">
+					<div class="mr-teams">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" data-for="mrTeam : Teams" title="{{ mrTeam.Name }}" subtitle="{{ mrTeam.Sub }}" icon="{{ mrTeam.Icon }}" padded="{{ false }}">
+							<div class="mr-rows">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ScoreboardRow" header="{{ true }}" header-labels="{{ Columns }}"/>
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ScoreboardRow" data-for="mrRow : mrTeam.Rows" rank="{{ mrRow.Rank }}" initials="{{ mrRow.Initials }}" label="{{ mrRow.Name }}" team="{{ mrTeam.Team }}" cols="{{ mrRow.Cols }}" ping="{{ mrRow.Ping }}" local="{{ mrRow.bLocal }}" local-label="You" mvp="{{ mrRow.bMvp }}" disconnected="{{ mrRow.bDisconnected }}"/>
+							</div>
+						</dc-import>
+					</div>
+					<div class="mr-side">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="Match MVP" icon="/ArcRmlUIDemo/UI/Rml/icons/crown.svg">
+							<div class="mr-mvp">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Avatar" initials="{{ MvpInitials }}" size="xl" tone="legendary"/>
+								<div class="mr-mvp-text">
+									<span class="mr-mvp-name">{{ MvpName }}</span>
+									<span class="mr-mvp-sub">{{ MvpSub }}</span>
+								</div>
+							</div>
+							<div class="mr-stats">
+								<div class="mr-stat" data-for="mrStat : MvpStats">
+									<span class="mr-stat-value">{{ mrStat.Value }}</span>
+									<span class="mr-stat-label">{{ mrStat.Label }}</span>
+								</div>
+							</div>
+						</dc-import>
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Panel" title="Progress" icon="/ArcRmlUIDemo/UI/Rml/icons/trending-up.svg">
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ProgressBar" value="{{ 71 }}" label="Level 38 → 39" value-label="{{ Xp }}" size="lg"/>
+							<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ProgressBar" value="{{ Rp }}" label="{{ RankLabel }}" value-label="{{ RpLabel }}" tone="{{ RpTone }}" size="lg"/>
+							<div class="mr-rewards">
+								<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/RewardChip" data-for="mrReward : Rewards" icon="{{ mrReward.Icon }}" label="{{ mrReward.Label }}" rarity="{{ mrReward.Rarity }}"/>
+							</div>
+						</dc-import>
+					</div>
+				</div>
+				<div class="mr-footer">
+					<div class="mr-actions" data-focus-area="actions" data-focus-primary="">
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="Play again" variant="secondary" icon-left="/ArcRmlUIDemo/UI/Rml/icons/rotate-ccw.svg" size="lg" focusable="{{ true }}" data-event-click="call('', 'PlayAgain')"/>
+						<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Button" label="Continue" icon-right="/ArcRmlUIDemo/UI/Rml/icons/arrow-right.svg" size="lg" focusable="{{ true }}" autofocus="{{ true }}" data-event-click="call('', 'Continue')"/>
+					</div>
+					<div class="gu-prompts gu-all"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/PromptBar"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.confirm }}" label="Select"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.IA_ArcDemo_PlayAgain }}" label="Play again" data-hotkey="IA_ArcDemo_PlayAgain" data-event-click="call('', 'PlayAgain')"/><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/InputPrompt" key-label="{{ ArcKeys.back }}" label="Main menu"/></dc-import></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/DevBar" data-if="DevOpen"/>
+</body>
+</rml>

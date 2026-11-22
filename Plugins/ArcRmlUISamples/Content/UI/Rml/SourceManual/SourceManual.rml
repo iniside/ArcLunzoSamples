@@ -1,0 +1,24 @@
+<rml>
+<head>
+	<title>Source: manual</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="SourceManual.rcss"/>
+	<viewmodel name="item" class="/Script/ArcRmlUISamples.ArcRmlSamplesSourceManualViewModel" manual="true"/>
+</head>
+<body data-model="item">
+	<div class="sm-panel">
+		<h1 class="sm-title">Source: manual</h1>
+		<div data-if="ArcResolved">
+			<span class="sm-row">{{ Label }}</span>
+			<span class="sm-row">Generation: {{ Generation }}</span>
+		</div>
+		<span class="sm-row" data-if="!ArcResolved">Waiting for the view model</span>
+		<div class="sm-buttons">
+			<button id="sm-swap" class="sm-button" data-event-click="call('', 'Swap')">Swap the instance</button>
+			<button class="sm-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

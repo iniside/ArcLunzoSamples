@@ -1,0 +1,10 @@
+<rml>
+<head>
+	<title>ArcRmlUI Two Drops Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div style="colr: red; widht: 10px; display: block; height: 8px;"></div>
+</body>
+</rml>

@@ -1,0 +1,31 @@
+<rml>
+<head>
+	<title>Party: nested view models</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="NestedViewModel.rcss"/>
+	<viewmodel name="party" class="/Script/ArcRmlUISamples.ArcRmlSamplesNestedParentViewModel" create="true"/>
+</head>
+<body data-model="party">
+	<div class="nv-panel">
+		<h1 class="nv-title">Party: nested view models</h1>
+		<span class="nv-note">A party is a view model whose leader and members are view models of their own. Each one announces its own change, and a button calls a function on one of them.</span>
+		<span class="nv-heading">Leader</span>
+		<div class="nv-row">
+			<span class="nv-name">{{ Child.Name }}</span>
+			<span id="nv-child-points">{{ Child.Points }} points</span>
+		</div>
+		<span class="nv-heading">Members</span>
+		<div class="nv-row" data-for="c : Children">
+			<span class="nv-name">{{ c.Name }}</span>
+			<span>{{ c.Points }} points</span>
+		</div>
+		<div class="nv-buttons">
+			<button id="nv-child-add" class="nv-button" data-event-click="call('Child', 'AddPoint')">Leader +1</button>
+			<button id="nv-second-add" class="nv-button" data-event-click="call('Children[1]', 'AddPoint')">Healer +1</button>
+			<button class="nv-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

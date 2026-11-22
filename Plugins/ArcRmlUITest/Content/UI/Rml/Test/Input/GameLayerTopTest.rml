@@ -1,0 +1,9 @@
+<rml>
+<head>
+	<title>Game Layer Top Test</title>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="glt-label">top game layer document</div>
+</body>
+</rml>

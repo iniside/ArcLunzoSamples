@@ -1,0 +1,25 @@
+<rml>
+<head>
+	<title>Inspector Test</title>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<link type="text/rcss" href="InspectorTest.rcss"/>
+	<link type="text/rcss" href="BomTest.rcss"/>
+	<viewmodel name="insp" preview="Preview/InspectorTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="insp">
+	<div id="parent" class="outer">
+		<div id="child">child</div>
+	</div>
+	<div id="rotated">rotated</div>
+	<div id="bar" data-style-width="w + 'px'">bar</div>
+	<div id="toggled" data-if="show">toggled</div>
+	<div id="twice">twice</div>
+	<div id="noted">noted</div>
+	<div class="slot" data-if="showa">a</div>
+	<div class="slot" id="slot-b">b</div>
+	<div id="bare" class="bare" data-if="showbare"></div>
+	<div id="bom-first">bom</div>
+	<div id="media-rule">media</div>
+	<div id="tail">tail</div>
+</body>
+</rml>

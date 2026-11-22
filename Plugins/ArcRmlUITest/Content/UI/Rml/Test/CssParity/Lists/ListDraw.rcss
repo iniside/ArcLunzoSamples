@@ -1,0 +1,20 @@
+html, body {
+	margin: 0;
+	background-color: #ffffff;
+}
+
+body {
+	font-size: 16px;
+	color: #000000;
+}
+
+.box {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+}
+
+body.plain ul, body.plain ol {
+	list-style-type: none;
+}

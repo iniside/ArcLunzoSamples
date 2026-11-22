@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>UserAgentTab</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/CssParity/UserAgent/UserAgentFrame.rml"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/UserAgent/UserAgentTab.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="uat-top">Top</div>
+	<h2 id="uat-h2">Tab heading</h2>
+	<p id="uat-p">Tab paragraph</p>
+</body>
+</rml>

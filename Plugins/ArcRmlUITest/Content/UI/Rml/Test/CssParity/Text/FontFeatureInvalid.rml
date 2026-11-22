@@ -1,0 +1,18 @@
+<rml>
+<head>
+	<title>Font Feature Invalid</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/FontFeatureInvalid.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="inv-num" class="line">1111</div>
+	<div id="inv-caps" class="line">Small</div>
+	<div id="inv-lig" class="line">fi</div>
+	<div id="inv-set" class="line">1111</div>
+	<div id="inv-val" class="line">1111</div>
+	<div id="ctl-num" class="line">1111</div>
+	<div id="ctl-caps" class="line">Small</div>
+	<div id="ctl-lig" class="line">fi</div>
+</body>
+</rml>

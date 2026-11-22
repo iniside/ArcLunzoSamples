@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Paint Order Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/PaintOrderTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="po-normal" class="t po-normal" style="left: 40px; top: 40px;">HIT 42</div>
+	<div id="po-stroke-fill" class="t po-stroke-fill" style="left: 40px; top: 120px;">HIT 42</div>
+</body>
+</rml>

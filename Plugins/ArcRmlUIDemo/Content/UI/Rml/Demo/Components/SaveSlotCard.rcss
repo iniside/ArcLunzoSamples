@@ -1,0 +1,195 @@
+.dk-saveslotcard {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	box-sizing: border-box;
+	width: 100%;
+	min-width: 0;
+	background: var(--ui-surface);
+	border: 1px solid var(--ui-border);
+	border-radius: var(--ui-radius-lg);
+	box-shadow: var(--ui-shadow-md);
+	cursor: pointer;
+	transition: background-color var(--ui-dur-fast) var(--ui-ease), border-color var(--ui-dur-fast) var(--ui-ease), transform var(--ui-dur-fast) var(--ui-ease);
+	--h-bd: var(--ui-accent);
+	--h-bg: color-mix(in srgb, var(--ui-surface) 90%, var(--ui-tint));
+	--p-tf: scale(0.985);
+	--c-title: var(--ui-text);
+	--c-slot: var(--ui-text-muted);
+}
+
+.dk-saveslotcard.empty {
+	background: transparent;
+	border: 1px dashed var(--ui-border);
+	box-shadow: none;
+	--c-title: var(--ui-text-muted);
+}
+
+.dk-saveslotcard.corrupted {
+	border: 1px solid color-mix(in srgb, var(--ui-danger) 55%, transparent);
+	--c-slot: var(--ui-danger);
+}
+
+.dk-saveslotcard.selected {
+	background: color-mix(in srgb, var(--ui-surface) 88%, var(--ui-accent));
+	border: 1px solid var(--ui-accent);
+	--h-bg: color-mix(in srgb, var(--ui-surface) 88%, var(--ui-accent));
+	--c-slot: var(--ui-accent);
+}
+
+.dk-saveslotcard.disabled {
+	cursor: default;
+	--h-bd: var(--ui-border);
+	--h-bg: var(--ui-surface);
+	--p-tf: none;
+	--c-title: var(--ui-text-disabled);
+}
+
+.dk-saveslotcard:hover {
+	border-color: var(--h-bd);
+	background: var(--h-bg);
+}
+
+.dk-saveslotcard:active {
+	transform: var(--p-tf);
+}
+
+.dk-saveslotcard:focus-visible {
+	border-color: var(--ui-focus);
+	box-shadow: var(--ui-focus-ring), var(--ui-shadow-md);
+	--h-bd: var(--ui-focus);
+	--c-slot: var(--ui-accent);
+}
+
+.dk-saveslotcard.focusable {
+	tab-index: auto;
+	nav: auto;
+}
+
+.dk-saveslotcard-thumb {
+	position: relative;
+	aspect-ratio: 16 / 9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	background: var(--ui-thumb-bg);
+	border-bottom: 1px solid var(--ui-border);
+	opacity: 1;
+}
+
+.dk-saveslotcard.empty .dk-saveslotcard-thumb {
+	background: var(--ui-surface);
+	border-bottom: 1px dashed var(--ui-border);
+}
+
+.dk-saveslotcard.corrupted .dk-saveslotcard-thumb {
+	background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--ui-danger) 18%, var(--ui-surface)) 0px, color-mix(in srgb, var(--ui-danger) 18%, var(--ui-surface)) 10px, var(--ui-surface) 10px, var(--ui-surface) 20px);
+}
+
+.dk-saveslotcard.disabled .dk-saveslotcard-thumb {
+	opacity: 0.45;
+}
+
+.dk-saveslotcard-thumbicon {
+	display: inline-flex;
+	color: var(--ui-text-muted);
+}
+
+.dk-saveslotcard.corrupted .dk-saveslotcard-thumbicon {
+	color: var(--ui-danger);
+}
+
+.dk-saveslotcard-thumbicon svg {
+	display: block;
+}
+
+.dk-saveslotcard-auto {
+	position: absolute;
+	top: var(--ui-space-2);
+	right: var(--ui-space-2);
+}
+
+.dk-saveslotcard-body {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-1);
+	padding: var(--ui-space-3) var(--ui-space-4) var(--ui-space-4);
+}
+
+.dk-saveslotcard-slot {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--c-slot);
+}
+
+.dk-saveslotcard-heading {
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-4);
+	font-weight: 700;
+	line-height: 1.2;
+	text-transform: var(--ui-display-case);
+	letter-spacing: var(--ui-display-tracking);
+	color: var(--c-title);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-saveslotcard-info {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-2);
+}
+
+.dk-saveslotcard-location {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-1);
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-saveslotcard-pin {
+	display: inline-flex;
+	flex: none;
+}
+
+.dk-saveslotcard-pin svg, .dk-saveslotcard-clock svg {
+	display: block;
+}
+
+.dk-saveslotcard-meta {
+	display: flex;
+	justify-content: space-between;
+	gap: var(--ui-space-3);
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	color: var(--ui-text-muted);
+}
+
+.dk-saveslotcard-time {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-1);
+}
+
+.dk-saveslotcard-clock {
+	display: inline-flex;
+}
+
+.dk-saveslotcard-note {
+	font-size: var(--ui-fs-2);
+	line-height: 1.4;
+	color: var(--ui-text-muted);
+}
+
+.dk-saveslotcard.corrupted .dk-saveslotcard-note {
+	color: var(--ui-danger);
+}

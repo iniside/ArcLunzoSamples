@@ -1,0 +1,22 @@
+<component>
+	<prop name="x" default="50"/>
+	<prop name="y" default="40"/>
+	<prop name="visible" default="true"/>
+	<prop name="scale" default="1"/>
+	<prop name="icon" default="/ArcRmlUIDemo/UI/Rml/icons/map-pin.svg"/>
+	<prop name="distance" default="0"/>
+	<prop name="offscreen"/>
+	<prop name="angle" default="0"/>
+	<prop name="kind" default="quest"/>
+	<div class="dk-objective-marker" data-class-no-visible="!$visible" data-style-left="($x + '%')" data-style-top="($y + '%')">
+		<div class="dk-objective-marker-content" data-style-transform="($offscreen ? 'translate(-50%, -50%)' : ('translate(-50%, -100%) scale(' + $scale + ')'))">
+			<span class="dk-objective-marker-icon-s" data-class-poi="$kind == 'poi'">
+				<i class="dk-objective-marker-e4"><svg data-attr-src="$icon" width="20" height="20" stroke-width="2.25"/></i>
+			</span>
+			<span class="dk-objective-marker-dist-s">{{ (($distance | round) + ' m') }}</span>
+			<span class="dk-objective-marker-arrow-s" data-if="$offscreen" data-class-poi="$kind == 'poi'" data-style---dk-objective-marker-arrow-s-transform-1="(($angle != 0 ? $angle : 0) + 'deg')">
+				<i class="dk-objective-marker-e7"><svg src="/ArcRmlUIDemo/UI/Rml/icons/chevron-up.svg" width="18" height="18" stroke-width="3"/></i>
+			</span>
+		</div>
+	</div>
+</component>

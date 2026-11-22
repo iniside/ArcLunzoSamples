@@ -1,0 +1,56 @@
+<rml>
+<head>
+	<title>Retained Paint Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="Retained.rcss"/>
+	<viewmodel name="rv" preview="Preview/Retained.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="rv">
+	<div id="s1" class="stat"></div>
+	<div id="s2" class="stat"></div>
+	<div id="s3" class="stat"></div>
+	<div id="s4" class="stat"></div>
+	<div id="s5" class="stat"></div>
+	<div id="s6" class="stat"></div>
+	<div id="cls" data-class-hot="Hot"></div>
+	<div id="txt">{{ Label }}</div>
+	<div id="atr" data-attr-data-mode="Mode"></div>
+	<div id="hov"></div>
+	<div id="anc" data-class-spin="Spin"><div id="kid"></div></div>
+	<div id="clipper" data-class-narrow="Narrow"><div id="inner"></div></div>
+	<div id="scr">
+		<div class="row r1"></div>
+		<div class="row r0"></div>
+		<div class="row r1"></div>
+		<div class="row r0"></div>
+		<div class="row r1"></div>
+		<div class="row r0"></div>
+		<div class="row r1"></div>
+		<div class="row r0"></div>
+		<div class="row r1"></div>
+		<div class="row r0"></div>
+		<div class="row r1"></div>
+		<div class="row r0"></div>
+		<div class="row r1"></div>
+		<div class="row r0"></div>
+		<div class="row r1"></div>
+		<div class="row r0"></div>
+		<div class="row r1"></div>
+		<div class="row r0"></div>
+		<div class="row r1"></div>
+		<div class="row r0"></div>
+		<div class="row r1"></div>
+		<div class="row r0"></div>
+		<div class="row r1"></div>
+		<div class="row r0"></div>
+		<div class="row r1"></div>
+		<div class="row r0"></div>
+		<div class="row r1"></div>
+		<div class="row r0"></div>
+		<div class="row r1"></div>
+		<div class="row r0"></div>
+	</div>
+	<img id="img" src="/ArcRmlUITest/UI/Rml/Test/CssParity/Text/dot.png"/>
+</body>
+</rml>

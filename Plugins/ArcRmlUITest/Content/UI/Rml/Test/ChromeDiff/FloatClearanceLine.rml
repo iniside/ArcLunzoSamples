@@ -1,0 +1,17 @@
+<rml>
+<head>
+	<title>FloatClearanceLine</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ChromeDiff/FloatClearance.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="wf-case" id="e1"><div id="e1-p" class="wf-line" style="margin-top:30px"><span class="wf-ib" style="width:80px"></span><div id="e1-f" class="wf-f"></div><div id="e1-c" style="margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="e2"><div id="e2-p" class="wf-line" style="margin-top:30px"><span class="wf-ib" style="width:40px"></span><div id="e2-f" class="wf-f"></div><div id="e2-c" style="margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="e3"><div id="e3-p" class="wf-line" style="margin-top:30px"><span class="wf-ib" style="width:80px"></span><span class="wf-ib" style="width:80px"></span><div id="e3-f" class="wf-f"></div><div id="e3-c" style="margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="e4"><div id="e4-p" class="wf-line" style="margin-top:30px"><div id="e4-f" class="wf-f"></div><div id="e4-c" style="overflow:hidden;width:40px;margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="w1"><div id="w1-p" style="width:100px;font-size:0;line-height:20px;padding-top:1px"><span class="wf-ib" style="width:70px"></span> <span class="wf-ib" style="width:40px"></span><div id="w1-f" class="wf-f"></div> <span class="wf-ib" style="width:10px"></span><div id="w1-c" style="margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="w2"><div id="w2-p" style="width:100px;font-size:0;line-height:20px;margin-top:30px"><span class="wf-ib" style="width:70px"></span> <span class="wf-ib" style="width:40px"></span><div id="w2-f" class="wf-f"></div> <span class="wf-ib" style="width:10px"></span><div id="w2-c" style="margin-top:40px;height:10px"></div></div></div>
+	<div class="wf-case" id="w3"><div id="w3-p" style="width:100px;font-size:0;line-height:20px;margin-top:30px"><span class="wf-ib" style="width:70px"></span> <span class="wf-ib" style="width:60px"></span><div id="w3-f" class="wf-f"></div> <span class="wf-ib" style="width:10px"></span><div id="w3-c" style="margin-top:40px;height:10px"></div></div></div>
+</body>
+</rml>

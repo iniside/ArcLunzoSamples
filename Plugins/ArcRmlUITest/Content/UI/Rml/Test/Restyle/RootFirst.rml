@@ -1,0 +1,13 @@
+<rml>
+<head>
+	<title>Restyle Root First Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="RootFirst.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="inh">WWWWiiii WWWWiiii</div>
+	<div id="own" class="mono">WWWWiiii WWWWiiii</div>
+	<div id="sans" class="sans">WWWWiiii WWWWiiii</div>
+</body>
+</rml>

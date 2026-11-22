@@ -1,0 +1,16 @@
+<rml>
+<head>
+	<title>ListTailwindTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Lists/ListTailwind.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<ul class="box" id="tw0" style="left: 100px; top: 10px"><li id="tw0a">Preflight</li><li id="tw0b">Plain</li></ul>
+	<ul class="box list-disc list-inside" id="tw1" style="left: 100px; top: 80px"><li id="tw1a">Inside disc</li><li id="tw1b">Second</li></ul>
+	<ol class="box list-decimal pl-6" id="tw2" style="left: 100px; top: 150px"><li id="tw2a">Decimal</li><li id="tw2b">Second</li></ol>
+	<ul class="box list-none" id="tw3" style="left: 100px; top: 220px"><li id="tw3a">None</li></ul>
+	<ul class="box list-disc list-outside pl-5" id="tw4" style="left: 100px; top: 260px"><li id="tw4a">Outside disc</li><li id="tw4b">Second</li></ul>
+	<ol class="box list-decimal list-inside" id="tw5" style="left: 100px; top: 330px"><li id="tw5a">Inside decimal</li></ol>
+</body>
+</rml>

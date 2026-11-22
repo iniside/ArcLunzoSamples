@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>Update Cost Ellipsis Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="Ellipsis.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="box" class="box">Long name that overflows the box</div>
+</body>
+</rml>

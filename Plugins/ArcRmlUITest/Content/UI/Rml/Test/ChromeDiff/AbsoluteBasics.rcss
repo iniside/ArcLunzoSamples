@@ -1,0 +1,14 @@
+body {
+	margin: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+.t {
+	margin-bottom: 10px;
+	background: #ddd;
+}
+
+.a {
+	background: blue;
+}

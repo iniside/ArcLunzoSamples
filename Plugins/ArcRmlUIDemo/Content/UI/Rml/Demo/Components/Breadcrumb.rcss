@@ -1,0 +1,50 @@
+.dk-breadcrumb {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-2);
+	flex-wrap: wrap;
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.dk-breadcrumb-entry {
+	display: contents;
+}
+
+.dk-breadcrumb-sep {
+	display: inline-flex;
+	color: var(--ui-text-disabled);
+}
+
+.dk-breadcrumb-sep svg {
+	display: block;
+}
+
+.dk-breadcrumb-item {
+	color: var(--ui-text-muted);
+	white-space: nowrap;
+	cursor: pointer;
+	border-radius: var(--ui-radius-sm);
+	padding: 2px var(--ui-space-1);
+	box-shadow: none;
+}
+
+.dk-breadcrumb-item.last {
+	color: var(--ui-text);
+	cursor: default;
+}
+
+.dk-breadcrumb-item:hover {
+	color: var(--ui-text);
+}
+
+.dk-breadcrumb-item:focus-visible {
+	box-shadow: var(--ui-focus-ring);
+}
+
+.dk-breadcrumb-item.focusable {
+	tab-index: auto;
+	nav: auto;
+}

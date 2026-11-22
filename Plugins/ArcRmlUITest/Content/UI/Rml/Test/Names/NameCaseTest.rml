@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>Name Case Test</title>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Common.rcss"/>
+	<viewmodel name="names" preview="Preview/NameCaseTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="names">
+	<div id="title" data-if="Shown">{{ Title }}</div>
+	<div class="nc-row" data-for="d : rows" data-key="d.Id" data-attr-id="'row-' + d.Id">{{ d.Label }}</div>
+</body>
+</rml>

@@ -1,0 +1,9 @@
+<rml id="root-ib" style="display: inline-block; width: 300px; height: 100px; margin: 0 auto; background-color: #141821;">
+<head>
+	<title>Body Inline Block Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+</body>
+</rml>

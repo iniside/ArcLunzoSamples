@@ -1,0 +1,88 @@
+@keyframes hud-obj-flash { 0% { background-color: var(--ui-success); } 100% { background-color: var(--hud-plate-2); } }
+
+@keyframes hud-q-done { 0% { opacity: 1; transform: scaleY(1); } 60% { opacity: 1; transform: scaleY(1); } 100% { opacity: 0; transform: scaleY(0); } }
+
+.dk-quest-tracker {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-2);
+	width: 100%;
+	max-width: 320px;
+	min-width: 0;
+	box-sizing: border-box;
+	padding: var(--ui-space-2) var(--ui-space-3);
+	border-radius: var(--hud-radius);
+	background: var(--hud-plate);
+	border: 1px solid var(--hud-stroke);
+	box-shadow: var(--hud-plate-shadow);
+	color: var(--hud-text);
+}
+
+.dk-quest-tracker-e2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.dk-quest-tracker-head-s {
+	font-family: var(--ui-font-mono);
+	font-size: var(--hud-fs-sm);
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--hud-text-muted);
+}
+
+.dk-quest-tracker-count-s {
+	font-family: var(--ui-font-mono);
+	font-size: var(--hud-fs-sm);
+	color: var(--hud-text-muted);
+}
+
+.dk-quest-tracker-list {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-2);
+}
+
+.dk-quest-tracker-q {
+	display: flex;
+	flex-direction: column;
+	gap: var(--hud-space-xs);
+	transform-origin: top;
+}
+
+.dk-quest-tracker-q.done {
+	animation: hud-q-done var(--hud-dur-long) var(--ui-ease) forwards;
+}
+
+.dk-quest-tracker-title {
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-2);
+	font-weight: 700;
+	text-transform: var(--ui-display-case);
+	letter-spacing: var(--ui-display-tracking);
+	color: var(--hud-text);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-quest-tracker-title.done {
+	color: var(--ui-success);
+}
+
+.dk-quest-tracker-objs {
+	display: flex;
+	flex-direction: column;
+	gap: var(--hud-space-xs);
+}
+
+.dk-quest-tracker-o {
+	border-radius: var(--hud-radius-sm);
+	background: var(--hud-plate-2);
+	padding: 0 var(--hud-space-sm);
+}
+
+.dk-quest-tracker-o.flash {
+	animation: hud-obj-flash var(--hud-dur-pulse) var(--ui-ease);
+}

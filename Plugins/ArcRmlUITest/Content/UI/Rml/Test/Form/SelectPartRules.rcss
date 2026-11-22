@@ -1,0 +1,32 @@
+body {
+	margin: 0;
+}
+
+.row {
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+/* None of these part rules may reach the select's internal parts (VENDORED 231). */
+select selectvalue {
+	position: absolute;
+	left: 200px;
+	top: 40px;
+	color: rgb(255, 0, 0);
+}
+
+selectarrow {
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+
+select selectbox {
+	padding-left: 30px;
+	color: rgb(0, 0, 255);
+}
+
+/* Option rules still match: the options are DOM children of the internal list. */
+select option[value=b] {
+	color: rgb(0, 128, 0);
+}

@@ -1,0 +1,4 @@
+<component>
+	<prop name="serial"/>
+	<div id="pc-box" data-pulse-flash="$serial">Box</div>
+</component>

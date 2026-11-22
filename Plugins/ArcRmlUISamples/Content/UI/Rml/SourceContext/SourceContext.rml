@@ -1,0 +1,22 @@
+<rml>
+<head>
+	<title>Source: context</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="SourceContext.rcss"/>
+	<viewmodel name="item" class="/Script/ArcRmlUISamples.ArcRmlSamplesSourceContextViewModel" context="VM_SampleContext"/>
+</head>
+<body data-model="item">
+	<div class="sc-panel">
+		<h1 class="sc-title">Source: context</h1>
+		<div data-if="ArcResolved">
+			<span class="sc-row">{{ Label }}</span>
+		</div>
+		<span class="sc-row" data-if="!ArcResolved">Waiting for the view model</span>
+		<div class="sc-buttons">
+			<button class="sc-button" data-action="close">Close</button>
+		</div>
+	</div>
+</body>
+</rml>

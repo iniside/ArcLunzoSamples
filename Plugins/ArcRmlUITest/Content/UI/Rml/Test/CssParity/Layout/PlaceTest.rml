@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>Place Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Layout/Place.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="grid items"><div id="pl-items" class="cell"></div></div>
+	<div class="grid tracks"><div id="pl-content" class="cell"></div></div>
+	<div class="grid"><div id="pl-self" class="cell self"></div></div>
+	<div class="grid items-two"><div id="pl-items-two" class="cell"></div></div>
+	<div class="flex wrap content-flex"><div id="pl-flex-a" class="cell"></div><div id="pl-flex-b" class="cell"></div></div>
+</body>
+</rml>

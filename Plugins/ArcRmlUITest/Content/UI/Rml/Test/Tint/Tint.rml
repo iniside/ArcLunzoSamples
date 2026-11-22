@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>Tint Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="Tint.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="box"></div>
+	<div id="txt">Tint</div>
+</body>
+</rml>

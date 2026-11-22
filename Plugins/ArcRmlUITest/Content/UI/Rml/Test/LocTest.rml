@@ -1,0 +1,25 @@
+<rml>
+<head>
+	<title loc="Title">Loc Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/ds/tokens.rcss"/>
+	<link type="text/rcss" href="ComponentTest.rcss"/>
+	<viewmodel name="loctest" preview="Preview/LocTest.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="loctest">
+	<div class="col left">
+		<div class="title" loc="Heading">Loc heading</div>
+		<div id="loc-plain"><span loc="Unequip">Unequip</span></div>
+		<div id="loc-self"><span loc="SelfClosing"/></div>
+		<div id="loc-in-if" data-if="show"><span loc="InsideIf">Inside if</span></div>
+		<div id="loc-if-text" data-if="show" loc="IfText">If text</div>
+		<div id="loc-section"><dc-import name="/ArcRmlUITest/UI/Rml/Components/SectionLabel" loc-label="Section" label="Section source"/></div>
+		<div id="loc-button"><dc-import name="/ArcRmlUITest/UI/Rml/Components/Button" loc-label="ButtonLabel" label="Press"/></div>
+		<div id="loc-area"><textarea loc="AreaText">Area</textarea></div>
+		<div id="loc-missing"><span loc="MissingKey">Missing</span></div>
+		<div id="loc-note"><dc-import name="/ArcRmlUITest/UI/Rml/Test/LocTestBox.rml" mode="note" loc-label="Section"/></div>
+		<div id="plain-bound">Plain {{ count }}</div>
+	</div>
+</body>
+</rml>

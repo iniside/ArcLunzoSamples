@@ -1,0 +1,19 @@
+<component>
+	<prop name="icon" default=""/>
+	<prop name="title" default=""/>
+	<prop name="subtitle" default=""/>
+	<prop name="meta" default=""/>
+	<prop name="selected"/>
+	<prop name="disabled"/>
+	<prop name="autofocus"/>
+	<prop name="focusable"/>
+	<div class="dk-listrow" data-class-selected="$selected" data-class-disabled="$disabled" data-class-focusable="$focusable" data-attrif-selected="$selected" data-attrif-autofocus="$autofocus">
+		<span class="dk-listrow-iconbox" data-if="$icon != ''"><i class="dk-listrow-icon"><svg data-attr-src="$icon" width="20" height="20" stroke-width="2"/></i></span>
+		<div class="dk-listrow-main">
+			<span class="dk-listrow-title">{{ $title }}</span>
+			<span class="dk-listrow-sub" data-if="$subtitle != ''">{{ $subtitle }}</span>
+		</div>
+		<span class="dk-listrow-meta" data-if="$meta != ''">{{ $meta }}</span>
+		<div class="dk-listrow-actions"><slot/></div>
+	</div>
+</component>

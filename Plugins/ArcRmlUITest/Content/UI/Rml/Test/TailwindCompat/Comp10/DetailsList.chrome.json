@@ -1,0 +1,1035 @@
+{
+"elements": {
+"0": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+0,
+0,
+1920,
+308
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+1920,
+1080
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+576,
+0,
+576
+],
+"padding": [
+24,
+24,
+24,
+24
+],
+"rect": [
+576,
+0,
+768,
+308
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+768,
+308
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.0": {
+"lines": [],
+"text": "\n    "
+},
+"0.0.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "flow-root",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+600,
+24,
+720,
+260
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+720,
+272
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.0": {
+"lines": [],
+"text": "\n      "
+},
+"0.0.1.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+-12,
+0,
+-12,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+600,
+12,
+720,
+284
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+720,
+284
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.0": {
+"lines": [],
+"text": "\n        "
+},
+"0.0.1.1.1": {
+"border": [
+0,
+0,
+1,
+0
+],
+"display": "grid",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+12,
+0,
+12,
+0
+],
+"rect": [
+600,
+12,
+720,
+45
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+720,
+44
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.1.0": {
+"lines": [],
+"text": "\n          "
+},
+"0.0.1.1.1.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+600,
+24,
+229.328125,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+229,
+20
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.1.1.0": {
+"lines": [
+{
+"height": 18,
+"text": "Title",
+"top": 25,
+"width": 29.84375,
+"x": 600
+}
+],
+"text": "Title"
+},
+"0.0.1.1.1.2": {
+"lines": [],
+"text": "\n\n          "
+},
+"0.0.1.1.1.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+845.328125,
+24,
+474.671875,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+475,
+20
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.1.3.0": {
+"lines": [
+{
+"height": 18,
+"text": "Mr",
+"top": 25,
+"width": 17.390625,
+"x": 845.328125
+}
+],
+"text": "Mr"
+},
+"0.0.1.1.1.4": {
+"lines": [],
+"text": "\n        "
+},
+"0.0.1.1.10": {
+"lines": [],
+"text": "\n      "
+},
+"0.0.1.1.2": {
+"lines": [],
+"text": "\n\n        "
+},
+"0.0.1.1.3": {
+"border": [
+0,
+0,
+1,
+0
+],
+"display": "grid",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+12,
+0,
+12,
+0
+],
+"rect": [
+600,
+57,
+720,
+45
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+720,
+44
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.3.0": {
+"lines": [],
+"text": "\n          "
+},
+"0.0.1.1.3.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+600,
+69,
+229.328125,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+229,
+20
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.3.1.0": {
+"lines": [
+{
+"height": 18,
+"text": "Name",
+"top": 70,
+"width": 37.59375,
+"x": 600
+}
+],
+"text": "Name"
+},
+"0.0.1.1.3.2": {
+"lines": [],
+"text": "\n\n          "
+},
+"0.0.1.1.3.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+845.328125,
+69,
+474.671875,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+475,
+20
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.3.3.0": {
+"lines": [
+{
+"height": 18,
+"text": "John Frusciante",
+"top": 70,
+"width": 108.859375,
+"x": 845.328125
+}
+],
+"text": "John Frusciante"
+},
+"0.0.1.1.3.4": {
+"lines": [],
+"text": "\n        "
+},
+"0.0.1.1.4": {
+"lines": [],
+"text": "\n\n        "
+},
+"0.0.1.1.5": {
+"border": [
+0,
+0,
+1,
+0
+],
+"display": "grid",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+12,
+0,
+12,
+0
+],
+"rect": [
+600,
+102,
+720,
+45
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+720,
+44
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.5.0": {
+"lines": [],
+"text": "\n          "
+},
+"0.0.1.1.5.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+600,
+114,
+229.328125,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+229,
+20
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.5.1.0": {
+"lines": [
+{
+"height": 18,
+"text": "Occupation",
+"top": 115,
+"width": 78.390625,
+"x": 600
+}
+],
+"text": "Occupation"
+},
+"0.0.1.1.5.2": {
+"lines": [],
+"text": "\n\n          "
+},
+"0.0.1.1.5.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+845.328125,
+114,
+474.671875,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+475,
+20
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.5.3.0": {
+"lines": [
+{
+"height": 18,
+"text": "Guitarist",
+"top": 115,
+"width": 58.0625,
+"x": 845.328125
+}
+],
+"text": "Guitarist"
+},
+"0.0.1.1.5.4": {
+"lines": [],
+"text": "\n        "
+},
+"0.0.1.1.6": {
+"lines": [],
+"text": "\n\n        "
+},
+"0.0.1.1.7": {
+"border": [
+0,
+0,
+1,
+0
+],
+"display": "grid",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+12,
+0,
+12,
+0
+],
+"rect": [
+600,
+147,
+720,
+45
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+720,
+44
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.7.0": {
+"lines": [],
+"text": "\n          "
+},
+"0.0.1.1.7.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+600,
+159,
+229.328125,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+229,
+20
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.7.1.0": {
+"lines": [
+{
+"height": 18,
+"text": "Salary",
+"top": 160,
+"width": 42.28125,
+"x": 600
+}
+],
+"text": "Salary"
+},
+"0.0.1.1.7.2": {
+"lines": [],
+"text": "\n\n          "
+},
+"0.0.1.1.7.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+845.328125,
+159,
+474.671875,
+20
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+475,
+20
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.7.3.0": {
+"lines": [
+{
+"height": 18,
+"text": "$1,000,000+",
+"top": 160,
+"width": 83.328125,
+"x": 845.328125
+}
+],
+"text": "$1,000,000+"
+},
+"0.0.1.1.7.4": {
+"lines": [],
+"text": "\n        "
+},
+"0.0.1.1.8": {
+"lines": [],
+"text": "\n\n        "
+},
+"0.0.1.1.9": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "grid",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+12,
+0,
+12,
+0
+],
+"rect": [
+600,
+192,
+720,
+104
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+720,
+104
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.9.0": {
+"lines": [],
+"text": "\n          "
+},
+"0.0.1.1.9.1": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+600,
+204,
+229.328125,
+80
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+229,
+80
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.9.1.0": {
+"lines": [
+{
+"height": 18,
+"text": "Bio",
+"top": 205,
+"width": 21.484375,
+"x": 600
+}
+],
+"text": "Bio"
+},
+"0.0.1.1.9.2": {
+"lines": [],
+"text": "\n\n          "
+},
+"0.0.1.1.9.3": {
+"border": [
+0,
+0,
+0,
+0
+],
+"display": "block",
+"fragments": null,
+"margin": [
+0,
+0,
+0,
+0
+],
+"padding": [
+0,
+0,
+0,
+0
+],
+"rect": [
+845.328125,
+204,
+474.671875,
+80
+],
+"scroll": [
+0,
+0
+],
+"scroll_size": [
+475,
+80
+],
+"scrollbars": [
+false,
+false
+],
+"transformed_rect": null
+},
+"0.0.1.1.9.3.0": {
+"lines": [
+{
+"height": 18,
+"text": "\n            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et facilis ",
+"top": 205,
+"width": 439.109375,
+"x": 845.328125
+},
+{
+"height": 18,
+"text": "debitis explicabo\n            doloremque impedit nesciunt dolorem facere, dolor ",
+"top": 225,
+"width": 467.34375,
+"x": 845.328125
+},
+{
+"height": 18,
+"text": "quasi veritatis quia fugit aperiam\n            aspernatur neque molestiae labore ",
+"top": 245,
+"width": 462.796875,
+"x": 845.328125
+},
+{
+"height": 18,
+"text": "aliquam soluta architecto?\n          ",
+"top": 265,
+"width": 181.25,
+"x": 845.328125
+}
+],
+"text": "\n            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et facilis debitis explicabo\n            doloremque impedit nesciunt dolorem facere, dolor quasi veritatis quia fugit aperiam\n            aspernatur neque molestiae labore aliquam soluta architecto?\n          "
+},
+"0.0.1.1.9.4": {
+"lines": [],
+"text": "\n        "
+},
+"0.0.1.2": {
+"lines": [],
+"text": "\n    "
+},
+"0.0.2": {
+"lines": [],
+"text": "\n  \n\n\n\n"
+}
+},
+"inputs_sha1": {
+"DetailsList.chrome.html": "a48d69a48073d4704959fda539aab9739a51060e",
+"img/ph.png": "7c1ddc8365ec171043d756e950635cb3f913bf71",
+"tw-flowbite.rcss": "1a2f56bcf8423b7a22700823ab1a001908e649a1",
+"tw-hyperui.rcss": "6174e5823107a67d486cadfda96038e576d07204",
+"tw-probe.rcss": "6a9ee68f33dd40210aa8e9b1fab10df54d28b533"
+},
+"viewport": [
+1920,
+1080
+]
+}

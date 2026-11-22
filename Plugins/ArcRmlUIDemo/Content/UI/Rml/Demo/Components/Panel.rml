@@ -1,0 +1,37 @@
+<component>
+	<prop name="surface" default="panel"/>
+	<prop name="title" default=""/>
+	<prop name="subtitle" default=""/>
+	<prop name="icon" default=""/>
+	<prop name="hasIcon"/>
+	<prop name="tone" default=""/>
+	<prop name="variant" default=""/>
+	<prop name="scroll"/>
+	<prop name="padded" default="true"/>
+	<prop name="fill"/>
+	<prop name="hasActions"/>
+	<prop name="hasFooter"/>
+	<div class="dk-panel" data-class-overlay="$surface == 'overlay'" data-class-flat="$variant == 'flat'" data-class-inset="$variant == 'inset'" data-class-danger="$tone == 'danger'" data-class-fill="$fill">
+		<span class="dk-panel-orn-frame"></span>
+		<span class="dk-panel-orn-corner tl"></span>
+		<span class="dk-panel-orn-gem tl"></span>
+		<span class="dk-panel-orn-corner tr"></span>
+		<span class="dk-panel-orn-gem tr"></span>
+		<span class="dk-panel-orn-corner bl"></span>
+		<span class="dk-panel-orn-gem bl"></span>
+		<span class="dk-panel-orn-corner br"></span>
+		<span class="dk-panel-orn-gem br"></span>
+		<div class="dk-panel-header" data-if="$title != '' || $icon != '' || $hasIcon || $hasActions">
+			<i class="dk-panel-icon" data-if="$icon != ''" data-class-danger="$tone == 'danger'"><svg data-attr-src="$icon" width="22" height="22" stroke-width="2"/></i>
+			<i class="dk-panel-icon" data-if="$hasIcon" data-class-danger="$tone == 'danger'"><slot name="icon"/></i>
+			<div class="dk-panel-titles">
+				<span class="dk-panel-title">{{ $title }}</span>
+				<span class="dk-panel-rule"><span class="dk-panel-rule-bar"></span><span class="dk-panel-rule-gem"></span><span class="dk-panel-rule-line"></span></span>
+				<span class="dk-panel-subtitle" data-if="$subtitle != ''">{{ $subtitle }}</span>
+			</div>
+			<div class="dk-panel-actions"><slot name="actions"/></div>
+		</div>
+		<div class="dk-panel-body" data-class-scroll="$scroll" data-class-unpadded="!$padded"><slot/></div>
+		<div class="dk-panel-footer" data-if="$hasFooter"><slot name="footer"/></div>
+	</div>
+</component>

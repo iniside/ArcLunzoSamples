@@ -1,0 +1,3 @@
+<component>
+	<div class="slotbox"><span style="widht: 1px;">Box</span><slot/><span style="hieght: 1px;">After</span></div>
+</component>

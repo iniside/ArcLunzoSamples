@@ -1,0 +1,30 @@
+<rml>
+<head>
+	<title>Row Dirty Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="RowDirty.rcss"/>
+	<viewmodel name="rows" preview="Preview/RowDirty.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="rows">
+	<div id="count">{{ Rows.size }}</div>
+	<div id="dyn">{{ Rows[Sel].Name }}</div>
+	<div id="fixed">{{ Rows[3].Name }}</div>
+	<div class="row" data-for="r, i : Rows">
+		<span data-attr-id="'name' + i">{{ r.Name }}</span>
+		<div data-alias-x="r"><span data-attr-id="'alias' + i">{{ x.Name }}</span></div>
+		<span data-attr-id="'inner' + i">{{ r.Inner.Label }}</span>
+		<span class="box" data-attr-id="'cls' + i" data-class-hot="r.Value > 50">c</span>
+		<span class="box" data-attr-id="'sty' + i" data-style-width="r.Value + 'px'">s</span>
+		<span data-attr-id="'tag' + r.Tag">t</span>
+		<div data-if="r.Show"><span data-attr-id="'if' + i">shown</span></div>
+		<dc-import name="/ArcRmlUITest/UI/Rml/Test/RowDirty/RowLabel" label="{{ r.Name }}" idx="{{ i }}"/>
+	</div>
+	<div class="row" data-for="k, ki : Rows" data-key="k.Id">
+		<span data-attr-id="'key' + ki">{{ k.Name }}</span>
+	</div>
+	<div class="row" data-for="g, gi : Group.Rows">
+		<span data-attr-id="'group' + gi">{{ g.Name }}</span>
+	</div>
+</body>
+</rml>

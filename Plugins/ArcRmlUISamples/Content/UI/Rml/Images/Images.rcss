@@ -1,0 +1,106 @@
+@spritesheet im-sprites {
+	src: Images/Sprites.png;
+	im-circle: 0px 0px 32px 32px;
+	im-square: 32px 0px 32px 32px;
+	im-diamond: 0px 32px 32px 32px;
+	im-cross: 32px 32px 32px 32px;
+}
+
+.im-panel {
+	position: absolute;
+	left: 80px;
+	top: 60px;
+	width: 1080px;
+	padding: 24px 32px;
+	background-color: rgba(20, 24, 32, 0.9);
+	border-radius: 8px;
+}
+
+.im-title {
+	display: block;
+	font-size: 36px;
+	margin-bottom: 12px;
+}
+
+.im-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.im-cell {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 240px;
+	height: 150px;
+	padding: 8px;
+	border: 1px solid #2c3a52;
+	border-radius: 6px;
+}
+
+.im-row {
+	display: flex;
+	gap: 8px;
+}
+
+.im-box {
+	width: 64px;
+	height: 64px;
+	margin-bottom: 8px;
+}
+
+.im-sprites {
+	display: flex;
+	gap: 4px;
+	margin: 16px 0 24px 0;
+}
+
+.im-sprite {
+	width: 32px;
+	height: 32px;
+}
+
+.im-inline {
+	width: 64px;
+	height: 64px;
+	margin-bottom: 8px;
+}
+
+.im-inline-blue {
+	color: #3a86ff;
+}
+
+.im-inline-green {
+	color: #3ccf6e;
+}
+
+.im-caption {
+	margin: 0;
+	font-size: 15px;
+	color: #a9b4c6;
+	text-align: center;
+}
+
+.im-value {
+	width: 100%;
+	font-size: 13px;
+	overflow-wrap: anywhere;
+}
+
+.im-buttons {
+	display: flex;
+	gap: 12px;
+	margin-top: 16px;
+}
+
+.im-button {
+	padding: 8px 20px;
+	border-radius: 4px;
+	background-color: #3a4456;
+	color: #e8e8e8;
+}
+
+.im-button:hover {
+	background-color: #4d5a72;
+}

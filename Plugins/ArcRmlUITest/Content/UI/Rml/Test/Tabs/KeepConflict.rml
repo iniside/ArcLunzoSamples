@@ -1,0 +1,11 @@
+<rml>
+<head>
+	<title>Keep Conflict</title>
+	<meta name="frame" content="/ArcRmlUITest/UI/Rml/Test/Tabs/KeepFrame.rml"/>
+	<link type="text/rcss" href="KeepTab.rcss"/>
+	<viewmodel name="shared" class="/Script/ArcRmlUITest.ArcRmlKeptTabViewModel" context="KeepOther"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="shared">
+	<div id="kcc-text" class="kt-row">{{ Count }}</div>
+</body>
+</rml>

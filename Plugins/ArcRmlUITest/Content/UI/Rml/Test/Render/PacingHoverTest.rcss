@@ -1,0 +1,2 @@
+#box { position: absolute; left: 20px; top: 20px; width: 100px; height: 60px; background-color: #3366cc; }
+#box:hover { background-color: #cc3333; }

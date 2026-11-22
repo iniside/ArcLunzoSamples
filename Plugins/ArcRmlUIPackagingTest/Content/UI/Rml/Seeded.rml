@@ -1,0 +1,14 @@
+<rml>
+<head>
+	<title>Seeded</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="Seeded.rcss"/>
+	<viewmodel name="seeded" preview="Preview/Seeded.json"/>
+</head>
+<body data-model="seeded">
+	<div class="seeded-icon"></div>
+	<div>{{ title }}</div>
+	<div id="open-opened" data-action="open:/ArcRmlUIPackagingTest/UI/Rml/Opened.rml">Open</div>
+</body>
+</rml>

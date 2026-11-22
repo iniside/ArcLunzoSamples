@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Themes</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="Themes.rcss"/>
+	<viewmodel name="themes" class="/Script/ArcRmlUISamples.ArcRmlSamplesThemesViewModel" create="true"/>
+</head>
+<body data-model="themes" data-class-theme-dark="Theme == 'dark'" data-class-theme-contrast="Theme == 'contrast'">
+	<div class="th-panel">
+		<h1 class="th-title">Themes</h1>
+		<p class="th-text">One document, three colour sets. The theme is a class on the body.</p>
+		<div class="th-buttons">
+			<button id="th-default" class="th-button" autofocus="" data-event-click="call('', 'SetTheme', 'default')">Default</button>
+			<button id="th-dark" class="th-button" data-event-click="call('', 'SetTheme', 'dark')">Dark</button>
+			<button id="th-contrast" class="th-button" data-event-click="call('', 'SetTheme', 'contrast')">High contrast</button>
+		</div>
+	</div>
+</body>
+</rml>

@@ -1,0 +1,35 @@
+<component>
+	<prop name="state" default="filled"/>
+	<prop name="slotLabel" default=""/>
+	<prop name="title" default=""/>
+	<prop name="location" default=""/>
+	<prop name="playtime" default=""/>
+	<prop name="date" default=""/>
+	<prop name="emptyLabel" default=""/>
+	<prop name="corruptedLabel" default=""/>
+	<prop name="emptyHint" default=""/>
+	<prop name="corruptedHint" default=""/>
+	<prop name="autosaveLabel" default="Auto"/>
+	<prop name="selected"/>
+	<prop name="disabled"/>
+	<prop name="autofocus"/>
+	<prop name="focusable"/>
+	<div class="dk-saveslotcard" data-class-empty="$state == 'empty'" data-class-corrupted="$state == 'corrupted'" data-class-selected="$selected" data-class-disabled="$disabled" data-class-focusable="$focusable" data-attrif-selected="$selected" data-attrif-autofocus="$autofocus">
+		<div class="dk-saveslotcard-thumb">
+			<i class="dk-saveslotcard-thumbicon" data-if="$state == 'empty' || $state == 'corrupted'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/plus.svg" data-if="$state == 'empty'" width="32" height="32" stroke-width="1.5"/><svg src="/ArcRmlUIDemo/UI/Rml/icons/file-warning.svg" data-if="$state == 'corrupted'" width="32" height="32" stroke-width="1.5"/></i>
+			<span class="dk-saveslotcard-auto" data-if="$state == 'autosave'"><dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Badge" label="{{ $autosaveLabel }}" tone="accent" solid="{{ true }}"/></span>
+		</div>
+		<div class="dk-saveslotcard-body">
+			<span class="dk-saveslotcard-slot">{{ $slotLabel }}</span>
+			<span class="dk-saveslotcard-heading">{{ $state == 'empty' ? $emptyLabel : ($state == 'corrupted' ? $corruptedLabel : $title) }}</span>
+			<div class="dk-saveslotcard-info" data-if="$state == 'filled' || $state == 'autosave'">
+				<span class="dk-saveslotcard-location"><i class="dk-saveslotcard-pin"><svg src="/ArcRmlUIDemo/UI/Rml/icons/map-pin.svg" width="14" height="14" stroke-width="2"/></i>{{ $location }}</span>
+				<div class="dk-saveslotcard-meta">
+					<span class="dk-saveslotcard-time"><i class="dk-saveslotcard-clock"><svg src="/ArcRmlUIDemo/UI/Rml/icons/clock.svg" width="13" height="13" stroke-width="2"/></i>{{ $playtime }}</span>
+					<span>{{ $date }}</span>
+				</div>
+			</div>
+			<span class="dk-saveslotcard-note" data-if="$state == 'empty' || $state == 'corrupted'">{{ $state == 'empty' ? $emptyHint : $corruptedHint }}</span>
+		</div>
+	</div>
+</component>

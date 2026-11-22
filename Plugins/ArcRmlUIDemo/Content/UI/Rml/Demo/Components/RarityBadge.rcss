@@ -1,0 +1,39 @@
+.dk-raritybadge {
+	display: inline-flex;
+	align-items: center;
+	padding: 2px var(--ui-space-2);
+	border-radius: var(--ui-radius-sm);
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: var(--ui-rarity-common);
+	background: color-mix(in srgb, var(--ui-rarity-common) 14%, transparent);
+	border: 1px solid color-mix(in srgb, var(--ui-rarity-common) 50%, transparent);
+}
+
+.dk-raritybadge.uncommon {
+	color: var(--ui-rarity-uncommon);
+	background: color-mix(in srgb, var(--ui-rarity-uncommon) 14%, transparent);
+	border: 1px solid color-mix(in srgb, var(--ui-rarity-uncommon) 50%, transparent);
+}
+
+.dk-raritybadge.rare {
+	color: var(--ui-rarity-rare);
+	background: color-mix(in srgb, var(--ui-rarity-rare) 14%, transparent);
+	border: 1px solid color-mix(in srgb, var(--ui-rarity-rare) 50%, transparent);
+}
+
+.dk-raritybadge.epic {
+	color: var(--ui-rarity-epic);
+	background: color-mix(in srgb, var(--ui-rarity-epic) 14%, transparent);
+	border: 1px solid color-mix(in srgb, var(--ui-rarity-epic) 50%, transparent);
+}
+
+.dk-raritybadge.legendary {
+	color: var(--ui-rarity-legendary);
+	background: color-mix(in srgb, var(--ui-rarity-legendary) 14%, transparent);
+	border: 1px solid color-mix(in srgb, var(--ui-rarity-legendary) 50%, transparent);
+}

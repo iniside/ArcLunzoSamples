@@ -1,0 +1,16 @@
+{
+	"Name": "Aldric",
+	"Level": 7,
+	"Health": 0.8,
+	"Accent": { "$colour": "#3399ffff" },
+	"bLowHealth": false,
+	"Items": ["Stone axe", "Oak staff", "Iron shield"],
+	"$variants": {
+		"LowHealth": {
+			"Health": 0.15,
+			"Accent": { "$colour": "#e04040ff" },
+			"bLowHealth": true,
+			"Items": ["Stone axe"]
+		}
+	}
+}

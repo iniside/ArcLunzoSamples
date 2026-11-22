@@ -1,0 +1,10 @@
+<rml>
+<head>
+	<title>Opened</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+</head>
+<body>
+	<div>Opened by the open: action of Seeded.rml</div>
+</body>
+</rml>

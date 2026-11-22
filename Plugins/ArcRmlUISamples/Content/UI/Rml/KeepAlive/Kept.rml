@@ -1,0 +1,36 @@
+<rml>
+<head>
+	<title>Kept</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<meta name="keep-alive" content="true"/>
+	<link type="text/rcss" href="/ArcRmlUISamples/UI/Rml/Shared/Samples.rcss"/>
+	<link type="text/rcss" href="KeepAlive.rcss"/>
+	<viewmodel name="kept" class="/Script/ArcRmlUISamples.ArcRmlSamplesKeepAliveKeptViewModel" create="true"/>
+</head>
+<body data-model="kept">
+	<div class="ka-panel">
+		<h1 class="ka-title">Kept</h1>
+		<div class="ka-row">
+			<button id="ka-add" class="ka-button" autofocus="" data-event-click="call('', 'Add')">Add one</button>
+			<p id="ka-count" class="ka-count">Count: {{ Count }}</p>
+		</div>
+		<p class="ka-label">Type something</p>
+		<input id="ka-field" class="ka-field" type="text"/>
+		<p class="ka-label">Scroll this list</p>
+		<div id="ka-scroll" class="ka-scroll">
+			<p class="ka-scroll-row">Row 1</p>
+			<p class="ka-scroll-row">Row 2</p>
+			<p class="ka-scroll-row">Row 3</p>
+			<p class="ka-scroll-row">Row 4</p>
+			<p class="ka-scroll-row">Row 5</p>
+			<p class="ka-scroll-row">Row 6</p>
+			<p class="ka-scroll-row">Row 7</p>
+			<p class="ka-scroll-row">Row 8</p>
+			<p class="ka-scroll-row">Row 9</p>
+			<p class="ka-scroll-row">Row 10</p>
+		</div>
+		<p class="ka-hint">Back parks this screen. Open it again: the count, the text and the scroll are still here.</p>
+	</div>
+</body>
+</rml>

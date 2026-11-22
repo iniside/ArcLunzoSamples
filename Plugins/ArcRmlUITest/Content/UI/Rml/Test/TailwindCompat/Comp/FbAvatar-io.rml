@@ -1,0 +1,15 @@
+<rml>
+<head>
+<title>FbAvatar</title>
+<meta name="layer" content="UI.Layer.Menu"/>
+<meta name="input-mode" content="game"/>
+<link type="text/rcss" href="init-only.rcss"/>
+<link type="text/rcss" href="tw-flowbite.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body class="p-6">
+<img class="w-10 h-10 rounded-full" src="img/ph.png" alt="Rounded avatar"/>
+<img class="w-10 h-10 rounded-base" src="img/ph.png" alt="Default avatar"/>
+
+
+</body>
+</rml>

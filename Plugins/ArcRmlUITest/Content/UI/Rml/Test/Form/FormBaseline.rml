@@ -1,0 +1,31 @@
+<rml>
+<head>
+	<title>FormBaseline</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Form/FormBaseline.rcss"/>
+	<viewmodel name="fb" preview="Preview/FormBaseline.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="fb">
+	<div class="row" id="fb-line-text">ab <input id="fb-text"/> ef</div>
+	<div class="row" id="fb-line-value">ab <input id="fb-value" type="text" value="cd"/> ef</div>
+	<div class="row" id="fb-line-select">ab <select id="fb-select"><option value="x">cd</option></select> ef</div>
+	<div class="row" id="fb-line-button">ab <button id="fb-button">Save</button> ef</div>
+	<div class="row" id="fb-line-submit">ab <input id="fb-submit" type="submit" value="Send"/> ef</div>
+	<div class="row" id="fb-line-textarea">ab <textarea id="fb-ta">cd</textarea> ef</div>
+	<div class="row" id="fb-line-checkbox">ab <input id="fb-checkbox" type="checkbox"/> ef</div>
+	<div class="row" id="fb-line-16">ab <input id="fb-text-16" class="f16" type="text" value="cd"/> <select id="fb-select-16" class="f16"><option value="x">cd</option></select> ef</div>
+	<div class="row" id="fb-line-checkbox-none">ab <input id="fb-checkbox-none" class="plain" type="checkbox"/> ef</div>
+	<div class="row" id="fb-line-radio">ab <input id="fb-radio" type="radio" name="fbg"/> ef</div>
+	<div class="row" id="fb-line-lh">ab <input id="fb-text-lh" class="lh" type="text" value="cd"/> ef</div>
+	<div class="row" id="fb-line-label">ab <input id="fb-label-text" type="text" value="cd"/> <select id="fb-label-select"><option value="x">cd</option></select> <input id="fb-label-checkbox" type="checkbox"/> <span id="fb-label">{{ label }}</span></div>
+	<div class="row" id="fb-line-radio-mb">ab <input id="fb-radio-mb" class="mb3" type="radio" name="fbm"/> ef</div>
+	<div class="row" id="fb-line-radio-none">ab <input id="fb-radio-none" class="plain mb3" type="radio" name="fbn"/> ef</div>
+	<div class="row" id="fb-line-reuse">ab <span id="fb-reuse-box" class="reuse">cd <input id="fb-reuse-text" type="text" value="cd"/> ef</span> <span id="fb-tail">{{ tail }}</span></div>
+	<div class="row" id="fb-line-range">ab <input id="fb-range" type="range"/> ef</div>
+	<div class="row" id="fb-line-range-margin">ab <input id="fb-range-margin" class="rmargin" type="range"/> ef</div>
+	<div class="row" id="fb-line-range-tall">ab <input id="fb-range-tall" class="rtall" type="range"/> ef</div>
+	<div class="row" id="fb-line-range-none">ab <input id="fb-range-none" class="slider" type="range" min="0" max="100" step="1" value="50"/> ef</div>
+	<div class="row" id="fb-line-range-none-margin">ab <input id="fb-range-none-margin" class="slider rmargin" type="range" min="0" max="100" step="1" value="50"/> ef</div>
+</body>
+</rml>

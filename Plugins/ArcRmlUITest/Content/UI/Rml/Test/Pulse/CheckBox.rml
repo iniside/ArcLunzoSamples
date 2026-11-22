@@ -1,0 +1,4 @@
+<component>
+	<prop name="flag"/>
+	<input id="cb-input" class="chk" type="checkbox" data-checked="$flag"/>
+</component>

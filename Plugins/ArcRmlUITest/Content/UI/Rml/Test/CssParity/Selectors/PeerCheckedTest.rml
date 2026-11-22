@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>PeerCheckedTest</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Selectors/PeerChecked.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div id="peer-row"><input type="checkbox" id="peer" class="peer" checked=""/><div id="peer-target" class="box peer-checked:bg-accent"></div><div id="peer-gap" class="box"></div><div id="peer-far-target" class="box peer-checked:bg-accent"></div></div>
+	<div id="peer-off-row"><input type="checkbox" id="peer-off" class="peer"/><div id="peer-off-gap" class="box"></div><div id="peer-off-far-target" class="box peer-checked:bg-accent"></div></div>
+</body>
+</rml>

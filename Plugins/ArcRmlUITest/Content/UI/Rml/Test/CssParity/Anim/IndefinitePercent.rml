@@ -1,0 +1,12 @@
+<rml>
+<head>
+	<title>IndefinitePercent</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Anim/IndefinitePercent.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="holder"><div id="an-paused" class="box"><div class="content"></div></div></div>
+	<div class="holder"><div id="an-running" class="box"><div class="content"></div></div></div>
+</body>
+</rml>

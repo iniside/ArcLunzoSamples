@@ -1,0 +1,46 @@
+.dk-hud-debug-items {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-2);
+}
+
+.dk-hud-debug-item {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-2);
+}
+
+.dk-hud-debug-toggle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--ui-space-2);
+	min-height: 30px;
+}
+
+.dk-hud-debug-slider {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.dk-hud-debug-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.dk-hud-debug-options {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+}
+
+.dk-hud-debug-label {
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text);
+}
+
+.dk-hud-debug-label.disabled {
+	color: var(--ui-text-disabled);
+}

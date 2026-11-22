@@ -1,0 +1,16 @@
+<component>
+	<prop name="members" default="[]"/>
+	<div class="dk-party-frames">
+		<div data-for="PartyFramesM, PartyFramesM_index : $members" class="dk-party-frames-m" data-style-display="((PartyFramesM_index &lt; 4) ? 'flex' : 'none')" data-class-offline="PartyFramesM.State == 'offline'" data-class-range="PartyFramesM.State == 'range'">
+			<span class="dk-party-frames-icon" data-class-dead="PartyFramesM.State == 'dead'"><i class="dk-party-frames-i"><svg data-attr-src="PartyFramesM.Icon" width="16" height="16" stroke-width="2"/></i></span>
+			<div class="dk-party-frames-body">
+				<div class="dk-party-frames-head">
+					<span class="dk-party-frames-name">{{ PartyFramesM.Name }}</span>
+					<span class="dk-party-frames-st" data-class-dead="PartyFramesM.State == 'dead'" data-class-faded="PartyFramesM.State != 'ok'">{{ PartyFramesM.State == 'dead' ? 'Dead' : (PartyFramesM.State == 'offline' ? 'Offline' : (PartyFramesM.State == 'range' ? 'Far' : '')) }}</span>
+				</div>
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ResourceBar" value="{{ (PartyFramesM.State == 'dead' ? 0 : PartyFramesM.Hp) }}" trail="{{ (PartyFramesM.State == 'dead' ? 0 : PartyFramesM.Hp) }}" kind="friendly" show-label="{{ false }}" height="{{ 8 }}"/>
+				<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/ResourceBar" value="{{ PartyFramesM.Res }}" trail="{{ PartyFramesM.Res }}" kind="mana" show-label="{{ false }}" height="{{ 3 }}"/>
+			</div>
+		</div>
+	</div>
+</component>

@@ -1,0 +1,40 @@
+<component>
+	<prop name="header"/>
+	<prop name="headerLabels" default="[]"/>
+	<prop name="label" default=""/>
+	<prop name="mode" default=""/>
+	<prop name="map" default=""/>
+	<prop name="players" default="0"/>
+	<prop name="maxPlayers" default="0"/>
+	<prop name="ping" default="40"/>
+	<prop name="favorite"/>
+	<prop name="locked"/>
+	<prop name="region" default=""/>
+	<prop name="selected"/>
+	<prop name="disabled"/>
+	<prop name="autofocus"/>
+	<prop name="focusable"/>
+	<div class="dk-serverrow-header" data-if="$header">
+		<span class="dk-serverrow-headcell" data-for="ServerRowH : $headerLabels">{{ ServerRowH }}</span>
+	</div>
+	<div class="dk-serverrow" data-if="!$header" data-class-selected="$selected" data-class-disabled="$disabled" data-class-full="$players * 1 &gt;= $maxPlayers * 1" data-class-good="$ping * 1 &lt; 90" data-class-warn="$ping * 1 &gt;= 90 &amp;&amp; $ping * 1 &lt; 150" data-class-focusable="$focusable" data-attrif-selected="$selected" data-attrif-autofocus="$autofocus">
+		<div class="dk-serverrow-name">
+			<i class="dk-serverrow-star" data-if="$favorite"><svg src="/ArcRmlUIDemo/UI/Rml/icons/star.svg" width="14" height="14" stroke-width="2"/></i>
+			<span class="dk-serverrow-label">{{ $label }}</span>
+			<i class="dk-serverrow-lock" data-if="$locked"><svg src="/ArcRmlUIDemo/UI/Rml/icons/lock.svg" width="14" height="14" stroke-width="2"/></i>
+			<dc-import name="/ArcRmlUIDemo/UI/Rml/Demo/Components/Badge" data-if="$region != ''" label="{{ $region }}"/>
+		</div>
+		<span class="dk-serverrow-sub">{{ $mode }}</span>
+		<span class="dk-serverrow-sub">{{ $map }}</span>
+		<span class="dk-serverrow-players">{{ $players }}/{{ $maxPlayers }}</span>
+		<div class="dk-serverrow-pingbox">
+			<div class="dk-serverrow-bars">
+				<span class="dk-serverrow-bar dk-serverrow-bar-1 on"></span>
+				<span class="dk-serverrow-bar dk-serverrow-bar-2" data-class-on="$ping * 1 &lt; 150"></span>
+				<span class="dk-serverrow-bar dk-serverrow-bar-3" data-class-on="$ping * 1 &lt; 90"></span>
+				<span class="dk-serverrow-bar dk-serverrow-bar-4" data-class-on="$ping * 1 &lt; 50"></span>
+			</div>
+			<span class="dk-serverrow-ping">{{ $ping + ' ms' }}</span>
+		</div>
+	</div>
+</component>

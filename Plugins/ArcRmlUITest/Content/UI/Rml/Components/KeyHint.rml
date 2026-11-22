@@ -1,0 +1,11 @@
+<component>
+	<prop name="keyLabel" default="E"/>
+	<prop name="keyLabel2" default=""/>
+	<prop name="label" default="Action"/>
+	<prop name="variant" default="default"/>
+	<span class="keyhint">
+		<dc-import name="/ArcRmlUITest/UI/Rml/Components/KeyBadge" label="{{ $keyLabel }}" variant="{{ $variant }}"/>
+		<dc-import name="/ArcRmlUITest/UI/Rml/Components/KeyBadge" data-if="$keyLabel2 != ''" label="{{ $keyLabel2 }}" variant="{{ $variant }}"/>
+		<span>{{ $label }}</span>
+	</span>
+</component>

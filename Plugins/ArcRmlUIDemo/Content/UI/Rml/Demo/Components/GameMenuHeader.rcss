@@ -1,0 +1,44 @@
+.dk-gamemenuheader {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-4);
+	width: 100%;
+}
+
+.dk-gamemenuheader-top {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: var(--ui-space-4);
+	flex-wrap: wrap;
+}
+
+.dk-gamemenuheader-titles {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ui-space-2);
+}
+
+.dk-gamemenuheader-who {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--ui-text-muted);
+}
+
+.dk-gamemenuheader-title {
+	font-family: var(--ui-font-display);
+	font-size: var(--ui-fs-6);
+	font-weight: 700;
+	line-height: 1;
+	text-transform: var(--ui-display-case);
+	letter-spacing: var(--ui-display-tracking);
+	text-shadow: var(--ui-text-glow);
+	align-self: flex-start;
+	box-sizing: border-box;
+	padding: calc(var(--ui-ornament-2) * 10px) calc(var(--ui-ornament-2) * 28px);
+	border: calc(var(--ui-ornament-2) * 1px) solid var(--ui-ornament-color);
+	box-shadow: inset 0 0 0 calc(var(--ui-ornament-2) * 3px) var(--ui-bg), inset 0 0 0 calc(var(--ui-ornament-2) * 4px) var(--ui-ornament-color);
+	border-radius: var(--ui-radius-sm);
+}

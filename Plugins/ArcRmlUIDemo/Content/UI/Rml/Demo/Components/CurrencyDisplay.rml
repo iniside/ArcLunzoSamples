@@ -1,0 +1,11 @@
+<component>
+	<prop name="items" default="[]"/>
+	<prop name="size" default=""/>
+	<div class="dk-currency" data-class-sm="$size == 'sm'" data-class-lg="$size == 'lg'">
+		<div class="dk-currency-item" data-for="CurrencyDisplayC : $items" data-attr-title="CurrencyDisplayC.Label">
+			<i class="dk-currency-icon" data-if="CurrencyDisplayC.Icon != ''" data-class-insufficient="CurrencyDisplayC.bInsufficient" data-class-common="CurrencyDisplayC.Rarity == 'common'" data-class-uncommon="CurrencyDisplayC.Rarity == 'uncommon'" data-class-rare="CurrencyDisplayC.Rarity == 'rare'" data-class-epic="CurrencyDisplayC.Rarity == 'epic'"><svg data-attr-src="CurrencyDisplayC.Icon" data-attr-width="$size == 'lg' ? 20 : ($size == 'sm' ? 13 : 16)" data-attr-height="$size == 'lg' ? 20 : ($size == 'sm' ? 13 : 16)" stroke-width="2"/></i>
+			<i class="dk-currency-icon" data-if="CurrencyDisplayC.Icon == ''" data-class-insufficient="CurrencyDisplayC.bInsufficient" data-class-common="CurrencyDisplayC.Rarity == 'common'" data-class-uncommon="CurrencyDisplayC.Rarity == 'uncommon'" data-class-rare="CurrencyDisplayC.Rarity == 'rare'" data-class-epic="CurrencyDisplayC.Rarity == 'epic'"><svg src="/ArcRmlUIDemo/UI/Rml/icons/coins.svg" data-attr-width="$size == 'lg' ? 20 : ($size == 'sm' ? 13 : 16)" data-attr-height="$size == 'lg' ? 20 : ($size == 'sm' ? 13 : 16)" stroke-width="2"/></i>
+			<span class="dk-currency-value" data-class-insufficient="CurrencyDisplayC.bInsufficient">{{ CurrencyDisplayC.Value }}</span>
+		</div>
+	</div>
+</component>

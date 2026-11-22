@@ -1,0 +1,42 @@
+.dk-statrow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: var(--ui-space-4);
+	min-height: 36px;
+	border-bottom: 1px solid var(--ui-border);
+}
+
+.dk-statrow-label {
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text-muted);
+}
+
+.dk-statrow-main {
+	display: flex;
+	align-items: center;
+	gap: var(--ui-space-2);
+	min-width: 0;
+}
+
+.dk-statrow-value {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-2);
+	color: var(--ui-text);
+	text-align: right;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dk-statrow-delta {
+	font-family: var(--ui-font-mono);
+	font-size: var(--ui-fs-1);
+	font-weight: 600;
+	white-space: nowrap;
+	color: var(--ui-danger);
+}
+
+.dk-statrow-delta.good {
+	color: var(--ui-success);
+}

@@ -1,0 +1,15 @@
+<rml>
+<head>
+	<title>ArcRmlUI Game Feature Test</title>
+	<meta name="layer" content="UI.Layer.Modal"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="GameFeatureTest.rcss"/>
+</head>
+<body>
+	<div class="gft-panel">
+		<svg class="gft-image" src="GameFeatureTest.svg" width="128" height="128"/>
+		<span class="gft-title">Game Feature packaging test</span>
+		<span class="gft-text">Packaged by the ArcRmlUIGameFeatureTest game feature action.</span>
+	</div>
+</body>
+</rml>

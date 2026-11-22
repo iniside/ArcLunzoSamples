@@ -1,0 +1,21 @@
+<rml>
+<head>
+	<title>Flex Automatic Minimum Intrinsic Size Test</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="game"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/Layout/FlexAutoMinTest.rcss"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body>
+	<div class="cb0" id="cb-cap"><div id="fx-cap" class="fx"><div id="it-cap" class="item cap"><div class="w50"></div></div></div></div>
+	<div class="cb0" id="cb-border"><div id="fx-border" class="fx"><div id="it-border" class="item cap border-box"><div class="w50"></div></div></div></div>
+	<div class="cb0" id="cb-cap-mix"><div id="fx-cap-mix" class="fx"><div id="it-cap-mix" class="item cap"><div class="w50"></div></div><div class="item mix"><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div><div class="w10"></div></div></div></div>
+	<div class="cb0" id="cb-sum"><div id="fx-sum" class="fx"><div id="it-sum-a" class="item cap"><div class="w50"></div></div><div id="it-sum-b" class="item raise"><div class="w50"></div></div></div></div>
+	<div class="cb0" id="cb-hidden"><div id="fx-hidden" class="fx"><div id="it-hidden" class="item cap hidden"><div class="w50"></div></div></div></div>
+	<div class="cb0" id="cb-max"><div id="fx-max" class="fx"><div id="it-max" class="item cap max45"><div class="w50"></div></div></div></div>
+	<div class="cb0" id="cb-specified"><div id="fx-specified" class="fx"><div id="it-specified" class="item cap width70"><div class="w50"></div></div></div></div>
+	<div class="cb400" id="cb-wide"><div id="fx-wide" class="fx"><div id="it-wide" class="item cap"><div class="w50"></div></div></div></div>
+	<div class="cb400" id="cb-wide-wrap"><div id="fx-wide-wrap" class="fx wrap"><div id="it-wide-wrap-a" class="item cap"><div class="w50"></div></div><div id="it-wide-wrap-b" class="item raise"><div class="w50"></div></div></div></div>
+	<div class="cb0" id="cb-dropdown"><div id="tw-menu" class="menu"><div id="tw-menu-a" class="menu-item">Notifications</div><div id="tw-menu-b" class="menu-item">Profile</div></div></div>
+	<div class="cb0" id="cb-inline"><div id="tw-row" class="btn-row"><div id="tw-btn-a" class="btn">Configuration</div><div id="tw-btn-b" class="btn">Save</div></div></div>
+</body>
+</rml>

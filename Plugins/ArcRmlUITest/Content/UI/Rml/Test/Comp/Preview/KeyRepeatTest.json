@@ -1,0 +1,8 @@
+{
+	"Rows": [
+		{ "Id": "a", "Label": "Row A1" },
+		{ "Id": "a", "Label": "Row A2" },
+		{ "Id": "b", "Label": "Row B" },
+		{ "Id": "a", "Label": "Row A3" }
+	]
+}

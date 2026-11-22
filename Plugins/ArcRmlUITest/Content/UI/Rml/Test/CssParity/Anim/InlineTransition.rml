@@ -1,0 +1,18 @@
+<rml>
+<head>
+	<title>Inline Transition</title>
+	<meta name="layer" content="UI.Layer.Menu"/>
+	<meta name="input-mode" content="menu"/>
+	<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Test/CssParity/Anim/InlineTransition.rcss"/>
+	<viewmodel name="inline" preview="Preview/InlineTransition.json"/>
+<link type="text/rcss" href="/ArcRmlUITest/UI/Rml/Fonts/Fonts.rcss"/></head>
+<body data-model="inline">
+	<div id="cls" class="row trans" data-style-width="cls + 'px'"></div>
+	<div id="timing" class="row trans" data-style-width="timing + 'px'" data-style-transition="timingTransition"></div>
+	<div id="rev" class="row trans" data-style-width="rev + 'px'"></div>
+	<div id="ret" class="row trans" data-style-width="ret + 'px'"></div>
+	<div id="kf" class="row grow" data-style-width="kf + 'px'"></div>
+	<div id="imp" class="row grow" style="width: 60px !important;"></div>
+	<div id="op" class="row fade"></div>
+</body>
+</rml>
